@@ -8,15 +8,15 @@ from .datasets import (
     MMLUProDataset,
     MMLUProDatasetForTransformers,
     BoxesDataset,
-    BoxesDatasetForTransformers,
-    MSPPodcastDataset,
-    MSPPodcastDatasetForTransformers,
-    QueerReclaimLexDataset,
-    QueerReclaimLexDatasetForTransformers,
-    HatexplainDataset,
-    HatexplainDatasetForTransformers,
-    TRECDataset,
-    TRECDatasetForTransformers,
+    BoxesDatasetForTransformers#,
+#    MSPPodcastDataset,
+#    MSPPodcastDatasetForTransformers,
+#    QueerReclaimLexDataset,
+#    QueerReclaimLexDatasetForTransformers,
+#    HatexplainDataset,
+#    HatexplainDatasetForTransformers,
+#    TRECDataset,
+#    TRECDatasetForTransformers,
 )
 
 DATASETS = dict(
@@ -25,13 +25,13 @@ DATASETS = dict(
     MFRC=MFRCDataset,
     MMLUPro=MMLUProDataset,
     Boxes=BoxesDataset,
-    MSPPodcast=MSPPodcastDataset,
-    QueerReclaimLex=QueerReclaimLexDataset,
-    Hatexplain=HatexplainDataset,
-    TREC=TRECDataset,
+#    MSPPodcast=MSPPodcastDataset,
+#    QueerReclaimLex=QueerReclaimLexDataset,
+#    Hatexplain=HatexplainDataset,
+#    TREC=TRECDataset,
 )
 
-
+from .distribution_estimators import DistributionEstimator
 from .models import LMForClassification, OpenAIClassifier, vLMForClassification
 from .prompt_dataset import (
     PromptDataset,
