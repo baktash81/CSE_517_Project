@@ -551,6 +551,10 @@ class TextDataset(BaseDataset):
         """
 
 
+# Alias for backward compatibility (benchmarks.py, demux.py import this name)
+TextDatasetWithPriors = TextDataset
+
+
 class TokenizationMixin:
     """Mixin for tokenizing text for the `transformers` library.
     MUST be inherited before any other class because it requires
