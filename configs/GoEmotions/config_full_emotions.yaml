@@ -1,4 +1,4 @@
-root_dir: /path/to//goemotions
+root_dir: datasets/goemotions
 train_splits: train
 test_splits: dev
 instruction_prompt: ./configs/GoEmotions/instruction.txt
