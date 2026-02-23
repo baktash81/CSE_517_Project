@@ -1,5 +1,5 @@
 language: English
-root_dir: /path/to//semeval2018task1
+root_dir: datasets/semeval2018task1
 train_splits: train
 test_splits: dev
 instruction_prompt: ./configs/SemEval/instruction.txt

@@ -1,4 +1,4 @@
-root_dir: /path/to//mfrc
+root_dir: datasets/mfrc
 train_splits: train
 test_splits: dev
 instruction_prompt: ./configs/MFRC/instruction.txt

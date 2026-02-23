@@ -1,5 +1,5 @@
 label_format: polysyndeton
-root_dir: /path/to//boxes-dataset-v1/
+root_dir: datasets/boxes/boxes-dataset-v1
 train_splits: train
 test_splits: dev
 instruction_prompt: ./configs/Boxes/instruction.txt
