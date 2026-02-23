@@ -6,20 +6,27 @@ import torch.nn as nn
 import torch.optim as optim
 from tqdm import tqdm
 
-from llm_ml.load_dataset_annotations import get_dataset_label_order
+try:
+    from llm_ml.load_dataset_annotations import get_dataset_label_order
+except ImportError:
+    get_dataset_label_order = None
 
 class DistributionEstimator(ABC):
     ACCEPTED_TYPES = ['baseline', 'output', 'unary', 'binary', 'binary_outcome', 'max', 'SFT_output', 'SFT_max']
-    def __init__(self, dataset, estimation_type):
+    def __init__(self, dataset, estimation_type, label_order=None):
         if estimation_type not in DistributionEstimator.ACCEPTED_TYPES:
             raise Exception(f'{estimation_type} must be one of: {DistributionEstimator.ACCEPTED_TYPES}')
         self.estimation_type = estimation_type
         
-        """
-        Labels are saved alphabetically into the yaml file but
-        annotations are based on a custom label order.
-        """
-        self.label_order = get_dataset_label_order(dataset)
+        if label_order is not None:
+            self.label_order = label_order
+        elif get_dataset_label_order is not None:
+            self.label_order = get_dataset_label_order(dataset)
+        else:
+            raise ValueError(
+                "label_order must be provided explicitly or "
+                "llm_ml.load_dataset_annotations must be available"
+            )
         
     def estimate(self, data):
         if self.estimation_type == 'baseline':
@@ -197,8 +204,8 @@ class SingleLabelEstimator(DistributionEstimator):
 
 class MultiLabelEstimator(DistributionEstimator):
     
-    def __init__(self, dataset, estimation_type):
-        super().__init__(dataset, estimation_type)
+    def __init__(self, dataset, estimation_type, label_order=None):
+        super().__init__(dataset, estimation_type, label_order=label_order)
         
         self.label_order.append('none')
         

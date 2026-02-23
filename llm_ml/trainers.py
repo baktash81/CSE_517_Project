@@ -13,6 +13,12 @@ from sklearn.metrics import (
 )
 from sklearn.preprocessing import MultiLabelBinarizer
 
+try:
+    from ember.metrics import semantic_f1_score, pointwise_semantic_f1_score
+except ImportError:
+    semantic_f1_score = None
+    pointwise_semantic_f1_score = None
+
 
 class PromptEvaluator(BaseTrainer):
     @staticmethod
