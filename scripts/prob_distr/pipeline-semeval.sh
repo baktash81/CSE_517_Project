@@ -48,7 +48,7 @@ echo Using VLLM
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
-        --sampling-strategy multilabel \
+        --sampling-strategy uniform \
         --trust-remote-code \
         --alternative $id_list/{distribution}/{model_name_or_path} \
         --shot 10 \
@@ -75,7 +75,7 @@ echo Using HuggingFace
         --text-preprocessor false \
         --load-in-4bit \
         --trust-remote-code \
-        --sampling-strategy multilabel \
+        --sampling-strategy uniform \
         --alternative $id_list/{distribution}/{model_name_or_path} \
         --shot 10 \
         --seed $seed  \

@@ -47,6 +47,13 @@ from .trainers import (
     ReasonablenessEvaluator,
     vReasonablenessEvaluator,
     APIReasonablenessEvaluator,
+    DistributionEstimator,
+    vDistributionEstimator,
+)
+from .breakdown_datasets import (
+    UnaryBreakdownDataset,
+    BinaryBreakdownDataset,
+    ICLMultiLabelRatioDataset,
 )
 from .utils import twitter_preprocessor, reddit_preprocessor
 
