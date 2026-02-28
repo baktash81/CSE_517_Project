@@ -9,7 +9,7 @@ done
 # model=meta-llama/Llama-2-7b-chat-hf
 # model=meta-llama/Llama-3.2-1B
 # model=meta-llama/Llama-3.1-8B
-model=meta-llama/Llama-3.3-70B-Instruct
+model=meta-llama/Llama-3.1-8B-Instruct
 
 # override from command line, if provided
 model=${4:-$model}
@@ -33,8 +33,8 @@ if [ "$5" == "vllm" ]; then
     python scripts/prob_distr/vllm_prob_distr.py \
         GoEmotions \
         --distribution $1 \
-        --root-dir /data1/chochlak/goemotions \
-        --emotion-clustering-json /data1/chochlak/goemotions/emotion_clustering.json \
+        --root-dir /datasets/goemotions \
+        --emotion-clustering-json /datasets/goemotions/emotion_clustering.json \
         --train-split train \
         --test-split dev \
         --system ' ' \
@@ -60,8 +60,8 @@ else
     python scripts/prob_distr/llm_prob_distr.py \
         GoEmotions \
         --distribution $1 \
-        --root-dir /data1/chochlak/goemotions \
-        --emotion-clustering-json /data1/chochlak/goemotions/emotion_clustering.json \
+        --root-dir /datasets/goemotions \
+        --emotion-clustering-json /datasets/goemotions/emotion_clustering.json \
         --train-split train \
         --test-split dev \
         --system ' ' \
