@@ -31,7 +31,6 @@ DATASETS = dict(
 #    TREC=TRECDataset,
 )
 
-from .distribution_estimators import DistributionEstimator
 from .models import LMForClassification, OpenAIClassifier, vLMForClassification
 from .prompt_dataset import (
     PromptDataset,
@@ -47,6 +46,12 @@ from .trainers import (
     ReasonablenessEvaluator,
     vReasonablenessEvaluator,
     APIReasonablenessEvaluator,
+    DistributionEstimator,
+    vDistributionEstimator,
+)
+from .breakdown_datasets import (
+    UnaryBreakdownDataset,
+    BinaryBreakdownDataset,
 )
 from .utils import twitter_preprocessor, reddit_preprocessor
 
