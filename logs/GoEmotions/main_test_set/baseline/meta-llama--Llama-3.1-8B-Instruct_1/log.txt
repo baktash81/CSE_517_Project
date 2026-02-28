@@ -1,0 +1,185 @@
+DEBUG-DistributionEstimator(2026-02-28 21:26:00,939)   Trainer set up.
+DEBUG-DistributionEstimator(2026-02-28 21:26:00,956)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: This type of discussion is exactly what I came to r/medicine for. Thanks guys!
+{"label": ["admiration"]}
+Input: *Pauses clip to make sure that's not me* We're good. What a disappointing [NAME]!
+{"label": ["sadness"]}
+Input: This is really scary. The saddest about this is i really think it will be possible quite soon. :(
+{"label": ["fear", "sadness"]}
+Input: Agreed. Reverse the story so that a girl makes her boyfriend shit his pants before going out and suddenly it's funny.
+{"label": ["admiration"]}
+Input: Oh wow, this is the first I've heard of her aligning with those people. 
+{"label": ["surprise"]}
+Input: I guess its the 9th largest city in the country but it it weird to group them together
+{"label": ["optimism", "anger"]}
+Input: So we're the 2nd richest team.
+{"label": ["joy", "admiration"]}
+Input: Id be pretty pissed if my prime didn't auto renew
+{"label": ["anger"]}
+Input: But still incorrect usage of that subreddit. Shame! Shame!
+{"label": ["anger"]}
+Input: He meant [NAME] [NAME] hihihi [NAME]
+{"label": ["none"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Women always seem to write that though, plus emotipns and emojis. When a man writes likr that it comes off odd ajd feminine in a bad way.
+{"label": ["none"]}
+Input: I recently won a match going 12/19. Always ends the same way you thanking them profusely and them being slightly annoyed.
+{"label": ["admiration", "anger"]}
+Input: I don't see much reason for it even as a 2nd.
+{"label": ["anger"]}
+Input: Oh that sucks good luck man
+{"label": ["optimism"]}
+Input: Worst winter ever :(
+{"label": ["sadness"]}
+Input: Post them all! Love old pics.
+{"label": ["joy"]}
+Input: Doordash pays less than minimum wage, no money even to buy cheesecake from the cheesecake factory after paying rent and Bills 😥
+{"label": ["sadness"]}
+Input: i love all harper news because i love the shit storm that ensues on here.
+{"label": ["joy"]}
+Input: Source? 😂
+{"label": ["surprise"]}
+Input: I like [NAME] and would like to see him back, but he still makes me nervous at a high price too. 
+{"label": ["fear"]}
+Input: At least now [NAME] has more time to gain his confidence
+DEBUG-DistributionEstimator(2026-02-28 21:36:39,023)   Trainer set up.
+DEBUG-DistributionEstimator(2026-02-28 21:36:39,043)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Eh... just watch the season. The leaked pic of untucked was the week she goes home.
+{"label": ["none"]}
+Input: Oh no!
+{"label": ["sadness"]}
+Input: I’m gay, so let’s hope this works! I look better clean shaven lmao. Thanks! 
+{"label": ["optimism"]}
+Input: Gay boy here. [NAME] is overrated imo
+{"label": ["none"]}
+Input: your character's so broken!
+{"label": ["anger"]}
+Input: but then what will the vegans eat?
+{"label": ["surprise"]}
+Input: Was there ever a PPV main event with [NAME] vs [NAME]?
+{"label": ["surprise"]}
+Input: PowerPoint would be nice
+{"label": ["admiration"]}
+Input: Oh [NAME] I love [NAME]!
+{"label": ["joy"]}
+Input: I'm worried he's too small. I love his quickness, but sub-170 is scary for a guy that'll be running over the middle.
+{"label": ["fear"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: You look awesome in this picture
+{"label": ["admiration"]}
+Input: I was flabbergasted when I saw it.
+{"label": ["surprise"]}
+Input: Agreed, but I can't believe the bottom of the barrel just has double French doors opening into the foyer of yet another barrel.
+{"label": ["admiration"]}
+Input: She has 0 chance, not even apologizing will give her a chance.
+{"label": ["none"]}
+Input: Ouch, my heart. I never even thought about this...
+{"label": ["sadness"]}
+Input: It was a poor choice of words.
+{"label": ["anger"]}
+Input: The history of horrible things the federal government has done is well documented. The same way the federal government does it, with income taxes.
+{"label": ["fear"]}
+Input: Lol it’s one of those right wingers pretending to be a leftist to sow division. They’re pretty bad at it.
+{"label": ["joy", "anger"]}
+Input: Cool post. I just wish the game had more enemies besides just the spartan and athens army (like harpies, giant snakes, something like that). 
+{"label": ["optimism"]}
+Input: Apologies, got a little carried away. 
+{"label": ["sadness"]}
+Input: At least now [NAME] has more time to gain his confidence
+DEBUG-DistributionEstimator(2026-02-28 21:41:48,391)   Trainer set up.
+DEBUG-DistributionEstimator(2026-02-28 21:41:48,408)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I'd love to do that one day
+{"label": ["joy"]}
+Input: If its your first time with dxm, I would take that first and maybe the other drugs on the comedown
+{"label": ["none"]}
+Input: >outsourced independent contractor Dude there is no way [NAME] knows these words.
+{"label": ["none"]}
+Input: > Just because you're white doesn't mean you should try to speak for white people. That's the joke™
+{"label": ["joy", "anger"]}
+Input: do your own homework
+{"label": ["optimism"]}
+Input: Wouldn't mind if it is [NAME]. Girl's got fire.
+{"label": ["admiration"]}
+Input: I think the unluckiest... is [NAME]. :(
+{"label": ["sadness"]}
+Input: Is that what it's called now?
+{"label": ["surprise"]}
+Input: Volunteer only. Why do you ask?
+{"label": ["none"]}
+Input: This is scary.
+{"label": ["fear"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I think this does help less good pupils to learn it better and agree with the teachers. In my class thats the biggest problem when it comes to french
+{"label": ["optimism", "sadness"]}
+Input: Okay then. Please remind me again why the lack of support is death threats in my PMs.
+{"label": ["fear"]}
+Input: Haha I meant [NAME]. I was a very chatty fast bowler/no.6 pinch hitter.
+{"label": ["joy"]}
+Input: Calling Hollywood...would make a great movie.☺
+{"label": ["admiration"]}
+Input: i’d put forth that lots of people ACTIVELY DISLIKE dating and like being in relationships, so this wouldn’t help at all 
+{"label": ["anger"]}
+Input: “Am I in the frat now, bruh?”
+{"label": ["surprise"]}
+Input: lol I hope no-one bothers to answer you in earnest honesty because you are so childish it'll just wash right over your ears.
+{"label": ["optimism"]}
+Input: [NAME] dude I’m sorry. That’s their problem now. Bump some [NAME] and keep moving forward.
+{"label": ["sadness"]}
+Input: I don't know who that is
+{"label": ["surprise"]}
+Input: Mechanics institute Joes juice joint Alabama song Helvetica
+{"label": ["none"]}
+Input: At least now [NAME] has more time to gain his confidence
+DEBUG-DistributionEstimator(2026-02-28 21:46:48,190)   Trainer set up.
+DEBUG-DistributionEstimator(2026-02-28 21:46:48,212)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I knew the top comment *had to be* about them fonts.
+{"label": ["none"]}
+Input: ah thats my bad, she just finished the blog and im sharing it around, one sec and ill edit it. 
+{"label": ["sadness"]}
+Input: And then [NAME] heroically murders them and hangs up their heads so he can feel like a real boy
+{"label": ["none"]}
+Input: Yes he is a hard worker for sure. Just wish he could get his shot back on track.
+{"label": ["optimism", "admiration"]}
+Input: Understandable. Thank you for your opinion. Ill move towards due action soon.
+{"label": ["admiration"]}
+Input: You have too many knives, I don't trust you. Sociopath.
+{"label": ["anger"]}
+Input: Amusing considering she isn’t a mom.
+{"label": ["joy"]}
+Input: What did I just read
+{"label": ["surprise"]}
+Input: Report her to the police. Physical threats are a no-no.
+{"label": ["fear"]}
+Input: Hopefully [NAME] falls to 6. [NAME] can start the season and when the time is right move on over to the rookie
+{"label": ["optimism"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: If that's ice cream, then honestly I eat ice cream from a cup at home. It's great for portion control.
+{"label": ["admiration"]}
+Input: thought you were talking about gum (eucalyptus) trees. They're known to drop branches and many people are killed by them.
+{"label": ["none"]}
+Input: I learned that recently driving into SLC for the first time in the rain/snow. I couldn't see shit. 1/10 Was scary.
+{"label": ["fear"]}
+Input: Spoiler alert, it's terrifying and depressiong
+{"label": ["fear", "sadness"]}
+Input: You'll feel better about yourself if you don't act like an asshole to people who care about you.
+{"label": ["anger"]}
+Input: I hope you like it-
+{"label": ["optimism"]}
+Input: *How???* The internet never ceases to amaze me.
+{"label": ["surprise"]}
+Input: I rate [NAME] highly, so this is good news.
+{"label": ["joy"]}
+Input: Or he fetishizes about them. You never can tell.
+{"label": ["none"]}
+Input: Sorry man, it’s gonna be really hard to find a Rose jersey anywhere that isn’t a 3XL
+{"label": ["sadness"]}
+Input: At least now [NAME] has more time to gain his confidence
+INFO-DistributionEstimator(2026-02-28 21:59:53,166)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3066, micro_f1=0.4154, macro_f1=0.4082, joy_f1=0.5208, optimism_f1=0.4590, admiration_f1=0.3143, surprise_f1=0.2769, fear_f1=0.4267, sadness_f1=0.4810, anger_f1=0.3784
