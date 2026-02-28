@@ -126,25 +126,25 @@ def plot_multilabel_icl(yaml_files, save_path, color='blue'):
 if __name__ == '__main__':
     
     datasets = [
-        'MFRC',
-        'SemEval',
+        # 'MFRC',
+        # 'SemEval',
         'GoEmotions',
     ]
     
     models = [
-        'meta-llama--Llama-3.2-1B-Instruct_0',
-        'meta-llama--Llama-3.1-8B-Instruct_0',
-        'meta-llama--Llama-3.3-70B-Instruct_0',
-        'Qwen--Qwen2.5-7B-Instruct_0',
+        # 'meta-llama--Llama-3.2-1B-Instruct_0',
+        'meta-llama--Llama-3.1-8B-Instruct_1',
+        # 'meta-llama--Llama-3.3-70B-Instruct_0',
+        # 'Qwen--Qwen2.5-7B-Instruct_0',
     ]
     
     yaml_files = []
     
     for dataset in datasets:
         for model in models:
-            yaml_file = f'logs/{dataset}/main_test_set/multilabel_ICL/{model}/indexed_metrics.yml'
+            yaml_file = f'logs/{dataset}/main_test_set/baseline/{model}/indexed_metrics.yml'
             if os.path.exists(yaml_file):
                 yaml_files.append(yaml_file)
             
     
-    plot_multilabel_icl(yaml_files, save_path='scripts/prob_distr/figures_qwen/multilabel_ICL.pdf')
+    plot_multilabel_icl(yaml_files, save_path='scripts/prob_distr/figures/multilabel_ICL.pdf')

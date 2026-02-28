@@ -156,23 +156,20 @@ def plot_label_order_accuracies(yaml_files, save_path, color='blue'):
 if __name__ == '__main__':
     
     datasets = [
-        'MFRC',
+        # 'MFRC',
         'GoEmotions',
     ]
     
     models = [
-        'meta-llama--Llama-3.2-1B-Instruct_0',
-        'meta-llama--Llama-3.1-8B-Instruct_0',
-        'meta-llama--Llama-3.3-70B-Instruct_0',
-        'Qwen--Qwen2.5-7B-Instruct_0',
+        'meta-llama--Llama-3.1-8B-Instruct_1',
     ]
     
     yaml_files = []
     
     for dataset in datasets:
         for model in models:
-            yaml_file = f'logs/{dataset}/big_multilabel/baseline/{model}/indexed_metrics.yml'
+            yaml_file = f'logs/{dataset}/main_test_set/baseline/{model}/indexed_metrics.yml'
             yaml_files.append(yaml_file)
             
     
-    plot_label_order_accuracies(yaml_files, save_path='scripts/prob_distr/figures/label_order_accuracies.pdf')
+    plot_label_order_accuracies(yaml_files, save_path=f'scripts/prob_distr/figures/label_order_accuracies.pdf')
