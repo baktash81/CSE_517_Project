@@ -744,10 +744,14 @@ class LMForGeneration(nn.Module):
 
         # attention dim:
         # tuple(generated_tokens) x tuple(layers) x bs x attention heads x {input_len if first token else 1} x {input_len if first token else input_len + gen tokens up to then}
-        out["attentions"] = [
-            [layer_att[:, :, -1, :] for layer_att in gen_tokens]
-            for gen_tokens in out_dict.attentions
-        ]
+        # Only grab attention if it exists (if really needed, need to disable SDPA in model init - will be much slower tho)
+        try:
+            out["attentions"] = [
+                [layer_att[:, :, -1, :] for layer_att in gen_tokens]
+                for gen_tokens in out_dict.attentions
+            ]
+        except (TypeError, AttributeError):
+            out["attentions"] = None
 
         return out
 

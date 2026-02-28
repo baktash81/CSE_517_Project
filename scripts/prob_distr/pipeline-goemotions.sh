@@ -33,8 +33,8 @@ if [ "$5" == "vllm" ]; then
     python scripts/prob_distr/vllm_prob_distr.py \
         GoEmotions \
         --distribution $1 \
-        --root-dir /datasets/goemotions \
-        --emotion-clustering-json /datasets/goemotions/emotion_clustering.json \
+        --root-dir datasets/goemotions \
+        --emotion-clustering-json datasets/goemotions/emotion_clustering.json \
         --train-split train \
         --test-split dev \
         --system ' ' \
@@ -60,8 +60,8 @@ else
     python scripts/prob_distr/llm_prob_distr.py \
         GoEmotions \
         --distribution $1 \
-        --root-dir /datasets/goemotions \
-        --emotion-clustering-json /datasets/goemotions/emotion_clustering.json \
+        --root-dir datasets/goemotions \
+        --emotion-clustering-json datasets/goemotions/emotion_clustering.json \
         --train-split train \
         --test-split dev \
         --system ' ' \
