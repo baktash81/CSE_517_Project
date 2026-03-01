@@ -47,7 +47,7 @@ if [ "$5" == "vllm" ]; then
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
-        --sampling-strategy uniform \
+        --sampling-strategy multilabel \
         --sentence-model all-mpnet-base-v2 \
         --seed $seed \
         --shot 10 \
@@ -75,7 +75,7 @@ else
         --annotation-mode aggregate \
         --text-preprocessor false \
         --load-in-4bit \
-        --sampling-strategy uniform \
+        --sampling-strategy multilabel \
         --sentence-model all-mpnet-base-v2 \
         --seed $seed \
         --shot 10 \
