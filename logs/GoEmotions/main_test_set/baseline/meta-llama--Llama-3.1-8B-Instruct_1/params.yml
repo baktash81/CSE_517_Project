@@ -3,7 +3,7 @@ experiment_0:
   __model_name_or_path___: meta-llama/Llama-3.1-8B-Instruct
   _label_mode___: null
   _query_label_mode___: null
-  _sampling_strategy___: uniform
+  _sampling_strategy___: multilabel
   _shot___: 10
   accelerate: true
   annotation_mode: aggregate
@@ -52,7 +52,7 @@ experiment_0:
   reasonableness_label_mode: distribution
   retries: 3
   root_dir: datasets/goemotions
-  sampling_strategy: uniform
+  sampling_strategy: multilabel
   seed: 0
   sentence_device: null
   sentence_model_name_or_path: all-mpnet-base-v2

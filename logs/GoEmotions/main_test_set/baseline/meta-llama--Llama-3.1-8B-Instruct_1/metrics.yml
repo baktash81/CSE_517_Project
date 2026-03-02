@@ -1,12 +1,12 @@
 experiment_0:
   description: ''
-  test_admiration_f1: 0.3142857142857143
-  test_anger_f1: 0.3783783783783784
-  test_fear_f1: 0.4266666666666667
-  test_jaccard_score: 0.30663780663780665
-  test_joy_f1: 0.5208333333333334
-  test_macro_f1: 0.4081594601796629
-  test_micro_f1: 0.4153846153846154
-  test_optimism_f1: 0.45901639344262296
-  test_sadness_f1: 0.4810126582278481
-  test_surprise_f1: 0.27692307692307694
+  test_admiration_f1: 0.3058823529411765
+  test_anger_f1: 0.4146341463414634
+  test_fear_f1: 0.3783783783783784
+  test_jaccard_score: 0.2853535353535353
+  test_joy_f1: 0.5576923076923077
+  test_macro_f1: 0.40427883313338436
+  test_micro_f1: 0.4051863857374392
+  test_optimism_f1: 0.4857142857142857
+  test_sadness_f1: 0.3620689655172414
+  test_surprise_f1: 0.32558139534883723

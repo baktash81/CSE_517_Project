@@ -126,8 +126,8 @@ def plot_multilabel_icl(yaml_files, save_path, color='blue'):
 if __name__ == '__main__':
     
     datasets = [
-        # 'MFRC',
-        # 'SemEval',
+        'MFRC',
+        'SemEval',
         'GoEmotions',
     ]
     

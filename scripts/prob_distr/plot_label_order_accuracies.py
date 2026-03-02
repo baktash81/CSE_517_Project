@@ -156,7 +156,8 @@ def plot_label_order_accuracies(yaml_files, save_path, color='blue'):
 if __name__ == '__main__':
     
     datasets = [
-        # 'MFRC',
+        'MFRC',
+        'SemEval',
         'GoEmotions',
     ]
     
