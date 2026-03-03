@@ -72,18 +72,25 @@ def plot_multilabel_icl(yaml_files, save_path):
     
         
 if __name__ == '__main__':
-    
-    # yaml_files = [
-    #  'logs/GoEmotions/main_test_set/baseline/meta-llama--Llama-3.3-70B-Instruct_0/indexed_metrics.yml',
-    #  'logs/MFRC/main_test_set/baseline/meta-llama--Llama-3.3-70B-Instruct_0/indexed_metrics.yml',
-    #  'logs/SemEval/main_test_set/multilabel_ICL/meta-llama--Llama-3.3-70B-Instruct_0/indexed_metrics.yml',
-    # ]
-    
-    # plot_multilabel_icl(yaml_files, save_path='scripts/prob_distr/figures/spikiness.png')
-    
-    yaml_files = [
-    'logs/GoEmotions/main_test_set/baseline/Qwen--Qwen2.5-7B-Instruct_0/indexed_metrics.yml',
-     'logs/MFRC/main_test_set/baseline/Qwen--Qwen2.5-7B-Instruct_0/indexed_metrics.yml',
-     'logs/SemEval/main_test_set/multilabel_ICL/Qwen--Qwen2.5-7B-Instruct_0/indexed_metrics.yml',
+    datasets = [
+        'MFRC',
+        'SemEval',
+        'GoEmotions',
     ]
-    plot_multilabel_icl(yaml_files, save_path='scripts/prob_distr/figures_qwen/spikiness.png')
+    
+    models = [
+        # 'meta-llama--Llama-3.2-1B-Instruct_0',
+        'meta-llama--Llama-3.1-8B-Instruct_1',
+        # 'meta-llama--Llama-3.3-70B-Instruct_0',
+        # 'Qwen--Qwen2.5-7B-Instruct_0',
+    ]
+    
+    yaml_files = []
+    
+    for dataset in datasets:
+        for model in models:
+            yaml_file = f'logs/{dataset}/main_test_set/baseline/{model}/indexed_metrics.yml'
+            if os.path.exists(yaml_file):
+                yaml_files.append(yaml_file)
+    
+    plot_multilabel_icl(yaml_files, save_path=f'scripts/prob_distr/figures/spikiness.png')
