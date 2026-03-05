@@ -35,7 +35,7 @@ echo Using VLLM
     python scripts/prob_distr/vllm_prob_distr.py \
         SemEval \
         --distribution $1 \
-        --root-dir /data1/chochlak/semeval2018task1 \
+        --root-dir datasets/semeval2018task1 \
         --language English \
         --train-split train \
         --test-split dev \
@@ -61,7 +61,7 @@ echo Using HuggingFace
     python scripts/prob_distr/llm_prob_distr.py \
         SemEval \
         --distribution $1 \
-        --root-dir /data1/chochlak/semeval2018task1 \
+        --root-dir datasets/semeval2018task1 \
         --train-split train \
         --test-split dev \
         --system ' ' \

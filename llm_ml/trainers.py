@@ -13,6 +13,12 @@ from sklearn.metrics import (
 )
 from sklearn.preprocessing import MultiLabelBinarizer
 
+try:
+    from ember.metrics import semantic_f1_score, pointwise_semantic_f1_score
+except ImportError:
+    semantic_f1_score = None
+    pointwise_semantic_f1_score = None
+
 
 class PromptEvaluator(BaseTrainer):
     @staticmethod
@@ -640,7 +646,7 @@ class DistributionEstimator(BaseTrainer):
 
         super().__init__(*args, **kwargs)
 
-        self.label_similarity = self.any_dataset.any_dataset.label_similarity
+        self.label_similarity = getattr(self.any_dataset.any_dataset, 'label_similarity', None)
         
     def run_init(self):
         initial_label_tokens = self.test_dataset.get_initial_label_tokens()

@@ -8,13 +8,13 @@ from llm_ml import (
     PromptDataset,
     UnaryBreakdownDataset,
     BinaryBreakdownDataset,
-    ICLMultiLabelRatioDataset,
     LMForClassification,
     DistributionEstimator,
     text_preprocessor,
     CONSTANT_ARGS,
     DATASETS,
 )
+from llm_ml.breakdown_datasets import ICLMultiLabelRatioDataset
 from llm_ml.utils import clean_cuda
 
 model = None

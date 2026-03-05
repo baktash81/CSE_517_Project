@@ -13,16 +13,16 @@ from datasets import load_dataset
 from sklearn.preprocessing import MultiLabelBinarizer
 from tqdm import tqdm
 
-from llm_ml.base_datasets import TextDatasetWithPriors
+from llm_ml.base_datasets import TextDataset
 
 
-class SemEval2018Task1Ec(TextDatasetWithPriors):
+class SemEval2018Task1Ec(TextDataset):
     """Plain text dataset for `SemEval 2018 Task 1: Affect in Tweets`
     (https://competitions.codalab.org/competitions/17751). Class doesn't
     use from_namespace decorator, so it can be used for inheritance.
 
     Attributes:
-        Check `TextDatasetWithPriors` for attributes.
+        Check `TextDataset` for attributes.
         language: language to load.
     """
 
@@ -33,7 +33,7 @@ class SemEval2018Task1Ec(TextDatasetWithPriors):
 
     @staticmethod
     def argparse_args() -> dict[str, dict[str, Any]]:
-        args = TextDatasetWithPriors.argparse_args()
+        args = TextDataset.argparse_args()
         args.update(
             dict(
                 language=dict(
@@ -81,12 +81,12 @@ class SemEval2018Task1Ec(TextDatasetWithPriors):
         }, sorted_emotions
 
 
-class GoEmotions(TextDatasetWithPriors):
+class GoEmotions(TextDataset):
     """Plain text dataset for `GoEmotions`. Class doesn't
     use from_namespace decorator, so it can be used for inheritance.
 
     Attributes:
-        Check `TextDatasetWithPriors` for attributes.
+        Check `TextDataset` for attributes.
     """
 
     multilabel = True
@@ -96,7 +96,7 @@ class GoEmotions(TextDatasetWithPriors):
 
     @staticmethod
     def argparse_args() -> dict[str, dict[str, Any]]:
-        args = TextDatasetWithPriors.argparse_args() | dict(
+        args = TextDataset.argparse_args() | dict(
             emotion_clustering_json=dict(
                 type=str,
                 help="JSON file with clustering of emotions",
@@ -109,7 +109,7 @@ class GoEmotions(TextDatasetWithPriors):
 
         Args:
             emotion_clustering_json: JSON file with clustering of emotions.
-            Check `TextDatasetWithPriors` for other arguments.
+            Check `TextDataset` for other arguments.
         """
         self.emotion_clustering_json = emotion_clustering_json
         super().__init__(*args, **kwargs)
@@ -236,12 +236,12 @@ class GoEmotions(TextDatasetWithPriors):
         return annotations, emotions
 
 
-class MFRC(TextDatasetWithPriors):
+class MFRC(TextDataset):
     """Plain text dataset for `MFRC`. Class doesn't
     use from_namespace decorator, so it can be used for inheritance.
 
     Attributes:
-        Check `TextDatasetWithPriors` for attributes.
+        Check `TextDataset` for attributes.
     """
 
     multilabel = True
@@ -313,12 +313,12 @@ class MFRC(TextDatasetWithPriors):
         return annotations, label_set
 
 
-class MMLUPro(TextDatasetWithPriors):
+class MMLUPro(TextDataset):
     """Plain text dataset for `MMLU-Pro`. Class doesn't
     use from_namespace decorator, so it can be used for inheritance.
 
     Attributes:
-        Check `TextDatasetWithPriors` for attributes.
+        Check `TextDataset` for attributes.
     """
 
     multilabel = False
@@ -328,7 +328,7 @@ class MMLUPro(TextDatasetWithPriors):
 
     @staticmethod
     def argparse_args() -> dict[str, dict[str, Any]]:
-        args = TextDatasetWithPriors.argparse_args() | dict(
+        args = TextDataset.argparse_args() | dict(
             delimiter=dict(
                 type=str,
                 default="\n",
@@ -374,7 +374,7 @@ class MMLUPro(TextDatasetWithPriors):
         return annotations, [chr(ord('A') + i) for i in range(max_answers)]
 
 
-class Boxes(TextDatasetWithPriors):
+class Boxes(TextDataset):
     """Plain text dataset for `Boxes`. Class doesn't
     use from_namespace decorator, so it can be used for inheritance."""
 
@@ -385,7 +385,7 @@ class Boxes(TextDatasetWithPriors):
 
     @staticmethod
     def argparse_args():
-        return TextDatasetWithPriors.argparse_args() | dict(
+        return TextDataset.argparse_args() | dict(
             subset=dict(
                 type=str,
                 choices=[
@@ -458,13 +458,13 @@ class Boxes(TextDatasetWithPriors):
         return annotations, all_items
 
 
-class MSPPodcast(TextDatasetWithPriors):
+class MSPPodcast(TextDataset):
     """Plain text dataset for `MSP Podcast`. Class doesn't
     use from_namespace decorator, so it can be used for inheritance."""
 
     @staticmethod
     def argparse_args():
-        return TextDatasetWithPriors.argparse_args() | dict(
+        return TextDataset.argparse_args() | dict(
             multilabel=dict(
                 action="store_true",
                 help="whether to load as multilabel",
@@ -620,7 +620,7 @@ class MSPPodcast(TextDatasetWithPriors):
         return annotations, label_set
 
 
-class QueerReclaimLex(TextDatasetWithPriors):
+class QueerReclaimLex(TextDataset):
     """Plain text dataset for `QueerReclaimLex`. Class doesn't
     use from_namespace decorator, so it can be used for inheritance."""
 
@@ -639,7 +639,7 @@ class QueerReclaimLex(TextDatasetWithPriors):
 
     @staticmethod
     def argparse_args():
-        return TextDatasetWithPriors.argparse_args() | dict(
+        return TextDataset.argparse_args() | dict(
             type=dict(
                 type=str,
                 choices=["in", "out", "both"],
@@ -769,7 +769,7 @@ class QueerReclaimLex(TextDatasetWithPriors):
         return annotations, label_set
 
 
-class Hatexplain(TextDatasetWithPriors):
+class Hatexplain(TextDataset):
     """Plain text dataset for `Hatexplain`. Class doesn't
     use from_namespace decorator, so it can be used for inheritance."""
 
@@ -780,7 +780,7 @@ class Hatexplain(TextDatasetWithPriors):
 
     @staticmethod
     def argparse_args():
-        args = TextDatasetWithPriors.argparse_args()
+        args = TextDataset.argparse_args()
         del args["root_dir"]
         return args
 
@@ -823,7 +823,7 @@ class Hatexplain(TextDatasetWithPriors):
         return annotations, ["hate", "normal", "offensive"]
 
 
-class TREC(TextDatasetWithPriors):
+class TREC(TextDataset):
     multilabel = False
     annotator_labels = False
     name = "Text REtrieval Conference"
@@ -831,7 +831,7 @@ class TREC(TextDatasetWithPriors):
 
     @staticmethod
     def argparse_args():
-        args = TextDatasetWithPriors.argparse_args()
+        args = TextDataset.argparse_args()
         del args["root_dir"]
         return args
 

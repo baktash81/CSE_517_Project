@@ -34,7 +34,7 @@ echo Using VLLM
     python scripts/prob_distr/vllm_prob_distr.py \
         MFRC \
         --distribution $1 \
-        --root-dir /data1/chochlak/mfrc \
+        --root-dir datasets/mfrc \
         --train-split train \
         --test-split dev test \
         --system ' ' \
@@ -59,7 +59,7 @@ echo Using HuggingFace
     python scripts/prob_distr/llm_prob_distr.py \
         MFRC \
         --distribution $1 \
-        --root-dir /data1/chochlak/mfrc \
+        --root-dir datasets/mfrc \
         --train-split train \
         --test-split dev test \
         --system ' ' \
