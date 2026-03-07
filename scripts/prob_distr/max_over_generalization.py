@@ -10,7 +10,7 @@ from distribution_estimation import load_data_from_yaml
 
 def save_yaml(data, file_path):
     with open(file_path, 'w') as file:
-        yaml.dump(data, file, default_flow_style=False)
+        yaml.dump(data, file, sort_keys=False)
 
 def calculate_max_over_generations(sample_data):
     """
@@ -45,11 +45,10 @@ def calculate_paper_metrics(max_distributions, experiment_data):
     all_gts_binary = []
 
     first_example = next(iter(max_distributions.values()))
-    label_set = sorted(list(first_example['max_over_generations_scores'].keys()))
+    label_set = sorted(list(first_example.keys()))
     
     for example_id, max_scores in max_distributions.items():
         datum = experiment_data[example_id]
-        max_scores = max_scores['max_over_generations_scores']
 
         # Ground truth labels from the YAML
         gt_labels = datum.get('test_gt', [])
@@ -93,10 +92,10 @@ def calculate_paper_metrics(max_distributions, experiment_data):
     macro_f1 = f1_score(all_gts_array, all_preds_array, average='macro', zero_division=0)             # macro: average of F1 for each class
     
     return {
-        "Mean_NLL": np.mean(nlls),
-        "Mean_L1_Distance": np.mean(l1_distances),
-        "Micro_F1": micro_f1,
-        "Macro_F1": macro_f1
+        "Mean_NLL": float(np.mean(nlls)),
+        "Mean_L1_Distance": float(np.mean(l1_distances)),
+        "Micro_F1": float(micro_f1),
+        "Macro_F1": float(macro_f1)
     }
 
 def main():
@@ -110,22 +109,23 @@ def main():
     yaml_file_path = os.path.join(args.folder_path, args.input_yaml)
     data = load_data_from_yaml(yaml_file_path)
 
-    output_data = {}
+    max_distr_data = {}
     # Calculate max-over-generations distributions for each sample
     print("--- Calculating max-over-generations distributions ---")
     for sample_key, sample_data in data.items():
-        max_distributions = calculate_max_over_generations(sample_data)
+        max_distr_data[sample_key] = calculate_max_over_generations(sample_data)
         
-        output_data[sample_key] = {
-            "max_over_generations_scores": max_distributions
-        }
     # Calculate alignment metrics from the paper
-    metrics = calculate_paper_metrics(output_data, data)
+    metrics = calculate_paper_metrics(max_distr_data, data)
     print("--- Distribution Alignment Metrics ---")
     for metric, value in metrics.items():
         print(f"{metric}: {value:.4f}")
 
-    
+    output_data = {
+        'metrics': metrics,
+        'max_over_generations_distributions': max_distr_data,
+    }
+
     output_file_path = os.path.join(args.folder_path, args.output_yaml)
     save_yaml(output_data, output_file_path)
     print(f"\nSaved new distributions and metrics to {output_file_path}")
