@@ -3,24 +3,47 @@ import os
 import numpy as np
 
 import sys
-sys.path.append('scripts/prob_distr')
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+sys.path.insert(0, SCRIPT_DIR)
 
 import matplotlib.pyplot as plt
 
 from distribution_estimation import load_data_from_yaml
 
 def get_graph_probs(data):
-    
+    """Fraction of examples with >1 predicted label. Supports ratio-experiment IDs (ratio_0.0, ...) or baseline IDs (no ratio)."""
     ratios = ['ratio_0.0', 'ratio_0.2', 'ratio_0.4', 'ratio_0.6', 'ratio_0.8', 'ratio_1.0']
-    
+
     is_multilabel = [0] * len(ratios)
+    ratio_counts = [0] * len(ratios)
+    baseline_multilabel = 0
+    baseline_total = 0
+
     for example_id, example in data.items():
+        n_labels = max(len(example.get('test_all_scores') or []), len(example.get('test_preds') or []))
+        is_multi = 1 if n_labels > 1 else 0
+
+        matched_ratio = False
         for i, ratio in enumerate(ratios):
             if ratio in example_id:
-                is_multilabel[i] += 1 if max(len(example['test_all_scores']), len(example['test_preds'])) > 1 else 0
-                # is_multilabel[i] += 1 if len(example['test_preds']) > 1 else 0
+                ratio_counts[i] += 1
+                is_multilabel[i] += is_multi
+                matched_ratio = True
+                break
+        if not matched_ratio:
+            baseline_total += 1
+            baseline_multilabel += is_multi
 
-    return [count / (len(data) / len(ratios)) for count in is_multilabel]                
+    # If we have ratio-experiment data, return per-ratio fractions
+    if sum(ratio_counts) > 0:
+        return [
+            (is_multilabel[i] / ratio_counts[i]) if ratio_counts[i] > 0 else 0.0
+            for i in range(len(ratios))
+        ]
+    # Baseline data (no ratio in any example_id): one fraction for all x positions
+    frac = (baseline_multilabel / baseline_total) if baseline_total > 0 else 0.0
+    return [frac] * len(ratios)                
                 
 def plot_multilabel_icl(yaml_files, save_path, color='blue'):
     
@@ -118,7 +141,8 @@ def plot_multilabel_icl(yaml_files, save_path, color='blue'):
               )
     
     plt.tight_layout()
-    
+
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
     plt.savefig(save_path)
     plt.close()
     
@@ -133,18 +157,17 @@ if __name__ == '__main__':
     
     models = [
         # 'meta-llama--Llama-3.2-1B-Instruct_0',
-        'meta-llama--Llama-3.1-8B-Instruct_1',
+        'meta-llama--Llama-3.1-8B_0',
         # 'meta-llama--Llama-3.3-70B-Instruct_0',
         # 'Qwen--Qwen2.5-7B-Instruct_0',
     ]
     
     yaml_files = []
-    
     for dataset in datasets:
         for model in models:
-            yaml_file = f'logs/{dataset}/main_test_set/baseline/{model}/indexed_metrics.yml'
+            yaml_file = os.path.join(PROJECT_ROOT, 'logs', dataset, 'main_test_set', 'baseline', model, 'indexed_metrics.yml')
             if os.path.exists(yaml_file):
                 yaml_files.append(yaml_file)
-            
-    
-    plot_multilabel_icl(yaml_files, save_path='scripts/prob_distr/figures/multilabel_ICL.pdf')
+
+    save_path = os.path.join(PROJECT_ROOT, 'scripts', 'prob_distr', 'figures', 'multilabel_ICL.pdf')
+    plot_multilabel_icl(yaml_files, save_path=save_path)
