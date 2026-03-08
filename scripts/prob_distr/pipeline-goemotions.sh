@@ -22,6 +22,15 @@ id_file=prob_distr_ids/GoEmotions/$id_list.txt
 
 seed=${5:-0}
 
+id_file_args=""
+if [ -n "$id_list" ]; then
+    id_file=prob_distr_ids/GoEmotions/$id_list.txt
+    id_file_args="--test-ids-filename $id_file"
+    alt_name="$id_list/{distribution}/{model_name_or_path}"
+else
+    alt_name="full_dataset/{distribution}/{model_name_or_path}"
+fi
+
 echo Using model $model
 echo Evaluating distribution type $1
 echo Testing on IDs in $id_file
@@ -35,8 +44,8 @@ if [ "$5" == "vllm" ]; then
         --distribution $1 \
         --root-dir datasets/goemotions \
         --emotion-clustering-json datasets/goemotions/emotion_clustering.json \
-        --train-split train \
-        --test-split dev \
+        --train-split dev \
+        --test-split train \
         --system ' ' \
         --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Output exactly these emotions and no others.\n' \
         --incontext $'Input: {text}\n{label}\n' \
@@ -51,7 +60,7 @@ if [ "$5" == "vllm" ]; then
         --sentence-model all-mpnet-base-v2 \
         --seed $seed \
         --shot 10 \
-        --alternative $id_list/{distribution}/{model_name_or_path} \
+        --alternative $alt_name \
         --test-ids-filename $id_file
 
 else
@@ -62,8 +71,8 @@ else
         --distribution $1 \
         --root-dir datasets/goemotions \
         --emotion-clustering-json datasets/goemotions/emotion_clustering.json \
-        --train-split train \
-        --test-split dev \
+        --train-split dev \
+        --test-split train \
         --system ' ' \
         --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Output exactly these emotions and no others.\n' \
         --incontext $'Input: {text}\n{label}\n' \
@@ -79,7 +88,7 @@ else
         --sentence-model all-mpnet-base-v2 \
         --seed $seed \
         --shot 10 \
-        --alternative $id_list/{distribution}/{model_name_or_path} \
+        --alternative $alt_name \
         --test-ids-filename $id_file
 
 fi

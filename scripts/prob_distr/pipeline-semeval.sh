@@ -26,7 +26,14 @@ echo Evaluating distribution type $1
 echo Testing on IDs in $id_file
 echo Running on GPU $3
 
-
+id_file_args=""
+if [ -n "$id_list" ]; then
+    id_file=prob_distr_ids/SemEval/$id_list.txt
+    id_file_args="--test-ids-filename $id_file"
+    alt_name="$id_list/{distribution}/{model_name_or_path}"
+else
+    alt_name="full_dataset/{distribution}/{model_name_or_path}"
+fi
 
 
 if [ "$5" == "vllm" ]; then
@@ -37,8 +44,8 @@ echo Using VLLM
         --distribution $1 \
         --root-dir datasets/semeval2018task1 \
         --language English \
-        --train-split train \
-        --test-split dev \
+        --train-split dev \
+        --test-split train \
         --system ' ' \
         --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}.\n' \
         --incontext $'Input: {text}\n{label}\n' \
@@ -50,7 +57,7 @@ echo Using VLLM
         --text-preprocessor false \
         --sampling-strategy multilabel \
         --trust-remote-code \
-        --alternative $id_list/{distribution}/{model_name_or_path} \
+        --alternative $alt_name \
         --shot 10 \
         --seed $seed \
         --test-ids-filename $id_file
@@ -62,8 +69,8 @@ echo Using HuggingFace
         SemEval \
         --distribution $1 \
         --root-dir datasets/semeval2018task1 \
-        --train-split train \
-        --test-split dev \
+        --train-split dev \
+        --test-split train \
         --system ' ' \
         --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}.\n' \
         --incontext $'Input: {text}\n{label}\n' \
@@ -76,7 +83,7 @@ echo Using HuggingFace
         --load-in-4bit \
         --trust-remote-code \
         --sampling-strategy multilabel \
-        --alternative $id_list/{distribution}/{model_name_or_path} \
+        --alternative $alt_name \
         --shot 10 \
         --seed $seed  \
         --test-ids-filename $id_file

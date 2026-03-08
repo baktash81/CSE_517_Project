@@ -26,7 +26,14 @@ echo Testing on IDs in $id_file
 echo Running on GPU $3
 
 seed=${5:-0}
-
+id_file_args=""
+if [ -n "$id_list" ]; then
+    id_file=prob_distr_ids/MFRC/$id_list.txt
+    id_file_args="--test-ids-filename $id_file"
+    alt_name="$id_list/{distribution}/{model_name_or_path}"
+else
+    alt_name="full_dataset/{distribution}/{model_name_or_path}"
+fi
 
 if [ "$5" == "vllm" ]; then
 echo Using VLLM
@@ -35,8 +42,8 @@ echo Using VLLM
         MFRC \
         --distribution $1 \
         --root-dir datasets/mfrc \
-        --train-split train \
-        --test-split dev test \
+        --train-split dev \
+        --test-split train \
         --system ' ' \
         --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}.\n' \
         --incontext $'Input: {text}\nMoral foundation(s): {label}\n' \
@@ -48,7 +55,7 @@ echo Using VLLM
         --text-preprocessor false \
         --sampling-strategy multilabel \
         --trust-remote-code \
-        --alternative $id_list/{distribution}/{model_name_or_path} \
+        --alternative $alt_name \
         --shot 10 \
         --seed $seed \
         --test-ids-filename $id_file
@@ -60,8 +67,8 @@ echo Using HuggingFace
         MFRC \
         --distribution $1 \
         --root-dir datasets/mfrc \
-        --train-split train \
-        --test-split dev test \
+        --train-split dev \
+        --test-split train \
         --system ' ' \
         --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}.\n' \
         --incontext $'Input: {text}\nMoral foundation(s): {label}\n' \
@@ -74,7 +81,7 @@ echo Using HuggingFace
         --load-in-4bit \
         --trust-remote-code \
         --sampling-strategy multilabel \
-        --alternative $id_list/{distribution}/{model_name_or_path} \
+        --alternative $alt_name \
         --shot 10 \
         --seed $seed \
         --test-ids-filename $id_file
