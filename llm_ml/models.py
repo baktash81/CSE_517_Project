@@ -52,7 +52,7 @@ class vLMForGeneration(nn.Module):
             ),
             quantization=dict(
                 choices=["gptq", "awq", "fp8"],
-                default="fp8",
+                default=None,
                 type=str,
                 help="quantization to use for model",
             ),
@@ -63,7 +63,7 @@ class vLMForGeneration(nn.Module):
         model_name_or_path: str,
         max_new_tokens: int | None = None,
         trust_remote_code: bool = False,
-        quantization: Literal["gptq", "awq", "fp8"] = "fp8",
+        quantization: Literal["gptq", "awq", "fp8"] | None = None,
         logprobs: int | None = None,
         *args,
         **kwargs,
@@ -82,12 +82,22 @@ class vLMForGeneration(nn.Module):
 
         super().__init__()
 
-        self.lm = LLM(
-            model_name_or_path,
+        num_gpus = len(os.environ.get("CUDA_VISIBLE_DEVICES", "0").split(","))
+
+        llm_kwargs = dict(
+            model=model_name_or_path,
             trust_remote_code=trust_remote_code,
-            quantization=quantization,
-            max_logprobs=logprobs,
+            tensor_parallel_size=num_gpus,
+            gpu_memory_utilization=0.95,
+            max_model_len=8192,
+            enforce_eager=True,
         )
+        if quantization is not None:
+            llm_kwargs["quantization"] = quantization
+        if logprobs is not None:
+            llm_kwargs["max_logprobs"] = logprobs
+
+        self.lm = LLM(**llm_kwargs)
         self.sampling_params = SamplingParams(
             temperature=0,
             max_tokens=max_new_tokens,
@@ -179,6 +189,9 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
                 their tokenization the values.
             args, kwargs: arguments to pass to vLMForGeneration.
         """
+        # Request logprobs for label_first_token_ids / distribution estimation
+        n_labels = len(labels)
+        kwargs.setdefault("logprobs", max(n_labels, 16))
         super().__init__(*args, **kwargs)
         self.labels = labels
         self.label_first_token_ids = None
@@ -241,6 +254,7 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
             first_label_inds = [min(i) for i in all_first_label_inds]
 
             # get the scores for all labels from the first token that is a label
+            # o can be None when vLLM logprobs are not requested (max_logprobs not set)
             out["scores"] = [
                 (
                     torch.tensor(
@@ -249,7 +263,7 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
                             for j in self.label_first_token_ids.values()
                         ]
                     )
-                    if i < len(o)
+                    if o is not None and i < len(o)
                     # in case of multilabel, label_first_token_ids also has None
                     else torch.zeros(
                         max(len(self.labels), len(self.label_first_token_ids))
@@ -349,17 +363,25 @@ class LMForGeneration(nn.Module):
 
         super().__init__()
 
+        # Use device_map="auto" when device is None or "auto" so large models
+        # (e.g. 70B) load directly onto multiple GPUs. Otherwise ember's
+        # model.to(device) would try to move the entire model to one GPU → OOM.
+        device_map = "auto" if (device is None or device == "auto") else device
+
         load_kwargs = dict(
             torch_dtype=(
                 getattr(torch, model_dtype)
                 if isinstance(model_dtype, str)
                 else model_dtype
             ),
-            load_in_8bit=load_in_8bit,
-            load_in_4bit=load_in_4bit,
-            device_map=device,
+            device_map=device_map,
             trust_remote_code=trust_remote_code,
         )
+
+        if load_in_8bit:
+            load_kwargs["load_in_8bit"] = True
+        if load_in_4bit:
+            load_kwargs["load_in_4bit"] = True
 
         try:
             self.lm = AutoLigerKernelForCausalLM.from_pretrained(
