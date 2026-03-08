@@ -68,4 +68,9 @@ CONSTANT_ARGS = dict(
         metadata=dict(disable_comparison=True),
         searchable=True,
     ),
+    device=dict(
+        type=str,
+        default="auto",
+        help="device for model (use 'auto' for multi-GPU / device_map)",
+    ),
 )
