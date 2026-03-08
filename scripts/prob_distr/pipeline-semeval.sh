@@ -13,18 +13,11 @@ model=meta-llama/Llama-2-7b-chat-hf
 
 # override from command line, if provided
 model=${4:-$model}
-seed=${5:-0}
+seed=${6:-0}
 
 export CUDA_VISIBLE_DEVICES="$3"
 
 id_list=$2
-
-id_file=prob_distr_ids/SemEval/$id_list.txt
-
-echo Using model $model
-echo Evaluating distribution type $1
-echo Testing on IDs in $id_file
-echo Running on GPU $3
 
 id_file_args=""
 if [ -n "$id_list" ]; then
@@ -35,6 +28,10 @@ else
     alt_name="full_dataset/{distribution}/{model_name_or_path}"
 fi
 
+echo Using model $model
+echo Evaluating distribution type $1
+echo Testing on IDs: ${id_file:-"(full dataset)"}
+echo Running on GPU $3
 
 if [ "$5" == "vllm" ]; then
 echo Using VLLM
@@ -51,7 +48,7 @@ echo Using VLLM
         --incontext $'Input: {text}\n{label}\n' \
         --model-name-or-path $model \
         --max-new-tokens 25 \
-        --accelerate \
+        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
@@ -60,7 +57,7 @@ echo Using VLLM
         --alternative $alt_name \
         --shot 10 \
         --seed $seed \
-        --test-ids-filename $id_file
+        $id_file_args
 
 else
 echo Using HuggingFace
@@ -76,16 +73,16 @@ echo Using HuggingFace
         --incontext $'Input: {text}\n{label}\n' \
         --model-name-or-path $model \
         --max-new-tokens 25 \
+        --device auto \
         --accelerate \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
-        --load-in-4bit \
         --trust-remote-code \
         --sampling-strategy multilabel \
         --alternative $alt_name \
         --shot 10 \
-        --seed $seed  \
-        --test-ids-filename $id_file
+        --seed $seed \
+        $id_file_args
 
 fi

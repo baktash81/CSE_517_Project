@@ -18,9 +18,16 @@ export CUDA_VISIBLE_DEVICES="$3"
 
 id_list=$2
 
-id_file=prob_distr_ids/GoEmotions/$id_list.txt
+seed=${6:-0}
 
-seed=${5:-0}
+id_file_args=""
+if [ -n "$id_list" ]; then
+    id_file=prob_distr_ids/GoEmotions/$id_list.txt
+    id_file_args="--test-ids-filename $id_file"
+    alt_name="$id_list/{distribution}/{model_name_or_path}"
+else
+    alt_name="full_dataset/{distribution}/{model_name_or_path}"
+fi
 
 id_file_args=""
 if [ -n "$id_list" ]; then
@@ -33,7 +40,7 @@ fi
 
 echo Using model $model
 echo Evaluating distribution type $1
-echo Testing on IDs in $id_file
+echo Testing on IDs: ${id_file:-"(full dataset)"}
 echo Running on GPU $3
 
 if [ "$5" == "vllm" ]; then
@@ -52,7 +59,7 @@ if [ "$5" == "vllm" ]; then
         --model-name-or-path $model \
         --label-format json \
         --max-new-tokens 18 \
-        --accelerate \
+        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
@@ -61,7 +68,7 @@ if [ "$5" == "vllm" ]; then
         --seed $seed \
         --shot 10 \
         --alternative $alt_name \
-        --test-ids-filename $id_file
+        $id_file_args
 
 else
     echo Using HuggingFace
@@ -79,16 +86,16 @@ else
         --model-name-or-path $model \
         --label-format json \
         --max-new-tokens 18 \
+        --device auto \
         --accelerate \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
-        --load-in-4bit \
         --sampling-strategy multilabel \
         --sentence-model all-mpnet-base-v2 \
         --seed $seed \
         --shot 10 \
         --alternative $alt_name \
-        --test-ids-filename $id_file
+        $id_file_args
 
 fi
