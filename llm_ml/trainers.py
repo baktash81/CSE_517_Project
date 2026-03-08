@@ -646,7 +646,7 @@ class DistributionEstimator(BaseTrainer):
 
         super().__init__(*args, **kwargs)
 
-        self.label_similarity = self.any_dataset.any_dataset.label_similarity
+        self.label_similarity = getattr(self.any_dataset.any_dataset, 'label_similarity', None)
         
     def run_init(self):
         initial_label_tokens = self.test_dataset.get_initial_label_tokens()

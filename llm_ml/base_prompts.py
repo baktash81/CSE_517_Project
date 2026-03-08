@@ -577,7 +577,7 @@ class ExampleSamplerMixin:
     def _multilabel_sample(
         self,
         query: dict[str, str | torch.Tensor],
-        dataset: TextDatasetWithPriors,
+        dataset: TextDataset,
         shot: int,
         ratio: float,
     ) -> list[dict[str, str | torch.Tensor]]:
