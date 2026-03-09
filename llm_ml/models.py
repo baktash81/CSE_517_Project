@@ -349,17 +349,37 @@ class LMForGeneration(nn.Module):
 
         super().__init__()
 
-        load_kwargs = dict(
-            torch_dtype=(
-                getattr(torch, model_dtype)
-                if isinstance(model_dtype, str)
-                else model_dtype
-            ),
-            load_in_8bit=load_in_8bit,
-            load_in_4bit=load_in_4bit,
-            device_map=device,
-            trust_remote_code=trust_remote_code,
+        dtype = (
+            getattr(torch, model_dtype)
+            if isinstance(model_dtype, str)
+            else model_dtype
         )
+        # Use bfloat16 when quantizing to reduce GPU memory (float32 doubles buffer usage)
+        if load_in_4bit or load_in_8bit:
+            dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
+
+        use_quant = load_in_8bit or load_in_4bit
+        load_kwargs = dict(
+            torch_dtype=dtype,
+            device_map=device or ("auto" if use_quant else None),
+            trust_remote_code=trust_remote_code,
+            low_cpu_mem_usage=True,
+        )
+        # Cap GPU memory when quantizing to avoid OOM during load (leave ~2GiB headroom)
+        if use_quant and device is None and torch.cuda.is_available():
+            free_gb = torch.cuda.get_device_properties(0).total_memory / (1024**3)
+            load_kwargs["max_memory"] = {0: f"{max(1, int(free_gb) - 2)}GiB", "cpu": "32GiB"}
+        if load_in_4bit:
+            load_kwargs["quantization_config"] = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_use_double_quant=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_compute_dtype=dtype,
+            )
+        elif load_in_8bit:
+            load_kwargs["quantization_config"] = BitsAndBytesConfig(
+                load_in_8bit=True,
+            )
 
         try:
             self.lm = AutoLigerKernelForCausalLM.from_pretrained(
@@ -625,6 +645,7 @@ class LMForGeneration(nn.Module):
 
         # remove reasoning
         if prefix_cutoff_str is not None and self.tokenizer is not None:
+            full_reply_texts = list(out["text"])
             prefix_cutoff_inds = []
             for o in out["text"]:
                 i = o.find(prefix_cutoff_str)
@@ -633,28 +654,54 @@ class LMForGeneration(nn.Module):
                 else:
                     prefix_cutoff_inds.append(i)
 
-            out["prefix_text"] = [
+            prefix_text = [
                 o[:i] for o, i in zip(out["text"], prefix_cutoff_inds)
             ]
-            out["text"] = [
+            label_text = [
                 o[i:].strip() for o, i in zip(out["text"], prefix_cutoff_inds)
             ]
-            out["ids"] = [
+            # If model output is "label_line\n" (label first, then newline), the
+            # "label" part is empty; use the prefix as the label part for scoring.
+            for j, lt in enumerate(label_text):
+                if not lt and prefix_text[j]:
+                    prefix_text[j], label_text[j] = label_text[j], prefix_text[j]
+            out["prefix_text"] = prefix_text
+            out["text"] = label_text
+            # Tokenize label part for ids and for length
+            label_ids = [
                 self.tokenizer(
                     o, return_tensors="pt", add_special_tokens=False
                 )["input_ids"][0]
                 for o in out["text"]
             ]
+            out["ids"] = label_ids
             out["prefix_ids"] = [
                 self.tokenizer(
                     o, return_tensors="pt", add_special_tokens=False
                 )["input_ids"][0]
                 for o in out["prefix_text"]
             ]
-
-            out["scores"] = [
-                s[: len(i)] for s, i in zip(out["scores"], out["ids"])
-            ]
+            # Use scores from the full reply that correspond to the label part
+            # (not the first len(label) tokens, which would be reasoning).
+            new_scores = []
+            for j, (s, label_id) in enumerate(zip(out["scores"], label_ids)):
+                n = len(label_id)
+                start_idx = string_overlap_idx_in_token_space(
+                    self.tokenizer, full_reply_texts[j], out["text"][j]
+                )
+                if start_idx >= s.shape[0]:
+                    start_idx = 0
+                end_idx = min(start_idx + n, s.shape[0])
+                slc = s[start_idx:end_idx]
+                if slc.shape[0] < n:
+                    pad = torch.zeros(
+                        (n - slc.shape[0], slc.shape[1]),
+                        device=slc.device,
+                        dtype=slc.dtype,
+                    )
+                    slc = torch.cat([slc, pad], dim=0)
+                new_scores.append(slc)
+            out["scores"] = new_scores
 
         elif prefix_cutoff_ids is not None:
             warnings.warn(

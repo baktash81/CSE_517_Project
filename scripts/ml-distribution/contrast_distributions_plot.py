@@ -86,8 +86,13 @@ def main():
         }
 
         for k, v in metrics.items():
-            scores: list[dict[str, float]] = v["test_scores"]
-            preds = v["test_preds"]
+            # test_all_scores: list of per-position score dicts; test_scores: single dict
+            raw = v.get("test_all_scores") or v.get("test_scores")
+            if isinstance(raw, dict):
+                scores = [raw]
+            else:
+                scores = raw if raw else []
+            preds = v.get("test_preds", [])
             i = 0
             while i < len(scores):
                 ith_label_scores = scores[i]
