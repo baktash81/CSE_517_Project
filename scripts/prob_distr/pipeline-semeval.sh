@@ -5,6 +5,11 @@ do
     esac
 done
 
+# Run from project root so paths like scripts/prob_distr/llm_prob_distr.py resolve
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+cd "$PROJECT_ROOT"
+
 # model=meta-llama/Llama-2-13b-chat-hf
 model=meta-llama/Llama-2-7b-chat-hf
 # model=meta-llama/Llama-3.2-1B
@@ -52,7 +57,7 @@ echo Using VLLM
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
-        --sampling-strategy multilabel \
+        --sampling-strategy uniform \
         --trust-remote-code \
         --alternative $alt_name \
         --shot 10 \

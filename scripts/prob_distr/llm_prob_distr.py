@@ -122,6 +122,7 @@ def main():
     grid_args, metadata = parse_args_and_metadata(
         [
             PromptDataset,
+            ICLMultiLabelRatioDataset,
             LMForClassification,
             DistributionEstimator,
             ExperimentManager,

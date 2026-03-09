@@ -156,9 +156,11 @@ class PromptEvaluator(BaseTrainer):
                 "{cot}"
             )
             eidx = self.any_dataset.incontext_prompt.index("{label}")
-            prefix_cutoff_str = self.any_dataset.incontext_prompt[
-                sidx:eidx
-            ].strip()
+            prefix_cutoff_str = self.any_dataset.incontext_prompt[sidx:eidx]
+            # Keep e.g. "\n" so we take only the label line; .strip() would make it ""
+            # and str.find("") returns 0, so we would not cut at the newline.
+            if not prefix_cutoff_str:
+                prefix_cutoff_str = None
         else:
             prefix_cutoff_str = None
 
@@ -388,9 +390,11 @@ class APIPromptEvaluator(PromptEvaluator):
                 "{cot}"
             )
             eidx = self.any_dataset.incontext_prompt.index("{label}")
-            prefix_cutoff_str = self.any_dataset.incontext_prompt[
-                sidx:eidx
-            ].strip()
+            prefix_cutoff_str = self.any_dataset.incontext_prompt[sidx:eidx]
+            # Keep e.g. "\n" so we take only the label line; .strip() would make it ""
+            # and str.find("") returns 0, so we would not cut at the newline.
+            if not prefix_cutoff_str:
+                prefix_cutoff_str = None
         else:
             prefix_cutoff_str = None
 
@@ -760,9 +764,11 @@ class DistributionEstimator(BaseTrainer):
                 "{cot}"
             )
             eidx = self.any_dataset.incontext_prompt.index("{label}")
-            prefix_cutoff_str = self.any_dataset.incontext_prompt[
-                sidx:eidx
-            ].strip()
+            prefix_cutoff_str = self.any_dataset.incontext_prompt[sidx:eidx]
+            # Keep e.g. "\n" so we take only the label line; .strip() would make it ""
+            # and str.find("") returns 0, so we would not cut at the newline.
+            if not prefix_cutoff_str:
+                prefix_cutoff_str = None
         else:
             prefix_cutoff_str = None
 

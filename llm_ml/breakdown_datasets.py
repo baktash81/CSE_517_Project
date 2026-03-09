@@ -426,12 +426,26 @@ class ICLMultiLabelRatioDataset(TokenizationMixin, PromptBaseDataset):
         return (
             PromptBaseDataset.argparse_args()
             | TokenizationMixin.argparse_args()
+            | dict(
+                include_query_in_demos=dict(
+                    action="store_true",
+                    default=False,
+                    help="whether to include the query as a demo example",
+                ),
+                query_order=dict(
+                    type=int,
+                    default=0,
+                    help="position to insert query when include_query_in_demos (0=first)",
+                ),
+            )
         )
     
     @from_namespace
     def __init__(self, *args, **kwargs):
+        self.include_query_in_demos = kwargs.pop("include_query_in_demos", False)
+        self.query_order = kwargs.pop("query_order", 0)
         super().__init__(*args, **kwargs)
-        
+
         for i in range(6):
             example_prompt = self[i]
     
