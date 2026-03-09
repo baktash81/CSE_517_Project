@@ -124,12 +124,14 @@ def calculate_paper_metrics(max_distributions, experiment_data):
     # Calculate aggregate F1 (macro/micro)
     micro_f1 = f1_score(all_gts_array, all_preds_array, average='micro', zero_division=0)             # micro: all instances together
     macro_f1 = f1_score(all_gts_array, all_preds_array, average='macro', zero_division=0)             # macro: average of F1 for each class
+    example_f1 = f1_score(all_gts_array, all_preds_array, average='samples', zero_division=0) 
     
     return {
         "Mean_NLL": float(np.mean(nlls)),
         "Mean_L1_Distance": float(np.mean(l1_distances)),
         "Micro_F1": float(micro_f1),
-        "Macro_F1": float(macro_f1)
+        "Macro_F1": float(macro_f1),
+        "Example_F1": float(example_f1)
     }
 
 def process_experiment(input_yaml_path, output_yaml_path):
