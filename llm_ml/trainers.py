@@ -1037,25 +1037,6 @@ class DistributionEstimator(BaseTrainer):
         return aggregate_results, aggregate_info
 
 class vDistributionEstimator(DistributionEstimator):
-    def init_dataloader(self, dataset, train: bool, **kwargs):
-        """Return plain DataLoader without accelerator.prepare() so batches stay on CPU.
-
-        vLLM manages its own GPU memory; moving batch tensors to GPU causes OOM.
-        The model only needs text strings from the batch, not GPU tensors.
-        """
-        return DataLoader(
-            dataset,
-            batch_size=(
-                self.exp_manager.train_batch_size if train
-                else self.exp_manager.eval_batch_size
-            ),
-            collate_fn=getattr(dataset, "collate_fn", None),
-            num_workers=getattr(
-                self.exp_manager, "dataloader_num_workers", 0
-            ),
-            **kwargs,
-        )
-
     def input_batch_args(self, batch):
         inp = super().input_batch_args(batch)
         return dict(

@@ -52,7 +52,7 @@ class vLMForGeneration(nn.Module):
             ),
             quantization=dict(
                 choices=["gptq", "awq", "fp8"],
-                default=None,
+                default="fp8",
                 type=str,
                 help="quantization to use for model",
             ),
@@ -63,7 +63,7 @@ class vLMForGeneration(nn.Module):
         model_name_or_path: str,
         max_new_tokens: int | None = None,
         trust_remote_code: bool = False,
-        quantization: Literal["gptq", "awq", "fp8"] | None = None,
+        quantization: Literal["gptq", "awq", "fp8"] = "fp8",
         logprobs: int | None = None,
         *args,
         **kwargs,
@@ -82,22 +82,12 @@ class vLMForGeneration(nn.Module):
 
         super().__init__()
 
-        num_gpus = len(os.environ.get("CUDA_VISIBLE_DEVICES", "0").split(","))
-
-        llm_kwargs = dict(
-            model=model_name_or_path,
+        self.lm = LLM(
+            model_name_or_path,
             trust_remote_code=trust_remote_code,
-            tensor_parallel_size=num_gpus,
-            gpu_memory_utilization=0.95,
-            max_model_len=8192,
-            enforce_eager=True,
+            quantization=quantization,
+            max_logprobs=logprobs,
         )
-        if quantization is not None:
-            llm_kwargs["quantization"] = quantization
-        if logprobs is not None:
-            llm_kwargs["max_logprobs"] = logprobs
-
-        self.lm = LLM(**llm_kwargs)
         self.sampling_params = SamplingParams(
             temperature=0,
             max_tokens=max_new_tokens,
@@ -189,9 +179,6 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
                 their tokenization the values.
             args, kwargs: arguments to pass to vLMForGeneration.
         """
-        # Request logprobs for label_first_token_ids / distribution estimation
-        n_labels = len(labels)
-        kwargs.setdefault("logprobs", max(n_labels, 16))
         super().__init__(*args, **kwargs)
         self.labels = labels
         self.label_first_token_ids = None
@@ -254,7 +241,6 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
             first_label_inds = [min(i) for i in all_first_label_inds]
 
             # get the scores for all labels from the first token that is a label
-            # o can be None when vLLM logprobs are not requested (max_logprobs not set)
             out["scores"] = [
                 (
                     torch.tensor(
@@ -263,7 +249,7 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
                             for j in self.label_first_token_ids.values()
                         ]
                     )
-                    if o is not None and i < len(o)
+                    if i < len(o)
                     # in case of multilabel, label_first_token_ids also has None
                     else torch.zeros(
                         max(len(self.labels), len(self.label_first_token_ids))
@@ -363,19 +349,15 @@ class LMForGeneration(nn.Module):
 
         super().__init__()
 
-        dtype = (
-            getattr(torch, model_dtype)
-            if isinstance(model_dtype, str)
-            else model_dtype
-        )
-        # Use bfloat16 when quantizing to reduce GPU memory (float32 doubles buffer usage)
-        if load_in_4bit or load_in_8bit:
-            dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
-
-        use_quant = load_in_8bit or load_in_4bit
         load_kwargs = dict(
-            torch_dtype=dtype,
-            device_map=device or ("auto" if use_quant else None),
+            torch_dtype=(
+                getattr(torch, model_dtype)
+                if isinstance(model_dtype, str)
+                else model_dtype
+            ),
+            load_in_8bit=load_in_8bit,
+            load_in_4bit=load_in_4bit,
+            device_map=device,
             trust_remote_code=trust_remote_code,
             low_cpu_mem_usage=True,
         )
@@ -394,11 +376,6 @@ class LMForGeneration(nn.Module):
             load_kwargs["quantization_config"] = BitsAndBytesConfig(
                 load_in_8bit=True,
             )
-
-        if load_in_8bit:
-            load_kwargs["load_in_8bit"] = True
-        if load_in_4bit:
-            load_kwargs["load_in_4bit"] = True
 
         try:
             self.lm = AutoLigerKernelForCausalLM.from_pretrained(
