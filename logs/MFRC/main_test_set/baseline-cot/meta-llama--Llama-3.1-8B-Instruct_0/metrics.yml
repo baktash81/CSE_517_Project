@@ -1,0 +1,11 @@
+experiment_0:
+  description: ''
+  test_authority_f1: 0.30434782608695654
+  test_care_f1: 0.4444444444444444
+  test_equality_f1: 0.3841059602649007
+  test_jaccard_score: 0.33102310231023097
+  test_loyalty_f1: 0.288135593220339
+  test_macro_f1: 0.3274687709766598
+  test_micro_f1: 0.33532934131736525
+  test_proportionality_f1: 0.2857142857142857
+  test_purity_f1: 0.25806451612903225
