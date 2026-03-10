@@ -91,6 +91,7 @@ class vLMForGeneration(nn.Module):
             gpu_memory_utilization=0.95,
             max_model_len=8192,
             enforce_eager=True,
+            distributed_executor_backend="mp",
         )
         if quantization is not None:
             llm_kwargs["quantization"] = quantization
