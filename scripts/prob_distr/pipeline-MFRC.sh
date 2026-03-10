@@ -55,7 +55,6 @@ if [ "$5" == "vllm" ]; then
         --incontext $'Input: {text}\nMoral foundation(s): {label}\n' \
         --model-name-or-path $model \
         --max-new-tokens 18 \
-        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \

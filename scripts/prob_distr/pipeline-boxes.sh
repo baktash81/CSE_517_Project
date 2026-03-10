@@ -45,7 +45,6 @@ if [ "$5" == "vllm" ]; then
         --incontext ./configs/Boxes/incontext.txt \
         --model-name-or-path $model \
         --max-new-tokens 30 \
-        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \

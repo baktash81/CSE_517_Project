@@ -56,7 +56,6 @@ if [ "$5" == "vllm" ]; then
         --model-name-or-path $model \
         --label-format json \
         --max-new-tokens 18 \
-        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
