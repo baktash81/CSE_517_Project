@@ -18,8 +18,8 @@ def calculate_max_over_generations(sample_data):
     """
     
     # Iterate through examples (skipping metadata keys like 'description')
-    all_scores = sample_data['test_all_scores']
-    # if 'test_all_scores' not in sample_data, grab test_scores instead
+    all_scores = sample_data.get('test_all_scores')
+    # if 'test_all_scores' not in sample_data (e.g. non-CoT baseline), fall back to test_scores
     if not all_scores:
         return sample_data['test_scores']
     
