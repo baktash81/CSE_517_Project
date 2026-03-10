@@ -126,8 +126,9 @@ class vLMForGeneration(nn.Module):
         }
 
         if prefix_cutoff_str is not None:
+            full_texts = list(out["text"])
             prefix_cutoff_inds = []
-            for o in out["text"]:
+            for o in full_texts:
                 i = o.find(prefix_cutoff_str)
                 if i == -1:
                     prefix_cutoff_inds.append(len(o))
@@ -135,17 +136,20 @@ class vLMForGeneration(nn.Module):
                     prefix_cutoff_inds.append(i)
 
             out["prefix_text"] = [
-                o[:i] for o, i in zip(out["text"], prefix_cutoff_inds)
+                o[:i] for o, i in zip(full_texts, prefix_cutoff_inds)
             ]
             out["text"] = [
-                o[i:].strip() for o, i in zip(out["text"], prefix_cutoff_inds)
+                o[i:].strip() for o, i in zip(full_texts, prefix_cutoff_inds)
             ]
 
+            # Find where the label part starts in the full token sequence by
+            # locating label_text within the original full output. This mirrors
+            # the HF path and avoids searching inside the already-split text.
             prefix_cutoff_token_inds = [
                 string_overlap_idx_in_token_space(
-                    self.lm.get_tokenizer(), o, prefix_cutoff_str
+                    self.lm.get_tokenizer(), full_text, label_text
                 )
-                for o in out["text"]
+                for full_text, label_text in zip(full_texts, out["text"])
             ]
 
             out["ids"] = [

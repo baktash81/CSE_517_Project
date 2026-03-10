@@ -18,7 +18,8 @@ The instruction asks the model to reason step by step and then emit the label in
 
 **GoEmotions / SemEval:**
 ```
-Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let's think step by step about what emotions are present before classifying. After your reasoning, output exactly one line in this format: {"label": ["emotion1", "emotion2"]}.
+Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let's think step by step about what emotions are present before classifying. After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
 ```
 
 **MFRC:**
@@ -33,7 +34,7 @@ Input: {text}
 Reasoning:
 ```
 
-At test time the model continues from `Reasoning:`, generating its reasoning on one line, then a newline, then the label line. For example:
+At test time the model continues from `Reasoning:`, generating its reasoning, then the `Output:` line with the label. For example:
 
 ```
 Reasoning: The text expresses pain and shock. The speaker seems hurt and surprised by what they saw.
@@ -46,8 +47,8 @@ Output: {"label": ["sadness", "surprise"]}
 
 Label probability scores are extracted from the label line only, not the reasoning. The implementation works as follows:
 
-1. The incontext template `Input: {text}\nReasoning: {cot}\n{label}\n` defines `prefix_cutoff_str = "\n"` (the separator between `{cot}` and `{label}`).
-2. The model's full output is split at the first `\n`: everything before goes into `test_prefix_outs` (the reasoning), everything after into `test_outs` (the label line).
+1. The incontext template `Input: {text}\nReasoning: {cot}\nOutput: {label}\n` defines `prefix_cutoff_str = "\nOutput: "` (the separator between `{cot}` and `{label}`). This specific prefix avoids false splits on newlines within the reasoning chain.
+2. The model's full output is split at the first `\nOutput: `: everything before goes into `test_prefix_outs` (the reasoning), everything after into `test_outs` (the label line).
 3. `string_overlap_idx_in_token_space` locates the starting token index of the label line within the full generated token sequence.
 4. The score tensor is sliced from that index for the length of the label tokens, ensuring `test_scores` reflect the model's probability distribution over labels at the point where it writes the JSON—not during reasoning.
 5. `label_first_token_ids` then extracts the logprob of the first token of each label name from the label line scores and applies softmax to produce the final label distribution.
@@ -69,13 +70,13 @@ Key parameters compared to the baseline pipelines:
 | Parameter | Baseline | CoT |
 |-----------|----------|-----|
 | `--shot` | 10 | 0 |
-| `--max-new-tokens` | 18–25 | 200 |
+| `--max-new-tokens` | 18–25 | 500 |
 | instruction | direct classification | step-by-step + format constraint |
-| incontext | `Input: {text}\n{label}\n` | `Input: {text}\nReasoning: {cot}\n{label}\n` |
+| incontext | `Input: {text}\n{label}\n` | `Input: {text}\nReasoning: {cot}\nOutput: {label}\n` (GoEmotions/SemEval) or `Input: {text}\nReasoning: {cot}\nMoral foundation(s): {label}\n` (MFRC) |
 | model | `Llama-3.1-8B-Instruct` | `Llama-3.1-8B` (base) |
 | log path suffix | `baseline/` | `baseline-cot/` |
 
-`max_new_tokens=200` is used to provide enough room for the reasoning chain (~40–85 tokens) plus the label line (~10–20 tokens).
+`max_new_tokens=500` is used to provide enough room for the reasoning chain plus the label line, with headroom for more verbose outputs.
 
 ---
 
