@@ -68,4 +68,10 @@ CONSTANT_ARGS = dict(
         metadata=dict(disable_comparison=True),
         searchable=True,
     ),
+    debug_samples=dict(
+        type=int,
+        default=0,
+        help="If > 0, limit to this many samples and print input, prompt, and output for debugging",
+        metadata=dict(disable_comparison=True),
+    ),
 )

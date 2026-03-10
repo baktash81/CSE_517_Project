@@ -4,6 +4,22 @@ from legm.argparse_utils import parse_args_and_metadata
 import os
 import copy
 
+from torch.utils.data import Subset
+
+
+class DebugSubset(Subset):
+    """Subset that forwards attribute/method access to the underlying dataset."""
+
+    def __getattr__(self, name):
+        return getattr(self.dataset, name)
+
+    def get_initial_label_tokens(self):
+        return self.dataset.get_initial_label_tokens()
+
+    def get_tokenizer(self):
+        return self.dataset.get_tokenizer()
+
+
 from llm_ml import (
     PromptDataset,
     UnaryBreakdownDataset,
@@ -111,10 +127,17 @@ def loop(args, metadata):
             tokenizer=dataset.get_tokenizer(),
         )
 
+    debug_samples = getattr(args, "debug_samples", 0)
+    if debug_samples > 0:
+        n_samples = min(debug_samples, len(dataset))
+        dataset = DebugSubset(dataset, range(n_samples))
+        print(f"[DEBUG] Limiting to first {n_samples} samples")
+
     evaluator = DistributionEstimator(
         model=model, test_dataset=dataset, experiment_manager=exp_manager
     )
-    
+    evaluator.debug_samples = debug_samples
+
     evaluator.run()
 
 def main():

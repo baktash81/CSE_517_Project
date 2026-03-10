@@ -25,6 +25,7 @@ id_list=$2
 
 gpu_mem=${6:-0.95}
 seed=${7:-0}
+debug_samples=${8:-0}
 
 id_file_args=""
 if [ -n "$id_list" ]; then
@@ -64,6 +65,7 @@ if [ "$5" == "vllm" ]; then
         --shot 10 \
         --seed $seed \
         --gpu-memory-utilization $gpu_mem \
+        $([ "$debug_samples" -gt 0 ] && echo "--debug-samples $debug_samples") \
         $id_file_args
 
 else
@@ -90,6 +92,7 @@ else
         --alternative $alt_name \
         --shot 10 \
         --seed $seed \
+        $([ "$debug_samples" -gt 0 ] && echo "--debug-samples $debug_samples") \
         $id_file_args
 
 fi
