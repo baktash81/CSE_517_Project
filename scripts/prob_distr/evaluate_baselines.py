@@ -43,14 +43,14 @@ def calculate_compare_to_none(sample_data):
         scores = sample_data['test_all_scores'][0]
         
     p_none = scores.get('none', 1e-8)
+    max_p_other = max([v for k, v in scores.items() if k != 'none'] + [1e-8])
     
     c2n_scores = {}
     for label, p_i in scores.items():
         if label == 'none':
-            continue  # Exclude 'none' from the final evaluation labels
-        
-        # P(li=1|di) = p_i / (p_i + p_none)
-        prob = p_i / (p_i + p_none + 1e-10) # 1e-10 prevents division by zero
+            prob = p_none / (p_none + max_p_other + 1e-10)
+        else:
+            prob = p_i / (p_i + p_none + 1e-10)
         c2n_scores[label] = prob
         
     return c2n_scores
@@ -65,11 +65,14 @@ def calculate_hard_predictions(sample_data, label_set, epsilon=1e-5):
         preds = []
         
     hard_scores = {}
+    is_none_predicted = (not preds) or ('none' in preds)
+    
     for label in label_set:
         if label == 'none':
-            continue
-        hard_scores[label] = 1.0 - epsilon if label in preds else epsilon
-        
+            hard_scores[label] = 1.0 - epsilon if is_none_predicted else epsilon
+        else:
+            hard_scores[label] = 1.0 - epsilon if label in preds else epsilon
+            
     return hard_scores
 
 def calculate_paper_metrics(max_distributions, experiment_data):
@@ -89,7 +92,7 @@ def calculate_paper_metrics(max_distributions, experiment_data):
         datum = experiment_data[example_id]
         gt_labels = datum.get('test_gt', [])
         if not gt_labels:
-            continue
+            gt_labels = ['none']
         
         # 1. Negative Log-Likelihood (NLL)
         # NLL = -sum(log(P(g))) for g in ground_truth_labels
@@ -146,7 +149,9 @@ def process_experiment(input_yaml_path, output_yaml_path):
         
     # Determine label set from the first sample (ignoring 'none')
     first_sample = next(iter(samples.values()))
-    label_set = [k for k in first_sample.get('test_scores', {}).keys() if k != 'none']
+    label_set = list(first_sample.get('test_scores', {}).keys())
+    if 'none' not in label_set:
+        label_set.append('none')
     
     c2n_distr_data = {}
     hard_distr_data = {}
@@ -201,7 +206,7 @@ def main():
     args = parser.parse_args()
 
     if os.path.exists(args.input_yaml):
-        output_yaml_name = "alignment_scores_cot.yml" if args.is_cot else "alignment_scores_zero_shot.yml"
+        output_yaml_name = "alignment_scores_cot.yml" if args.is_cot else "alignment_scores_10_shot.yml"
         output_yaml_path = os.path.join(os.path.dirname(args.input_yaml), output_yaml_name)
         process_experiment(args.input_yaml, output_yaml_path)
     else:
