@@ -43,17 +43,20 @@ python scripts/ml-distribution/contrast_distributions_plot.py \
     --out logs/analysis/ml-distr/GoEmotions --name "SFT Llama3 8B Instruct 10-shot on GoEmotions" --max-rank 3
 
 # 8b base
+# Paths: prob_distr pipeline uses logs/{dataset}/main_test_set/baseline/{model}_0
+#        ml-distribution pipeline uses logs/{dataset}/{model}-lb-10-shot_0
+# Use the path structure that matches your logs (prob_distr vs scores.sh/linear-probing.sh)
 
 python scripts/ml-distribution/contrast_distributions_plot.py \
-    --exp ./logs/MFRC/meta-llama--Llama-3.1-8B-lb-10-shot_0/ \
+    --exp ./logs/MFRC/main_test_set/baseline/meta-llama--Llama-3.1-8B_0/ \
     --out logs/analysis/ml-distr/MFRC --name "Llama3 8B Base on MFRC" --max-rank 2
 
 python scripts/ml-distribution/contrast_distributions_plot.py \
-    --exp ./logs/SemEval/meta-llama--Llama-3.1-8B-lb-10-shot_1/ \
+    --exp ./logs/SemEval/main_test_set/baseline/meta-llama--Llama-3.1-8B_0/ \
     --out logs/analysis/ml-distr/SemEval --name "Llama3 8B Base on SemEval 2018 Task 1" --max-rank 3 #5
 
 python scripts/ml-distribution/contrast_distributions_plot.py \
-    --exp ./logs/GoEmotions/meta-llama--Llama-3.1-8B-attn-10-shot_0/ \
+    --exp ./logs/GoEmotions/main_test_set/baseline/meta-llama--Llama-3.1-8B_0/ \
     --out logs/analysis/ml-distr/GoEmotions --name "Llama3 8B Base on GoEmotions" --max-rank 2
 
 # 70b

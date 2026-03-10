@@ -1,8 +1,11 @@
 import yaml
+import os
 import numpy as np
 
 import sys
-sys.path.append('scripts/prob_distr')
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+sys.path.insert(0, SCRIPT_DIR)
 
 import matplotlib.pyplot as plt
 
@@ -88,7 +91,7 @@ def plot_label_order_accuracies(yaml_files, save_path, color='blue'):
     plt.figure(figsize=(10, 7))
     
     # Set up colors and line styles
-    colors = {'GoEmotions': 'blue', 'MFRC': 'red'}
+    colors = {'GoEmotions': 'blue', 'MFRC': 'red', 'SemEval': 'green'}
     line_styles = {'1B Instruct': ':',
                    '8B Instruct': '--',
                    '70B Instruct': '-.',
@@ -148,7 +151,8 @@ def plot_label_order_accuracies(yaml_files, save_path, color='blue'):
               loc='upper right')
     
     plt.tight_layout()
-    
+
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
     plt.savefig(save_path)
     plt.close()
     
@@ -162,15 +166,15 @@ if __name__ == '__main__':
     ]
     
     models = [
-        'meta-llama--Llama-3.1-8B-Instruct_1',
+        'meta-llama--Llama-3.1-8B_0',
     ]
     
     yaml_files = []
-    
     for dataset in datasets:
         for model in models:
-            yaml_file = f'logs/{dataset}/main_test_set/baseline/{model}/indexed_metrics.yml'
-            yaml_files.append(yaml_file)
-            
-    
-    plot_label_order_accuracies(yaml_files, save_path=f'scripts/prob_distr/figures/label_order_accuracies.pdf')
+            yaml_file = os.path.join(PROJECT_ROOT, 'logs', dataset, 'main_test_set', 'baseline', model, 'indexed_metrics.yml')
+            if os.path.exists(yaml_file):
+                yaml_files.append(yaml_file)
+
+    save_path = os.path.join(PROJECT_ROOT, 'scripts', 'prob_distr', 'figures', 'label_order_accuracies.pdf')
+    plot_label_order_accuracies(yaml_files, save_path=save_path)

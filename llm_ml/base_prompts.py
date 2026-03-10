@@ -996,11 +996,15 @@ class PromptBaseDataset(ExampleSamplerMixin, BaseDataset):
 
     def _format_cot(self, template: str, cot: str | None) -> str:
         """Formats the chain of thought."""
+        # If there is no CoT provided, strip the `{cot}` placeholder so that
+        # the prompt still has the right structure (e.g. a `Reasoning:` line)
+        # but without any fixed boilerplate text that the model might parrot.
         if not cot:
-            return template
-        return Template(template.replace("{cot}", "$cot")).safe_substitute(
-            cot=cot
-        )
+            return template.replace("{cot}", "")
+
+        return Template(
+            template.replace("{cot}", "$cot")
+        ).safe_substitute(cot=cot)
 
     def _format_incontext_prompt(
         self,
