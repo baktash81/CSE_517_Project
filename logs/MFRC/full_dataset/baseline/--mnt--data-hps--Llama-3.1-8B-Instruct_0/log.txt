@@ -1,0 +1,65 @@
+DEBUG-vDistributionEstimator(2026-03-10 14:17:48,444)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 14:17:48,509)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Not enough people answer the boss's ask for favors with demands for cash. It's something all of us should do, automatically without thinking
+Moral foundation(s): authority
+Input: No. You don’t. You get paid an exhorbitant amount of money to use your professional expertise and expensive education. This is an awful boss on a power trip. 
+
+I work in law and that attitude used to be common but is now recognized as absolutely obnoxious and a bigger detriment to women than men, and wrong. Unless she was paid to be a personal assistant, this wasn’t her job and it’s demeaning and disrespectful. The same goes when you’re asked to do it.
+Moral foundation(s): care, equality, proportionality
+Input: Did he say that he’d stop saying things like that? It’s normal for men to be attracted to other women while in a committed relationship but if he was seriously wanting to do these sexual things with other women it’s a red flag. Even saying that he could have cheated doesn’t sit well with me
+Moral foundation(s): loyalty
+Input: Jobs are abusive, manipulative and exploitative towards employees. Makes sense people would want to cheat.
+Moral foundation(s): care, equality, proportionality
+Input: I’m in a committed long term relationship with my bf who I love very much and I study techniques on how to be a female pick up artist. I have no idea why. It’s just very interesting. It doesn’t mean i cheat on my bf.
+
+I also would never manipulate anyone for my own gain like that. I have no desire to hurt men.
+Moral foundation(s): care, loyalty
+Input: Thanks, Abbott, for continuing to make Texans look stupid and racist. We owe you one, you bigoted POS.
+Moral foundation(s): equality
+Input: Which is exactly why trump must be made an example of and regulations put in place to remove any doubt that even a president is liable if he commits crimes.
+Moral foundation(s): authority
+Input: Yep. Biden's probably getting rid of Trump's CRT bans which means our government agencies and our *military* will pay millions of dollars to race grifters teaching white people that they carry an original sin and that the only relevant part to their racial identity is how it actively harms everyone around them just by their mere existence, and that they need to be hypervigilant of offending their non-white colleagues and constantly ask for their forgiveness for their own racial sins.
+Moral foundation(s): equality
+Input: a Quebecian born and raised that likes trump and le pen went and shot up a bunch of muslims?  Color me surprised.  Radical Bigot Terrorist just like his friends in Texas two days ago that set that mosque on fire.  damn it feels good to be on the right side of history opposing these trump supporters.  LOVE TRUMPS HATE. See in you in 2018, you will lose as long as you keep committing terrorist attacks for your god emperor.  
+Moral foundation(s): authority, equality
+Input: I would much rather watch companies virtue signal about sex than endorse a criminal organization hell bent on the destruction of our country.  This is a direct challenge to our sovereignty and to law and order itself.
+Moral foundation(s): authority, loyalty
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Sure thing. Don't worry we can easily come up with 3.5% (11 million) pissed off strikers and protesters. We can easily organize them into systematic, consistent pressure on the system. 
+
+We grab the system by the balls and we don't let go. There will be blood on both sides of course but that's what fighting for democracy entails unfortunately
+Moral foundation(s): care
+Input: Maybe she had a traumatic experience regarding oral sex/consent. 
+
+It's very possible it not about you, your looks, your manhood, your penis. 
+
+Hopefully if you don't pester her and instead approach it with understanding or compassion she might chose to open up with you about this and why it's something she is not comfortable doing.
+Moral foundation(s): care
+Input: This. He will never trust a word you say again. This deceit on deceit ploy is a great way to never see your son again.
+Moral foundation(s): care, loyalty
+Input: I actually live in a culture in Europe that places extra emphasis on grandparents and while I appreciate that, there isn’t and shouldn’t be a replacement for the importance of parents. I highly respect and encourage the special bond my kids have with their grandparents. But that doesn’t supersede our significance as parents. That’s an unhealthy misbalance.
+Moral foundation(s): authority, loyalty
+Input: And I love how far-righters seem to only care about the LGBT community when it comes to Muslims. That and nowhere in the article does it say that the majority of gay French men are voting for Le Pen. 
+Moral foundation(s): care, equality
+Input: Yep. Biden's probably getting rid of Trump's CRT bans which means our government agencies and our *military* will pay millions of dollars to race grifters teaching white people that they carry an original sin and that the only relevant part to their racial identity is how it actively harms everyone around them just by their mere existence, and that they need to be hypervigilant of offending their non-white colleagues and constantly ask for their forgiveness for their own racial sins.
+Moral foundation(s): equality
+Input: Oh they get it,  the boomer generation doesn't care.  They got theirs.
+Moral foundation(s): care
+Input: Nixon deliberately prolonged the Vietnam war for his own benefit and committed a number of crimes against peace and against humanity, in addition to his crimes against America.  He was an irredeemable reprobate.
+
+Nixon was a much more skilled politician and conniver than Trump, but he was just as rotten.
+Moral foundation(s): authority, care, purity
+Input: As a gay guy trying to reach out in good faith, what will I slowly 'wake up' about?
+
+I've not had any choice in my sexuality and I'm entirely comfortable with myself at this point in time. I love a beautiful guy &amp; we're happy together. What's so wrong and abhorrent about me that christians feel the need to cast judgment, tell me I'm going to hell or that I should seek some higher calling.
+
+I'm not religious in the slightest and would never tell someone they need to change like that.
+Moral foundation(s): care, purity
+Input: We're so fucked! God I fucking hate Republicans. Can we vote to change their name to what they really are? Traitors?
+Moral foundation(s): loyalty
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-10 14:52:19,309)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2676, micro_f1=0.2051, macro_f1=0.1880, authority_f1=0.1329, care_f1=0.3972, equality_f1=0.2899, loyalty_f1=0.1203, proportionality_f1=0.0989, purity_f1=0.0888

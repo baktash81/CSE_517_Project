@@ -1,0 +1,78 @@
+DEBUG-vDistributionEstimator(2026-03-10 14:13:41,321)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 14:13:41,361)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Calling the thin blue line flag a "white lives matter" flag is moronic.
+
+Demanding someone take down a flag that has been popular for many years is not "drawing attention", it is silencing people who support police.
+
+If BLM is about saving lives, why do they get so uncomfortable when you ask them where the many millions of dollars in donations go?  Their own "protests" led to the deaths of black men like David Dorn.  BLM didn't give a damn about his death, even though they played a part in it.
+Moral foundation(s): care, equality
+Input: YTA for sure. Your own stress is absolutely no excuse to talk to your children like that. It's completely unsurprising that your children are now unwilling to talk to you. I hope they bill you for their therapy.
+Moral foundation(s): care
+Input: I suppose you are American, one of the few countries where nationalism is used a synonym of patriotic sentiment. 
+
+Nationalism is defined as: "extreme form of patriotism marked by a feeling of superiority over other countries" and yes, I do have a problem with this way of thinking, especially when it is used abused by populist or far right political parties. 
+
+Moreover, if you paid any attention to what Le Pen has been saying, you would know that being on friendly terms is not exactly what the party is pushing for.
+Moral foundation(s): authority, loyalty
+Input: Well just as worse is that if you DID require your employees to come in...I don’t think you can legally be held accountable based on the upcoming stimulus package (if it ever goes through). It’s disgusting.
+Moral foundation(s): purity
+Input: Of course the DPRK is democratic, it has “democratic” in its name, which means that they’re a state that has a democratic system. And because the people in there are starving, it means that democracy leads to starvation. 
+
+Democratic countries are known to practice capitalism, so it’s natural that places with democracy turn into shitholes. Except, of course, for capitalists, such as Kim Jong-Un and Trump, they worked hard to get where they are and deserve their wealth.
+Moral foundation(s): proportionality
+Input: Nuuu, civil unrest is anti-human, brutal, anarchic!!!1!! You'd better starve with a minium wage, that's totally normal!
+Moral foundation(s): care
+Input: I actually live in a culture in Europe that places extra emphasis on grandparents and while I appreciate that, there isn’t and shouldn’t be a replacement for the importance of parents. I highly respect and encourage the special bond my kids have with their grandparents. But that doesn’t supersede our significance as parents. That’s an unhealthy misbalance.
+Moral foundation(s): authority, loyalty
+Input: YTA, you both created your child and you’re both responsible to raise them. Her writing is 100% a real job, as she is paid to do it. It is incredibly disrespectful the way you treated her. Marriage is a partnership that cannot work without mutual respect.
+Moral foundation(s): care, loyalty
+Input: Dealbreaker.  Let's be extremely real: dudes who say shit like this are telling on themselves. Either they have or would take advantage of the situation in context.
+
+This is violent misogyny and he's telling you who he is. You need to be less worried about changing his mind and more worried about your safety.
+Moral foundation(s): care, equality
+Input: With some people, sure.
+
+Don't worry about them.  A lot of people won't care.
+Moral foundation(s): care
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: &gt;We know the Macron team set out five conditions:
+Renewal for France (half will come from outside politics)
+Gender equality (half will be women)
+Clean criminal record - as part of commitment to clean up politics
+Cross-section of political views - so there may be defectors from other parties
+Sign up to the Macron reform programme as well as joining the party itself
+While candidates can be members of other parties, they cannot run for them (apart from centrist party MoDem)
+
+Also, I highly doubt that its a coincidence that its equally split between men and women. 
+Moral foundation(s): care, equality, proportionality
+Input: What? Berlusconi was a bufoon and absolutely unfit to run the country, but he never had the authoritative "vibe" of Orban. 
+
+He was also way less a populist compared to nowaday populist like Grillo, Le Pen and, Farage and that Netherland huy with the strange hairs.
+
+Moral foundation(s): authority
+Input: Trust me, you really don't. Whatever gripes you have in life, they surely aren't caused by minorities, the 'libruls,' or anything which the alt-right would have you distracted with. They're primarily caused by growing wealth inequity and societal problems that creates, which individuals like Le Pen promote and profit off of. 
+
+Name one alt-right politician who isn't getting their pockets lined by people who don't have your best interest in mind, and yet they claim themselves as candidates of the people.
+Moral foundation(s): equality
+Input: This perpetuates the cycle of poverty. Those who are higher educated can help their children with homework. They have more access to books or tutors. They can focus on school because they don’t have to support their family. Those in stable homes don’t have to work or raise their siblings. Grades don’t determine your mastery of a subject. It just shows you’ve completed the homework. Higher grades -&gt; higher education. And the cycle continues. This is all by design.
+Moral foundation(s): equality, proportionality
+Input: It absolutely is and so is trumps call to the Michigan officials. These people are all criminals
+Moral foundation(s): authority
+Input: Absolutely they looked at the numbers, even now minorities such as blacks and Hispanics are disproportionately dying, and they saw covid as a objective good.
+Moral foundation(s): equality, proportionality
+Input: Stop calling people that make you feel bad friends. Focus on what makes you happy. Unless they are financially supporting you what they says means shit. Only person it should matter to is your husband.
+Moral foundation(s): care
+Input: Well, when 16 of my fellow citizens are gunned down because they are infidels, I'm not going to be tweeting that Muslim Americans are just like you and me.  Who's lacking empathy?  Merkel, Hollande, and Obama give the same condolence speech after every terrorist attack - we must stand together, our values must prevail, don't give into hate and fear for Muslims, etc.  Rinse and repeat after every terrorist attack.  [Trump is doing the right thing.](http://money.cnn.com/video/news/2015/08/20/donald-trump-immigration-plan-birthright-citizenship.cnnmoney/)
+Moral foundation(s): care, loyalty
+Input: Calling someone gay is not disrespectful. Using homosexuality as an insult in and of itself has notes of homophobia.
+Moral foundation(s): equality
+Input: Ah yes, let us hang this young adult for the most sacreligious crime, kissing! 
+
+But in all honesty incest is only morally wrong if you consider the kids. 2 consenting adults can do whatever as long as they're not harming anyone. Don't care if I find it gross or not.
+Moral foundation(s): care, purity
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-10 14:52:10,611)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.0978, micro_f1=0.1538, macro_f1=0.1365, authority_f1=0.0976, care_f1=0.3011, equality_f1=0.1813, loyalty_f1=0.0963, proportionality_f1=0.0732, purity_f1=0.0693

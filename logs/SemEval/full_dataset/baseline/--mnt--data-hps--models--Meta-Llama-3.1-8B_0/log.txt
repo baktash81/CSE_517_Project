@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-10 13:47:19,926)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 13:47:19,942)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: It could be soul-crushing despair, but it also might just be the marshmallows I had for breakfast
+sadness
+Input: ----- #phobia = irrational fear of or aversion to something. Synonyms: dread, horror, terror, dislike, distaste, aversion BUT not a crime
+anger, disgust, fear, pessimism
+Input: @annakingradio Is that the new studio kit? I'd be terrified of pressing the wrong button and launching something dangerous! 😊
+fear, joy
+Input: 'You're here to feed me. I won't die of starvation,' he said, slightly smiling. I frowned. Panira. Kainis.
+anger, anticipation, disgust, joy
+Input: Paul Ehrlich said that humanity is a threat to all life. Such great news to start the day. If I could blush I would.
+anger, disgust, sadness
+Input: My edit, not my photos #SPNFamily #SamWinchester #JaredPadalecki  #lips #tease
+anticipation
+Input: By the way...in case you didnt know...joshuas goin out tonight...to take the trash out and then play blues at ever us 6.75
+joy
+Input: @AleOfATime It would be shocking, but it's simply evidence of another entity entering a market assuming cash alone wins the game.
+disgust
+Input: @yashah07 Hahaha got the same forward !! I want to find the source and teach 🤣
+joy
+Input: Alright Alex and I have party boy neighbors who blast music 
+disgust, joy
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: I think 'Sleep' is my favorite from How did we get so dark?, maybe because I'm insomniac
+joy, love, optimism, sadness
+Input: It was a bright cold day in April, and the clocks were striking thirteen. ~ George Orwell, 1984
+joy
+Input: If you guys want a super inhealthy, but delicious snack, @cheezit dipped in cream cheese is the way to go 👌🏼👌🏼 #delicious #preggocravings
+joy, love, optimism
+Input: Add me on snap Whoa.Jay.  #snap #streaks #snapchat #story #friends #add #follow #love #traveling #photography #funny
+joy
+Input: I’m so glad I’m not like some of the sad people online who gossip and bully others for their entertainment because they have no life.
+joy, optimism, sadness
+Input: Freakin a...I deleted half the episode of BIP on accident  #bachelorinparadise
+disgust, joy, optimism, sadness
+Input: Best horror Comedy movie of 2017 #AnandoBrahma @taapsee #SrinivasReddy. In 2nd half I got throat pain #toomuch #laughs
+joy
+Input: #Spina #Bifida a #neural #tube #birth #defect where the #nervous #system &amp; #spinal #cord do not fully develop #raredisease #June #awareness
+fear
+Input: @AleOfATime It would be shocking, but it's simply evidence of another entity entering a market assuming cash alone wins the game.
+disgust
+Input: @emmajckson awe thank you (,:
+joy, love, optimism
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+INFO-vDistributionEstimator(2026-03-10 14:12:47,937)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3050, micro_f1=0.4345, macro_f1=0.3582, anger_f1=0.5295, anticipation_f1=0.2404, disgust_f1=0.5401, fear_f1=0.4421, joy_f1=0.5286, love_f1=0.3325, optimism_f1=0.4324, pessimism_f1=0.1603, sadness_f1=0.5079, surprise_f1=0.1222, trust_f1=0.1042

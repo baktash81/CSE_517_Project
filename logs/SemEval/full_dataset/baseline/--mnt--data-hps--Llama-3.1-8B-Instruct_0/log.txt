@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-10 13:53:12,448)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 13:53:12,461)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: i excepted the eclipse to make me believe in an omniscience force #dissapointed
+sadness
+Input: All and boy play n0 no play dull and mᴬkes.
+sadness
+Input: At this point I can't tell if I just follow more people in politics on twitter now or if I need new friends. #wheresthefunny #depressing
+pessimism, sadness
+Input: @BorisJohnson unhappy about the cost of leaving the EU ? If only you had published your letter outlining the reasons to stay instead. Idiot.
+anger, sadness
+Input: .  @danawhite you're a crook. #joke #thief #bully #wanker #dirty #richbutgarbo
+anger, disgust
+Input: Same ☹
+sadness
+Input: Literally kicking myself for not catching up on GOT and now all I see is SPOILERS #pissed
+anger, disgust, sadness
+Input: aleesha—kitchen sink, twenty one pilots (!!)
+anticipation
+Input: @apinknumjoo Hello, namjoo unnie! Welcome to paradox.💕 i'm deeply sorry for the late greeting 😥 Chaey is wishing you to have a pleasant +
+joy, love, sadness
+Input: @o_pebbles Not of this one sadly! 😪
+sadness
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: I'm sorry but also...fuck you #currentfeels #anger #bpd #eupd #borderliner #mentalhealth #anxiety #depression #confused
+anger, disgust, sadness
+Input: This is kind of fucked up, but my brother is about to join the police academy....and I'm not happy about. And I'm not the only one.
+anger, disgust, pessimism, sadness
+Input: #revenge or #Change. You #ChooseASide for your country #India
+anger
+Input: @laurenwils0n_ Happy birthday gorg, have a good one 😘 x
+anticipation, joy, love, optimism, trust
+Input: Taking time out of our busy to catch the #great #American #eclipse! It is really incredible to see even our partial view! How was your view?
+anticipation, joy, love
+Input:'i can't even tell u a lie I felt like u were special, till I realized wassup and left, got u feeling dreadful '
+sadness
+Input: My best friends driving for the first time with me in the car #terrifying
+fear
+Input: @Dat_Phan Too much fun being interviewed by the supremely talented and funny #DatPhan #Comedy #laughter #soup
+joy
+Input: *on a lighter note*\nGG, Nkaissery &amp; Total Man? The rate at which Jubilee is losing these votes!! 😟
+sadness
+Input: Worst thing that's happened to you when flying? I had a 16h delay, left my phone in the terminal, and wallet on the plane #nightmare
+anger, disgust, fear, sadness
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+INFO-vDistributionEstimator(2026-03-10 14:16:55,003)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3974, micro_f1=0.5249, macro_f1=0.4519, anger_f1=0.6281, anticipation_f1=0.3284, disgust_f1=0.5720, fear_f1=0.5687, joy_f1=0.6674, love_f1=0.4721, optimism_f1=0.5519, pessimism_f1=0.2163, sadness_f1=0.5906, surprise_f1=0.1991, trust_f1=0.1762
