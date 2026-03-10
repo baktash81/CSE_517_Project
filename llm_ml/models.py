@@ -82,12 +82,22 @@ class vLMForGeneration(nn.Module):
 
         super().__init__()
 
-        self.lm = LLM(
-            model_name_or_path,
-            trust_remote_code=trust_remote_code,
-            quantization=quantization,
-            max_logprobs=logprobs,
+        import inspect
+        engine_params = set(
+            inspect.signature(
+                __import__("vllm.engine.arg_utils", fromlist=["EngineArgs"])
+                .EngineArgs.__init__
+            ).parameters
         )
+        llm_kwargs: dict = dict(model=model_name_or_path)
+        if "trust_remote_code" in engine_params:
+            llm_kwargs["trust_remote_code"] = trust_remote_code
+        if "quantization" in engine_params:
+            llm_kwargs["quantization"] = quantization
+        if "max_logprobs" in engine_params:
+            llm_kwargs["max_logprobs"] = logprobs
+
+        self.lm = LLM(**llm_kwargs)
         self.sampling_params = SamplingParams(
             temperature=0,
             max_tokens=max_new_tokens,
