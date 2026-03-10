@@ -66,8 +66,8 @@ else
     python scripts/prob_distr/llm_prob_distr.py \
         Hatexplain \
         --distribution $1 \
-        --train-split test \
-        --test-split train \
+        --train-split train \
+        --test-split test \
         --system ' ' \
         --instruction $'Classify the following inputs into one of the following options per input: {labels}. Output exactly one label and no others.\n\n' \
         --incontext $'Question: {text}\nAnswer: {label}\n\n' \

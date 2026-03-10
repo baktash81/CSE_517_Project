@@ -8,13 +8,13 @@ from .datasets import (
     MMLUProDataset,
     MMLUProDatasetForTransformers,
     BoxesDataset,
-    BoxesDatasetForTransformers#,
+    BoxesDatasetForTransformers,
 #    MSPPodcastDataset,
 #    MSPPodcastDatasetForTransformers,
 #    QueerReclaimLexDataset,
 #    QueerReclaimLexDatasetForTransformers,
-#    HatexplainDataset,
-#    HatexplainDatasetForTransformers,
+    HatexplainDataset,
+    HatexplainDatasetForTransformers,
 #    TRECDataset,
 #    TRECDatasetForTransformers,
 )
@@ -27,7 +27,7 @@ DATASETS = dict(
     Boxes=BoxesDataset,
 #    MSPPodcast=MSPPodcastDataset,
 #    QueerReclaimLex=QueerReclaimLexDataset,
-#    Hatexplain=HatexplainDataset,
+    Hatexplain=HatexplainDataset,
 #    TREC=TRECDataset,
 )
 
@@ -67,10 +67,5 @@ CONSTANT_ARGS = dict(
         help="random seed",
         metadata=dict(disable_comparison=True),
         searchable=True,
-    ),
-    device=dict(
-        type=str,
-        default="auto",
-        help="device for model (use 'auto' for multi-GPU / device_map)",
     ),
 )
