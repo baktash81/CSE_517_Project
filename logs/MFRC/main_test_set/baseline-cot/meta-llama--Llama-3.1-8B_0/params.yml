@@ -31,8 +31,9 @@ experiment_0:
     '
   instruction_prompt: 'Classify the following inputs into none, one, or multiple the
     following moral foundations per input: {labels}. Let''s think step by step about
-    what moral foundations are present before classifying. After your reasoning, output
-    exactly one line in this format: Moral foundation(s): foundation1, foundation2.
+    what moral foundations are present before classifying. Keep your reasoning brief
+    (2-3 sentences). After your reasoning, output exactly one line in this format:
+    Moral foundation(s): foundation1, foundation2.
 
     '
   keep_one_after_filtering: false

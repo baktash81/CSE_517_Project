@@ -1,0 +1,20 @@
+DEBUG-vDistributionEstimator(2026-03-10 16:30:13,183)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 16:30:13,186)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+Reasoning:
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+Reasoning:
+DEBUG-vDistributionEstimator(2026-03-10 16:39:20,975)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 16:39:20,977)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+Reasoning:
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+Reasoning:

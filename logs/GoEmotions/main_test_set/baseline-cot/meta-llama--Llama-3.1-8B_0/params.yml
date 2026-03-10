@@ -5,7 +5,7 @@ experiment_0:
   _query_label_mode___: null
   _sampling_strategy___: multilabel
   _shot___: 0
-  accelerate: true
+  accelerate: false
   annotation_mode: aggregate
   assistant_prompt: null
   cot_csv: null
@@ -16,11 +16,13 @@ experiment_0:
   dev_ids_filename: null
   dev_keep_same_examples: false
   dev_splits: null
+  device: cpu
   disable_indexed_logging: false
   disable_intermediate_checkpoints: false
   disable_tqdm: false
   distribution: baseline
   emotion_clustering_json: datasets/goemotions/emotion_clustering.json
+  gpu_memory_utilization: 0.95
   incontext_prompt: 'Input: {text}
 
     Reasoning: {cot}
@@ -30,8 +32,8 @@ experiment_0:
     '
   instruction_prompt: 'Classify the following inputs into none, one, or multiple the
     following emotions per input: {labels}. Let''s think step by step about what emotions
-    are present before classifying. After your reasoning, output exactly one line
-    starting with "Output:" in this format:
+    are present before classifying. Keep your reasoning brief (2-3 sentences). After
+    your reasoning, output exactly one line starting with "Output:" in this format:
 
     Output: {"label": ["emotion1", "emotion2"]}
 
@@ -56,7 +58,7 @@ experiment_0:
   root_dir: datasets/goemotions
   sampling_strategy: multilabel
   seed: 0
-  sentence_device: null
+  sentence_device: cpu
   sentence_model_name_or_path: all-mpnet-base-v2
   shot: 0
   system_prompt: ' '

@@ -48,7 +48,7 @@ if [ "$backend" == "vllm" ]; then
         --train-split train \
         --test-split dev \
         --system ' ' \
-        --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let\'s think step by step about what emotions are present before classifying. After your reasoning, output exactly one line starting with "Output:" in this format:\nOutput: {"label": ["emotion1", "emotion2"]}\n' \
+        --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let\'s think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:\nOutput: {"label": ["emotion1", "emotion2"]}\n' \
         --incontext $'Input: {text}\nReasoning: {cot}\nOutput: {label}\n' \
         --model-name-or-path "$model" \
         --label-format json \
@@ -74,7 +74,7 @@ else
         --train-split train \
         --test-split dev \
         --system ' ' \
-        --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let\'s think step by step about what emotions are present before classifying. After your reasoning, output exactly one line starting with "Output:" in this format:\nOutput: {"label": ["emotion1", "emotion2"]}\n' \
+        --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let\'s think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:\nOutput: {"label": ["emotion1", "emotion2"]}\n' \
         --incontext $'Input: {text}\nReasoning: {cot}\nOutput: {label}\n' \
         --model-name-or-path "$model" \
         --label-format json \

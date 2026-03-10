@@ -45,7 +45,7 @@ if [ "$backend" == "vllm" ]; then
         --train-split train \
         --test-split dev test \
         --system ' ' \
-        --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}. Let\'s think step by step about what moral foundations are present before classifying. After your reasoning, output exactly one line in this format: Moral foundation(s): foundation1, foundation2.\n' \
+        --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}. Let\'s think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line in this format: Moral foundation(s): foundation1, foundation2.\n' \
         --incontext $'Input: {text}\nReasoning: {cot}\nMoral foundation(s): {label}\n' \
         --model-name-or-path "$model" \
         --max-new-tokens 500 \
@@ -69,7 +69,7 @@ else
         --train-split train \
         --test-split dev test \
         --system ' ' \
-        --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}. Let\'s think step by step about what moral foundations are present before classifying. After your reasoning, output exactly one line in this format: Moral foundation(s): foundation1, foundation2.\n' \
+        --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}. Let\'s think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line in this format: Moral foundation(s): foundation1, foundation2.\n' \
         --incontext $'Input: {text}\nReasoning: {cot}\nMoral foundation(s): {label}\n' \
         --model-name-or-path "$model" \
         --max-new-tokens 500 \

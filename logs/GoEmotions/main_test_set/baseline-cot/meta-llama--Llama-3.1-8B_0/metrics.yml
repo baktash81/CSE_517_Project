@@ -1,0 +1,12 @@
+experiment_0:
+  description: ''
+  test_admiration_f1: 0.2894736842105263
+  test_anger_f1: 0.2702702702702703
+  test_fear_f1: 0.39285714285714285
+  test_jaccard_score: 0.29956709956709954
+  test_joy_f1: 0.4727272727272727
+  test_macro_f1: 0.32650086120879623
+  test_micro_f1: 0.32945091514143093
+  test_optimism_f1: 0.3238095238095238
+  test_sadness_f1: 0.3023255813953488
+  test_surprise_f1: 0.23404255319148937

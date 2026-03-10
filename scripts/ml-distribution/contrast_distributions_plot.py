@@ -109,7 +109,7 @@ def main():
                     )
                     new_dict = dict(
                         top=sorted_scores[0],
-                        ratio=sorted_scores[0] / sorted_scores[1],
+                        ratio=sorted_scores[0] / sorted_scores[1] if sorted_scores[1] != 0 else float("inf"),
                         second=sorted_scores[1],
                         entropy=entropy(sorted_scores),
                     )
@@ -150,7 +150,7 @@ def main():
 
                     new_dict = dict(
                         top=sorted_scores[0][1],
-                        ratio=sorted_scores[0][1] / sorted_scores[1][1],
+                        ratio=sorted_scores[0][1] / sorted_scores[1][1] if sorted_scores[1][1] != 0 else float("inf"),
                         entropy=entropy([x[1] for x in sorted_scores]),
                         expected_next_label_scores=sorted_scores[1][1],
                         expected_next_label_scores_p1=ip1th_label_scores[
