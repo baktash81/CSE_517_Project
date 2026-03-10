@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-08 23:13:27,376)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 23:13:27,386)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: I'm pale, I no longer wanna laugh, Or smile, All I wanna do is just fucking cry,
+pessimism, sadness
+Input: anyways so i apologized &amp; i hav rly bad anxiety guys so i just wanted to get out &amp; start my errands so i did &amp; i had to ~uber everywhere~
+fear
+Input: #LoiuseLinton has become the female #MartinShkreli. Most hated woman in America. That takes some skill. #entitlement  #notcute
+disgust
+Input: The Golden Temple is beautiful! 😍
+joy, optimism
+Input: @MA_Bisson @AroundTheRings @LA2024 'felt our soul'! hilarious!
+joy
+Input: Can't Talk To An Incompetent Person. Goes In One Ear and Out The Other. #irritated #NoPoint #MassiveEyeRoll
+anger, disgust
+Input: @BAEK0FF @byunglows Philippines 😃
+joy
+Input: 1/If the Church is being attacked with such fury, and from the inside, that means that the Church is exactly what we need to belong to!
+anger
+Input: @neobrainless So... Lots of pretty coloured blobs of sugar? I mean I'm willing to try it, I'm just not sure I understand the point of it 😅
+joy, optimism
+Input: Happy birthday to ma brother from another mother @Official1Cedi dis year More blessing #Break itz
+joy, optimism
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @OxandCart_UK @jamieoliver I made it too  #quickandeasyfood
+joy
+Input: @jaassiieeeee I will not fall to the dark side😂😂
+joy
+Input: Leviticus 19:14\nYou shall not curse the #deaf or put a stumbling #block before the #blind, but you shall #fear your #God: I am the [1/2]
+fear, optimism, trust
+Input: if today is the first time you're playing FFXII I am happy for you. #Zodiacage
+joy, optimism
+Input: Okay I seriously don't know how this whole twitter thing works #lost
+disgust, pessimism, sadness
+Input: @AshleyEmrick Whatever floats your incense boat.
+anticipation
+Input: @RaymondPryce1 Yes it is happening. If u have a welding shield u can get a first hand view. 
+anticipation, optimism, surprise
+Input: @AChubbyPanda *He would growl softly and licks his lips.* 'if I need to prove myself, I think we might need to go somewhere private.'
+love
+Input: If you guys want a super inhealthy, but delicious snack, @cheezit dipped in cream cheese is the way to go 👌🏼👌🏼 #delicious #preggocravings
+joy, love, optimism
+Input: It was a bright cold day in April, and the clocks were striking thirteen. ~ George Orwell, 1984
+joy
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+INFO-vDistributionEstimator(2026-03-08 23:55:03,945)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4306, micro_f1=0.5558, macro_f1=0.4728, anger_f1=0.7171, anticipation_f1=0.2998, disgust_f1=0.5605, fear_f1=0.6003, joy_f1=0.7181, love_f1=0.4877, optimism_f1=0.4779, pessimism_f1=0.1985, sadness_f1=0.6220, surprise_f1=0.2825, trust_f1=0.2365

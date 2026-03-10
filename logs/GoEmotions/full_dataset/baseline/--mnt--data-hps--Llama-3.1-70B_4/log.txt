@@ -1,0 +1,46 @@
+DEBUG-vDistributionEstimator(2026-03-08 13:19:31,027)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 13:19:31,751)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Huh, I was just wondering if something like this existed. I'm working in food manafacturing an this would be epic.
+{"label": ["joy", "surprise"]}
+Input: Any time [NAME] is brought up is a good time for this:
+{"label": ["admiration"]}
+Input: Eh, 3. I don't know why. I told him this but he's afraid his life is ruined.
+{"label": ["surprise"]}
+Input: It taunts you
+{"label": ["anger"]}
+Input: I felt my heart drop. [NAME].
+{"label": ["surprise", "fear"]}
+Input: Signing a 31yr old injury prone player for 5 years 60mil is pretty stupid. [NAME] would have been similar cost wise and he isn't made of glass
+{"label": ["sadness", "anger"]}
+Input: Not sure why you are getting downvoted for this comment. I really dislikes the Facebook type posts on this sub.
+{"label": ["surprise", "anger"]}
+Input: Oh that's hard. I hope you get an amazing nap in the car. The exhaustion is real with babies.
+{"label": ["optimism", "admiration"]}
+Input: I agree. That should be the core. [NAME] will be an elite defender
+{"label": ["admiration"]}
+Input: I live next door to this, and I was up late.... How did I not hear this?
+{"label": ["surprise"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Teleport, people forget you need a mask in a bank safe because of cameras, so put on a mask :D
+{"label": ["admiration"]}
+Input: I see that you also braved the farmers' market this morning!
+{"label": ["admiration"]}
+Input: That’s exactly what I was thinking but doesn’t it sound super cool?!?
+{"label": ["anger"]}
+Input: True only it's much harder to hide real property than it is to hide cash.
+{"label": ["admiration"]}
+Input: Im sorry my friends money should be out soon then ill release for all to see
+{"label": ["admiration", "sadness"]}
+Input: good to hear my man!
+{"label": ["joy", "admiration"]}
+Input: I'm not confident in [NAME] but he may be the best option...
+{"label": ["surprise"]}
+Input: An interesting video, though the title's lack of an Oxford comma is bothering me.
+{"label": ["joy", "sadness"]}
+Input: I'm kind of glad they aren't letting you. Just you, not everyone else.
+{"label": ["joy", "optimism"]}
+Input: DEAD DUCK INSIDE DO NOT EAT. Well, I’m not sure what I expected. 
+{"label": ["surprise", "anger"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.

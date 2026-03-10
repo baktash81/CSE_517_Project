@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-08 19:45:54,493)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 19:45:54,508)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @jaassiieeeee I will not fall to the dark side😂😂
+joy
+Input: @MA_Bisson @AroundTheRings @LA2024 'felt our soul'! hilarious!
+joy
+Input: My @LDNOverground train is announcing absolutely everything overground station on the network #giggle
+anticipation, joy, surprise
+Input: What is this miserable ass weather all about 😭 dark and gloomy #depressing #weekoff #wheresthesun
+anger, disgust, sadness
+Input: Coming up shortly #WetinDeyHappen #Satire #laughs #local #Pidgin cc @McTalkinDrum and @Funny_Udeme #stayTuned #premiumTalkStation
+joy
+Input: Let's hope the ct scan gives us some answers on this lump today #nervous
+fear, sadness
+Input: @JusticeWillett Lord, we don't understand tragedy. Do what You do best: bring good grom it and comfort those who mourn. Amen
+optimism
+Input: @Mywifestyles Thank you for following me. Please read my astonishing (e)book #FlightOfALifetime; you’ll be very glad you did #happy #smiles
+anticipation, joy, love, optimism
+Input: @FierzaaRBX hi fierzaa i hope you be my friend in roblox btw i love kat and username:USATylerX 😀
+joy, love, optimism
+Input: @thealexpeace Not bad at All, think may come back to haunt you's
+fear
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @mrjamesob @LBC 😂 snowflake random such a funny man never a dull moment brilliant
+joy
+Input: 'It is not uncommon for #people to spend their whole life waiting to start living.' ~ Eckhart Tolle #happiness #live
+joy, optimism
+Input: @doranadal @JaneForRafffa #big-smile #great post #greatRafa #loveRafa
+joy, love, optimism
+Input: SUCCESS isn't just about what you accomplish in life, it's about what you inspire others to do. #inspiration  #inspire
+anticipation, joy, optimism
+Input: I'm smiling like a mf
+joy
+Input: @BAEK0FF @byunglows Philippines 😃
+joy
+Input: @who_cares_nvm The destroying of my memory is my goal so ECT might work. Or a zapper thingy like in Men in Black. Or Dumbledore's pensive.
+anger, disgust
+Input: depression sucks😔
+disgust, pessimism, sadness
+Input: @F1 Why announcing so late, it will be hard to make it from Manchester and organising a day off. #sad
+sadness
+Input: Definitely something happening today #SolarEclipse2017 #weird #annoyed
+anger
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+INFO-vDistributionEstimator(2026-03-08 20:35:37,490)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4129, micro_f1=0.5485, macro_f1=0.4431, anger_f1=0.7186, anticipation_f1=0.2584, disgust_f1=0.6272, fear_f1=0.5370, joy_f1=0.6733, love_f1=0.4100, optimism_f1=0.4665, pessimism_f1=0.1829, sadness_f1=0.5698, surprise_f1=0.2081, trust_f1=0.2228

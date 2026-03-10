@@ -1,0 +1,46 @@
+DEBUG-DistributionEstimator(2026-03-08 12:29:25,199)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-08 12:29:25,691)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I’m just gonna see how tomorrow goes tbh. I’ll take life one day at a time :) thank you for the help ❤️
+{"label": ["admiration"]}
+Input: Then you realize it actually is the only way to feeling better, except having one or no friends make it tough.
+{"label": ["admiration"]}
+Input: Haha! I was right :D.
+{"label": ["joy", "admiration"]}
+Input: Reddit is so right wing I can’t even believe it
+{"label": ["surprise", "anger"]}
+Input: I could not agree more. Actually, last week I played in my first smash bros tournament! (I lost, obviously) 
+{"label": ["sadness", "anger"]}
+Input: I don’t think you understand the meaning of cute
+{"label": ["surprise"]}
+Input: No thanks, prefer the fairness of Public/Veteran. No cheating admins.
+{"label": ["admiration", "anger"]}
+Input: Yup. That doesn't contradict what I said- this isn't a derailing conversation that I was starting.
+{"label": ["anger"]}
+Input: Very, but I also never really liked home to begin with so it's been more of a relief.
+{"label": ["admiration", "anger"]}
+Input: new genders about to drop doesn’t strike me as a bad joke tbh.
+{"label": ["anger"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Wait, did they get married at the detention center? Why is she exiting with a bouquet? 
+{"label": ["surprise"]}
+Input: [NAME]! Scoring ridiculous goals while missing sitters. Love it :-)
+{"label": ["joy", "admiration"]}
+Input: I must be getting old. Much more likely to be horny at 2 pm.
+{"label": ["sadness"]}
+Input: Yeah it ringed a bell but i wasn't sure of the church
+{"label": ["admiration", "surprise"]}
+Input: Aw no. Don't tell me you are out of epic quips to rek the trumpist incel fascist nazi?
+{"label": ["anger"]}
+Input: > "I have full confidence in [NAME]..." *Now* you are being diplomatic.
+{"label": ["optimism", "admiration"]}
+Input: Im sure you’ll love it
+{"label": ["optimism", "admiration"]}
+Input: Your logic is pretty messed up and the pos assumption has zero to do with this. Centralized mining will cripple the ability to fight censorship.
+{"label": ["sadness", "anger"]}
+Input: Absolutely adore this
+{"label": ["admiration"]}
+Input: I suppose all the other [NAME] dont count as competition
+{"label": ["admiration"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
