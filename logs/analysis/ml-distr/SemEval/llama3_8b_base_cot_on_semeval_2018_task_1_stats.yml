@@ -1,0 +1,53 @@
+avg_stats_as_intermediate_label: {}
+avg_stats_as_last_label:
+  0:
+    entropy: !!python/tuple
+    - !!python/object/apply:numpy.core.multiarray.scalar
+      - &id001 !!python/object/apply:numpy.dtype
+        args:
+        - f8
+        - false
+        - true
+        state: !!python/tuple
+        - 3
+        - <
+        - null
+        - null
+        - null
+        - -1
+        - -1
+        - 0
+      - !!binary |
+        mB7xrz8NAkA=
+    - !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        xC2WBj6+4T8=
+    ratio: !!python/tuple
+    - !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        ehIpofX/A0A=
+    - !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        8sEvweZeAkA=
+    second: !!python/tuple
+    - !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        C7jTJ+M3zD8=
+    - !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        NBLRZdObtD8=
+    top: !!python/tuple
+    - !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        nIeOobws3D8=
+    - !!python/object/apply:numpy.core.multiarray.scalar
+      - *id001
+      - !!binary |
+        N6WJ6PfkxD8=
+second_not_predicted_ever: null

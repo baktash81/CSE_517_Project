@@ -56,6 +56,11 @@ class vLMForGeneration(nn.Module):
                 type=str,
                 help="quantization to use for model",
             ),
+            gpu_memory_utilization=dict(
+                type=float,
+                default=0.95,
+                help="fraction of GPU memory to use for vLLM (0.0-1.0)",
+            ),
         )
 
     def __init__(
@@ -65,6 +70,7 @@ class vLMForGeneration(nn.Module):
         trust_remote_code: bool = False,
         quantization: Literal["gptq", "awq", "fp8"] | None = None,
         logprobs: int | None = None,
+        gpu_memory_utilization: float = 0.95,
         *args,
         **kwargs,
     ):
@@ -82,17 +88,18 @@ class vLMForGeneration(nn.Module):
 
         super().__init__()
 
-        import inspect
-        engine_params = set(
-            inspect.signature(
-                __import__("vllm.engine.arg_utils", fromlist=["EngineArgs"])
-                .EngineArgs.__init__
-            ).parameters
+        num_gpus = len(os.environ.get("CUDA_VISIBLE_DEVICES", "0").split(","))
+
+        llm_kwargs = dict(
+            model=model_name_or_path,
+            trust_remote_code=trust_remote_code,
+            tensor_parallel_size=num_gpus,
+            gpu_memory_utilization=gpu_memory_utilization,
+            max_model_len=8192,
+            enforce_eager=True,
+            distributed_executor_backend="mp",
         )
-        llm_kwargs: dict = dict(model=model_name_or_path)
-        if "trust_remote_code" in engine_params:
-            llm_kwargs["trust_remote_code"] = trust_remote_code
-        if "quantization" in engine_params:
+        if quantization is not None:
             llm_kwargs["quantization"] = quantization
         if "max_logprobs" in engine_params:
             llm_kwargs["max_logprobs"] = logprobs

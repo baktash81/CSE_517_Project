@@ -1,0 +1,85 @@
+DEBUG-vDistributionEstimator(2026-03-08 13:47:54,889)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 13:47:54,934)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: \&gt; His arguments are that she is in an abusive relationship and that her husband mistreats her and that he (my husband) feels sorry for her and wants to help her feel better.  
+
+Yeah, right.
+
+He is cheating on you, and waiting for the right time to move on.   I would beat him to it, and get rid of him.
+Moral foundation(s): equality, loyalty
+Input: If it helps raise everyone's standard of living what do I care if the wealthy are growing in number or getting wealthier?  
+
+Look at Ireland their economy suffered until they became more neoliberal. So it's not like the alternatives would be better.  Everyone suffering instead of a some wealthy, most well off and some poor?  I'll take the latter and it's not like being Neoliberal means that Macron doesnt support social programs and such.  The world is changing and thier safety net will need to adapt just like thier economy  it's that way in pretty much every country.  
+Moral foundation(s): care, proportionality
+Input: It does in recently peaceful countries where the government isn't as equipped and prepared to handle terrorism. 
+
+Then the people wake up and react. The election of Trump; Le Pen and other nationalists gaining traction in historically Leftist European countries. 
+Moral foundation(s): authority
+Input: &gt; Read Le Pen's platform and it becomes pretty clear she is not female Hitler.
+
+Of course not. She hates Muslims, not Jews. Duh.
+
+Also French.
+
+&gt;weekly basis ONLY by immigrants?
+
+And second/third generation citizens. But yeah, it's all evil immigrants.
+Moral foundation(s): equality
+Input: Well, they probably will rise faster to be fair.  But we could go back to slavery if we wanted to really keep the prices down, but no one is suggesting that.  Making someone work for $8 an hour when they really need $15 is really just slavery-mild.
+
+In my opinion, if you work full time, you should earn enough for a basic, but comfortable life, regardless of the job.
+Moral foundation(s): proportionality
+Input: NTA. They have no say in what you do with your own house. Not only did they not inform you of their intentions, but you didn't even know your deceased neighbors. You're not under any obligation to performatively mourn people you didn't know, just because other people are doing it. This year sucks, let people have holiday lights.
+Moral foundation(s): care
+Input: Lmao what the fuck? I hope by younger he means a little younger than him and not under 18
+Moral foundation(s): purity
+Input: I actually live in a culture in Europe that places extra emphasis on grandparents and while I appreciate that, there isn’t and shouldn’t be a replacement for the importance of parents. I highly respect and encourage the special bond my kids have with their grandparents. But that doesn’t supersede our significance as parents. That’s an unhealthy misbalance.
+Moral foundation(s): authority, loyalty
+Input: I say donate 100 to charity to cleanse yourself. I know you feel justified but you kind of stole from a cause greater then yourself. Just my opinion. Not calling you a bad person or anything like that.
+Moral foundation(s): proportionality, purity
+Input: God calls us to love one another.
+
+God also made your friend - perfectly and wonderfully made. He made him a gay man. 
+
+I think if we want to love our neighbours as we love ourselves, then we support their right to enter a loving, committed relationship. 
+
+Sorry, but YTA.
+Moral foundation(s): care, equality
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: NTA
+
+Please report that poor excuse of a human being. He is abusive and hateful.
+
+In America learning exercises like this are greatly frowned upon. But they still happen.
+Moral foundation(s): care, purity
+Input: I suppose you are American, one of the few countries where nationalism is used a synonym of patriotic sentiment. 
+
+Nationalism is defined as: "extreme form of patriotism marked by a feeling of superiority over other countries" and yes, I do have a problem with this way of thinking, especially when it is used abused by populist or far right political parties. 
+
+Moreover, if you paid any attention to what Le Pen has been saying, you would know that being on friendly terms is not exactly what the party is pushing for.
+Moral foundation(s): authority, loyalty
+Input: Jobs are abusive, manipulative and exploitative towards employees. Makes sense people would want to cheat.
+Moral foundation(s): care, equality, proportionality
+Input: he’s being... incredibly selfish. and i say this as an asexual person in a sexual relationship. relationships are about sacrifices, a give and take. it seems like he’s not giving anything to this relationship at all.
+Moral foundation(s): loyalty
+Input: Ah yes, let us hang this young adult for the most sacreligious crime, kissing! 
+
+But in all honesty incest is only morally wrong if you consider the kids. 2 consenting adults can do whatever as long as they're not harming anyone. Don't care if I find it gross or not.
+Moral foundation(s): care, purity
+Input: don’t feel guilty!! get that bag and fuck the authorities!
+Moral foundation(s): authority
+Input: Act like idiots and then acuse others of being racist, typical 2020 stuff.
+Moral foundation(s): equality
+Input: White America votes for pedophiles and violent criminals. Do you really think they care about 'conflicts of interests'? 
+
+If you're Red you're good enough, that's all that matters: pure racist hatred.
+Moral foundation(s): care
+Input: I’m way more likely to get rich by winning the lottery than I am working hard at my job
+Moral foundation(s): proportionality
+Input: hope those african american patriots in the back dont get doxxed and labeled race traitors by the insane left.
+Moral foundation(s): care, loyalty
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-08 14:59:18,201)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2053, micro_f1=0.2131, macro_f1=0.1911, authority_f1=0.1415, care_f1=0.3257, equality_f1=0.3196, loyalty_f1=0.1256, proportionality_f1=0.1177, purity_f1=0.1163

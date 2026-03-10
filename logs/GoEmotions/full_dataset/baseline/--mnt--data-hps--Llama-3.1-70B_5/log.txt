@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-08 13:46:35,737)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 13:46:35,825)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Was it this?
+{"label": ["surprise"]}
+Input: He's the best [NAME].
+{"label": ["admiration"]}
+Input: [NAME] gives me the weirdest boner. I love these guys
+{"label": ["joy", "admiration"]}
+Input: I bought the double barrel and fully upgraded it and now it's one of my favorite guns.
+{"label": ["joy", "admiration"]}
+Input: I'm so sorry. I hope things get better. 💗 I know emotional damage is rough.
+{"label": ["optimism", "sadness"]}
+Input: Beans, yo! I used to hate them but now I sometimes just eat a can of beans for a meal. They are hella filling too.
+{"label": ["admiration"]}
+Input: Let the liar lie, it's more fun to watch.
+{"label": ["joy", "admiration"]}
+Input: Alllllllways. Losing that toonie makes you feel like a rookie every time.
+{"label": ["sadness", "anger"]}
+Input: It's been over a decade since consoles decided to mandate wireless controllers and I'm still annoyed by it.
+{"label": ["anger"]}
+Input: I was banned for criticizing the authoritarian mods and now I’m back! Feels good to have the subreddit return to the principles of freedom of expression.
+{"label": ["joy"]}
+Input: My favourite food is anything I didn't have to cook myself.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Just made my first robocough purchase. Glad I used the website
+{"label": ["joy", "admiration"]}
+Input: I just need [NAME] to retire already so I can stop hating on him and appreciate all he's done... Even if it has caused me great suffering.
+{"label": ["admiration", "sadness"]}
+Input: Abso-goddamn-lutely. It’s the only thing I can think of that can make otherwise rational people defend rape, murder, genocide and slavery. 
+{"label": ["anger"]}
+Input: I am a dishonest and disrespectul
+{"label": ["sadness"]}
+Input: Cheers! *clink*
+{"label": ["joy"]}
+Input: Congratulations! Idk how long you've been living here, but welcome to Colorado!! :D I hope you're enjoying it!
+{"label": ["optimism", "admiration"]}
+Input: Well thanks. Maybe if i make any money we can set royalties up.
+{"label": ["optimism", "admiration"]}
+Input: Ozone Coffee near Old Street - Kiwi coffee shop; it’s great.
+{"label": ["admiration"]}
+Input: Same for me, feels like i've been made alone just so my brother can get all the attention
+{"label": ["sadness"]}
+Input: we need more [NAME] like [NAME] and [NAME]. So far those are the only 2 who I have seen stick to their principles.
+{"label": ["optimism", "admiration"]}
+Input: My favourite food is anything I didn't have to cook myself.
+INFO-vDistributionEstimator(2026-03-08 19:33:37,400)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3230, micro_f1=0.3616, macro_f1=0.3346, joy_f1=0.4131, optimism_f1=0.2652, admiration_f1=0.3641, surprise_f1=0.3141, fear_f1=0.2307, sadness_f1=0.3659, anger_f1=0.3893

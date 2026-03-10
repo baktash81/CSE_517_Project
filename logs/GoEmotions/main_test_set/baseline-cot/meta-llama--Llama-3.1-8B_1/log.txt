@@ -1,0 +1,20 @@
+DEBUG-vDistributionEstimator(2026-03-10 14:09:10,829)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 14:09:10,830)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: At least now [NAME] has more time to gain his confidence
+Reasoning:
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: At least now [NAME] has more time to gain his confidence
+Reasoning:
+DEBUG-vDistributionEstimator(2026-03-10 14:13:21,374)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 14:13:21,375)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: At least now [NAME] has more time to gain his confidence
+Reasoning:
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: At least now [NAME] has more time to gain his confidence
+Reasoning:

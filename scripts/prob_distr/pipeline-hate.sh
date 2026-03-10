@@ -17,6 +17,7 @@ model=${4:-$model}
 export CUDA_VISIBLE_DEVICES="$3"
 
 id_list=$2
+gpu_mem=${6:-0.95}
 
 id_file_args=""
 if [ -n "$id_list" ]; then
@@ -55,6 +56,7 @@ echo Using VLLM
         --seed 0 \
         --shot 10 \
         --alternative $alt_name \
+        --gpu-memory-utilization $gpu_mem \
         $id_file_args
 
 else

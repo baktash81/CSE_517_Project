@@ -17,6 +17,7 @@ model=${4:-$model}
 export CUDA_VISIBLE_DEVICES="$3"
 
 id_list=$2
+gpu_mem=${6:-0.95}
 
 id_file_args=""
 if [ -n "$id_list" ]; then
@@ -57,6 +58,7 @@ echo Using VLLM
         --alternative $alt_name \
         --root-dir /data1/chochlak/MSP-Podcast-1.11 \
         --annotator-labels \
+        --gpu-memory-utilization $gpu_mem \
         $id_file_args
 
 else

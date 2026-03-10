@@ -1,0 +1,78 @@
+DEBUG-vDistributionEstimator(2026-03-08 23:14:34,807)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 23:14:34,853)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: True but it just seems a bit iffy granting a place to one sex over the other not based on merit but over a quota. But yes, this is small regarding the things Macron will do for France and the future. VIVA LA FRANCE!
+Moral foundation(s): equality, proportionality
+Input: "Basically he feels that I disrespect him by going against his “authority” and that a wife should be submissive" 
+
+This officer, this right here. This is why I murdered him. 
+
+Just kidding on that part, but that religious thumper mentality does not fly with me. You're not his slave, you're his wife and partner. 
+
+I would personally leave him once you're done school and able to support yourself, your whole life will be a series of him issuing orders and expecting you to obey. Are you really ok with that?
+Moral foundation(s): authority, equality
+Input: Unless it is an enthusiastic and clear yes it is sex without consent. I don’t necessarily agree with the people saying report him to police, etc. But claim of “middle ground” is ridiculous. If you don’t have consent it is legally and morally rape.
+Moral foundation(s): care
+Input: I think you have not the slightest clue what the [Front national](https://en.wikipedia.org/wiki/National_Front_(France\)) stands for.   
+Calling some of their members "nazis" is not an insult, but rather a apt description which is verifiable and objectively true. Those individuals are not wannabee fascists like Trump and his cohorts, they are much worse.   
+
+[French courts: Yes, it’s okay to call Marine le Pen a fascist — or worse](https://www.washingtonpost.com/news/worldviews/wp/2015/03/20/french-courts-yes-its-okay-to-call-marine-le-pen-a-fascist-or-worse/).
+Moral foundation(s): equality
+Input: He means he has his so he doesn't care about all the uninsured people in America and people who go broke from medical care costs.
+Moral foundation(s): care
+Input: TIL that even LEGO cops are racist. An inanimate toy has implicit bias and is contributing to institution racism. Black Legos Matter
+Moral foundation(s): equality
+Input: God calls us to love one another.
+
+God also made your friend - perfectly and wonderfully made. He made him a gay man. 
+
+I think if we want to love our neighbours as we love ourselves, then we support their right to enter a loving, committed relationship. 
+
+Sorry, but YTA.
+Moral foundation(s): care, equality
+Input: &gt;Can someone explain the thought process for the knee jerk disgust at this saying?
+
+Anger is the natural human response to inequality and injustice.  You recognize that the saying is bullshit, that it's just someone who gets to abuse and exploit their workers talking about themself instead of anyone else (they know you don't enjoy your job, and they simply don't care).  You're having the correct response to someone who's basically gloating about what they get to do to you.
+Moral foundation(s): care, equality
+Input: Oath Keepers, 3%ers, Proud Boys, GOP, whatever wretched rightwing group; they're all anti-American fifth column filth.
+Moral foundation(s): purity
+Input: YTA, you both created your child and you’re both responsible to raise them. Her writing is 100% a real job, as she is paid to do it. It is incredibly disrespectful the way you treated her. Marriage is a partnership that cannot work without mutual respect.
+Moral foundation(s): care, loyalty
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Didn't this guy essentially fuck over his brother really hard and then take a shit ton of the earnings?
+
+Overall, this guy is a shithead posing as a Saint and people buy it.
+Moral foundation(s): loyalty
+Input: Shouldn’t anyone saying that be arrested for inciting a riot or treason against the US?
+Moral foundation(s): authority, loyalty
+Input: Did she choose him though? He says she shares her family’s political beliefs. Those beliefs include racist stereotypes and ideologies, so it seems like she’s fine with those beliefs as long as she can have her cake and eat it too.
+Moral foundation(s): equality
+Input: Sure thing. Don't worry we can easily come up with 3.5% (11 million) pissed off strikers and protesters. We can easily organize them into systematic, consistent pressure on the system. 
+
+We grab the system by the balls and we don't let go. There will be blood on both sides of course but that's what fighting for democracy entails unfortunately
+Moral foundation(s): care
+Input: "Basically he feels that I disrespect him by going against his “authority” and that a wife should be submissive" 
+
+This officer, this right here. This is why I murdered him. 
+
+Just kidding on that part, but that religious thumper mentality does not fly with me. You're not his slave, you're his wife and partner. 
+
+I would personally leave him once you're done school and able to support yourself, your whole life will be a series of him issuing orders and expecting you to obey. Are you really ok with that?
+Moral foundation(s): authority, equality
+Input: Eh, Macron and Le Pen are both bad, Fillon was the president France needed.
+Moral foundation(s): authority, loyalty, proportionality
+Input: This isn't about having different issues. Le Pen's platform is extremely violent. Advocating for that violent platform should not be met with kindness. It doesn't deserve it. 
+
+You are privileged enough that you will not be affected by this violence but that doesn't mean it isn't there. Your apologia is itself terrorism.
+Moral foundation(s): care, equality, proportionality
+Input: Republicans’ favorite type of soldier is a dead one. One on whom they can project all they want and who doesn’t talk back. That’s how they can lionize Pat Tillman while completely ignoring the fact that his fellow soldiers murdered him after he became disillusioned with the US’s middle eastern intervention.
+Moral foundation(s): care
+Input: I absolutely agree that we should fight for better government, where I do not agree with you is where you say that tyrants are losing power. I have seen no evidence of such and worry about the rise of Trump/Bannon, Marine Le Pen, and parties like Greece's Golden Dawn. Tyranny is on the rise, my friend. Stay vigilant.
+Moral foundation(s): authority
+Input: But they were born in France...to recent immigrants who practice Islam. Do you think the Le Pen voters would have the same opinion about people such as Japanese immigrants? I highly doubt it. To pretend this is just about immigration alone is ridiculous. It's about immigration of groups of people who have values and a culture that leads to problems integrating and social unrest. 
+Moral foundation(s): care, equality
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-09 00:19:13,465)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.6268, micro_f1=0.3426, macro_f1=0.3053, authority_f1=0.2725, care_f1=0.5090, equality_f1=0.4492, loyalty_f1=0.2268, proportionality_f1=0.1717, purity_f1=0.2023

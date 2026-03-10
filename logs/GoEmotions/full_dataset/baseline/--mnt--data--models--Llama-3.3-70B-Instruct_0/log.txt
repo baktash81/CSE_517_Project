@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-08 17:07:55,007)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 17:07:55,095)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Thank [NAME].
+{"label": ["admiration"]}
+Input: Cool. Glad I'm not the only one who found it weird.
+{"label": ["admiration"]}
+Input: This isn't bigoted at all. Pointing out flaws is actually a good thing. Good job
+{"label": ["admiration"]}
+Input: It still has the potential to be permanent if no alternative is found.
+{"label": ["admiration"]}
+Input: Ooh! I quite like the swimming pool of makeup as well.
+{"label": ["joy"]}
+Input: I'm not worthy to watch this haha
+{"label": ["joy", "anger"]}
+Input: [NAME] thanks. I hope it works but i have a suspicious feeling that she hates me
+{"label": ["optimism", "admiration"]}
+Input: This looks so cute! :D Her eyes came out great and I love her expression.
+{"label": ["joy", "admiration"]}
+Input: Ah, so you've an ugly face as well. Can it be rectified via plastic surgery?
+{"label": ["surprise", "anger"]}
+Input: Never made it through, it makes me physically ill just seeing images of that monster combined with him describing his incomprehensible evil.
+{"label": ["fear", "sadness", "anger"]}
+Input: My favourite food is anything I didn't have to cook myself.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: It was intentional. Maybe not with much thought behind it, but a very dangerous instinct.
+{"label": ["fear", "sadness"]}
+Input: haha not bad my man
+{"label": ["admiration"]}
+Input: Limiting warming to 0.9 degrees from now [NAME] damn, they using a young baseline. Like 1951 or something. Were warmer than just 1 C
+{"label": ["surprise"]}
+Input: i used that as an example, and i also said it would be very difficult. this is hypothetical there’s no need to be rude.
+{"label": ["anger"]}
+Input: Narrow guage is great!
+{"label": ["admiration"]}
+Input: This has been a bizarre day of coaching decisions
+{"label": ["sadness", "anger"]}
+Input: I think we need to start coming to grip with the true that TWOW and the series will not be completed.
+{"label": ["optimism", "anger"]}
+Input: >Her obsession with “her man” is weird as shit though. He's jealous. He still cares about [NAME].
+{"label": ["optimism", "anger"]}
+Input: **Who would win:** a team of 10+ moderators with libertarian principals or one person with a Python programming environment?
+{"label": ["surprise"]}
+Input: Please, you deserve life, you know it deep down inside 
+{"label": ["optimism", "admiration"]}
+Input: My favourite food is anything I didn't have to cook myself.
+INFO-vDistributionEstimator(2026-03-08 22:22:11,451)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3484, micro_f1=0.4086, macro_f1=0.3693, joy_f1=0.4887, optimism_f1=0.3025, admiration_f1=0.4624, surprise_f1=0.3247, fear_f1=0.1805, sadness_f1=0.3862, anger_f1=0.4401

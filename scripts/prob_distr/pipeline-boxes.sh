@@ -9,7 +9,8 @@ model=meta-llama/Llama-3.1-8B-Instruct
 
 # override from command line, if provided
 model=${4:-$model}
-seed=${6:-0}
+gpu_mem=${6:-0.95}
+seed=${7:-0}
 
 export CUDA_VISIBLE_DEVICES="$3"
 
@@ -53,6 +54,7 @@ echo Using VLLM
         --alternative $alt_name \
         --shot 5 \
         --seed $seed \
+        --gpu-memory-utilization $gpu_mem \
         $id_file_args
 
 else

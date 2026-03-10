@@ -1,0 +1,47 @@
+DEBUG-DistributionEstimator(2026-03-05 15:09:07,822)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 15:09:08,481)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I'd love for someone to pay a little attention to me
+{"label": ["joy"]}
+Input: I wish I was there lol
+{"label": ["joy", "optimism"]}
+Input: [NAME], this really is stunning
+{"label": ["joy", "surprise"]}
+Input: I've done that in the past. It means he's stupid drunk and is missing you at the moment.
+{"label": ["anger"]}
+Input: Congratulations! :)
+{"label": ["admiration"]}
+Input: How’d you film this and what type of microscope/camera did you use? This is great!! Thank you for creating and sharing.
+{"label": ["admiration", "surprise"]}
+Input: Binged through this last night. Interesting and entertaining. I'd love to see more.
+{"label": ["joy", "admiration"]}
+Input: I'm 35 and never knew this was a thing anyone did until I saw this posted on Facebook awhile ago. It looks massively uncomfortable?
+{"label": ["admiration"]}
+Input: Can’t wait to listen! Look forward to each episode.
+{"label": ["joy", "surprise"]}
+Input: Had my first kiss last month at 22. It does feel great. Good job bro.
+{"label": ["admiration"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: soon i’ll have an army of karens and no one will be able to stop me
+{"label": ["joy", "optimism"]}
+Input: Please don't. I like the gym too be quiet
+{"label": ["joy", "anger"]}
+Input: There's a guy that died after he let a horse do that. He'd probably have survived if he sought medical attention sooner.
+{"label": ["sadness"]}
+Input: Only all the time. As of a few years ago it’s been impossible for me to do it, which is discomforting to say the least.
+{"label": ["anger"]}
+Input: Love this!! This is so lovely! Wish I had friends like this! Great drawing as well!!
+{"label": ["joy"]}
+Input: Her absence is probably the greatest present she can give you. Enjoy it while you can.
+{"label": ["joy", "admiration"]}
+Input: Agreed. But considering their poor cars were carrying 1200+ lbs of weight, that might slow things down lol
+{"label": ["joy", "admiration"]}
+Input: This is very accurately funny and sad. 🤦🏻‍♂️
+{"label": ["joy", "sadness"]}
+Input: I can’t see her cheeks...wait a min. Oh those cheeks!!
+{"label": ["joy"]}
+Input: I watch more Netflix on my phone than my other devices. And it looks incredibly amazing on my Samsung phone screen instead of my mediocre PC monitor.
+{"label": ["admiration"]}
+Input: At least now [NAME] has more time to gain his confidence
+INFO-DistributionEstimator(2026-03-05 15:19:39,091)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3203, micro_f1=0.3341, macro_f1=0.3059, joy_f1=0.3590, optimism_f1=0.2128, admiration_f1=0.4522, surprise_f1=0.2667, fear_f1=0.2500, sadness_f1=0.3509, anger_f1=0.2500

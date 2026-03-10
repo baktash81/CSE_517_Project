@@ -1,0 +1,47 @@
+DEBUG-DistributionEstimator(2026-03-05 15:46:20,980)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 15:46:20,985)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: 😩😩😩😩 heads melted, very tired but can't sleep. 
+anger, pessimism, sadness
+Input: Omg. You've got to watch the new series 'This is Us'.....wow. Best tv show I've seen in a long time.\n #tears  #moretears
+joy, love
+Input: The race advances only by the extra achievements of the individual. You are the individual. ~Charles Towne\n #optimism #inspire
+joy, optimism
+Input: @leeuwlion 'The furries are restless tonight'.
+none
+Input: @CazuaL_WeaR @ScottInSC looks like a book shaped like a gun to me  #itsagunalright
+disgust, surprise
+Input: I HATE little girls 😡😡 got a lot off growing up to do!!! #fuming
+anger, disgust
+Input: @OstinOng YUUUHH 🙄😭 plus clin ep and prevmed ugghhh hahaha #bitter
+anger, disgust, sadness
+Input: there is no shame in fear, what matters is how we face it.
+fear, optimism
+Input: Bored rn leave Kik/Snapchat #kik #kikme #kikmessage #boredaf #bored #snapchatme #snapchat  #country #countrygirl
+anticipation, sadness
+Input: OMG NOL i love u so so much i love ur cheery face and hugs 😘😘😘 @CRAZYmac17
+joy, love, optimism
+Input: My best friends driving for the first time with me in the car #terrifying
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: When you lose somebody close to your heart you lose yourself as well 💔 #lost
+pessimism, sadness
+Input: This week's Massacre Theatre pert by @LarsenOnFilm is the first one I can think of that requires subtitles. #breathless
+anticipation, surprise
+Input: when season 13 of greys anatomy premieres today. it you're only on season 7 #sadness :(
+sadness
+Input: @leesyatt you are a cruel, cruel man. #therewillbeblood #revenge
+anger, disgust, sadness
+Input: @TheBadgerBoy check out the article on @SaintSkipper5 on @dailyecho 
+none
+Input: Never dull moment here
+anticipation, joy, optimism
+Input: @menglishmusic Thank you for the most fantastic evening, it was a brilliant show, you are a truly #sparkling talent, night over too quickly.
+joy, love
+Input: People too weak to follow their own dreams will always find a way to discourage yours.
+disgust, sadness
+Input: Watching It Follows.  This is a super freaky movie.  #horror #scary
+fear, surprise
+Input: @Adrian_Specs Far from safe and staid I found it horribly OTT at times while everyone seemed to be trying just a little too hard. Not for me
+anger, fear
+Input: My best friends driving for the first time with me in the car #terrifying
+INFO-DistributionEstimator(2026-03-05 15:52:18,200)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3407, micro_f1=0.4756, macro_f1=0.3710, anger_f1=0.5138, anticipation_f1=0.1724, disgust_f1=0.6434, fear_f1=0.3265, joy_f1=0.5357, love_f1=0.5652, optimism_f1=0.5455, pessimism_f1=0.0930, sadness_f1=0.5739, surprise_f1=0.0000, trust_f1=0.1111

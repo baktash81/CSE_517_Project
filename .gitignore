@@ -151,7 +151,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-logs*/
 .vscode
 .data-cache
 
@@ -167,3 +166,6 @@ datasets/boxes/boxes-dataset-v1/few_shot_boxes_nso_exp2_max3/train-t5.jsonl
 datasets/boxes/boxes-dataset-v1/few_shot_boxes_nso_exp2_max3/test-t5.jsonl
 datasets/boxes/boxes-dataset-v1/few_shot_boxes_nso_exp2_max3_move_contents/train-t5.jsonl
 datasets/boxes/boxes-dataset-v1/few_shot_boxes_nso_exp2_max3_move_contents/test-t5.jsonl
+
+.claude/
+CLAUDE.md

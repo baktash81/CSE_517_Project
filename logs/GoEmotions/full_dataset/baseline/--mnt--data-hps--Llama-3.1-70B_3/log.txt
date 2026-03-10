@@ -1,0 +1,276 @@
+DEBUG-vDistributionEstimator(2026-03-08 12:38:35,018)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 12:38:35,731)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I will try to pay better attention. Its definatly not just ambient noise. I think you might be on to something with the packages.
+{"label": ["optimism"]}
+Input: Have you visited any of the car subs? They may be able to help you diagnose the issue. Good luck though, I hope ya pull through. 
+{"label": ["optimism", "surprise"]}
+Input: I like your enthusiasm and yes it would be hilarious.
+{"label": ["joy"]}
+Input: I’m not sure why I just laughed so hard at this. It’s not but it’s funny!
+{"label": ["joy", "surprise"]}
+Input: Great deal! It will be my loss if I decline.
+{"label": ["admiration"]}
+Input: No, stop! He'll stop cranking the job machine if you insult him again!
+{"label": ["anger"]}
+Input: True, my bad. 
+{"label": ["admiration", "sadness"]}
+Input: My girlfriend barely tolerates me showering in the morning, she'd be furious if I'd let an alarm ring while I'm away. And rightfully so. 
+{"label": ["anger"]}
+Input: Why don't you just tell us? We're all dying to know!
+{"label": ["joy", "surprise"]}
+Input: I'll always be here to accept you. :)
+{"label": ["joy", "optimism", "admiration"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Thank you! And may [NAME] shine His love upon you!
+{"label": ["optimism", "admiration"]}
+Input: Only Ten more minutes of watching [NAME] drop easy ass throws
+{"label": ["sadness", "anger"]}
+Input: Well no dur
+{"label": ["anger"]}
+Input: I’m glad I wasn’t the only person who wondered about [NAME].
+{"label": ["admiration"]}
+Input: You obviously don't understand, this season was a bumper crop and *I* want to bank all that sunshine in *my own* pocket.
+{"label": ["optimism", "anger"]}
+Input: [NAME] because hes best survivor
+{"label": ["admiration"]}
+Input: Too late, you read it anyways. Ban me if you don't want to read more. Lmao!! 
+{"label": ["joy"]}
+Input: It looks nineteen to me.
+{"label": ["admiration"]}
+Input: What kind of dove is he? He is soooo pretty!!
+{"label": ["admiration", "surprise"]}
+Input: They look absolutely PERFECT together. I hope its that way in real life too. So happy for ya [NAME]!!!
+{"label": ["joy", "optimism"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+DEBUG-vDistributionEstimator(2026-03-08 12:49:59,335)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 12:49:59,858)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I finished high school back in 2010 friend but yes good luck to me for the weekend 😎
+{"label": ["optimism", "admiration"]}
+Input: In a sous vide? How does that work?
+{"label": ["surprise"]}
+Input: Ok 🤷‍♀️ I believe in you, you can do it. 
+{"label": ["admiration"]}
+Input: Glad that [NAME] continues to be himself even in a mystery fortress. I doubt I'll ever play another game as good.
+{"label": ["admiration", "surprise"]}
+Input: yeah I can see myself in that too. I lost all feeling for responsibilty. except for going to work.
+{"label": ["admiration"]}
+Input: Goalpost shifting much?
+{"label": ["surprise"]}
+Input: Millennial here. Have a few motorcycles, none of them Harleys. I do not like overpriced, unreliable and bad performing vehicles. 
+{"label": ["anger"]}
+Input: This goes hard, keep working just a little bit more on it. It feels like a demo to a cool song Love it
+{"label": ["joy", "optimism"]}
+Input: Oh we’re TANKING tanking
+{"label": ["admiration", "anger"]}
+Input: Actually it's touching and kind of beautiful. The only thing stupid and lame is your comment.
+{"label": ["admiration", "anger"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: [NAME] has no jump at all. If he’s injured he should sit and get better.
+{"label": ["optimism", "admiration"]}
+Input: I’m a HR professional and deal with this all the time. You’d be surprised how ignorant most people are about their paychecks.
+{"label": ["admiration"]}
+Input: Only the [NAME] do so. The rest of us have been exasperated with him for months, at least.
+{"label": ["admiration"]}
+Input: #welcome to Doordash lol We all quit Doordash
+{"label": ["joy", "admiration"]}
+Input: Did he just get fat? What caused him to fall off so much? It's amazing how quickly he flamed out.
+{"label": ["surprise"]}
+Input: It's more of a personal issue with me. But I completley understand and respect your decisions and way of thinking
+{"label": ["admiration"]}
+Input: [NAME] voice actor by the end of the game was phenomenal. So much rage and sadness
+{"label": ["sadness", "anger"]}
+Input: >This game is dying because toxic people like you ruin it. Speak for yourself
+{"label": ["sadness", "anger"]}
+Input: [NAME], now i’m graduated trying to pay off my student loans
+{"label": ["admiration"]}
+Input: Thank you! And may [NAME] shine His love upon you!
+{"label": ["optimism", "admiration"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+DEBUG-vDistributionEstimator(2026-03-08 12:53:02,988)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 12:53:03,703)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: So many nice things here. Good vibes. Enjoy your cake day and weekend. ✌
+{"label": ["joy", "admiration"]}
+Input: Some folks are just bitter and taking it out on the world right now. Don't give into their idocy, keep up the good spirit!
+{"label": ["optimism", "admiration"]}
+Input: I wanted to slap her when she told him she could have died and it would be his fault.
+{"label": ["anger"]}
+Input: Good luck going to jail.
+{"label": ["anger"]}
+Input: Very surprised he didn't frog leap at the guy the close the distance
+{"label": ["surprise"]}
+Input: Sending you warm wishes :) <3
+{"label": ["optimism"]}
+Input: I've been waiting to watch [NAME] die for a long long time. Sure hope that one is right.
+{"label": ["optimism", "surprise"]}
+Input: 🤷‍♂️ weird flex but ok
+{"label": ["admiration", "anger"]}
+Input: I refuse to watch this. Lifetime exploiting [NAME] gross behavior to sell 'entertainment'.
+{"label": ["anger"]}
+Input: You're glad Australia was playing politics at a time like this? That's not a vote of confidence in the [NAME].
+{"label": ["joy", "surprise"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Tell me when you find out how to bowser-wobble
+{"label": ["surprise"]}
+Input: That was the most boring movie I’ve ever seen
+{"label": ["sadness", "anger"]}
+Input: I sure hope so. I wanna cry tears of joy knowing [NAME] and [NAME] rode off into the sunset with one last ring.
+{"label": ["joy", "optimism"]}
+Input: Zero percent. I sit when I piss cause I'm not an animal and I like to keep my bathroom clean.
+{"label": ["joy", "admiration"]}
+Input: I think it it would have been even worse if that was the case
+{"label": ["anger"]}
+Input: We might now be almost maybe nearly ready to potentially maybe play finals. I think [NAME] will make the finals this year. They'll be the surprise team.
+{"label": ["optimism", "surprise"]}
+Input: Fish tanks and fiddlesticks, that was intense!
+{"label": ["admiration"]}
+Input: I'd worry about traffic more than the TSA.
+{"label": ["fear"]}
+Input: Yeah, I’m going to do my best to avoid a fight. She’d probably kill me. 
+{"label": ["optimism", "admiration"]}
+Input: To drool on.
+{"label": ["anger"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+DEBUG-vDistributionEstimator(2026-03-08 12:59:53,311)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 12:59:54,025)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: thank you i’ll focus on education and just bettering myself to the best
+{"label": ["admiration"]}
+Input: Oh good. It's nice to see confirmation that you're actually trolling, because no one is that stupid 
+{"label": ["admiration"]}
+Input: Haaaaay it’s the NAGR Guy!!!!!
+{"label": ["joy"]}
+Input: Wow, talk about being [NAME].
+{"label": ["joy", "surprise"]}
+Input: Oh such a embarrassing mistake, or was it?
+{"label": ["surprise", "sadness"]}
+Input: Tell him congrats. And that he srsly needs to work on his bunting; it's just painful to watch.
+{"label": ["sadness"]}
+Input: Because love is a lie and there is no happiness in the world
+{"label": ["sadness", "anger"]}
+Input: [NAME], “How dare you show concern for the wounded!” Made me chuckle.
+{"label": ["joy", "optimism", "anger"]}
+Input: [NAME] is lining up for West Ham, holy shit im excited to see this play out
+{"label": ["joy"]}
+Input: dude that stadium was lit as fuck 🤣🤣🤣 were about to embrace the tank like never before
+{"label": ["joy", "admiration"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: This is my new favorite video.
+{"label": ["joy", "admiration"]}
+Input: Happy new year!
+{"label": ["joy"]}
+Input: I learned that recently driving into SLC for the first time in the rain/snow. I couldn't see shit. 1/10 Was scary.
+{"label": ["fear"]}
+Input: I’d want to know what happens after
+{"label": ["optimism", "surprise"]}
+Input: DDR is enjoying a bit of a renaissance at the moment, thanks to DDR A. Hopefully this will lead Konami to considering a new home release.
+{"label": ["optimism", "admiration"]}
+Input: I am on month 9 post discard. The anxiety has lifted tremendously, and the depression is still looming but not as bad. 
+{"label": ["fear", "sadness"]}
+Input: Wait, did this really happen? I'd like to see that video so I can cringe some more plz.
+{"label": ["fear"]}
+Input: [NAME] a drama queen?! Surely you jest./s
+{"label": ["surprise"]}
+Input: The [NAME] trade to get [NAME] wasn't too shabby either.
+{"label": ["admiration"]}
+Input: this is super cute, i love it
+{"label": ["joy", "admiration"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+DEBUG-vDistributionEstimator(2026-03-08 13:06:31,272)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 13:06:31,908)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I’ve lived in Florida. Hurricanes are *much* worse.
+{"label": ["anger"]}
+Input: I hope she will. I will regret it until she does and even after that I may still regret all I did.
+{"label": ["optimism", "sadness"]}
+Input: All I know is everyone is Tuscaloosa considers this season an abysmal failure.
+{"label": ["admiration"]}
+Input: I’m sorry :(
+{"label": ["sadness"]}
+Input: We are usually way worse in the 3rd tbf
+{"label": ["sadness"]}
+Input: Yeah it ringed a bell but i wasn't sure of the church
+{"label": ["admiration", "surprise"]}
+Input: Waiting to see if a card expansion will make the game fun.
+{"label": ["optimism", "surprise"]}
+Input: [NAME] hoping he's [NAME] mum
+{"label": ["optimism"]}
+Input: I prefer HOWDY MISTER
+{"label": ["optimism", "admiration"]}
+Input: So we ARE paying him, but his 8.7M cap hit won't apply right? We should have pretty good amount of fun money for FA. 
+{"label": ["joy", "admiration"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Did feel that one but I find it hard to tell sometimes
+{"label": ["sadness"]}
+Input: Utah roads are definitely some of the best out there. Anywhere else I have lived has had either similar or worse, or waaaay waaaay worse
+{"label": ["admiration", "anger"]}
+Input: This was driving me NUTS!
+{"label": ["joy"]}
+Input: Why would the landlord pay it if electric isnt included. Sorry to OP, need to cut the heat down
+{"label": ["sadness", "anger"]}
+Input: Haha ok I thought it looked like the vine logo, but assumed I was wrong since it’s been dead a while.
+{"label": ["joy", "admiration"]}
+Input: [NAME] will be gone. Although I think end of the first is where he should go, he will go super early
+{"label": ["optimism", "admiration"]}
+Input: It’s pretty cringe
+{"label": ["fear"]}
+Input: isnt that halloween or like easter, man people are weird
+{"label": ["anger"]}
+Input: Why is [NAME] me though lmao
+{"label": ["joy"]}
+Input: That is some serious dedication... He must love his job
+{"label": ["joy", "admiration"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+DEBUG-vDistributionEstimator(2026-03-08 13:17:18,344)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-08 13:17:18,953)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I remember being so excited when we got AAA back, even though it cost us Fournier...man, that sure went south. #ThanksShaw
+{"label": ["joy"]}
+Input: Absolutely brutal.
+{"label": ["fear", "anger"]}
+Input: Yes, he's really pushing the Devils to new heights.
+{"label": ["admiration"]}
+Input: Lol it's only been 7 years. Don't let your guard down now.
+{"label": ["joy"]}
+Input: Same here. I drink a pint of water? No bathroom needs for at least two hours. Pint of beer? Half an hour, tops.
+{"label": ["admiration", "surprise"]}
+Input: I’d rather have 50$ every time I see a variation of this prompt lol
+{"label": ["joy"]}
+Input: Of course you can. Wear a racist T-shirt for a day and see what happens.
+{"label": ["optimism", "admiration"]}
+Input: As someone who has lived his entire life in the tropics, I can't even begin to imagine what those kinds of temperatures are like.
+{"label": ["optimism", "anger"]}
+Input: Idk you seem pretty miserable and really bitter and angry. It must be exhausting and I hope you find happiness some day.
+{"label": ["optimism", "anger"]}
+Input: What's there to disagree on..... it's pretty apparent
+{"label": ["anger"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Funny you should mention that since your entire presumption rests on other people interpreting "well regulated militia" in the same incorrect manner you do.
+{"label": ["anger"]}
+Input: Nope. I like looking at people.
+{"label": ["anger"]}
+Input: Find a better partner. It's past time to move on! He sounds very lazy, selfish, and he doesn't care about your needs.
+{"label": ["optimism", "anger"]}
+Input: It looks like it's from the Molecule Effect on Santa Fe. Great quirky spot!
+{"label": ["joy", "admiration"]}
+Input: Out of curiosity, why won’t you play Odyssey?
+{"label": ["surprise"]}
+Input: dont care what you call it, just glad he's getting the job done. its what elections are about.
+{"label": ["admiration", "anger"]}
+Input: i really like that! I'll start using it moving forward =)
+{"label": ["joy"]}
+Input: Thanks? Lol. Pairing [NAME] or [NAME] with [NAME], defensively, though? Yikes, to say the least.
+{"label": ["joy", "admiration"]}
+Input: I'd love it if we could just put everyone into work camps as soon as they turn 12. Property come would be a thing of the past!
+{"label": ["joy", "optimism"]}
+Input: [NAME] is nowhere close to the worst linebacker in the league.
+{"label": ["anger"]}
+Input: Is this in New Orleans?? I really feel like this is New Orleans.

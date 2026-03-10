@@ -1,0 +1,80 @@
+experiment_0:
+  ___distribution___: baseline
+  __model_name_or_path___: meta-llama/Llama-3.1-8B
+  _label_mode___: null
+  _query_label_mode___: null
+  _sampling_strategy___: multilabel
+  _shot___: 0
+  accelerate: true
+  annotation_mode: aggregate
+  assistant_prompt: null
+  cot_csv: null
+  cot_randomize: false
+  dataloader_num_workers: 0
+  dev_debug_ann: null
+  dev_debug_len: null
+  dev_ids_filename: null
+  dev_keep_same_examples: false
+  dev_splits: null
+  disable_indexed_logging: false
+  disable_intermediate_checkpoints: false
+  disable_tqdm: false
+  distribution: baseline
+  emotion_clustering_json: datasets/goemotions/emotion_clustering.json
+  incontext_prompt: 'Input: {text}
+
+    Reasoning: {cot}
+
+    Output: {label}
+
+    '
+  instruction_prompt: 'Classify the following inputs into none, one, or multiple the
+    following emotions per input: {labels}. Let''s think step by step about what emotions
+    are present before classifying. After your reasoning, output exactly one line
+    starting with "Output:" in this format:
+
+    Output: {"label": ["emotion1", "emotion2"]}
+
+    '
+  keep_one_after_filtering: false
+  label_format: json
+  label_mode: null
+  label_parser: null
+  label_randomization_seed: null
+  label_same_length: false
+  max_grad_norm: null
+  max_length: null
+  max_new_tokens: 500
+  model_load_filename: null
+  model_name_or_path: meta-llama/Llama-3.1-8B
+  model_save_filename: null
+  quantization: fp8
+  query_label_mode: null
+  query_prompt: null
+  reasonableness_label_mode: distribution
+  retries: 3
+  root_dir: datasets/goemotions
+  sampling_strategy: multilabel
+  seed: 0
+  sentence_device: null
+  sentence_model_name_or_path: all-mpnet-base-v2
+  shot: 0
+  system_prompt: ' '
+  task: GoEmotions
+  test_debug_ann: null
+  test_debug_len: null
+  test_ids_filename:
+  - prob_distr_ids/GoEmotions/main_test_set.txt
+  test_keep_same_examples: false
+  test_splits:
+  - dev
+  text_preprocessor: false
+  train_debug_ann: null
+  train_debug_len: null
+  train_ids_filename: null
+  train_keep_same_examples: false
+  train_splits:
+  - train
+  trust_remote_code: false
+  user_prompt: null
+  word_embeddings_model: null
