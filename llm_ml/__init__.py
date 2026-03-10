@@ -8,13 +8,13 @@ from .datasets import (
     MMLUProDataset,
     MMLUProDatasetForTransformers,
     BoxesDataset,
-    BoxesDatasetForTransformers#,
+    BoxesDatasetForTransformers,
 #    MSPPodcastDataset,
 #    MSPPodcastDatasetForTransformers,
 #    QueerReclaimLexDataset,
 #    QueerReclaimLexDatasetForTransformers,
-#    HatexplainDataset,
-#    HatexplainDatasetForTransformers,
+    HatexplainDataset,
+    HatexplainDatasetForTransformers,
 #    TRECDataset,
 #    TRECDatasetForTransformers,
 )
@@ -27,7 +27,7 @@ DATASETS = dict(
     Boxes=BoxesDataset,
 #    MSPPodcast=MSPPodcastDataset,
 #    QueerReclaimLex=QueerReclaimLexDataset,
-#    Hatexplain=HatexplainDataset,
+    Hatexplain=HatexplainDataset,
 #    TREC=TRECDataset,
 )
 

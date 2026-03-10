@@ -359,23 +359,7 @@ class LMForGeneration(nn.Module):
             load_in_4bit=load_in_4bit,
             device_map=device,
             trust_remote_code=trust_remote_code,
-            low_cpu_mem_usage=True,
         )
-        # Cap GPU memory when quantizing to avoid OOM during load (leave ~2GiB headroom)
-        if use_quant and device is None and torch.cuda.is_available():
-            free_gb = torch.cuda.get_device_properties(0).total_memory / (1024**3)
-            load_kwargs["max_memory"] = {0: f"{max(1, int(free_gb) - 2)}GiB", "cpu": "32GiB"}
-        if load_in_4bit:
-            load_kwargs["quantization_config"] = BitsAndBytesConfig(
-                load_in_4bit=True,
-                bnb_4bit_use_double_quant=True,
-                bnb_4bit_quant_type="nf4",
-                bnb_4bit_compute_dtype=dtype,
-            )
-        elif load_in_8bit:
-            load_kwargs["quantization_config"] = BitsAndBytesConfig(
-                load_in_8bit=True,
-            )
 
         try:
             self.lm = AutoLigerKernelForCausalLM.from_pretrained(

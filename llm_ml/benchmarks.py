@@ -788,30 +788,46 @@ class Hatexplain(TextDataset):
         super().__init__(root_dir=None, *args, **kwargs)
 
     def _load_data(self, split):
-        split = {
+        split_map = {
             "train": "train",
             "dev": "validation",
             "test": "test",
-        }[split]
-        dataset = load_dataset("Hate-speech-CNERG/hatexplain", split=split)
+        }
+        target_split = split_map[split]
+        print(f"Loading for split {target_split}")
+        data_dir = 'datasets/hatexplain'
+        with open(os.path.join(data_dir, "dataset.json"), "r") as f:
+            raw_data = json.load(f)
+        with open(os.path.join(data_dir, "post_id_divisions.json"), "r") as f:
+            splits = json.load(f)
 
+        split_ids = splits[target_split]
         annotations = {}
 
-        for e in dataset:
-            text = " ".join(e["post_tokens"])
-            annotations[e["id"]] = {
-                "text": self.preprocessor(text),
-                "original_text": text,
+        # dataset = load_dataset("Hate-speech-CNERG/hatexplain", split=split, trust_remote_code=True)
+        label_map = {"hatespeech": 0, "normal": 1, "offensive": 2}
+        for post_id in split_ids:
+            post = raw_data[post_id]
+            
+            # Reconstruct the text and clean up spaces before punctuation
+            raw_text = " ".join(post["post_tokens"])
+            clean_text = re.sub(r'\s+([?.!,:;\'"])', r'\1', raw_text)
+
+            annotations[post_id] = {
+                "text": self.preprocessor(clean_text),
+                "original_text": clean_text,
                 "label": {},
             }
-            for ann_id, label in zip(
-                e["annotators"]["annotator_id"], e["annotators"]["label"]
-            ):
-                annotations[e["id"]]["label"][ann_id] = torch.tensor(
-                    label
-                ).float()
+            
+            # Map annotator labels
+            for ann in post["annotators"]:
+                ann_id = ann["annotator_id"]
+                label_str = ann["label"]
 
-        # use most frequent label as aggregate
+                label_idx = label_map[label_str]
+                annotations[post_id]["label"][ann_id] = torch.tensor(label_idx).float()
+
+        # Use most frequent label as aggregate
         for _id in annotations:
             cnt = Counter(
                 [x.item() for x in annotations[_id]["label"].values()]
@@ -821,7 +837,6 @@ class Hatexplain(TextDataset):
             ).float()
 
         return annotations, ["hate", "normal", "offensive"]
-
 
 class TREC(TextDataset):
     multilabel = False
