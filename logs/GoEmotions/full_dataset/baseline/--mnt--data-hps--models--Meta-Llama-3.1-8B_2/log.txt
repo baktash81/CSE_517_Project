@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-10 14:52:55,604)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 14:52:55,677)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Looks like some salty Detroit fans downvoting you lol
+{"label": ["joy", "anger"]}
+Input: Did he lose a bet or something? -edit- It took longer than it should have for me to realize that it was a mashup of different dudes...
+{"label": ["admiration", "surprise"]}
+Input: Do yourself a favor and protect your credibility by not arguing in favor of a terrible hire.
+{"label": ["optimism"]}
+Input: If it was communism, the poor lad would be killed
+{"label": ["admiration"]}
+Input: I would have used "perplexing" haha
+{"label": ["joy"]}
+Input: That one is my favorite btw, its delicious. sorry you couldn't have it :(
+{"label": ["joy", "anger"]}
+Input: Yikes. I feel sorry for the team that gives him anything above 5.5
+{"label": ["sadness"]}
+Input: When I was younger I would forget to pull it back to pee sometimes. That was a mess and led to some embarrassing moments.
+{"label": ["admiration", "sadness"]}
+Input: Well thanks. Maybe if i make any money we can set royalties up.
+{"label": ["optimism", "admiration"]}
+Input: Am love u
+{"label": ["joy"]}
+Input: My favourite food is anything I didn't have to cook myself.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Dementia is in my family so this is pretty exciting. I also have to wonder if this bacteria could cause other kinds of mental illnesses..
+{"label": ["joy", "surprise"]}
+Input: The effect has Tyus has on ball movement for us is remarkable
+{"label": ["admiration"]}
+Input: I'm sorry but "Amish heifer" took me OUT. 
+{"label": ["sadness"]}
+Input: Such a great actor because he can play so many different roles! Loved his character in Banderstach
+{"label": ["joy", "admiration"]}
+Input: This will forever be my most fav April moment!
+{"label": ["joy", "admiration"]}
+Input: I filed for divorce this morning. Hoping he moves out in the next day or so.
+{"label": ["optimism"]}
+Input: Thanks for saying this eloquently, I'm always a little put off by some of the man hating comments that pop up here occasionally.
+{"label": ["admiration", "anger"]}
+Input: Literally every team sub says this when something negative about them is posted They dislike the hire because he wasn't exactly popular in Seattle.
+{"label": ["anger"]}
+Input: Disgusting, I bet you he will never even be inside that apartment condo ever.
+{"label": ["anger"]}
+Input: Let the liar lie, it's more fun to watch.
+{"label": ["joy", "admiration"]}
+Input: My favourite food is anything I didn't have to cook myself.
+INFO-vDistributionEstimator(2026-03-10 17:59:49,493)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2968, micro_f1=0.3184, macro_f1=0.2906, joy_f1=0.3647, optimism_f1=0.2305, admiration_f1=0.3731, surprise_f1=0.2682, fear_f1=0.1360, sadness_f1=0.3064, anger_f1=0.3552
