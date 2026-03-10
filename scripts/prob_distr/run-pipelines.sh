@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Assign arguments, falling back to defaults if not provided by the user
-MODE="${1:-baseline}"
-DIST_TYPE="${2:-}" # Defaults to empty string
+DIST_TYPE="${1:-baseline}"
+DATA_SPLIT="${2:-}" # Defaults to empty string
 GPUS="${3:-4}"
 MODEL_PATH="${4:-/mnt/data-hps/models/Meta-Llama-3.1-8B}"
 GPU_MEM="${5:-0.35}"
@@ -35,21 +35,18 @@ run_pipeline() {
 }
 
 echo "Starting sequential pipeline runs..."
-echo "Mode: $MODE | Dist Type: '$DIST_TYPE' | GPUs: $GPUS (MFRC: $MFRC_GPUS) | Model: $MODEL_PATH | GPU Mem: $GPU_MEM"
+echo "Distribution Type: $DIST_TYPE | Dataset Split: '$DATA_SPLIT' | GPUs: $GPUS (MFRC: $MFRC_GPUS) | Model: $MODEL_PATH | GPU Mem: $GPU_MEM"
 echo ""
 
 
 # SemEval
-run_pipeline "SemEval" bash scripts/prob_distr/pipeline-semeval.sh "$MODE" "$DIST_TYPE" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
+run_pipeline "SemEval" bash scripts/prob_distr/pipeline-semeval.sh "$DIST_TYPE" "$DATA_SPLIT" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
 
 # MFRC 
-run_pipeline "MFRC" bash scripts/prob_distr/pipeline-MFRC.sh "$MODE" "$DIST_TYPE" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
+run_pipeline "MFRC" bash scripts/prob_distr/pipeline-MFRC.sh "$DIST_TYPE" "$DATA_SPLIT" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
 
 # GoEmotions
-run_pipeline "GoEmotions" bash scripts/prob_distr/pipeline-goemotions.sh "$MODE" "$DIST_TYPE" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
-
-# Boxes
-#run_pipeline "Boxes" bash scripts/prob_distr/pipeline-boxes.sh "$MODE" "$DIST_TYPE" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
+run_pipeline "GoEmotions" bash scripts/prob_distr/pipeline-goemotions.sh "$DIST_TYPE" "$DATA_SPLIT" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
 
 # Final Summary
 echo "================================================================="
