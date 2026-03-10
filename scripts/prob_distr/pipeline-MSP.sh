@@ -47,7 +47,6 @@ if [ "$5" == "vllm" ]; then
         --incontext $'Question: {text}\nAnswer: {label}\n\n' \
         --model-name-or-path $model \
         --max-new-tokens 18 \
-        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
