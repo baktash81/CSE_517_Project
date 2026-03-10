@@ -52,7 +52,7 @@ class vLMForGeneration(nn.Module):
             ),
             quantization=dict(
                 choices=["gptq", "awq", "fp8"],
-                default="fp8",
+                default=None,
                 type=str,
                 help="quantization to use for model",
             ),
@@ -63,7 +63,7 @@ class vLMForGeneration(nn.Module):
         model_name_or_path: str,
         max_new_tokens: int | None = None,
         trust_remote_code: bool = False,
-        quantization: Literal["gptq", "awq", "fp8"] = "fp8",
+        quantization: Literal["gptq", "awq", "fp8"] | None = None,
         logprobs: int | None = None,
         *args,
         **kwargs,
@@ -193,6 +193,9 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
                 their tokenization the values.
             args, kwargs: arguments to pass to vLMForGeneration.
         """
+        # Request logprobs for label_first_token_ids / distribution estimation
+        n_labels = len(labels)
+        kwargs.setdefault("logprobs", max(n_labels, 16))
         super().__init__(*args, **kwargs)
         self.labels = labels
         self.label_first_token_ids = None
@@ -255,6 +258,7 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
             first_label_inds = [min(i) for i in all_first_label_inds]
 
             # get the scores for all labels from the first token that is a label
+            # o can be None when vLLM logprobs are not requested (max_logprobs not set)
             out["scores"] = [
                 (
                     torch.tensor(
@@ -263,7 +267,7 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
                             for j in self.label_first_token_ids.values()
                         ]
                     )
-                    if i < len(o)
+                    if o is not None and i < len(o)
                     # in case of multilabel, label_first_token_ids also has None
                     else torch.zeros(
                         max(len(self.labels), len(self.label_first_token_ids))
@@ -394,6 +398,11 @@ class LMForGeneration(nn.Module):
             load_kwargs["quantization_config"] = BitsAndBytesConfig(
                 load_in_8bit=True,
             )
+
+        if load_in_8bit:
+            load_kwargs["load_in_8bit"] = True
+        if load_in_4bit:
+            load_kwargs["load_in_4bit"] = True
 
         try:
             self.lm = AutoLigerKernelForCausalLM.from_pretrained(

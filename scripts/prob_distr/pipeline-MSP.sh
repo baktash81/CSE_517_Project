@@ -18,11 +18,18 @@ export CUDA_VISIBLE_DEVICES="$3"
 
 id_list=$2
 
-id_file=prob_distr_ids/MSPPodcast/$id_list.txt
+id_file_args=""
+if [ -n "$id_list" ]; then
+    id_file=prob_distr_ids/MSPPodcast/$id_list.txt
+    id_file_args="--test-ids-filename $id_file"
+    alt_name="$id_list/{distribution}/{model_name_or_path}"
+else
+    alt_name="full_dataset/{distribution}/{model_name_or_path}"
+fi
 
 echo Using model $model
 echo Evaluating distribution type $1
-echo Testing on IDs in $id_file
+echo Testing on IDs: ${id_file:-"(full dataset)"}
 echo Running on GPU $3
 
 if [ "$5" == "vllm" ]; then
@@ -31,14 +38,14 @@ echo Using VLLM
     python scripts/prob_distr/vllm_prob_distr.py \
         MSPPodcast \
         --distribution $1 \
-        --train-split train \
-        --test-split test \
+        --train-split test \
+        --test-split train \
         --system ' ' \
         --instruction $'Classify the following inputs into one of the following options per input: {labels}. Output exactly one label and no others.\n\n' \
         --incontext $'Question: {text}\nAnswer: {label}\n\n' \
         --model-name-or-path $model \
         --max-new-tokens 18 \
-        --accelerate \
+        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
@@ -47,10 +54,10 @@ echo Using VLLM
         --sentence-model all-mpnet-base-v2 \
         --seed 0 \
         --shot 10 \
-        --alternative $id_list/{distribution}/{model_name_or_path} \
+        --alternative $alt_name \
         --root-dir /data1/chochlak/MSP-Podcast-1.11 \
         --annotator-labels \
-        --test-ids-filename $id_file
+        $id_file_args
 
 else
 echo Using HuggingFace
@@ -58,26 +65,26 @@ echo Using HuggingFace
     python scripts/prob_distr/llm_prob_distr.py \
         MSPPodcast \
         --distribution $1 \
-        --train-split train \
-        --test-split test \
+        --train-split test \
+        --test-split train \
         --system ' ' \
         --instruction $'Classify the following inputs into one of the following options per input: {labels}. Output exactly one label and no others.\n\n' \
         --incontext $'Question: {text}\nAnswer: {label}\n\n' \
         --model-name-or-path $model \
         --max-new-tokens 18 \
+        --device auto \
         --accelerate \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
         --trust-remote-code \
-        --load-in-4bit \
         --sampling-strategy uniform \
         --sentence-model all-mpnet-base-v2 \
         --seed 0 \
         --shot 10 \
-        --alternative $id_list/{distribution}/{model_name_or_path} \
+        --alternative $alt_name \
         --root-dir /data1/chochlak/MSP-Podcast-1.11 \
         --annotator-labels \
-        --test-ids-filename $id_file
+        $id_file_args
 
 fi
