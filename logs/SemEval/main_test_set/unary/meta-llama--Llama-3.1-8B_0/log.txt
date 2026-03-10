@@ -1,0 +1,371 @@
+DEBUG-DistributionEstimator(2026-03-05 16:24:50,655)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 16:24:50,661)   test: Label set: reasonable, unreasonable
+Example prompt: Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+Label: joy
+Is the label reasonable: reasonable
+
+Question: Skipping meals is the national way of showing #disappointment and . #wiz
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+Label: none
+Is the label reasonable: unreasonable
+
+Question: But guess what ? I'm sober
+Label: joy
+Is the label reasonable: reasonable
+
+Question: I don't want speak front to him   #nopanicattack
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+Label: anticipation
+Is the label reasonable: reasonable
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+Example tokenization: <|begin_of_text|>Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+Label: joy
+Is the label reasonable: reasonable
+
+Question: Skipping meals is the national way of showing #disappointment and. #wiz
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+Label: none
+Is the label reasonable: unreasonable
+
+Question: But guess what? I'm sober
+Label: joy
+Is the label reasonable: reasonable
+
+Question: I don't want speak front to him   #nopanicattack
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+Label: anticipation
+Is the label reasonable: reasonable
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+DEBUG-DistributionEstimator(2026-03-05 16:27:22,280)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 16:27:22,286)   test: Label set: reasonable, unreasonable
+Example prompt: Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+Label: joy
+Is the label reasonable: reasonable
+
+Question: Skipping meals is the national way of showing #disappointment and . #wiz
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+Label: none
+Is the label reasonable: unreasonable
+
+Question: But guess what ? I'm sober
+Label: joy
+Is the label reasonable: reasonable
+
+Question: I don't want speak front to him   #nopanicattack
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+Label: anticipation
+Is the label reasonable: reasonable
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+Example tokenization: <|begin_of_text|>Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+Label: joy
+Is the label reasonable: reasonable
+
+Question: Skipping meals is the national way of showing #disappointment and. #wiz
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+Label: none
+Is the label reasonable: unreasonable
+
+Question: But guess what? I'm sober
+Label: joy
+Is the label reasonable: reasonable
+
+Question: I don't want speak front to him   #nopanicattack
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+Label: anticipation
+Is the label reasonable: reasonable
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+DEBUG-DistributionEstimator(2026-03-05 16:27:37,790)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 16:27:37,795)   test: Label set: reasonable, unreasonable
+Example prompt: Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+Label: joy
+Is the label reasonable: reasonable
+
+Question: Skipping meals is the national way of showing #disappointment and . #wiz
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+Label: none
+Is the label reasonable: unreasonable
+
+Question: But guess what ? I'm sober
+Label: joy
+Is the label reasonable: reasonable
+
+Question: I don't want speak front to him   #nopanicattack
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+Label: anticipation
+Is the label reasonable: reasonable
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+Example tokenization: <|begin_of_text|>Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+Label: joy
+Is the label reasonable: reasonable
+
+Question: Skipping meals is the national way of showing #disappointment and. #wiz
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+Label: none
+Is the label reasonable: unreasonable
+
+Question: But guess what? I'm sober
+Label: joy
+Is the label reasonable: reasonable
+
+Question: I don't want speak front to him   #nopanicattack
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+Label: anticipation
+Is the label reasonable: reasonable
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+DEBUG-DistributionEstimator(2026-03-05 16:30:25,477)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 16:30:25,482)   test: Label set: reasonable, unreasonable
+Example prompt: Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+Label: joy
+Is the label reasonable: reasonable
+
+Question: Skipping meals is the national way of showing #disappointment and . #wiz
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+Label: none
+Is the label reasonable: unreasonable
+
+Question: But guess what ? I'm sober
+Label: joy
+Is the label reasonable: reasonable
+
+Question: I don't want speak front to him   #nopanicattack
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+Label: anticipation
+Is the label reasonable: reasonable
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+Example tokenization: <|begin_of_text|>Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+Label: joy
+Is the label reasonable: reasonable
+
+Question: Skipping meals is the national way of showing #disappointment and. #wiz
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+Label: none
+Is the label reasonable: unreasonable
+
+Question: But guess what? I'm sober
+Label: joy
+Is the label reasonable: reasonable
+
+Question: I don't want speak front to him   #nopanicattack
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+Label: anticipation
+Is the label reasonable: reasonable
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+INFO-DistributionEstimator(2026-03-05 17:14:21,340)   Testing metrics for Unary breakdown dataset: 
+INFO-DistributionEstimator(2026-03-05 17:14:46,943)   Testing metrics for Unary breakdown dataset: 
+INFO-DistributionEstimator(2026-03-05 17:17:31,280)   Testing metrics for Unary breakdown dataset: 

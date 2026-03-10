@@ -18,7 +18,8 @@ model=${4:-$model}
 backend=${5:-"hf"}
 
 # Seed for example sampling etc. (optional, default 0)
-seed=${6:-0}
+gpu_mem=${6:-0.95}
+seed=${7:-0}
 
 export CUDA_VISIBLE_DEVICES="$3"
 
@@ -47,12 +48,12 @@ if [ "$backend" == "vllm" ]; then
         --train-split train \
         --test-split dev \
         --system ' ' \
-        --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let\'s think step by step about what emotions are present before classifying. After your reasoning, output exactly one line in this format: {"label": ["emotion1", "emotion2"]}.\n' \
-        --incontext $'Input: {text}\nReasoning: {cot}\n{label}\n' \
+        --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let\'s think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:\nOutput: {"label": ["emotion1", "emotion2"]}\n' \
+        --incontext $'Input: {text}\nReasoning: {cot}\nOutput: {label}\n' \
         --model-name-or-path "$model" \
         --label-format json \
-        --max-new-tokens 200 \
-        --accelerate \
+        --max-new-tokens 500 \
+        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
@@ -73,12 +74,12 @@ else
         --train-split train \
         --test-split dev \
         --system ' ' \
-        --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let\'s think step by step about what emotions are present before classifying. After your reasoning, output exactly one line in this format: {"label": ["emotion1", "emotion2"]}.\n' \
-        --incontext $'Input: {text}\nReasoning: {cot}\n{label}\n' \
+        --instruction $'Classify the following inputs into none, one, or multiple the following emotions per input: {labels}. Let\'s think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:\nOutput: {"label": ["emotion1", "emotion2"]}\n' \
+        --incontext $'Input: {text}\nReasoning: {cot}\nOutput: {label}\n' \
         --model-name-or-path "$model" \
         --label-format json \
-        --max-new-tokens 200 \
-        --accelerate \
+        --max-new-tokens 500 \
+        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
@@ -88,6 +89,7 @@ else
         --seed "$seed" \
         --shot 0 \
         --alternative "$alternative_path" \
+        --gpu-memory-utilization $gpu_mem \
         --test-ids-filename "$id_file"
 fi
 

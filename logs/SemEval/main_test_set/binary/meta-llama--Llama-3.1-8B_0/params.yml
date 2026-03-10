@@ -1,0 +1,78 @@
+experiment_0:
+  ___distribution___: binary
+  __model_name_or_path___: meta-llama/Llama-3.1-8B
+  _label_mode___: null
+  _query_label_mode___: null
+  _sampling_strategy___: uniform
+  _shot___: 10
+  accelerate: true
+  annotation_mode: aggregate
+  assistant_prompt: null
+  cot_csv: null
+  cot_randomize: false
+  dataloader_num_workers: 0
+  dev_debug_ann: null
+  dev_debug_len: null
+  dev_ids_filename: null
+  dev_keep_same_examples: false
+  dev_splits: null
+  device: null
+  disable_indexed_logging: false
+  disable_intermediate_checkpoints: false
+  disable_tqdm: false
+  distribution: binary
+  generation_max_length: null
+  incontext_prompt: 'Input: {text}
+
+    {label}
+
+    '
+  instruction_prompt: 'Classify the following inputs into none, one, or multiple the
+    following emotions per input: {labels}.
+
+    '
+  keep_one_after_filtering: false
+  label_format: null
+  label_mode: null
+  label_parser: null
+  label_randomization_seed: null
+  label_same_length: false
+  language: english
+  load_in_4bit: true
+  load_in_8bit: false
+  max_grad_norm: null
+  max_length: null
+  max_new_tokens: 25
+  model_dtype: float
+  model_load_filename: null
+  model_name_or_path: meta-llama/Llama-3.1-8B
+  model_save_filename: null
+  query_label_mode: null
+  query_prompt: null
+  reasonableness_label_mode: distribution
+  retries: 3
+  root_dir: datasets/semeval2018task1
+  sampling_strategy: uniform
+  seed: 0
+  sentence_device: null
+  sentence_model_name_or_path: null
+  shot: 10
+  system_prompt: ' '
+  task: SemEval
+  test_debug_ann: null
+  test_debug_len: null
+  test_ids_filename:
+  - prob_distr_ids/SemEval/main_test_set.txt
+  test_keep_same_examples: false
+  test_splits:
+  - dev
+  text_preprocessor: false
+  train_debug_ann: null
+  train_debug_len: null
+  train_ids_filename: null
+  train_keep_same_examples: false
+  train_splits:
+  - train
+  trust_remote_code: true
+  user_prompt: null
+  word_embeddings_model: null

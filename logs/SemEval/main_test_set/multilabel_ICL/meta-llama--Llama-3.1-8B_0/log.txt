@@ -1,0 +1,25 @@
+DEBUG-DistributionEstimator(2026-03-07 11:00:48,977)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-07 11:00:49,021)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @EagleGiles23 @tgilmore_92 what I miss? 
+sadness
+Input: Come here, let me do whatever I do with it. #dismal
+sadness
+Input: a panic attack AND CALL YOURSELF A REAL FAN makes me so mad like i dont even have the words to explain. this is why some people give no +
+fear
+Input: The T.I / Shawty Lo beef is one of the more underrated ones in hip-hop history. Chock-full of wit, bravado and hilarity.
+joy
+Input: @DMAnthonyJoseph @TheClumpany No grudge. Only truth in abundance.
+optimism
+Input: @thetwattickla @NottRihanna lol no it's sparkling wine
+joy
+Input: My prayers are with the family, friends &amp; members of @VCFD  as you mourn the loss of Engineer Ryan Osler. #LODD #RIP
+sadness
+Input: @D_McMenemy It'll be easy to spot the parade of tiny weans in expensive jammies. Really is hilarious!
+joy
+Input: #India is sponsoring terrorism in #Balochistan. #KulbhushanYadav an Indian spy agent was arrested in Balochistan by Pakistani forces.
+fear
+Input: I took a yr off school and I'm proud to say I got accepted again, yo girl is going to finish! #happy
+joy
+Input: My best friends driving for the first time with me in the car #terrifying
+INFO-DistributionEstimator(2026-03-07 11:36:09,845)   Testing metrics for Prompt dataset: 

@@ -88,6 +88,8 @@ class vLMForGeneration(nn.Module):
 
         super().__init__()
 
+        num_gpus = len(os.environ.get("CUDA_VISIBLE_DEVICES", "0").split(","))
+
         self.lm = LLM(
             model_name_or_path,
             trust_remote_code=trust_remote_code,
@@ -135,8 +137,9 @@ class vLMForGeneration(nn.Module):
         }
 
         if prefix_cutoff_str is not None:
+            full_texts = list(out["text"])
             prefix_cutoff_inds = []
-            for o in out["text"]:
+            for o in full_texts:
                 i = o.find(prefix_cutoff_str)
                 if i == -1:
                     prefix_cutoff_inds.append(len(o))
@@ -144,24 +147,25 @@ class vLMForGeneration(nn.Module):
                     prefix_cutoff_inds.append(i)
 
             out["prefix_text"] = [
-                o[:i] for o, i in zip(out["text"], prefix_cutoff_inds)
+                o[:i] for o, i in zip(full_texts, prefix_cutoff_inds)
             ]
             out["text"] = [
-                o[i:].strip() for o, i in zip(out["text"], prefix_cutoff_inds)
+                o[i:].strip() for o, i in zip(full_texts, prefix_cutoff_inds)
             ]
 
             prefix_cutoff_token_inds = [
                 string_overlap_idx_in_token_space(
-                    self.lm.get_tokenizer(), o, prefix_cutoff_str
+                    self.lm.get_tokenizer(), full_text, label_text
                 )
-                for o in out["text"]
+                for full_text, label_text in zip(full_texts, out["text"])
             ]
 
             out["ids"] = [
                 o[i:] for o, i in zip(out["ids"], prefix_cutoff_token_inds)
             ]
             out["scores"] = [
-                o[i:] for o, i in zip(out["scores"], prefix_cutoff_token_inds)
+                o[i:] if o is not None else o
+                for o, i in zip(out["scores"], prefix_cutoff_token_inds)
             ]
 
         return out
@@ -188,6 +192,11 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
                 their tokenization the values.
             args, kwargs: arguments to pass to vLMForGeneration.
         """
+        # @from_namespace fills logprobs=None from the parent's default,
+        # so we must override it before super().__init__ passes it to
+        # SamplingParams.
+        if kwargs.get("logprobs") is None:
+            kwargs["logprobs"] = max(len(labels), 16)
         super().__init__(*args, **kwargs)
         self.labels = labels
         self.label_first_token_ids = None
