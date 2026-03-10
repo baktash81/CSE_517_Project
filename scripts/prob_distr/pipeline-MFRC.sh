@@ -18,7 +18,8 @@ export CUDA_VISIBLE_DEVICES="$3"
 
 id_list=$2
 
-seed=${6:-0}
+gpu_mem=${6:-0.95}
+seed=${7:-0}
 
 id_file_args=""
 if [ -n "$id_list" ]; then
@@ -57,6 +58,7 @@ echo Using VLLM
         --alternative $alt_name \
         --shot 10 \
         --seed $seed \
+        --gpu-memory-utilization $gpu_mem \
         $id_file_args
 
 else
