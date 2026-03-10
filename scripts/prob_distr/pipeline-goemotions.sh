@@ -30,15 +30,6 @@ else
     alt_name="full_dataset/{distribution}/{model_name_or_path}"
 fi
 
-id_file_args=""
-if [ -n "$id_list" ]; then
-    id_file=prob_distr_ids/GoEmotions/$id_list.txt
-    id_file_args="--test-ids-filename $id_file"
-    alt_name="$id_list/{distribution}/{model_name_or_path}"
-else
-    alt_name="full_dataset/{distribution}/{model_name_or_path}"
-fi
-
 echo Using model $model
 echo Evaluating distribution type $1
 echo Testing on IDs: ${id_file:-"(full dataset)"}

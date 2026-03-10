@@ -13,11 +13,12 @@ model=meta-llama/Llama-2-7b-chat-hf
 
 # override from command line, if provided
 model=${4:-$model}
+gpu_mem=${6:-0.95}
+seed=${7:-0}
 
 export CUDA_VISIBLE_DEVICES="$3"
 
 id_list=$2
-gpu_mem=${6:-0.95}
 
 id_file_args=""
 if [ -n "$id_list" ]; then
@@ -34,9 +35,9 @@ echo Testing on IDs: ${id_file:-"(full dataset)"}
 echo Running on GPU $3
 
 if [ "$5" == "vllm" ]; then
-echo Using VLLM
+    echo Using VLLM
 
-        python scripts/prob_distr/vllm_prob_distr.py \
+    python scripts/prob_distr/vllm_prob_distr.py \
         Hatexplain \
         --distribution $1 \
         --train-split test \
@@ -53,14 +54,14 @@ echo Using VLLM
         --trust-remote-code \
         --sampling-strategy uniform \
         --sentence-model all-mpnet-base-v2 \
-        --seed 0 \
+        --seed $seed \
         --shot 10 \
         --alternative $alt_name \
         --gpu-memory-utilization $gpu_mem \
         $id_file_args
 
 else
-echo Using HuggingFace
+    echo Using HuggingFace
 
     python scripts/prob_distr/llm_prob_distr.py \
         Hatexplain \
@@ -80,7 +81,7 @@ echo Using HuggingFace
         --trust-remote-code \
         --sampling-strategy uniform \
         --sentence-model all-mpnet-base-v2 \
-        --seed 0 \
+        --seed $seed \
         --shot 10 \
         --alternative $alt_name \
         $id_file_args

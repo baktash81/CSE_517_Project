@@ -36,7 +36,7 @@ echo Testing on IDs: ${id_file:-"(full dataset)"}
 echo Running on GPU $3
 
 if [ "$5" == "vllm" ]; then
-echo Using VLLM
+    echo Using VLLM
 
     python scripts/prob_distr/vllm_prob_distr.py \
         MFRC \
@@ -62,7 +62,7 @@ echo Using VLLM
         $id_file_args
 
 else
-echo Using HuggingFace
+    echo Using HuggingFace
 
     python scripts/prob_distr/llm_prob_distr.py \
         MFRC \
