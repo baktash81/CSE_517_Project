@@ -18,7 +18,8 @@ model=${4:-$model}
 backend=${5:-"hf"}
 
 # Seed for example sampling etc. (optional, default 0)
-seed=${6:-0}
+gpu_mem=${6:-0.95}
+seed=${7:-0}
 
 export CUDA_VISIBLE_DEVICES="$3"
 
@@ -52,7 +53,7 @@ if [ "$backend" == "vllm" ]; then
         --model-name-or-path "$model" \
         --label-format json \
         --max-new-tokens 500 \
-        --accelerate \
+        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
@@ -78,7 +79,7 @@ else
         --model-name-or-path "$model" \
         --label-format json \
         --max-new-tokens 500 \
-        --accelerate \
+        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
@@ -88,6 +89,7 @@ else
         --seed "$seed" \
         --shot 0 \
         --alternative "$alternative_path" \
+        --gpu-memory-utilization $gpu_mem \
         --test-ids-filename "$id_file"
 fi
 
