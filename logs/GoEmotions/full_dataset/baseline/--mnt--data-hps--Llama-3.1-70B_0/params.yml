@@ -5,7 +5,7 @@ experiment_0:
   _query_label_mode___: null
   _sampling_strategy___: multilabel
   _shot___: 10
-  accelerate: true
+  accelerate: false
   annotation_mode: aggregate
   assistant_prompt: null
   cot_csv: null
@@ -16,6 +16,7 @@ experiment_0:
   dev_ids_filename: null
   dev_keep_same_examples: false
   dev_splits: null
+  device: cpu
   disable_indexed_logging: false
   disable_intermediate_checkpoints: false
   disable_tqdm: false
@@ -42,7 +43,7 @@ experiment_0:
   model_load_filename: null
   model_name_or_path: /mnt/data-hps/Llama-3.1-70B
   model_save_filename: null
-  quantization: fp8
+  quantization: null
   query_label_mode: null
   query_prompt: null
   reasonableness_label_mode: distribution
@@ -50,7 +51,7 @@ experiment_0:
   root_dir: datasets/goemotions
   sampling_strategy: multilabel
   seed: 0
-  sentence_device: null
+  sentence_device: cpu
   sentence_model_name_or_path: all-mpnet-base-v2
   shot: 10
   system_prompt: ' '
@@ -60,14 +61,14 @@ experiment_0:
   test_ids_filename: null
   test_keep_same_examples: false
   test_splits:
-  - dev
+  - train
   text_preprocessor: false
   train_debug_ann: null
   train_debug_len: null
   train_ids_filename: null
   train_keep_same_examples: false
   train_splits:
-  - train
+  - dev
   trust_remote_code: false
   user_prompt: null
   word_embeddings_model: null

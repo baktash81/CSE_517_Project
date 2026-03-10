@@ -81,15 +81,16 @@ if __name__ == '__main__':
     
     models = [
         # 'meta-llama--Llama-3.2-1B-Instruct_0',
-        'meta-llama--Llama-3.1-8B_0',
+        # 'meta-llama--Llama-3.1-8B_0',
         # 'meta-llama--Llama-3.3-70B-Instruct_0',
         # 'Qwen--Qwen2.5-7B-Instruct_0',
+        '--mnt--data-hps--Llama-3.1-70B_0',
     ]
     
     yaml_files = []
     for dataset in datasets:
         for model in models:
-            yaml_file = os.path.join(PROJECT_ROOT, 'logs', dataset, 'main_test_set', 'baseline', model, 'indexed_metrics.yml')
+            yaml_file = os.path.join(PROJECT_ROOT, 'logs', dataset, 'full_dataset', 'baseline', model, 'indexed_metrics.yml')
             if os.path.exists(yaml_file):
                 yaml_files.append(yaml_file)
     
