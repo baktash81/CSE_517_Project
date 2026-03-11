@@ -625,6 +625,7 @@ class LMForGeneration(nn.Module):
 
         # remove reasoning
         if prefix_cutoff_str is not None and self.tokenizer is not None:
+            full_reply_texts = list(out["text"])
             prefix_cutoff_inds = []
             for o in out["text"]:
                 i = o.find(prefix_cutoff_str)
@@ -633,28 +634,54 @@ class LMForGeneration(nn.Module):
                 else:
                     prefix_cutoff_inds.append(i)
 
-            out["prefix_text"] = [
+            prefix_text = [
                 o[:i] for o, i in zip(out["text"], prefix_cutoff_inds)
             ]
-            out["text"] = [
+            label_text = [
                 o[i:].strip() for o, i in zip(out["text"], prefix_cutoff_inds)
             ]
-            out["ids"] = [
+            # If model output is "label_line\n" (label first, then newline), the
+            # "label" part is empty; use the prefix as the label part for scoring.
+            for j, lt in enumerate(label_text):
+                if not lt and prefix_text[j]:
+                    prefix_text[j], label_text[j] = label_text[j], prefix_text[j]
+            out["prefix_text"] = prefix_text
+            out["text"] = label_text
+            # Tokenize label part for ids and for length
+            label_ids = [
                 self.tokenizer(
                     o, return_tensors="pt", add_special_tokens=False
                 )["input_ids"][0]
                 for o in out["text"]
             ]
+            out["ids"] = label_ids
             out["prefix_ids"] = [
                 self.tokenizer(
                     o, return_tensors="pt", add_special_tokens=False
                 )["input_ids"][0]
                 for o in out["prefix_text"]
             ]
-
-            out["scores"] = [
-                s[: len(i)] for s, i in zip(out["scores"], out["ids"])
-            ]
+            # Use scores from the full reply that correspond to the label part
+            # (not the first len(label) tokens, which would be reasoning).
+            new_scores = []
+            for j, (s, label_id) in enumerate(zip(out["scores"], label_ids)):
+                n = len(label_id)
+                start_idx = string_overlap_idx_in_token_space(
+                    self.tokenizer, full_reply_texts[j], out["text"][j]
+                )
+                if start_idx >= s.shape[0]:
+                    start_idx = 0
+                end_idx = min(start_idx + n, s.shape[0])
+                slc = s[start_idx:end_idx]
+                if slc.shape[0] < n:
+                    pad = torch.zeros(
+                        (n - slc.shape[0], slc.shape[1]),
+                        device=slc.device,
+                        dtype=slc.dtype,
+                    )
+                    slc = torch.cat([slc, pad], dim=0)
+                new_scores.append(slc)
+            out["scores"] = new_scores
 
         elif prefix_cutoff_ids is not None:
             warnings.warn(
@@ -744,10 +771,14 @@ class LMForGeneration(nn.Module):
 
         # attention dim:
         # tuple(generated_tokens) x tuple(layers) x bs x attention heads x {input_len if first token else 1} x {input_len if first token else input_len + gen tokens up to then}
-        out["attentions"] = [
-            [layer_att[:, :, -1, :] for layer_att in gen_tokens]
-            for gen_tokens in out_dict.attentions
-        ]
+        # Only grab attention if it exists (if really needed, need to disable SDPA in model init - will be much slower tho)
+        try:
+            out["attentions"] = [
+                [layer_att[:, :, -1, :] for layer_att in gen_tokens]
+                for gen_tokens in out_dict.attentions
+            ]
+        except (TypeError, AttributeError):
+            out["attentions"] = None
 
         return out
 

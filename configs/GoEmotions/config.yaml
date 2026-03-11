@@ -1,5 +1,5 @@
-emotion_clustering_json: /path/to//goemotions/emotion_clustering.json
-root_dir: /path/to//goemotions
+emotion_clustering_json: datasets/goemotions/emotion_clustering.json
+root_dir: datasets/goemotions
 train_splits: train
 test_splits: dev
 instruction_prompt: ./configs/GoEmotions/instruction.txt

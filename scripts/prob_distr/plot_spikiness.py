@@ -3,7 +3,9 @@ import os
 import numpy as np
 
 import sys
-sys.path.append('scripts/prob_distr')
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+sys.path.insert(0, SCRIPT_DIR)
 
 import matplotlib.pyplot as plt
 
@@ -48,14 +50,12 @@ def plot_multilabel_icl(yaml_files, save_path):
     for i, (yaml_file, color, label) in enumerate(zip(yaml_files, colors, labels)):
         data = load_data_from_yaml(yaml_file)
         points = get_graph_probs(data)
-        
+        # Legend entry (one per dataset; outside loop so we get it even if points is empty)
+        plt.scatter([], [], color=color, alpha=1, label=label, s=80)
         for x, probs in enumerate(points):
             jitter = x_offset * (i - 1)  # -0.25, 0.0, 0.25 for three datasets
             jittered_x = x + jitter + 0.12 * (np.random.random(len(probs)) - 0.5)
             plt.scatter(jittered_x, probs, color=color, alpha=0.08)
-            if x == 0:
-                plt.scatter(-1, -1, color=color, alpha=1, label=label)
-            # Only label once per dataset to avoid repeated legend entries
 
     plt.xlabel("Sorted Label Index", fontsize=22)
     plt.ylabel("Label Probability", fontsize=22)
@@ -66,24 +66,32 @@ def plot_multilabel_icl(yaml_files, save_path):
     plt.grid(True)
     plt.legend(loc='upper right', fontsize=20)
     plt.tight_layout()
-    
+
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
     plt.savefig(save_path)
     plt.close()
     
         
 if __name__ == '__main__':
-    
-    # yaml_files = [
-    #  'logs/GoEmotions/main_test_set/baseline/meta-llama--Llama-3.3-70B-Instruct_0/indexed_metrics.yml',
-    #  'logs/MFRC/main_test_set/baseline/meta-llama--Llama-3.3-70B-Instruct_0/indexed_metrics.yml',
-    #  'logs/SemEval/main_test_set/multilabel_ICL/meta-llama--Llama-3.3-70B-Instruct_0/indexed_metrics.yml',
-    # ]
-    
-    # plot_multilabel_icl(yaml_files, save_path='scripts/prob_distr/figures/spikiness.png')
-    
-    yaml_files = [
-    'logs/GoEmotions/main_test_set/baseline/Qwen--Qwen2.5-7B-Instruct_0/indexed_metrics.yml',
-     'logs/MFRC/main_test_set/baseline/Qwen--Qwen2.5-7B-Instruct_0/indexed_metrics.yml',
-     'logs/SemEval/main_test_set/multilabel_ICL/Qwen--Qwen2.5-7B-Instruct_0/indexed_metrics.yml',
+    datasets = [
+        'MFRC',
+        'SemEval',
+        'GoEmotions',
     ]
-    plot_multilabel_icl(yaml_files, save_path='scripts/prob_distr/figures_qwen/spikiness.png')
+    
+    models = [
+        # 'meta-llama--Llama-3.2-1B-Instruct_0',
+        'meta-llama--Llama-3.1-8B_0',
+        # 'meta-llama--Llama-3.3-70B-Instruct_0',
+        # 'Qwen--Qwen2.5-7B-Instruct_0',
+    ]
+    
+    yaml_files = []
+    for dataset in datasets:
+        for model in models:
+            yaml_file = os.path.join(PROJECT_ROOT, 'logs', dataset, 'main_test_set', 'baseline', model, 'indexed_metrics.yml')
+            if os.path.exists(yaml_file):
+                yaml_files.append(yaml_file)
+    
+    save_path = os.path.join(PROJECT_ROOT, 'scripts', 'prob_distr', 'figures', 'spikiness.png')
+    plot_multilabel_icl(yaml_files, save_path=save_path)

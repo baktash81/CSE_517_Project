@@ -1,0 +1,43 @@
+{
+    "joy": [
+        "amusement",
+        "excitement",
+        "joy",
+        "love"
+    ],
+    "optimism": [
+        "desire",
+        "optimism",
+        "caring"
+    ],
+    "admiration": [
+        "pride",
+        "admiration",
+        "gratitude",
+        "relief",
+        "approval",
+        "realization"
+    ],
+    "surprise": [
+        "surprise",
+        "confusion",
+        "curiosity"
+    ],
+    "fear": [
+        "fear",
+        "nervousness"
+    ],
+    "sadness": [
+        "remorse",
+        "embarrassment",
+        "disappointment",
+        "sadness",
+        "grief"
+    ],
+    "anger": [
+        "anger",
+        "disgust",
+        "annoyance",
+        "disapproval"
+    ]
+}

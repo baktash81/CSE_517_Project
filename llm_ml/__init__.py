@@ -9,14 +9,14 @@ from .datasets import (
     MMLUProDatasetForTransformers,
     BoxesDataset,
     BoxesDatasetForTransformers,
-    MSPPodcastDataset,
-    MSPPodcastDatasetForTransformers,
-    QueerReclaimLexDataset,
-    QueerReclaimLexDatasetForTransformers,
+#    MSPPodcastDataset,
+#    MSPPodcastDatasetForTransformers,
+#    QueerReclaimLexDataset,
+#    QueerReclaimLexDatasetForTransformers,
     HatexplainDataset,
     HatexplainDatasetForTransformers,
-    TRECDataset,
-    TRECDatasetForTransformers,
+#    TRECDataset,
+#    TRECDatasetForTransformers,
 )
 
 DATASETS = dict(
@@ -25,12 +25,11 @@ DATASETS = dict(
     MFRC=MFRCDataset,
     MMLUPro=MMLUProDataset,
     Boxes=BoxesDataset,
-    MSPPodcast=MSPPodcastDataset,
-    QueerReclaimLex=QueerReclaimLexDataset,
+#    MSPPodcast=MSPPodcastDataset,
+#    QueerReclaimLex=QueerReclaimLexDataset,
     Hatexplain=HatexplainDataset,
-    TREC=TRECDataset,
+#    TREC=TRECDataset,
 )
-
 
 from .models import LMForClassification, OpenAIClassifier, vLMForClassification
 from .prompt_dataset import (
@@ -47,6 +46,12 @@ from .trainers import (
     ReasonablenessEvaluator,
     vReasonablenessEvaluator,
     APIReasonablenessEvaluator,
+    DistributionEstimator,
+    vDistributionEstimator,
+)
+from .breakdown_datasets import (
+    UnaryBreakdownDataset,
+    BinaryBreakdownDataset,
 )
 from .utils import twitter_preprocessor, reddit_preprocessor
 
