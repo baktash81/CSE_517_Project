@@ -1,11 +1,19 @@
 #!/bin/bash
+# Run from project root so paths like scripts/prob_distr/llm_prob_distr.py resolve
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+cd "$PROJECT_ROOT"
+
+# Usage: run-pipelines.sh [dist_type] [id_list] [train_split] [test_split] [gpus] [model] [gpu_mem]
 
 # Assign arguments, falling back to defaults if not provided by the user
-DIST_TYPE="${1:-baseline}"
-DATA_SPLIT="${2:-}" # Defaults to empty string
-GPUS="${3:-4}"
-MODEL_PATH="${4:-/mnt/data-hps/models/Meta-Llama-3.1-8B}"
-GPU_MEM="${5:-0.35}"
+dist_type="${1:-baseline}"
+id_list="${2:-}"
+train_split="${3:-}"
+test_split="${4:-}"
+gpus="${5:-4}"
+model="${6:-/mnt/data-hps/models/Meta-Llama-3.1-8B}"
+gpu_mem="${7:-0.35}"
 
 # Counter to keep track of any failures
 FAILED_JOBS=0
@@ -35,18 +43,18 @@ run_pipeline() {
 }
 
 echo "Starting sequential pipeline runs..."
-echo "Distribution Type: $DIST_TYPE | Dataset Split: '$DATA_SPLIT' | GPUs: $GPUS (MFRC: $MFRC_GPUS) | Model: $MODEL_PATH | GPU Mem: $GPU_MEM"
+echo "Distribution Type: $dist_type | Dataset Split: '$id_list' | GPUs: $gpus | Model: $model | GPU Mem: $gpu_mem | Train: ${train_split:-(default)} | Test: ${test_split:-(default)}"
 echo ""
 
 
 # SemEval
-run_pipeline "SemEval" bash scripts/prob_distr/pipeline-semeval.sh "$DIST_TYPE" "$DATA_SPLIT" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
+run_pipeline "SemEval" bash scripts/prob_distr/pipeline-semeval.sh "$dist_type" "$id_list" "$train_split" "$test_split" "$gpus" "$model" vllm "$gpu_mem"
 
-# MFRC 
-run_pipeline "MFRC" bash scripts/prob_distr/pipeline-MFRC.sh "$DIST_TYPE" "$DATA_SPLIT" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
+# MFRC
+run_pipeline "MFRC" bash scripts/prob_distr/pipeline-MFRC.sh "$dist_type" "$id_list" "$train_split" "$test_split" "$gpus" "$model" vllm "$gpu_mem"
 
 # GoEmotions
-run_pipeline "GoEmotions" bash scripts/prob_distr/pipeline-goemotions.sh "$DIST_TYPE" "$DATA_SPLIT" "$GPUS" "$MODEL_PATH" vllm "$GPU_MEM"
+run_pipeline "GoEmotions" bash scripts/prob_distr/pipeline-goemotions.sh "$dist_type" "$id_list" "$train_split" "$test_split" "$gpus" "$model" vllm "$gpu_mem"
 
 # Final Summary
 echo "================================================================="
