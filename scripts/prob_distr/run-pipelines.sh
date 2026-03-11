@@ -34,7 +34,7 @@ run_pipeline() {
     local status=$?
 
     # Check the exit status
-    if [ $status -eq 0 ]; then
+    if [ "$status" -eq 0 ]
         echo -e "\n[SUCCESS] $job_name completed successfully.\n"
     else
         echo -e "\n[ERROR] $job_name failed with exit code $status.\n"
