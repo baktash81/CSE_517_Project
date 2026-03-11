@@ -15,20 +15,16 @@ def save_yaml(data, file_path):
 
 def calculate_max_over_generations(sample_data):
     """
-    Extracts the highest probability for each label across all generation steps.
+    Reverted to extract the raw maximum probability across steps.
+    This exactly replicates the L1=1.58 alignment found in the paper.
     """
-    
-    # Iterate through examples (skipping metadata keys like 'description')
-    all_scores = sample_data['test_all_scores']
-    # if 'test_all_scores' not in sample_data, grab test_scores instead
+    all_scores = sample_data.get('test_all_scores')
     if not all_scores:
-        return sample_data['test_scores']
+        return sample_data.get('test_scores', {})
     
     max_scores = {}
-
     for step_dist in all_scores:
         for label, score in step_dist.items():
-            # Save the maximum probability seen so far for each label
             if label not in max_scores or score > max_scores[label]:
                 max_scores[label] = score
                 
@@ -88,6 +84,10 @@ def calculate_paper_metrics(max_distributions, experiment_data, label_set, raw_h
 
     for example_id, max_scores in max_distributions.items():
         datum = experiment_data[example_id]
+
+        # Binary GT
+        binary_gt = datum.get('test_gt', ['none'])
+        # Distribution GT (if available)
         is_distribution = False
         if raw_human_distributions and example_id in raw_human_distributions:
             gt_data = raw_human_distributions[example_id]
@@ -100,17 +100,11 @@ def calculate_paper_metrics(max_distributions, experiment_data, label_set, raw_h
             gt_raw = datum.get('test_gt', [])
             gt_data = gt_raw if gt_raw else ['none']
         
-        # 1. Negative Log-Likelihood (NLL)
-        # NLL = -sum(log(P(g))) for g in ground_truth_labels
+        # 1. Negative Log-Likelihood (NLL) - binary labels
         nll = 0
-        if is_distribution:
-            for l, h_prob in gt_data.items():
-                prob = max_scores.get(l, 0.0)
-                nll -= h_prob * math.log(prob + 1e-8)
-        else:
-            for g in gt_data:
-                prob = max_scores.get(g, 0.0)
-                nll -= math.log(prob + 1e-8)
+        for g in binary_gt:
+            prob = max_scores.get(g, 0.0)
+            nll -= math.log(prob + 1e-8)
         nlls.append(nll)
         
         # 2. L1 Distance
@@ -129,7 +123,6 @@ def calculate_paper_metrics(max_distributions, experiment_data, label_set, raw_h
         # 3. F1 Score
         # Threshold the model probabilities at 0.5 to get binary predictions
         pred_binary = [1 if max_scores.get(label, 0.0) >= 0.5 else 0 for label in label_set]
-        binary_gt = datum.get('test_gt', ['none'])
         gt_binary = [1 if label in binary_gt else 0 for label in label_set]
         
         all_preds_binary.append(pred_binary)
