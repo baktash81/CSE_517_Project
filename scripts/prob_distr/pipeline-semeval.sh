@@ -5,8 +5,8 @@ cd "$PROJECT_ROOT"
 
 # override from command line, if provided ($1=dist_type, $2=id_list, $3=train_split, $4=test_split, $5=gpus, $6=model, $7=backend, $8=gpu_mem, $9=seed, $10=debug_samples)
 id_list=$2
-train_split=${3:-dev}
-test_split=${4:-train}
+train_split=${3:-train}
+test_split=${4:-dev}
 
 export CUDA_VISIBLE_DEVICES="$5"
 
