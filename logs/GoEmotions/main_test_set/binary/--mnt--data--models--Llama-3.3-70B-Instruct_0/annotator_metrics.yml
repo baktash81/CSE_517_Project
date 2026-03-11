@@ -1,0 +1,170 @@
+experiment_0:
+  aggregate_binary_admiration_anger:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_admiration_fear:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_admiration_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_admiration_sadness:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_admiration_surprise:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_anger_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_fear_anger:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_fear_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_fear_sadness:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_joy_admiration:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_joy_anger:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_joy_fear:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_joy_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_joy_optimism:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_joy_sadness:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_joy_surprise:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_optimism_admiration:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_optimism_anger:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_optimism_fear:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_optimism_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_optimism_sadness:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_optimism_surprise:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_sadness_anger:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_sadness_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_surprise_anger:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_surprise_fear:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_surprise_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_surprise_sadness:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  description: ''

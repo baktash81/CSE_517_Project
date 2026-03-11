@@ -1,0 +1,20 @@
+experiment_0:
+  aggregate_binary_hate_normal:
+    a_f1: 0.5454545454545454
+    b_f1: 0.0
+    jaccard_score: 0.235
+    macro_f1: 0.2727272727272727
+    micro_f1: 0.32967032967032966
+  aggregate_binary_hate_offensive:
+    a_f1: 0.50187265917603
+    b_f1: 0.0
+    jaccard_score: 0.29
+    macro_f1: 0.250936329588015
+    micro_f1: 0.32057416267942584
+  aggregate_binary_normal_offensive:
+    a_f1: 0.5815602836879432
+    b_f1: 0.0
+    jaccard_score: 0.2575
+    macro_f1: 0.2907801418439716
+    micro_f1: 0.3557483731019523
+  description: ''

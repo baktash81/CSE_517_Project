@@ -1,0 +1,131 @@
+DEBUG-vDistributionEstimator(2026-03-11 08:28:28,012)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 08:28:28,228)   test: Label set: a, b
+Example prompt: Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: You don’t, that’s fucking rude and you should learn to accept that that’s his choice and you can’t make him do anything
+a. authority
+b. care
+Correct Label: b
+
+Question: No, no bootlicking capitalism mentality. Instead expect services in exchange for the taxes you pay to help others in need. Not individual charity.
+a. purity
+b. proportionality
+Correct Label: b
+
+Question: People need to realize all these institutions are corrupt AF
+
+The DNC is blatantly abusing it's privilege and will not represent the will of the people. 
+
+Pull their feet to the fire.
+a. equality
+b. proportionality
+Correct Label: a
+
+Question: She's not his *mistress,* she's seventeen. She might be his *victim.*
+a. care
+b. purity
+Correct Label: a
+
+Question: This isn't your average every-day wage slavery. This is.. *advanced* wage slavery.
+a. authority
+b. equality
+Correct Label: b
+
+Question: The employee is facing harassment for a customer, so instead of punishing the customer they fire the employee being harassed
+a. authority
+b. care
+Correct Label: b
+
+Question: The ambiguous language in the text will allow for America's already tyrannical anti-Christ government to force churches to support abortions and birth control and possibly ordain women.
+a. none
+b. authority
+Correct Label: b
+
+Question: Thing is... this is good for her. She will take whatever punishment she's given and use this as a great example of everything wrong with her opposition. She's a martyr and proof that if she can get hit with these bullshit laws that celebrate terrorism and endanger the public, anybody else can too.
+
+I hope this can help bring about a Le Pen victory. 
+a. equality
+b. loyalty
+Correct Label: b
+
+Question: I think this happens when you’re in love AND feel safe with/trust them (which is very rare) I’ve only ever felt this in my very first relationship when I was a teen, and have never since felt it again. Congrats, I wish you guys a very happy one ❤️
+a. equality
+b. care
+Correct Label: b
+
+Question: For real? That sucks man I'm sorry. You deserve better.
+
+I read through your other posts too and damn I really don't like your husband
+a. equality
+b. care
+Correct Label: b
+
+Question: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+a. authority
+b. care
+Correct Label: 
+Example tokenization: <|begin_of_text|>Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: You don’t, that’s fucking rude and you should learn to accept that that’s his choice and you can’t make him do anything
+a. authority
+b. care
+Correct Label: b
+
+Question: No, no bootlicking capitalism mentality. Instead expect services in exchange for the taxes you pay to help others in need. Not individual charity.
+a. purity
+b. proportionality
+Correct Label: b
+
+Question: People need to realize all these institutions are corrupt AF
+
+The DNC is blatantly abusing it's privilege and will not represent the will of the people. 
+
+Pull their feet to the fire.
+a. equality
+b. proportionality
+Correct Label: a
+
+Question: She's not his *mistress,* she's seventeen. She might be his *victim.*
+a. care
+b. purity
+Correct Label: a
+
+Question: This isn't your average every-day wage slavery. This is.. *advanced* wage slavery.
+a. authority
+b. equality
+Correct Label: b
+
+Question: The employee is facing harassment for a customer, so instead of punishing the customer they fire the employee being harassed
+a. authority
+b. care
+Correct Label: b
+
+Question: The ambiguous language in the text will allow for America's already tyrannical anti-Christ government to force churches to support abortions and birth control and possibly ordain women.
+a. none
+b. authority
+Correct Label: b
+
+Question: Thing is... this is good for her. She will take whatever punishment she's given and use this as a great example of everything wrong with her opposition. She's a martyr and proof that if she can get hit with these bullshit laws that celebrate terrorism and endanger the public, anybody else can too.
+
+I hope this can help bring about a Le Pen victory. 
+a. equality
+b. loyalty
+Correct Label: b
+
+Question: I think this happens when you’re in love AND feel safe with/trust them (which is very rare) I’ve only ever felt this in my very first relationship when I was a teen, and have never since felt it again. Congrats, I wish you guys a very happy one ❤️
+a. equality
+b. care
+Correct Label: b
+
+Question: For real? That sucks man I'm sorry. You deserve better.
+
+I read through your other posts too and damn I really don't like your husband
+a. equality
+b. care
+Correct Label: b
+
+Question: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+a. authority
+b. care
+Correct Label: 
+INFO-vDistributionEstimator(2026-03-11 09:14:41,012)   Testing metrics for Binary breakdown dataset: 
