@@ -5,8 +5,8 @@ cd "$PROJECT_ROOT"
 
 
 id_list=$2
-train_split=${3:-"dev test"}
-test_split=${4:-train}
+train_split=${3:-train}
+test_split=${4:-"dev test"}
 
 export CUDA_VISIBLE_DEVICES="$5"
 
