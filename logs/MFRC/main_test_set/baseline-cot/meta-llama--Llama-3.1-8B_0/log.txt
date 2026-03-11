@@ -1,0 +1,9 @@
+DEBUG-vDistributionEstimator(2026-03-10 15:38:20,569)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 15:38:20,572)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity. Let's think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line in this format: Moral foundation(s): foundation1, foundation2.
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Reasoning:
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity. Let's think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line in this format: Moral foundation(s): foundation1, foundation2.
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Reasoning:
+INFO-vDistributionEstimator(2026-03-10 16:07:16,963)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3606, micro_f1=0.1099, macro_f1=0.1042, authority_f1=0.1778, care_f1=0.1290, equality_f1=0.1091, loyalty_f1=0.0556, proportionality_f1=0.0000, purity_f1=0.1538

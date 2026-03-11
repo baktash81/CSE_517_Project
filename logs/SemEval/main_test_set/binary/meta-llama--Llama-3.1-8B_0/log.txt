@@ -1,0 +1,459 @@
+DEBUG-DistributionEstimator(2026-03-05 19:00:48,442)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 19:00:48,447)   test: Label set: a, b
+Example prompt: Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+a. trust
+b. joy
+Correct Label: b
+
+Question: Skipping meals is the national way of showing #disappointment and . #wiz
+a. sadness
+b. joy
+Correct Label: a
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+a. anger
+b. surprise
+Correct Label: a
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+a. joy
+b. sadness
+Correct Label: a
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+a. optimism
+b. fear
+Correct Label: b
+
+Question: But guess what ? I'm sober
+a. sadness
+b. joy
+Correct Label: b
+
+Question: I don't want speak front to him   #nopanicattack
+a. anticipation
+b. disgust
+Correct Label: b
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+a. fear
+b. anger
+Correct Label: b
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+a. none
+b. anticipation
+Correct Label: b
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+a. joy
+b. optimism
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 
+Example tokenization: <|begin_of_text|>Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+a. trust
+b. joy
+Correct Label: b
+
+Question: Skipping meals is the national way of showing #disappointment and. #wiz
+a. sadness
+b. joy
+Correct Label: a
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+a. anger
+b. surprise
+Correct Label: a
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+a. joy
+b. sadness
+Correct Label: a
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+a. optimism
+b. fear
+Correct Label: b
+
+Question: But guess what? I'm sober
+a. sadness
+b. joy
+Correct Label: b
+
+Question: I don't want speak front to him   #nopanicattack
+a. anticipation
+b. disgust
+Correct Label: b
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+a. fear
+b. anger
+Correct Label: b
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+a. none
+b. anticipation
+Correct Label: b
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+a. joy
+b. optimism
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 
+DEBUG-DistributionEstimator(2026-03-05 19:03:55,341)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 19:03:55,347)   test: Label set: a, b
+Example prompt: Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+a. trust
+b. joy
+Correct Label: b
+
+Question: Skipping meals is the national way of showing #disappointment and . #wiz
+a. sadness
+b. joy
+Correct Label: a
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+a. anger
+b. surprise
+Correct Label: a
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+a. joy
+b. sadness
+Correct Label: a
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+a. optimism
+b. fear
+Correct Label: b
+
+Question: But guess what ? I'm sober
+a. sadness
+b. joy
+Correct Label: b
+
+Question: I don't want speak front to him   #nopanicattack
+a. anticipation
+b. disgust
+Correct Label: b
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+a. fear
+b. anger
+Correct Label: b
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+a. none
+b. anticipation
+Correct Label: b
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+a. joy
+b. optimism
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 
+Example tokenization: <|begin_of_text|>Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+a. trust
+b. joy
+Correct Label: b
+
+Question: Skipping meals is the national way of showing #disappointment and. #wiz
+a. sadness
+b. joy
+Correct Label: a
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+a. anger
+b. surprise
+Correct Label: a
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+a. joy
+b. sadness
+Correct Label: a
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+a. optimism
+b. fear
+Correct Label: b
+
+Question: But guess what? I'm sober
+a. sadness
+b. joy
+Correct Label: b
+
+Question: I don't want speak front to him   #nopanicattack
+a. anticipation
+b. disgust
+Correct Label: b
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+a. fear
+b. anger
+Correct Label: b
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+a. none
+b. anticipation
+Correct Label: b
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+a. joy
+b. optimism
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 
+DEBUG-DistributionEstimator(2026-03-05 19:04:14,063)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 19:04:14,069)   test: Label set: a, b
+Example prompt: Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+a. trust
+b. joy
+Correct Label: b
+
+Question: Skipping meals is the national way of showing #disappointment and . #wiz
+a. sadness
+b. joy
+Correct Label: a
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+a. anger
+b. surprise
+Correct Label: a
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+a. joy
+b. sadness
+Correct Label: a
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+a. optimism
+b. fear
+Correct Label: b
+
+Question: But guess what ? I'm sober
+a. sadness
+b. joy
+Correct Label: b
+
+Question: I don't want speak front to him   #nopanicattack
+a. anticipation
+b. disgust
+Correct Label: b
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+a. fear
+b. anger
+Correct Label: b
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+a. none
+b. anticipation
+Correct Label: b
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+a. joy
+b. optimism
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 
+Example tokenization: <|begin_of_text|>Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+a. trust
+b. joy
+Correct Label: b
+
+Question: Skipping meals is the national way of showing #disappointment and. #wiz
+a. sadness
+b. joy
+Correct Label: a
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+a. anger
+b. surprise
+Correct Label: a
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+a. joy
+b. sadness
+Correct Label: a
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+a. optimism
+b. fear
+Correct Label: b
+
+Question: But guess what? I'm sober
+a. sadness
+b. joy
+Correct Label: b
+
+Question: I don't want speak front to him   #nopanicattack
+a. anticipation
+b. disgust
+Correct Label: b
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+a. fear
+b. anger
+Correct Label: b
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+a. none
+b. anticipation
+Correct Label: b
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+a. joy
+b. optimism
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 
+DEBUG-DistributionEstimator(2026-03-05 19:04:50,662)   Trainer set up.
+DEBUG-DistributionEstimator(2026-03-05 19:04:50,668)   test: Label set: a, b
+Example prompt: Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+a. trust
+b. joy
+Correct Label: b
+
+Question: Skipping meals is the national way of showing #disappointment and . #wiz
+a. sadness
+b. joy
+Correct Label: a
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+a. anger
+b. surprise
+Correct Label: a
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+a. joy
+b. sadness
+Correct Label: a
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+a. optimism
+b. fear
+Correct Label: b
+
+Question: But guess what ? I'm sober
+a. sadness
+b. joy
+Correct Label: b
+
+Question: I don't want speak front to him   #nopanicattack
+a. anticipation
+b. disgust
+Correct Label: b
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+a. fear
+b. anger
+Correct Label: b
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+a. none
+b. anticipation
+Correct Label: b
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+a. joy
+b. optimism
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 
+Example tokenization: <|begin_of_text|>Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Look what we have available in store now!!!\n\nLiquid incense for those who can't burn sticks or cones or have smoke in they home!!!!
+a. trust
+b. joy
+Correct Label: b
+
+Question: Skipping meals is the national way of showing #disappointment and. #wiz
+a. sadness
+b. joy
+Correct Label: a
+
+Question: Brb, going 2 start killing random white people going about their normal days. Don't worry though i'm white, so they will safely apprehend me
+a. anger
+b. surprise
+Correct Label: a
+
+Question: #smile #instagramers : #Selfie#BestMeSelfie#Me#Smile#BestMeCameraIsGreat#EmojiGrid#LikeforLike#Friend#Girl#Boy#Tattoos#Family#6Pack#G...
+a. joy
+b. sadness
+Correct Label: a
+
+Question: There are adults commiting serious crimes in the name of protest.(like burning a library) how are we just expecting them to get a warning?
+a. optimism
+b. fear
+Correct Label: b
+
+Question: But guess what? I'm sober
+a. sadness
+b. joy
+Correct Label: b
+
+Question: I don't want speak front to him   #nopanicattack
+a. anticipation
+b. disgust
+Correct Label: b
+
+Question: Circle K is dead to me. I hate your new slushie machine. #irate #livid
+a. fear
+b. anger
+Correct Label: b
+
+Question: @01Starblazer 9 -9 vs Atlanta this yr, 2 - 11 vs Rockies and DBacks this yr. That's a combined 11 - 20 vs 3 atrocious teams in NL 
+a. none
+b. anticipation
+Correct Label: b
+
+Question: Knowing how to cook is invaluable, what's even better is that even in a 400 sq ft place, I have wide and hearty homestyle egg noodles.
+a. joy
+b. optimism
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 
+INFO-DistributionEstimator(2026-03-06 00:05:20,903)   Testing metrics for Binary breakdown dataset: 
+INFO-DistributionEstimator(2026-03-06 00:05:57,111)   Testing metrics for Binary breakdown dataset: 
+INFO-DistributionEstimator(2026-03-06 00:06:20,729)   Testing metrics for Binary breakdown dataset: 
