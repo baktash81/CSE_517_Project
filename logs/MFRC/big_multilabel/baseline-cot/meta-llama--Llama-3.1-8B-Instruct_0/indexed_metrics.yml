@@ -1,0 +1,2304 @@
+experiment_0:
+  '10037':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'This input emphasizes the importance of care and safety, particularly
+      for women who may be targeted by such individuals. It also touches on the idea
+      of loyalty to oneself and one''s own well-being. Output: {"label": ["care",
+      "loyalty"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00022979165078140795
+      care: 0.9966680407524109
+      equality: 0.0006246385164558887
+      loyalty: 0.00017896192730404437
+      none: 0.002180202631279826
+      proportionality: 2.2752454242436215e-05
+      purity: 9.57914162427187e-05
+    test_text: 'Dealbreaker.  Let''s be extremely real: dudes who say shit like this
+      are telling on themselves. Either they have or would take advantage of the situation
+      in context.
+
+
+      This is violent misogyny and he''s telling you who he is. You need to be less
+      worried about changing his mind and more worried about your safety.'
+  '10058':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'The input is about a person who feels disrespected by their
+      partner''s lack of submission, which is tied to the idea of authority. The person
+      is also expressing a desire for equality and care (in the sense of being a partner
+      rather than a slave). Output: {"label": ["authority", "equality", "care"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9990566372871399
+      care: 1.472529493184993e-05
+      equality: 1.5674995665904135e-05
+      loyalty: 0.00010880602349061519
+      none: 0.0008039738750085235
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "\"Basically he feels that I disrespect him by going against his \u201C\
+      authority\u201D and that a wife should be submissive\" \n\nThis officer, this\
+      \ right here. This is why I murdered him. \n\nJust kidding on that part, but\
+      \ that religious thumper mentality does not fly with me. You're not his slave,\
+      \ you're his wife and partner. \n\nI would personally leave him once you're\
+      \ done school and able to support yourself, your whole life will be a series\
+      \ of him issuing orders and expecting you to obey. Are you really ok with that?"
+  '10252':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'The input is about a situation where a person is being financially
+      abused. The speaker is expressing sympathy for the abused person and disapproval
+      of the abuser. The moral foundation of care is present because the speaker is
+      expressing sympathy for the abused person. The moral foundation of purity is
+      also present because the speaker is disapproving of the abuser''s behavior as
+      repulsive. Output: {"label": ["care", "purity"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 5.804988541058265e-05
+      care: 0.9958010315895081
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.0013212093617767096
+      proportionality: 2.273265999974683e-05
+      purity: 0.0027970001101493835
+    test_text: "I wonder if she can divorce him before starting her job back to avoid\
+      \ this. This man deserves nothing from her.\n\nEdit. Since this blew up I\u2019\
+      d like to say that I\u2019m not usually a supporter of such underhanded behavior,\
+      \ but by what OP has described she is being financially abused and I find it\
+      \ repulsive that someone would owe an abuser anything!"
+  '10255':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: This question is about finding support and care from others,
+      which is a key aspect of the care moral foundation. It is not about authority,
+      equality, loyalty, proportionality, or purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9980732202529907
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.0019267345778644085
+      proportionality: 0.0
+      purity: 0.0
+    test_text: NTA. Are there any adults there you can depend on to support you?
+  '10354':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'This input is primarily focused on the moral foundation of
+      purity, as it labels pedophiles as "pure scum". There is also a mention of authority,
+      as the speaker is making a statement about what is right and wrong. Output:
+      {"label": ["purity", "authority"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0292295441031456
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0004169370513409376
+      none: 0.0018685823306441307
+      proportionality: 0.0005353577435016632
+      purity: 0.9679495692253113
+    test_text: 'I''d wager pedophiles don''t have an exceptionally high sex drive
+      unless they are also sex addicts. So it comes down to choosing wether to have
+      sex or not with someone, and in so many cases, forcefully.
+
+
+      Thoses who do it are just pure scum.'
+  '10490':
+    test_classification_loss: 0.0
+    test_gt:
+    - proportionality
+    - purity
+    test_outs: 'Output: {"label": ["purity", "authority"]}'
+    test_preds:
+    - authority
+    - purity
+    test_prefix_outs: This input is about the moral foundation of purity, as it involves
+      cleansing oneself through charity. It also touches on the moral foundation of
+      authority, as the speaker is expressing their opinion, but not calling the person
+      a bad person, implying a sense of authority or moral superiority.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.01796118915081024
+      care: 6.477814895333722e-05
+      equality: 0.0
+      loyalty: 0.000256202562013641
+      none: 0.00017608527559787035
+      proportionality: 0.0008942348067648709
+      purity: 0.9806475043296814
+    test_text: I say donate 100 to charity to cleanse yourself. I know you feel justified
+      but you kind of stole from a cause greater then yourself. Just my opinion. Not
+      calling you a bad person or anything like that.
+  '10493':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: This input emphasizes the importance of treating people with
+      respect and dignity, which aligns with the moral foundation of care. It also
+      touches on the idea of equality, as it suggests that everyone deserves to be
+      treated with respect regardless of their gender identity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 4.4802010961575434e-05
+      care: 0.986829936504364
+      equality: 0.008537751622498035
+      loyalty: 0.0
+      none: 0.004569929093122482
+      proportionality: 0.0
+      purity: 1.754471850290429e-05
+    test_text: "being respectful of a person\u2019s gender identity isn\u2019t political\
+      \ - it\u2019s basic decency"
+  '10741':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty", "proportionality"]}'
+    test_preds:
+    - loyalty
+    - proportionality
+    test_prefix_outs: This input expresses a strong sense of loyalty and trust, which
+      is a key aspect of the loyalty foundation. The mention of a "deal breaker" also
+      implies a sense of proportionality, as the speaker is weighing the severity
+      of the breach of trust against other potential issues in a relationship.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0014922157861292362
+      care: 0.0
+      equality: 1.999570486077573e-05
+      loyalty: 0.992534875869751
+      none: 0.005901828408241272
+      proportionality: 5.106081880512647e-05
+      purity: 0.0
+    test_text: She told your parents? Wow. That would 100% be a deal breaker for me.
+      Huge Breach of trust, hell that's worse than cheating in my eyes(I have been
+      cheated on, and sexually assaulted.)
+  '10781':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: This input is focused on care, as the author is recommending
+      a therapist to help with a difficult situation. The author is also expressing
+      empathy and understanding, which are key aspects of care.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 4.251216887496412e-05
+      care: 0.9967849254608154
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.003172548022121191
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "Probably because there\u2019s still an aspect of your life sucking\
+      \ your soul (your marriage). No amount of meds can fix that.  But I do really\
+      \ really recommend trying to find an understanding, empathetic therapist."
+  '10834':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: 'This input emphasizes the importance of communication and understanding
+      in relationships, which is a key aspect of the care moral foundation. It also
+      implies that individuals should be treated with respect and dignity, which is
+      related to the equality foundation. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 2.9145978260203265e-05
+      care: 0.9340795874595642
+      equality: 0.04650508239865303
+      loyalty: 0.0
+      none: 0.019386202096939087
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "You\u2019re not crazy. You handled this exactly right. The default\
+      \ answer for many people on the sub is \u201Cdump them!\u201D\n\nAnd I\u2019\
+      m happy that you worked it out and got your wife to understand your point of\
+      \ view. The right solution for any marital problem short of infidelity is communication."
+  '10837':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - purity
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'This input is primarily about the moral foundation of purity,
+      as it is criticizing a behavior that is seen as impure or degrading. It also
+      touches on the moral foundation of equality, as it suggests that women of any
+      ethnicity do not want to be objectified in this way. Output: {"label": ["purity",
+      "equality"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 3.9970629586605355e-05
+      care: 4.254851592122577e-05
+      equality: 0.00048694194993004203
+      loyalty: 0.0
+      none: 0.0011681129690259695
+      proportionality: 0.0006252458551898599
+      purity: 0.997637152671814
+    test_text: 'YTA.
+
+
+
+      This Asian woman fetish thing is gross.  And no woman of any ethnicity wants
+      to just be some kind of fetish fulfillment.
+
+
+
+      And yes, spending $250k so you can be around Asian women is stupid and weird.  You
+      could buy a house with that amount of money.'
+  '10854':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'This input is primarily about the moral foundation of authority,
+      as the boss is abusing their power. However, it also touches on the moral foundation
+      of care, as the boss is not respecting the employee''s well-being or expertise.
+      Output: {"label": ["authority", "care"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9969082474708557
+      care: 0.0019244856666773558
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.0011672595283016562
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "No. You don\u2019t. You get paid an exhorbitant amount of money to\
+      \ use your professional expertise and expensive education. This is an awful\
+      \ boss on a power trip. \n\nI work in law and that attitude used to be common\
+      \ but is now recognized as absolutely obnoxious and a bigger detriment to women\
+      \ than men, and wrong. Unless she was paid to be a personal assistant, this\
+      \ wasn\u2019t her job and it\u2019s demeaning and disrespectful. The same goes\
+      \ when you\u2019re asked to do it."
+  '10864':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'The input expresses a desire to learn about pick-up artistry,
+      but also emphasizes a commitment to her boyfriend and a lack of desire to manipulate
+      or hurt others. This suggests a foundation of care, as she is prioritizing her
+      relationship and the well-being of others. Output: {"label": ["care"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 8.46013572299853e-05
+      care: 0.9974429607391357
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.0024724139366298914
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "I\u2019m in a committed long term relationship with my bf who I love\
+      \ very much and I study techniques on how to be a female pick up artist. I have\
+      \ no idea why. It\u2019s just very interesting. It doesn\u2019t mean i cheat\
+      \ on my bf.\n\nI also would never manipulate anyone for my own gain like that.\
+      \ I have no desire to hurt men."
+  '10961':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty", "care"]}'
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: This input is about a parent's relationship with their child.
+      The parent is accusing the other parent of deceit, which suggests a violation
+      of trust and loyalty. The parent is also concerned about the well-being of their
+      child, which suggests a care foundation. The input does not suggest a strong
+      emphasis on authority, equality, proportionality, or purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0003342603740748018
+      care: 0.09268113225698471
+      equality: 0.0008018489461392164
+      loyalty: 0.8793341517448425
+      none: 0.026553591713309288
+      proportionality: 0.0
+      purity: 0.0002949837362393737
+    test_text: This. He will never trust a word you say again. This deceit on deceit
+      ploy is a great way to never see your son again.
+  '10985':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "equality", "proportionality"]}'
+    test_preds:
+    - care
+    - equality
+    - proportionality
+    test_prefix_outs: This input emphasizes the importance of care and equality, as
+      it argues that people struggling with addiction should be treated with dignity
+      and respect, rather than being dehumanized by language. It also touches on the
+      idea of proportionality, as it suggests that the current laws and language surrounding
+      drug use are disproportionate and unfair.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00010685971938073635
+      care: 0.9811856150627136
+      equality: 0.013995860703289509
+      loyalty: 0.0
+      none: 0.004543790593743324
+      proportionality: 0.00010685971938073635
+      purity: 6.088682857807726e-05
+    test_text: "Junkies? Come on bro. These are human beings with a medical or mental\
+      \ condition. So dehumanizing.  That word needs to be gone. Same with clean and\
+      \ dirty. Not all drug use is problematic and everyone uses drugs. Racism is\
+      \ the only reason some are legal and some aren\u2019t. Look it up."
+  '11407':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["equality", "care"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: This input is primarily about the moral foundation of equality,
+      as the speaker is arguing that two consenting adults should be free to engage
+      in any activity as long as they're not harming anyone. The speaker also mentions
+      care, as they consider the well-being of the kids in the case of incest. However,
+      the primary focus is on equality.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.0021748896688222885
+      equality: 0.994239330291748
+      loyalty: 0.0
+      none: 0.0035857870243489742
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "Ah yes, let us hang this young adult for the most sacreligious crime,\
+      \ kissing! \n\nBut in all honesty incest is only morally wrong if you consider\
+      \ the kids. 2 consenting adults can do whatever as long as they're not harming\
+      \ anyone. Don't care if I find it gross or not."
+  '1143':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty", "purity", "authority"]}'
+    test_preds:
+    - authority
+    - loyalty
+    - purity
+    test_prefix_outs: "This input is primarily about loyalty (to the country) and\
+      \ purity (fascism is seen as an impurity). Authority is also present, as M\xE9\
+      lenchon's political legitimacy is being questioned. "
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.1521839201450348
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.7728537321090698
+      none: 0.0021707869600504637
+      proportionality: 0.0009049186483025551
+      purity: 0.07188659906387329
+    test_text: "&gt; M\xE9lenchon refused to take a stand because he'll lose all his\
+      \ legitimacy in the opposition for the next 5 years if he supports Macron now\n\
+      \nSo it put political ambition over the safety of the country. Shame.\n\n&gt;\
+      \ we don't need M\xE9lenchon to support Macron to avoid Le Pen, so he didn't.\n\
+      \nHe can't take a stand against fascism, an enabler.\n\nThe election is very\
+      \ simple: democracy vs fascism. If you can't make a simple choice, you don't\
+      \ care about the country."
+  '11708':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - purity
+    test_outs: 'Output: {"label": ["loyalty", "care", "proportionality"]}'
+    test_preds:
+    - care
+    - loyalty
+    - proportionality
+    test_prefix_outs: 'This input emphasizes the importance of taking action against
+      a sexual predator, which is a matter of loyalty to the community and care for
+      its members. It also implies that the person who committed the crime should
+      face proportionate consequences, which is a matter of proportionality. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0018102313624694943
+      care: 0.3449690639972687
+      equality: 0.0038322601467370987
+      loyalty: 0.6444870233535767
+      none: 0.0038322601467370987
+      proportionality: 0.0007546166889369488
+      purity: 0.0003145710506942123
+    test_text: Masturbation is not a crime, revenge porn, blackmailing and illegal
+      recording is. You doing nothing will just let him think he can do anything.
+      You want another sexual predator go free? Call cops on him. If parents are outraged,
+      let them be outraged. They are not gonna kick you out over this. Call now. Let
+      that creep know the consequences.
+  '11728':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "loyalty", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    - loyalty
+    test_prefix_outs: This input emphasizes the importance of care and loyalty, as
+      it highlights the value of sibling relationships and the need to be kind to
+      one another. It also touches on the foundation of equality, as it encourages
+      children to express their opinions freely. However, it does not explicitly mention
+      authority, proportionality, or purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9608145952224731
+      equality: 0.03287726640701294
+      loyalty: 0.003926629666239023
+      none: 0.0023816213943064213
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "YTA.  \nAlways having your siblings back against a bully - appropriate.\
+      \  Not being allowed to share an opinion differing from your sibling - inappropriate.\
+      \  Teach your children to be kind to one another while disagreeing, don\u2019\
+      t teach them to silence their opinions."
+  '11941':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'This text is a moral argument for supporting gay marriage,
+      based on the idea that God calls us to love one another. The text also references
+      the inherent worth and dignity of a gay friend, which is a care foundation.
+      The text does not explicitly reference authority, equality, loyalty, proportionality,
+      or purity, but the argument is based on a moral principle (love one another)
+      that is often associated with care. Output: {"label": ["care"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00893852673470974
+      care: 0.9117545485496521
+      equality: 0.001760100363753736
+      loyalty: 0.00014447783178184181
+      none: 0.07484137266874313
+      proportionality: 0.0
+      purity: 0.0025609307922422886
+    test_text: "God calls us to love one another.\n\nGod also made your friend - perfectly\
+      \ and wonderfully made. He made him a gay man. \n\nI think if we want to love\
+      \ our neighbours as we love ourselves, then we support their right to enter\
+      \ a loving, committed relationship. \n\nSorry, but YTA."
+  '12646':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "equality", "proportionality"]}'
+    test_preds:
+    - care
+    - equality
+    - proportionality
+    test_prefix_outs: This statement is about protecting vulnerable individuals, which
+      relates to the care foundation. It also implies a moral judgment against exploitation,
+      which is a violation of equality and proportionality. However, there is no explicit
+      mention of authority, loyalty, or purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9952701926231384
+      equality: 0.0019213234772905707
+      loyalty: 0.0
+      none: 0.002795509062707424
+      proportionality: 0.0
+      purity: 1.2945775779371615e-05
+    test_text: Every day is a good day to be against exploiting children.
+  '12670':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    - purity
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'This text is primarily focused on criticizing Nixon''s actions
+      and character, implying that he acted with a lack of care for the well-being
+      of others and that his actions were disproportionate to the situation. The text
+      also implies that Nixon''s actions were motivated by a desire for personal gain,
+      which could be seen as a violation of the moral foundation of equality. Output:
+      {"label": ["care", "equality", "proportionality"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.005329752806574106
+      care: 0.7910054326057434
+      equality: 0.09447212517261505
+      loyalty: 0.0007213035714812577
+      none: 0.05730024352669716
+      proportionality: 0.03475435450673103
+      purity: 0.01641678996384144
+    test_text: 'Nixon deliberately prolonged the Vietnam war for his own benefit and
+      committed a number of crimes against peace and against humanity, in addition
+      to his crimes against America.  He was an irredeemable reprobate.
+
+
+      Nixon was a much more skilled politician and conniver than Trump, but he was
+      just as rotten.'
+  '13262':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - purity
+    test_outs: 'Output: {"label": ["purity", "care"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: The input mentions "bigotry" which is a violation of purity.
+      It also mentions "faith" which is related to care.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0011071169283241034
+      care: 0.025197865441441536
+      equality: 0.0011071169283241034
+      loyalty: 0.0012545278295874596
+      none: 0.025197865441441536
+      proportionality: 0.0005925970035605133
+      purity: 0.9455429315567017
+    test_text: 'The third constitutionally elected Supreme Court justice, who disgustingly
+      had to face bigotry against her faith.
+
+
+      FTFY'
+  '13328':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: 'Output: {"label": ["authority", "purity"]}'
+    test_preds:
+    - authority
+    - purity
+    test_prefix_outs: This input is concerned with the values of authority and purity,
+      as it critiques the indoctrination of children and young adults, implying a
+      desire to protect them from certain influences.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.966358482837677
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.00017351954011246562
+      none: 0.0003241771482862532
+      proportionality: 7.699882553424686e-05
+      purity: 0.033066969364881516
+    test_text: Don't want people seeing the ridiculous indoctrination they force on
+      our children and young adults.
+  '13347':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: This input emphasizes the idea that the current system perpetuates
+      inequality and that those who are already privileged have an easier time advancing
+      their education and thus their socio-economic status. It highlights the unfair
+      advantages that those in stable homes have over those who are struggling. The
+      emphasis is on equality and the unfairness of the system.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.0016662003472447395
+      equality: 0.9780353307723999
+      loyalty: 0.0
+      none: 0.02029847539961338
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "This perpetuates the cycle of poverty. Those who are higher educated\
+      \ can help their children with homework. They have more access to books or tutors.\
+      \ They can focus on school because they don\u2019t have to support their family.\
+      \ Those in stable homes don\u2019t have to work or raise their siblings. Grades\
+      \ don\u2019t determine your mastery of a subject. It just shows you\u2019ve\
+      \ completed the homework. Higher grades -&gt; higher education. And the cycle\
+      \ continues. This is all by design."
+  '135':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty", "care"]}'
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: 'This quote emphasizes the importance of unity and collective
+      action in the face of adversity, which is a key aspect of the loyalty foundation.
+      It also touches on the idea of building a better future for children, which
+      is related to the care foundation. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0003339408431202173
+      care: 0.0010286095784977078
+      equality: 0.0007069523562677205
+      loyalty: 0.9954630732536316
+      none: 0.002467506332322955
+      proportionality: 0.0
+      purity: 0.0
+    test_text: '&gt;Next week, I will be joining President Hollande and world leaders
+      in Paris for the global climate conference. What a powerful rebuke to the terrorists
+      it will be when the world stands as one and shows that we will not be deterred
+      from building a better future for our children.
+
+
+      [Real Obama quote](http://thehill.com/policy/energy-environment/261193-obama-climate-conference-is-powerful-rebuke-to-terrorists)'
+  '13786':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["equality", "care", "authority"]}'
+    test_preds:
+    - authority
+    - care
+    - equality
+    test_prefix_outs: This input is primarily about equality and care, as it discusses
+      issues of fairness and justice. Authority is also present, as the input critiques
+      Nike for not living up to its own values.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.06610974669456482
+      care: 0.12350927293300629
+      equality: 0.8053815960884094
+      loyalty: 0.00021041283616796136
+      none: 0.004788974300026894
+      proportionality: 0.0
+      purity: 0.0
+    test_text: Yes, we can. It's great to be against police brutality, racism, and
+      slavery at once. I think picking and choosing is where Nike looks like a hypocrite.
+  '14554':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: 'Output: {"label": ["purity", "authority"]}'
+    test_preds:
+    - authority
+    - purity
+    test_prefix_outs: This input is primarily about the characterization of a group
+      as racist and anarchist, which relates to the moral foundation of purity. The
+      characterization of the group as thugs also relates to the moral foundation
+      of authority.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.1805628389120102
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0017701757606118917
+      none: 0.007933376356959343
+      proportionality: 0.0005071638152003288
+      purity: 0.8092264533042908
+    test_text: And how is it they keep trying to convince us that antifa is still
+      an "idea" instead if a group of racist, anarchist thugs?
+  '14574':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - proportionality
+    test_outs: 'Output: {"label": ["proportionality", "authority"]}'
+    test_preds:
+    - authority
+    - proportionality
+    test_prefix_outs: This input is about the boss's unfair treatment of the employee,
+      which is a violation of the principle of proportionality. The boss's actions
+      are also a violation of the principle of authority, as the boss is supposed
+      to be a fair and just leader.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.4024982452392578
+      care: 0.0
+      equality: 0.000367030908819288
+      loyalty: 0.0007770044030621648
+      none: 0.010726215317845345
+      proportionality: 0.5856314897537231
+      purity: 0.0
+    test_text: Your boss steals much more from you than taxes ever have.
+  '14700':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: This input is about the desire to learn about revolutionary
+      history and the critique of the government for not teaching it. The desire to
+      learn about revolutionary history suggests a foundation of care, as it implies
+      a desire to understand and empathize with the experiences of others. The critique
+      of the government for not teaching current injustices suggests a foundation
+      of equality, as it implies a desire for fairness and justice.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0001509064604761079
+      care: 0.9523236751556396
+      equality: 0.03692559525370598
+      loyalty: 0.0
+      none: 0.010579360648989677
+      proportionality: 0.0
+      purity: 2.0422970919753425e-05
+    test_text: "this is revolutionary history i want to learn about in school. but\
+      \ of course the government won\u2019t teach its people how to overthrow it.\
+      \ they don\u2019t even teach current injustices..."
+  '14855':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'The input is critical of BLM and the thin blue line flag, but
+      the moral foundations present are more related to loyalty and authority, as
+      the input is defending the police and criticizing BLM for not supporting a black
+      man who was killed during a protest. There is also a mention of proportionality,
+      as the input is criticizing BLM for the deaths that occurred during their protests.
+      Output: {"label": ["loyalty", "authority", "proportionality"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.14778538048267365
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.8504461646080017
+      none: 0.0016417473088949919
+      proportionality: 0.00012659795174840838
+      purity: 0.0
+    test_text: 'Calling the thin blue line flag a "white lives matter" flag is moronic.
+
+
+      Demanding someone take down a flag that has been popular for many years is not
+      "drawing attention", it is silencing people who support police.
+
+
+      If BLM is about saving lives, why do they get so uncomfortable when you ask
+      them where the many millions of dollars in donations go?  Their own "protests"
+      led to the deaths of black men like David Dorn.  BLM didn''t give a damn about
+      his death, even though they played a part in it.'
+  '15180':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: This input emphasizes the idea that wealth is concentrated among
+      the rich and that this wealth is not being fairly distributed to those who need
+      it. This is a classic argument for equality. There is no mention of authority,
+      care, loyalty, proportionality, or purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 2.578536259534303e-05
+      equality: 0.9968016147613525
+      loyalty: 0.0
+      none: 0.003172601107507944
+      proportionality: 0.0
+      purity: 0.0
+    test_text: Obviously left wing propoganda. Everyone knows when the rich get richer,
+      the money trickles down to the exploited children in both 1st and 3rd World
+      countries.
+  '15505':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["authority", "loyalty", "purity"]}'
+    test_preds:
+    - authority
+    - loyalty
+    - purity
+    test_prefix_outs: This input emphasizes the importance of authority and loyalty,
+      as it references the "destruction of our country" and the need to uphold "law
+      and order". It also touches on the idea of purity, as it frames the issue as
+      a challenge to the country's sovereignty.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9763844609260559
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.022962361574172974
+      none: 0.0003711520112119615
+      proportionality: 5.691800470231101e-05
+      purity: 0.00022511507268063724
+    test_text: I would much rather watch companies virtue signal about sex than endorse
+      a criminal organization hell bent on the destruction of our country.  This is
+      a direct challenge to our sovereignty and to law and order itself.
+  '15539':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["equality", "proportionality"]}'
+    test_preds:
+    - equality
+    - proportionality
+    test_prefix_outs: This input emphasizes the idea that service should not be a
+      factor in judging someone's character or worth. It suggests that individuals
+      should be evaluated based on their actions and decisions, rather than their
+      service. This implies a focus on equality and proportionality, as it seeks to
+      treat individuals fairly and without bias.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.0002561928704380989
+      equality: 0.9806103706359863
+      loyalty: 0.0
+      none: 0.013987654820084572
+      proportionality: 0.005145770963281393
+      purity: 0.0
+    test_text: "As someone who served, military service members should be judged independently\
+      \ outside of service and don\u2019t deserve special treatment. You can respect\
+      \ McCain and Mattis for their service and criticize their work after that."
+  '15654':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: This input is about the treatment of employees, which relates
+      to care and equality. It also implies a lack of authority and proportionality.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0004192828491795808
+      care: 0.8590185046195984
+      equality: 0.10259513556957245
+      loyalty: 0.0
+      none: 0.03774264082312584
+      proportionality: 0.0
+      purity: 0.00022442593763116747
+    test_text: Jobs are abusive, manipulative and exploitative towards employees.
+      Makes sense people would want to cheat.
+  '15669':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - purity
+    test_outs: 'Output: {"label": ["purity", "authority"]}'
+    test_preds:
+    - authority
+    - purity
+    test_prefix_outs: 'This input is focused on purity, as the speaker wants to remove
+      individuals they deem "degenerate" from society. The speaker is also concerned
+      with authority, as they are advocating for a form of social control. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.015871841460466385
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0005431045428849757
+      none: 0.0011497522937133908
+      proportionality: 0.0004792880790773779
+      purity: 0.9819560647010803
+    test_text: "Sick of these utter degenerates. Just remove from  society. They clearly\
+      \ have criminal intent. \n\nPhysical removal."
+  '15792':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["care", "authority", "purity"]}'
+    test_preds:
+    - authority
+    - care
+    - purity
+    test_prefix_outs: The input expresses a sense of self-acceptance and comfort with
+      one's sexual orientation, which relates to the care foundation. The input also
+      expresses frustration and hurt at being judged by Christians, which relates
+      to the authority and purity foundations. The input does not express any sense
+      of equality or loyalty, and proportionality is not relevant in this context.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.007545781321823597
+      care: 0.9883022904396057
+      equality: 4.486885518417694e-05
+      loyalty: 0.0
+      none: 0.0019078722689300776
+      proportionality: 3.719758751685731e-05
+      purity: 0.0021619026083499193
+    test_text: 'As a gay guy trying to reach out in good faith, what will I slowly
+      ''wake up'' about?
+
+
+      I''ve not had any choice in my sexuality and I''m entirely comfortable with
+      myself at this point in time. I love a beautiful guy &amp; we''re happy together.
+      What''s so wrong and abhorrent about me that christians feel the need to cast
+      judgment, tell me I''m going to hell or that I should seek some higher calling.
+
+
+      I''m not religious in the slightest and would never tell someone they need to
+      change like that.'
+  '15897':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["equality", "care"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: The input is about recognizing and responding to injustice and
+      inequality, which is a key aspect of the equality moral foundation. The disgust
+      and anger are also related to the idea of exploitation, which is a key aspect
+      of the care moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 7.045294478302822e-05
+      care: 0.05310068279504776
+      equality: 0.9412321448326111
+      loyalty: 0.0
+      none: 0.005596770904958248
+      proportionality: 0.0
+      purity: 0.0
+    test_text: '&gt;Can someone explain the thought process for the knee jerk disgust
+      at this saying?
+
+
+      Anger is the natural human response to inequality and injustice.  You recognize
+      that the saying is bullshit, that it''s just someone who gets to abuse and exploit
+      their workers talking about themself instead of anyone else (they know you don''t
+      enjoy your job, and they simply don''t care).  You''re having the correct response
+      to someone who''s basically gloating about what they get to do to you.'
+  '16219':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["authority"]}'
+    test_preds:
+    - authority
+    test_prefix_outs: This input is primarily concerned with authority, as it references
+      the legitimacy of the government and the potential for treason. There is no
+      mention of care, equality, loyalty, proportionality, or purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9990890026092529
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.0009110512328334153
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "Shouldn\u2019t anyone saying that be arrested for inciting a riot\
+      \ or treason against the US?"
+  '16240':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - purity
+    test_outs: 'Output: {"label": ["equality", "purity"]}'
+    test_preds:
+    - equality
+    - purity
+    test_prefix_outs: This input expresses a sentiment of disgust and outrage towards
+      people who believe in racial superiority. The sentiment is rooted in the moral
+      foundation of equality, as the speaker is upset that some people believe in
+      the superiority of one group over another. The speaker is also expressing a
+      sense of purity, as they are upset by the idea of racial superiority.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0001739110884955153
+      care: 0.007394887041300535
+      equality: 0.9685390591621399
+      loyalty: 0.00014417733473237604
+      none: 0.020101387053728104
+      proportionality: 0.000153475979459472
+      purity: 0.0034930973779410124
+    test_text: 'Jesus christ look at all the black people on twitter who legitimately
+      think they are superior to whites because their melanin count.
+
+
+      Fucking sickening'
+  '16272':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty", "authority"]}'
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: This input is primarily about loyalty, as McConnell is being
+      accused of prioritizing his own interests over the greater good. However, there
+      is also a hint of authority, as McConnell is being accused of disrespecting
+      the law.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.03650051727890968
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.9413607716560364
+      none: 0.0221386831253767
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "McConnell hasn't decided to 'respect democracy'. \nMcConnell is just\
+      \ not stupid enough to blatantly break the law for a disloyal imbecile who lost\
+      \ an election. He is in it for himself and literally no one else."
+  '16626':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: 'Output: {"label": ["equality", "loyalty", "care"]}'
+    test_preds:
+    - care
+    - equality
+    - loyalty
+    test_prefix_outs: The input emphasizes the importance of questioning the process
+      and the rights of citizens, which relates to the moral foundation of equality.
+      It also highlights the importance of loyalty to America and its values, as well
+      as the care that leaders should have for their supporters. The input does not
+      emphasize authority, proportionality, or purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00011133967927889898
+      care: 0.08391719311475754
+      equality: 0.9021947979927063
+      loyalty: 0.006888342089951038
+      none: 0.006888342089951038
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "Notice how they\u2019re all gloating, and none of them are questioning\
+      \ the process? They\u2019re only copping out by saying \u201Cthere\u2019s no\
+      \ proof.\u201D They don\u2019t care what\u2019s going on in America right now.\
+      \ Our Democracy is being disrupted. Our rights are being infringed. The elites\
+      \ and leaders of this country are lying and rigging one of the best things that\
+      \ makes America America. They only care that Trump loses.\n\nThey don\u2019\
+      t realize that if the Dems don\u2019t care about what we think about them, or\
+      \ our rights; then they don\u2019t care about their supporters either."
+  '16931':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["equality", "purity"]}'
+    test_preds:
+    - equality
+    - purity
+    test_prefix_outs: 'This input expresses a strong sense of moral outrage against
+      the idea that people with disabilities have no value or worth. It also expresses
+      a sense of disgust towards the capitalist mindset, which suggests a concern
+      for purity. Additionally, the input implies that the capitalist mindset is unfair
+      and unjust, which suggests a concern for equality. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.003257055999711156
+      care: 0.25874000787734985
+      equality: 0.37646448612213135
+      loyalty: 0.004738988354802132
+      none: 0.09518513083457947
+      proportionality: 0.002874341793358326
+      purity: 0.25874000787734985
+    test_text: It's so absurd isn't it? So what about people who are mentally or physically
+      disabled? Do they have no value or worth? God the capitalist mindset disgusts
+      me to the core.
+  '16983':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["proportionality", "authority"]}'
+    test_preds:
+    - authority
+    - proportionality
+    test_prefix_outs: This input emphasizes the idea that the government's response
+      to COVID-19 was objective and good, and that minorities are disproportionately
+      dying. This suggests that the speaker values proportionality, as they are concerned
+      with the fairness of the government's response. Additionally, the speaker's
+      emphasis on the objective good of the government's response suggests that they
+      value authority, as they are trusting in the government's decision-making.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.40451961755752563
+      care: 0.0
+      equality: 0.0010027039097622037
+      loyalty: 0.002405361505225301
+      none: 0.003499780548736453
+      proportionality: 0.5885725617408752
+      purity: 0.0
+    test_text: Absolutely they looked at the numbers, even now minorities such as
+      blacks and Hispanics are disproportionately dying, and they saw covid as a objective
+      good.
+  '17262':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "loyalty"]}'
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: This input is about protecting people from harm (doxxing) and
+      defending their right to express their opinions (patriotism). The concern is
+      for the well-being of the individuals, which relates to the care foundation.
+      Additionally, the input touches on the idea of loyalty to one's community and
+      the importance of not labeling people as "race traitors", which relates to the
+      loyalty foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00010706058674259111
+      care: 0.9830300211906433
+      equality: 4.462949436856434e-05
+      loyalty: 0.0008964073495008051
+      none: 0.015889199450612068
+      proportionality: 0.0
+      purity: 3.265163832111284e-05
+    test_text: hope those african american patriots in the back dont get doxxed and
+      labeled race traitors by the insane left.
+  '17518':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty", "purity", "authority"]}'
+    test_preds:
+    - authority
+    - loyalty
+    - purity
+    test_prefix_outs: This input is primarily driven by a sense of loyalty and purity,
+      as the speaker is expressing a strong sense of national identity and a desire
+      to protect it from perceived threats. The use of strong language and accusations
+      of evil also suggests a strong sense of moral outrage, which is often associated
+      with purity. Authority is also present, as the speaker is asserting their own
+      moral authority and judgment.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.01505318097770214
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.931307315826416
+      none: 0.0005836751661263406
+      proportionality: 0.0005150915239937603
+      purity: 0.05254076421260834
+    test_text: "I legitimately think they hate the country and want to destroy it.\n\
+      \nThey hate patriotism \nThey hate traditional family values\nThey hate everything\
+      \ this country was founded on.\n\nThey are fucking evil."
+  '17690':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["equality", "authority"]}'
+    test_preds:
+    - authority
+    - equality
+    test_prefix_outs: 'This input is primarily focused on the moral foundation of
+      equality, as it critiques the exploitation of black people and imperialism.
+      However, it also touches on the moral foundation of authority, as it critiques
+      the idea of reverting back to a previous economic system. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.1436900645494461
+      care: 0.0009681760566309094
+      equality: 0.8268792629241943
+      loyalty: 0.00016824377235025167
+      none: 0.02829425223171711
+      proportionality: 0.0
+      purity: 0.0
+    test_text: Corporatism and capitalism are the same thing. You are describing younger
+      years of capitalism. Not so easy to just revert back to that as it required
+      the exploitation of black people and still requires imperialism to some degree.
+  '2167':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "authority", "purity"]}'
+    test_preds:
+    - authority
+    - care
+    - purity
+    test_prefix_outs: This input is about Trump's response to a terrorist attack,
+      and how he is different from other leaders. The input implies that Trump is
+      showing empathy and understanding of the situation, while other leaders are
+      not. The moral foundation of care is present because the input is discussing
+      empathy and understanding. The moral foundation of authority is also present
+      because the input is discussing the response of leaders to a situation. The
+      moral foundation of purity is also present because the input is discussing the
+      idea of "infidels" and the idea that Muslims are somehow different from others.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.1054755374789238
+      care: 0.8831358551979065
+      equality: 0.0003357056702952832
+      loyalty: 0.0007106885896064341
+      none: 0.001504527754150331
+      proportionality: 0.00017969020700547844
+      purity: 0.008657959289848804
+    test_text: Well, when 16 of my fellow citizens are gunned down because they are
+      infidels, I'm not going to be tweeting that Muslim Americans are just like you
+      and me.  Who's lacking empathy?  Merkel, Hollande, and Obama give the same condolence
+      speech after every terrorist attack - we must stand together, our values must
+      prevail, don't give into hate and fear for Muslims, etc.  Rinse and repeat after
+      every terrorist attack.  [Trump is doing the right thing.](http://money.cnn.com/video/news/2015/08/20/donald-trump-immigration-plan-birthright-citizenship.cnnmoney/)
+  '2411':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["purity", "loyalty"]}'
+    test_preds:
+    - loyalty
+    - purity
+    test_prefix_outs: 'This input is primarily about the perceived cultural and social
+      differences between immigrants from Islamic countries and other immigrant groups.
+      It is rooted in the idea that certain groups are more likely to cause problems
+      and social unrest, which is a concern for purity. Additionally, the input touches
+      on the idea that certain groups are more likely to be loyal to their own culture
+      and values rather than the host country, which is a concern for loyalty. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0003612665750551969
+      care: 0.00011728607933036983
+      equality: 0.0
+      loyalty: 0.03252017870545387
+      none: 0.015361445024609566
+      proportionality: 0.001260944176465273
+      purity: 0.950378954410553
+    test_text: 'But they were born in France...to recent immigrants who practice Islam.
+      Do you think the Le Pen voters would have the same opinion about people such
+      as Japanese immigrants? I highly doubt it. To pretend this is just about immigration
+      alone is ridiculous. It''s about immigration of groups of people who have values
+      and a culture that leads to problems integrating and social unrest. '
+  '2479':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'This input is about a political candidate''s endorsement by
+      MEPs, which involves loyalty to the EU and the candidate. It also involves care
+      for the environment and social welfare. Output: {"label": ["loyalty", "care"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.004588976968079805
+      care: 0.0004836746375076473
+      equality: 0.0019129703287035227
+      loyalty: 0.9909431338310242
+      none: 0.0019129703287035227
+      proportionality: 7.417390588670969e-05
+      purity: 8.4050050645601e-05
+    test_text: "https://twitter.com/benoithamon/status/824578898734252032\n\nHamon\
+      \ is pro-EU too. \n\n&gt;Deeply honored to be endorsed by many MEPs. Together\
+      \ we will keep building a more social, democratic and eco-friendly EU. "
+  '2521':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: 'Output: {"label": ["equality", "care", "purity"]}'
+    test_preds:
+    - care
+    - equality
+    - purity
+    test_prefix_outs: 'This input is a response to a violent act by someone who supports
+      Trump and Le Pen, and the author is expressing outrage and opposition to such
+      views. The moral foundation of equality is present as the author is condemning
+      the act as a form of terrorism and a hate crime. The moral foundation of care
+      is also present as the author is expressing empathy for the victims of the attack.
+      The moral foundation of purity is also present as the author is condemning the
+      act as a form of "terrorism" and a "hate crime", implying that the perpetrator''s
+      actions are impure. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0006599656771868467
+      care: 0.2662491500377655
+      equality: 0.7237402200698853
+      loyalty: 0.0008474126225337386
+      none: 0.004876523278653622
+      proportionality: 0.0002751144638750702
+      purity: 0.003351581981405616
+    test_text: 'a Quebecian born and raised that likes trump and le pen went and shot
+      up a bunch of muslims?  Color me surprised.  Radical Bigot Terrorist just like
+      his friends in Texas two days ago that set that mosque on fire.  damn it feels
+      good to be on the right side of history opposing these trump supporters.  LOVE
+      TRUMPS HATE. See in you in 2018, you will lose as long as you keep committing
+      terrorist attacks for your god emperor.  '
+  '3134':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["authority", "loyalty", "purity", "proportionality"]}'
+    test_preds:
+    - authority
+    - loyalty
+    - proportionality
+    - purity
+    test_prefix_outs: 'The input "influence, corruption" involves the moral foundation
+      of authority, as it involves the idea of a government official (Le Pen) representing
+      the best interests of the people. It also involves the moral foundation of purity,
+      as it implies that the official is being corrupted by external forces and is
+      acting in a way that is not in the best interests of the people. Additionally,
+      it involves the moral foundation of loyalty, as it implies that the official
+      is being disloyal to the people of France by serving the interests of Russia
+      instead of her own country. Finally, it involves the moral foundation of proportionality,
+      as it implies that the official''s actions are disproportionate to the interests
+      of the people she is supposed to represent.
+
+      '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9776235222816467
+      care: 6.457839481299743e-05
+      equality: 0.0
+      loyalty: 0.01580181159079075
+      none: 8.292030543088913e-05
+      proportionality: 0.0012970917159691453
+      purity: 0.005130097270011902
+    test_text: 'influence, corruption
+
+
+      you understand what corruption is, right?
+
+
+      if le pen wins, she is supposed to represent what is best for the french people.
+      but she may make decisions that benefit russia or some rich russian assholes
+      instead of the french if they bankroll her
+
+
+      it happens everywhere in terms of rich assholes in a country corrupting the
+      govt to serve them instead of the common person in that country
+
+
+      but foreign corruption has the extra problem of treasonous activity
+
+      '
+  '3987':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["proportionality", "loyalty"]}'
+    test_preds:
+    - loyalty
+    - proportionality
+    test_prefix_outs: This input expresses a sense of proportionality, as the speaker
+      is concerned about fairness and meritocracy. The speaker also expresses a sense
+      of loyalty to France, as indicated by the "VIVA LA FRANCE!" at the end.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0021721937227994204
+      care: 5.788699854747392e-05
+      equality: 0.0010260716080665588
+      loyalty: 0.002789151854813099
+      none: 0.0009055050322785974
+      proportionality: 0.9930068254470825
+      purity: 4.235103551764041e-05
+    test_text: True but it just seems a bit iffy granting a place to one sex over
+      the other not based on merit but over a quota. But yes, this is small regarding
+      the things Macron will do for France and the future. VIVA LA FRANCE!
+  '4248':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    - proportionality
+    test_outs: 'Output: {"label": ["authority", "loyalty"]}'
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: This input expresses a negative view of two political candidates
+      and a positive view of a third. The negative views are likely based on a sense
+      of loyalty to the political party or ideology that Macron and Le Pen represent,
+      and the positive view is based on a sense of authority, as Fillon was the president
+      of France. There is no clear expression of care, equality, proportionality,
+      or purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.6785319447517395
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.28285419940948486
+      none: 0.03828015178442001
+      proportionality: 0.00015644222730770707
+      purity: 0.00017727228987496346
+    test_text: Eh, Macron and Le Pen are both bad, Fillon was the president France
+      needed.
+  '5271':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["authority", "equality"]}'
+    test_preds:
+    - authority
+    - equality
+    test_prefix_outs: 'The speaker is using a moral foundation of authority, as they
+      are implying that not voting is a form of disobedience or disrespect to the
+      democratic process. The speaker is also using a moral foundation of equality,
+      as they are implying that not voting is a form of toleration of a candidate
+      who is seen as undesirable. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9998792409896851
+      care: 0.0
+      equality: 1.7776721506379545e-05
+      loyalty: 5.14386483700946e-05
+      none: 5.14386483700946e-05
+      proportionality: 0.0
+      purity: 0.0
+    test_text: '&gt; Voting for someone is, by definition, support.
+
+
+      &gt; Not voting against Le Pen means tolerating a Le Pen victory.
+
+
+      He is talking about not voting. What''s your point?'
+  '5632':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: ''
+    test_preds: []
+    test_prefix_outs: 'The input mentions gender equality, which is a key aspect of
+      the equality moral foundation. It also mentions a clean criminal record, which
+      relates to the purity moral foundation. Output: {"label": ["equality", "purity"]}'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 6.90907909302041e-05
+      care: 0.010915307328104973
+      equality: 0.9825646281242371
+      loyalty: 0.0
+      none: 0.004015516955405474
+      proportionality: 0.0
+      purity: 0.0024355342611670494
+    test_text: '&gt;We know the Macron team set out five conditions:
+
+      Renewal for France (half will come from outside politics)
+
+      Gender equality (half will be women)
+
+      Clean criminal record - as part of commitment to clean up politics
+
+      Cross-section of political views - so there may be defectors from other parties
+
+      Sign up to the Macron reform programme as well as joining the party itself
+
+      While candidates can be members of other parties, they cannot run for them (apart
+      from centrist party MoDem)
+
+
+      Also, I highly doubt that its a coincidence that its equally split between men
+      and women. '
+  '5849':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["proportionality", "equality"]}'
+    test_preds:
+    - equality
+    - proportionality
+    test_prefix_outs: 'This input emphasizes the importance of not being kind to violent
+      ideologies, which suggests a moral foundation of proportionality. It also implies
+      that the speaker values equality, as they mention that the person being addressed
+      is privileged and therefore unaffected by the violence. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0005796343320980668
+      care: 0.008001605048775673
+      equality: 0.16071654856204987
+      loyalty: 0.0005796343320980668
+      none: 0.013192417100071907
+      proportionality: 0.8161859512329102
+      purity: 0.0007442652713507414
+    test_text: "This isn't about having different issues. Le Pen's platform is extremely\
+      \ violent. Advocating for that violent platform should not be met with kindness.\
+      \ It doesn't deserve it. \n\nYou are privileged enough that you will not be\
+      \ affected by this violence but that doesn't mean it isn't there. Your apologia\
+      \ is itself terrorism."
+  '6000':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: 'Output: {"label": ["equality", "care"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: This input is primarily concerned with equality, as the author
+      is weighing the benefits of a more neoliberal economy against the potential
+      negative effects on the poor. The author also mentions the need for a safety
+      net to adapt to changing economic conditions, which suggests a concern for care.
+      However, the author does not express any strong moral opposition to the wealthy
+      growing in number or getting wealthier, so authority, loyalty, proportionality,
+      and purity are not present in this input.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.02592778578400612
+      equality: 0.9729329943656921
+      loyalty: 0.0
+      none: 0.0011391873704269528
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "If it helps raise everyone's standard of living what do I care if\
+      \ the wealthy are growing in number or getting wealthier?  \n\nLook at Ireland\
+      \ their economy suffered until they became more neoliberal. So it's not like\
+      \ the alternatives would be better.  Everyone suffering instead of a some wealthy,\
+      \ most well off and some poor?  I'll take the latter and it's not like being\
+      \ Neoliberal means that Macron doesnt support social programs and such.  The\
+      \ world is changing and thier safety net will need to adapt just like thier\
+      \ economy  it's that way in pretty much every country.  "
+  '6140':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["authority", "loyalty"]}'
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: 'This input is primarily about political criticism and the evaluation
+      of a politician''s term. The moral foundation of authority is present as the
+      politician''s actions are being judged. The moral foundation of loyalty is also
+      present as the politician''s actions are being evaluated in the context of their
+      party. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.997133731842041
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0016987367998808622
+      none: 0.0011675235582515597
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "Valls the traitor of the official candidate as ex-prime minister and\
+      \ Cambad\xE9lis the chairman of the Socialist Party are the real executioners\
+      \ of the party. They showed they are opportunists and corrupt politicians. \n\
+      \nHollande had a reasonably good term despite the unwavering criticisms. He\
+      \ helped the party make a soft landing rather..."
+  '6152':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: This input emphasizes the idea that Muslims are not inherently
+      bad or irrational, and that they have the same desires as others. This suggests
+      a foundation of care, as it emphasizes the shared humanity and desire for safety
+      and normalcy. It also implies a foundation of equality, as it suggests that
+      Muslims are not inherently different from others and should be treated as equals.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.7519363164901733
+      equality: 0.24411797523498535
+      loyalty: 0.0
+      none: 0.003945799544453621
+      proportionality: 0.0
+      purity: 0.0
+    test_text: Muslims aren't bad, irrational people. 99.9% of them are just like
+      you and I, they want to be safe and live a normal peaceful life. If they believe
+      that means closing the borders to refugees and illegal immigrants, then I can
+      see why they'd vote for Le Pen.
+  '6243':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: 'This input is primarily about the author''s criticism of the
+      right-wing perspective on the LGBT community. The author is pointing out a double
+      standard, implying that the right-wing only cares about the LGBT community when
+      it comes to Muslims. The author is also questioning the accuracy of the article''s
+      claim about the voting preferences of gay French men. The moral foundation of
+      equality is present because the author is pointing out a perceived double standard
+      and questioning the accuracy of the article''s claim. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 4.4064014218747616e-05
+      care: 7.264927262440324e-05
+      equality: 0.9705744385719299
+      loyalty: 0.0
+      none: 0.029308808967471123
+      proportionality: 0.0
+      purity: 0.0
+    test_text: 'And I love how far-righters seem to only care about the LGBT community
+      when it comes to Muslims. That and nowhere in the article does it say that the
+      majority of gay French men are voting for Le Pen. '
+  '6252':
+    test_classification_loss: 0.0
+    test_gt:
+    - loyalty
+    - proportionality
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: This input is primarily about the perceived hypocrisy of Le
+      Pen and the corporatist, and the negative impact of their policies on society.
+      The input also touches on the idea that the corporatist and Le Pen are both
+      "fucking" the people for money, which implies a lack of care for the people.
+      The input also implies that Le Pen's policies are backwards and will destroy
+      society, which touches on the foundation of purity. The input does not explicitly
+      mention any of the other foundations.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00046208975254558027
+      care: 0.835477888584137
+      equality: 0.0063789524137973785
+      loyalty: 0.0002802717499434948
+      none: 0.0880587175488472
+      proportionality: 0.0007618571980856359
+      purity: 0.06858020275831223
+    test_text: 'Goddammit, Le Pen. You fucked yourself. People don''t vote for the
+      populist because they''re bigoted. they vote for the populist because they know
+      the corporatist will never be on their side.  Now you just prove that neither
+      will you, because you''re a fundamentalist, not a populist. You just parrot
+      the right words.
+
+
+      Go France! Vote for the corporatist who will fuck you for money, or the fundamentalist,
+      who will also fuck you for money, but at least pretend not to, all while initiating
+      backwards social policies that destroy any semblance of integrated society.
+      (sound familiar?)'
+  '6623':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: 'Output: {"label": ["authority", "care", "proportionality"]}'
+    test_preds:
+    - authority
+    - care
+    - proportionality
+    test_prefix_outs: 'This input is a statement of defiance against authority, specifically
+      Le Pen, and a rejection of his views on populism. The speaker also expresses
+      a commitment to cosmopolitanism and rational policy making, which suggests a
+      foundation of care and proportionality. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.8943233489990234
+      care: 0.016380103304982185
+      equality: 0.004141538869589567
+      loyalty: 0.018561087548732758
+      none: 0.06478457152843475
+      proportionality: 0.00046466776984743774
+      purity: 0.001344560761936009
+    test_text: 'Don''t lecture me, Le Pen. I see through the lies of the Populists.
+      I do not fear liberalism as you do. I have brought peace, economic growth, freedom,
+      cosmopolitanism, and rational policy making to my new Empire. '
+  '6817':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["purity", "loyalty"]}'
+    test_preds:
+    - loyalty
+    - purity
+    test_prefix_outs: This input is primarily concerned with the moral foundation
+      of purity, as it discusses the need to protect French culture and people from
+      perceived threats. It also touches on the foundation of loyalty, as it suggests
+      that immigrants should be assimilated into French culture. There is no clear
+      mention of the other foundations.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00029398445622064173
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.003581464057788253
+      none: 0.0024615018628537655
+      proportionality: 0.0006223650998435915
+      purity: 0.9930406808853149
+    test_text: '&gt; A vote for Le Pen is a vote for more terror and more dead French
+      people!
+
+
+      Do you know why? Anti-Islamic rhetoric ostracizes Muslims ALREADY in France,
+      and breeds terror. You''ll have less people from overseas causing problems,
+      but domestic terrorism will increase.
+
+
+      That''s not saying we should stop the migrants however. I''m just saying that
+      people should attempt to accept Muslims, which will lead to cultural assimilation.
+      Cutting off further immigration from the middle east is actually imperative
+      to making Frenchmen out of the immigrants.'
+  '6867':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty", "authority", "equality"]}'
+    test_preds:
+    - authority
+    - equality
+    - loyalty
+    test_prefix_outs: 'This input is primarily about the critique of nationalism,
+      which is associated with loyalty and authority. The critique of nationalism
+      is also related to equality, as it implies a sense of superiority over other
+      countries. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.1478787660598755
+      care: 0.0
+      equality: 0.0005333341541700065
+      loyalty: 0.8509835600852966
+      none: 0.0006043467437848449
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "I suppose you are American, one of the few countries where nationalism\
+      \ is used a synonym of patriotic sentiment. \n\nNationalism is defined as: \"\
+      extreme form of patriotism marked by a feeling of superiority over other countries\"\
+      \ and yes, I do have a problem with this way of thinking, especially when it\
+      \ is used abused by populist or far right political parties. \n\nMoreover, if\
+      \ you paid any attention to what Le Pen has been saying, you would know that\
+      \ being on friendly terms is not exactly what the party is pushing for."
+  '72':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "loyalty"]}'
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: 'This input is critical of autonomists who support Le Pen''s
+      views on Muslims and Arabs, implying a lack of care for the well-being of these
+      groups. It also implies a lack of loyalty to the autonomist cause, as they are
+      going along with Le Pen''s views. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0051328944973647594
+      care: 0.761789083480835
+      equality: 0.033470675349235535
+      loyalty: 0.01791555806994438
+      none: 0.13237909972667694
+      proportionality: 0.000613036856520921
+      purity: 0.04869954660534859
+    test_text: 'They''re not independentists, they''re autonomists. And they go ALONG
+      everything Le Pen represents, especially her hatred for Muslims and Arabs. '
+  '7494':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: This text argues that people with certain conditions are not
+      inherently evil, and that empathy is not a measure of a person's character.
+      It suggests that people with neurodivergent conditions are not inherently evil,
+      and that it is ableist to assume they are. The moral foundation of care is present,
+      as the text emphasizes the importance of empathy and treating people with kindness.
+      The moral foundation of purity is also present, as the text argues that people
+      with certain conditions are not inherently evil and should not be judged based
+      on their condition.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0004242213908582926
+      care: 0.9848606586456299
+      equality: 0.0008980766870081425
+      loyalty: 4.4712607632391155e-05
+      none: 0.0051680742762982845
+      proportionality: 8.353414887096733e-05
+      purity: 0.00852071400731802
+    test_text: Personality disorders and autism or brain tumours do not inherently
+      make you an asshole and insisting that they do is ignorant and ableist. Empathy
+      doesnt say anything about the kind of person you choose to be. Stop treating
+      neurodivergence as a receptacle for human evil.
+  '7683':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "loyalty"]}'
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: 'The input is about a person who is being cheated on and mistreated
+      by their partner. The speaker is expressing sympathy for the cheated person
+      and a desire to help them. The speaker also expresses a desire to get rid of
+      the cheating partner. The moral foundation of care is present as the speaker
+      is expressing sympathy and a desire to help the cheated person. The moral foundation
+      of loyalty is also present as the speaker is expressing a desire to get rid
+      of the cheating partner. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00013822787150274962
+      care: 0.9884600639343262
+      equality: 2.7218680770602077e-05
+      loyalty: 0.009690521284937859
+      none: 0.0016839602030813694
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "\\&gt; His arguments are that she is in an abusive relationship and\
+      \ that her husband mistreats her and that he (my husband) feels sorry for her\
+      \ and wants to help her feel better.  \n\nYeah, right.\n\nHe is cheating on\
+      \ you, and waiting for the right time to move on.   I would beat him to it,\
+      \ and get rid of him."
+  '7746':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["authority", "equality"]}'
+    test_preds:
+    - authority
+    - equality
+    test_prefix_outs: This input is primarily about authority, as it is criticizing
+      someone for not following a social norm (reporting a poor excuse of a human
+      being). There is also a mention of equality, as the input states that in America,
+      this type of exercise is "greatly frowned upon".
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9996864795684814
+      care: 0.0
+      equality: 6.538429715874372e-06
+      loyalty: 5.77014407099341e-06
+      none: 0.0002959519042633474
+      proportionality: 0.0
+      purity: 5.420548404799774e-06
+    test_text: 'NTA
+
+
+      Please report that poor excuse of a human being. He is abusive and hateful.
+
+
+      In America learning exercises like this are greatly frowned upon. But they still
+      happen.'
+  '7880':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: 'Output: {"label": ["care", "loyalty"]}'
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: 'This input is about a person feeling disrespected and unvalued
+      in a relationship. The person is concerned about being treated with care and
+      respect, which is a key aspect of the care moral foundation. The person also
+      feels that their partner is not being loyal to them, as they are sharing intimate
+      information with others without their consent. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00042760634096339345
+      care: 0.9927190542221069
+      equality: 0.00042760634096339345
+      loyalty: 0.00042760634096339345
+      none: 0.00590292364358902
+      proportionality: 0.0
+      purity: 9.541186591377482e-05
+    test_text: '"You say that I''m your best friend and closest friend and also your
+      girlfriend. But the fact that everyone except me knows it makes that sound like
+      you trust everyone else more than me, you respect everyone else more than me,
+      you have no consideration for my feelings. You''re not treating me like a best
+      friend or girlfriend by telling everyone else **except** me, and I''m sick of
+      it."'
+  '8066':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: This input emphasizes the importance of care and respect in
+      a relationship, which is a key aspect of the care moral foundation. It also
+      touches on the idea of equality, as the writer suggests that both partners are
+      responsible for raising their child. The tone is also somewhat critical of the
+      husband's behavior, which could be seen as a violation of the authority moral
+      foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0027848624158650637
+      care: 0.991479754447937
+      equality: 0.0024576326832175255
+      loyalty: 5.429617522167973e-05
+      none: 0.0031556629110127687
+      proportionality: 1.9974448150605895e-05
+      purity: 4.791620813193731e-05
+    test_text: "YTA, you both created your child and you\u2019re both responsible\
+      \ to raise them. Her writing is 100% a real job, as she is paid to do it. It\
+      \ is incredibly disrespectful the way you treated her. Marriage is a partnership\
+      \ that cannot work without mutual respect."
+  '8147':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["authority", "care"]}'
+    test_preds:
+    - authority
+    - care
+    test_prefix_outs: This input emphasizes the importance of parents over grandparents,
+      suggesting that parents should have a higher priority than grandparents. This
+      implies a foundation of authority, as it suggests that parents have a higher
+      authority than grandparents. It also implies a foundation of care, as it emphasizes
+      the importance of parents in their children's lives.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9990531802177429
+      care: 0.0004303347086533904
+      equality: 0.0
+      loyalty: 1.2207655345264357e-05
+      none: 0.00048763310769572854
+      proportionality: 1.668588629399892e-05
+      purity: 0.0
+    test_text: "I actually live in a culture in Europe that places extra emphasis\
+      \ on grandparents and while I appreciate that, there isn\u2019t and shouldn\u2019\
+      t be a replacement for the importance of parents. I highly respect and encourage\
+      \ the special bond my kids have with their grandparents. But that doesn\u2019\
+      t supersede our significance as parents. That\u2019s an unhealthy misbalance."
+  '8415':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: 'Output: {"label": ["proportionality", "care"]}'
+    test_preds:
+    - care
+    - proportionality
+    test_prefix_outs: This input is primarily about the unfairness of the cheating
+      and the manipulation that followed. The concept of fairness is closely related
+      to the moral foundation of proportionality. The input also mentions the potential
+      for an unhappy life, which could be related to the moral foundation of care,
+      as the speaker is concerned about the well-being of the person who cheated.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0004974812036380172
+      care: 0.002862806897610426
+      equality: 0.05750101059675217
+      loyalty: 0.0001517232012702152
+      none: 0.03951983153820038
+      proportionality: 0.8994671702384949
+      purity: 0.0
+    test_text: He cheated on you and then has the audacity to guilt you about using
+      sex toys... that is outrageously unfair and manipulative. That will not make
+      for a happy life.
+  '8710':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - purity
+    test_outs: 'Output: {"label": ["authority"]}'
+    test_preds:
+    - authority
+    test_prefix_outs: This input is primarily focused on the moral foundation of authority,
+      as it is criticizing the person's lack of accountability and implying that they
+      should be held to a higher standard. The tone is aggressive and dismissive,
+      but the underlying message is about the importance of authority and personal
+      responsibility.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9996607303619385
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.00033534879912622273
+      proportionality: 3.9656556509726215e-06
+      purity: 0.0
+    test_text: "This is not some uncontrollable thing. You have a choice. You\u2019\
+      re the kind of person who could rape someone and not take accountability. Get\
+      \ some fucking help"
+  '907':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["equality", "care"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: This input is primarily about the unfair treatment of a female
+      politician, implying that her gender is a factor in her being targeted. The
+      mention of a foreign government and domestic opponents suggests a sense of loyalty
+      and authority, but the focus is on the unfair treatment, which relates to equality
+      and care. The mention of "dubious hearings and investigations" and "chanting
+      'Lock Her Up!'" suggests a sense of proportionality, but this is not the main
+      focus. There is no mention of purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0023115293588489294
+      care: 0.3027505874633789
+      equality: 0.640923023223877
+      loyalty: 0.0010918892221525311
+      none: 0.05261016637086868
+      proportionality: 0.0
+      purity: 0.00031283163116313517
+    test_text: 'That''s not a merit, that''s an identity. Kind of sexist for you to
+      think they correlate... It''s that kind of arrogance and ignorance why Macron
+      won.
+
+
+      And by "her own merits" I mean she didnt have a foreign government gunning for
+      her, leaking her info and spreading false info while her domestic opponents
+      dragged her through the mud with dubious hearings and investigations, all while
+      chanting "Lock Her Up!" Lord knows what her numbers would''ve been then.'
+  '9610':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: 'Output: {"label": ["authority", "care"]}'
+    test_preds:
+    - authority
+    - care
+    test_prefix_outs: 'This input emphasizes the importance of holding individuals
+      accountable for their actions, which is related to the moral foundation of authority.
+      The speaker also expresses a sense of self-worth and deservingness, which is
+      related to the moral foundation of care. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9954997897148132
+      care: 0.0035903328098356724
+      equality: 0.0
+      loyalty: 0.00017875216144602746
+      none: 0.0007069784332998097
+      proportionality: 0.0
+      purity: 2.419147131149657e-05
+    test_text: "Ok but this is the type of shit and shatters lives. If you don\u2019\
+      t expose them, you\u2019ll end up never holding them accountable for their bullshit.\
+      \ And it\u2019ll take a toll on you in the end. \n\nAnd you don\u2019t deserve\
+      \ that."
+  '9624':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'This input is primarily concerned with the moral foundation
+      of care, as it emphasizes the importance of love and relationships in guiding
+      behavior. The input also touches on the moral foundation of purity, as it implies
+      that the girl''s behavior is "disgusting" and therefore impure. '
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9757204055786133
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.003987546544522047
+      proportionality: 4.161378092248924e-05
+      purity: 0.020250430330634117
+    test_text: As a woman I could never excuse this girls disgusting behavior. You
+      don't do this to someone you love. Its manipulative.
+  '9715':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "proportionality"]}'
+    test_preds:
+    - care
+    - proportionality
+    test_prefix_outs: This input is primarily concerned with the well-being of the
+      trans individual, suggesting that they may be vulnerable to exploitation due
+      to their desire for a romantic partner. This concern for the individual's well-being
+      is rooted in the moral foundation of care. Additionally, the input implies that
+      the speaker disapproves of the relationship due to the age difference and the
+      potential for exploitation, which suggests a concern for proportionality.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 5.096423046779819e-05
+      care: 0.9906573295593262
+      equality: 0.00022840581368654966
+      loyalty: 2.124505044776015e-05
+      none: 0.008570865727961063
+      proportionality: 0.00017788264085538685
+      purity: 0.0002932788629550487
+    test_text: "Yeah, so he shouldn\u2019t date her. She\u2019s 19 and trans. Have\
+      \ you ever felt like you might never be able to find a romantic partner? Trans\
+      \ people (hi I\u2019m one) can feel like it\u2019s completely impossible and\
+      \ jump with the first person who even hints at accepting that. She might do\
+      \ anything to keep this relationship out of fear that she won\u2019t find another\
+      \ one. It\u2019s generally not healthy to not like your partners body."
+  '9815':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "loyalty"]}'
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: This input is primarily concerned with the moral foundation
+      of care, as the speaker is advocating for the well-being of the friend in need.
+      However, there is also a hint of loyalty, as the speaker is criticizing the
+      friend for not reciprocating the help and support.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 2.1339483282645233e-05
+      care: 0.9950607419013977
+      equality: 3.518286030157469e-05
+      loyalty: 0.00022942107170820236
+      none: 0.00460804533213377
+      proportionality: 0.0
+      purity: 4.5175689592724666e-05
+    test_text: "Yea the friend does need help it\u2019s just sad that the one person\
+      \ who is helping the friend gets thrown under the bus because the friend doesn\u2019\
+      t wanna admit she\u2019s afraid. OP you\u2019re going out of your way for this\
+      \ friend and you\u2019re being treated like shit by that friend and their family.\
+      \ Stop coming over and helping."
+  '9872':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: 'Output: {"label": ["authority", "care"]}'
+    test_preds:
+    - authority
+    - care
+    test_prefix_outs: This input emphasizes holding someone accountable for their
+      actions, which is related to the authority foundation. It also mentions physical
+      and mental harm, which is related to care. The input does not emphasize equality,
+      loyalty, proportionality, or purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9992021918296814
+      care: 0.0002303759247297421
+      equality: 0.0
+      loyalty: 1.4727440429851413e-05
+      none: 0.0005526430904865265
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "Don\u2019t apologize op. Your dad hurt you and deserved to be held\
+      \ accountable. He didn\u2019t leave the bruise but he still hurt you physically\
+      \ and mentally."
+  description: ''

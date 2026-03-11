@@ -8,3 +8,14 @@ Example tokenization: <|begin_of_text|>Classify the following inputs into none, 
 Output: {"label": ["emotion1", "emotion2"]}
 Input: I went to a destination wedding being the only single person. Promised to never put myself in that situation again.
 Reasoning:
+DEBUG-vDistributionEstimator(2026-03-10 16:52:05,211)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 16:52:05,214)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: I went to a destination wedding being the only single person. Promised to never put myself in that situation again.
+Reasoning:
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: I went to a destination wedding being the only single person. Promised to never put myself in that situation again.
+Reasoning:
+INFO-vDistributionEstimator(2026-03-10 17:28:58,579)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2730, micro_f1=0.4324, macro_f1=0.4085, joy_f1=0.6017, optimism_f1=0.4765, admiration_f1=0.3028, surprise_f1=0.3502, fear_f1=0.2821, sadness_f1=0.4679, anger_f1=0.3786

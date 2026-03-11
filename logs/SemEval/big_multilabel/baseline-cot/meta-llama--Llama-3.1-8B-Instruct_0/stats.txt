@@ -1,0 +1,3 @@
+avg stats as last label: {0: {'top': (np.float64(0.9196408046989252), np.float64(0.14601860313015827)), 'ratio': (np.float64(3082.620800256997), np.float64(9600.700783788545)), 'second': (np.float64(0.0583183511733886), np.float64(0.10375169081733032)), 'entropy': (np.float64(0.3349858877436231), np.float64(0.5088701197900087))}}
+
+avg stats as intermediate label: {}

@@ -42,9 +42,10 @@ def get_graph_probs(data):
     return [x for x in probs if len(x) > 0]
 
 
-def plot_multilabel_icl(yaml_files, save_path):
-    colors = ["blue", "red", "green"]
-    labels = ["GoEmotions", "MFRC", "SemEval"]
+def plot_multilabel_icl(yaml_files, dataset_names, save_path):
+    color_map = {"GoEmotions": "blue", "MFRC": "red", "SemEval": "green"}
+    colors = [color_map[d] for d in dataset_names]
+    labels = dataset_names
 
     plt.figure(figsize=(12, 7))
 
@@ -88,26 +89,28 @@ if __name__ == "__main__":
     ]
 
     models = [
-        "meta-llama--Llama-3.1-8B_0",
+        "meta-llama--Llama-3.1-8B-Instruct_0",
     ]
 
     yaml_files = []
+    found_datasets = []
     for dataset in datasets:
         for model in models:
             yaml_file = os.path.join(
                 PROJECT_ROOT,
                 "logs",
                 dataset,
-                "main_test_set",
+                "big_multilabel",
                 "baseline-cot",
                 model,
                 "indexed_metrics.yml",
             )
             if os.path.exists(yaml_file):
                 yaml_files.append(yaml_file)
+                found_datasets.append(dataset)
 
     figures_dir = os.path.join(PROB_DISTR_SCRIPTS, "figures")
     os.makedirs(figures_dir, exist_ok=True)
     save_path = os.path.join(figures_dir, "spikiness_cot.png")
-    plot_multilabel_icl(yaml_files, save_path=save_path)
+    plot_multilabel_icl(yaml_files, found_datasets, save_path=save_path)
 

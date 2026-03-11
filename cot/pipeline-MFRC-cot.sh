@@ -45,9 +45,10 @@ if [ "$backend" == "vllm" ]; then
         --train-split train \
         --test-split dev test \
         --system ' ' \
-        --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}. Let\'s think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line in this format: Moral foundation(s): foundation1, foundation2.\n' \
-        --incontext $'Input: {text}\nReasoning: {cot}\nMoral foundation(s): {label}\n' \
+        --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}. Let\'s think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:\nOutput: {"label": ["foundation1", "foundation2"]}\n' \
+        --incontext $'Input: {text}\nReasoning: {cot}\nOutput: {label}\n' \
         --model-name-or-path "$model" \
+        --label-format json \
         --max-new-tokens 500 \
         --accelerate \
         --logging-level debug \
@@ -69,9 +70,10 @@ else
         --train-split train \
         --test-split dev test \
         --system ' ' \
-        --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}. Let\'s think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line in this format: Moral foundation(s): foundation1, foundation2.\n' \
-        --incontext $'Input: {text}\nReasoning: {cot}\nMoral foundation(s): {label}\n' \
+        --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}. Let\'s think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:\nOutput: {"label": ["foundation1", "foundation2"]}\n' \
+        --incontext $'Input: {text}\nReasoning: {cot}\nOutput: {label}\n' \
         --model-name-or-path "$model" \
+        --label-format json \
         --max-new-tokens 500 \
         --accelerate \
         --logging-level debug \
