@@ -1,0 +1,1995 @@
+experiment_0:
+  '10037':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, purity
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0031111068092286587
+      care: 0.9774806499481201
+      equality: 0.00013669249892700464
+      loyalty: 0.010858829133212566
+      none: 0.0006941817118786275
+      proportionality: 0.000255375198321417
+      purity: 0.007463156711310148
+    test_text: 'Dealbreaker.  Let''s be extremely real: dudes who say shit like this
+      are telling on themselves. Either they have or would take advantage of the situation
+      in context.
+
+
+      This is violent misogyny and he''s telling you who he is. You need to be less
+      worried about changing his mind and more worried about your safety.'
+  '10058':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: care, equality, loyalty
+    test_preds:
+    - care
+    - equality
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.23940050601959229
+      care: 0.6507580280303955
+      equality: 0.09979698061943054
+      loyalty: 0.008191835135221481
+      none: 0.0009783750865608454
+      proportionality: 1.0868765457416885e-05
+      purity: 0.0008634130354039371
+    test_text: "\"Basically he feels that I disrespect him by going against his \u201C\
+      authority\u201D and that a wife should be submissive\" \n\nThis officer, this\
+      \ right here. This is why I murdered him. \n\nJust kidding on that part, but\
+      \ that religious thumper mentality does not fly with me. You're not his slave,\
+      \ you're his wife and partner. \n\nI would personally leave him once you're\
+      \ done school and able to support yourself, your whole life will be a series\
+      \ of him issuing orders and expecting you to obey. Are you really ok with that?"
+  '10252':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: care, loyalty
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00015292617899831384
+      care: 0.9650694131851196
+      equality: 0.0014509231550619006
+      loyalty: 0.03302285820245743
+      none: 0.00019636109936982393
+      proportionality: 4.3814085074700415e-05
+      purity: 6.374911026796326e-05
+    test_text: "I wonder if she can divorce him before starting her job back to avoid\
+      \ this. This man deserves nothing from her.\n\nEdit. Since this blew up I\u2019\
+      d like to say that I\u2019m not usually a supporter of such underhanded behavior,\
+      \ but by what OP has described she is being financially abused and I find it\
+      \ repulsive that someone would owe an abuser anything!"
+  '10255':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: care, loyalty
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.006170154549181461
+      care: 0.9157321453094482
+      equality: 1.5294284821720794e-05
+      loyalty: 0.07516787201166153
+      none: 0.002914574695751071
+      proportionality: 0.0
+      purity: 0.0
+    test_text: NTA. Are there any adults there you can depend on to support you?
+  '10354':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: care, purity
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0006903677131049335
+      care: 0.5203330516815186
+      equality: 1.6235893781413324e-05
+      loyalty: 8.245266508311033e-05
+      none: 0.003972792066633701
+      proportionality: 0.01571270078420639
+      purity: 0.45919230580329895
+    test_text: 'I''d wager pedophiles don''t have an exceptionally high sex drive
+      unless they are also sex addicts. So it comes down to choosing wether to have
+      sex or not with someone, and in so many cases, forcefully.
+
+
+      Thoses who do it are just pure scum.'
+  '10490':
+    test_classification_loss: 0.0
+    test_gt:
+    - proportionality
+    - purity
+    test_outs: purity
+    test_preds:
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.6047764802351594e-05
+      care: 0.214393749833107
+      equality: 0.0
+      loyalty: 2.6458290449227206e-05
+      none: 0.0
+      proportionality: 0.03725604712963104
+      purity: 0.7483077049255371
+    test_text: I say donate 100 to charity to cleanse yourself. I know you feel justified
+      but you kind of stole from a cause greater then yourself. Just my opinion. Not
+      calling you a bad person or anything like that.
+  '10493':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.1609250577748753e-05
+      care: 0.8925182819366455
+      equality: 0.10659611225128174
+      loyalty: 7.041366188786924e-06
+      none: 0.00023317804152611643
+      proportionality: 0.0
+      purity: 0.0006338435923680663
+    test_text: "being respectful of a person\u2019s gender identity isn\u2019t political\
+      \ - it\u2019s basic decency"
+  '10741':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: care, loyalty, purity
+    test_preds:
+    - care
+    - loyalty
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.02974635176360607
+      care: 0.4653112590312958
+      equality: 6.926652713445947e-05
+      loyalty: 0.41063573956489563
+      none: 0.005857404321432114
+      proportionality: 0.007521056104451418
+      purity: 0.08085897564888
+    test_text: She told your parents? Wow. That would 100% be a deal breaker for me.
+      Huge Breach of trust, hell that's worse than cheating in my eyes(I have been
+      cheated on, and sexually assaulted.)
+  '10781':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: care
+    test_preds:
+    - care
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00012296698696445674
+      care: 0.9964118599891663
+      equality: 2.891906433433178e-06
+      loyalty: 0.001498044584877789
+      none: 0.0019235274521633983
+      proportionality: 8.819816343930142e-07
+      purity: 3.992153870058246e-05
+    test_text: "Probably because there\u2019s still an aspect of your life sucking\
+      \ your soul (your marriage). No amount of meds can fix that.  But I do really\
+      \ really recommend trying to find an understanding, empathetic therapist."
+  '10834':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: care, loyalty
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00010394582204753533
+      care: 0.9544302821159363
+      equality: 8.095309749478474e-05
+      loyalty: 0.04193473979830742
+      none: 0.003442213172093034
+      proportionality: 4.567060841509374e-06
+      purity: 3.1388919978780905e-06
+    test_text: "You\u2019re not crazy. You handled this exactly right. The default\
+      \ answer for many people on the sub is \u201Cdump them!\u201D\n\nAnd I\u2019\
+      m happy that you worked it out and got your wife to understand your point of\
+      \ view. The right solution for any marital problem short of infidelity is communication."
+  '10837':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - purity
+    test_outs: care, purity
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.6935876607894897
+      equality: 0.004673357121646404
+      loyalty: 5.882888217456639e-05
+      none: 0.001338939182460308
+      proportionality: 0.011210800148546696
+      purity: 0.2891303598880768
+    test_text: 'YTA.
+
+
+
+      This Asian woman fetish thing is gross.  And no woman of any ethnicity wants
+      to just be some kind of fetish fulfillment.
+
+
+
+      And yes, spending $250k so you can be around Asian women is stupid and weird.  You
+      could buy a house with that amount of money.'
+  '10854':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.07498114556074142
+      care: 0.6278094053268433
+      equality: 0.29655614495277405
+      loyalty: 4.147089566686191e-05
+      none: 5.324968878994696e-05
+      proportionality: 0.000505218980833888
+      purity: 5.324968878994696e-05
+    test_text: "No. You don\u2019t. You get paid an exhorbitant amount of money to\
+      \ use your professional expertise and expensive education. This is an awful\
+      \ boss on a power trip. \n\nI work in law and that attitude used to be common\
+      \ but is now recognized as absolutely obnoxious and a bigger detriment to women\
+      \ than men, and wrong. Unless she was paid to be a personal assistant, this\
+      \ wasn\u2019t her job and it\u2019s demeaning and disrespectful. The same goes\
+      \ when you\u2019re asked to do it."
+  '10864':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: none
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 2.4917060727602802e-05
+      care: 0.07906714081764221
+      equality: 3.1994135497370735e-05
+      loyalty: 0.31271660327911377
+      none: 0.5842315554618835
+      proportionality: 0.003936521243304014
+      purity: 0.019991304725408554
+    test_text: "I\u2019m in a committed long term relationship with my bf who I love\
+      \ very much and I study techniques on how to be a female pick up artist. I have\
+      \ no idea why. It\u2019s just very interesting. It doesn\u2019t mean i cheat\
+      \ on my bf.\n\nI also would never manipulate anyone for my own gain like that.\
+      \ I have no desire to hurt men."
+  '10961':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: loyalty
+    test_preds:
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.006764195393770933
+      care: 0.09337683767080307
+      equality: 0.00014038638619240373
+      loyalty: 0.8859347701072693
+      none: 0.012637180276215076
+      proportionality: 0.0010373229160904884
+      purity: 0.00010933303565252572
+    test_text: This. He will never trust a word you say again. This deceit on deceit
+      ploy is a great way to never see your son again.
+  '10985':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.4571108295058366e-05
+      care: 0.9885956645011902
+      equality: 0.010982305742800236
+      loyalty: 0.0
+      none: 3.084703712374903e-05
+      proportionality: 4.48821738245897e-05
+      purity: 0.0003316368965897709
+    test_text: "Junkies? Come on bro. These are human beings with a medical or mental\
+      \ condition. So dehumanizing.  That word needs to be gone. Same with clean and\
+      \ dirty. Not all drug use is problematic and everyone uses drugs. Racism is\
+      \ the only reason some are legal and some aren\u2019t. Look it up."
+  '11407':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: care, proportionality
+    test_preds:
+    - care
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.002210361650213599
+      care: 0.6128720045089722
+      equality: 0.05030759796500206
+      loyalty: 0.002210361650213599
+      none: 0.05030759796500206
+      proportionality: 0.17559076845645905
+      purity: 0.10650118440389633
+    test_text: "Ah yes, let us hang this young adult for the most sacreligious crime,\
+      \ kissing! \n\nBut in all honesty incest is only morally wrong if you consider\
+      \ the kids. 2 consenting adults can do whatever as long as they're not harming\
+      \ anyone. Don't care if I find it gross or not."
+  '1143':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: authority, loyalty, purity
+    test_preds:
+    - authority
+    - loyalty
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.5406912565231323
+      care: 0.0829176977276802
+      equality: 0.0019500372000038624
+      loyalty: 0.3716113269329071
+      none: 6.672659947071224e-05
+      proportionality: 0.0019500372000038624
+      purity: 0.0008128964109346271
+    test_text: "&gt; M\xE9lenchon refused to take a stand because he'll lose all his\
+      \ legitimacy in the opposition for the next 5 years if he supports Macron now\n\
+      \nSo it put political ambition over the safety of the country. Shame.\n\n&gt;\
+      \ we don't need M\xE9lenchon to support Macron to avoid Le Pen, so he didn't.\n\
+      \nHe can't take a stand against fascism, an enabler.\n\nThe election is very\
+      \ simple: democracy vs fascism. If you can't make a simple choice, you don't\
+      \ care about the country."
+  '11708':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - purity
+    test_outs: care, proportionality, purity
+    test_preds:
+    - care
+    - proportionality
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.3522554337978363
+      care: 0.5807710289955139
+      equality: 0.00011816853657364845
+      loyalty: 0.0005295946029946208
+      none: 0.0002834715705830604
+      proportionality: 0.03712745010852814
+      purity: 0.028914885595440865
+    test_text: Masturbation is not a crime, revenge porn, blackmailing and illegal
+      recording is. You doing nothing will just let him think he can do anything.
+      You want another sexual predator go free? Call cops on him. If parents are outraged,
+      let them be outraged. They are not gonna kick you out over this. Call now. Let
+      that creep know the consequences.
+  '11728':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: care, loyalty
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.04162812978029251
+      care: 0.8361233472824097
+      equality: 0.010525239631533623
+      loyalty: 0.09986069798469543
+      none: 0.010525239631533623
+      proportionality: 0.0012570605613291264
+      purity: 8.036119834287092e-05
+    test_text: "YTA.  \nAlways having your siblings back against a bully - appropriate.\
+      \  Not being allowed to share an opinion differing from your sibling - inappropriate.\
+      \  Teach your children to be kind to one another while disagreeing, don\u2019\
+      t teach them to silence their opinions."
+  '11941':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, purity
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0003351078776177019
+      care: 0.9989425539970398
+      equality: 0.0003351078776177019
+      loyalty: 5.139046334079467e-05
+      none: 7.47726735426113e-05
+      proportionality: 0.0
+      purity: 0.00026098231319338083
+    test_text: "God calls us to love one another.\n\nGod also made your friend - perfectly\
+      \ and wonderfully made. He made him a gay man. \n\nI think if we want to love\
+      \ our neighbours as we love ourselves, then we support their right to enter\
+      \ a loving, committed relationship. \n\nSorry, but YTA."
+  '12646':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care
+    test_preds:
+    - care
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 8.447084837825969e-05
+      care: 0.995904266834259
+      equality: 0.00010846270743058994
+      loyalty: 2.4201301130233333e-05
+      none: 0.0014972814824432135
+      proportionality: 0.00020263501210138202
+      purity: 0.002178531838580966
+    test_text: Every day is a good day to be against exploiting children.
+  '12670':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    - purity
+    test_outs: authority, care
+    test_preds:
+    - authority
+    - care
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.6105210781097412
+      care: 0.22459815442562103
+      equality: 0.0015133304987102747
+      loyalty: 0.0076853265054523945
+      none: 0.06434844434261322
+      proportionality: 0.08262503892183304
+      purity: 0.008708614856004715
+    test_text: 'Nixon deliberately prolonged the Vietnam war for his own benefit and
+      committed a number of crimes against peace and against humanity, in addition
+      to his crimes against America.  He was an irredeemable reprobate.
+
+
+      Nixon was a much more skilled politician and conniver than Trump, but he was
+      just as rotten.'
+  '13262':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - purity
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.010691620409488678
+      care: 0.5837425589561462
+      equality: 0.27574044466018677
+      loyalty: 0.037317413836717606
+      none: 0.08951982110738754
+      proportionality: 0.0002849218435585499
+      purity: 0.002703264355659485
+    test_text: 'The third constitutionally elected Supreme Court justice, who disgustingly
+      had to face bigotry against her faith.
+
+
+      FTFY'
+  '13328':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: authority, purity
+    test_preds:
+    - authority
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.4255967438220978
+      care: 0.018699416890740395
+      equality: 2.811343438224867e-05
+      loyalty: 0.2925080955028534
+      none: 0.0047279526479542255
+      proportionality: 0.00030224776128306985
+      purity: 0.25813746452331543
+    test_text: Don't want people seeing the ridiculous indoctrination they force on
+      our children and young adults.
+  '13347':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0002759918279480189
+      care: 0.6407347321510315
+      equality: 0.3429605960845947
+      loyalty: 6.978162855375558e-05
+      none: 0.002618536353111267
+      proportionality: 0.01329802442342043
+      purity: 4.232469655107707e-05
+    test_text: "This perpetuates the cycle of poverty. Those who are higher educated\
+      \ can help their children with homework. They have more access to books or tutors.\
+      \ They can focus on school because they don\u2019t have to support their family.\
+      \ Those in stable homes don\u2019t have to work or raise their siblings. Grades\
+      \ don\u2019t determine your mastery of a subject. It just shows you\u2019ve\
+      \ completed the homework. Higher grades -&gt; higher education. And the cycle\
+      \ continues. This is all by design."
+  '135':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: none
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.01478226762264967
+      care: 0.29690977931022644
+      equality: 0.004799099639058113
+      loyalty: 0.1092270165681839
+      none: 0.554700493812561
+      proportionality: 0.01478226762264967
+      purity: 0.004799099639058113
+    test_text: '&gt;Next week, I will be joining President Hollande and world leaders
+      in Paris for the global climate conference. What a powerful rebuke to the terrorists
+      it will be when the world stands as one and shows that we will not be deterred
+      from building a better future for our children.
+
+
+      [Real Obama quote](http://thehill.com/policy/energy-environment/261193-obama-climate-conference-is-powerful-rebuke-to-terrorists)'
+  '13786':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: equality
+    test_preds:
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.009147033095359802
+      care: 0.14308367669582367
+      equality: 0.8233897089958191
+      loyalty: 0.0005160403088666499
+      none: 0.013308854773640633
+      proportionality: 0.010364946909248829
+      purity: 0.0001898406189866364
+    test_text: Yes, we can. It's great to be against police brutality, racism, and
+      slavery at once. I think picking and choosing is where Nike looks like a hypocrite.
+  '14554':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: 'none
+
+      Moral foundation(s): none'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.2535439729690552
+      care: 0.05657330900430679
+      equality: 0.026723338291049004
+      loyalty: 0.026723338291049004
+      none: 0.3689042925834656
+      proportionality: 0.09327360987663269
+      purity: 0.1742580384016037
+    test_text: And how is it they keep trying to convince us that antifa is still
+      an "idea" instead if a group of racist, anarchist thugs?
+  '14574':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - proportionality
+    test_outs: proportionality
+    test_preds:
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0015613604336977005
+      care: 0.01902126334607601
+      equality: 0.010181348770856857
+      loyalty: 0.000947012915275991
+      none: 0.05170515552163124
+      proportionality: 0.9164958000183105
+      purity: 8.808592974673957e-05
+    test_text: Your boss steals much more from you than taxes ever have.
+  '14700':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.278073787689209
+      care: 0.35705381631851196
+      equality: 0.09027734398841858
+      loyalty: 0.020143598318099976
+      none: 0.19111713767051697
+      proportionality: 0.06204665079712868
+      purity: 0.001287737162783742
+    test_text: "this is revolutionary history i want to learn about in school. but\
+      \ of course the government won\u2019t teach its people how to overthrow it.\
+      \ they don\u2019t even teach current injustices..."
+  '14855':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: authority, loyalty
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.7141305804252625
+      care: 0.0033070805948227644
+      equality: 0.00018657273903954774
+      loyalty: 0.2627139687538147
+      none: 0.014821304008364677
+      proportionality: 0.004811774007976055
+      purity: 2.8611853849724866e-05
+    test_text: 'Calling the thin blue line flag a "white lives matter" flag is moronic.
+
+
+      Demanding someone take down a flag that has been popular for many years is not
+      "drawing attention", it is silencing people who support police.
+
+
+      If BLM is about saving lives, why do they get so uncomfortable when you ask
+      them where the many millions of dollars in donations go?  Their own "protests"
+      led to the deaths of black men like David Dorn.  BLM didn''t give a damn about
+      his death, even though they played a part in it.'
+  '15180':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: none
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.008182181976735592
+      care: 0.07763038575649261
+      equality: 0.16434350609779358
+      loyalty: 0.0043796063400805
+      none: 0.5062136650085449
+      proportionality: 0.23911838233470917
+      purity: 0.000132252651383169
+    test_text: Obviously left wing propoganda. Everyone knows when the rich get richer,
+      the money trickles down to the exploited children in both 1st and 3rd World
+      countries.
+  '15505':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: authority, loyalty
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.8840083479881287
+      care: 0.014288663864135742
+      equality: 7.498003105865791e-05
+      loyalty: 0.08222559094429016
+      none: 0.009820445440709591
+      proportionality: 0.007648170925676823
+      purity: 0.0019337604753673077
+    test_text: I would much rather watch companies virtue signal about sex than endorse
+      a criminal organization hell bent on the destruction of our country.  This is
+      a direct challenge to our sovereignty and to law and order itself.
+  '15539':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: proportionality, loyalty
+    test_preds:
+    - loyalty
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.08407081663608551
+      care: 0.03504592552781105
+      equality: 0.05778096616268158
+      loyalty: 0.20167537033557892
+      none: 0.00011154350795550272
+      proportionality: 0.6212038993835449
+      purity: 0.00011154350795550272
+    test_text: "As someone who served, military service members should be judged independently\
+      \ outside of service and don\u2019t deserve special treatment. You can respect\
+      \ McCain and Mattis for their service and criticize their work after that."
+  '15654':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: care, proportionality
+    test_preds:
+    - care
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0003948784724343568
+      care: 0.630064845085144
+      equality: 0.0029177789110690355
+      loyalty: 0.0015617746394127607
+      none: 0.027683118358254433
+      proportionality: 0.33724942803382874
+      purity: 0.00012819826952181756
+    test_text: Jobs are abusive, manipulative and exploitative towards employees.
+      Makes sense people would want to cheat.
+  '15669':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - purity
+    test_outs: purity, proportionality
+    test_preds:
+    - proportionality
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.2267892062664032
+      care: 0.00012543356569949538
+      equality: 0.0
+      loyalty: 0.00043780612759292126
+      none: 0.01861599087715149
+      proportionality: 0.1375546008348465
+      purity: 0.6164769530296326
+    test_text: "Sick of these utter degenerates. Just remove from  society. They clearly\
+      \ have criminal intent. \n\nPhysical removal."
+  '15792':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0007806789362803102
+      care: 0.5884010195732117
+      equality: 0.4044017195701599
+      loyalty: 0.0012871220242232084
+      none: 0.002724837278947234
+      proportionality: 0.0
+      purity: 0.002404660452157259
+    test_text: 'As a gay guy trying to reach out in good faith, what will I slowly
+      ''wake up'' about?
+
+
+      I''ve not had any choice in my sexuality and I''m entirely comfortable with
+      myself at this point in time. I love a beautiful guy &amp; we''re happy together.
+      What''s so wrong and abhorrent about me that christians feel the need to cast
+      judgment, tell me I''m going to hell or that I should seek some higher calling.
+
+
+      I''m not religious in the slightest and would never tell someone they need to
+      change like that.'
+  '15897':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: equality
+    test_preds:
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0012203225633129478
+      care: 0.18111193180084229
+      equality: 0.8116873502731323
+      loyalty: 0.0008387145935557783
+      none: 0.0013828066876158118
+      proportionality: 0.0037588579580187798
+      purity: 0.0
+    test_text: '&gt;Can someone explain the thought process for the knee jerk disgust
+      at this saying?
+
+
+      Anger is the natural human response to inequality and injustice.  You recognize
+      that the saying is bullshit, that it''s just someone who gets to abuse and exploit
+      their workers talking about themself instead of anyone else (they know you don''t
+      enjoy your job, and they simply don''t care).  You''re having the correct response
+      to someone who''s basically gloating about what they get to do to you.'
+  '16219':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: authority, loyalty
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9837929606437683
+      care: 0.0
+      equality: 1.0503997600608272e-06
+      loyalty: 0.014033052138984203
+      none: 1.8618778995005414e-05
+      proportionality: 0.0021520385053008795
+      purity: 2.2236961285670986e-06
+    test_text: "Shouldn\u2019t anyone saying that be arrested for inciting a riot\
+      \ or treason against the US?"
+  '16240':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - purity
+    test_outs: none
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 2.9204937163740396e-05
+      care: 0.00019044011423829943
+      equality: 0.05983450263738632
+      loyalty: 0.002978984732180834
+      none: 0.9359691143035889
+      proportionality: 0.000753205269575119
+      purity: 0.0002445299469400197
+    test_text: 'Jesus christ look at all the black people on twitter who legitimately
+      think they are superior to whites because their melanin count.
+
+
+      Fucking sickening'
+  '16272':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    - loyalty
+    test_outs: authority, loyalty
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.6799196004867554
+      care: 0.005882457364350557
+      equality: 0.0002584571484476328
+      loyalty: 0.22073757648468018
+      none: 0.04925321415066719
+      proportionality: 0.04346580430865288
+      purity: 0.00048286147648468614
+    test_text: "McConnell hasn't decided to 'respect democracy'. \nMcConnell is just\
+      \ not stupid enough to blatantly break the law for a disloyal imbecile who lost\
+      \ an election. He is in it for himself and literally no one else."
+  '16626':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: authority, equality, loyalty
+    test_preds:
+    - authority
+    - equality
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.7245219349861145
+      care: 0.05248419567942619
+      equality: 0.07636404782533646
+      loyalty: 0.12590304017066956
+      none: 0.013270084746181965
+      proportionality: 0.007102963048964739
+      purity: 0.00035363572533242404
+    test_text: "Notice how they\u2019re all gloating, and none of them are questioning\
+      \ the process? They\u2019re only copping out by saying \u201Cthere\u2019s no\
+      \ proof.\u201D They don\u2019t care what\u2019s going on in America right now.\
+      \ Our Democracy is being disrupted. Our rights are being infringed. The elites\
+      \ and leaders of this country are lying and rigging one of the best things that\
+      \ makes America America. They only care that Trump loses.\n\nThey don\u2019\
+      t realize that if the Dems don\u2019t care about what we think about them, or\
+      \ our rights; then they don\u2019t care about their supporters either."
+  '16931':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00021638639736920595
+      care: 0.9385258555412292
+      equality: 0.05999794974923134
+      loyalty: 0.0
+      none: 0.0003148403484374285
+      proportionality: 0.0005881992401555181
+      purity: 0.00035676086554303765
+    test_text: It's so absurd isn't it? So what about people who are mentally or physically
+      disabled? Do they have no value or worth? God the capitalist mindset disgusts
+      me to the core.
+  '16983':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: proportionality
+    test_preds:
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0014845326077193022
+      care: 0.2829018235206604
+      equality: 0.15142643451690674
+      loyalty: 0.003142755478620529
+      none: 0.09184477478265762
+      proportionality: 0.4664262533187866
+      purity: 0.002773471875116229
+    test_text: Absolutely they looked at the numbers, even now minorities such as
+      blacks and Hispanics are disproportionately dying, and they saw covid as a objective
+      good.
+  '17262':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: loyalty
+    test_preds:
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.1544898897409439
+      care: 0.13633683323860168
+      equality: 0.018451184034347534
+      loyalty: 0.5392226576805115
+      none: 0.13633683323860168
+      proportionality: 0.005286352708935738
+      purity: 0.009876207448542118
+    test_text: hope those african american patriots in the back dont get doxxed and
+      labeled race traitors by the insane left.
+  '17518':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: loyalty, purity
+    test_preds:
+    - loyalty
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.030191456899046898
+      care: 0.034211404621601105
+      equality: 0.00012338560190983117
+      loyalty: 0.8823237419128418
+      none: 0.034211404621601105
+      proportionality: 0.0006266037235036492
+      purity: 0.01831204444169998
+    test_text: "I legitimately think they hate the country and want to destroy it.\n\
+      \nThey hate patriotism \nThey hate traditional family values\nThey hate everything\
+      \ this country was founded on.\n\nThey are fucking evil."
+  '17690':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0011649624211713672
+      care: 0.41475537419319153
+      equality: 0.41475537419319153
+      loyalty: 0.0002293947181897238
+      none: 0.10486657172441483
+      proportionality: 0.06360478699207306
+      purity: 0.0006235594628378749
+    test_text: Corporatism and capitalism are the same thing. You are describing younger
+      years of capitalism. Not so easy to just revert back to that as it required
+      the exploitation of black people and still requires imperialism to some degree.
+  '2167':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: authority, loyalty
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.47287341952323914
+      care: 0.01618083566427231
+      equality: 0.0004886189708486199
+      loyalty: 0.36827418208122253
+      none: 0.10551232844591141
+      proportionality: 0.018335288390517235
+      purity: 0.018335288390517235
+    test_text: Well, when 16 of my fellow citizens are gunned down because they are
+      infidels, I'm not going to be tweeting that Muslim Americans are just like you
+      and me.  Who's lacking empathy?  Merkel, Hollande, and Obama give the same condolence
+      speech after every terrorist attack - we must stand together, our values must
+      prevail, don't give into hate and fear for Muslims, etc.  Rinse and repeat after
+      every terrorist attack.  [Trump is doing the right thing.](http://money.cnn.com/video/news/2015/08/20/donald-trump-immigration-plan-birthright-citizenship.cnnmoney/)
+  '2411':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: none
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.054041557013988495
+      care: 0.0018492003437131643
+      equality: 0.047691505402326584
+      loyalty: 0.2421974390745163
+      none: 0.5810014605522156
+      proportionality: 0.047691505402326584
+      purity: 0.02552742324769497
+    test_text: 'But they were born in France...to recent immigrants who practice Islam.
+      Do you think the Le Pen voters would have the same opinion about people such
+      as Japanese immigrants? I highly doubt it. To pretend this is just about immigration
+      alone is ridiculous. It''s about immigration of groups of people who have values
+      and a culture that leads to problems integrating and social unrest. '
+  '2479':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: authority
+    test_preds:
+    - authority
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.4958936870098114
+      care: 0.00035217098775319755
+      equality: 0.0015783209819346666
+      loyalty: 0.16099311411380768
+      none: 0.3408224284648895
+      proportionality: 0.00014680670574307442
+      purity: 0.00021360241225920618
+    test_text: "https://twitter.com/benoithamon/status/824578898734252032\n\nHamon\
+      \ is pro-EU too. \n\n&gt;Deeply honored to be endorsed by many MEPs. Together\
+      \ we will keep building a more social, democratic and eco-friendly EU. "
+  '2521':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: care, equality, loyalty
+    test_preds:
+    - care
+    - equality
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.11945096403360367
+      care: 0.5353420376777649
+      equality: 0.09302851557731628
+      loyalty: 0.17380011081695557
+      none: 0.04979456961154938
+      proportionality: 0.0019307448528707027
+      purity: 0.0266531091183424
+    test_text: 'a Quebecian born and raised that likes trump and le pen went and shot
+      up a bunch of muslims?  Color me surprised.  Radical Bigot Terrorist just like
+      his friends in Texas two days ago that set that mosque on fire.  damn it feels
+      good to be on the right side of history opposing these trump supporters.  LOVE
+      TRUMPS HATE. See in you in 2018, you will lose as long as you keep committing
+      terrorist attacks for your god emperor.  '
+  '3134':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: loyalty, proportionality
+    test_preds:
+    - loyalty
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.23626279830932617
+      care: 0.0005168227362446487
+      equality: 0.0055563682690262794
+      loyalty: 0.6422288417816162
+      none: 1.3772860256722197e-05
+      proportionality: 0.11160264164209366
+      purity: 0.0038188323378562927
+    test_text: 'influence, corruption
+
+
+      you understand what corruption is, right?
+
+
+      if le pen wins, she is supposed to represent what is best for the french people.
+      but she may make decisions that benefit russia or some rich russian assholes
+      instead of the french if they bankroll her
+
+
+      it happens everywhere in terms of rich assholes in a country corrupting the
+      govt to serve them instead of the common person in that country
+
+
+      but foreign corruption has the extra problem of treasonous activity
+
+      '
+  '3987':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: equality, proportionality
+    test_preds:
+    - equality
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0009678781498223543
+      care: 7.944827666506171e-05
+      equality: 0.7294938564300537
+      loyalty: 0.0007537842611782253
+      none: 0.00027730176225304604
+      proportionality: 0.2683658003807068
+      purity: 6.187438702909276e-05
+    test_text: True but it just seems a bit iffy granting a place to one sex over
+      the other not based on merit but over a quota. But yes, this is small regarding
+      the things Macron will do for France and the future. VIVA LA FRANCE!
+  '4248':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    - proportionality
+    test_outs: none
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.010658002458512783
+      care: 4.051415544381598e-06
+      equality: 3.84387603844516e-05
+      loyalty: 0.022562993690371513
+      none: 0.959402859210968
+      proportionality: 0.007325131446123123
+      purity: 8.576846994401421e-06
+    test_text: Eh, Macron and Le Pen are both bad, Fillon was the president France
+      needed.
+  '5271':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: none
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.01369908545166254
+      care: 0.003924854099750519
+      equality: 0.0006018958520144224
+      loyalty: 0.019932052120566368
+      none: 0.9603800773620605
+      proportionality: 0.0014438730431720614
+      purity: 1.8175678633269854e-05
+    test_text: '&gt; Voting for someone is, by definition, support.
+
+
+      &gt; Not voting against Le Pen means tolerating a Le Pen victory.
+
+
+      He is talking about not voting. What''s your point?'
+  '5632':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: none
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.1828787475824356
+      care: 0.02804536372423172
+      equality: 0.3416624963283539
+      loyalty: 0.0004000456538051367
+      none: 0.438703328371048
+      proportionality: 0.008035131730139256
+      purity: 0.00027494708774611354
+    test_text: '&gt;We know the Macron team set out five conditions:
+
+      Renewal for France (half will come from outside politics)
+
+      Gender equality (half will be women)
+
+      Clean criminal record - as part of commitment to clean up politics
+
+      Cross-section of political views - so there may be defectors from other parties
+
+      Sign up to the Macron reform programme as well as joining the party itself
+
+      While candidates can be members of other parties, they cannot run for them (apart
+      from centrist party MoDem)
+
+
+      Also, I highly doubt that its a coincidence that its equally split between men
+      and women. '
+  '5849':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.010682706721127033
+      care: 0.6609156727790833
+      equality: 0.31219443678855896
+      loyalty: 0.00010472956637386233
+      none: 0.006479389034211636
+      proportionality: 0.009427455253899097
+      purity: 0.0001956605992745608
+    test_text: "This isn't about having different issues. Le Pen's platform is extremely\
+      \ violent. Advocating for that violent platform should not be met with kindness.\
+      \ It doesn't deserve it. \n\nYou are privileged enough that you will not be\
+      \ affected by this violence but that doesn't mean it isn't there. Your apologia\
+      \ is itself terrorism."
+  '6000':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: proportionality, equality
+    test_preds:
+    - equality
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.006556075066328049
+      care: 0.0798693299293518
+      equality: 0.1915965974330902
+      loyalty: 0.00025420673773624003
+      none: 0.3158893883228302
+      proportionality: 0.40560999512672424
+      purity: 0.00022433666163124144
+    test_text: "If it helps raise everyone's standard of living what do I care if\
+      \ the wealthy are growing in number or getting wealthier?  \n\nLook at Ireland\
+      \ their economy suffered until they became more neoliberal. So it's not like\
+      \ the alternatives would be better.  Everyone suffering instead of a some wealthy,\
+      \ most well off and some poor?  I'll take the latter and it's not like being\
+      \ Neoliberal means that Macron doesnt support social programs and such.  The\
+      \ world is changing and thier safety net will need to adapt just like thier\
+      \ economy  it's that way in pretty much every country.  "
+  '6140':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: loyalty, authority
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.12574288249015808
+      care: 0.00016683322610333562
+      equality: 4.7798515879549086e-05
+      loyalty: 0.8199467062950134
+      none: 0.04082274064421654
+      proportionality: 0.013253203593194485
+      purity: 1.9925386368413456e-05
+    test_text: "Valls the traitor of the official candidate as ex-prime minister and\
+      \ Cambad\xE9lis the chairman of the Socialist Party are the real executioners\
+      \ of the party. They showed they are opportunists and corrupt politicians. \n\
+      \nHollande had a reasonably good term despite the unwavering criticisms. He\
+      \ helped the party make a soft landing rather..."
+  '6152':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00041287197382189333
+      care: 0.9585121870040894
+      equality: 0.015492906793951988
+      loyalty: 0.010648108087480068
+      none: 0.01206588838249445
+      proportionality: 0.0020967370364814997
+      purity: 0.0007713463855907321
+    test_text: Muslims aren't bad, irrational people. 99.9% of them are just like
+      you and I, they want to be safe and live a normal peaceful life. If they believe
+      that means closing the borders to refugees and illegal immigrants, then I can
+      see why they'd vote for Le Pen.
+  '6243':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.01688656024634838
+      care: 0.43551012873649597
+      equality: 0.33917564153671265
+      loyalty: 0.02456980012357235
+      none: 0.04590242728590965
+      proportionality: 0.02784123085439205
+      purity: 0.1101141944527626
+    test_text: 'And I love how far-righters seem to only care about the LGBT community
+      when it comes to Muslims. That and nowhere in the article does it say that the
+      majority of gay French men are voting for Le Pen. '
+  '6252':
+    test_classification_loss: 0.0
+    test_gt:
+    - loyalty
+    - proportionality
+    test_outs: care, equality, loyalty
+    test_preds:
+    - care
+    - equality
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.4197806715965271
+      care: 0.4197806715965271
+      equality: 0.008712269365787506
+      loyalty: 0.12026919424533844
+      none: 0.030408810824155807
+      proportionality: 0.0004915125900879502
+      purity: 0.0005569568020291626
+    test_text: 'Goddammit, Le Pen. You fucked yourself. People don''t vote for the
+      populist because they''re bigoted. they vote for the populist because they know
+      the corporatist will never be on their side.  Now you just prove that neither
+      will you, because you''re a fundamentalist, not a populist. You just parrot
+      the right words.
+
+
+      Go France! Vote for the corporatist who will fuck you for money, or the fundamentalist,
+      who will also fuck you for money, but at least pretend not to, all while initiating
+      backwards social policies that destroy any semblance of integrated society.
+      (sound familiar?)'
+  '6623':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.053095150738954544
+      care: 0.5708266496658325
+      equality: 0.07725298404693604
+      loyalty: 0.02841978520154953
+      none: 0.2379559427499771
+      proportionality: 0.01521201804280281
+      purity: 0.017237475141882896
+    test_text: 'Don''t lecture me, Le Pen. I see through the lies of the Populists.
+      I do not fear liberalism as you do. I have brought peace, economic growth, freedom,
+      cosmopolitanism, and rational policy making to my new Empire. '
+  '6817':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.023532235994935036
+      care: 0.8830406665802002
+      equality: 0.05645089969038963
+      loyalty: 0.0059498813934624195
+      none: 0.01427302323281765
+      proportionality: 0.01427302323281765
+      purity: 0.0024802794214338064
+    test_text: '&gt; A vote for Le Pen is a vote for more terror and more dead French
+      people!
+
+
+      Do you know why? Anti-Islamic rhetoric ostracizes Muslims ALREADY in France,
+      and breeds terror. You''ll have less people from overseas causing problems,
+      but domestic terrorism will increase.
+
+
+      That''s not saying we should stop the migrants however. I''m just saying that
+      people should attempt to accept Muslims, which will lead to cultural assimilation.
+      Cutting off further immigration from the middle east is actually imperative
+      to making Frenchmen out of the immigrants.'
+  '6867':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: equality, loyalty
+    test_preds:
+    - equality
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.038201648741960526
+      care: 0.11766936630010605
+      equality: 0.5975743532180786
+      loyalty: 0.2198353260755539
+      none: 0.02044786885380745
+      proportionality: 0.0031357824336737394
+      purity: 0.0031357824336737394
+    test_text: "I suppose you are American, one of the few countries where nationalism\
+      \ is used a synonym of patriotic sentiment. \n\nNationalism is defined as: \"\
+      extreme form of patriotism marked by a feeling of superiority over other countries\"\
+      \ and yes, I do have a problem with this way of thinking, especially when it\
+      \ is used abused by populist or far right political parties. \n\nMoreover, if\
+      \ you paid any attention to what Le Pen has been saying, you would know that\
+      \ being on friendly terms is not exactly what the party is pushing for."
+  '72':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: none
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.02151940017938614
+      care: 0.03547949343919754
+      equality: 0.024384675547480583
+      loyalty: 0.10928452759981155
+      none: 0.8075095415115356
+      proportionality: 0.00044662089203484356
+      purity: 0.0013756892876699567
+    test_text: 'They''re not independentists, they''re autonomists. And they go ALONG
+      everything Le Pen represents, especially her hatred for Muslims and Arabs. '
+  '7494':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 5.982715265417937e-06
+      care: 0.9737155437469482
+      equality: 0.02594863995909691
+      loyalty: 7.145334279812232e-07
+      none: 3.0382734621525742e-05
+      proportionality: 4.4206619350006804e-05
+      purity: 0.00025439151795580983
+    test_text: Personality disorders and autism or brain tumours do not inherently
+      make you an asshole and insisting that they do is ignorant and ableist. Empathy
+      doesnt say anything about the kind of person you choose to be. Stop treating
+      neurodivergence as a receptacle for human evil.
+  '7683':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: care, loyalty
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.002158386865630746
+      care: 0.7684389352798462
+      equality: 0.0010195497889071703
+      loyalty: 0.19429178535938263
+      none: 0.029795611277222633
+      proportionality: 0.0011553012300282717
+      purity: 0.0031404343899339437
+    test_text: "\\&gt; His arguments are that she is in an abusive relationship and\
+      \ that her husband mistreats her and that he (my husband) feels sorry for her\
+      \ and wants to help her feel better.  \n\nYeah, right.\n\nHe is cheating on\
+      \ you, and waiting for the right time to move on.   I would beat him to it,\
+      \ and get rid of him."
+  '7746':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: care, authority
+    test_preds:
+    - authority
+    - care
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.2676633894443512
+      care: 0.7275845408439636
+      equality: 0.00021539756562560797
+      loyalty: 0.0029734717682003975
+      none: 0.0007518113707192242
+      proportionality: 0.0006634712335653603
+      purity: 0.00014804044621996582
+    test_text: 'NTA
+
+
+      Please report that poor excuse of a human being. He is abusive and hateful.
+
+
+      In America learning exercises like this are greatly frowned upon. But they still
+      happen.'
+  '7880':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: loyalty
+    test_preds:
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.000571154581848532
+      care: 0.43048161268234253
+      equality: 0.012999419122934341
+      loyalty: 0.5527493357658386
+      none: 0.00290056224912405
+      proportionality: 0.00011246700887568295
+      purity: 0.0001854267466114834
+    test_text: '"You say that I''m your best friend and closest friend and also your
+      girlfriend. But the fact that everyone except me knows it makes that sound like
+      you trust everyone else more than me, you respect everyone else more than me,
+      you have no consideration for my feelings. You''re not treating me like a best
+      friend or girlfriend by telling everyone else **except** me, and I''m sick of
+      it."'
+  '8066':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: care, equality, loyalty
+    test_preds:
+    - care
+    - equality
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.030462969094514847
+      care: 0.6933339834213257
+      equality: 0.25506332516670227
+      loyalty: 0.02093687281012535
+      none: 3.1477313314098865e-05
+      proportionality: 0.00015985498612280935
+      purity: 1.1579856618482154e-05
+    test_text: "YTA, you both created your child and you\u2019re both responsible\
+      \ to raise them. Her writing is 100% a real job, as she is paid to do it. It\
+      \ is incredibly disrespectful the way you treated her. Marriage is a partnership\
+      \ that cannot work without mutual respect."
+  '8147':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: loyalty, authority
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.3686739504337311
+      care: 0.09321536868810654
+      equality: 4.5497974497266114e-05
+      loyalty: 0.41776227951049805
+      none: 0.119690902531147
+      proportionality: 0.0002310577838215977
+      purity: 0.0003809499030467123
+    test_text: "I actually live in a culture in Europe that places extra emphasis\
+      \ on grandparents and while I appreciate that, there isn\u2019t and shouldn\u2019\
+      t be a replacement for the importance of parents. I highly respect and encourage\
+      \ the special bond my kids have with their grandparents. But that doesn\u2019\
+      t supersede our significance as parents. That\u2019s an unhealthy misbalance."
+  '8415':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: care, purity
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.007484439294785261
+      care: 0.8650835752487183
+      equality: 0.005143975373357534
+      loyalty: 0.009610210545361042
+      none: 0.0027533716056495905
+      proportionality: 0.006604994647204876
+      purity: 0.10331950336694717
+    test_text: He cheated on you and then has the audacity to guilt you about using
+      sex toys... that is outrageously unfair and manipulative. That will not make
+      for a happy life.
+  '8710':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - purity
+    test_outs: care, proportionality, purity
+    test_preds:
+    - care
+    - proportionality
+    - purity
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0011086348677054048
+      care: 0.7373992204666138
+      equality: 0.000462147785583511
+      loyalty: 0.0006724210688844323
+      none: 0.00207120249979198
+      proportionality: 0.1130838394165039
+      purity: 0.14520251750946045
+    test_text: "This is not some uncontrollable thing. You have a choice. You\u2019\
+      re the kind of person who could rape someone and not take accountability. Get\
+      \ some fucking help"
+  '907':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.020702030509710312
+      care: 0.6855570673942566
+      equality: 0.28578269481658936
+      loyalty: 0.002801715163514018
+      none: 0.004619247280061245
+      proportionality: 0.000379170902306214
+      purity: 0.00015806194278411567
+    test_text: 'That''s not a merit, that''s an identity. Kind of sexist for you to
+      think they correlate... It''s that kind of arrogance and ignorance why Macron
+      won.
+
+
+      And by "her own merits" I mean she didnt have a foreign government gunning for
+      her, leaking her info and spreading false info while her domestic opponents
+      dragged her through the mud with dubious hearings and investigations, all while
+      chanting "Lock Her Up!" Lord knows what her numbers would''ve been then.'
+  '9610':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: care, equality, proportionality
+    test_preds:
+    - care
+    - equality
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00042556942207738757
+      care: 0.9879902005195618
+      equality: 0.000701645330991596
+      loyalty: 0.005184496752917767
+      none: 0.00037556368624791503
+      proportionality: 0.005184496752917767
+      purity: 0.00013816216960549355
+    test_text: "Ok but this is the type of shit and shatters lives. If you don\u2019\
+      t expose them, you\u2019ll end up never holding them accountable for their bullshit.\
+      \ And it\u2019ll take a toll on you in the end. \n\nAnd you don\u2019t deserve\
+      \ that."
+  '9624':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: care, loyalty
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00015574719873256981
+      care: 0.8673814535140991
+      equality: 6.492508691735566e-05
+      loyalty: 0.0806790441274643
+      none: 0.002760685048997402
+      proportionality: 2.388460598012898e-05
+      purity: 0.04893431439995766
+    test_text: As a woman I could never excuse this girls disgusting behavior. You
+      don't do this to someone you love. Its manipulative.
+  '9715':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: care, equality
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 9.5779359980952e-05
+      care: 0.9965426325798035
+      equality: 0.0005511721246875823
+      loyalty: 0.002470182254910469
+      none: 0.0002950211928691715
+      proportionality: 0.0
+      purity: 4.524296673480421e-05
+    test_text: "Yeah, so he shouldn\u2019t date her. She\u2019s 19 and trans. Have\
+      \ you ever felt like you might never be able to find a romantic partner? Trans\
+      \ people (hi I\u2019m one) can feel like it\u2019s completely impossible and\
+      \ jump with the first person who even hints at accepting that. She might do\
+      \ anything to keep this relationship out of fear that she won\u2019t find another\
+      \ one. It\u2019s generally not healthy to not like your partners body."
+  '9815':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: care, proportionality
+    test_preds:
+    - care
+    - proportionality
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0005172408418729901
+      care: 0.9351933598518372
+      equality: 5.4516782256541774e-05
+      loyalty: 0.0597849078476429
+      none: 0.0026267655193805695
+      proportionality: 0.001805347972549498
+      purity: 1.769900700310245e-05
+    test_text: "Yea the friend does need help it\u2019s just sad that the one person\
+      \ who is helping the friend gets thrown under the bus because the friend doesn\u2019\
+      t wanna admit she\u2019s afraid. OP you\u2019re going out of your way for this\
+      \ friend and you\u2019re being treated like shit by that friend and their family.\
+      \ Stop coming over and helping."
+  '9872':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: care
+    test_preds:
+    - care
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0004809499951079488
+      care: 0.9853609204292297
+      equality: 9.470466466154903e-05
+      loyalty: 0.001018171082250774
+      none: 0.0014814301393926144
+      proportionality: 0.010946370661258698
+      purity: 0.0006175520247779787
+    test_text: "Don\u2019t apologize op. Your dad hurt you and deserved to be held\
+      \ accountable. He didn\u2019t leave the bruise but he still hurt you physically\
+      \ and mentally."
+  description: ''

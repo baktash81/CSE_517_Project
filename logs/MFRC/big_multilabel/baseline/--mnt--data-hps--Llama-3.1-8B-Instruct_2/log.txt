@@ -1,0 +1,73 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:08:26,375)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:08:26,590)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: So you willingly voted for a sexist, racist, blatantly corrupt, pedophilic criminal?
+Moral foundation(s): authority, equality, proportionality, purity
+Input: racist is a reach, the rest is true, although as a dumb kid such thoughts have somewhat innocent intentions. high crime areas are good to dump your crimes is a very plausible reasoning.
+Moral foundation(s): equality
+Input: I don't see how couples that have differing "political" views can be together. I could never be with my partner if they didn't agree that everyone deserves basic human rights and those rights should not be a political stand point. Or if they wanted to vote for someone who wants to take those rights away.
+
+I guess I see political views parallel with morals.
+Moral foundation(s): equality
+Input: They don't think they're being disgusting. Thanks to the Republican party and Fox News, they actually believe white supremacy, religious intolerance, and fascism are ...*patriotic*.
+Moral foundation(s): loyalty, purity
+Input: Umm...That's sexual abuse, it doesn't have to involve touching. Can you tell a teacher or school couselor? It seems like if he hasn't tried to touch you yet, he will eventually.
+Moral foundation(s): care
+Input: Our protests are about some sort of systemic racism that is hanging out in the ether that is not supported by facts. Their protests are about wanting freedom and not wanting to be controlled by a communist dictatorship. Pretty big difference. Also I don't think anyone should give two shits what those horrible people in the CCP think.
+Moral foundation(s): care, equality
+Input: &gt; Say goodbye to workers rights, human rights, healthcare, consumer rights or anything that doesn't benefit the very rich.
+
+Oh this I agree with, absolutely, they're proper conservative right wingers, and I'm sure they blame the immigrants and EU for all the problems in the country. But that is not the same thing as fascism, which is what Putin represents, or wannabe-fascism that is Trump and Le Pen.
+Moral foundation(s): authority, equality, proportionality
+Input: The reason Trump can do this is because he doesn’t give a fuck. You really think the existence of that law has any effect at all on his actions? Laws don’t matter to Trump. Haven’t you figured that out yet?
+
+You’re CLEARLY deflecting.
+Moral foundation(s): authority
+Input: Also, RNC hack personally ordered by Putin.
+
+Putin hacks RNC, blackmails the party into nominating his debtor stooge, uses his intelligence apparatus to tilt the election.
+Moral foundation(s): authority
+Input: Sounds like you were doing what a normal person wants to do. Yes you went against ur parents, but they can't protect you forever. At least you have respect for them.
+Moral foundation(s): authority, loyalty
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: &gt; Macron is the pro-corporate
+
+Yes. He's a neoliberal. Everybody knows. That's why they are voting him instead the russian puppet fascist.
+Moral foundation(s): authority
+Input: Yeah, I am wondering the same. The message on the banner isn't necessarily anti Le Pen, it's just about upholding liberty, equality and brotherhood. 
+Moral foundation(s): equality, loyalty
+Input: No matter what happens we have something they never will. We love this President. What a special thing we have. Its historic and no matter what they say or do they can never take that away.
+Moral foundation(s): authority
+Input: Macron isn't saying that he isn't hiring these women because of their qualifications. It's very possible to demand and achieve both gender equality and qualified workers.
+Moral foundation(s): equality, proportionality
+Input: Well yeah there’s three possibilities here: 
+
+- it’s an ex girlfriend 
+
+- it’s a current affair partner
+
+- it’s a random girl online who doesn’t even know him
+
+None of those are good. All of them = creep scumbag.
+Moral foundation(s): loyalty, purity
+Input: Because transparency is a prerequisite  for fairness and equality. Also indispensable in evaluating the market worth of your labor.
+Moral foundation(s): equality, proportionality
+Input: YTA And so is she. Pregnancy isn't making her jealous of the cat, that's just her excuse to do something abusive to her partner. Tell him the truth.
+Moral foundation(s): care
+Input: As a child golden corral was one of my favorite places to go. Last time i went was more than 10 years ago and it was so disgusting that i have not and will not ever return.
+
+Aside from the gluttony everywhere in there just crap food, unbussed tables, and too many hands touching everything.
+
+Im happy to forget that experiemce and keep the nosgalgic memories from childhood.
+Moral foundation(s): purity
+Input: &gt; Any criticism of America and you are unpatriotic.
+
+America, founded by people who overthrew their government. Your parents are either wrong or the founding fathers were unpatriotic assholes.
+Moral foundation(s): authority, loyalty
+Input: YTA. Even if they don't do their share, that doesn't excuse you from doing yours. If you don't want to contribute, find your own place.
+Moral foundation(s): proportionality
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-11 03:08:39,473)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4437, micro_f1=0.5651, macro_f1=0.5316, authority_f1=0.5000, care_f1=0.6813, equality_f1=0.5538, loyalty_f1=0.6400, proportionality_f1=0.3529, purity_f1=0.4615

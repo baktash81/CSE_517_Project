@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:37:56,531)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:37:56,591)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @JTregManc it's fair to say he's been a bit timid compared to what I've been known to see from him
+anticipation
+Input: Twitter is a font of endless hilarity.
+joy
+Input: @imjustatrankk awe yay wish i could rt /:
+joy
+Input: Think Val might be going this week. I'll have to take the rest of the week off work to mourn. I'm sure they'll understand. #GBBO
+sadness
+Input: Haven't been here a while, been watching lots of TV. Conclusion #whataloadoftat...if I wasn't depressed before afternoon TV is #grim
+disgust, pessimism, sadness
+Input: @Groupon_UK who do I contact about a shocking experience with Clear Sky Holidays booked through you guys?? #customerservicefail #dreadful
+anger, disgust
+Input: Rooney is 5 yards off the pace in a League Cup game against Northampton Town. Let that sink in for a moment. #MUFC
+anticipation, joy, optimism, pessimism
+Input: @MarGraham I am practically obsessed with it, the very thought of their departure makes me feel both melancholic and grateful.  Safe journey
+joy, sadness
+Input: @chencouture LMAO Is it that 'so slutty' hater girl? That video was hilarious. 😂
+joy
+Input: @C1TYofFL1NT This will haunt my dreams. @JoePrich
+fear, pessimism, sadness
+Input: My best friends driving for the first time with me in the car #terrifying
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @TamraBarney @ShannonBeador @RHOC_KellyDodd Tamra would F her up if she swung on Tamra\nKelly is a piece of 💩 #needstobeadmitted #bully
+anger, disgust
+Input: I guess #bradangelina &gt; #anger &gt; #blacklivesmatter
+anger
+Input: A little nose irritation and a little more chills on my body. I'm so not into flu, into flu, into flu #FallSongs
+anger
+Input: @SimplyMayaMarie @STILLStanding_B 😂😂😂 y'all know I'm crazy its just shocking that's all
+surprise
+Input: what happened to breezy
+anticipation
+Input: #AnthonyWeiner #DISTRACTION #what is really going on? #selection #election #Syria  #race #riots #GasCrisis2016 #NoDAPL #rape
+anger, disgust
+Input: @BTS_twt people have so much negativity filled inside them but im always happy that in such a gloomy world someone like u exists Namjoon
+joy, love
+Input: Ooh #hygge, candles, jasmine tea &amp; #GBBO 
+joy
+Input: To all who follow me, whether we've ever talked or not hope you have a joyous life. Goodbye.
+joy, love, optimism
+Input: @shimian lol. DK has actually dropped from top of the table, surprisingly Arms Warrior is top of the DPS at the moment #shocking
+anger, surprise
+Input: My best friends driving for the first time with me in the car #terrifying
+INFO-vDistributionEstimator(2026-03-11 03:39:02,154)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4715, micro_f1=0.5854, macro_f1=0.5096, anger_f1=0.6984, anticipation_f1=0.4000, disgust_f1=0.5581, fear_f1=0.6415, joy_f1=0.6897, love_f1=0.7018, optimism_f1=0.4000, pessimism_f1=0.2703, sadness_f1=0.7031, surprise_f1=0.3077, trust_f1=0.2353

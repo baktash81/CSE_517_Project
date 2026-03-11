@@ -1,0 +1,73 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:21:32,942)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:21:33,144)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: It always catches my attention when a man describes a good relationship only as a list of things a woman is doing FOR him. 
+
+What I hear is an account of her doing the work of being a caring and loving partner, nothing that shows what being with him would be like.
+Moral foundation(s): care
+Input: There’s a book that Chomsky wrote the foreword to titled Sociopathic Society that’s all about how Capitalism has made our society cruel, selfish and blind to the suffering of others.
+Moral foundation(s): care
+Input: I'm honestly worried about widespread riots at this point. Trump is going to continuously fan the flames.
+Moral foundation(s): authority, care
+Input: Really? Everytime you've dated someone you've gone up to your parents and said "hey, by the way my SO has these chromosomes and these specific genitals, just so you know"? I very strongly doubt that. I very much believe that you have only dated cisgendered people, your family has assumed they were cisgendered, and you've allowed them to assume that. Its absolutely not anyone's business. My family has no right to know anything about my partner's genetics or medical history.
+Moral foundation(s): equality
+Input: Lol you talking straight out of your ass. Seine Saint Denis is mostly populated by people of black subsaharian Catholic Africa.
+
+As for the terror attacks, Le Pen is just feeding the hate and segregation that adds fuel to their fire. She is part of the process of hate.
+
+Btw we don't have such things as "thoughts and prayers" after attacks because we are secular and mostly atheists
+Moral foundation(s): care
+Input: His words are not any different than what I see from "left-wingers" in the sub on a daily basis. But I guess they are hardened and ready to face disagreement.. Oh wait, they resort to mass downvoting and personal attacks, calling others sensitive, snowflakes, retards, nazis etc.
+
+I would never vote for FPÖ, Le Pen or similar. I've always voted pro-EU and expect to do that in October again. But I am seriously tired of the endless pro-EU circlejerk on this sub and the name calling and shaming of anyone who doesn't blindly follow the r/europe righteous dogma 24/7.
+Moral foundation(s): care
+Input: We are not to make that judgement, that is between them and God, we all live in sin. Someday we all must answer to him and submit to his judgement.
+Moral foundation(s): authority, purity
+Input: macron is a pretty straightforward candidate with an economic platform, but he's got the stereotypical French bug for sexual impropriety, since he married his childhood schoolteacher.
+
+Le Pen is the daughter of the founder of the right-wing nationalist party, who was a holocaust-denier/likely nazi sympathizer.
+
+Macron is not likely going to take extremist measures against foreigners and immigrants in the name of "french security," which most people in Paris/urban areas support. It was mostly rural and less educated  voters who wanted Le Pen in power to "take France back."
+Moral foundation(s): equality, purity
+Input: You’re disgusting for mocking someone who’s being abused just because he’s a man. No one would even question the OP if it were a woman in this situation. People on this site who go around squealing “ReDdiT hAtEs WoMeN” need to glance at this sub to see where the sexism really exists.
+Moral foundation(s): equality, purity
+Input: You see, I'm French born Paris yada yada, I am not advocating for Marine Le Pen, by I understand short sighted angry people who want her in.
+
+What pisses me off the most, is IF we knew about this asshole from the beginning WHY the fuck do we have "eyes" on the fucker, WHY just eyes!
+
+If you say one extremist bull shit threat in any forms of communication, get the fuck out of my country. End. Wtf government.
+Moral foundation(s): authority, loyalty
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: I honestly dont’ think that stealing from bigass corporations like mcdo is a crime. These assholes have all that money and they won’t help anybody with that shit they will just build more mcdos. I don’t condone stealing tho, shits wack. But don’t feel bad about and honest mistake. You’ve shown that you’re more mature than most by confessing
+Moral foundation(s): authority, proportionality
+Input: We are not to make that judgement, that is between them and God, we all live in sin. Someday we all must answer to him and submit to his judgement.
+Moral foundation(s): authority, purity
+Input: Because they're primarily just racists. If they truly believed in their stated ideology they would want Macron to win. If you're an America First nationalist who thinks globalism is terrible then you should want globalists in charge of every other country.
+
+Edit: To be fair it's possible that they're not racist but merely too stupid to think through the basic logic of their own ideology.  It's one or the other.
+Moral foundation(s): equality, loyalty
+Input: Yeah, it isn’t fair. I feel for the youngest being punished for her mother’s sins.
+Moral foundation(s): care, equality, proportionality
+Input: But they certainly should though, I’m not going to celebrate further restrictions of Europeans rights just because they don’t have as much freedom to begin with
+Moral foundation(s): care
+Input: Oh this is definitely a consent violation!  This could be traumatizing for her when she finds out.  There may be legal ramifications as well.  I would stop ASAP!!
+Moral foundation(s): care
+Input: Just because someone has limits on what their comfortable doing sexually does NOT meant that they love a person any more or any less. 
+
+If anything- he doesn’t respect her, and therefore you could argue doesn’t love her, since he raped her.
+Moral foundation(s): care
+Input: We know the evil that is Le Penn. We've see her kind everywhere.   
+
+A person who inherited her position, yet claim to fight the establishment.    
+A person who claims to put their own country first, but is almost exclusively financed by foreign entities.   
+Says they want to protect our values, yet grovel at the feet of a homophobe sexist dictator.
+Moral foundation(s): authority, care
+Input: YTA, how can you think you can just take in a child from a foster home to satisfy your needs. You know how selfish that sounds? Foster care is for children to be accepted because they would be loved for and taken care of. What I think will happen is that once your son makes friends, your going the dump the poor child back to foster care. Shame on you for even asking if that would make you an AH.
+Moral foundation(s): care
+Input: Do yourself a favour and apologize. I know it was an honest mistake. But be the bigger person here and realize that despite your intentions you offended some people. You're not an ass. But do the right thing an apologize anyways.
+Moral foundation(s): care
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-11 03:22:01,629)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4740, micro_f1=0.6059, macro_f1=0.5613, authority_f1=0.4571, care_f1=0.7021, equality_f1=0.6061, loyalty_f1=0.7037, proportionality_f1=0.4375, purity_f1=0.4615

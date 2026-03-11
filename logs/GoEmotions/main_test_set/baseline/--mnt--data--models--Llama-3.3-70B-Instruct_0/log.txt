@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:42:39,680)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:42:40,187)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Thank [NAME] for the adult spammers on my susbscribed NSFW subreddits.
+{"label": ["admiration"]}
+Input: Infacy gosples?
+{"label": ["surprise"]}
+Input: King Gizzard and the Lizard Wizard and Beach House are my two favourite bands.
+{"label": ["joy", "admiration"]}
+Input: Disgusting amount of oil.
+{"label": ["anger"]}
+Input: Did either of those places declare independence out of the blue? No.
+{"label": ["surprise"]}
+Input: >It's not that I care Every reply now is you crying about being downvoted lol
+{"label": ["sadness", "anger"]}
+Input: Thank god. This place was authoritarian.
+{"label": ["admiration"]}
+Input: I would tell her part of loving herself/her body is taking care of herself. Speaking as a recovering obese person myself.
+{"label": ["joy", "optimism"]}
+Input: I know logically that I haven't gained real weight but overeating both weekend days makes me feel like I have. I drive me crazy sometimes.
+{"label": ["joy", "admiration"]}
+Input: I honestly think he’s making fun of you
+{"label": ["joy", "optimism"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Laws don’t apply when you’ve got money. Sad but true.
+{"label": ["sadness"]}
+Input: No it’s not, I can give you multiple examples of cops getting physically assaulted and not even using their guns. Stop lying.
+{"label": ["anger"]}
+Input: Then getafe should have gotten their first goal. Ref is really bad.
+{"label": ["sadness", "anger"]}
+Input: [NAME] i really hate entitled people. Upvote if you think that EPs are worse than Antivaxxers.
+{"label": ["anger"]}
+Input: Also, note how the First Order recruits....children. That certinetly could lead to rampant abuse.
+{"label": ["optimism"]}
+Input: I'll miss the podcast
+{"label": ["sadness"]}
+Input: So edgy. 1/10 Try again. You can put a little more effort into your trolls.
+{"label": ["optimism", "anger"]}
+Input: That’s terrible; I would be devastated. You had to get out of there though. I’m thinking of you.
+{"label": ["optimism", "anger"]}
+Input: Argentina is with you! Be strong comrades!
+{"label": ["optimism", "admiration"]}
+Input: Thanks dude, palms were very sweaty lol
+{"label": ["joy", "admiration"]}
+Input: At least now [NAME] has more time to gain his confidence
+INFO-vDistributionEstimator(2026-03-11 03:45:15,908)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3900, micro_f1=0.4815, macro_f1=0.4792, joy_f1=0.5421, optimism_f1=0.5517, admiration_f1=0.4632, surprise_f1=0.3158, fear_f1=0.5000, sadness_f1=0.5946, anger_f1=0.3871

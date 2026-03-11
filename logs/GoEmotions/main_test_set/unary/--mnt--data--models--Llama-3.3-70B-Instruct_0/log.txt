@@ -1,0 +1,93 @@
+DEBUG-vDistributionEstimator(2026-03-11 04:42:53,505)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 04:42:54,185)   test: Label set: reasonable, unreasonable
+Example prompt: Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Is it my turn to point out he's clearly at school? I haven't checked the rota for this post this week.
+Label: surprise
+Is the label reasonable: reasonable
+
+Question: Are they jealous that they are playing a better sport.
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: people voted for a wall it's a democracy. you don't always get what you want
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Can you explain to me what SW BRT means?
+Label: sadness
+Is the label reasonable: unreasonable
+
+Question: He told you to handle it, you did. If he doesn't like it, he should've taken care of it.
+Label: sadness
+Is the label reasonable: unreasonable
+
+Question: This is such a lame idea. Instead of getting better and outplaying your opponent, you just want to make your opponent worse. Sad.
+Label: sadness
+Is the label reasonable: reasonable
+
+Question: aww hell no. This fucking ad
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: No, we should increase border security because we have an absurd number of people crossing illegally.
+Label: anger
+Is the label reasonable: reasonable
+
+Question: Nothing to worry about. 4 inches is fine. You will do well because you are a nice guy.
+Label: admiration
+Is the label reasonable: reasonable
+
+Question: I have no idea what your post means but I love your name and you are one of us
+Label: surprise
+Is the label reasonable: reasonable
+
+Question: At least now [NAME] has more time to gain his confidence
+Label: joy
+Is the label reasonable: 
+Example tokenization: <|begin_of_text|>Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: Is it my turn to point out he's clearly at school? I haven't checked the rota for this post this week.
+Label: surprise
+Is the label reasonable: reasonable
+
+Question: Are they jealous that they are playing a better sport.
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: people voted for a wall it's a democracy. you don't always get what you want
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: Can you explain to me what SW BRT means?
+Label: sadness
+Is the label reasonable: unreasonable
+
+Question: He told you to handle it, you did. If he doesn't like it, he should've taken care of it.
+Label: sadness
+Is the label reasonable: unreasonable
+
+Question: This is such a lame idea. Instead of getting better and outplaying your opponent, you just want to make your opponent worse. Sad.
+Label: sadness
+Is the label reasonable: reasonable
+
+Question: aww hell no. This fucking ad
+Label: fear
+Is the label reasonable: unreasonable
+
+Question: No, we should increase border security because we have an absurd number of people crossing illegally.
+Label: anger
+Is the label reasonable: reasonable
+
+Question: Nothing to worry about. 4 inches is fine. You will do well because you are a nice guy.
+Label: admiration
+Is the label reasonable: reasonable
+
+Question: I have no idea what your post means but I love your name and you are one of us
+Label: surprise
+Is the label reasonable: reasonable
+
+Question: At least now [NAME] has more time to gain his confidence
+Label: joy
+Is the label reasonable: 
+INFO-vDistributionEstimator(2026-03-11 05:09:28,682)   Testing metrics for Unary breakdown dataset: 

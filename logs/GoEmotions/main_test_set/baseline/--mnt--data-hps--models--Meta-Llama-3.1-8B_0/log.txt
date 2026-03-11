@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:38:31,634)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:38:32,379)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: What?! What women power!?? Please elaborate. What part of her rambling constitutes as women power”?
+{"label": ["surprise"]}
+Input: Being a broke college student doesn’t help😂 thank you for taking the time to listen though it’s really helpful lol
+{"label": ["joy", "admiration"]}
+Input: Ooof, I’m so sorry, that is rough.
+{"label": ["sadness"]}
+Input: And when it's time to get him into violent videogames, just get him Viscera Cleanup Detail
+{"label": ["optimism", "admiration"]}
+Input: Personally, I think WebOS was the best until HP beat it to death. I loved my Palm Pre.
+{"label": ["joy", "admiration"]}
+Input: I just came out of the restroom after crying from laughter watching that and my brother asked me if everything is okay
+{"label": ["joy"]}
+Input: Good question. Have seen him quite a bit. I love his coverage.
+{"label": ["joy", "admiration"]}
+Input: Not when it’s literally contradicted and not corroborated by every other one of that witnesses’s witnesses.
+{"label": ["anger"]}
+Input: aw, thanks! I appreciate that! 
+{"label": ["admiration"]}
+Input: I'd be so pissed if that was my lunch
+{"label": ["optimism", "anger"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I'm gonna be brave and tickle the cop.
+{"label": ["joy"]}
+Input: I like it. I hope that answer is okay with you because I might lose sleep if it's not
+{"label": ["joy", "optimism"]}
+Input: No, it makes it better.
+{"label": ["anger"]}
+Input: ok thanks alot :), just extremely weird VAC bans are less harsh than throwing for Skins. lol
+{"label": ["joy", "admiration"]}
+Input: Then enjoy it for as long as it's fun. When it stops being fun, go find somebody else.
+{"label": ["optimism", "admiration"]}
+Input: Sorry then?
+{"label": ["sadness"]}
+Input: Good for you OP! I hope you find a much better playgroup soon!
+{"label": ["optimism", "admiration"]}
+Input: Yea ok.
+{"label": ["admiration"]}
+Input: Dam tears in my eyes now, but seriously great job 
+{"label": ["admiration", "sadness"]}
+Input: Would rather not waste 2 more years of Odell and Saquon's prime tanking for a QB 2 years from now. He will enjoy Tampa
+{"label": ["admiration"]}
+Input: At least now [NAME] has more time to gain his confidence
+INFO-vDistributionEstimator(2026-03-11 03:40:06,557)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3445, micro_f1=0.3655, macro_f1=0.3583, joy_f1=0.4390, optimism_f1=0.4727, admiration_f1=0.4286, surprise_f1=0.2821, fear_f1=0.3265, sadness_f1=0.2951, anger_f1=0.2642

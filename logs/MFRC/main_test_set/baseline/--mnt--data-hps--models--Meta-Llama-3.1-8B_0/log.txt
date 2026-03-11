@@ -1,0 +1,70 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:37:21,442)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:37:21,749)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Sickening and very telling to me that the universal outrage in this thread is aimed at the racist Le Pen and not the fascist French government that is an avowed enemy of free speech, like other European governments.
+
+It seems clear that the biggest threat faced by developed countries in the 21st century will be the threat to free speech, free expression, and the whole concept of freedom itself.  People willing to piss away freedom because they are afraid of the rantings of some racists are a far greater threat to a free society than the racists themselves.
+Moral foundation(s): equality
+Input: They annoy you because you think that they are your ally against the far right (ie the enemy of my enemy is my friend) but the reality is that they are a cult that preaches from a book that prophesizes that sometime in the future "workers" will rise up and kill those with capital. Macron is one of those people in their minds.  
+Moral foundation(s): care
+Input: While I agree with your analysis, let's be honest, Le Pen's disdain for the EU is based on nationalism rather than advocacy of fairness and equality. They both want to change or leave the EU for very different reasons.
+Moral foundation(s): equality, proportionality
+Input: Capitalism gave this man the opportunity to carry out his tyrannical fantasies, and crush this mans ability to pay for rent and food. God bless ‘Murcia!
+Moral foundation(s): care
+Input: To be fair,
+
+
+Your criticisms appear to be with the old leadership of FN. As far as I can tell, M. Le Pen doesn't display any extreme prejudices and the election manifesto for FN seems quite mainstream.
+
+
+Why do people continue to punish her for the sins of her father?
+Moral foundation(s): equality, proportionality, purity
+Input: Mythbusters did an episode on whether or not speeding and being an asshole driver helped you get to your destination faster and they came to the conclusion that speeding, and breaking laws, and being a jerk on the road will only save you an average of 90 seconds. So it's literally not worth your life or the lives of your passengers to be a dick on the road just to get somewhere faster
+Moral foundation(s): care
+Input: Since when is justice immunity human rights? Funny how that logic goes... Fleeing the war? Nothing to do with human rights. Being above the law? Human rights.
+
+The EU usually collaborates with authorities and often does this. Even for Le Pen this is not the first time. 
+Moral foundation(s): authority, equality
+Input: But like, what if you just don't do the chores, no matter how long he extends the punishment. It requires your compliance. If you just don't do the cooking for everyone else, if you just protest peacefully, possibly hunger strike, what can he do?
+
+His rules are beyond unfair and are basically abuse. It's reasonable to take a stand.
+Moral foundation(s): care, equality, proportionality
+Input: &gt; Wow it's almost as if these people have some serious and legitimate worries! 
+
+Even if they do it still doesn't justify voting for Le Pen.
+
+&gt; But no, they're just racists and very dumb. Right?
+
+That's correct, if you vote for Le Pen then you should be accused of being a dumb racist because you voted for a dumb racist. Not sure why you think people shouldn't be held responsible for their choices.
+Moral foundation(s): equality, proportionality
+Input: He's fundamentally against something that you fundamentally stand for, and you've known this since before you got together. Is what you feel for him genuinely worth his clear hatred for a community that you're part of?
+Moral foundation(s): loyalty
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: My mother, grandmothers, and great grandmothers all worked and had professions.  It's really a myth that women didn't start working until the 1970s.  In the 1900 census, 20% of women were the financial breadwinners of their households.  What changed in the 70s was that women demanded equal rights in the workplace.  Before those laws were passed, women were subjected to all kinds of abuse.  Take the case of Ruby Bates, a 13 year old factory worker in the 1930s who was forced into prostitution by the factory owner.
+Moral foundation(s): equality
+Input: black and poor folks have been dying for hundreds of years at the hands of colonialism/imperialism/capitalism. Cyclical poverty and oppression forced onto people via power structures and state-sanctioned violence is mass murder.
+Moral foundation(s): care, equality
+Input: Great way to be emotionally manipulative. "If you truly loved and wanted to see your daughter".
+How thick do you have to be to not see that OP has clearly tried to reconnect with her multiple times. Quite Frankly, OP has a right to go no contact considering the despicable comments she made, especially regarding a passed loved one.
+Moral foundation(s): care
+Input: I don’t know how wanting them locked up is controversial. They committed a federal crime. It shouldn’t be political, they should get charged.
+Moral foundation(s): authority
+Input: Well this is genuine nazism following the Nuremberg protocols or whatever is it called that classifies races etc. but I don't think this is what they really are. And even if they are, this is not why they have a lot of people supporting them and should the Le Pen or Wilders try ressurecting oldschool nazism, 99% of supporters would turn against them. Not to mention Wilders is mixed race and would have second thoughts about purging himself.
+Moral foundation(s): equality
+Input: lol Keep dreaming. The French people today said "no" to racism, said "no" to bigotry, and said "no" to fear mongering. The French people don't want some crazy racist Islamophobe as their leader; they aren't Americans, they know better.
+
+Macron will make an excellent leader and you will be made to eat your words.
+Moral foundation(s): authority, equality
+Input: NTA, so you should file a complaint with the Accreditation organization for your school and with the state education department since your professor and school administration are clearly subjecting you and possibly other non-white students to racist abuse.
+Moral foundation(s): authority, equality
+Input: What program do you mind extreme with Melenchon? Melenchon's supposed extreme proposals include pulling out of NATO(um, pacifism is extreme?), big tax on rich(equality, anyone?) and renegotiating European treaties( god forbid anyone suggest EU should be less neo-liberal bureaucratic institution).  And no I think MLP is extremist since her views on Immigration, nationalism &amp; religion border fascism or extreme right.
+Moral foundation(s): authority, equality
+Input: Lmfao To Kill a Mockingbird is not only one of the greatest pieces of American literature to ever be written(probably THE greatest) but it’s also one of the greatest pieces of anti racist literature ever written. The entire premise of the book is how even in backwards ass early 1900s Alabama that even a black man deserved a fair trial in court and he shouldn’t simply be judged as guilty bc a bunch of good ole boys deemed him so. Fucking incredible.
+Moral foundation(s): equality, proportionality
+Input: They deserve to get ripped off if they are chasing after 13 year olds...
+Moral foundation(s): proportionality
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-11 03:37:56,521)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2644, micro_f1=0.3504, macro_f1=0.3189, authority_f1=0.3167, care_f1=0.4103, equality_f1=0.4286, loyalty_f1=0.1633, proportionality_f1=0.2059, purity_f1=0.3889

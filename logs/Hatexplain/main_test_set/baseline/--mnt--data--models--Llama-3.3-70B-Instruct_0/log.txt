@@ -1,0 +1,71 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:46:12,345)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:46:12,352)   test: Label set: hate, normal, offensive
+Example prompt: Classify the following inputs into one of the following options per input: hate, normal and offensive. Output exactly one label and no others.
+
+Question: if your personal attire distracts other students any student wearing moslem garb would distract disturb threaten me will they forbid that garb
+Answer: normal
+
+Question: you do not think it the fact that you sound like a whiny wheezy nasally libtard right now calling you a kike faggot does not make someone a nazi kikefag that an insult to real nazis
+Answer: hate
+
+Question: is not it interesting how jews have been the driving force behind both communism and libertarianism two supposed opposites they are in fact two sides of the same satanic shekel
+Answer: hate
+
+Question: are they retarded or is there a guy on the inside who knew exactly what he was doing
+Answer: offensive
+
+Question: expectations are a bitch
+Answer: normal
+
+Question: but about to bring all the ghetto ass shit uptoen 😝 😝 😝
+Answer: normal
+
+Question: <user> <user> <user> wrong if farmers cannot afford to take care of their crops without using illegal aliens they need to sell their farm
+Answer: normal
+
+Question: now that women in saudi arabia can drive they have a fighting chance to escape the isiamist captors who enslave them maga tcot pjnet
+Answer: offensive
+
+Question: someone let retard paul ryan know that there is no h in the word struggling he pronounces it like ghetto queen moochelle øbama did shtruggling what a dick
+Answer: offensive
+
+Question: i do not know how to leave eastern canada im sick of the muslimes here
+Answer: hate
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+Answer:
+Example tokenization: <|begin_of_text|>Classify the following inputs into one of the following options per input: hate, normal and offensive. Output exactly one label and no others.
+
+Question: reminds me of a college fundraiser to help a kike family rebuild their burnt house the father was a magistrado which is like a high court judge so they were richer than most of the other students families
+Answer: hate
+
+Question: this time it does not you add nothing to white lands now that we hire skin tone over skill in our health care industry death by doctor is the leading cause of death thanks shit skins you are a disgusting race of people and have no place around whites none at all
+Answer: hate
+
+Question: the whole reason we are here is to get away from kike faggots like you
+Answer: hate
+
+Question: <user> not our problem we are not the only nation in the entire world who can save those illegal aliens p.s. refugee has a very specific legal meaning and you are purposely misusing it in order to euphemize illegal immigration
+Answer: normal
+
+Question: <user> especially with a nazi i the white house
+Answer: offensive
+
+Question: who the hell invited this faggot
+Answer: offensive
+
+Question: <user> white people really really are not in a place to be comparing racial fetishisation to queer issues queerness does not negate white privilege this is not an equivalence
+Answer: normal
+
+Question: it a bitch to find i accidently opened it how i did it was i opened a list and pressed the top of the first post i will get you the screenshot
+Answer: normal
+
+Question: indeed let me repeat that nugget of wisdom socialism is slavery not just white slavery it is slavery for all humankind but it is being wielded against us white people with a force unknown in history
+Answer: offensive
+
+Question: <user> is it wrong that i d pay fairly decent money to see him being raped by a labrador 🤔 and if it is is it more wrong than <number> dead due to tory austerity 🤔
+Answer: normal
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+Answer:
+INFO-vDistributionEstimator(2026-03-11 03:46:51,533)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.6100, micro_f1=0.6100, macro_f1=0.5567, hate_f1=0.7326, normal_f1=0.6483, offensive_f1=0.2892

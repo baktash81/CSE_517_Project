@@ -1,0 +1,71 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:40:31,877)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:40:31,885)   test: Label set: hate, normal, offensive
+Example prompt: Classify the following inputs into one of the following options per input: hate, normal and offensive. Output exactly one label and no others.
+
+Question: mask status off kikes are at their most dangerous in this state unlike when a crab or lobster molts and is quite vulnerable the fully exposed kike has an almost insatiable lust for goy child blood it can be distracted with gold coins but only briefly
+Answer: hate
+
+Question: you have to be one of the absolute dumbest motherfuckers on gab i am muting you now i d say good luck with your libertarian fantasies but i would not mean it in your case because i actually hope you get raped by a pack of nogs
+Answer: hate
+
+Question: the fact that you are trying to blackpill over an event that took zero effort went viral and is currently pitting niggers against virtue signaling swpls against kikes tells everyone what they need to know about where your true loyalties lie with your fbi handlers lmao
+Answer: hate
+
+Question: shillary is still crying why why you lost you traitorous hag you hate your own race and put illegals and non whites above your own people figure it out and then go away and no one wants that shitty book except maybe dykes with purple hair
+Answer: offensive
+
+Question: jews were transported en masses during the holocaust using trains that was the joke am i being trolled it late
+Answer: normal
+
+Question: if a man expects a women to be an angel in his life he must first create heaven for her angels do not live in hell
+Answer: normal
+
+Question: <user> whoever picked mineecraft is fuckign retarded
+Answer: offensive
+
+Question: he would have been wise enough to know them by their fruits just like the inquisition had no power over the jews who fled spain without their ill gotten gains from selling white x tian slaves to moslems only jews who pretended to be rich x tians
+Answer: offensive
+
+Question: <user> <user> the strategy was to put up whoever did not support him cliff talked to him david talked to him
+Answer: normal
+
+Question: nigger never learned grammar and he wants to dissect theology for us
+Answer: hate
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+Answer:
+Example tokenization: <|begin_of_text|>Classify the following inputs into one of the following options per input: hate, normal and offensive. Output exactly one label and no others.
+
+Question: hmm wow cant say im cool with that you guys will have to drop that kike or im out tbh <user> ‍ <user> ‍
+Answer: hate
+
+Question: okay that shower scene was pure gay energy there is literally no heterosexual explanation for this harringrove stranger things
+Answer: normal
+
+Question: any dirty wife sluts want to have some fun share pics and just do crazy shit
+Answer: offensive
+
+Question: i always found that if you want to stop a nigger or a muzzo you should hit them with a pole or two or more
+Answer: hate
+
+Question: nothing worse than a ghetto white bitch that says the n word
+Answer: offensive
+
+Question: now is a great time for all of president trumps followers on twitter to tweet for him to get off and go on gab that will shut twitte don i cant do it they banned me for fighting w a muslim who wanted to kill americans potus
+Answer: normal
+
+Question: some important differences if tw**ter <censored> created a ghetto where it sent all the banned and they went or if everyone just went into hiding you d be on to something this is more like jews fleeing to israel
+Answer: offensive
+
+Question: today all i did was sit on the front porch and sip cold non alcoholic beverages and watched <number> different tractors making trips up and down my street and zero niggers in donks blasting crap noise or beaners in pickup trucks blasting mariachi noises it great being white
+Answer: hate
+
+Question: spiderland also hitting different in the fall
+Answer: normal
+
+Question: she always wanna bring this extra gay person out of me 😭 😭 😭 😭
+Answer: normal
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+Answer:
+INFO-vDistributionEstimator(2026-03-11 03:40:42,221)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4950, micro_f1=0.4950, macro_f1=0.4957, hate_f1=0.4865, normal_f1=0.5816, offensive_f1=0.4189

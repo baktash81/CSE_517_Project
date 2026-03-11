@@ -1,0 +1,114 @@
+DEBUG-vDistributionEstimator(2026-03-11 04:58:48,614)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 04:58:48,703)   test: Label set: a, b
+Example prompt: Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: @carl_diggler @TMZ_Sports Thank you for saying what others are afraid to say, Carl. Big fan!
+a. pessimism
+b. joy
+Correct Label: b
+
+Question: #Facebook is #depressing without even being there. Two apps want it for logging in, I have missed at least two interesting #events and they
+a. sadness
+b. fear
+Correct Label: a
+
+Question: So I survived spin....trying to get down the stairs was hilarious tho #jellylegs 😂😂
+a. joy
+b. optimism
+Correct Label: a
+
+Question: | At home sick... 🎼The blues🎼 won't cure it so I need ideas 🎸😭 | #sorethroat #sick #blues #music #fallweather #carletonuniversity #ottawa
+a. sadness
+b. love
+Correct Label: a
+
+Question: My prayers are with the family, friends &amp; members of @VCFD  as you mourn the loss of Engineer Ryan Osler. #LODD #RIP
+a. sadness
+b. surprise
+Correct Label: a
+
+Question: @bkero @whispersystems Which really sucks because typing on a mobile device is always horrible and I hate it.
+a. anticipation
+b. fear
+Correct Label: b
+
+Question: “Optimism may sometimes be delusional, but pessimism is always delusional.” —Alan Cohen #believe
+a. anticipation
+b. optimism
+Correct Label: b
+
+Question: The T.I / Shawty Lo beef is one of the more underrated ones in hip-hop history. Chock-full of wit, bravado and hilarity.
+a. none
+b. joy
+Correct Label: b
+
+Question: @corruptmelon now im feeling the 
+a. anger
+b. optimism
+Correct Label: a
+
+Question: @STLouis_RamsFan their whole team is limited when they're on the field.  #terrible
+a. fear
+b. joy
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 
+Example tokenization: <|begin_of_text|>Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: @carl_diggler @TMZ_Sports Thank you for saying what others are afraid to say, Carl. Big fan!
+a. pessimism
+b. joy
+Correct Label: b
+
+Question: #Facebook is #depressing without even being there. Two apps want it for logging in, I have missed at least two interesting #events and they
+a. sadness
+b. fear
+Correct Label: a
+
+Question: So I survived spin....trying to get down the stairs was hilarious tho #jellylegs 😂😂
+a. joy
+b. optimism
+Correct Label: a
+
+Question: | At home sick... 🎼The blues🎼 won't cure it so I need ideas 🎸😭 | #sorethroat #sick #blues #music #fallweather #carletonuniversity #ottawa
+a. sadness
+b. love
+Correct Label: a
+
+Question: My prayers are with the family, friends &amp; members of @VCFD  as you mourn the loss of Engineer Ryan Osler. #LODD #RIP
+a. sadness
+b. surprise
+Correct Label: a
+
+Question: @bkero @whispersystems Which really sucks because typing on a mobile device is always horrible and I hate it.
+a. anticipation
+b. fear
+Correct Label: b
+
+Question: “Optimism may sometimes be delusional, but pessimism is always delusional.” —Alan Cohen #believe
+a. anticipation
+b. optimism
+Correct Label: b
+
+Question: The T.I / Shawty Lo beef is one of the more underrated ones in hip-hop history. Chock-full of wit, bravado and hilarity.
+a. none
+b. joy
+Correct Label: b
+
+Question: @corruptmelon now im feeling the 
+a. anger
+b. optimism
+Correct Label: a
+
+Question: @STLouis_RamsFan their whole team is limited when they're on the field.  #terrible
+a. fear
+b. joy
+Correct Label: a
+
+Question: My best friends driving for the first time with me in the car #terrifying
+a. anger
+b. anticipation
+Correct Label: 

@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:09:14,206)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:09:14,792)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Oh, sweet. It's the gaming guy who hasn't uploaded any gaming videos yet! /s (I like him and am just poking fun)
+{"label": ["joy"]}
+Input: You know you could replace republican with democratic and it would still be funny
+{"label": ["joy"]}
+Input: > They are all one entity with the same goals. Agreed, sadly.
+{"label": ["admiration", "sadness"]}
+Input: I like the Canucks. And I hate the leafs and rags sooo I’m on board.
+{"label": ["joy", "anger"]}
+Input: Just looked up TITANS, now I've GOT to watch it!! Thanks for the advice too
+{"label": ["joy", "admiration"]}
+Input: Totally. I didn’t even realize it was my dream until it happened.
+{"label": ["admiration"]}
+Input: There are so many posts from [NAME] on here it makes me wonder what people think wholesome means.
+{"label": ["surprise"]}
+Input: Don't worry. r/fireemblem is obligated to bash fates whenever it can [NAME] I love the entire scene so much. ~~Too bad it ruined the song~~
+{"label": ["joy", "sadness"]}
+Input: I only watched the clip someone posted last week, but I found [NAME] funnier.
+{"label": ["joy"]}
+Input: That song was epic live
+{"label": ["joy", "admiration"]}
+Input: I went to a destination wedding being the only single person. Promised to never put myself in that situation again.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: It's disturbing that this tweet got so many likes. Like, this is why twitter has a cancerous reputation.
+{"label": ["sadness", "anger"]}
+Input: Not really sweaty palms, but holy hell that's uncomfortable as all hell...
+{"label": ["anger"]}
+Input: People would still always parry them (600ms) :(
+{"label": ["sadness", "anger"]}
+Input: This actually took me a minute. I underestimate the skill and knowledge of people in this subreddit. Very good.
+{"label": ["admiration", "sadness"]}
+Input: What. The. Actual. Fuck. *Gags*
+{"label": ["surprise", "anger"]}
+Input: Good because I've been waiting since September!
+{"label": ["admiration"]}
+Input: YES!!!!
+{"label": ["admiration"]}
+Input: I wish I could be half as cool as that guy
+{"label": ["optimism"]}
+Input: This seemed so out of character but I was like cool. Weird.
+{"label": ["sadness", "anger"]}
+Input: Nice. Spotted it having a feed of quandong as well by the looks of it.
+{"label": ["admiration"]}
+Input: I went to a destination wedding being the only single person. Promised to never put myself in that situation again.
+INFO-vDistributionEstimator(2026-03-11 03:12:15,577)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3883, micro_f1=0.5063, macro_f1=0.4790, joy_f1=0.6893, optimism_f1=0.4332, admiration_f1=0.4107, surprise_f1=0.3659, fear_f1=0.3704, sadness_f1=0.5858, anger_f1=0.4975

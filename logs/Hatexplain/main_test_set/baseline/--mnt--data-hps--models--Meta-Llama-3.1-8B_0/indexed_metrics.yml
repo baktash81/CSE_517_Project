@@ -1,0 +1,2831 @@
+experiment_0:
+  10147319_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.17317911982536316
+      normal: 0.604454517364502
+      offensive: 0.22236639261245728
+    test_text: totalbiscuit mainly attacked sjws because they attacked him first in
+      hysterical and extremely aggressive terms for looking into the quinnspiracy
+      on his own and not <number> going along with the narrative he shares most of
+      the sjws views on gender feminism etc but is slightly less retarded about it
+  10348741_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.14655616879463196
+      normal: 0.5796408653259277
+      offensive: 0.2738029360771179
+    test_text: have a nice day at work white man
+  10535083_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5578213334083557
+      normal: 0.05879393592476845
+      offensive: 0.383384644985199
+    test_text: you mean more rapes and more sand niggers because that what you want
+      sjw more curry niggers getting gibs killing whitey look at you you dirty race
+      traitor curry nigger
+  10600429_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.46689873933792114
+      normal: 0.2831884026527405
+      offensive: 0.24991290271282196
+    test_text: the government needs to keep inspecting the places that towel heads
+      worship cause they are bad places and whats going on with the cop killer that
+      shot the white un armed woman
+  10605240_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.18632373213768005
+      normal: 0.5064803957939148
+      offensive: 0.30719587206840515
+    test_text: it seems that none of you are talking about reality tv so i understand
+      why your pushed out now your not a custuoer of the ghetto filth and will rage
+      after the storm join this site and get her german ass gangbamged because she
+      loves white dick
+  10659812_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2098318189382553
+      normal: 0.44421398639678955
+      offensive: 0.34595420956611633
+    test_text: that charlottesville violence is aweful for years the rightys refrained
+      from violence while the islamic extremists and registered democrats perpetrated
+      it more times than a guy can count on two hands it does not help em that anytime
+      folks tries to assemble the leftys show up to egg people on
+  10669626_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.36279311776161194
+      normal: 0.17137134075164795
+      offensive: 0.4658356010913849
+    test_text: who were the utter fuckwits that thought nazi salutes nazi symbolism
+      and yelling gas the kikes was a good idea way to let a legitimate protest be
+      ambushed charlottesville
+  1079795475560218626_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.31916776299476624
+      normal: 0.36166447401046753
+      offensive: 0.31916776299476624
+    test_text: "<user> <user> treat the immigrants as drug traffickers they will soon\
+      \ have a change of mind \U0001F44D"
+  1087056935671586817_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.17980413138866425
+      normal: 0.7111391425132751
+      offensive: 0.1090567335486412
+    test_text: <user> the person who gave me my maga hat is a child of legal mexican
+      immigrants
+  1087834593204539392_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.12180870771408081
+      normal: 0.7009606957435608
+      offensive: 0.1772306114435196
+    test_text: a covington catholic a native american indian and a black hebrew israelite
+      walk into a bar
+  10883257_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.18129490315914154
+      normal: 0.38380128145217896
+      offensive: 0.4349038302898407
+    test_text: using gas lighting propaganda for you horrible white southerners meant
+      nothing real
+  1097012359481053185_twitter:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.19181469082832336
+      normal: 0.5908308625221252
+      offensive: 0.21735453605651855
+    test_text: "<user> what if the sugar gramp was a ss soilder who killed hundreds\
+      \ of jews but is a multi billionaire \U0001F914"
+  1100389613074558976_twitter:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4246530830860138
+      normal: 0.20059190690517426
+      offensive: 0.37475502490997314
+    test_text: <user> not low class they enjoy to get fucked by muslims
+  11012135_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3158038854598999
+      normal: 0.2786959409713745
+      offensive: 0.4055001735687256
+    test_text: all you so called jewish people and asians you actually white supremes
+  1103932550026735618_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2585151195526123
+      normal: 0.2585151195526123
+      offensive: 0.48296982049942017
+    test_text: <user> remember when her dad hung out with a ukrainian neo nazi or
+      when he called his captors gooks
+  1104286696089309184_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.22698533535003662
+      normal: 0.6170101165771484
+      offensive: 0.15600459277629852
+    test_text: actually trapsoul is still that nigga still still
+  1104499523462799360_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.37708768248558044
+      normal: 0.07425296306610107
+      offensive: 0.5486593246459961
+    test_text: take your skanky hoe ass and flush it down the drain biatch
+  1105548506306170882_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.21112674474716187
+      normal: 0.39443665742874146
+      offensive: 0.39443665742874146
+    test_text: <user> i can not decide if you are retarded or a troll
+  1109087701960146945_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.14780405163764954
+      normal: 0.6624118089675903
+      offensive: 0.18978416919708252
+    test_text: "<user> \U0001F602 \U0001F602 tell me about it they have been co opted\
+      \ by immigrants that why \U0001F937 \U0001F3FD \u200D \u2640 \uFE0F"
+  1109896674166624256_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2393675297498703
+      normal: 0.5742128491401672
+      offensive: 0.18641962110996246
+    test_text: do you see that nice black and red fish with a nice grin over there
+  1122511047628189697_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.24368178844451904
+      normal: 0.40176334977149963
+      offensive: 0.3545549213886261
+    test_text: <user> by that logic it would be fine for jews to terrorize since your
+      people call them evil and blame them for all of your problems
+  1122614344959660032_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.28943634033203125
+      normal: 0.4211273789405823
+      offensive: 0.28943634033203125
+    test_text: <user> its human violence stupid address the human
+  1122915768600072193_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.16289128363132477
+      normal: 0.5685464143753052
+      offensive: 0.26856231689453125
+    test_text: <user> they just some hating hoes tho lol
+  1126231936345702401_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.05035608261823654
+      normal: 0.8925829529762268
+      offensive: 0.05706091597676277
+    test_text: lemme go watch dany be a stupid bitch yet again on got
+  11443584_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.18129488825798035
+      normal: 0.38380128145217896
+      offensive: 0.4349038302898407
+    test_text: throwing kitchenware is a bitch move it what physically weak women
+      do to indicate their displeasure without actually attacking their man
+  1144372754134818816_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.20059190690517426
+      normal: 0.37475502490997314
+      offensive: 0.4246530830860138
+    test_text: "<user> pass the funding you \u2019 re hurting the poor illegal aliens"
+  1144477259425730560_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3434125781059265
+      normal: 0.2674500048160553
+      offensive: 0.3891374468803406
+    test_text: <user> there were also no mentions of the threats immigrants present
+      to citizens screw israel
+  1162547667416899586_twitter:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4044707715511322
+      normal: 0.1910584717988968
+      offensive: 0.4044707715511322
+    test_text: there too many wypipo asking what this is and if they can get in this
+      is a niggers only event
+  1163214633056047106_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.24991290271282196
+      normal: 0.2831884026527405
+      offensive: 0.46689873933792114
+    test_text: niggas love staying in contact with they old bitches
+  1168729501095907328_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.18213799595832825
+      normal: 0.6357240676879883
+      offensive: 0.18213799595832825
+    test_text: "regression is a bitch i haven \u2019 t been this angry in a long time"
+  1171918006806618118_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.109186552464962
+      normal: 0.5544951558113098
+      offensive: 0.33631831407546997
+    test_text: "he talking about hoes be thinking cause i buy you shit and give you\
+      \ money they gone get the same treatment \U0001F62D \U0001F62D"
+  1176698116088766464_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.03065307065844536
+      normal: 0.07353289425373077
+      offensive: 0.895814061164856
+    test_text: "tweeting about how horny u are amp how high your sex drive is is ghetto\
+      \ \U0001F974"
+  11778342_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.21735453605651855
+      normal: 0.5908308625221252
+      offensive: 0.19181469082832336
+    test_text: walls don t work walls don t wor in <number> hungary built a border
+      barrier on its border with serbia and croatia the fence was constructed during
+      the european migrant crisis with the aim to ensure border security by preventing
+      immigrants from entering illegally
+  1178110624905224192_twitter:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.42917346954345703
+      normal: 0.08450928330421448
+      offensive: 0.4863172471523285
+    test_text: shoutout to all the dykes out here still fucking niggas
+  1178170242872283137_twitter:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.1910584419965744
+      normal: 0.4044707715511322
+      offensive: 0.4044707715511322
+    test_text: <number> years ago i do not believe the best of europeans anticipated
+      the slave trade on the atlantic nor did they forsee the current pillaging of
+      their hard work by the faggots now in some kind of power
+  1178273334452203520_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.26441946625709534
+      normal: 0.29962652921676636
+      offensive: 0.4359540045261383
+    test_text: <user> like bro wtf are they talking about all concerts be full of
+      white people
+  1178275818012860417_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.30923447012901306
+      normal: 0.24083204567432404
+      offensive: 0.4499334692955017
+    test_text: <user> <user> <user> evidence this with links and articles show me
+      a greater number of violated females by white men than mass murdered genocides
+      of females at the hands of muslims muslim men have killed far more females with
+      their misogyny and genocides than white men
+  1178285716796841986_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.09518319368362427
+      normal: 0.703313946723938
+      offensive: 0.20150282979011536
+    test_text: but it more than that it really about people not accepting gays trans
+      lesbians because if their religious beliefs for that reason it gives conservatives
+      the cover of attacking free speech they are lying their ass off they do not
+      want to not say faggot anymore
+  1178322843022450688_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.24368178844451904
+      normal: 0.40176334977149963
+      offensive: 0.3545549213886261
+    test_text: <user> bring out the uneducated hillbillies and white supremacists
+      to our sign meeting and donate to our right wing cause duh i work oil duh i
+      like truck duh me hate muslim duh i can not read
+  11783332_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.10375791788101196
+      normal: 0.6765865683555603
+      offensive: 0.21965549886226654
+    test_text: hey why was there an army of debtors and economic refugees which could
+      flood into the continental interior during the 1 9 th century in the first place
+      y know the western frontier settlement etc i know the magic freedom capitalism
+      scroll protects us from stalin but why do you think that was
+  1178630584320561152_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.09749152511358261
+      normal: 0.720370352268219
+      offensive: 0.18213814496994019
+    test_text: real dysphoria hours why are my arms so hairy
+  1178643316847431681_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.37575656175613403
+      normal: 0.29263949394226074
+      offensive: 0.33160400390625
+    test_text: kashmir lockdown should stay for <number> years just like kashmir pundits
+      stayed refugee for <number> years that would be a perfect poetic justice
+  1178655751767642112_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.22138750553131104
+      normal: 0.41360628604888916
+      offensive: 0.3650062680244446
+    test_text: foolish women removing their mangalsutras themselves what else to xtian
+      n muslim men want
+  1178670866768502785_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5064803957939148
+      normal: 0.18632373213768005
+      offensive: 0.30719590187072754
+    test_text: <user> <user> <user> <user> naam tak rocky handsome se copy kiya hai
+      itna bhi nahin janta ki tere baap dada bhi hindu the and turk came and raped
+      and some turned muslim and idiots like you think you ruled us for <number> years
+      ja pehle history pad phir baat karna
+  1178692034531643396_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.41360628604888916
+      normal: 0.22138750553131104
+      offensive: 0.3650062680244446
+    test_text: <user> when whites and asians have children the kid still comes out
+      white black men are the exact opposite the antithesis to white men
+  1178750958718914561_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.21194155514240265
+      normal: 0.21194155514240265
+      offensive: 0.5761168599128723
+    test_text: "i am glad you found some self respect but i am not gone acknowledge\
+      \ it because you already let musty nigga air yo club out and now you gotta child\
+      \ that half musty \U0001F926 \U0001F3FD \u200D \u2642\uFE0F"
+  1178762141408608256_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.41375964879989624
+      normal: 0.41375964879989624
+      offensive: 0.17248068749904633
+    test_text: recent years do display unmistakable analogies to european anti semitism
+      immediately preceding the holocaust
+  1178773716769087488_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.10501769930124283
+      normal: 0.1190006211400032
+      offensive: 0.7759816646575928
+    test_text: dyke call me c murda girl if you do not get the fuck
+  1178786954793684992_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4191135764122009
+      normal: 0.10596851259469986
+      offensive: 0.4749179184436798
+    test_text: <user> white suprematists will escalate to coordinating the killing
+      of immigrants and poc with impunity
+  1178821614483447809_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.15726761519908905
+      normal: 0.5489178895950317
+      offensive: 0.2938145399093628
+    test_text: wow so that lil black girl was lying about them white boys cutting
+      her dreads off
+  1178837107458105345_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.10501769185066223
+      normal: 0.775981605052948
+      offensive: 0.11900061368942261
+    test_text: why he can not get a hoe that work minus the crazy
+  1178861841780559872_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.8092671036720276
+      normal: 0.03137869015336037
+      offensive: 0.15935415029525757
+    test_text: <user> i fucking hate you
+  1178909126790918155_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3545549213886261
+      normal: 0.40176334977149963
+      offensive: 0.24368178844451904
+    test_text: <user> we dont have the ability to process refugees because of the
+      flood of illegal immigrants
+  1178963201238716417_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.720370352268219
+      normal: 0.09749152511358261
+      offensive: 0.18213814496994019
+    test_text: niggers waste their entire lives running away from themselves
+  1178971709975728128_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.22065195441246033
+      normal: 0.25003141164779663
+      offensive: 0.5293165445327759
+    test_text: im tired of seeing that black and white ass eating video the bitch
+      thats shaped like squidward and the the girl getting fucked and then suckin
+      dick like bye
+  1179017320016076800_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.1681106686592102
+      normal: 0.5178173184394836
+      offensive: 0.3140720725059509
+    test_text: dying at all the hillbilly canton moms on social media like if you
+      yell at my son i will kill you with these redneck bare hands chill out sabrina
+      all you are gonna do is give me the stink eye at the drive through cig place
+      and keep it moving lmao
+  1179028195720536064_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.30719590187072754
+      normal: 0.18632373213768005
+      offensive: 0.5064803957939148
+    test_text: <user> some apologies are genuine and from the heart this is lame merely
+      damage control but you can not control the damage of what amounts to holocaust
+      denial with what appears to be an inter office style memo it inadequate you
+      have deeply offended jews all over the world
+  1179052128280690691_twitter:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3090115189552307
+      normal: 0.1136789619922638
+      offensive: 0.5773094892501831
+    test_text: <user> nice ching chong hat
+  1179065625626460162_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2666138708591461
+      normal: 0.49810025095939636
+      offensive: 0.2352858930826187
+    test_text: <user> <user> <user> <user> i pity for you you know nothing how hundreds
+      have dies fighting terrorists they are just like japanese people who raped your
+      women and murdered your men i think you forgot how evil people can get bye
+  1179066279648468999_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.061567485332489014
+      normal: 0.5841360688209534
+      offensive: 0.3542964458465576
+    test_text: i am so pretty men and women love me
+  1179075749174792193_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3344198763370514
+      normal: 0.1790020763874054
+      offensive: 0.4865780770778656
+    test_text: twitter faggot bitch
+  1179078128670593024_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.09518319368362427
+      normal: 0.703313946723938
+      offensive: 0.20150282979011536
+    test_text: <user> <user> on the contrary i have seen many a uu congregation piss
+      and moan about racism bigotry all white congregations that is self righteousness
+      is an observable state
+  1179083154579177473_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.30719590187072754
+      normal: 0.18632373213768005
+      offensive: 0.5064803957939148
+    test_text: "these freshman in the bathroom having a blacks cypher \U0001F974 diploma\
+      \ me plz this shit ghetto dawg"
+  1179086469169897472_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4132823944091797
+      normal: 0.11840736865997314
+      offensive: 0.46831029653549194
+    test_text: <user> <user> you all deadass write slave love novels where you fetishize
+      white male slave owners sit this out
+  1179086920573341696_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.26441943645477295
+      normal: 0.4359540045261383
+      offensive: 0.29962649941444397
+    test_text: "amber guyer ass better get the maximum sentence but ik her white ass\
+      \ bout to skate i can feel it in my spirit \U0001F612"
+  1179092454492049408_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.0706719383597374
+      normal: 0.7597948908805847
+      offensive: 0.1695331633090973
+    test_text: for the queer readers you deserve every adventure nina varela baby
+      i already love u so much
+  1179093281692700672_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.29263949394226074
+      normal: 0.3316039741039276
+      offensive: 0.37575656175613403
+    test_text: i am not blaming all white people but slavery kidnapping a group of
+      people did not just happen jim crow segregation did not just happen mass incarceration
+      of brown and black people did not just happen
+  1179093526098743296_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.25427523255348206
+      normal: 0.32649585604667664
+      offensive: 0.4192289710044861
+    test_text: the haters who have high self esteem and see me as lower or try laughing
+      at metrying to be egotistic and narcisstic ass fuck whether single or not and
+      think their life better than mine deserve a big fuck you too
+  1179093621531906048_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.13437442481517792
+      normal: 0.7732714414596558
+      offensive: 0.09235410392284393
+    test_text: i am a pumpkin bread slut
+  1179102478710837249_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.08270492404699326
+      normal: 0.6924798488616943
+      offensive: 0.22481529414653778
+    test_text: <user> i am black with all white freinds taco man
+  1179104377409327104_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.33655139803886414
+      normal: 0.23130816221237183
+      offensive: 0.4321405291557312
+    test_text: "<user> software engineering all my classes are <percent> white boys\
+      \ and the <number> or <number> ppl who are not are only ever nb girls or coony\
+      \ bm \U0001F644"
+  1179104577179791360_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.29975923895835876
+      normal: 0.20602132380008698
+      offensive: 0.49421945214271545
+    test_text: <user> andrew johnson impeached failed send every negro back to africa
+      beat as worst president by trump go back places from which they came read jesus
+      turned serapis sermon on the black christ lulu thomas jefferson pimped skydog
+      and the aunt jamama bomb lulu
+  1183035118820175872_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.23130816221237183
+      normal: 0.4321405291557312
+      offensive: 0.33655139803886414
+    test_text: babe i am not ignoring you i just hate you stop texting me
+  1183369366903152641_twitter:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5793864727020264
+      normal: 0.06919784843921661
+      offensive: 0.3514156639575958
+    test_text: <user> ffs these ghetto blacks are ignorant like cracker mountain hillbillies
+  1183598610778222592_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.15726761519908905
+      normal: 0.5489178895950317
+      offensive: 0.29381459951400757
+    test_text: <user> or stop letting so many immigrants in might also help
+  1185426001909747712_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.18129488825798035
+      normal: 0.4349038302898407
+      offensive: 0.38380128145217896
+    test_text: if you mix red bull and white claw you get pink blaws
+  1186788781594238977_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2786959409713745
+      normal: 0.3158038556575775
+      offensive: 0.4055001735687256
+    test_text: they never fighting outside my apartment wow the fucking ghetto
+  1187374990137671681_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.17317911982536316
+      normal: 0.604454517364502
+      offensive: 0.22236639261245728
+    test_text: niggas coppin designer glocks now imagine a nigga wit no aim having
+      enough money to buy a designer pistol
+  11970529_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.35469961166381836
+      normal: 0.18985702097415924
+      offensive: 0.45544329285621643
+    test_text: why is it that we always hear about how rain depresses nigger voter
+      turnout but they will go out in a hurricane to loot and steal shit
+  12006705_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.16289128363132477
+      normal: 0.26856231689453125
+      offensive: 0.5685464143753052
+    test_text: how do you keep nigger kids from jumping on the bed you put velcro
+      on the ceiling
+  1203671580825542657_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3182401955127716
+      normal: 0.21872305870056152
+      offensive: 0.4630366861820221
+    test_text: people who ship kylorey just wanna justify their own relationship with
+      their nazi boyfriend
+  1206064431274364928_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.7506115436553955
+      normal: 0.14780418574810028
+      offensive: 0.10158422589302063
+    test_text: "fucking hate you bro i stg \U0001F480 \U0001F480 \U0001F480 \U0001F480"
+  1210935943395495938_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4499334990978241
+      normal: 0.3092344403266907
+      offensive: 0.24083203077316284
+    test_text: "<user> i fucking hate you yzm \U0001F602"
+  1212772813653893120_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.11840736865997314
+      normal: 0.4132823944091797
+      offensive: 0.46831029653549194
+    test_text: "all that superfied ghetto hoe shit ain \u2019 t the wave truly"
+  12128335_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.14709128439426422
+      normal: 0.3998355567455292
+      offensive: 0.45307305455207825
+    test_text: <number> pakis have been found dead in bradford it not terrorism related
+      but thought to be due to a bunk bed collapsing police are blaming al ikea
+  1213327950763966467_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5796408653259277
+      normal: 0.14655616879463196
+      offensive: 0.2738029360771179
+    test_text: <user> the illiterates immigrants and fkn mongs must not forget what
+      they are
+  12155952_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3204011023044586
+      normal: 0.15134677290916443
+      offensive: 0.528252124786377
+    test_text: i feel that i am a muslim and you whores need to put on a burqa so
+      that someone that is not me accidentally does not stone you to death
+  1217101519943802883_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.13032104074954987
+      normal: 0.515429675579071
+      offensive: 0.3542492985725403
+    test_text: <user> like i have been saying for awhile now that soon the left ideology
+      will lock horns with the islamic one total shit show
+  1217567280617443328_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.26441946625709534
+      normal: 0.4359540045261383
+      offensive: 0.29962652921676636
+    test_text: <user> <user> are you fucking retard trump did not start this
+  1220027526090842112_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.22065195441246033
+      normal: 0.5293165445327759
+      offensive: 0.25003141164779663
+    test_text: looks like twitter keeping my shit fuck jack retweet to help a nigga
+      out
+  1221314471794069505_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.18213799595832825
+      normal: 0.6357240676879883
+      offensive: 0.18213799595832825
+    test_text: "this nigga too good to be true ain \u2019 t no way he show up to my\
+      \ crib wit a bag full of my favorite food"
+  1226231898978029578_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.15726761519908905
+      normal: 0.5489178895950317
+      offensive: 0.2938145399093628
+    test_text: read multifandom as muslim maybe i should go sleep
+  12299423_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3333333432674408
+      normal: 0.3333333432674408
+      offensive: 0.3333333432674408
+    test_text: these yuri boards need to stop the purpose of life is to perpetuate
+      the species two girls cannot reproduce two girls would not make good parents
+      sociologists agree children reared in gay households are more likely to be homosexual
+      all this proves yuri is immoral and wrong it just science
+  1231804803614830592_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.1772306114435196
+      normal: 0.12180870771408081
+      offensive: 0.7009606957435608
+    test_text: 4 chan is retarded and so are you
+  1232850058917355520_twitter:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.15726761519908905
+      normal: 0.5489178895950317
+      offensive: 0.29381459951400757
+    test_text: should illegal aliens be counted in the us census
+  12331741_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.17455242574214935
+      normal: 0.5376593470573425
+      offensive: 0.2877883315086365
+    test_text: i m guessing that the first thing a white muslim terrorist man would
+      do is throw this thing off a very tall building
+  12432342_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.18985703587532043
+      normal: 0.35469964146614075
+      offensive: 0.4554433524608612
+    test_text: sherry fatso kim is not a threat yet the mil indus complex pretends
+      that he is trump spoke about protecting our friends it is all bullshit
+  1251952054773231616_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.10556446015834808
+      normal: 0.28695398569107056
+      offensive: 0.6074815392494202
+    test_text: <user> <user> lmfao girl its just ghetto and its always alot going
+      on
+  1257722745988710400_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.1514280140399933
+      normal: 0.5989094376564026
+      offensive: 0.2496625930070877
+    test_text: "<user> not racist probably told him to shut up because he was losing\
+      \ brain cells listening to this fucking retard \u201C its <number> \u201D"
+  12585712_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4443701505661011
+      normal: 0.1634746491909027
+      offensive: 0.3921552896499634
+    test_text: the detroit lions revoked a season ticket holder tickets because he
+      said nigger on twitter but they insist their players are allowed to express
+      themselves freely so long as that expression is jew approved i gather the nfl
+      hates you
+  12597139_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.23891346156597137
+      normal: 0.025181293487548828
+      offensive: 0.7359052896499634
+    test_text: the french deserve to either end up as dhimmi moslem slaves or dead
+      could there be anything more stupid apart from the politicians now running european
+      countries france paris muslim islam islamofascism
+  12666909_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.372122198343277
+      normal: 0.25575560331344604
+      offensive: 0.372122198343277
+    test_text: damn he a homo too not surprising israel is full of queers
+  1267061401597521920_twitter:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4068678021430969
+      normal: 0.13209064304828644
+      offensive: 0.4610416293144226
+    test_text: <user> and the chinaman will eat both
+  12763421_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4443701505661011
+      normal: 0.1634746491909027
+      offensive: 0.3921552896499634
+    test_text: who are these people most of them are jealous angry people from other
+      nations acting out emotionally any american who is parroting the kike line of
+      american identity does not exist should be presumed to be mentally ill if you
+      do not exist then what are you fighting for
+  12812475_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.24083204567432404
+      normal: 0.30923447012901306
+      offensive: 0.4499334692955017
+    test_text: maybe the muzzies and the trannies will step up if need be
+  13102768_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.6787581443786621
+      normal: 0.07154057919979095
+      offensive: 0.24970117211341858
+    test_text: in <number> there was <number> million white christian south africans
+      now kike are gruesomly genociding those <number> million peacefull european
+      white minority today <number> million left and still going strong alt right
+      white brothers and sisters
+  13146695_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.34160494804382324
+      normal: 0.16136276721954346
+      offensive: 0.4970323145389557
+    test_text: you are in the grip of meme malware that is what i fight also muzzie
+      invader scum
+  13239825_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3316039741039276
+      normal: 0.29263949394226074
+      offensive: 0.37575653195381165
+    test_text: europe is being invaded by moslem filth the usa by mexican parasites
+      say what you want about the north korean regime but at least they know how to
+      protect their borders
+  13372288_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3045043647289276
+      normal: 0.3045043647289276
+      offensive: 0.39099133014678955
+    test_text: and this is the thanks the bitch gives
+  13435516_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5066384673118591
+      normal: 0.14515435695648193
+      offensive: 0.3482072055339813
+    test_text: exactly but if a white <number> years ago defended himself against
+      a black attack then it is an epidemic
+  13455893_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4865780770778656
+      normal: 0.1790020763874054
+      offensive: 0.3344199061393738
+    test_text: new rule in all competitive shows baking dancing or other let paki
+      or nigger token win in order to win public support and hide our true racist
+      feeling for coloureds british broadcasting rules and regulations <number>
+  14054951_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3314989507198334
+      normal: 0.546549379825592
+      offensive: 0.12195165455341339
+    test_text: can someone answer my question are tax payers still paying for the
+      so called obama phones for low income and ghetto rats
+  14055812_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4863172471523285
+      normal: 0.08450928330421448
+      offensive: 0.42917346954345703
+    test_text: jews often appropriate white identity and culture this crypsis is often
+      selfishly motivated deceptive in the company of the goyim we jews must always
+      identify ourselves as jews especially when espousing political opinions on israel
+      and the middle east wear a star of david prominently
+  14550110_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.48102426528930664
+      normal: 0.22721976041793823
+      offensive: 0.29175594449043274
+    test_text: is not a mudslime touching a boy dick frigging it with lubricant to
+      get it a little hard then mutilating it with a knife sort of faggy or am i being
+      a bitch mudrape
+  14606529_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5293165445327759
+      normal: 0.22065195441246033
+      offensive: 0.25003141164779663
+    test_text: "he could have at least brought her some kfc and a <number> that street\
+      \ shitter is lucky the nigger did not have a chimpout and kill him \U0001F644"
+  14903617_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2877883017063141
+      normal: 0.17455241084098816
+      offensive: 0.5376592874526978
+    test_text: this is much more than being about filthy mudsharks this is about the
+      destiny of humanity does it become a dumbed down mulatto race where the west
+      falls apart like africa and asians dominate the future or do we ship the nigs
+      back where they belong
+  15087539_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.28943634033203125
+      normal: 0.28943634033203125
+      offensive: 0.4211273789405823
+    test_text: "maybe feminism cropped its clip haired degenerate thot head up far\
+      \ back in the mohammedean past if so literally strapping a cork in their mouths\
+      \ would make good sense as a rule going forward even a broken sand nigger tells\
+      \ the right time twice a millennia o \U0001F600"
+  15209007_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3158038556575775
+      normal: 0.2786959409713745
+      offensive: 0.4055001735687256
+    test_text: what faggot curates live topics
+  15319506_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.35469964146614075
+      normal: 0.18985703587532043
+      offensive: 0.4554433524608612
+    test_text: i graduated from university high in irvine in the mid 7 0 i think the
+      last time it was mostly white was maybe in the mid <number> or so all the vc
+      got moved into garden grove and now almost all of oc is beaners and slopes
+  15402487_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.405500203371048
+      normal: 0.2786959409713745
+      offensive: 0.3158038854598999
+    test_text: they have thousands of years of practice but the fuckers keep re branding
+      themselves in history books so nobody realizes it the same jews using the same
+      rabid arabs century after century
+  15724750_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2786959409713745
+      normal: 0.3158038556575775
+      offensive: 0.4055001735687256
+    test_text: theyblove hezbollah they have admitted this id rather submit to a jew
+      than even acknowledge a sandnigger terrorist group is even remotely okay not
+      saying i would obviously
+  15739185_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.11679642647504807
+      normal: 0.35975828766822815
+      offensive: 0.5234452486038208
+    test_text: spin the wheel of sexual harassment folks who will it be next and for
+      what crime mccain violation of the logan act podesta for the evil that he is
+      clinton of course but pick your fucking poison
+  15891136_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.37575656175613403
+      normal: 0.33160400390625
+      offensive: 0.29263949394226074
+    test_text: women should be ashamed of themselves for letting transgender lesbian
+      man hating dykes speak for them shame on you
+  15972746_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.1219516396522522
+      normal: 0.3314989507198334
+      offensive: 0.546549379825592
+    test_text: police are reporting they are on the look out for moslem convert terror
+      suspect al samel haeed
+  16017463_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.13093973696231842
+      normal: 0.7535063028335571
+      offensive: 0.11555391550064087
+    test_text: yeah just a bunch of triggered retarded nazis anyway i am off to sleep
+      good nights
+  16395836_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5651715397834778
+      normal: 0.046392105519771576
+      offensive: 0.38843634724617004
+    test_text: fucking slant retard
+  16637220_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3891374468803406
+      normal: 0.3434125781059265
+      offensive: 0.2674500048160553
+    test_text: they are going to figure out a way to kike bitcoin
+  16705606_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.12201936542987823
+      normal: 0.6196655631065369
+      offensive: 0.2583150267601013
+    test_text: in fact i can not find anything fuzzy or warm about my dutch ness we
+      are a pretty dour people always having to stick our fingers in dykes while wearing
+      wooden shoes does that to you
+  16984833_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.20602130889892578
+      normal: 0.49421945214271545
+      offensive: 0.29975923895835876
+    test_text: we are falling into the dead end of a sub culture more than the ideological
+      ghetto of libertarianism et el
+  1716053_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.11840736865997314
+      normal: 0.46831029653549194
+      offensive: 0.4132823944091797
+    test_text: so called peaceful tolerant people rejecting democracy by promoting
+      violence intolerance are no less bigots than those they condemn <number> years
+      of liberal political failures to commit to viable change have only led to a
+      disillusioned middle nurtured extreme views on the left and right
+  17524246_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.35469964146614075
+      normal: 0.18985703587532043
+      offensive: 0.4554433524608612
+    test_text: i am happy once the last kike hangs from a tree
+  17539352_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.4809059500694275
+      normal: 0.09469598531723022
+      offensive: 0.4243980050086975
+    test_text: in two tweets a naive cuck and midwit jew perfectly illustrate white
+      jew relations cuck sees jewish listed twice on dnc tweet hmm sumptins fishy
+      kike tries to shut it down anti semite cuck expects fairness and explains kike
+      suck my dick harder goyim
+  17559281_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.0737030878663063
+      normal: 0.6992754340171814
+      offensive: 0.2270214855670929
+    test_text: "now now with all of these needy white people crying out to beto y\
+      \ maria garc\xEDa from michoacan for remedial human reproductive sexual instruction\
+      \ the least you could do is inform them the kamasutra offers a frog position"
+  17593622_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3891374468803406
+      normal: 0.3434125781059265
+      offensive: 0.2674500048160553
+    test_text: billionaire cool still a fucking nigger
+  17843410_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2583150267601013
+      normal: 0.12201938778162003
+      offensive: 0.6196655631065369
+    test_text: i noticed in this sting operation video the brown third worlder who
+      was unabashed about banning right wingers is an indian its very embarassing
+      for us indians in india when these dumbfucks go to usa settle there and then
+      decide to backstab white majority by spewing venom against them kick them out
+  17896103_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.29263949394226074
+      normal: 0.37575653195381165
+      offensive: 0.33160400390625
+    test_text: fact whites are the only race that care about animals niggers eat them
+      chinks torture them and arabs fuck them
+  1799901_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.25427520275115967
+      normal: 0.32649582624435425
+      offensive: 0.4192289710044861
+    test_text: confederate heroes day <date> texas state holiday we do not observe
+      martin lucifer coon day
+  18032474_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.07217826694250107
+      normal: 0.6043412089347839
+      offensive: 0.3234805464744568
+    test_text: the three women refs in the women uconn vs texas basketball game tonight
+      stank despite the crappy officiating the better team won
+  18230837_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.46831050515174866
+      normal: 0.06337893754243851
+      offensive: 0.46831050515174866
+    test_text: you are retarded and do not know what reply mean or are a shitty troller
+      suck a bag of nigger dicks faggot
+  18349415_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3446420729160309
+      normal: 0.08713917434215546
+      offensive: 0.5682187676429749
+    test_text: look at dis ugly dothaid kike beak look like its mouf wuz made fo suckin
+      dat babydick <user>
+  18529253_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.346921443939209
+      normal: 0.30615708231925964
+      offensive: 0.346921443939209
+    test_text: fun fact did you know kardashian is armenian for nigger lover
+  1862631_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.17455242574214935
+      normal: 0.5376593470573425
+      offensive: 0.2877883315086365
+    test_text: <user> look at the video spencer did not do a nazi salute a few in
+      the audience did spencer is not responsible for the audience you are buying
+      into the msm narrative here
+  18935258_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.28943634033203125
+      normal: 0.28943634033203125
+      offensive: 0.4211273789405823
+    test_text: <number> in <number> google employees are women yeah cos white guys
+      only hire white guys only <number> of comp sci graduates are women kill me
+  18957160_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.31319504976272583
+      normal: 0.10167954862117767
+      offensive: 0.5851253867149353
+    test_text: damn i have not seen a nigger get whipped that badly since kunta kinte
+  19069983_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.13584862649440765
+      normal: 0.08239637315273285
+      offensive: 0.7817550301551819
+    test_text: i wish this faggot would die already someone send him a pepe strobe
+      gif and cause him to stroke out
+  19151211_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.30923447012901306
+      normal: 0.4499334990978241
+      offensive: 0.24083206057548523
+    test_text: yeah i know but this is one part of the whole picture and for faggots
+      that keep harping on about elections as if it our whole point of the movement
+  19346774_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.17317911982536316
+      normal: 0.22236639261245728
+      offensive: 0.604454517364502
+    test_text: as much as i appreciate a format of open discussion i really just want
+      a facebook that i can say beaner on
+  19619203_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.18213799595832825
+      normal: 0.6357240676879883
+      offensive: 0.18213799595832825
+    test_text: a very important point this is why they want to demonize white ancestors
+      so that we become disconnected from and reject the wonderful legacy of our own
+      past and the incredible accomplishments of those who came before us
+  19956346_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.21872305870056152
+      normal: 0.3182401657104492
+      offensive: 0.46303674578666687
+    test_text: note no nigger was harmed during the making of this film
+  20685925_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.11735960096120834
+      normal: 0.7652807235717773
+      offensive: 0.11735960096120834
+    test_text: i guess i get complacent and forget not everyone lives in florida or
+      has heard their names most anyone i talk to in a real life situation knows of
+      them of course most anyone i talk to here is in agreement where liberals rats
+      and muzzies are concerned
+  21112613_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.43734899163246155
+      normal: 0.0670696496963501
+      offensive: 0.49558132886886597
+    test_text: trudeau is a muzzie loving faggot he loves the goathumpers at the expense
+      of canadians yet the canadians elected him what is wrong with canada
+  21242245_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.24368178844451904
+      normal: 0.3545549213886261
+      offensive: 0.40176334977149963
+    test_text: "hm \U0001F914 maybe if i survive my chemo and grow up i could be a\
+      \ lifeguard at a nigger swimming pool \U0001F914"
+  21276945_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3836517333984375
+      normal: 0.3836517333984375
+      offensive: 0.2326965183019638
+    test_text: loll calling me a zhid and pedophile when i am neither
+  21362231_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.29934629797935486
+      normal: 0.5592525601387024
+      offensive: 0.14140118658542633
+    test_text: did you offa to say which dyke it was btw british history offa dyke
+      <happy>
+  21653890_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.6037489175796509
+      normal: 0.030058886855840683
+      offensive: 0.36619219183921814
+    test_text: <user> you are an entire nigger
+  21835463_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.16289128363132477
+      normal: 0.26856231689453125
+      offensive: 0.5685464143753052
+    test_text: oh look another buttmad alt right guy accusing me of being a kike because
+      i was in the shield wall while he was crying about how my optics were bad hint
+      try not mixing up national socialists with kikes it makes you look stupid
+  22107142_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.12689445912837982
+      normal: 0.5687015056610107
+      offensive: 0.30440396070480347
+    test_text: "funny you should mention that muzzies believe dog saliva is filthy\
+      \ according to mohamed they r truly vile \U0001F923"
+  22149331_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.19811411201953888
+      normal: 0.4752510190010071
+      offensive: 0.3266349732875824
+    test_text: matt hale sits in prison due to being framed by an informant edgar
+      steele died in prison after being framed by an informant michael weaver was
+      convicted by a jury on account of his political beliefs for defending himself
+      from nigger carjackers
+  22261822_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.1219516396522522
+      normal: 0.3314989507198334
+      offensive: 0.546549379825592
+    test_text: confirmed retard here folks
+  22303507_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3344199061393738
+      normal: 0.1790020763874054
+      offensive: 0.4865780770778656
+    test_text: your friendly moslem who went all allah akhbar today in france
+  22575269_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.6282678842544556
+      normal: 0.03544444963335991
+      offensive: 0.33628758788108826
+    test_text: well at least the mudslimes occasionally get it right now if they could
+      just ramp it up by about <number> million
+  22706056_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2585151195526123
+      normal: 0.48296982049942017
+      offensive: 0.2585151195526123
+    test_text: "<user> \u200D just listening to the latest radical agenda and was\
+      \ interested to listen to that one caller who said that we have an online ethnostate\
+      \ it seems more like an online ghetto to me but as they say you say tomato i\
+      \ pronounce it properly"
+  22878389_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3045043647289276
+      normal: 0.3045043647289276
+      offensive: 0.39099133014678955
+    test_text: is there not <number> brit with the brains balls to assassinate this
+      filthy shit skin moslem terrorist
+  22932902_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.12180870771408081
+      normal: 0.1772306114435196
+      offensive: 0.7009606957435608
+    test_text: when the lewdposter you follow reposts a series of naked sheboons
+  23377953_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.38380128145217896
+      normal: 0.18129490315914154
+      offensive: 0.4349038302898407
+    test_text: "match <number> a nigger wins a championship match <number> a nigger\
+      \ wins the battle royal now <number> niggers are singing fuck this whole thing\
+      \ im gonna play gta5 fuck wrestlemania \U0001F621"
+  23467735_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3514156639575958
+      normal: 0.06919784843921661
+      offensive: 0.5793864727020264
+    test_text: pro white married to a wetback he the best there is eat a fucking tide
+      pod
+  24049395_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.48102426528930664
+      normal: 0.22721977531909943
+      offensive: 0.2917559742927551
+    test_text: pft this is not news he plays for palestine and gaza and all that shit
+      all the time he a well known muzzie kook like cat stevens
+  24096893_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.6220058798789978
+      normal: 0.0841793417930603
+      offensive: 0.2938147783279419
+    test_text: lets hope so gas the lot including the nigger
+  24168193_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.1327420026063919
+      normal: 0.1931384652853012
+      offensive: 0.6741194725036621
+    test_text: or the construction company hired some raghead sleeper cell asshole
+  24225614_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.6910566091537476
+      normal: 0.020868102088570595
+      offensive: 0.2880752384662628
+    test_text: i just want to say muslimes f off
+  24227903_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5544951558113098
+      normal: 0.1091865748167038
+      offensive: 0.33631831407546997
+    test_text: what the hell is it with shitty gab trolls and calling people monkeys
+      maybe that kike freud was right
+  24921789_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.24368178844451904
+      normal: 0.3545549213886261
+      offensive: 0.40176334977149963
+    test_text: plenty of faggots to talk to
+  25233620_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.13598130643367767
+      normal: 0.3262021839618683
+      offensive: 0.5378165245056152
+    test_text: i wuz tired of havin <number> pack of rib das nigger shit so i had
+      <number>
+  25400457_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3891374468803406
+      normal: 0.3434125781059265
+      offensive: 0.2674500048160553
+    test_text: why jews are profiting from the us importing moslem refugees
+  25502005_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.40176334977149963
+      normal: 0.24368177354335785
+      offensive: 0.3545548915863037
+    test_text: morning fag kike <user>
+  25762135_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5307289361953735
+      normal: 0.1045067235827446
+      offensive: 0.3647642731666565
+    test_text: anyone that stepped foot on desert soil and fought those sand niggers
+      please tell me does it make you sick to see them taking over america
+  25857922_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.16819912195205688
+      normal: 0.5870726108551025
+      offensive: 0.24472826719284058
+    test_text: rt usahotlips i never thought i would see the day when liberals would
+      have so much contempt for one man their country that they would actually cheer
+      for defend ms <number> north korea iran illegal immigrants deep state thursdaythought
+      maga tds
+  25954119_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5061464905738831
+      normal: 0.09966615587472916
+      offensive: 0.3941872715950012
+    test_text: perverted old kike drooling over yentas sad
+  26059860_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.48090600967407227
+      normal: 0.4243980646133423
+      offensive: 0.09469600766897202
+    test_text: "<user> \u200D i agree the catholic church loves their muzzie infiltration\
+      \ at any cost they give and give and give to the sand niggers at the cost of\
+      \ white catholics shame on them"
+  26202771_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.41375964879989624
+      normal: 0.17248067259788513
+      offensive: 0.41375964879989624
+    test_text: the <number> russian from twitter are costing kike land some shekels
+      legendary alt right barbaric khazar kike
+  26319949_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.7157723903656006
+      normal: 0.05185037851333618
+      offensive: 0.23237727582454681
+    test_text: snow nigger does not want to be blamed for slavery and the sins of
+      past white men but wants to take credit for everything else low iq bottom feeder
+      trailer trash
+  26443311_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.276090145111084
+      normal: 0.06160404160618782
+      offensive: 0.6623058319091797
+    test_text: i should post pics of muslim women sucking christian cock lol
+  26732378_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3090114891529083
+      normal: 0.11367897689342499
+      offensive: 0.5773094892501831
+    test_text: plenty of e celebs have covered israid sending africans from israel
+      to europe patrick little promotes zionism as the solution to the jq he wants
+      to reward jews with their own ethno state in response to them ruining ours this
+      is the type of kike you are supporting m8
+  26847498_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.31319504976272583
+      normal: 0.10167954862117767
+      offensive: 0.5851253867149353
+    test_text: wait so ur tellin me not only is the earth not flat but niggers be
+      on other planets i guess i should not be surprised after learning what ethnic
+      swedes look like i always thought they were hot blondes
+  2694325_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.5592525601387024
+      normal: 0.14140118658542633
+      offensive: 0.29934632778167725
+    test_text: <user> lol what a stupid gook
+  27442888_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.25427520275115967
+      normal: 0.32649582624435425
+      offensive: 0.4192289113998413
+    test_text: tell that retarded fucking monkey to come on with it i will wait
+  3051248_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2786959111690521
+      normal: 0.3158038556575775
+      offensive: 0.405500203371048
+    test_text: <user> why would you automatically associate the will to welcome refugees
+      and the indifference to rape outside of your dogmatic juice this correlation
+      makes no sense at all you are only showing your preconceptions and small mindedness
+      by bringing the refugee issue on a false rape topic
+  3852741_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.2135428637266159
+      normal: 0.2741944491863251
+      offensive: 0.5122627019882202
+    test_text: it worth remembering that in <number> meryl streep actually stood up
+      and applauded a man who drugged then raped a <number> year old girl streep was
+      fully aware of the rape and supported him nonetheless child rape ok democracy
+      not so much yikes
+  4025504_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.3833359181880951
+      normal: 0.12445095181465149
+      offensive: 0.49221307039260864
+    test_text: <user> you do not consider anything presented to you as evidence let
+      alone irrefutable evidence you just continue to diagree you shifted this argument
+      from the jews pushing the muslims in to the holocaust to af diary you can not
+      win so you shift are you black or a woman
+  4153260_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.299389511346817
+      normal: 0.06680283695459366
+      offensive: 0.6338076591491699
+    test_text: i guess i will be like everyone else that gets suspended from twitter
+      and make a new account used my phone number on <number> suspended accounts already
+      so blow me jack you cunt nigger faggot
+  5685446_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.19990774989128113
+      normal: 0.5434055924415588
+      offensive: 0.25668659806251526
+    test_text: egad my home is being invaded by black ants i wonder if this is some
+      sort of cosmic symbolism for the third world immigrant invasion probably not
+      i have not heard of any mexicans getting crushed by the thumb of damocles
+  5942714_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.1681106686592102
+      normal: 0.5178173184394836
+      offensive: 0.3140720725059509
+    test_text: are you talking about sand niggers
+  6045951_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.35424932837486267
+      normal: 0.515429675579071
+      offensive: 0.13032102584838867
+    test_text: it more it news community looks into the lives of people we d otherwise
+      not know let get real too not so many ghetto phone dindus and skanks
+  6152693_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.28026509284973145
+      normal: 0.35986748337745667
+      offensive: 0.35986748337745667
+    test_text: "western women use vagina stereo speaker to blast unborn babies with\
+      \ feminist female empowerment musics of negress beyonce hag madonna breasticular\
+      \ katy perries slav expecting mothers enjoy cerebral classical music of tchaikovsky\
+      \ dvor\xE1k mussorgsky stravinsky free of vaginal intrusion"
+  6361297_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.35975831747055054
+      normal: 0.11679643392562866
+      offensive: 0.5234452486038208
+    test_text: another day another sand nigger kills whites
+  8698767_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.15134677290916443
+      normal: 0.3204011023044586
+      offensive: 0.528252124786377
+    test_text: this is why i propose using baconas a vetting process it smells good
+      tastes great and its muslim kryptonite
+  9053284_gab:
+    test_classification_loss: 0.0
+    test_gt: hate
+    test_outs: offensive
+    test_preds: offensive
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.10167954862117767
+      normal: 0.31319504976272583
+      offensive: 0.5851253867149353
+    test_text: they average more in cali with the feeding program but the skunks and
+      coons eat well too
+  9203487_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.09518329054117203
+      normal: 0.7969599366188049
+      offensive: 0.10785681009292603
+    test_text: if that quote is in relation to physical confrontations then i think
+      i would agree too i am not so sure about the teaching programming part though
+      i think it a natural thing for women to be non violent the number of men getting
+      incarcerated for violence is way higher than women
+  9462343_gab:
+    test_classification_loss: 0.0
+    test_gt: normal
+    test_outs: normal
+    test_preds: normal
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.18641962110996246
+      normal: 0.5742128491401672
+      offensive: 0.2393675297498703
+    test_text: if you provided white level care in black brown nations it would be
+      very expensive even without dieversecity as the hospitals in oil rich moslem
+      nations who import skilled workers show
+  9773208_gab:
+    test_classification_loss: 0.0
+    test_gt: offensive
+    test_outs: hate
+    test_preds: hate
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      hate: 0.6572184562683105
+      normal: 0.21336759626865387
+      offensive: 0.12941396236419678
+    test_text: it always women trying this shit like dingbat dingell and joe manchin
+      not a single woman should be allowed to serve in congress
+  description: ''

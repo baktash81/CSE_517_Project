@@ -34,7 +34,7 @@ run_pipeline() {
     local status=$?
 
     # Check the exit status
-    if [ "$status" -eq 0 ]
+    if [ "$status" -eq 0 ]; then
         echo -e "\n[SUCCESS] $job_name completed successfully.\n"
     else
         echo -e "\n[ERROR] $job_name failed with exit code $status.\n"
@@ -55,6 +55,9 @@ run_pipeline "MFRC" bash scripts/prob_distr/pipeline-MFRC.sh "$dist_type" "$id_l
 
 # GoEmotions
 run_pipeline "GoEmotions" bash scripts/prob_distr/pipeline-goemotions.sh "$dist_type" "$id_list" "$train_split" "$test_split" "$gpus" "$model" vllm "$gpu_mem"
+
+# HateExplain
+run_pipeline "HateExplain" bash scripts/prob_distr/pipeline-hate.sh "$dist_type" "$id_list" "$train_split" "$test_split" "$gpus" "$model" vllm "$gpu_mem"
 
 # Final Summary
 echo "================================================================="

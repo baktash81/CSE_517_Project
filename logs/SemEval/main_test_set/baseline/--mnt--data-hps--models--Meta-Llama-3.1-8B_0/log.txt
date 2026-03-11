@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:36:05,512)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:36:05,606)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: one of the main things im doing w/ 13c is filling in the void of my empty bitter heart by making everything how i wanted it to be growing up
+anticipation, love, optimism
+Input: Go away please ... I'm begging »»» #depression #anxiety #worry #fear #sadness \nDreams of joy and my baby to be found...Sits on #AndisBench
+fear, pessimism, sadness
+Input: Why to have vanity sizes?Now sizes S,XS(evenXXS sometimes) are too big, WTF?! Dear corporate jerks, Lithuania didn't need this. #rant #angry
+anger, disgust
+Input: Don't ever grow weary doing good....Don't just see the headlines; look at the trend lines for hope.' @billclinton #CGI2016
+optimism
+Input: @The_East_End And the air raid alarm was actually false.  There was no attack inbound at the time.
+fear
+Input: When you saw a t-shirt with the phrase 'My mind is a dangerous place to be' and you would like to buy, but in Italy don't sell it. #sadness
+sadness
+Input: He's mixing it up pretty well..using that slider pretty affective so far #thebabybombers #yankees #offense
+joy
+Input: Have the producers of @soverybritish ever been outside of their country? These are universal problems. #worldwide 
+anger, anticipation, disgust
+Input: When @idinamenzel says she's releasing more #IdinaParty tickets and you set an alarm to not miss it... #fingerscrossed #Idina.
+anticipation, joy, optimism, trust
+Input: @thixotropic No. Was so sudden. Hasn't sunk in yet. With Leo I knew it was coming.
+surprise
+Input: My best friends driving for the first time with me in the car #terrifying
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: Well this is flipping great! Flipping standstill on the freeway!  #stepofftheledge #youvegottobekiddingme
+anger, joy
+Input: @delta correction 26 ppl. Checked in. Standing at the gate. &amp; Flt 1449 took off without us. 
+anger, disgust
+Input: Do not grow weary in doing good.'\n\n-@billclinton
+optimism
+Input: @iAmSJ I'm so mad for our clients I'm furious lmao
+anger
+Input: @sueblue35 @nsoz7 @immortalbulldog huh? We have a sprint coach? We're the slowest team in the comp. Talk about robbing a living. 
+anger, disgust, sadness
+Input: Keep #smiling because life is a beautiful thing and there's so much to #smile about. #MarilynMonroe #KeepSmiling
+joy, love, optimism
+Input: The only thing scary about a 1-armed man trying to scare someone is the fact that he feels his 1 arm is only good for tryin to scare someone
+fear
+Input: #BB18 Michelle crying  again #shocking #bitter He's  just not that into you 😢#TeamNicole
+sadness
+Input: The ecosystem is meant to break thru the wall of #apprehension. It's easy to follow a fave music star &amp; watch their goings on–but #dentists?
+anticipation, fear, optimism, surprise
+Input: At my funeral, when they close the casket, I want them to play, 'Call recording has completed.'' -@GlenEwing #lost #podcasting #talkshoe
+anticipation
+Input: My best friends driving for the first time with me in the car #terrifying
+INFO-vDistributionEstimator(2026-03-11 03:36:34,901)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3403, micro_f1=0.4650, macro_f1=0.3882, anger_f1=0.4952, anticipation_f1=0.2174, disgust_f1=0.5625, fear_f1=0.4082, joy_f1=0.4643, love_f1=0.5385, optimism_f1=0.5682, pessimism_f1=0.0909, sadness_f1=0.5802, surprise_f1=0.0952, trust_f1=0.2500

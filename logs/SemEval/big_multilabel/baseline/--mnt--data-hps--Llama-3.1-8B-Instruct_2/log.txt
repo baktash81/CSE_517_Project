@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:05:57,790)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:05:57,855)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: Right i may be an #sufc fan and the football maybe shit but marcos rojo for #mufc has had a shocking start he's just dreadful
+anger, disgust, surprise
+Input: It's not going to break you it's just going to shake you
+anticipation
+Input: @GriffinBowie23 @AliMcClimond sorry to #offend u griffin!!
+sadness
+Input: @SoCalValerie this one was Apples attempt to make muslims happy 🕋
+joy, love, optimism
+Input: Onus is on #Pak to act against #terror groups which find all types of support for cross border terror: #MEA
+fear
+Input: I either look like a raging bitch, or I'm obnoxiously laughing at something not that funny. I don't think there's any middle ground.
+anger, disgust
+Input: @shae_caitlin ur road rage gives me anxiety.
+anger, fear
+Input: Can't believe how nervous I feel tonight...who feels the same #mufc
+fear
+Input: LOVE LOVE LOVE #smile #fun #relaxationiskey
+joy, love, optimism
+Input: #tulsa - Police manufacture murder... Wonder why we carry burners...? - MaxLevelz #shake
+surprise
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: Actually I always idealize the end of my relationships.. Such a pessimist
+pessimism
+Input: Virtually every statement by other countries at UN has referred to #terror as main threat to peace, #Pak still in denial: MEA.
+disgust, fear
+Input: The Sorrow is grim reminder of how bad I can be at video games and how I could get a bit too trigger happy at times. RIP #MGS3
+sadness
+Input: I got so much fan's on here! Y'all and vixx keep me smiling ❤❤❤
+joy, love
+Input: Texans played horrible.  Bad play calling, bad protection of the ball, bad coaching, bad defense, bad overall performance. #Texans 
+anger, disgust, fear, sadness
+Input: Look at us, smiling in the photograph♪ You can see the secrets behind the fake smiles♪ (*・ω・*) (©FACT「a fact of life」)
+joy
+Input: Manchester derby at home 
+joy
+Input: I'm such a fan of endless #laughter with #friends and enjoying #happiness together. #FridayFeeling #weekend
+joy, love, optimism
+Input: My ukulele bag has fallen apart. 😐 WELLL AT LEAST my life hasn't yet!! #optimism
+optimism, pessimism, sadness
+Input: anxiety level- 100
+fear
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+INFO-vDistributionEstimator(2026-03-11 03:07:40,294)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4126, micro_f1=0.5465, macro_f1=0.4662, anger_f1=0.6197, anticipation_f1=0.3361, disgust_f1=0.5489, fear_f1=0.4397, joy_f1=0.6812, love_f1=0.6289, optimism_f1=0.6017, pessimism_f1=0.2776, sadness_f1=0.6223, surprise_f1=0.1875, trust_f1=0.1842

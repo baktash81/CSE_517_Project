@@ -1,0 +1,5174 @@
+experiment_0:
+  2018-En-00002:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: '#disgusting #disgust
+
+      disgust'
+    test_preds:
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.19439780712127686
+      anticipation: 0.0
+      disgust: 0.438082218170166
+      fear: 0.11790823191404343
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0
+      sadness: 0.2496117353439331
+      surprise: 0.0
+      trust: 0.0
+    test_text: '''to fill his campaign bank account with tens of millions of dollars''..trump
+      2020 campaign to start now #sad  #bad'
+  2018-En-00006:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    test_outs: joy, love, optimism, sadness
+    test_preds:
+    - joy
+    - love
+    - optimism
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.1860302984714508
+      anticipation: 0.06843671947717667
+      disgust: 0.028528669849038124
+      fear: 0.00249280733987689
+      joy: 0.5056827664375305
+      love: 0.12785662710666656
+      none: 0.0
+      optimism: 0.025176461786031723
+      pessimism: 0.0
+      sadness: 0.03232721611857414
+      surprise: 0.01960744895040989
+      trust: 0.0038609355688095093
+    test_text: 'My new favourite #film with out a shadow of a doubt it #Okja #beautifull
+      #funny #sad #emotional #real #Netflix #MUSTWATCH #now'
+  2018-En-00025:
+    test_classification_loss: 0.0
+    test_gt:
+    - sadness
+    test_outs: '#sadness
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.023439517244696617
+      fear: 0.030096936970949173
+      joy: 0.0
+      love: 0.08181197941303253
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.06782451272010803
+      sadness: 0.6850032806396484
+      surprise: 0.0
+      trust: 0.11182371526956558
+    test_text: ''' i can''t even tell u a lie I felt like u were special, till I realized
+      wassup and left, got u feeling dreadful '''
+  2018-En-00037:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    test_outs: joy, optimism
+    test_preds:
+    - joy
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.004730734974145889
+      anticipation: 0.09501935541629791
+      disgust: 0.004444114398211241
+      fear: 0.09501935541629791
+      joy: 0.33165013790130615
+      love: 0.021201683208346367
+      none: 0.0
+      optimism: 0.29268020391464233
+      pessimism: 0.006074385717511177
+      sadness: 0.016511892899870872
+      surprise: 0.01066087931394577
+      trust: 0.12200727313756943
+    test_text: 'Just received the fantastic news that our next 9 bed ''Sui Generis''
+      HMO has full planning permission. Build to start 01 September. #excited'
+  2018-En-00040:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    test_outs: love, optimism
+    test_preds:
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.004095546901226044
+      anticipation: 0.07259531319141388
+      disgust: 0.016198202967643738
+      fear: 0.012615172192454338
+      joy: 0.10562555491924286
+      love: 0.4733808636665344
+      none: 0.0
+      optimism: 0.19733449816703796
+      pessimism: 0.0031896152067929506
+      sadness: 0.0029963660053908825
+      surprise: 0.006343306973576546
+      trust: 0.10562555491924286
+    test_text: '@InvacareCorp has provided tremendous support for the 2017 CEWHA Nationals
+      as one of our Conn Smyth Sponsors. #2017Nationals #Ottawa'
+  2018-En-00054:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - pessimism
+    - sadness
+    test_outs: '#sadness
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.045974213629961014
+      fear: 0.055455490946769714
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.13303083181381226
+      sadness: 0.7655394077301025
+      surprise: 0.0
+      trust: 0.0
+    test_text: "When you just don't know where to go or what to do next.. in life..\U0001F914\
+      \ #lost"
+  2018-En-00081:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: disgust, pessimism
+    test_preds:
+    - disgust
+    - pessimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.14076173305511475
+      anticipation: 0.024460723623633385
+      disgust: 0.33766984939575195
+      fear: 0.06649113446474075
+      joy: 0.0
+      love: 0.005809930618852377
+      none: 0.0
+      optimism: 0.07534433156251907
+      pessimism: 0.2048071175813675
+      sadness: 0.1242218017578125
+      surprise: 0.010854382999241352
+      trust: 0.00957895815372467
+    test_text: "@JuliaHB1 @talkRADIO culture &amp; language already protected.\\n\xA3\
+      \ on 'promoting Welsh' better spent on Tourism or our dreadful schools ed record"
+  2018-En-00092:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    test_outs: joy
+    test_preds:
+    - joy
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.07369168102741241
+      anticipation: 0.09462199360132217
+      disgust: 0.17677715420722961
+      fear: 0.0
+      joy: 0.25720924139022827
+      love: 0.019833842292428017
+      none: 0.0
+      optimism: 0.0835036113858223
+      pessimism: 0.01863216981291771
+      sadness: 0.20031476020812988
+      surprise: 0.03071926347911358
+      trust: 0.04469626396894455
+    test_text: By the way...in case you didnt know...joshuas goin out tonight...to
+      take the trash out and then play blues at ever us 6.75
+  2018-En-00099:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    - sadness
+    test_outs: optimism
+    test_preds:
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.02310282364487648
+      anticipation: 0.19343756139278412
+      disgust: 0.01587832346558571
+      fear: 0.0
+      joy: 0.020388169214129448
+      love: 0.020388169214129448
+      none: 0.0
+      optimism: 0.5958296656608582
+      pessimism: 0.04890867695212364
+      sadness: 0.05542079359292984
+      surprise: 0.003542932914569974
+      trust: 0.02310282364487648
+    test_text: "I always bounce back, life goes on man..I refuse to sulk in negativity.\
+      \ Yesterday's problems are just that, it's always a new day \U0001F917"
+  2018-En-00155:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    test_outs: '#music #youtube #youtubeplaylist #youtubechannel #youtubechannel #youtubechannel
+      #youtubechannel #youtubechannel #youtubechannel'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: 'wow :o this was included in the playlist #awesome'
+  2018-En-00162:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - pessimism
+    test_outs: '. #transfer
+
+      anger, disgust'
+    test_preds:
+    - anger
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.37280404567718506
+      anticipation: 0.016379863023757935
+      disgust: 0.37280404567718506
+      fear: 0.1554078459739685
+      joy: 0.004995577037334442
+      love: 0.0
+      none: 0.0
+      optimism: 0.011257704347372055
+      pessimism: 0.027005836367607117
+      sadness: 0.021032165735960007
+      surprise: 0.007737299427390099
+      trust: 0.010575634427368641
+    test_text: '@mickyrivera29 interesting but a transfer too costly. You can only
+      irritate others when you get a top talent for a low/ avg fee'
+  2018-En-00184:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - joy
+    test_outs: '. #sadness #sad #sadness #sad #sadness #sad #sadness #sad #sadness
+      #'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.12403368204832077
+      anticipation: 0.0
+      disgust: 0.06639042496681213
+      fear: 0.055039599537849426
+      joy: 0.0
+      love: 0.19210711121559143
+      none: 0.0
+      optimism: 0.037828125059604645
+      pessimism: 0.037828125059604645
+      sadness: 0.406690776348114
+      surprise: 0.0
+      trust: 0.08008216321468353
+    test_text: when we're offended. Lol
+  2018-En-00226:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - sadness
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0025810329243540764
+      anticipation: 0.035630058497190475
+      disgust: 0.011567385867238045
+      fear: 0.09685254096984863
+      joy: 0.004529853817075491
+      love: 0.0
+      none: 0.0
+      optimism: 0.009008689783513546
+      pessimism: 0.02774871699512005
+      sadness: 0.8109363913536072
+      surprise: 0.0011453264160081744
+      trust: 0.0
+    test_text: I must be a goblin for it rains every time I'm effin sad. Lol
+  2018-En-00249:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: anger, disgust, sadness
+    test_preds:
+    - anger
+    - disgust
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.2000843733549118
+      anticipation: 0.02389667183160782
+      disgust: 0.1375158429145813
+      fear: 0.002854050137102604
+      joy: 0.05058925226330757
+      love: 0.09451316297054291
+      none: 0.0
+      optimism: 0.08340757340192795
+      pessimism: 0.0347694493830204
+      sadness: 0.2000843733549118
+      surprise: 0.1375158429145813
+      trust: 0.0347694493830204
+    test_text: "@britmerc69 Stop it. You'll discourage people \U0001F648"
+  2018-En-00256:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: "\U0001F621 \U0001F621 \U0001F621 \U0001F621 \U0001F621 \U0001F621\
+      \ \U0001F621 \U0001F621 \U0001F621 \U0001F621 \U0001F621 \U0001F621"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "@rosieblossoms_ What a miserable piece of shit \U0001F621"
+  2018-En-00258:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    test_outs: "\U0001F606\U0001F606\U0001F606\U0001F606\U0001F606\U0001F606\U0001F606\
+      \U0001F606\U0001F606\U0001F606\U0001F606\U0001F606"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "@KhaoJimmy Okay awak \U0001F606"
+  2018-En-00291:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    - trust
+    test_outs: "\U0001F62D\U0001F62D\U0001F62D\U0001F62D\U0001F62D\U0001F62D\U0001F62D\
+      \U0001F62D\U0001F62D\U0001F62D\U0001F62D\U0001F62D"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "My boyfriend is my whole world \U0001F62D"
+  2018-En-00300:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - pessimism
+    - sadness
+    test_outs: 'that i can''t go
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0472235381603241
+      anticipation: 0.01968569867312908
+      disgust: 0.06063622236251831
+      fear: 0.004675763193517923
+      joy: 0.007241963408887386
+      love: 0.00770903006196022
+      none: 0.0
+      optimism: 0.01968569867312908
+      pessimism: 0.3079361319541931
+      sadness: 0.5077008605003357
+      surprise: 0.008206220343708992
+      trust: 0.009298865683376789
+    test_text: 'my mom''s work has discounted riot fest tickets for $147/3 days i''m
+      #saddened'
+  2018-En-00334:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: 'ingbubble
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.062311604619026184
+      anticipation: 0.03335300087928772
+      disgust: 0.1494777798652649
+      fear: 0.03335300087928772
+      joy: 0.02292315848171711
+      love: 0.005444727372378111
+      none: 0.0
+      optimism: 0.025975342839956284
+      pessimism: 0.02292315848171711
+      sadness: 0.5911960601806641
+      surprise: 0.04852832853794098
+      trust: 0.004513837397098541
+    test_text: "Migraine hangover has to be the worst thing ever \U0001F623 #burst"
+  2018-En-00405:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    - trust
+    test_outs: optimism
+    test_preds:
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.002089802175760269
+      anticipation: 0.21316562592983246
+      disgust: 0.0
+      fear: 0.0025207826402038336
+      joy: 0.1465064436197281
+      love: 0.028848828747868538
+      none: 0.0
+      optimism: 0.5794442296028137
+      pessimism: 0.008265327662229538
+      sadness: 0.0016275395173579454
+      surprise: 0.002089802175760269
+      trust: 0.015441665425896645
+    test_text: 'Media is so focused on bad news that we forget how much more great/good
+      things happen daily. #Thinkpositive #goodnews #optimism #goodmorning'
+  2018-En-00420:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    - sadness
+    test_outs: '#goats #faintinggoats
+
+      anticipation, joy'
+    test_preds:
+    - anticipation
+    - joy
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 1.0
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0
+      sadness: 0.0
+      surprise: 0.0
+      trust: 0.0
+    test_text: 'I mean, not that I wanted goats to faint... but I wanted to see the
+      goats faint.  #eclipse'
+  2018-En-00438:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: \n&amp; I'm not saying I'm ugly, but I'm not pretty either. \n&amp;
+      I'm
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: Do people notice that only saying 'You're so pretty' when I have make-up
+      on. Is offense! \n&amp; I take note that they never say it when I don't.
+  2018-En-00440:
+    test_classification_loss: 0.0
+    test_gt:
+    - pessimism
+    - sadness
+    test_outs: '#sad #angry
+
+      anger, sadness'
+    test_preds:
+    - anger
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.04901030287146568
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.02623332478106022
+      sadness: 0.9247563481330872
+      surprise: 0.0
+      trust: 0.0
+    test_text: 'A bih be on lock down and shit. #depressing'
+  2018-En-00459:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: "\U0001F624\U0001F624\U0001F624\U0001F624\U0001F624\U0001F624\U0001F624\
+      \U0001F624\U0001F624\U0001F624\U0001F624\U0001F624"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "Wtf shawty ass on \U0001F624"
+  2018-En-00481:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    - trust
+    test_outs: I am fine.. I am in a safe place.. I am with my family.. I am fine..
+      Thank you for your
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: '@KicchaSudeep No words Sir... Thank you for the concern..'
+  2018-En-00511:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: disgust, sadness
+    test_preds:
+    - disgust
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.10000669956207275
+      anticipation: 0.06873353570699692
+      disgust: 0.3080423176288605
+      fear: 0.08825560659170151
+      joy: 0.017378563061356544
+      love: 0.005300160497426987
+      none: 0.0
+      optimism: 0.05352972820401192
+      pessimism: 0.06873353570699692
+      sadness: 0.27184638381004333
+      surprise: 0.015336528420448303
+      trust: 0.0028369715437293053
+    test_text: 'I finally left the dark room I''ve been crying in &amp; instead of
+      getting some sun on my translucent skin, I got 6000 mosquito bites. #blessed'
+  2018-En-00515:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - joy
+    - sadness
+    test_outs: '. #sundaynight
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.033746205270290375
+      anticipation: 0.06304621696472168
+      disgust: 0.1512400060892105
+      fear: 0.055638089776039124
+      joy: 0.012414532713592052
+      love: 0.00403040973469615
+      none: 0.0
+      optimism: 0.06304621696472168
+      pessimism: 0.17137737572193146
+      sadness: 0.4111129641532898
+      surprise: 0.029780924320220947
+      trust: 0.004567052237689495
+    test_text: 'Also my 80s megamix ain''t so mega tonight '
+  2018-En-00522:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - surprise
+    test_outs: of you. I'm so happy for you. I'm so proud of you. I'm so happy for
+      you. I
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: '@IH1525 @TiIImxn Literally I''m in awe'
+  2018-En-00535:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    - trust
+    test_outs: joy
+    test_preds:
+    - joy
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.010766522958874702
+      anticipation: 0.3565382659435272
+      disgust: 0.0028977703768759966
+      fear: 0.0
+      joy: 0.4040108025074005
+      love: 0.06195707246661186
+      none: 0.0
+      optimism: 0.1311631202697754
+      pessimism: 0.0014570904895663261
+      sadness: 0.015665197744965553
+      surprise: 0.004777615889906883
+      trust: 0.010766522958874702
+    test_text: 'Finally finished this term''s class book, Sky Hawk by @gill_lewis
+      kids in tears and actually cheering at the end #good read'
+  2018-En-00566:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    - pessimism
+    test_outs: anticipation, joy, optimism, surprise, trust
+    test_preds:
+    - anticipation
+    - joy
+    - optimism
+    - surprise
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.02937757596373558
+      anticipation: 0.5900644063949585
+      disgust: 0.054884541779756546
+      fear: 0.1915658563375473
+      joy: 0.013876988552510738
+      love: 0.0039758225902915
+      none: 0.0
+      optimism: 0.025925621390342712
+      pessimism: 0.022879280149936676
+      sadness: 0.009537503123283386
+      surprise: 0.037721555680036545
+      trust: 0.0201908927410841
+    test_text: anxiety pays off
+  2018-En-00628:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: anger, disgust
+    test_preds:
+    - anger
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.531976044178009
+      anticipation: 0.02648552693426609
+      disgust: 0.365621417760849
+      fear: 0.001093188300728798
+      joy: 0.002174064517021179
+      love: 0.0
+      none: 0.0
+      optimism: 0.0020423445384949446
+      pessimism: 0.012510880827903748
+      sadness: 0.049481481313705444
+      surprise: 0.006696590222418308
+      trust: 0.0019186051795259118
+    test_text: "Can't handle rude people. Doesn't matter what job you do, a consultant\
+      \ or not, treat people how you would like to be treated \U0001F621 #disapointed"
+  2018-En-00639:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - joy
+    - surprise
+    - trust
+    test_outs: surprise
+    test_preds:
+    - surprise
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.03212082013487816
+      anticipation: 0.1270403116941452
+      disgust: 0.06000959500670433
+      fear: 0.02207629382610321
+      joy: 0.06799978017807007
+      love: 0.1848425567150116
+      none: 0.0
+      optimism: 0.07705385237932205
+      pessimism: 0.0133899487555027
+      sadness: 0.019482262432575226
+      surprise: 0.26894432306289673
+      trust: 0.1270403116941452
+    test_text: "When you only meet each other once at an interview and you recognise\
+      \ each other on the streets \U0001F646 I don't even know what's your name \U0001F602"
+  2018-En-00657:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: '#work
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.06912942975759506
+      anticipation: 0.06100650504231453
+      disgust: 0.12915077805519104
+      fear: 0.14634700119495392
+      joy: 0.008256332948803902
+      love: 0.0
+      none: 0.0
+      optimism: 0.03265443071722984
+      pessimism: 0.16583287715911865
+      sadness: 0.3510681986808777
+      surprise: 0.03265443071722984
+      trust: 0.0039000152610242367
+    test_text: "Damn I'm tired as hell I never get a off day during the week anymore\
+      \ \U0001F62D I wanna call in so bad but these lil 60 hrs sounds so good."
+  2018-En-00666:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    - trust
+    test_outs: anticipation, joy
+    test_preds:
+    - anticipation
+    - joy
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0056329029612243176
+      anticipation: 0.30754607915878296
+      disgust: 0.007699265144765377
+      fear: 0.010523648001253605
+      joy: 0.23951712250709534
+      love: 0.23951712250709534
+      none: 0.0
+      optimism: 0.06862281262874603
+      pessimism: 0.004971019458025694
+      sadness: 0.019660761579871178
+      surprise: 0.008195824921131134
+      trust: 0.0881134420633316
+    test_text: "Hi @EvMarket_US Thanku for #follow \U0001F44D\\nUs #hairdressers love\
+      \ sharing #smiles \U0001F601\\nIt's a universal language!\U0001F44C\\nHave a\
+      \ fab day! \U0001F618"
+  2018-En-00680:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    test_outs: joy
+    test_preds:
+    - joy
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0352473109960556
+      anticipation: 0.22984136641025543
+      disgust: 0.02745063416659832
+      fear: 0.0
+      joy: 0.42940017580986023
+      love: 0.0352473109960556
+      none: 0.0
+      optimism: 0.09581214189529419
+      pessimism: 0.0
+      sadness: 0.09581214189529419
+      surprise: 0.020083313807845116
+      trust: 0.0311056450009346
+    test_text: "Bedtime. After a full listen of Lou Reed's album Transformer. Full\
+      \ albums are underrated these days. #back2back #enjoyment \U0001F4BF \U0001F3B6\
+      \ x"
+  2018-En-00688:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - fear
+    - pessimism
+    test_outs: anticipation, disgust, fear, sadness, surprise
+    test_preds:
+    - anticipation
+    - disgust
+    - fear
+    - sadness
+    - surprise
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.21566283702850342
+      anticipation: 0.5862323641777039
+      disgust: 0.11543598026037216
+      fear: 0.015622562728822231
+      joy: 0.0039500026032328606
+      love: 0.0
+      none: 0.0
+      optimism: 0.0039500026032328606
+      pessimism: 0.0012823780998587608
+      sadness: 0.03747658059000969
+      surprise: 0.015622562728822231
+      trust: 0.004764612298458815
+    test_text: '@AwardsDaily Looks that way.  I don''t want to see how Q is going
+      to handle Tate murder.  #shudder'
+  2018-En-00703:
+    test_classification_loss: 0.0
+    test_gt: []
+    test_outs: fear
+    test_preds:
+    - fear
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.05313174054026604
+      anticipation: 0.238119974732399
+      disgust: 0.07730623334646225
+      fear: 0.269825279712677
+      joy: 0.03222603350877762
+      love: 0.005260755307972431
+      none: 0.0
+      optimism: 0.05313174054026604
+      pessimism: 0.007654354441910982
+      sadness: 0.03651687875390053
+      surprise: 0.18544802069664001
+      trust: 0.041379041969776154
+    test_text: "\U0001F6A8 an alle bike-people in #wien - take care: extrem viele\
+      \ kontrollen momentan, insbesondere ring usw. \U0001F6B2 \\n #schwarzkappler\
+      \  #reflektor"
+  2018-En-00749:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    - joy
+    test_outs: anticipation, fear, pessimism, sadness
+    test_preds:
+    - anticipation
+    - fear
+    - pessimism
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.11159074306488037
+      anticipation: 0.5001149773597717
+      disgust: 0.08690696954727173
+      fear: 0.1432853639125824
+      joy: 0.008604953065514565
+      love: 0.0
+      none: 0.0
+      optimism: 0.008083605207502842
+      pessimism: 0.0319712795317173
+      sadness: 0.09847848862409592
+      surprise: 0.007593844551593065
+      trust: 0.0033697481267154217
+    test_text: "#anxious don't know why ................. #worry \U0001F636 slowly\
+      \ going #mad hahahahahahahahaha"
+  2018-En-00806:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    - pessimism
+    - sadness
+    test_outs: '#plants #trees #flowers #plants #nature #naturephotography #naturelovers
+      #naturelover #naturegram #'
+    test_preds:
+    - love
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: '#IfOnlyPeopleWould not exist. #humanity #life #ignorance #nature #mothernature
+      #sad #disappointment #smh #personal #opinion #views #animals'
+  2018-En-00818:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - joy
+    - optimism
+    test_outs: 'leek #glee #glee #glee #glee #glee #glee #glee #gle'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: 'I only cut my hair so I can fucc hoes in a durag #glee #sg'
+  2018-En-00825:
+    test_classification_loss: 0.0
+    test_gt:
+    - pessimism
+    - sadness
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.038452379405498505
+      anticipation: 0.06339725852012634
+      disgust: 0.043572258204221725
+      fear: 0.10452443361282349
+      joy: 0.012483660131692886
+      love: 0.038452379405498505
+      none: 0.0
+      optimism: 0.018163619562983513
+      pessimism: 0.06339725852012634
+      sadness: 0.6014964580535889
+      surprise: 0.003576628863811493
+      trust: 0.012483660131692886
+    test_text: 'You could have over a hundred million followers and still not a genuine
+      person who understands you or wants to #cantshakethis #sadness'
+  2018-En-00845:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - joy
+    - optimism
+    test_outs: '.
+
+      anticipation, joy, optimism, surprise'
+    test_preds:
+    - anticipation
+    - joy
+    - optimism
+    - surprise
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.06529898196458817
+      anticipation: 0.5467416644096375
+      disgust: 0.05085489898920059
+      fear: 0.02722066454589367
+      joy: 0.15664412081241608
+      love: 0.0950094535946846
+      none: 0.0
+      optimism: 0.019915064796805382
+      pessimism: 0.0016347280470654368
+      sadness: 0.009407209232449532
+      surprise: 0.006073751021176577
+      trust: 0.02119947411119938
+    test_text: .@PreetBharara's Twitter barbs are both insightful and delightful to
+      read; hell hath no fury like a crusading prosecutor scorned
+  2018-En-00862:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    test_outs: anger, disgust
+    test_preds:
+    - anger
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.5345969200134277
+      anticipation: 0.2525256872177124
+      disgust: 0.07234982401132584
+      fear: 0.06384849548339844
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0010320148430764675
+      pessimism: 0.0012448474299162626
+      sadness: 0.07234982401132584
+      surprise: 0.00205240654759109
+      trust: 0.0
+    test_text: "You would think booking a holiday for 2 you'd be sat next to each\
+      \ other on the bloody plane #fuming \U0001F621@ThomsonHolidays"
+  2018-En-00905:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - fear
+    test_outs: '#Nigeria
+
+      anger, pessimism'
+    test_preds:
+    - anger
+    - pessimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.49048495292663574
+      anticipation: 0.29749417304992676
+      disgust: 0.04026145488023758
+      fear: 0.08523350208997726
+      joy: 0.0
+      love: 0.001142129534855485
+      none: 0.0
+      optimism: 0.01307098101824522
+      pessimism: 0.05169673264026642
+      sadness: 0.014811362139880657
+      surprise: 0.0015611061826348305
+      trust: 0.004243526142090559
+    test_text: "Why do a certain section threaten war and spit fire and brimstone\
+      \ each time they hear the words \u201Crestructuring\u201D and \u201Cself-determination\u201D\
+      ?.."
+  2018-En-00914:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    test_outs: '#happybirthday #birthday #birthdaycake #cake #birthdaycake #birthdaycake
+      #birthdaycake #birthdaycake #birthdaycake'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: HAPPY BIRTHDAY! :D
+  2018-En-00937:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - joy
+    test_outs: '#sadness
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.11634411662817001
+      fear: 0.06629087775945663
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.10267332196235657
+      pessimism: 0.12384767085313797
+      sadness: 0.5908440351486206
+      surprise: 0.0
+      trust: 0.0
+    test_text: '@AlisonMoyet Knock, knock!\nWho''s there?\nA guard\nA guard who?\n...do,
+      do, push pineapple, shake a tree...\n\nI''ll shut up now.'
+  2018-En-00941:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - joy
+    - sadness
+    test_outs: '#sadness
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.19465753436088562
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.09787996113300323
+      joy: 0.08637876063585281
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0919497087597847
+      sadness: 0.5291340351104736
+      surprise: 0.0
+      trust: 0.0
+    test_text: '@ProfessorF @Mediaite @law_newz Childish temper #tantrums are all
+      the left has left. :)'
+  2018-En-00993:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: anger, disgust, sadness
+    test_preds:
+    - anger
+    - disgust
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.783418595790863
+      anticipation: 0.0441974513232708
+      disgust: 0.0441974513232708
+      fear: 0.01842423900961876
+      joy: 0.004376140423119068
+      love: 0.012662782333791256
+      none: 0.0
+      optimism: 0.012662782333791256
+      pessimism: 0.014348812401294708
+      sadness: 0.030376434326171875
+      surprise: 0.004958816803991795
+      trust: 0.030376434326171875
+    test_text: '@realDonaldTrump You''ve spent more time and energy protecting Michael
+      Flynn than your own son. You''re a coward and an awful parent.'
+  2018-En-01037:
+    test_classification_loss: 0.0
+    test_gt:
+    - love
+    - optimism
+    test_outs: 'and talk about how we''re gonna get through this
+
+      love, optimism'
+    test_preds:
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0018135032150894403
+      anticipation: 0.2865062952041626
+      disgust: 0.00492961285635829
+      fear: 0.05641642585396767
+      joy: 0.08208541572093964
+      love: 0.3678813576698303
+      none: 0.0
+      optimism: 0.030197540298104286
+      pessimism: 0.0013267874019220471
+      sadness: 0.09301496297121048
+      surprise: 0.003388070035725832
+      trust: 0.07244012504816055
+    test_text: i just wanna be sober with u
+  2018-En-01056:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: '. #pessimism
+
+      pessimism'
+    test_preds:
+    - pessimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.321764200925827
+      fear: 0.07642572373151779
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.3646066188812256
+      sadness: 0.1260046809911728
+      surprise: 0.0
+      trust: 0.11119873821735382
+    test_text: '@SkyUK not impressed by your customer support. Forcing customers to
+      use fb chat or sms! Very slow. issue is not getting sorted '
+  2018-En-01075:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - sadness
+    test_outs: 'from my mom''s house. #FML
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.21610376238822937
+      anticipation: 0.11567198485136032
+      disgust: 0.1683017760515213
+      fear: 0.14852578938007355
+      joy: 0.009494936093688011
+      love: 0.0
+      none: 0.0
+      optimism: 0.005082272924482822
+      pessimism: 0.013815050944685936
+      sadness: 0.3144291043281555
+      surprise: 0.005082272924482822
+      trust: 0.0034929916728287935
+    test_text: Damn I lost my keys and I forgot to get the garage opener
+  2018-En-01097:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: "I hope you are okay. \nsadness"
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.068030446767807
+      anticipation: 0.16319657862186432
+      disgust: 0.09898371994495392
+      fear: 0.07708859443664551
+      joy: 0.009800716303288937
+      love: 0.022086255252361298
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.12709762156009674
+      sadness: 0.391488254070282
+      surprise: 0.02502700500190258
+      trust: 0.01720079407095909
+    test_text: '@washingtonpost @silvajanes How awful!!!!!!'
+  2018-En-01131:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - joy
+    - pessimism
+    test_outs: disgust
+    test_preds:
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.07981769740581512
+      anticipation: 0.14911909401416779
+      disgust: 0.459319144487381
+      fear: 0.008412725292146206
+      joy: 0.06216208636760712
+      love: 0.025913013145327568
+      none: 0.0
+      optimism: 0.042723339051008224
+      pessimism: 0.054857850074768066
+      sadness: 0.06216208636760712
+      surprise: 0.03770321235060692
+      trust: 0.01780974119901657
+    test_text: "@Steadi_Lady You're eating skin that could have been sent to a tannery\
+      \ for leather processing. \U0001F604"
+  2018-En-01143:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    test_outs: fear
+    test_preds:
+    - fear
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0047216699458658695
+      anticipation: 0.17717936635017395
+      disgust: 0.00882124062627554
+      fear: 0.7940627932548523
+      joy: 0.0019682850688695908
+      love: 0.0
+      none: 0.0
+      optimism: 0.0004976603668183088
+      pessimism: 0.006062744185328484
+      sadness: 0.0007707914337515831
+      surprise: 0.0047216699458658695
+      trust: 0.0011938250390812755
+    test_text: 'My best friends driving for the first time with me in the car #terrifying'
+  2018-En-01176:
+    test_classification_loss: 0.0
+    test_gt:
+    - sadness
+    - surprise
+    test_outs: disgust, pessimism
+    test_preds:
+    - disgust
+    - pessimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.15710917115211487
+      anticipation: 0.030936630442738533
+      disgust: 0.6213788390159607
+      fear: 0.005050266161561012
+      joy: 0.005722701083868742
+      love: 0.01461342629045248
+      none: 0.0
+      optimism: 0.007822005078196526
+      pessimism: 0.05779723823070526
+      sadness: 0.051005881279706955
+      surprise: 0.021262414753437042
+      trust: 0.027301480993628502
+    test_text: '@elegantlywasted @ChelseaClinton Are they the new kennedy''s of American
+      politics.. sadly both mom and daughter are as charming as a toe nail'
+  2018-En-01187:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - surprise
+    test_outs: '#stockmarket #investing #trading #trader #traders #tradinglife #traderlife
+      #tr'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "Wow what's up with #snap \U0001F632\U0001F4CA\U0001F4C9\u2B07#cnnmoney"
+  2018-En-01190:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: '#fear #surprise #disgust #anger #sadness #trust #anticipation #joy
+      #optimism'
+    test_preds:
+    - anger
+    - anticipation
+    - disgust
+    - fear
+    - joy
+    - optimism
+    - sadness
+    - surprise
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.562176525592804
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.4378235340118408
+      sadness: 0.0
+      surprise: 0.0
+      trust: 0.0
+    test_text: 'if you wake up somewhere else...you will know some #arsehole has pressed
+      a button ;)'
+  2018-En-01225:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - anticipation
+    - joy
+    test_outs: surprise
+    test_preds:
+    - surprise
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.23285235464572906
+      anticipation: 0.04585134983062744
+      disgust: 0.14123208820819855
+      fear: 0.05887429788708687
+      joy: 0.026125309988856316
+      love: 0.019113680347800255
+      none: 0.0
+      optimism: 0.04585134983062744
+      pessimism: 0.015845797955989838
+      sadness: 0.08566159754991531
+      surprise: 0.29898834228515625
+      trust: 0.029603855684399605
+    test_text: '@cubewatermelon @JonKimbel It''s hilarious but there are legit milkshake
+      Duck apologizers. Yes, just the hypothetic milkshake duck.'
+  2018-En-01239:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.04448728635907173
+      anticipation: 0.25600665807724
+      disgust: 0.07334713637828827
+      fear: 0.17595063149929047
+      joy: 0.03057563677430153
+      love: 0.011248149909079075
+      none: 0.0
+      optimism: 0.04448728635907173
+      pessimism: 0.018545065075159073
+      sadness: 0.32871904969215393
+      surprise: 0.01274582464247942
+      trust: 0.003887255908921361
+    test_text: "maybe me and joey should have ignored each other on tinder and posted\
+      \ it on social media for a trip to Hawaii \u2639\uFE0F #bitter"
+  2018-En-01242:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    test_outs: '#sad #disgusting #shameful #shame #shameful #shameful
+
+      disgust'
+    test_preds:
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.18032601475715637
+      fear: 0.12393616139888763
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.06633824855089188
+      sadness: 0.6293995976448059
+      surprise: 0.0
+      trust: 0.0
+    test_text: '@StateDept #That certainly does not bode well for #Afghan woman and
+      girls #bad option'
+  2018-En-01252:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - joy
+    - optimism
+    test_outs: '#ThePrisoner
+
+      disgust, fear, pessimism, sadness'
+    test_preds:
+    - disgust
+    - fear
+    - pessimism
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.10279186815023422
+      anticipation: 0.06234642118215561
+      disgust: 0.2794173061847687
+      fear: 0.16947516798973083
+      joy: 0.02598985843360424
+      love: 0.010834184475243092
+      none: 0.0
+      optimism: 0.037815019488334656
+      pessimism: 0.033371638506650925
+      sadness: 0.2465849071741104
+      surprise: 0.02293596975505352
+      trust: 0.008437671698629856
+    test_text: This prison is awfully gloomy. Would you mind if I put some ribbons
+      on the bars?
+  2018-En-01269:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.09026039391756058
+      anticipation: 0.03762613236904144
+      disgust: 0.16862861812114716
+      fear: 0.02586003579199314
+      joy: 0.06203500181436539
+      love: 0.0796545222401619
+      none: 0.0
+      optimism: 0.02586003579199314
+      pessimism: 0.09026039391756058
+      sadness: 0.4045190215110779
+      surprise: 0.00740902591496706
+      trust: 0.00788686703890562
+    test_text: "I love seeing @yeahlizzy because it reminds me I'm not the only one\
+      \ miserable at work \U0001F605"
+  2018-En-01278:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    - sadness
+    test_outs: '#climatechange
+
+      pessimism'
+    test_preds:
+    - pessimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0979737937450409
+      anticipation: 0.04627954214811325
+      disgust: 0.011701300740242004
+      fear: 0.2074105143547058
+      joy: 0.005527303088456392
+      love: 0.01032636221498251
+      none: 0.0
+      optimism: 0.2074105143547058
+      pessimism: 0.23502691090106964
+      sadness: 0.12580084800720215
+      surprise: 0.011701300740242004
+      trust: 0.04084155336022377
+    test_text: "That said\u2013due to passing the 50yr mark awhile ago\u2013I know\
+      \ most of the #horrific damage to the #planet won't occur before my 'natural'\
+      \ #death."
+  2018-En-01284:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - fear
+    - pessimism
+    - sadness
+    test_outs: '#anxiety #depression
+
+      fear, pessimism, sadness'
+    test_preds:
+    - fear
+    - pessimism
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.06340984255075455
+      anticipation: 0.11846517771482468
+      disgust: 0.020586160942912102
+      fear: 0.3648984432220459
+      joy: 0.006278424523770809
+      love: 0.003156990045681596
+      none: 0.0
+      optimism: 0.043580904603004456
+      pessimism: 0.19531607627868652
+      sadness: 0.17236581444740295
+      surprise: 0.003360598348081112
+      trust: 0.008581588976085186
+    test_text: '@BrettKeeble I guess it never. @smartassunit #worry'
+  2018-En-01321:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - disgust
+    - joy
+    test_outs: "\U0001F602\U0001F602\U0001F602\U0001F602\U0001F602\U0001F602\U0001F602\
+      \U0001F602\U0001F602\U0001F602\U0001F602\U0001F602"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "@shanedawson @JeffreeStar @JessButtafuoco No offense but.. Jeffee\
+      \ looks like a pink demon\U0001F602"
+  2018-En-01325:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    test_outs: '#food #foodie #foodporn #foodstagram #foodphotography #foodblogger
+      #foodgasm #food'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: '@Dat_Phan Too much fun being interviewed by the supremely talented
+      and funny #DatPhan #Comedy #laughter #soup'
+  2018-En-01326:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    test_outs: love, optimism
+    test_preds:
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.008647317066788673
+      anticipation: 0.09296739846467972
+      disgust: 0.008647317066788673
+      fear: 0.034200794994831085
+      joy: 0.25271156430244446
+      love: 0.47212740778923035
+      none: 0.0
+      optimism: 0.04976186156272888
+      pessimism: 0.01043065544217825
+      sadness: 0.0
+      surprise: 0.02074383571743965
+      trust: 0.04976186156272888
+    test_text: "Just got a gift via this cool virtual assistant @TryEvaBot. Wanna\
+      \ experience? Let me know, I can send you a gift\U0001F381  #magical #delightful\
+      \ \U0001F60A"
+  2018-En-01335:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - fear
+    test_outs: '#Trump
+
+      anger, fear'
+    test_preds:
+    - anger
+    - fear
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.397138386964798
+      anticipation: 0.07820117473602295
+      disgust: 0.1460990309715271
+      fear: 0.1004122942686081
+      joy: 0.036939624696969986
+      love: 0.002675897441804409
+      none: 0.0
+      optimism: 0.07820117473602295
+      pessimism: 0.016391858458518982
+      sadness: 0.07820117473602295
+      surprise: 0.05374683439731598
+      trust: 0.011992540210485458
+    test_text: '@AGlyndwr @TeaPainUSA All I know is the sentence will start with ''look...''
+      like any high school punk would start a threat.'
+  2018-En-01346:
+    test_classification_loss: 0.0
+    test_gt:
+    - optimism
+    test_outs: '#liveyourbestlife
+
+      joy, optimism'
+    test_preds:
+    - joy
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.019253524020314217
+      anticipation: 0.09777746349573135
+      disgust: 0.04075971245765686
+      fear: 0.019253524020314217
+      joy: 0.3412768840789795
+      love: 0.14226536452770233
+      none: 0.0
+      optimism: 0.206994891166687
+      pessimism: 0.014994660392403603
+      sadness: 0.04618680477142334
+      surprise: 0.004035757854580879
+      trust: 0.0672014057636261
+    test_text: Life is too short to be jealous, hating, keeping up mess, and worrying
+      about things that do not concern you.
+  2018-En-01360:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: anticipation, joy, love, optimism
+    test_preds:
+    - anticipation
+    - joy
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.025156471878290176
+      anticipation: 0.3472743630409241
+      disgust: 0.060347236692905426
+      fear: 0.14476549625396729
+      joy: 0.0683823749423027
+      love: 0.025156471878290176
+      none: 0.0
+      optimism: 0.05325625091791153
+      pessimism: 0.0683823749423027
+      sadness: 0.1858825832605362
+      surprise: 0.017289768904447556
+      trust: 0.004106680862605572
+    test_text: "I haven't lost weight but I appear smaller and I'm pissed \U0001F644"
+  2018-En-01362:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: anger, disgust, pessimism
+    test_preds:
+    - anger
+    - disgust
+    - pessimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.43006742000579834
+      anticipation: 0.15821295976638794
+      disgust: 0.26084908843040466
+      fear: 0.003960784059017897
+      joy: 0.00892576389014721
+      love: 0.0027222041971981525
+      none: 0.0
+      optimism: 0.007876959629356861
+      pessimism: 0.0846852958202362
+      sadness: 0.01471609715372324
+      surprise: 0.024262743070721626
+      trust: 0.003720812266692519
+    test_text: '@CNN thanks Hollywood, (Depp). all these climate change fanatics using
+      private jets and gas guzzling cars are to blame for this! #outrage'
+  2018-En-01368:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    - surprise
+    test_outs: anger, disgust, fear, sadness
+    test_preds:
+    - anger
+    - disgust
+    - fear
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.31492552161216736
+      anticipation: 0.025850661098957062
+      disgust: 0.14876027405261993
+      fear: 0.14876027405261993
+      joy: 0.05472585931420326
+      love: 0.0057680620811879635
+      none: 0.0
+      optimism: 0.06201251596212387
+      pessimism: 0.012210987508296967
+      sadness: 0.19101198017597198
+      surprise: 0.025850661098957062
+      trust: 0.010123264975845814
+    test_text: "462 appearances in PL and 200 goals!! 2.31 games per goal. That's\
+      \ very nearly a goal in every 2 games #crap \U0001F602\U0001F602 \U0001F644\U0001F644\
+      \U0001F914\U0001F914 #Rooney"
+  2018-En-01375:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: '#love #worship #praise #praiseandworship #praiseandworshipmusic #praiseand'
+    test_preds:
+    - love
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.0
+      joy: 0.09332509338855743
+      love: 0.6895843744277954
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.04408365115523338
+      sadness: 0.11983179301023483
+      surprise: 0.0
+      trust: 0.05317503958940506
+    test_text: '@eben4u #stayed on you...makes you appreciate love worshiping....All
+      i want to do is worship you!!'
+  2018-En-01449:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    - trust
+    test_outs: anticipation, disgust, fear, optimism, sadness, surprise, trust
+    test_preds:
+    - anticipation
+    - disgust
+    - fear
+    - optimism
+    - sadness
+    - surprise
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.18976230919361115
+      anticipation: 0.2761025130748749
+      disgust: 0.037366412580013275
+      fear: 0.1015724390745163
+      joy: 0.022663874551653862
+      love: 0.06160679832100868
+      none: 0.0
+      optimism: 0.05436781048774719
+      pessimism: 0.029100989922881126
+      sadness: 0.0423416942358017
+      surprise: 0.01765064336359501
+      trust: 0.16746464371681213
+    test_text: 'This is because of people like Saleem Sheikh humanity wins over terrorism
+      n hatred #AmarnathYatraAttacked'
+  2018-En-01452:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - fear
+    test_outs: disgust
+    test_preds:
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.020386330783367157
+      anticipation: 0.038086678832769394
+      disgust: 0.8668488264083862
+      fear: 0.055415790528059006
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0037710920441895723
+      pessimism: 0.0
+      sadness: 0.01236493419855833
+      surprise: 0.003126345109194517
+      trust: 0.0
+    test_text: horrid
+  2018-En-01499:
+    test_classification_loss: 0.0
+    test_gt:
+    - love
+    - sadness
+    test_outs: '. #HarryPotter #HarryPotterAndTheCursedChild
+
+      anticipation, love'
+    test_preds:
+    - anticipation
+    - love
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0720415711402893
+      anticipation: 0.4145705997943878
+      disgust: 0.03403002768754959
+      fear: 0.007593126967549324
+      joy: 0.0816337913274765
+      love: 0.28492990136146545
+      none: 0.0
+      optimism: 0.0160746518522501
+      pessimism: 0.01251895073801279
+      sadness: 0.026502611115574837
+      surprise: 0.0160746518522501
+      trust: 0.03403002768754959
+    test_text: '@MarkWontUseThis You''ll pine for my love one day Crabbe'
+  2018-En-01501:
+    test_classification_loss: 0.0
+    test_gt:
+    - optimism
+    - sadness
+    test_outs: anticipation, joy, optimism
+    test_preds:
+    - anticipation
+    - joy
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.11784572154283524
+      anticipation: 0.24947942793369293
+      disgust: 0.043353017419576645
+      fear: 0.004292530473321676
+      joy: 0.17146454751491547
+      love: 0.11784572154283524
+      none: 0.0
+      optimism: 0.11784572154283524
+      pessimism: 0.02799081616103649
+      sadness: 0.05566637963056564
+      surprise: 0.013221925124526024
+      trust: 0.08099410682916641
+    test_text: '#LouiseLinton - haters gonna hate keep on being your#fabulous self
+      they''ll keep on being  #miserable'
+  2018-En-01502:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: anger
+    test_preds:
+    - anger
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.7151810526847839
+      anticipation: 0.01681944727897644
+      disgust: 0.03560676798224449
+      fear: 0.07537952810525894
+      joy: 0.005460474640130997
+      love: 0.002138352720066905
+      none: 0.0
+      optimism: 0.011559825390577316
+      pessimism: 0.027730578556656837
+      sadness: 0.08541619777679443
+      surprise: 0.0031112846918404102
+      trust: 0.021596597507596016
+    test_text: '@Activehours I need someone to reply back to me immediately. I am
+      not happy and not getting timely responses through the app! #help '
+  2018-En-01533:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - fear
+    - pessimism
+    test_outs: anticipation, optimism, trust
+    test_preds:
+    - anticipation
+    - optimism
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.09180614352226257
+      anticipation: 0.5986513495445251
+      disgust: 0.06309738755226135
+      fear: 0.033773597329854965
+      joy: 0.012424612417817116
+      love: 0.002951103961095214
+      none: 0.0
+      optimism: 0.0382704995572567
+      pessimism: 0.020484723150730133
+      sadness: 0.02630290575325489
+      surprise: 0.06309738755226135
+      trust: 0.04914029687643051
+    test_text: "@stolencarRSA What's the make so we can panic \U0001F603"
+  2018-En-01563:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: '#optimism
+
+      optimism'
+    test_preds:
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.09075315296649933
+      fear: 0.040271468460559845
+      joy: 0.0
+      love: 0.2795393764972687
+      none: 0.0
+      optimism: 0.4067274034023285
+      pessimism: 0.045633550733327866
+      sadness: 0.06639642268419266
+      surprise: 0.07067862153053284
+      trust: 0.0
+    test_text: '@emmajckson awe thank you (,:'
+  2018-En-01580:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    test_outs: '#joy #love #optimism #hope #faith #trust #believe #dreams #life #love
+      #life'
+    test_preds:
+    - joy
+    - love
+    - optimism
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.0
+      joy: 0.43276962637901306
+      love: 0.192040354013443
+      none: 0.0
+      optimism: 0.3166210353374481
+      pessimism: 0.0
+      sadness: 0.0
+      surprise: 0.05856899917125702
+      trust: 0.0
+    test_text: 'Suddenly dreams of mine are coming true. #happy'
+  2018-En-01584:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: '@sprintcares @sprintcare @sprintcares @sprintcares @sprintcares @'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: 'Totally regret signing up with @sprintcare @sprint '
+  2018-En-01590:
+    test_classification_loss: 0.0
+    test_gt:
+    - sadness
+    test_outs: '#sad
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.17288753390312195
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.14332880079746246
+      sadness: 0.6837836503982544
+      surprise: 0.0
+      trust: 0.0
+    test_text: "All and boy play n0 no play dull and m\u1D2Ckes."
+  2018-En-01593:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: '#happy #tea #cuppa #cup #coffee #coffeetime #coffeelover #coffeelovers'
+    test_preds:
+    - love
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: 'When you walk through the door to a cuppa ! #bliss'
+  2018-En-01667:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    test_outs: fear
+    test_preds:
+    - fear
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0024371491745114326
+      anticipation: 0.10363022238016129
+      disgust: 0.006624858360737562
+      fear: 0.8676851987838745
+      joy: 0.0011512277415022254
+      love: 0.0
+      none: 0.0
+      optimism: 0.0007432884885929525
+      pessimism: 0.012376864440739155
+      sadness: 0.0024371491745114326
+      surprise: 0.0010159548837691545
+      trust: 0.001898053684271872
+    test_text: 'A trip to the dentist never gets any easier!! #nervous'
+  2018-En-01682:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: '#loveRafa #loveRafa #loveRafa #loveRafa #loveRafa #loveRafa #'
+    test_preds:
+    - love
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.04468085989356041
+      joy: 0.0
+      love: 0.9553191661834717
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0
+      sadness: 0.0
+      surprise: 0.0
+      trust: 0.0
+    test_text: '@doranadal @JaneForRafffa #big-smile #great post #greatRafa #loveRafa'
+  2018-En-01810:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: anger, disgust
+    test_preds:
+    - anger
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.5618292689323425
+      anticipation: 0.00908112432807684
+      disgust: 0.34076666831970215
+      fear: 0.002156956121325493
+      joy: 0.0020262727048248053
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.04611775651574135
+      sadness: 0.03169623762369156
+      surprise: 0.002296067774295807
+      trust: 0.004029724281281233
+    test_text: 'Can''t Talk To An Incompetent Person. Goes In One Ear and Out The
+      Other. #irritated #NoPoint #MassiveEyeRoll'
+  2018-En-01821:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: anger, disgust, fear
+    test_preds:
+    - anger
+    - disgust
+    - fear
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.6954805254936218
+      anticipation: 0.007257991004735231
+      disgust: 0.17584501206874847
+      fear: 0.09412305057048798
+      joy: 0.007726090494543314
+      love: 0.0009822621941566467
+      none: 0.0
+      optimism: 0.0060170856304466724
+      pessimism: 0.001835107454098761
+      sadness: 0.007257991004735231
+      surprise: 0.0019534616731107235
+      trust: 0.0015213574515655637
+    test_text: 'Won''t be watching ESPN anymore, they took Robert Lee off because
+      of HIS name, PC Police, what insanity! more #hatred #bigots #LeftwingNutJob'
+  2018-En-01849:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: love
+    test_preds:
+    - love
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0039316085167229176
+      anticipation: 0.07418401539325714
+      disgust: 0.008323214948177338
+      fear: 0.01068721991032362
+      joy: 0.1779581904411316
+      love: 0.6211351156234741
+      none: 0.0
+      optimism: 0.03504204377532005
+      pessimism: 0.0032594180665910244
+      sadness: 0.016552690416574478
+      surprise: 0.0039316085167229176
+      trust: 0.04499487951397896
+    test_text: "#intl hey, bae @ssyhoe happy 7th month anniversary \U0001F61A\U0001F495\
+      \ Ily -yours"
+  2018-En-01869:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: anticipation, disgust, fear, joy, love, optimism, pessimism, sadness,
+      surprise, trust
+    test_preds:
+    - anticipation
+    - disgust
+    - fear
+    - joy
+    - love
+    - optimism
+    - pessimism
+    - sadness
+    - surprise
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.20875859260559082
+      anticipation: 0.3037419617176056
+      disgust: 0.052782438695430756
+      fear: 0.017135944217443466
+      joy: 0.0086164940148592
+      love: 0.01512241829186678
+      none: 0.0
+      optimism: 0.0598103404045105
+      pessimism: 0.09861057251691818
+      sadness: 0.1842288076877594
+      surprise: 0.004612077958881855
+      trust: 0.04658034071326256
+    test_text: 'There''s no excuse for making the same mistakes twice. Live &amp;
+      Learn or deal with the consequences of being unhappy #truthbomb'
+  2018-En-01887:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: anticipation, anger, disgust, fear, pessimism, sadness, surprise
+    test_preds:
+    - anger
+    - anticipation
+    - disgust
+    - fear
+    - pessimism
+    - sadness
+    - surprise
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.3349340260028839
+      anticipation: 0.43006381392478943
+      disgust: 0.07473387569189072
+      fear: 0.02426254004240036
+      joy: 0.0
+      love: 0.002557252999395132
+      none: 0.0
+      optimism: 0.03530178591609001
+      pessimism: 0.06595241278409958
+      sadness: 0.015665072947740555
+      surprise: 0.010766436345875263
+      trust: 0.0057628583163022995
+    test_text: 'If you sit back, watch &amp; listen to every .@TheDemocrats &amp;
+      .@DNC member, you''ll quickly learn it''s #Victimhood, #racism, &amp; #hatred.
+      I''m #WOKE'
+  2018-En-01895:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: '#sad
+
+      anger, disgust, sadness'
+    test_preds:
+    - anger
+    - disgust
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.20056797564029694
+      anticipation: 0.0
+      disgust: 0.03710133954882622
+      fear: 0.05071152001619339
+      joy: 0.0
+      love: 0.05398213118314743
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0
+      sadness: 0.6576370000839233
+      surprise: 0.0
+      trust: 0.0
+    test_text: 'Sarah is a complete lunatic. How Chad is still giving her his time
+      is beyond me. #cbb #mad #crazy'
+  2018-En-01910:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    test_outs: anticipation, joy, optimism
+    test_preds:
+    - anticipation
+    - joy
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.00904224906116724
+      anticipation: 0.46377894282341003
+      disgust: 0.003124917857348919
+      fear: 0.01689314655959606
+      joy: 0.40928348898887634
+      love: 0.010907035320997238
+      none: 0.0
+      optimism: 0.07112279534339905
+      pessimism: 0.0
+      sadness: 0.0025906481314450502
+      surprise: 0.006214641034603119
+      trust: 0.007042110897600651
+    test_text: "I could not be happier with my life right now \U0001F60A"
+  2018-En-01944:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - joy
+    - optimism
+    - pessimism
+    - sadness
+    test_outs: "\U0001F602\U0001F602\U0001F602\nanger, disgust, joy"
+    test_preds:
+    - anger
+    - disgust
+    - joy
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.23003357648849487
+      anticipation: 0.04529630020260811
+      disgust: 0.12312812358140945
+      fear: 0.006525550503283739
+      joy: 0.06590573489665985
+      love: 0.058161601424217224
+      none: 0.0
+      optimism: 0.02747359313070774
+      pessimism: 0.10866017639636993
+      sadness: 0.2030039131641388
+      surprise: 0.06590573489665985
+      trust: 0.06590573489665985
+    test_text: "@_elliegillxx @0liviarobertson Poor Lyn \U0001F602\U0001F602\U0001F602\
+      \ livv I hope she forgets yours this year in revenge"
+  2018-En-01965:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - optimism
+    test_outs: anticipation, joy
+    test_preds:
+    - anticipation
+    - joy
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.07460160553455353
+      anticipation: 0.4293026030063629
+      disgust: 0.03523930534720421
+      fear: 0.006518615409731865
+      joy: 0.045248158276081085
+      love: 0.010747380554676056
+      none: 0.0
+      optimism: 0.12299726158380508
+      pessimism: 0.051272884011268616
+      sadness: 0.12299726158380508
+      surprise: 0.03523930534720421
+      trust: 0.06583569198846817
+    test_text: 'Interesting briefing this evening to learn how to shape housing policy
+      in #Epsom&amp;Ewell upto 2032 and @EpsomEwellCA Cllrs absent '
+  2018-En-01987:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.046093959361314774
+      anticipation: 0.07599609345197678
+      disgust: 0.18230518698692322
+      fear: 0.2065788358449936
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.05223130062222481
+      pessimism: 0.12529638409614563
+      sadness: 0.30057042837142944
+      surprise: 0.004287406802177429
+      trust: 0.006640465930104256
+    test_text: 'I''ve come to the conclusion that the online world is seriously ''fucked
+      up'' there''s absolutely no other words to describe #bleak  #grim'
+  2018-En-02032:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    test_outs: '. #RIPChyna
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.14898742735385895
+      anticipation: 0.13148093223571777
+      disgust: 0.07974721491336823
+      fear: 0.21677543222904205
+      joy: 0.02016325481235981
+      love: 0.025890132412314415
+      none: 0.0
+      optimism: 0.0021251915022730827
+      pessimism: 0.037669919431209564
+      sadness: 0.3154063820838928
+      surprise: 0.009524447843432426
+      trust: 0.012229632586240768
+    test_text: Chyna didnt respond to rob cus she knew damn well she was plottin.
+      But i knew he hurt her deeply with that revenge porn
+  2018-En-02070:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: anger, disgust
+    test_preds:
+    - anger
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.5498082637786865
+      anticipation: 0.20226316154003143
+      disgust: 0.1784966140985489
+      fear: 0.01660277508199215
+      joy: 0.0023918559309095144
+      love: 0.0
+      none: 0.0
+      optimism: 0.00419783778488636
+      pessimism: 0.01881340704858303
+      sadness: 0.021318379789590836
+      surprise: 0.006107817869633436
+      trust: 0.0
+    test_text: 'I click on download on my PC. Message says ''Thank you for downloading
+      #iTunes \nSo, where''s the download?! #frustrated '
+  2018-En-02079:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: '#DeltaFail
+
+      anger, disgust, sadness'
+    test_preds:
+    - anger
+    - disgust
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.7455747127532959
+      anticipation: 0.00569253321737051
+      disgust: 0.1295614391565323
+      fear: 0.08904620260000229
+      joy: 0.0010530127910897136
+      love: 0.0
+      none: 0.0
+      optimism: 0.001439297804608941
+      pessimism: 0.012051092460751534
+      sadness: 0.013655680231750011
+      surprise: 0.0010530127910897136
+      trust: 0.0008729781839065254
+    test_text: '@Delta.  Are you kidding?  Delayed from 7:30pm to 11:00 - only to
+      cancel it because the pilot is overtime. '
+  2018-En-02083:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: '#fuming
+
+      anger, disgust'
+    test_preds:
+    - anger
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.10463456064462662
+      anticipation: 0.0
+      disgust: 0.16206121444702148
+      fear: 0.6409645676612854
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.09233967959880829
+      sadness: 0.0
+      surprise: 0.0
+      trust: 0.0
+    test_text: "Seriously about to smack someone in the face \U0001F635 #arsehole"
+  2018-En-02095:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - joy
+    test_outs: 'maroons #nswblues #nsw #qld #stateoforigin2016 #stateoforigin2016'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: 'Counting on you, Queensland. #StateOfOrigin #Broncos #maroons #blues
+      #NSWBlues #qld'
+  2018-En-02112:
+    test_classification_loss: 0.0
+    test_gt:
+    - sadness
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0007308280910365283
+      anticipation: 0.00239629321731627
+      disgust: 0.0009989235550165176
+      fear: 0.02576257847249508
+      joy: 0.0007308280910365283
+      love: 0.00025256743538193405
+      none: 0.0
+      optimism: 0.0004432696441654116
+      pessimism: 0.0008815469918772578
+      sadness: 0.9667336344718933
+      surprise: 0.0005346852703951299
+      trust: 0.0005346852703951299
+    test_text: hit by a sudden wave of sadness
+  2018-En-02116:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - joy
+    - sadness
+    test_outs: anticipation, joy, love, optimism
+    test_preds:
+    - anticipation
+    - joy
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.018400833010673523
+      anticipation: 0.369590699672699
+      disgust: 0.09344716370105743
+      fear: 0.01433058362454176
+      joy: 0.15406832098960876
+      love: 0.07277672737836838
+      none: 0.0
+      optimism: 0.15406832098960876
+      pessimism: 0.026773061603307724
+      sadness: 0.06422523409128189
+      surprise: 0.00869193859398365
+      trust: 0.02362714149057865
+    test_text: "Can't drink all day if u don't start in the morning .. Drake gets\
+      \ me \U0001F61B"
+  2018-En-02117:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    test_outs: joy, optimism
+    test_preds:
+    - joy
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.018483437597751617
+      anticipation: 0.1987156867980957
+      disgust: 0.1987156867980957
+      fear: 0.005295593291521072
+      joy: 0.3712497651576996
+      love: 0.006799676921218634
+      none: 0.0
+      optimism: 0.030474036931991577
+      pessimism: 0.0
+      sadness: 0.010531545616686344
+      surprise: 0.15475994348526
+      trust: 0.004974749404937029
+    test_text: '@DirtyDucko @funder I wish I could like this twice. #hilarious'
+  2018-En-02238:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - joy
+    test_outs: anger, disgust, sadness
+    test_preds:
+    - anger
+    - disgust
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.274750292301178
+      anticipation: 0.05410154163837433
+      disgust: 0.12978284060955048
+      fear: 0.024007411673665047
+      joy: 0.1145329624414444
+      love: 0.007321847137063742
+      none: 0.0
+      optimism: 0.037183407694101334
+      pessimism: 0.0
+      sadness: 0.21397574245929718
+      surprise: 0.12978284060955048
+      trust: 0.014561232179403305
+    test_text: "get to 84 and the intruder alarm is going off... lolz one of the PTs\
+      \ set it off \U0001F648"
+  2018-En-02243:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - joy
+    - optimism
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.04798763245344162
+      anticipation: 0.037372805178165436
+      disgust: 0.05437710881233215
+      fear: 0.07911822944879532
+      joy: 0.11511634290218353
+      love: 0.03298138454556465
+      none: 0.0
+      optimism: 0.10158981382846832
+      pessimism: 0.08965269476175308
+      sadness: 0.40179550647735596
+      surprise: 0.02000422589480877
+      trust: 0.02000422589480877
+    test_text: I like how all itos manga end with the most bleak and hopeless endings,
+      but not doing it in a way to make it look like the protagonist lost
+  2018-En-02314:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - anticipation
+    - disgust
+    - sadness
+    test_outs: '. #sad #sadface #sadness #sademoji
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.13491185009479523
+      fear: 0.03865288197994232
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0
+      sadness: 0.8264352679252625
+      surprise: 0.0
+      trust: 0.0
+    test_text: What's worse than feeling discouraged? Not finding an emoji for feeling
+      discouraged
+  2018-En-02316:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - fear
+    - pessimism
+    test_outs: fear, sadness
+    test_preds:
+    - fear
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.10336492210626602
+      anticipation: 0.24795953929424286
+      disgust: 0.0912192240357399
+      fear: 0.31838634610176086
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.009614435024559498
+      pessimism: 0.017962127923965454
+      sadness: 0.19311107695102692
+      surprise: 0.00748772919178009
+      trust: 0.01089458167552948
+    test_text: today i feel like an exposed wire dangerously close to another exposed
+      wire and any provocation will fry me
+  2018-En-02322:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - sadness
+    test_outs: anger, sadness
+    test_preds:
+    - anger
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.4971505403518677
+      anticipation: 0.08639181405305862
+      disgust: 0.18289147317409515
+      fear: 0.040808603167533875
+      joy: 0.0026088065933436155
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.004301195032894611
+      sadness: 0.18289147317409515
+      surprise: 0.0029561652336269617
+      trust: 0.0
+    test_text: "Head hurting \U0001F624"
+  2018-En-02348:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: 'I''m looking forward to reading it.
+
+      anticipation, joy, love, optimism'
+    test_preds:
+    - anticipation
+    - joy
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.006851815152913332
+      anticipation: 0.4239068031311035
+      disgust: 0.014505293220281601
+      fear: 0.0039040464907884598
+      joy: 0.08347219973802567
+      love: 0.29134660959243774
+      none: 0.0
+      optimism: 0.08347219973802567
+      pessimism: 0.0
+      sadness: 0.006851815152913332
+      surprise: 0.012025310657918453
+      trust: 0.07366395741701126
+    test_text: '@ShiraChess @UMinnPress Congratulations on your book. It looks tremendous!'
+  2018-En-02378:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - sadness
+    test_outs: anger, disgust, fear, sadness
+    test_preds:
+    - anger
+    - disgust
+    - fear
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.5681124925613403
+      anticipation: 0.0024714856408536434
+      disgust: 0.0768856629729271
+      fear: 0.08712287247180939
+      joy: 0.0
+      love: 0.0035959903616458178
+      none: 0.0
+      optimism: 0.0071514807641506195
+      pessimism: 0.01336072850972414
+      sadness: 0.23682451248168945
+      surprise: 0.001096715102903545
+      trust: 0.003378120483830571
+    test_text: 'How sick must someone be that they wish to ''punish'' someone for
+      not being their friend?  #insecure #lonely #miserable #vengeful #RHOC'
+  2018-En-02388:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    - trust
+    test_outs: anticipation, joy, love, optimism
+    test_preds:
+    - anticipation
+    - joy
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0416179820895195
+      anticipation: 0.4474354684352875
+      disgust: 0.1452610343694687
+      fear: 0.03672774136066437
+      joy: 0.12819240987300873
+      love: 0.08810526877641678
+      none: 0.0
+      optimism: 0.06861645728349686
+      pessimism: 0.002660548547282815
+      sadness: 0.010522671043872833
+      surprise: 0.01351137738674879
+      trust: 0.01734895259141922
+    test_text: '@swish41 No offense but the mavs are only my 2nd favorite part about
+      Dallas, 1# is the barbecue #delicious'
+  2018-En-02397:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    - joy
+    - sadness
+    test_outs: '#depression #anxiety
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.012661833316087723
+      anticipation: 0.1361275315284729
+      disgust: 0.020875832065939903
+      fear: 0.32655295729637146
+      joy: 0.023655418306589127
+      love: 0.00721449451521039
+      none: 0.0
+      optimism: 0.030374158173799515
+      pessimism: 0.011174027808010578
+      sadness: 0.4193023145198822
+      surprise: 0.009861045517027378
+      trust: 0.002200296614319086
+    test_text: It's such a strange juxtaposition of emotions. A sense of euphoria
+      but a sense of out most despair.
+  2018-En-02407:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: '#depressing #sigh
+
+      anger, disgust'
+    test_preds:
+    - anger
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.41461876034736633
+      anticipation: 0.01821707747876644
+      disgust: 0.32290542125701904
+      fear: 0.024899791926145554
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.01821707747876644
+      sadness: 0.19585202634334564
+      surprise: 0.00297385617159307
+      trust: 0.0023160416167229414
+    test_text: 'People #honk like #idiots. Culture less indisciplined #Traffic #india
+      #backtoreality #nightmare'
+  2018-En-02412:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    - joy
+    test_outs: anticipation, joy, optimism
+    test_preds:
+    - anticipation
+    - joy
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.014988499693572521
+      anticipation: 0.4963509440422058
+      disgust: 0.086252860724926
+      fear: 0.14220693707466125
+      joy: 0.03173065185546875
+      love: 0.009090985171496868
+      none: 0.0
+      optimism: 0.02800220437347889
+      pessimism: 0.004294277168810368
+      sadness: 0.024711858481168747
+      surprise: 0.086252860724926
+      trust: 0.07611788809299469
+    test_text: "@annakingradio Is that the new studio kit? I'd be terrified of pressing\
+      \ the wrong button and launching something dangerous! \U0001F60A"
+  2018-En-02445:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - joy
+    - optimism
+    - trust
+    test_outs: anticipation, disgust, joy, optimism, pessimism, sadness, surprise,
+      trust
+    test_preds:
+    - anticipation
+    - disgust
+    - joy
+    - optimism
+    - pessimism
+    - sadness
+    - surprise
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.032842863351106644
+      anticipation: 0.4533817172050476
+      disgust: 0.06952834874391556
+      fear: 0.07878594100475311
+      joy: 0.05414872616529465
+      love: 0.07878594100475311
+      none: 0.0
+      optimism: 0.07878594100475311
+      pessimism: 0.01992020197212696
+      sadness: 0.08927616477012634
+      surprise: 0.007328232750296593
+      trust: 0.037215836346149445
+    test_text: "If you are going to be a nurse, learn to be a nice patient person,\
+      \ Jesus \U0001F643 "
+  2018-En-02446:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    test_outs: joy, love
+    test_preds:
+    - joy
+    - love
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0753513053059578
+      disgust: 0.0029216869734227657
+      fear: 0.06649728864431381
+      joy: 0.630908727645874
+      love: 0.12423329800367355
+      none: 0.0
+      optimism: 0.06649728864431381
+      pessimism: 0.002744670957326889
+      sadness: 0.008999429643154144
+      surprise: 0.01483754813671112
+      trust: 0.007008762564510107
+    test_text: 'Just finished #TheKeeperOfLostThings.  Incredible, #charming #book!  LOVED
+      it!! @ruthmariehogan  You weave story telling magic!  LOVE!!!!'
+  2018-En-02484:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - sadness
+    test_outs: disgust
+    test_preds:
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.22502955794334412
+      anticipation: 0.05021087825298309
+      disgust: 0.6116937398910522
+      fear: 0.0568963848054409
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0022061120253056288
+      sadness: 0.05021087825298309
+      surprise: 0.0028327039908617735
+      trust: 0.0009196443133987486
+    test_text: 'The same part of roof bar (driver''s side) are stolen from Grand Vitara
+      cars. Let it be known. This is really #disheartening #brunei'
+  2018-En-02489:
+    test_classification_loss: 0.0
+    test_gt:
+    - sadness
+    test_outs: '#Elektron
+
+      anticipation, joy, optimism'
+    test_preds:
+    - anticipation
+    - joy
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.03329536318778992
+      anticipation: 0.5208271145820618
+      disgust: 0.13168570399284363
+      fear: 0.06220392882823944
+      joy: 0.025930454954504967
+      love: 0.01080942153930664
+      none: 0.0
+      optimism: 0.025930454954504967
+      pessimism: 0.03329536318778992
+      sadness: 0.11621222645044327
+      surprise: 0.013879572041332722
+      trust: 0.025930454954504967
+    test_text: '@WeAreElektron sadly #digitakt seems to be out of stock all over Europe.
+      Do you know  if any European online store that has it?'
+  2018-En-02517:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: anticipation, disgust
+    test_preds:
+    - anticipation
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.16584806144237518
+      anticipation: 0.351100355386734
+      disgust: 0.11398560553789139
+      fear: 0.12916260957717896
+      joy: 0.012013993225991726
+      love: 0.002087719039991498
+      none: 0.0
+      optimism: 0.025433626025915146
+      pessimism: 0.0370057038962841
+      sadness: 0.041932959109544754
+      surprise: 0.08877208083868027
+      trust: 0.03265742212533951
+    test_text: 'United Airline at Newark needs more Kiosks so that people won''t miss
+      their cut off time.  And hire more ppl too.  #horrible'
+  2018-En-02557:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: "\U0001F44E\nanger, disgust, fear, pessimism, sadness"
+    test_preds:
+    - anger
+    - disgust
+    - fear
+    - pessimism
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.47626832127571106
+      anticipation: 0.05019830912351608
+      disgust: 0.1546216905117035
+      fear: 0.1985381692647934
+      joy: 0.002660413272678852
+      love: 0.0023478062357753515
+      none: 0.0
+      optimism: 0.00872316025197506
+      pessimism: 0.07303811609745026
+      sadness: 0.023712003603577614
+      surprise: 0.002660413272678852
+      trust: 0.007231752388179302
+    test_text: "Time to #impeachtrump . He is #crazy #mentally #sick and spews #hatred\
+      \ . #America is in trouble with him having #access to #nuclearcodes \U0001F44E\
+      \U0001F44E"
+  2018-En-02614:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: '#love #peace #honesty #goodness #future
+
+      anticipation, joy, love, optimism, trust'
+    test_preds:
+    - anticipation
+    - joy
+    - love
+    - optimism
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.0
+      joy: 0.07917827367782593
+      love: 0.3548524081707001
+      none: 0.0
+      optimism: 0.07438110560178757
+      pessimism: 0.0
+      sadness: 0.27635931968688965
+      surprise: 0.0
+      trust: 0.215228870511055
+    test_text: '#Look at #those who are #honest and #good, for a #wonderful #future
+      #awaits those who #love #peace.'
+  2018-En-02646:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: anger, disgust, optimism
+    test_preds:
+    - anger
+    - disgust
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.8188018798828125
+      anticipation: 0.08630108088254929
+      disgust: 0.07616044580936432
+      fear: 0.0017911219038069248
+      joy: 0.004868774209171534
+      love: 0.0
+      none: 0.0
+      optimism: 0.0013104126555845141
+      pessimism: 0.003346256213262677
+      sadness: 0.005517043638974428
+      surprise: 0.0011564352316781878
+      trust: 0.0007466506795026362
+    test_text: "Beware the wrath of an angry, frustrated, #agile grandma with a network.\
+      \ \U0001F475\U0001F3FC\U0001F621 I'm just sayin'. #objectlesson"
+  2018-En-02669:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    test_outs: 'and that''s a good thing
+
+      anticipation, joy, optimism, surprise, trust'
+    test_preds:
+    - anticipation
+    - joy
+    - optimism
+    - surprise
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0320792980492115
+      anticipation: 0.4428410232067108
+      disgust: 0.05993201583623886
+      fear: 0.16291211545467377
+      joy: 0.028309877961874008
+      love: 0.07695423066616058
+      none: 0.0
+      optimism: 0.08720056712627411
+      pessimism: 0.046675097197294235
+      sadness: 0.013372637331485748
+      surprise: 0.013372637331485748
+      trust: 0.03635060414671898
+    test_text: a lot of universities actively discourage even just one part-time job
+      because it has a negative impact on studies--
+  2018-En-02677:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: '#FringeUK
+
+      disgust'
+    test_preds:
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.03801615536212921
+      anticipation: 0.15035681426525116
+      disgust: 0.4631315767765045
+      fear: 0.17037658393383026
+      joy: 0.006606217008084059
+      love: 0.010891810990869999
+      none: 0.0
+      optimism: 0.06267803907394409
+      pessimism: 0.009611989371478558
+      sadness: 0.07102353125810623
+      surprise: 0.013985361903905869
+      trust: 0.0033218145836144686
+    test_text: '@JackRuff4 They have this horrible pudding here. Butterscotch pudding
+      on Mondays, it''s dreadful. #Fringe'
+  2018-En-02786:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - joy
+    test_outs: "\U0001F600\U0001F600\U0001F600\U0001F600\U0001F600\U0001F600\U0001F600\
+      \U0001F600\U0001F600\U0001F600\U0001F600\U0001F600"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "@Grinbins I couldn't force myself to give him any money. \U0001F600"
+  2018-En-02798:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    test_outs: anticipation, sadness
+    test_preds:
+    - anticipation
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.01317646075040102
+      anticipation: 0.719410240650177
+      disgust: 0.016918912529945374
+      fear: 0.019171632826328278
+      joy: 0.021724307909607887
+      love: 0.05211390554904938
+      none: 0.0
+      optimism: 0.019171632826328278
+      pessimism: 0.002289725234732032
+      sadness: 0.09736158698797226
+      surprise: 0.03160868212580681
+      trust: 0.0070528495125472546
+    test_text: 'Whenever I turn on the radio and hear Bob Dylan''s Knocking on Heaven''s
+      Door being played, I assume he''s died. #relieved #notyet #someday'
+  2018-En-02809:
+    test_classification_loss: 0.0
+    test_gt:
+    - pessimism
+    - sadness
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.01145167276263237
+      anticipation: 0.007870611734688282
+      disgust: 0.02139454148709774
+      fear: 0.014704239554703236
+      joy: 0.01145167276263237
+      love: 0.004212834872305393
+      none: 0.0
+      optimism: 0.014704239554703236
+      pessimism: 0.10865046083927155
+      sadness: 0.8028242588043213
+      surprise: 0.0013677073875442147
+      trust: 0.0013677073875442147
+    test_text: 'Everytime I think my life is getting better it never comes through
+      #sadly'
+  2018-En-02815:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - joy
+    - love
+    test_outs: '#eclipse2017
+
+      joy, love'
+    test_preds:
+    - joy
+    - love
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.013098441064357758
+      anticipation: 0.14082153141498566
+      disgust: 0.010201076045632362
+      fear: 0.10967192053794861
+      joy: 0.4915153980255127
+      love: 0.10967192053794861
+      none: 0.0
+      optimism: 0.06651937961578369
+      pessimism: 0.0
+      sadness: 0.0033118047285825014
+      surprise: 0.01484247948974371
+      trust: 0.040346041321754456
+    test_text: 'Taking time out of our busy to catch the #great #American #eclipse!
+      It is really incredible to see even our partial view! How was your view?'
+  2018-En-02832:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - pessimism
+    test_outs: '. #sad
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.13806799054145813
+      fear: 0.06521869450807571
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.06942494213581085
+      sadness: 0.4527074694633484
+      surprise: 0.0
+      trust: 0.2745809555053711
+    test_text: I'm glad my kids don't fuck with Blac Youngsta. That nigga terrible
+      for our community
+  2018-En-02842:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - disgust
+    - joy
+    test_outs: anticipation, joy
+    test_preds:
+    - anticipation
+    - joy
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.019108152016997337
+      anticipation: 0.5584220886230469
+      disgust: 0.027802197262644768
+      fear: 0.021652374416589737
+      joy: 0.016862886026501656
+      love: 0.01313282921910286
+      none: 0.0
+      optimism: 0.07557421177625656
+      pessimism: 0.04045196250081062
+      sadness: 0.019108152016997337
+      surprise: 0.14119121432304382
+      trust: 0.06669400632381439
+    test_text: "Soon the trailer will have more likes than views \U0001F606"
+  2018-En-02908:
+    test_classification_loss: 0.0
+    test_gt:
+    - sadness
+    test_outs: "\U0001F61F\U0001F61F\U0001F61F\U0001F61F\U0001F61F\U0001F61F\U0001F61F\
+      \U0001F61F\U0001F61F\U0001F61F\U0001F61F\U0001F61F"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "*on a lighter note*\\nGG, Nkaissery &amp; Total Man? The rate at which\
+      \ Jubilee is losing these votes!! \U0001F61F"
+  2018-En-02922:
+    test_classification_loss: 0.0
+    test_gt: []
+    test_outs: '#bible #prophecy #endtimes
+
+      fear, joy, surprise'
+    test_preds:
+    - fear
+    - joy
+    - surprise
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.018876729533076286
+      anticipation: 0.05814440920948982
+      disgust: 0.039962027221918106
+      fear: 0.6251112818717957
+      joy: 0.039962027221918106
+      love: 0.011449314653873444
+      none: 0.0
+      optimism: 0.08459961414337158
+      pessimism: 0.0037170476280152798
+      sadness: 0.01470121182501316
+      surprise: 0.08459961414337158
+      trust: 0.018876729533076286
+    test_text: "@devlinjim @SophieLong01 What about Daniel 7:9? - his throne\_was\
+      \ like\_the fiery flame,\_and\_his wheels\_as\_burning fire."
+  2018-En-02925:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: '#chopper #deathnote #anime #manga #deathnoteanime #deathnotemanga
+      #deathnoteart #'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: Chopper &lt;&lt;Dammit! Just sink already!&gt;&gt;
+  2018-En-02930:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: . I'm not sure when it happened, but I'm not sure I care. I'm not sure
+      I want to care
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: 'Perks of having that shit: I lost a friend somewhere along in the
+      bitterness'
+  2018-En-02951:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    test_outs: 'I''m not a fan of those either. I''m not a fan of the Marvel movies
+      either.
+
+      disgust
+
+      Input'
+    test_preds:
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.1472393423318863
+      anticipation: 0.07881154119968414
+      disgust: 0.5139157772064209
+      fear: 0.06137848645448685
+      joy: 0.002696782583370805
+      love: 0.004446242470294237
+      none: 0.0017411736771464348
+      optimism: 0.06137848645448685
+      pessimism: 0.04780161753296852
+      sadness: 0.042184777557849884
+      surprise: 0.028993144631385803
+      trust: 0.009412695653736591
+    test_text: '@ShojoPower Yes, or those animated comic book movies!'
+  2018-En-03002:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    - optimism
+    - sadness
+    test_outs: '#depression #sadness #happiness #inspiration #motivation #motivationalquotes
+      #motivationalquote'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.08877461403608322
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.2129591703414917
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0
+      sadness: 0.6982662081718445
+      surprise: 0.0
+      trust: 0.0
+    test_text: 'We need but little learning to live happily - Michel de Montaigne
+      #quote #philosophy #wisdom #wisewords #mentalhealth #psychology #anxiety'
+  2018-En-03025:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    - pessimism
+    test_outs: fear
+    test_preds:
+    - fear
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.00784472655504942
+      anticipation: 0.04514328017830849
+      disgust: 0.010072827339172363
+      fear: 0.9067270755767822
+      joy: 0.0004157552612014115
+      love: 0.0
+      none: 0.0
+      optimism: 0.0041989791207015514
+      pessimism: 0.001130139920860529
+      sadness: 0.006109478883445263
+      surprise: 0.016607286408543587
+      trust: 0.0017503950512036681
+    test_text: 'The entire Universe outside our galaxy could completely disappeared
+      over 20,000 years ago and we still wouldn''t know it yet.. #terrifying'
+  2018-En-03036:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - sadness
+    test_outs: 'because of a virus. #sucks
+
+      anger, disgust'
+    test_preds:
+    - anger
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.44455623626708984
+      anticipation: 0.011847020126879215
+      disgust: 0.2379538118839264
+      fear: 0.16354310512542725
+      joy: 0.0015061799203976989
+      love: 0.0
+      none: 0.0
+      optimism: 0.0011019448284059763
+      pessimism: 0.0
+      sadness: 0.12736749649047852
+      surprise: 0.00718558207154274
+      trust: 0.0049385735765099525
+    test_text: 'So now I have to buy a whole new computer '
+  2018-En-03041:
+    test_classification_loss: 0.0
+    test_gt: []
+    test_outs: trust
+    test_preds:
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0777202621102333
+      anticipation: 0.14520056545734406
+      disgust: 0.09979479014873505
+      fear: 0.14520056545734406
+      joy: 0.011918787844479084
+      love: 0.03239862620830536
+      none: 0.0
+      optimism: 0.08806858956813812
+      pessimism: 0.028591684997081757
+      sadness: 0.009282360784709454
+      surprise: 0.013505755923688412
+      trust: 0.34831804037094116
+    test_text: '#ThingsIveLearned The wise #shepherd never trusts his flock to a #smiling
+      wolf. #TeamFollowBack #fact #wisewords'
+  2018-En-03060:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - fear
+    test_outs: '#Trump #MAGA
+
+      anger, disgust, pessimism, sadness'
+    test_preds:
+    - anger
+    - disgust
+    - pessimism
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.4235821068286896
+      anticipation: 0.3298860788345337
+      disgust: 0.09451394528150558
+      fear: 0.10709832608699799
+      joy: 0.0010499551426619291
+      love: 0.0
+      none: 0.0
+      optimism: 0.006846567150205374
+      pessimism: 0.012791071087121964
+      sadness: 0.011288080364465714
+      surprise: 0.004152652807533741
+      trust: 0.008791166357696056
+    test_text: '@FreeBeacon Shows how desperate the Dems are. They always ignore facts
+      and hurl scare tactics.'
+  2018-En-03065:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    - pessimism
+    test_outs: '#quote
+
+      optimism'
+    test_preds:
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.013890848495066166
+      anticipation: 0.1917572170495987
+      disgust: 0.0017660228768363595
+      fear: 0.0
+      joy: 0.03775923326611519
+      love: 0.017836201936006546
+      none: 0.0
+      optimism: 0.5212501287460327
+      pessimism: 0.1917572170495987
+      sadness: 0.008425223641097546
+      surprise: 0.003299364820122719
+      trust: 0.01225863117724657
+    test_text: The pessimist complains about the wind; the optimist expects it to
+      change; the realist adjusts the sails.
+  2018-En-03087:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: "\U0001F602\U0001F602\U0001F602\U0001F602\U0001F602\U0001F602\U0001F602\
+      \U0001F602\U0001F602\U0001F602\U0001F602\U0001F602"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "We're really not afraid of you all. We find you rather #annoying &amp;\
+      \ #amusing. \U0001F60E\U0001F61C\U0001F923\U0001F602\U0001F602"
+  2018-En-03099:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: '? I''m not sure if I''m supposed to be happy or not
+
+      joy'
+    test_preds:
+    - joy
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.17931702733039856
+      anticipation: 0.12324266135692596
+      disgust: 0.0311606265604496
+      fear: 0.04533843696117401
+      joy: 0.2302476167678833
+      love: 0.010116374120116234
+      none: 0.006531622260808945
+      optimism: 0.040011029690504074
+      pessimism: 0.1582467257976532
+      sadness: 0.13965222239494324
+      surprise: 0.02141636610031128
+      trust: 0.014719237573444843
+    test_text: '@CTAFails @cta is it ok for your drivers to smile not open the door
+      and drive off '
+  2018-En-03131:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    test_outs: "\U0001F602\U0001F602\U0001F602\U0001F602\U0001F602\U0001F602\U0001F602\
+      \U0001F602\U0001F602\U0001F602\U0001F602\U0001F602"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "@jaassiieeeee I will not fall to the dark side\U0001F602\U0001F602"
+  2018-En-03142:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - pessimism
+    - sadness
+    test_outs: '#youcaved #youcaved #youcaved #youcaved #youcaved #youcaved #'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: '@TGowdySC No wonder why we''re in this mess. #NoLoyalty #youcaved '
+  2018-En-03237:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - pessimism
+    - sadness
+    test_outs: disgust, pessimism
+    test_preds:
+    - disgust
+    - pessimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.09527742862701416
+      anticipation: 0.05778868496417999
+      disgust: 0.7977481484413147
+      fear: 0.014611267484724522
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0010584365809336305
+      pessimism: 0.011379266157746315
+      sadness: 0.021259266883134842
+      surprise: 0.0008774747839197516
+      trust: 0.0
+    test_text: "was one moron  driving his oversize tonka truck with the big flag\
+      \ in the bed back and forth blaring country music. \U0001F610 #disappointment"
+  2018-En-03252:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: 'THEMSELVES
+
+      anger, disgust'
+    test_preds:
+    - anger
+    - disgust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.5094733834266663
+      anticipation: 0.00365420151501894
+      disgust: 0.39677828550338745
+      fear: 0.0034328047186136246
+      joy: 0.004140752833336592
+      love: 0.0023593297228217125
+      none: 0.0
+      optimism: 0.007267247419804335
+      pessimism: 0.0023593297228217125
+      sadness: 0.060847919434309006
+      surprise: 0.0046920874156057835
+      trust: 0.004994701128453016
+    test_text: '@AliceT120 @shaney_waney1 @shaney_waney1 u horrible non gender binary
+      boy go fangirl over some mediocre singers who CANT EVEN SUPPORT'
+  2018-En-03257:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: '#mumlife #mumlife #mumlife #mumlife #mumlife #mumlife #'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: '05.30 is my time......brew, toast and TV before anyone else gets up  #earlydoors
+      #mumlife #lifewithtoddlers'
+  2018-En-03300:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - pessimism
+    - sadness
+    test_outs: '#sadness
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.05498506873846054
+      fear: 0.029431387782096863
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0
+      sadness: 0.915583610534668
+      surprise: 0.0
+      trust: 0.0
+    test_text: 'I posted a snap of my dad, and someone thought he was my GRANDMOTHER
+      #crying'
+  2018-En-03322:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    test_outs: anticipation, joy, surprise
+    test_preds:
+    - anticipation
+    - joy
+    - surprise
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.015097962692379951
+      anticipation: 0.7274606227874756
+      disgust: 0.021967407315969467
+      fear: 0.05971360579133034
+      joy: 0.024892333894968033
+      love: 0.0
+      none: 0.0
+      optimism: 0.046505000442266464
+      pessimism: 0.00555423041805625
+      sadness: 0.0193861685693264
+      surprise: 0.06766438484191895
+      trust: 0.011758306063711643
+    test_text: 'Definitely something happening today #SolarEclipse2017 #weird #annoyed'
+  2018-En-03330:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    test_outs: 'also
+
+      anger, disgust, fear, pessimism'
+    test_preds:
+    - anger
+    - disgust
+    - fear
+    - pessimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.17303481698036194
+      anticipation: 0.1049509346485138
+      disgust: 0.1527026891708374
+      fear: 0.1527026891708374
+      joy: 0.011775166727602482
+      love: 0.043750058859586716
+      none: 0.0
+      optimism: 0.06365595757961273
+      pessimism: 0.07213164865970612
+      sadness: 0.08173587173223495
+      surprise: 0.03860928863286972
+      trust: 0.1049509346485138
+    test_text: '@NitashaKaul @Snehakaul2Kaul so beautiful dear, thanks,everybody knows
+      it is in benefit of India &amp; GOI has done this terror attack as before'
+  2018-En-03471:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: '#sad #sadness #sadgirl #sadboy #sadboi #sadboi #sadboi #sad'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.07844142615795135
+      fear: 0.12932807207107544
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0
+      sadness: 0.792230486869812
+      surprise: 0.0
+      trust: 0.0
+    test_text: 'I''m sorry but also...fuck you #currentfeels #anger #bpd #eupd #borderliner
+      #mentalhealth #anxiety #depression #confused'
+  2018-En-03633:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - sadness
+    test_outs: '. #sad
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.0
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.08509904891252518
+      sadness: 0.9149009585380554
+      surprise: 0.0
+      trust: 0.0
+    test_text: 'I feel like I should be watching #glee, but #glee will just make me
+      cry and I''m trying to remember happy times'
+  2018-En-03707:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - sadness
+    test_outs: disgust, fear, sadness
+    test_preds:
+    - disgust
+    - fear
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.09885852783918381
+      anticipation: 0.1438383162021637
+      disgust: 0.26872530579566956
+      fear: 0.12693685293197632
+      joy: 0.022058315575122833
+      love: 0.02832343801856041
+      none: 0.0
+      optimism: 0.00557721545919776
+      pessimism: 0.02832343801856041
+      sadness: 0.23714925348758698
+      surprise: 0.03209466114640236
+      trust: 0.008114800788462162
+    test_text: '@Rainbow6Game felt guilt from playing this game. #horrible #RainbowSixSiege'
+  2018-En-03750:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.06695041060447693
+      anticipation: 0.024629676714539528
+      disgust: 0.06695041060447693
+      fear: 0.00662898737937212
+      joy: 0.010929352603852749
+      love: 0.02173561416566372
+      none: 0.0
+      optimism: 0.02790907956659794
+      pessimism: 0.02790907956659794
+      sadness: 0.719784677028656
+      surprise: 0.009645119309425354
+      trust: 0.01692771352827549
+    test_text: and i shouldve cut them off the moment i started hurting myself over
+      them :o
+  2018-En-03783:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    test_outs: '. #sadness
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.049266088753938675
+      fear: 0.28350672125816345
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.18304568529129028
+      pessimism: 0.07168173789978027
+      sadness: 0.4124998152256012
+      surprise: 0.0
+      trust: 0.0
+    test_text: '@GILMONK1 Maybe to stand in the field to scare away the crows'
+  2018-En-03798:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: anticipation, disgust, fear, sadness
+    test_preds:
+    - anticipation
+    - disgust
+    - fear
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.13302147388458252
+      anticipation: 0.2816064953804016
+      disgust: 0.1935451328754425
+      fear: 0.24851685762405396
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.005157803185284138
+      pessimism: 0.005844556260854006
+      sadness: 0.11739104241132736
+      surprise: 0.014020361006259918
+      trust: 0.0008962918072938919
+    test_text: '@angrydwarf9 @carolinesandall It ruins my frigging night each night
+      at 9pm. Mrs loves it, i''ve been early to bed for a month. #dreadful'
+  2018-En-03846:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - pessimism
+    - sadness
+    test_outs: 'Don''t let them get to you. #MondayMotivation
+
+      anticipation, optimism'
+    test_preds:
+    - anticipation
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.03322846442461014
+      anticipation: 0.5197806358337402
+      disgust: 0.022837568074464798
+      fear: 0.0018746217247098684
+      joy: 0.04266619309782982
+      love: 0.07034465670585632
+      none: 0.0
+      optimism: 0.16874806582927704
+      pessimism: 0.020154081284999847
+      sadness: 0.062078945338726044
+      surprise: 0.0035022543743252754
+      trust: 0.05478447303175926
+    test_text: Some 'friends' get bitter when it seems your life is moving better
+      than theirs.
+  2018-En-03853:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - sadness
+    test_outs: "I'll be back. \u2014 I'll be back. \u2014 I'll be back. \u2014 I'll\
+      \ be back. \u2014 I"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "[ @TheChicMystique ] \u2014 hurting badly and that he can't just leave\
+      \ him like that. Angry and heartless. ]\\n\\nI promise you that I'll be back,\
+      \ \u2014"
+  2018-En-03867:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    test_outs: '#FFXII
+
+      joy, love, optimism'
+    test_preds:
+    - joy
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.002227149670943618
+      anticipation: 0.12944066524505615
+      disgust: 0.0
+      fear: 0.009981391951441765
+      joy: 0.5801128149032593
+      love: 0.08896318823099136
+      none: 0.0
+      optimism: 0.16620510816574097
+      pessimism: 0.0
+      sadness: 0.012039855122566223
+      surprise: 0.005342653952538967
+      trust: 0.0056872256100177765
+    test_text: 'if today is the first time you''re playing FFXII I am happy for you.
+      #Zodiacage'
+  2018-En-03880:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: anticipation, joy, love, optimism
+    test_preds:
+    - anticipation
+    - joy
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.03754778951406479
+      anticipation: 0.40367674827575684
+      disgust: 0.03754778951406479
+      fear: 0.006524826865643263
+      joy: 0.3562434911727905
+      love: 0.06190583482384682
+      none: 0.0
+      optimism: 0.04254721477627754
+      pessimism: 0.002555158920586109
+      sadness: 0.029242247343063354
+      surprise: 0.010757620446383953
+      trust: 0.011451427824795246
+    test_text: '@PuddlesPityP once again you have made me a very happy woman! Thx
+      P and Casey. Sigh. #worththewait #cry #beyootifulll'
+  2018-En-03891:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - sadness
+    test_outs: anticipation, disgust, fear, joy, love, optimism, pessimism, sadness,
+      surprise, trust
+    test_preds:
+    - anticipation
+    - disgust
+    - fear
+    - joy
+    - love
+    - optimism
+    - pessimism
+    - sadness
+    - surprise
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.16907688975334167
+      anticipation: 0.5207934975624084
+      disgust: 0.07048173248767853
+      fear: 0.11620472371578217
+      joy: 0.008417842909693718
+      love: 0.010808723978698254
+      none: 0.0
+      optimism: 0.010808723978698254
+      pessimism: 0.010808723978698254
+      sadness: 0.07986626029014587
+      surprise: 0.0
+      trust: 0.0027328734286129475
+    test_text: "\u201C#Woe unto #you that are #full! for ye shall #hunger. #Woe unto\
+      \ you that #laugh now! for ye shall #mourn and #weep.\u201D\\nLuke 6:25"
+  2018-En-03902:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    - surprise
+    - trust
+    test_outs: '#naruto
+
+      anticipation, joy, love, optimism, trust'
+    test_preds:
+    - anticipation
+    - joy
+    - love
+    - optimism
+    - trust
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.05368896201252937
+      anticipation: 0.5093867182731628
+      disgust: 0.028737632557749748
+      fear: 0.16537365317344666
+      joy: 0.05368896201252937
+      love: 0.008233468979597092
+      none: 0.0
+      optimism: 0.04181300848722458
+      pessimism: 0.05368896201252937
+      sadness: 0.028737632557749748
+      surprise: 0.03689984977245331
+      trust: 0.019751066341996193
+    test_text: Even in an incomplete state, the Ten-Tails possesses immense physical
+      strength and is remarkably fast, despite its tremendous size.
+  2018-En-03931:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    test_outs: '#sad
+
+      pessimism, sadness'
+    test_preds:
+    - pessimism
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.247125044465065
+      fear: 0.06248299777507782
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.05180022120475769
+      sadness: 0.4337179362773895
+      surprise: 0.0
+      trust: 0.20487384498119354
+    test_text: '@AleOfATime It would be shocking, but it''s simply evidence of another
+      entity entering a market assuming cash alone wins the game.'
+  2018-En-03942:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    test_outs: '#IdahoWolves
+
+      fear'
+    test_preds:
+    - fear
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.01996620185673237
+      anticipation: 0.1301959902048111
+      disgust: 0.008323151618242264
+      fear: 0.6611897945404053
+      joy: 0.015549694187939167
+      love: 0.015549694187939167
+      none: 0.0
+      optimism: 0.047896429896354675
+      pessimism: 0.025637110695242882
+      sadness: 0.03291869908571243
+      surprise: 0.013722555711865425
+      trust: 0.02905065193772316
+    test_text: 'Over 4 million acres to live, there''s no reason #Idaho residents
+      should #fear #wolves. #Help prevent them from becoming #endangered again.'
+  2018-En-04000:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - optimism
+    test_outs: optimism
+    test_preds:
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0027674525044858456
+      anticipation: 0.027950281277298927
+      disgust: 0.001678544795140624
+      fear: 0.040667418390512466
+      joy: 0.1252644658088684
+      love: 0.03588886931538582
+      none: 0.0
+      optimism: 0.7208472490310669
+      pessimism: 0.027950281277298927
+      sadness: 0.0037826593033969402
+      surprise: 0.0
+      trust: 0.013202778063714504
+    test_text: '''The point of living, and being an optimist, is to be foolish enough
+      to believe the best is yet to come'' - Peter Ustinov #optimism #quote'
+  2018-En-04038:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    test_outs: love
+    test_preds:
+    - love
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.003426512936130166
+      anticipation: 0.026951611042022705
+      disgust: 0.00098171248100698
+      fear: 0.0
+      joy: 0.3720555007457733
+      love: 0.5413376092910767
+      none: 0.0
+      optimism: 0.018523553386330605
+      pessimism: 0.0
+      sadness: 0.009914944879710674
+      surprise: 0.003023887285962701
+      trust: 0.023784715682268143
+    test_text: '@MichealArroyo2 Nope, thanks though. It took me yrs to find my hubby
+      and he''s great.  He makes life great. # he really is #awesomeness'
+  2018-En-04047:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - sadness
+    test_outs: anger, sadness
+    test_preds:
+    - anger
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.57651287317276
+      anticipation: 0.006817533168941736
+      disgust: 0.1286374181509018
+      fear: 0.05362405255436897
+      joy: 0.028702884912490845
+      love: 0.06076400727033615
+      none: 0.0
+      optimism: 0.017409181222319603
+      pessimism: 0.019727185368537903
+      sadness: 0.1001829132437706
+      surprise: 0.003220374695956707
+      trust: 0.00440172990784049
+    test_text: 'Blah blah blah Kyrie, IT, etc. @CJC9BOSS leaving Boston is the real
+      news and I am #devastated! #celtics #fave  #someonegetmeajerseyteeasap'
+  2018-En-04066:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: "\U0001F600\U0001F600\U0001F600\U0001F600\U0001F600\U0001F600\U0001F600\
+      \U0001F600\U0001F600\U0001F600\U0001F600\U0001F600"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "@FierzaaRBX hi fierzaa i hope you be my friend in roblox btw i love\
+      \ kat and username:USATylerX \U0001F600"
+  2018-En-04082:
+    test_classification_loss: 0.0
+    test_gt:
+    - fear
+    - optimism
+    - trust
+    test_outs: '#Lord.
+
+      fear, love, optimism, surprise'
+    test_preds:
+    - fear
+    - love
+    - optimism
+    - surprise
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.11389345675706863
+      anticipation: 0.24111250042915344
+      disgust: 0.041899070143699646
+      fear: 0.4504574239253998
+      joy: 0.01979171857237816
+      love: 0.03697579726576805
+      none: 0.0
+      optimism: 0.02242695353925228
+      pessimism: 0.010593743063509464
+      sadness: 0.018592597916722298
+      surprise: 0.007280966266989708
+      trust: 0.03697579726576805
+    test_text: 'Leviticus 19:14\nYou shall not curse the #deaf or put a stumbling
+      #block before the #blind, but you shall #fear your #God: I am the [1/2]'
+  2018-En-04125:
+    test_classification_loss: 0.0
+    test_gt:
+    - pessimism
+    - sadness
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.05238158255815506
+      anticipation: 0.003564611542969942
+      disgust: 0.04079481586813927
+      fear: 0.0026079255621880293
+      joy: 0.010314545594155788
+      love: 0.011687911115586758
+      none: 0.0
+      optimism: 0.006256088148802519
+      pessimism: 0.046226583421230316
+      sadness: 0.819385826587677
+      surprise: 0.0048722461797297
+      trust: 0.0019079989288002253
+    test_text: 'Lost my appetite for the past 5 days and I swear I already lost 3
+      pounds #depressing #at #least #i #will #be #skinny #for #pride #weekend'
+  2018-En-04148:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: '#CFC
+
+      anger'
+    test_preds:
+    - anger
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.8919396996498108
+      anticipation: 0.08296331763267517
+      disgust: 0.0025052749551832676
+      fear: 0.0112278638407588
+      joy: 0.000813343736808747
+      love: 0.0
+      none: 0.0
+      optimism: 0.0028388486243784428
+      pessimism: 0.00161752721760422
+      sadness: 0.0032168368343263865
+      surprise: 0.00161752721760422
+      trust: 0.0012597314780578017
+    test_text: '@chelston_dsouza Conte is furious with his board, wants all of them
+      or he quits.'
+  2018-En-04160:
+    test_classification_loss: 0.0
+    test_gt:
+    - optimism
+    - trust
+    test_outs: 'Cop was nice. End of story. #sadness
+
+      pessimism, sadness'
+    test_preds:
+    - pessimism
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0
+      anticipation: 0.0
+      disgust: 0.0
+      fear: 0.13296420872211456
+      joy: 0.0
+      love: 0.0
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.0
+      sadness: 0.8670358061790466
+      surprise: 0.0
+      trust: 0.0
+    test_text: '@meppenbrock @nypost Non-story.\nDaughter tripped home alarm. Cop
+      responded.'
+  2018-En-04182:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: '#help #helping #helpingothers #helpinghand #helpingpeople #helpingout
+      #helpingeach'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: 'Idk why but when I help someone,  a smile comes on my lips.\n\n#thatisall
+      #ieverwant #noneeds #justyou #love #peace #smiling #faces #kindness'
+  2018-En-04221:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    - pessimism
+    - sadness
+    test_outs: . You are a disgrace to the sport. You are a disgrace to the media.
+      You are a disgrace to the world.
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: '@RealSkipBayless Your opinions on sports is dreadful'
+  2018-En-04243:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: "\U0001F603\U0001F603\U0001F603\U0001F603\U0001F603\U0001F603\U0001F603\
+      \U0001F603\U0001F603\U0001F603\U0001F603\U0001F603"
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: "Good morning and happy Tuesday! I hope you have a terrific day! Enjoy\
+      \ it tons \U0001F603"
+  2018-En-04244:
+    test_classification_loss: 0.0
+    test_gt:
+    - anticipation
+    - joy
+    - optimism
+    test_outs: anticipation, joy, love, optimism
+    test_preds:
+    - anticipation
+    - joy
+    - love
+    - optimism
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.00936860404908657
+      anticipation: 0.6567898988723755
+      disgust: 0.019833337515592575
+      fear: 0.02546650730073452
+      joy: 0.10072200000286102
+      love: 0.06109097972512245
+      none: 0.0
+      optimism: 0.06922514736652374
+      pessimism: 0.02247411385178566
+      sadness: 0.013631239533424377
+      surprise: 0.00936860404908657
+      trust: 0.012029526755213737
+    test_text: "@MonikaGoswamiRK I just see 2 episodes #DilLagi but still curious\
+      \ why you're falling for the Hero \U0001F606 watching more soon.. \U0001F609\
+      \U0001F603"
+  2018-En-04245:
+    test_classification_loss: 0.0
+    test_gt:
+    - anger
+    - disgust
+    test_outs: fear, sadness
+    test_preds:
+    - fear
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.12342584133148193
+      anticipation: 0.05145154520869255
+      disgust: 0.09612414240837097
+      fear: 0.2612924873828888
+      joy: 0.08482925593852997
+      love: 0.04007050767540932
+      none: 0.0
+      optimism: 0.0748615637421608
+      pessimism: 0.011480391025543213
+      sadness: 0.13985981047153473
+      surprise: 0.05830223858356476
+      trust: 0.05830223858356476
+    test_text: '@who_cares_nvm The destroying of my memory is my goal so ECT might
+      work. Or a zapper thingy like in Men in Black. Or Dumbledore''s pensive.'
+  2018-En-04274:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - pessimism
+    - sadness
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.1731407195329666
+      anticipation: 0.15279613435268402
+      disgust: 0.15279613435268402
+      fear: 0.030087344348430634
+      joy: 0.014212255366146564
+      love: 0.004614043515175581
+      none: 0.0
+      optimism: 0.038632914423942566
+      pessimism: 0.0265519879758358
+      sadness: 0.3234694302082062
+      surprise: 0.034093424677848816
+      trust: 0.04960564896464348
+    test_text: '@Cmdr_Hadfield CNN''s Wolf Blitzer calls you an American astronaut
+      and you don''t correct him? #dissapointed'
+  2018-En-04307:
+    test_classification_loss: 0.0
+    test_gt:
+    - optimism
+    test_outs: anger, fear, sadness
+    test_preds:
+    - anger
+    - fear
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.5949510931968689
+      anticipation: 0.2810349762439728
+      disgust: 0.02962086908519268
+      fear: 0.026140326634049416
+      joy: 0.007972348481416702
+      love: 0.00748932920396328
+      none: 0.0
+      optimism: 0.0
+      pessimism: 0.014894308522343636
+      sadness: 0.01796596683561802
+      surprise: 0.010896909981966019
+      trust: 0.00903385505080223
+    test_text: "+++ '#Dearly #beloved, avenge not yourselves, but rather give place\
+      \ unto #wrath: for it is #written, #Vengeance is #mine; I \u2026' #Romans12v19"
+  2018-En-04319:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - pessimism
+    - sadness
+    test_outs: sadness
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.02650361880660057
+      anticipation: 0.0043265968561172485
+      disgust: 0.2514593303203583
+      fear: 0.06357887387275696
+      joy: 0.0015916660195216537
+      love: 0.005555459763854742
+      none: 0.0
+      optimism: 0.007593413814902306
+      pessimism: 0.030032532289624214
+      sadness: 0.6032195687294006
+      surprise: 0.00297362357378006
+      trust: 0.003165405709296465
+    test_text: "@vivaonline Oh schade \U0001F641"
+  2018-En-04327:
+    test_classification_loss: 0.0
+    test_gt:
+    - optimism
+    test_outs: '.
+
+      love, sadness'
+    test_preds:
+    - love
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.008078383281826973
+      anticipation: 0.0
+      disgust: 0.0040620663203299046
+      fear: 0.14319276809692383
+      joy: 0.18386316299438477
+      love: 0.2675193250179291
+      none: 0.0
+      optimism: 0.2083442658185959
+      pessimism: 0.0075889392755925655
+      sadness: 0.16225866973400116
+      surprise: 0.0
+      trust: 0.01509240735322237
+    test_text: '@JusticeWillett Lord, we don''t understand tragedy. Do what You do
+      best: bring good grom it and comfort those who mourn. Amen'
+  2018-En-04358:
+    test_classification_loss: 0.0
+    test_gt:
+    - joy
+    - love
+    - optimism
+    test_outs: '#inspiration #inspirational #inspirationalquotes #inspirationalquote
+      #inspirationalquotes #inspir'
+    test_preds: []
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.0833333358168602
+      anticipation: 0.0833333358168602
+      disgust: 0.0833333358168602
+      fear: 0.0833333358168602
+      joy: 0.0833333358168602
+      love: 0.0833333358168602
+      none: 0.0833333358168602
+      optimism: 0.0833333358168602
+      pessimism: 0.0833333358168602
+      sadness: 0.0833333358168602
+      surprise: 0.0833333358168602
+      trust: 0.0833333358168602
+    test_text: 'Nothing is more #beautiful than a #smile that has struggled through
+      tears.'
+  2018-En-04369:
+    test_classification_loss: 0.0
+    test_gt:
+    - disgust
+    - fear
+    - sadness
+    test_outs: '#Monday
+
+      sadness'
+    test_preds:
+    - sadness
+    test_prefix_outs: null
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      anger: 0.09791185706853867
+      anticipation: 0.20727941393852234
+      disgust: 0.09791185706853867
+      fear: 0.1257213056087494
+      joy: 0.021847089752554893
+      love: 0.0020320957992225885
+      none: 0.0
+      optimism: 0.011693904176354408
+      pessimism: 0.1257213056087494
+      sadness: 0.3015897572040558
+      surprise: 0.0062592956237494946
+      trust: 0.0020320957992225885
+    test_text: "Ugh. What's wrong with me today? Feel absolutely dreadful \U0001F613\
+      \ I wonder if I'm fighting something off...? Roll on home time."
+  description: ''

@@ -1,0 +1,115 @@
+DEBUG-vDistributionEstimator(2026-03-11 04:20:09,588)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 04:20:10,109)   test: Label set: a, b
+Example prompt: Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Is it my turn to point out he's clearly at school? I haven't checked the rota for this post this week.
+a. anger
+b. admiration
+Correct Label: b
+
+Question: Are they jealous that they are playing a better sport.
+a. surprise
+b. admiration
+Correct Label: a
+
+Question: people voted for a wall it's a democracy. you don't always get what you want
+a. admiration
+b. none
+Correct Label: a
+
+Question: Can you explain to me what SW BRT means?
+a. surprise
+b. admiration
+Correct Label: a
+
+Question: He told you to handle it, you did. If he doesn't like it, he should've taken care of it.
+a. anger
+b. fear
+Correct Label: a
+
+Question: This is such a lame idea. Instead of getting better and outplaying your opponent, you just want to make your opponent worse. Sad.
+a. joy
+b. anger
+Correct Label: b
+
+Question: aww hell no. This fucking ad
+a. joy
+b. anger
+Correct Label: b
+
+Question: No, we should increase border security because we have an absurd number of people crossing illegally.
+a. sadness
+b. anger
+Correct Label: b
+
+Question: Nothing to worry about. 4 inches is fine. You will do well because you are a nice guy.
+a. admiration
+b. sadness
+Correct Label: a
+
+Question: I have no idea what your post means but I love your name and you are one of us
+a. admiration
+b. surprise
+Correct Label: b
+
+Question: At least now [NAME] has more time to gain his confidence
+a. joy
+b. optimism
+Correct Label: 
+Example tokenization: <|begin_of_text|>Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: Is it my turn to point out he's clearly at school? I haven't checked the rota for this post this week.
+a. anger
+b. admiration
+Correct Label: b
+
+Question: Are they jealous that they are playing a better sport.
+a. surprise
+b. admiration
+Correct Label: a
+
+Question: people voted for a wall it's a democracy. you don't always get what you want
+a. admiration
+b. none
+Correct Label: a
+
+Question: Can you explain to me what SW BRT means?
+a. surprise
+b. admiration
+Correct Label: a
+
+Question: He told you to handle it, you did. If he doesn't like it, he should've taken care of it.
+a. anger
+b. fear
+Correct Label: a
+
+Question: This is such a lame idea. Instead of getting better and outplaying your opponent, you just want to make your opponent worse. Sad.
+a. joy
+b. anger
+Correct Label: b
+
+Question: aww hell no. This fucking ad
+a. joy
+b. anger
+Correct Label: b
+
+Question: No, we should increase border security because we have an absurd number of people crossing illegally.
+a. sadness
+b. anger
+Correct Label: b
+
+Question: Nothing to worry about. 4 inches is fine. You will do well because you are a nice guy.
+a. admiration
+b. sadness
+Correct Label: a
+
+Question: I have no idea what your post means but I love your name and you are one of us
+a. admiration
+b. surprise
+Correct Label: b
+
+Question: At least now [NAME] has more time to gain his confidence
+a. joy
+b. optimism
+Correct Label: 
+INFO-vDistributionEstimator(2026-03-11 04:50:08,903)   Testing metrics for Binary breakdown dataset: 
