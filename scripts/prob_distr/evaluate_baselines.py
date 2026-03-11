@@ -79,14 +79,17 @@ def calculate_paper_metrics(max_distributions, experiment_data, label_set, raw_h
     """
     l1_distances = []
     nlls = []
+    example_f1s = []
     all_preds_binary = []
     all_gts_binary = []
+    EPSILON = 1e-8
 
     for example_id, max_scores in max_distributions.items():
         datum = experiment_data[example_id]
 
         # Binary GT
         binary_gt = datum.get('test_gt', ['none'])
+
         # Distribution GT (if available)
         is_distribution = False
         if raw_human_distributions and example_id in raw_human_distributions:
@@ -100,31 +103,62 @@ def calculate_paper_metrics(max_distributions, experiment_data, label_set, raw_h
             gt_raw = datum.get('test_gt', [])
             gt_data = gt_raw if gt_raw else ['none']
         
-        # 1. Negative Log-Likelihood (NLL) - binary labels
-        nll = 0
-        for g in binary_gt:
-            prob = max_scores.get(g, 0.0)
-            nll -= math.log(prob + 1e-8)
+        # 1. Negative Log-Likelihood (NLL) -- any annotator label
+        if is_distribution:
+            # weighted by human distribution
+            nll = 0.0
+            for label, freq in gt_data.items():
+                prob = max_scores.get(label, 0.0)
+                nll += -freq * math.log(prob + EPSILON)
+        else:
+            # binary label set
+            nll = 0.0
+            for label in gt_data:
+                prob = max_scores.get(label, 0.0)
+                nll += -math.log(prob + EPSILON)
+
         nlls.append(nll)
         
         # 2. L1 Distance
         # L1 = sum |P_model(label) - P_human(label)| over all labels
-        l1 = 0
+        l1 = 0.0
         for label in label_set:
             if is_distribution:
                 human_prob = gt_data.get(label, 0.0)
             else:
                 human_prob = 1.0 if label in gt_data else 0.0
-            if label not in max_scores:
-                max_scores[label] = 0.0
-            l1 += abs(max_scores[label] - human_prob)
+            model_prob = max_scores.get(label, 0.0)
+            l1 += abs(model_prob - human_prob)
         l1_distances.append(l1)
         
         # 3. F1 Score
         # Threshold the model probabilities at 0.5 to get binary predictions
         pred_binary = [1 if max_scores.get(label, 0.0) >= 0.5 else 0 for label in label_set]
         gt_binary = [1 if label in binary_gt else 0 for label in label_set]
-        
+        # example_f1
+        # predicted labels (threshold 0.5)
+        pred_labels = {l for l in label_set if max_scores.get(l, 0.0) >= 0.5}
+
+        if not pred_labels:
+            pred_labels = {"none"}
+
+        # ground truth set
+        if is_distribution:
+            gt_labels = {l for l, v in gt_data.items() if v > 0}
+        else:
+            gt_labels = set(gt_data)
+
+        intersection = len(pred_labels & gt_labels)
+
+        precision = intersection / len(pred_labels) if pred_labels else 0
+        recall = intersection / len(gt_labels) if gt_labels else 0
+
+        if precision + recall == 0:
+            f1 = 0
+        else:
+            f1 = 2 * precision * recall / (precision + recall)
+
+        example_f1s.append(f1)
         all_preds_binary.append(pred_binary)
         all_gts_binary.append(gt_binary)
         
@@ -142,7 +176,8 @@ def calculate_paper_metrics(max_distributions, experiment_data, label_set, raw_h
         "Mean_L1_Distance": float(np.mean(l1_distances)),
         "Micro_F1": float(micro_f1),
         "Macro_F1": float(macro_f1),
-        "Example_F1": float(example_f1)
+        "Example_F1_Sklearn": float(example_f1),
+        "Example_F1_Manual": float(np.mean(example_f1s))
     }
 
 def process_experiment(input_yaml_path, output_yaml_path, human_dist=None):
@@ -179,7 +214,7 @@ def process_experiment(input_yaml_path, output_yaml_path, human_dist=None):
         
         # 3. Max-Over-Generations
         max_raw = calculate_max_over_generations(sample_data)
-        max_distr_data[sample_key] = {k: v for k, v in max_raw.items() if k != 'none'}
+        max_distr_data[sample_key] = max_raw
         
     # Calculate paper metrics for all three
     print("Calculating metrics for baseline and proposed methods...")
