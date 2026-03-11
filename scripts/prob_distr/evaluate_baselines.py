@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 import yaml
 from sklearn.metrics import f1_score
@@ -75,38 +76,51 @@ def calculate_hard_predictions(sample_data, label_set, epsilon=1e-5):
             
     return hard_scores
 
-def calculate_paper_metrics(max_distributions, experiment_data):
+def calculate_paper_metrics(max_distributions, experiment_data, label_set, raw_human_distributions=None):
     """
-    Calculates the exact metrics from the EMNLP 2025 paper:
-    Negative Log-Likelihood (NLL), L1 Distance, and F1 Score.
+    Calculates NLL, L1 Distance, and F1 Score.
+    Dynamically handles both continuous (dict) and binary (list) ground truth distributions.
     """
     l1_distances = []
     nlls = []
     all_preds_binary = []
     all_gts_binary = []
 
-    first_example = next(iter(max_distributions.values()))
-    label_set = sorted([k for k in first_example.keys() if k != 'none'])
-    
     for example_id, max_scores in max_distributions.items():
         datum = experiment_data[example_id]
-        gt_labels = datum.get('test_gt', [])
-        if not gt_labels:
-            gt_labels = ['none']
+        is_distribution = False
+        if raw_human_distributions and example_id in raw_human_distributions:
+            gt_data = raw_human_distributions[example_id]
+            is_distribution = True
+            # Ensure 'none' is present if the human distribution is completely empty
+            if not gt_data:
+                gt_data = {'none': 1.0}
+        else:
+            # Fallback to the YAML binary list
+            gt_raw = datum.get('test_gt', [])
+            gt_data = gt_raw if gt_raw else ['none']
         
         # 1. Negative Log-Likelihood (NLL)
         # NLL = -sum(log(P(g))) for g in ground_truth_labels
         nll = 0
-        for g in gt_labels:
-            prob = max_scores.get(g, 0.0)
-            nll -= math.log(prob + 1e-8)    # Add epsilon inside log for stability
+        if is_distribution:
+            for l, h_prob in gt_data.items():
+                prob = max_scores.get(l, 0.0)
+                nll -= h_prob * math.log(prob + 1e-8)
+        else:
+            for g in gt_data:
+                prob = max_scores.get(g, 0.0)
+                nll -= math.log(prob + 1e-8)
         nlls.append(nll)
         
         # 2. L1 Distance
         # L1 = sum |P_model(label) - P_human(label)| over all labels
         l1 = 0
         for label in label_set:
-            human_prob = 1.0 if label in gt_labels else 0.0
+            if is_distribution:
+                human_prob = gt_data.get(label, 0.0)
+            else:
+                human_prob = 1.0 if label in gt_data else 0.0
             if label not in max_scores:
                 max_scores[label] = 0.0
             l1 += abs(max_scores[label] - human_prob)
@@ -115,7 +129,8 @@ def calculate_paper_metrics(max_distributions, experiment_data):
         # 3. F1 Score
         # Threshold the model probabilities at 0.5 to get binary predictions
         pred_binary = [1 if max_scores.get(label, 0.0) >= 0.5 else 0 for label in label_set]
-        gt_binary = [1 if label in gt_labels else 0 for label in label_set]
+        binary_gt = datum.get('test_gt', ['none'])
+        gt_binary = [1 if label in binary_gt else 0 for label in label_set]
         
         all_preds_binary.append(pred_binary)
         all_gts_binary.append(gt_binary)
@@ -124,7 +139,7 @@ def calculate_paper_metrics(max_distributions, experiment_data):
     all_gts_array = np.array(all_gts_binary)
     all_preds_array = np.array(all_preds_binary)
 
-    # Calculate aggregate F1 (macro/micro)
+    # Calculate aggregate F1
     micro_f1 = f1_score(all_gts_array, all_preds_array, average='micro', zero_division=0)             # micro: all instances together
     macro_f1 = f1_score(all_gts_array, all_preds_array, average='macro', zero_division=0)             # macro: average of F1 for each class
     example_f1 = f1_score(all_gts_array, all_preds_array, average='samples', zero_division=0) 
@@ -137,7 +152,7 @@ def calculate_paper_metrics(max_distributions, experiment_data):
         "Example_F1": float(example_f1)
     }
 
-def process_experiment(input_yaml_path, output_yaml_path):
+def process_experiment(input_yaml_path, output_yaml_path, human_dist=None):
     print(f"\n--- Processing {input_yaml_path} ---")
     data = load_data_from_yaml(input_yaml_path)
     
@@ -147,11 +162,15 @@ def process_experiment(input_yaml_path, output_yaml_path):
     else:
         samples = data
         
-    # Determine label set from the first sample (ignoring 'none')
-    first_sample = next(iter(samples.values()))
-    label_set = list(first_sample.get('test_scores', {}).keys())
-    if 'none' not in label_set:
-        label_set.append('none')
+    # Determine label set
+    global_labels = set(['none'])
+    for sample in samples.values():
+        global_labels.update(sample.get('test_scores', {}).keys())
+        for step in sample.get('test_all_scores', []) or []:
+            global_labels.update(step.keys())
+        global_labels.update(sample.get('test_gt', []))
+        
+    label_set = sorted(list(global_labels))
     
     c2n_distr_data = {}
     hard_distr_data = {}
@@ -171,10 +190,10 @@ def process_experiment(input_yaml_path, output_yaml_path):
         
     # Calculate paper metrics for all three
     print("Calculating metrics for baseline and proposed methods...")
-    metrics_c2n = calculate_paper_metrics(c2n_distr_data, samples)
-    metrics_hard = calculate_paper_metrics(hard_distr_data, samples)
-    metrics_max = calculate_paper_metrics(max_distr_data, samples)
-    
+    metrics_c2n = calculate_paper_metrics(c2n_distr_data, samples, label_set, human_dist)
+    metrics_hard = calculate_paper_metrics(hard_distr_data, samples, label_set, human_dist)
+    metrics_max = calculate_paper_metrics(max_distr_data, samples, label_set, human_dist)
+
     # Package into the final output format
     output_data = {
         'compare_to_none': {
@@ -203,12 +222,24 @@ def main():
     parser = argparse.ArgumentParser(description="Calculate baseline and MoG metrics.")
     parser.add_argument("--input_yaml", type=str, required=True, help="Path to zero-shot indexed_metrics.yml")
     parser.add_argument("--is_cot", action='store_true', help="Flag if the input YAML is from a CoT experiment.")
+    parser.add_argument("--dataset", type=str, choices=['goemotions', 'mfrc', 'hatexplain', 'semeval'], 
+                        help="The dataset being evaluated (for logging/routing).")
     args = parser.parse_args()
+
+    human_distributions = None
+    if args.dataset in ['mfrc', 'goemotions', 'hatexplain']:
+        human_dist_json = os.path.join('datasets', args.dataset, 'human_distributions.json')
+        if os.path.exists(human_dist_json):
+            print(f"Loading exact human distributions from {human_dist_json}...")
+            with open(human_dist_json, 'r') as f:
+                human_distributions = json.load(f)
+        else:
+            print(f"  [!] Warning: Distribution file {human_dist_json} not found. Falling back to binary YAML targets.")
 
     if os.path.exists(args.input_yaml):
         output_yaml_name = "alignment_scores_cot.yml" if args.is_cot else "alignment_scores_10_shot.yml"
         output_yaml_path = os.path.join(os.path.dirname(args.input_yaml), output_yaml_name)
-        process_experiment(args.input_yaml, output_yaml_path)
+        process_experiment(args.input_yaml, output_yaml_path, human_distributions)
     else:
         print(f"File not found: {args.input_yaml}")
 
