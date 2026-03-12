@@ -1,0 +1,2642 @@
+experiment_0:
+  '10037':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of "purity" is appropriate for this text
+      because it involves a moral concern for the protection of individuals from harm,
+      particularly in the context of violence and misogyny. The text emphasizes the
+      importance of recognizing and rejecting such behavior, which is a key aspect
+      of maintaining personal purity and dignity. This aligns with the moral foundation
+      of purity, which values the protection of individuals from harm and the preservation
+      of their moral integrity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.2097855233150767e-06
+      care: 2.75345919362735e-05
+      equality: 5.421882178779924e-06
+      loyalty: 1.7602275192984962e-06
+      none: 1.0129409929504618e-05
+      proportionality: 2.14439623960061e-05
+      purity: 0.9999325275421143
+    test_text: 'Dealbreaker.  Let''s be extremely real: dudes who say shit like this
+      are telling on themselves. Either they have or would take advantage of the situation
+      in context.
+
+
+      This is violent misogyny and he''s telling you who he is. You need to be less
+      worried about changing his mind and more worried about your safety.'
+  '10058':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: 'Output: {"label": ["authority", "care"]}'
+    test_preds:
+    - authority
+    - care
+    test_prefix_outs: 'The assigned moral foundations of authority and care are appropriate
+      for this text because:
+
+
+      - The text critiques the officer''s attitude towards his wife, implying that
+      he is trying to exert authority over her and expects her to be submissive, which
+      is a key aspect of the authority moral foundation, as it involves a challenge
+      to hierarchical power and control.
+
+      - The text also expresses concern for the wife''s well-being and autonomy, suggesting
+      that she should be able to make her own decisions and not be treated as a slave,
+      which aligns with the care moral foundation, as it emphasizes empathy and concern
+      for others'' emotional and psychological well-being.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9840835928916931
+      care: 0.015906229615211487
+      equality: 4.155638634983916e-06
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 3.667338205559645e-06
+      purity: 2.520522230042843e-06
+    test_text: "\"Basically he feels that I disrespect him by going against his \u201C\
+      authority\u201D and that a wife should be submissive\" \n\nThis officer, this\
+      \ right here. This is why I murdered him. \n\nJust kidding on that part, but\
+      \ that religious thumper mentality does not fly with me. You're not his slave,\
+      \ you're his wife and partner. \n\nI would personally leave him once you're\
+      \ done school and able to support yourself, your whole life will be a series\
+      \ of him issuing orders and expecting you to obey. Are you really ok with that?"
+  '10252':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: The assigned moral foundations of care and purity are appropriate
+      for this text because the author is expressing concern for the well-being and
+      dignity of the woman in the situation, particularly in the context of financial
+      abuse. The author emphasizes the importance of protecting her from further harm
+      and exploitation, which aligns with the care foundation. The text also highlights
+      the moral repugnance of owing an abuser anything, which relates to the purity
+      foundation, as it values the preservation of moral integrity and the avoidance
+      of tainted or impure relationships.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9984911680221558
+      equality: 3.7210302252788097e-06
+      loyalty: 0.0
+      none: 2.6955052589983097e-07
+      proportionality: 3.7210302252788097e-06
+      purity: 0.0015011706855148077
+    test_text: "I wonder if she can divorce him before starting her job back to avoid\
+      \ this. This man deserves nothing from her.\n\nEdit. Since this blew up I\u2019\
+      d like to say that I\u2019m not usually a supporter of such underhanded behavior,\
+      \ but by what OP has described she is being financially abused and I find it\
+      \ repulsive that someone would owe an abuser anything!"
+  '10255':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["none"]}'
+    test_preds: []
+    test_prefix_outs: This text does not explicitly express a moral judgment or value,
+      but rather presents a neutral and factual question about the availability of
+      support from adults. The tone is informative and neutral, without any apparent
+      appeal to authority, care, equality, loyalty, proportionality, or purity. The
+      text's focus is on seeking information rather than promoting a particular moral
+      stance.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 3.9278620533877984e-07
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.9999996423721313
+      proportionality: 0.0
+      purity: 0.0
+    test_text: NTA. Are there any adults there you can depend on to support you?
+  '10354':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["purity", "authority"]}'
+    test_preds:
+    - authority
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of purity and authority are
+      appropriate for this text because:
+
+
+      - The text emphasizes the idea that pedophiles are "pure scum," which aligns
+      with the purity foundation, as it values moral and emotional purity, and rejects
+      actions that are considered impure or tainted.
+
+      - The text also implies a challenge to the authority of pedophiles, suggesting
+      that they are not entitled to their desires or actions, and that they are subject
+      to moral judgment and condemnation. This reinforces the connection to the authority
+      moral foundation.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.4072594940662384
+      care: 0.0
+      equality: 0.0
+      loyalty: 6.002678674121853e-06
+      none: 0.0
+      proportionality: 0.00017542397836223245
+      purity: 0.5925590395927429
+    test_text: 'I''d wager pedophiles don''t have an exceptionally high sex drive
+      unless they are also sex addicts. So it comes down to choosing wether to have
+      sex or not with someone, and in so many cases, forcefully.
+
+
+      Thoses who do it are just pure scum.'
+  '10490':
+    test_classification_loss: 0.0
+    test_gt:
+    - proportionality
+    - purity
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of "purity" is appropriate for this text
+      because the author is suggesting that the person's actions (donating to charity)
+      are a way to "cleanse" themselves, implying a concern with moral purity and
+      the need to atone for past wrongs. The text also references the idea of "stealing
+      from a cause greater than yourself," which suggests a concern with the moral
+      integrity and purity of the individual's actions.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 6.825361964502008e-08
+      care: 1.3709105814996292e-06
+      equality: 1.7429172771699086e-07
+      loyalty: 0.0
+      none: 6.143995051388629e-06
+      proportionality: 2.753547414613422e-05
+      purity: 0.9999645948410034
+    test_text: I say donate 100 to charity to cleanse yourself. I know you feel justified
+      but you kind of stole from a cause greater then yourself. Just my opinion. Not
+      calling you a bad person or anything like that.
+  '10493':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of care and purity are appropriate
+      for this text because:
+
+
+      - The text emphasizes the importance of treating individuals with respect and
+      dignity, particularly in relation to their gender identity, which aligns with
+      the care foundation, as it values empathy and concern for others'' emotional
+      and psychological well-being.
+
+      - The text also uses the phrase "basic decency," which conveys a sense of moral
+      and emotional purity, as it implies that respecting someone''s gender identity
+      is a fundamental aspect of being a decent and moral person. This relates to
+      the purity foundation, as it values moral and emotional purity, and rejects
+      actions that are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9988284707069397
+      equality: 1.5516801568082883e-06
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 5.03756837133551e-07
+      purity: 0.0011695078574120998
+    test_text: "being respectful of a person\u2019s gender identity isn\u2019t political\
+      \ - it\u2019s basic decency"
+  '10741':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: The assigned label of "loyalty" is appropriate for this text
+      because it involves a discussion of trust and loyalty in a relationship. The
+      author is expressing a strong reaction to the idea of someone sharing personal
+      information with their parents without consent, which is perceived as a breach
+      of trust and loyalty. The text highlights the importance of loyalty and trust
+      in relationships, which is a key aspect of the loyalty moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 5.043451096753415e-07
+      care: 0.0
+      equality: 9.422406606063305e-07
+      loyalty: 0.9999948740005493
+      none: 3.2887430734263035e-06
+      proportionality: 1.8553818392774701e-07
+      purity: 1.275184047244693e-07
+    test_text: She told your parents? Wow. That would 100% be a deal breaker for me.
+      Huge Breach of trust, hell that's worse than cheating in my eyes(I have been
+      cheated on, and sexually assaulted.)
+  '10781':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: The assigned moral foundation of care is appropriate for this
+      text because the author is expressing empathy and concern for the individual's
+      well-being, particularly in relation to their marriage. The author suggests
+      that the individual's unhappiness may be rooted in their personal life, rather
+      than a medical issue, and recommends seeking help from a therapist who can provide
+      understanding and support. This emphasis on empathy and concern for the individual's
+      emotional well-being aligns with the care moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9999959468841553
+      equality: 4.45083458089357e-07
+      loyalty: 0.0
+      none: 2.561278279245016e-06
+      proportionality: 1.0571658748403934e-07
+      purity: 9.4224168378787e-07
+    test_text: "Probably because there\u2019s still an aspect of your life sucking\
+      \ your soul (your marriage). No amount of meds can fix that.  But I do really\
+      \ really recommend trying to find an understanding, empathetic therapist."
+  '10834':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: The assigned label of "care" is appropriate for this text because
+      it emphasizes the importance of empathy, understanding, and communication in
+      resolving marital conflicts. The author commends the individual for handling
+      the situation in a healthy and constructive way, prioritizing open communication
+      and mutual understanding. This aligns with the care moral foundation, which
+      values empathy, compassion, and the well-being of others.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.1253428766622164e-07
+      care: 0.9999911785125732
+      equality: 1.9947162854805356e-06
+      loyalty: 1.357421410830284e-07
+      none: 1.9947162854805356e-06
+      proportionality: 1.209856463901815e-06
+      purity: 3.2887307952478295e-06
+    test_text: "You\u2019re not crazy. You handled this exactly right. The default\
+      \ answer for many people on the sub is \u201Cdump them!\u201D\n\nAnd I\u2019\
+      m happy that you worked it out and got your wife to understand your point of\
+      \ view. The right solution for any marital problem short of infidelity is communication."
+  '10837':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - purity
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of "purity" is appropriate for this text
+      because it involves a moral critique of the fetishization of Asian women, which
+      is seen as a form of objectification and disrespect for their dignity and autonomy.
+      The text emphasizes the importance of treating individuals as people, rather
+      than objects of desire, which aligns with the moral foundation of purity, which
+      values the protection of individuals from harm and the preservation of their
+      moral integrity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.2098188335585291e-06
+      care: 4.222682491672458e-06
+      equality: 4.222682491672458e-06
+      loyalty: 1.2098188335585291e-06
+      none: 1.0129689144378062e-05
+      proportionality: 1.892474938358646e-05
+      purity: 0.9999600648880005
+    test_text: 'YTA.
+
+
+
+      This Asian woman fetish thing is gross.  And no woman of any ethnicity wants
+      to just be some kind of fetish fulfillment.
+
+
+
+      And yes, spending $250k so you can be around Asian women is stupid and weird.  You
+      could buy a house with that amount of money.'
+  '10854':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["care", "equality", "proportionality"]}'
+    test_preds:
+    - care
+    - equality
+    - proportionality
+    test_prefix_outs: 'The assigned moral foundations of care, equality, and proportionality
+      are appropriate for this text because:
+
+
+      - The text emphasizes the importance of respecting individuals'' boundaries
+      and not overstepping one''s authority, which relates to the care foundation,
+      as it values empathy and concern for others'' well-being.
+
+      - The text also critiques the behavior of the boss as "demeaning and disrespectful,"
+      which is a key aspect of the equality foundation, as it values the equal dignity
+      and respect of all individuals.
+
+      - The text suggests that the boss''s behavior is disproportionate to their role
+      and expertise, implying that they are taking advantage of their power and position,
+      which relates to the proportionality foundation, as it values fairness and balance
+      in relationships and interactions.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 4.218361027596984e-06
+      care: 0.9989367127418518
+      equality: 0.000430284533649683
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 0.0006260602967813611
+      purity: 2.899234459619038e-06
+    test_text: "No. You don\u2019t. You get paid an exhorbitant amount of money to\
+      \ use your professional expertise and expensive education. This is an awful\
+      \ boss on a power trip. \n\nI work in law and that attitude used to be common\
+      \ but is now recognized as absolutely obnoxious and a bigger detriment to women\
+      \ than men, and wrong. Unless she was paid to be a personal assistant, this\
+      \ wasn\u2019t her job and it\u2019s demeaning and disrespectful. The same goes\
+      \ when you\u2019re asked to do it."
+  '10864':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of care and purity are appropriate
+      for this text because:
+
+
+      - The text expresses a commitment to a long-term relationship and love, which
+      aligns with the care foundation, as it values empathy, concern for others''
+      well-being, and the importance of relationships.
+
+      - The text also explicitly states a desire to avoid hurting others and a lack
+      of desire to manipulate people for personal gain, which relates to the purity
+      foundation, as it values moral and emotional purity, and rejects actions that
+      are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9995653033256531
+      equality: 1.2093412351532606e-06
+      loyalty: 0.0
+      none: 1.3703631793759996e-06
+      proportionality: 1.5528248695773073e-06
+      purity: 0.000430555286584422
+    test_text: "I\u2019m in a committed long term relationship with my bf who I love\
+      \ very much and I study techniques on how to be a female pick up artist. I have\
+      \ no idea why. It\u2019s just very interesting. It doesn\u2019t mean i cheat\
+      \ on my bf.\n\nI also would never manipulate anyone for my own gain like that.\
+      \ I have no desire to hurt men."
+  '10961':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: The assigned label of "loyalty" is appropriate for this text
+      because it involves a concern with the potential consequences of deceitful behavior
+      on relationships, particularly the parent-child relationship. The text emphasizes
+      the idea that lying and deceit can damage trust and lead to the breakdown of
+      relationships, which is a key aspect of loyalty. The author is highlighting
+      the importance of honesty and integrity in maintaining strong, loyal relationships.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 4.139928577728824e-08
+      care: 0.0
+      equality: 4.9937074919625957e-08
+      loyalty: 0.9999978542327881
+      none: 1.9947294731537113e-06
+      proportionality: 0.0
+      purity: 0.0
+    test_text: This. He will never trust a word you say again. This deceit on deceit
+      ploy is a great way to never see your son again.
+  '10985':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: The assigned moral foundations of care and equality are appropriate
+      for this text because the author is expressing empathy and concern for individuals
+      struggling with addiction, emphasizing their humanity and dignity. The author
+      is also highlighting the need to address systemic inequalities and racism in
+      the way that certain substances are regulated, which is a key aspect of the
+      equality moral foundation. The text's tone is critical of dehumanizing language
+      and discriminatory policies, which aligns with the care and equality moral foundations.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9975032210350037
+      equality: 0.002472563413903117
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 0.0
+      purity: 2.4240156562882476e-05
+    test_text: "Junkies? Come on bro. These are human beings with a medical or mental\
+      \ condition. So dehumanizing.  That word needs to be gone. Same with clean and\
+      \ dirty. Not all drug use is problematic and everyone uses drugs. Racism is\
+      \ the only reason some are legal and some aren\u2019t. Look it up."
+  '11407':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["purity", "care"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of care and purity are appropriate
+      for this text because:
+
+
+      - The text initially expresses a strong moral disapproval of kissing, which
+      is a fundamental aspect of human intimacy and connection, and implies a concern
+      for the moral purity of the act. This relates to the purity foundation, as it
+      values the preservation of moral and emotional purity.
+
+      - The text later shifts to a more nuanced discussion of incest, emphasizing
+      the importance of considering the well-being and potential harm to children,
+      which aligns with the care foundation, as it prioritizes the care and protection
+      of vulnerable individuals.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.24504297971725464
+      equality: 1.112493464461295e-05
+      loyalty: 0.0
+      none: 6.7476139520294964e-06
+      proportionality: 0.0001535749906906858
+      purity: 0.7547855377197266
+    test_text: "Ah yes, let us hang this young adult for the most sacreligious crime,\
+      \ kissing! \n\nBut in all honesty incest is only morally wrong if you consider\
+      \ the kids. 2 consenting adults can do whatever as long as they're not harming\
+      \ anyone. Don't care if I find it gross or not."
+  '1143':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["authority", "care", "purity"]}'
+    test_preds:
+    - authority
+    - care
+    - purity
+    test_prefix_outs: "The assigned moral foundations of authority, care, and purity\
+      \ are appropriate for this text because:\n\n- The text criticizes M\xE9lenchon\
+      \ for prioritizing his political ambition over the safety of the country, which\
+      \ implies a failure to respect authority and uphold the greater good, aligning\
+      \ with the authority foundation.\n- The text also expresses a sense of shame\
+      \ and disappointment towards M\xE9lenchon's actions, which suggests a concern\
+      \ for the well-being and safety of the country, aligning with the care foundation.\n\
+      - The text's tone and language, particularly the use of the phrase \"an enabler,\"\
+      \ convey a sense of disgust and revulsion towards M\xE9lenchon's actions, which\
+      \ relates to the purity foundation, as it values moral and emotional purity,\
+      \ and rejects actions that are considered impure or tainted."
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9979877471923828
+      care: 0.0019265696173533797
+      equality: 0.0
+      loyalty: 6.131848749646451e-06
+      none: 0.0
+      proportionality: 4.775488378072623e-06
+      purity: 7.470120908692479e-05
+    test_text: "&gt; M\xE9lenchon refused to take a stand because he'll lose all his\
+      \ legitimacy in the opposition for the next 5 years if he supports Macron now\n\
+      \nSo it put political ambition over the safety of the country. Shame.\n\n&gt;\
+      \ we don't need M\xE9lenchon to support Macron to avoid Le Pen, so he didn't.\n\
+      \nHe can't take a stand against fascism, an enabler.\n\nThe election is very\
+      \ simple: democracy vs fascism. If you can't make a simple choice, you don't\
+      \ care about the country."
+  '11708':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - purity
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned labels of "care" and "purity" are appropriate
+      for this text because:
+
+
+      - The text emphasizes the importance of taking action to prevent further harm
+      and protect others from potential abuse, which aligns with the care foundation,
+      as it prioritizes the well-being and safety of individuals.
+
+      - The text also expresses a strong moral disapproval of the perpetrator''s actions,
+      using language like "sexual predator" and "creep," which relates to the purity
+      foundation, as it values moral and emotional purity, and rejects actions that
+      are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9992836117744446
+      equality: 1.2090004020137712e-06
+      loyalty: 0.0
+      none: 1.3699769851882593e-06
+      proportionality: 4.21982622356154e-06
+      purity: 0.0007096656481735408
+    test_text: Masturbation is not a crime, revenge porn, blackmailing and illegal
+      recording is. You doing nothing will just let him think he can do anything.
+      You want another sexual predator go free? Call cops on him. If parents are outraged,
+      let them be outraged. They are not gonna kick you out over this. Call now. Let
+      that creep know the consequences.
+  '11728':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: 'The assigned moral foundations of care and equality are appropriate
+      for this text because:
+
+
+      - The text emphasizes the importance of kindness and respect in relationships,
+      particularly between siblings, which aligns with the care foundation, as it
+      values empathy and concern for others'' well-being.
+
+      - The text also prioritizes the equal right to express opinions and have differing
+      views, which relates to the equality foundation, as it values the equal dignity
+      and autonomy of all individuals.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9995692372322083
+      equality: 0.00043055700371041894
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 0.0
+      purity: 2.698415357826889e-07
+    test_text: "YTA.  \nAlways having your siblings back against a bully - appropriate.\
+      \  Not being allowed to share an opinion differing from your sibling - inappropriate.\
+      \  Teach your children to be kind to one another while disagreeing, don\u2019\
+      t teach them to silence their opinions."
+  '11941':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of care and purity are appropriate
+      for this text because:
+
+
+      - The text emphasizes the importance of loving and supporting one''s neighbors,
+      particularly in the context of their relationships and identities, which aligns
+      with the care foundation, as it values empathy, compassion, and concern for
+      others'' well-being.
+
+      - The text also references the idea of being "perfectly and wonderfully made"
+      by God, which suggests a value on the inherent worth and dignity of all individuals,
+      including those who are LGBTQ+. This emphasis on the inherent value and worth
+      of all individuals, particularly in the context of their relationships and identities,
+      relates to the purity foundation, as it values moral and emotional purity, and
+      rejects actions that are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9992874264717102
+      equality: 2.258718723169295e-06
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 7.33298634258972e-07
+      purity: 0.0007096683257259429
+    test_text: "God calls us to love one another.\n\nGod also made your friend - perfectly\
+      \ and wonderfully made. He made him a gay man. \n\nI think if we want to love\
+      \ our neighbours as we love ourselves, then we support their right to enter\
+      \ a loving, committed relationship. \n\nSorry, but YTA."
+  '12646':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of "purity" is appropriate for this text
+      because it involves a moral concern for the protection of vulnerable individuals,
+      specifically children, from exploitation. The text emphasizes the importance
+      of opposing the exploitation of children, which is a key aspect of maintaining
+      personal and societal purity. This aligns with the moral foundation of purity,
+      which values the protection of individuals from harm and the preservation of
+      their moral integrity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.538165150805071e-07
+      care: 3.4663085557440354e-07
+      equality: 1.444972212993889e-07
+      loyalty: 0.0
+      none: 1.5534916428805445e-06
+      proportionality: 3.2887419365579262e-06
+      purity: 0.9999945163726807
+    test_text: Every day is a good day to be against exploiting children.
+  '12670':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["authority", "purity"]}'
+    test_preds:
+    - authority
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of authority and purity are
+      appropriate for this text because:
+
+
+      - The text criticizes Nixon''s actions as a politician, implying a challenge
+      to his authority and legitimacy, which aligns with the authority foundation,
+      as it values respect for hierarchy and institutions.
+
+      - The text also uses strong language to condemn Nixon''s actions, calling him
+      an "irredeemable reprobate," which conveys a sense of moral disgust and revulsion,
+      relating to the purity foundation, as it values moral and emotional purity,
+      and rejects actions that are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9996966123580933
+      care: 0.0
+      equality: 0.0
+      loyalty: 6.473987923527602e-07
+      none: 0.0
+      proportionality: 6.960192422411637e-06
+      purity: 0.00029595490195788443
+    test_text: 'Nixon deliberately prolonged the Vietnam war for his own benefit and
+      committed a number of crimes against peace and against humanity, in addition
+      to his crimes against America.  He was an irredeemable reprobate.
+
+
+      Nixon was a much more skilled politician and conniver than Trump, but he was
+      just as rotten.'
+  '13262':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - purity
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: The assigned moral foundations of care and purity are appropriate
+      for this text because the author is expressing empathy and concern for the Supreme
+      Court justice who faced bigotry, which aligns with the care foundation. The
+      use of the phrase "disgustingly" to describe the situation also conveys a sense
+      of moral revulsion, which relates to the purity foundation. The text's tone
+      is critical of the injustice and prejudice faced by the justice, and the author's
+      language emphasizes the importance of protecting individuals from harm and promoting
+      moral integrity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9968158602714539
+      equality: 6.124648280092515e-06
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 5.4049828577262815e-06
+      purity: 0.0031726465094834566
+    test_text: 'The third constitutionally elected Supreme Court justice, who disgustingly
+      had to face bigotry against her faith.
+
+
+      FTFY'
+  '13328':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of purity is appropriate for this text because
+      the author is expressing a concern about the content being taught to children
+      and young adults, implying that it is morally or intellectually "impure" or
+      tainted. The use of the word "indoctrination" suggests a negative judgment about
+      the content, implying that it is not suitable for young minds and is a threat
+      to their moral or intellectual purity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.538136302769999e-07
+      care: 4.1810878315118316e-07
+      equality: 0.0
+      loyalty: 0.0
+      none: 6.962136012589326e-06
+      proportionality: 1.670129677222576e-05
+      purity: 0.9999758005142212
+    test_text: Don't want people seeing the ridiculous indoctrination they force on
+      our children and young adults.
+  '13347':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: The assigned label of "equality" is appropriate for this text
+      because it highlights the author's concern with the systemic inequalities that
+      perpetuate the cycle of poverty. The text emphasizes how education and access
+      to resources are not equally distributed, leading to unequal opportunities for
+      individuals from different socio-economic backgrounds. The author suggests that
+      the education system is designed to maintain these inequalities, which is a
+      key aspect of the equality moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 1.5534928934357595e-06
+      equality: 0.9999953508377075
+      loyalty: 0.0
+      none: 2.2603189790970646e-06
+      proportionality: 5.6585975016787415e-08
+      purity: 8.315248578583123e-07
+    test_text: "This perpetuates the cycle of poverty. Those who are higher educated\
+      \ can help their children with homework. They have more access to books or tutors.\
+      \ They can focus on school because they don\u2019t have to support their family.\
+      \ Those in stable homes don\u2019t have to work or raise their siblings. Grades\
+      \ don\u2019t determine your mastery of a subject. It just shows you\u2019ve\
+      \ completed the homework. Higher grades -&gt; higher education. And the cycle\
+      \ continues. This is all by design."
+  '135':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: The assigned label of "loyalty" is appropriate for this text
+      because it involves a statement of solidarity and unity among world leaders,
+      which is a key aspect of loyalty. The text emphasizes the importance of standing
+      together and showing that the world will not be deterred from its goals, which
+      is a reflection of loyalty to a shared cause or community. The use of the phrase
+      "we will not be deterred" also suggests a commitment to a common purpose, reinforcing
+      the connection to the loyalty moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 3.7266211165842833e-06
+      care: 0.0
+      equality: 2.9022953640378546e-06
+      loyalty: 0.9999914169311523
+      none: 1.2098568049623282e-06
+      proportionality: 7.33815227249579e-07
+      purity: 0.0
+    test_text: '&gt;Next week, I will be joining President Hollande and world leaders
+      in Paris for the global climate conference. What a powerful rebuke to the terrorists
+      it will be when the world stands as one and shows that we will not be deterred
+      from building a better future for our children.
+
+
+      [Real Obama quote](http://thehill.com/policy/energy-environment/261193-obama-climate-conference-is-powerful-rebuke-to-terrorists)'
+  '13786':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["care", "equality", "purity"]}'
+    test_preds:
+    - care
+    - equality
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of care, equality, and purity
+      are appropriate for this text because:
+
+
+      - The text emphasizes the importance of standing against police brutality, racism,
+      and slavery, which aligns with the care foundation, as it values empathy and
+      concern for the well-being of marginalized groups.
+
+      - The text also highlights the need for consistency and fairness in addressing
+      social issues, which relates to the equality foundation, as it emphasizes the
+      importance of equal treatment and rights for all individuals.
+
+      - The text''s tone and language convey a sense of moral outrage and disgust
+      towards hypocrisy, which relates to the purity foundation, as it values moral
+      and emotional purity, and rejects actions that are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9955461025238037
+      equality: 0.004068569280207157
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 6.931295501999557e-06
+      purity: 0.0003784359141718596
+    test_text: Yes, we can. It's great to be against police brutality, racism, and
+      slavery at once. I think picking and choosing is where Nike looks like a hypocrite.
+  '14554':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of "purity" is appropriate for this text
+      because it involves a moral concern for the protection of society from perceived
+      threats, in this case, the group antifa. The text characterizes antifa as "racist,
+      anarchist thugs," which implies a concern for the moral and social purity of
+      society. The author is suggesting that antifa's actions and ideology are impure
+      and corrupt, and that they pose a threat to the moral fabric of society.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.670094752626028e-05
+      care: 7.337884539992956e-07
+      equality: 1.2098125807824545e-06
+      loyalty: 6.961990948184393e-06
+      none: 4.784901648235973e-06
+      proportionality: 1.473853535571834e-05
+      purity: 0.9999549388885498
+    test_text: And how is it they keep trying to convince us that antifa is still
+      an "idea" instead if a group of racist, anarchist thugs?
+  '14574':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - proportionality
+    test_outs: 'Output: {"label": ["none"]}'
+    test_preds: []
+    test_prefix_outs: This text does not explicitly reference any moral principles
+      or values associated with the given foundations. The language used is primarily
+      an expression of a personal opinion and a comparison between the perceived losses
+      due to taxes and those due to one's employer, but it lacks any clear connection
+      to the moral principles of authority, care, equality, loyalty, proportionality,
+      or purity. The tone is more focused on a personal perspective rather than a
+      moral judgment.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 9.329492201004541e-08
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.9999998807907104
+      proportionality: 0.0
+      purity: 0.0
+    test_text: Your boss steals much more from you than taxes ever have.
+  '14700':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: The assigned moral foundations of care and equality are appropriate
+      for this text because the author is advocating for a more inclusive and honest
+      education system that addresses the experiences and struggles of marginalized
+      groups. The text implies that the current education system fails to provide
+      a comprehensive and equitable education, which is a key aspect of the care and
+      equality moral foundations. The author is expressing a desire to learn about
+      revolutionary history and current injustices, which suggests a concern for the
+      well-being and dignity of individuals and groups.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9914191961288452
+      equality: 0.008577456697821617
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 0.0
+      purity: 3.260539642724325e-06
+    test_text: "this is revolutionary history i want to learn about in school. but\
+      \ of course the government won\u2019t teach its people how to overthrow it.\
+      \ they don\u2019t even teach current injustices..."
+  '14855':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["authority", "equality", "purity"]}'
+    test_preds:
+    - authority
+    - equality
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of authority, equality, and
+      purity are appropriate for this text because:
+
+
+      - The text involves a critique of the actions of BLM and their supporters, implying
+      a challenge to their authority and power, which relates to the authority foundation,
+      as it involves a moral concern with the legitimacy and respect for authority.
+
+      - The text also expresses a concern with the perceived hypocrisy and double
+      standards of BLM, particularly in their response to the death of David Dorn,
+      which relates to the equality foundation, as it values fairness, justice, and
+      equal treatment for all individuals.
+
+      - The text''s tone and language, particularly the use of the phrase "moronic"
+      and the criticism of BLM''s actions, convey a sense of disgust and revulsion
+      towards the behavior of BLM and their supporters, which relates to the purity
+      foundation, as it values moral and emotional purity, and rejects actions that
+      are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9998227953910828
+      care: 3.7259928831190336e-06
+      equality: 7.483856461476535e-05
+      loyalty: 1.1476865438453387e-05
+      none: 9.420785431757395e-07
+      proportionality: 1.1476865438453387e-05
+      purity: 7.483856461476535e-05
+    test_text: 'Calling the thin blue line flag a "white lives matter" flag is moronic.
+
+
+      Demanding someone take down a flag that has been popular for many years is not
+      "drawing attention", it is silencing people who support police.
+
+
+      If BLM is about saving lives, why do they get so uncomfortable when you ask
+      them where the many millions of dollars in donations go?  Their own "protests"
+      led to the deaths of black men like David Dorn.  BLM didn''t give a damn about
+      his death, even though they played a part in it.'
+  '15180':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: The assigned label of "equality" is appropriate for this text
+      because it involves a critique of economic systems and the distribution of wealth,
+      which is a key aspect of the equality moral foundation. The text implies that
+      the current economic system is unfair and that the wealthy exploit the poor,
+      which is a fundamental concern of the equality foundation. The use of the term
+      "exploited children" also highlights the author's concern for the well-being
+      and dignity of marginalized groups.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.125325184148096e-07
+      care: 1.994686726902728e-06
+      equality: 0.999976396560669
+      loyalty: 0.0
+      none: 1.892505861178506e-05
+      proportionality: 2.102384257796075e-07
+      purity: 2.260276005472406e-06
+    test_text: Obviously left wing propoganda. Everyone knows when the rich get richer,
+      the money trickles down to the exploited children in both 1st and 3rd World
+      countries.
+  '15505':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["authority", "loyalty"]}'
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: The assigned moral foundations of authority and loyalty are
+      appropriate for this text because the author is criticizing companies for their
+      "virtue signaling" about sex, implying that they are overstepping their authority
+      and undermining the values of law and order. The author is also expressing loyalty
+      to their country and its sovereignty, suggesting that the actions of the companies
+      are a threat to these values. This criticism is rooted in the moral principles
+      of authority and loyalty, which emphasize the importance of respect for hierarchy
+      and commitment to one's group.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9971877932548523
+      care: 0.0
+      equality: 1.7553958286953275e-06
+      loyalty: 0.002800895133987069
+      none: 0.0
+      proportionality: 5.406999662227463e-06
+      purity: 4.210975475871237e-06
+    test_text: I would much rather watch companies virtue signal about sex than endorse
+      a criminal organization hell bent on the destruction of our country.  This is
+      a direct challenge to our sovereignty and to law and order itself.
+  '15539':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["authority", "loyalty"]}'
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: The assigned moral foundations of authority and loyalty are
+      appropriate for this text because the author is criticizing the idea of automatically
+      granting special treatment to military service members, implying that their
+      service does not automatically confer authority or loyalty. The author suggests
+      that individuals should be judged based on their actions and work, rather than
+      their service, which is a critique of the idea that military service automatically
+      earns respect or loyalty. This criticism is rooted in the moral principles of
+      authority and loyalty, which emphasize the importance of earned respect and
+      commitment.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9913812279701233
+      care: 0.0
+      equality: 1.4612165614380501e-05
+      loyalty: 0.008577127940952778
+      none: 2.409138687653467e-05
+      proportionality: 2.877305860238266e-06
+      purity: 0.0
+    test_text: "As someone who served, military service members should be judged independently\
+      \ outside of service and don\u2019t deserve special treatment. You can respect\
+      \ McCain and Mattis for their service and criticize their work after that."
+  '15654':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: The assigned label of care is appropriate for this text because
+      it involves a critique of the working conditions and treatment of employees
+      in jobs, implying a concern for their well-being and dignity. The author suggests
+      that jobs can be abusive and exploitative, which is a key aspect of the care
+      moral foundation, as it emphasizes empathy and concern for others' emotional
+      and psychological well-being.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9999951124191284
+      equality: 3.0590081223635934e-07
+      loyalty: 0.0
+      none: 3.2887437555473298e-06
+      proportionality: 3.4663105452636955e-07
+      purity: 8.315246873280557e-07
+    test_text: Jobs are abusive, manipulative and exploitative towards employees.
+      Makes sense people would want to cheat.
+  '15669':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - purity
+    test_outs: 'Output: {"label": ["authority", "loyalty", "purity"]}'
+    test_preds:
+    - authority
+    - loyalty
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of authority, loyalty, and purity
+      are appropriate for this text because:
+
+
+      - The text expresses a desire to remove individuals from society, which implies
+      a critique of their behavior and a call for authority to take action, aligning
+      with the authority foundation.
+
+      - The text also implies a sense of loyalty to the idea of a "society" that should
+      be protected from these individuals, which relates to the loyalty foundation,
+      as it values commitment to a group or community.
+
+      - The text''s language, particularly the use of the phrase "utter degenerates,"
+      conveys a sense of disgust and revulsion towards the individuals in question,
+      which relates to the purity foundation, as it values moral and emotional purity,
+      and rejects actions or individuals that are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9981478452682495
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.001500654499977827
+      none: 0.0
+      proportionality: 1.6670766854076646e-05
+      purity: 0.0003348412865307182
+    test_text: "Sick of these utter degenerates. Just remove from  society. They clearly\
+      \ have criminal intent. \n\nPhysical removal."
+  '15792':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of care and purity are appropriate
+      for this text because:
+
+
+      - The text emphasizes the importance of respecting and accepting individuals
+      for who they are, particularly in the context of their sexual orientation, which
+      aligns with the care foundation, as it values empathy and concern for others''
+      well-being and dignity.
+
+      - The text also expresses disgust and moral outrage towards the judgmental behavior
+      of some Christians, which relates to the purity foundation, as it values moral
+      and emotional purity, and rejects actions that are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9993681311607361
+      equality: 4.782093583344249e-06
+      loyalty: 0.0
+      none: 3.05709022541123e-07
+      proportionality: 4.448040158422373e-07
+      purity: 0.0006263307295739651
+    test_text: 'As a gay guy trying to reach out in good faith, what will I slowly
+      ''wake up'' about?
+
+
+      I''ve not had any choice in my sexuality and I''m entirely comfortable with
+      myself at this point in time. I love a beautiful guy &amp; we''re happy together.
+      What''s so wrong and abhorrent about me that christians feel the need to cast
+      judgment, tell me I''m going to hell or that I should seek some higher calling.
+
+
+      I''m not religious in the slightest and would never tell someone they need to
+      change like that.'
+  '15897':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["equality", "care"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: 'The assigned moral foundations of equality and care are appropriate
+      for this text because:
+
+
+      - The text emphasizes the natural human response to inequality and injustice,
+      which aligns with the equality foundation, as it values fairness, justice, and
+      the equal treatment of all individuals.
+
+      - The text also highlights the emotional and empathetic response to exploitation
+      and abuse, particularly in recognizing the suffering and mistreatment of workers,
+      which relates to the care foundation, as it emphasizes concern for others''
+      well-being and dignity.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.2689414322376251
+      equality: 0.7310585975646973
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 0.0
+      purity: 0.0
+    test_text: '&gt;Can someone explain the thought process for the knee jerk disgust
+      at this saying?
+
+
+      Anger is the natural human response to inequality and injustice.  You recognize
+      that the saying is bullshit, that it''s just someone who gets to abuse and exploit
+      their workers talking about themself instead of anyone else (they know you don''t
+      enjoy your job, and they simply don''t care).  You''re having the correct response
+      to someone who''s basically gloating about what they get to do to you.'
+  '16219':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["authority", "loyalty"]}'
+    test_preds:
+    - authority
+    - loyalty
+    test_prefix_outs: The assigned moral foundations of authority and loyalty are
+      appropriate for this text because the author is criticizing someone for making
+      a statement that they perceive as a threat to the US, implying that the speaker
+      has overstepped their authority and betrayed the trust of the nation, which
+      is a fundamental aspect of loyalty. The author is suggesting that the speaker's
+      words are a form of incitement, which is a serious offense that undermines the
+      authority of the state and the loyalty of its citizens.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9947751760482788
+      care: 0.0
+      equality: 1.0621254205034347e-06
+      loyalty: 0.005220101214945316
+      none: 0.0
+      proportionality: 3.7071820315759396e-06
+      purity: 0.0
+    test_text: "Shouldn\u2019t anyone saying that be arrested for inciting a riot\
+      \ or treason against the US?"
+  '16240':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - purity
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of purity is appropriate for this text because
+      the author is expressing disgust and revulsion towards the perceived superiority
+      complex of some black individuals on Twitter. The author's tone and language
+      convey a sense of moral and emotional contamination, implying that the behavior
+      or attitude of these individuals is impure and unacceptable. This aligns with
+      the moral foundation of purity, which values moral and emotional purity, and
+      rejects actions or attitudes that are considered tainted or corrupt.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 1.538140850243508e-07
+      equality: 0.0
+      loyalty: 1.742942004057113e-07
+      none: 6.144081908132648e-06
+      proportionality: 1.4738886420673225e-05
+      purity: 0.99997878074646
+    test_text: 'Jesus christ look at all the black people on twitter who legitimately
+      think they are superior to whites because their melanin count.
+
+
+      Fucking sickening'
+  '16272':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: The assigned label of "loyalty" is appropriate for this text
+      because it involves a critique of McConnell's actions, implying that he is motivated
+      by self-interest rather than a commitment to the democratic process or the well-being
+      of the country. The author suggests that McConnell is not acting out of loyalty
+      to the democratic system or to the people, but rather out of a desire to advance
+      his own interests. This criticism is rooted in the moral principle of loyalty,
+      which emphasizes the importance of commitment and dedication to one's group
+      or community.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.3006663721171208e-05
+      care: 0.0
+      equality: 1.7428939713681757e-07
+      loyalty: 0.9999512434005737
+      none: 3.535577707225457e-05
+      proportionality: 1.4449096852331422e-07
+      purity: 0.0
+    test_text: "McConnell hasn't decided to 'respect democracy'. \nMcConnell is just\
+      \ not stupid enough to blatantly break the law for a disloyal imbecile who lost\
+      \ an election. He is in it for himself and literally no one else."
+  '16626':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: 'Output: {"label": ["authority", "care", "loyalty"]}'
+    test_preds:
+    - authority
+    - care
+    - loyalty
+    test_prefix_outs: "The assigned moral foundations of authority, care, and loyalty\
+      \ are appropriate for this text because:\n\n- The text critiques the actions\
+      \ of the elites and leaders, implying a challenge to their authority and power,\
+      \ which aligns with the authority moral foundation.\n- The text also expresses\
+      \ concern for the well-being and rights of the American people, particularly\
+      \ in the context of democracy and freedom, which relates to the care moral foundation,\
+      \ as it emphasizes empathy and concern for others' emotional and psychological\
+      \ well-being.\n- The text's tone and language, particularly the use of phrases\
+      \ like \"they don\u2019t care about what we think about them,\" convey a sense\
+      \ of betrayal and disloyalty, which relates to the loyalty moral foundation,\
+      \ as it values commitment to one's group and respect for the relationships within\
+      \ it."
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9992283582687378
+      care: 0.0003352037747390568
+      equality: 2.559312406447134e-06
+      loyalty: 0.0004304101748857647
+      none: 0.0
+      proportionality: 1.7589879917068174e-06
+      purity: 1.7589879917068174e-06
+    test_text: "Notice how they\u2019re all gloating, and none of them are questioning\
+      \ the process? They\u2019re only copping out by saying \u201Cthere\u2019s no\
+      \ proof.\u201D They don\u2019t care what\u2019s going on in America right now.\
+      \ Our Democracy is being disrupted. Our rights are being infringed. The elites\
+      \ and leaders of this country are lying and rigging one of the best things that\
+      \ makes America America. They only care that Trump loses.\n\nThey don\u2019\
+      t realize that if the Dems don\u2019t care about what we think about them, or\
+      \ our rights; then they don\u2019t care about their supporters either."
+  '16931':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: The assigned label of "equality" is appropriate for this text
+      because it highlights the author's concern with the perceived devaluation of
+      certain individuals, particularly those with disabilities, within a capitalist
+      system. The author is criticizing the idea that people's worth is determined
+      by their productivity or ability to contribute to the economy, which is a key
+      aspect of the equality moral foundation. The text emphasizes the importance
+      of recognizing the inherent value and worth of all individuals, regardless of
+      their abilities.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 3.120182009297423e-05
+      equality: 0.9999657869338989
+      loyalty: 0.0
+      none: 1.0676675401555258e-06
+      proportionality: 1.1253132470301352e-07
+      purity: 1.7602860680199228e-06
+    test_text: It's so absurd isn't it? So what about people who are mentally or physically
+      disabled? Do they have no value or worth? God the capitalist mindset disgusts
+      me to the core.
+  '16983':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of "purity" is appropriate for this text
+      because it involves a moral concern for the protection of vulnerable groups,
+      particularly minorities, from harm and exploitation. The text suggests that
+      the decision-makers prioritized their own interests over the well-being of marginalized
+      communities, which is a key aspect of maintaining moral purity and dignity.
+      This aligns with the moral foundation of purity, which values the protection
+      of individuals from harm and the preservation of their moral integrity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.7602185380383162e-06
+      care: 1.147806688095443e-05
+      equality: 7.888751497375779e-06
+      loyalty: 2.9021095997450175e-06
+      none: 2.429906635370571e-05
+      proportionality: 2.429906635370571e-05
+      purity: 0.9999274015426636
+    test_text: Absolutely they looked at the numbers, even now minorities such as
+      blacks and Hispanics are disproportionately dying, and they saw covid as a objective
+      good.
+  '17262':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: The assigned label of "loyalty" is appropriate for this text
+      because it involves a concern for the loyalty and commitment of African American
+      individuals to their community and identity, as well as a fear of being labeled
+      as "race traitors" by the left. The text implies that these individuals are
+      being judged and ostracized for their perceived disloyalty to their racial group,
+      which is a key aspect of the loyalty moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.5534924386884086e-06
+      care: 0.0
+      equality: 6.475920031334681e-07
+      loyalty: 0.9999949932098389
+      none: 2.5612760055082617e-06
+      proportionality: 1.125346145158801e-07
+      purity: 2.1024233376465418e-07
+    test_text: hope those african american patriots in the back dont get doxxed and
+      labeled race traitors by the insane left.
+  '17518':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: The assigned label of "loyalty" is appropriate for this text
+      because the author is expressing a strong sense of loyalty to the country and
+      its founding values, and is criticizing others for their perceived disloyalty.
+      The author's use of strong language, such as "hate" and "evil," emphasizes the
+      depth of their emotional investment in the issue and their sense of loyalty
+      to the country. The text's focus on the perceived threats to the country's values
+      and traditions reinforces the connection to the loyalty moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 2.260323753944249e-06
+      care: 0.0
+      equality: 6.412044939452244e-08
+      loyalty: 0.9999974966049194
+      none: 6.023559251389088e-08
+      proportionality: 7.265798274147528e-08
+      purity: 3.8891020182063585e-08
+    test_text: "I legitimately think they hate the country and want to destroy it.\n\
+      \nThey hate patriotism \nThey hate traditional family values\nThey hate everything\
+      \ this country was founded on.\n\nThey are fucking evil."
+  '17690':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["none"]}'
+    test_preds: []
+    test_prefix_outs: This text does not explicitly reference any moral principles
+      or values associated with the given foundations. The language used is primarily
+      an expression of historical and economic analysis, but it lacks any clear connection
+      to the moral principles of authority, care, equality, loyalty, proportionality,
+      or purity. The tone is more focused on a personal opinion and historical critique
+      rather than a moral judgment.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0
+      none: 1.0
+      proportionality: 0.0
+      purity: 0.0
+    test_text: Corporatism and capitalism are the same thing. You are describing younger
+      years of capitalism. Not so easy to just revert back to that as it required
+      the exploitation of black people and still requires imperialism to some degree.
+  '2167':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of care and purity are appropriate
+      for this text because:
+
+
+      - The author is criticizing the response of Merkel, Hollande, and Obama to terrorist
+      attacks, suggesting that their emphasis on unity and shared values is insincere
+      and lacking in empathy, which relates to the care foundation, as it values genuine
+      concern and compassion for others.
+
+      - The author also implies that the politicians'' words are "empty" and "lacking
+      in empathy," which suggests a concern with the moral and emotional purity of
+      their actions, as they are seen as hypocritical and insincere. This relates
+      to the purity foundation, as it values moral integrity and authenticity.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9968090653419495
+      equality: 2.893059217967675e-06
+      loyalty: 1.988368694583187e-06
+      none: 3.2782656944618793e-06
+      proportionality: 1.009776951832464e-05
+      purity: 0.003172624856233597
+    test_text: Well, when 16 of my fellow citizens are gunned down because they are
+      infidels, I'm not going to be tweeting that Muslim Americans are just like you
+      and me.  Who's lacking empathy?  Merkel, Hollande, and Obama give the same condolence
+      speech after every terrorist attack - we must stand together, our values must
+      prevail, don't give into hate and fear for Muslims, etc.  Rinse and repeat after
+      every terrorist attack.  [Trump is doing the right thing.](http://money.cnn.com/video/news/2015/08/20/donald-trump-immigration-plan-birthright-citizenship.cnnmoney/)
+  '2411':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["loyalty", "purity"]}'
+    test_preds:
+    - loyalty
+    - purity
+    test_prefix_outs: The assigned moral foundations of purity and loyalty are appropriate
+      for this text because the author is expressing a concern about the perceived
+      threat to French culture and values posed by immigrants from certain groups,
+      particularly those who practice Islam. The author implies that these immigrants
+      are not integrating well and are causing social unrest, which is a key aspect
+      of the purity moral foundation, as it emphasizes the importance of maintaining
+      cultural and moral purity. The author also suggests that Le Pen voters are motivated
+      by a sense of loyalty to their own culture and values, which is a fundamental
+      aspect of the loyalty moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.6791284084320068
+      none: 0.0
+      proportionality: 7.396304135909304e-05
+      purity: 0.32079753279685974
+    test_text: 'But they were born in France...to recent immigrants who practice Islam.
+      Do you think the Le Pen voters would have the same opinion about people such
+      as Japanese immigrants? I highly doubt it. To pretend this is just about immigration
+      alone is ridiculous. It''s about immigration of groups of people who have values
+      and a culture that leads to problems integrating and social unrest. '
+  '2479':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: 'Output: {"label": ["none"]}'
+    test_preds: []
+    test_prefix_outs: This text does not explicitly reference any moral principles
+      or values associated with the given foundations. The language used is primarily
+      a factual report of a politician's statement and a link to a Twitter post, without
+      any clear connection to the moral principles of authority, care, equality, loyalty,
+      proportionality, or purity. The tone is more informative and neutral, without
+      any apparent appeal to moral or ethical considerations.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0
+      none: 1.0
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "https://twitter.com/benoithamon/status/824578898734252032\n\nHamon\
+      \ is pro-EU too. \n\n&gt;Deeply honored to be endorsed by many MEPs. Together\
+      \ we will keep building a more social, democratic and eco-friendly EU. "
+  '2521':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - equality
+    test_outs: 'Output: {"label": ["equality", "purity"]}'
+    test_preds:
+    - equality
+    - purity
+    test_prefix_outs: The assigned moral foundations of equality and purity are appropriate
+      for this text because the author is expressing outrage and condemnation towards
+      the actions of the individual who committed the terrorist attack, which is perceived
+      as a threat to the equal rights and dignity of Muslims. The author also emphasizes
+      the importance of opposing hatred and promoting love, which is a key aspect
+      of the purity moral foundation, as it values moral and emotional purity, and
+      rejects actions that are considered impure or tainted.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.00042998575372621417
+      equality: 0.9982430934906006
+      loyalty: 2.5567887860233895e-06
+      none: 0.0
+      proportionality: 0.0
+      purity: 0.0013244494330137968
+    test_text: 'a Quebecian born and raised that likes trump and le pen went and shot
+      up a bunch of muslims?  Color me surprised.  Radical Bigot Terrorist just like
+      his friends in Texas two days ago that set that mosque on fire.  damn it feels
+      good to be on the right side of history opposing these trump supporters.  LOVE
+      TRUMPS HATE. See in you in 2018, you will lose as long as you keep committing
+      terrorist attacks for your god emperor.  '
+  '3134':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["authority", "equality"]}'
+    test_preds:
+    - authority
+    - equality
+    test_prefix_outs: The assigned labels of "authority" and "equality" are appropriate
+      for this text because it involves a critique of the potential corruption of
+      a government official (Le Pen) and the influence of external interests (Russia)
+      on their decision-making. The text emphasizes the idea that a government official's
+      primary responsibility is to serve the best interests of their people, which
+      is a fundamental aspect of the authority moral foundation. The text also highlights
+      the unequal distribution of power and influence, where wealthy individuals or
+      foreign powers can corrupt the government and undermine the equal rights and
+      dignity of the common people, which is a key aspect of the equality moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9967668056488037
+      care: 0.0
+      equality: 0.003172490280121565
+      loyalty: 2.744741868809797e-05
+      none: 0.0
+      proportionality: 1.664770024945028e-05
+      purity: 1.664770024945028e-05
+    test_text: 'influence, corruption
+
+
+      you understand what corruption is, right?
+
+
+      if le pen wins, she is supposed to represent what is best for the french people.
+      but she may make decisions that benefit russia or some rich russian assholes
+      instead of the french if they bankroll her
+
+
+      it happens everywhere in terms of rich assholes in a country corrupting the
+      govt to serve them instead of the common person in that country
+
+
+      but foreign corruption has the extra problem of treasonous activity
+
+      '
+  '3987':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: The assigned label of "equality" is appropriate for this text
+      because the author is discussing a policy that involves granting a place to
+      one sex over the other based on a quota, which is perceived as a means to achieve
+      greater equality between the sexes. The author's tone is somewhat ambivalent,
+      but the text does not explicitly criticize the policy for being unfair or unjust,
+      suggesting that the author values the principle of equality and sees the quota
+      as a means to achieve it.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.2098312254238408e-06
+      care: 4.222725692670792e-06
+      equality: 0.9999703168869019
+      loyalty: 8.315040531670093e-07
+      none: 2.1444771846290678e-05
+      proportionality: 6.893410500197206e-07
+      purity: 1.2098312254238408e-06
+    test_text: True but it just seems a bit iffy granting a place to one sex over
+      the other not based on merit but over a quota. But yes, this is small regarding
+      the things Macron will do for France and the future. VIVA LA FRANCE!
+  '4248':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    - proportionality
+    test_outs: 'Output: {"label": ["none"]}'
+    test_preds: []
+    test_prefix_outs: This text does not explicitly reference any moral principles
+      or values associated with the given foundations. The language used is primarily
+      a statement of opinion about political figures, but it lacks any clear connection
+      to the moral principles of authority, care, equality, loyalty, proportionality,
+      or purity. The tone is more focused on a personal preference rather than a moral
+      judgment.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.760343138812459e-06
+      care: 0.0
+      equality: 0.0
+      loyalty: 0.0
+      none: 0.9999982118606567
+      proportionality: 0.0
+      purity: 0.0
+    test_text: Eh, Macron and Le Pen are both bad, Fillon was the president France
+      needed.
+  '5271':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: The assigned label of "loyalty" is appropriate for this text
+      because the author is discussing the moral implications of voting and not voting,
+      particularly in the context of supporting or tolerating a particular candidate
+      or ideology. The text emphasizes the idea that not voting against Le Pen means
+      tolerating his victory, which implies a sense of loyalty to the opposing candidate
+      or ideology. This aligns with the moral foundation of loyalty, which values
+      commitment and allegiance to one's group or cause.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.0129433576366864e-05
+      care: 0.0
+      equality: 7.888809705036692e-06
+      loyalty: 0.9999347925186157
+      none: 4.539696965366602e-05
+      proportionality: 1.7602314983378164e-06
+      purity: 0.0
+    test_text: '&gt; Voting for someone is, by definition, support.
+
+
+      &gt; Not voting against Le Pen means tolerating a Le Pen victory.
+
+
+      He is talking about not voting. What''s your point?'
+  '5632':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["equality", "care"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: 'The assigned moral foundations of equality and care are appropriate
+      for this text because:
+
+
+      - The text highlights the importance of gender equality in the selection process,
+      which aligns with the equality foundation, as it values the equal treatment
+      and representation of women in politics.
+
+      - The text also emphasizes the importance of a "clean criminal record" and a
+      commitment to "clean up politics," which relates to the care foundation, as
+      it prioritizes the well-being and integrity of the political process and the
+      individuals involved.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.3775406777858734
+      equality: 0.622459352016449
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 0.0
+      purity: 0.0
+    test_text: '&gt;We know the Macron team set out five conditions:
+
+      Renewal for France (half will come from outside politics)
+
+      Gender equality (half will be women)
+
+      Clean criminal record - as part of commitment to clean up politics
+
+      Cross-section of political views - so there may be defectors from other parties
+
+      Sign up to the Macron reform programme as well as joining the party itself
+
+      While candidates can be members of other parties, they cannot run for them (apart
+      from centrist party MoDem)
+
+
+      Also, I highly doubt that its a coincidence that its equally split between men
+      and women. '
+  '5849':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["authority", "care", "equality", "purity"]}'
+    test_preds:
+    - authority
+    - care
+    - equality
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of authority, care, equality,
+      and purity are appropriate for this text because:
+
+
+      - The text critiques Le Pen''s platform as violent, which implies a challenge
+      to her authority and power, aligning with the authority foundation.
+
+      - The text also emphasizes the importance of not being kind to those who advocate
+      for violence, which relates to the care foundation, as it prioritizes the well-being
+      and safety of individuals who may be affected by such violence.
+
+      - The text highlights the unequal impact of violence on different groups, particularly
+      those who are not privileged, which aligns with the equality foundation, as
+      it emphasizes the importance of fairness and justice.
+
+      - The text''s tone and language, particularly the use of the phrase "apologia
+      is itself terrorism," convey a sense of moral outrage and disgust, which relates
+      to the purity foundation, as it values moral and emotional purity, and rejects
+      actions that are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9979827404022217
+      care: 0.0009100424940697849
+      equality: 6.592325371457264e-05
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 1.0109658433066215e-05
+      purity: 0.0010312132071703672
+    test_text: "This isn't about having different issues. Le Pen's platform is extremely\
+      \ violent. Advocating for that violent platform should not be met with kindness.\
+      \ It doesn't deserve it. \n\nYou are privileged enough that you will not be\
+      \ affected by this violence but that doesn't mean it isn't there. Your apologia\
+      \ is itself terrorism."
+  '6000':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: The assigned label of "equality" is appropriate for this text
+      because the author is discussing the potential benefits of neoliberal economic
+      policies, such as raising the standard of living for everyone, which aligns
+      with the equality foundation. The author is concerned with the distribution
+      of wealth and the impact of economic policies on different groups, suggesting
+      that they value the equal treatment and opportunities for all individuals. The
+      text also touches on the idea of adapting social programs to meet the changing
+      needs of society, which is a key aspect of promoting equality.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 2.1023686258558882e-07
+      care: 1.3006894732825458e-05
+      equality: 0.9999690055847168
+      loyalty: 0.0
+      none: 1.6701182175893337e-05
+      proportionality: 1.0029840495917597e-06
+      purity: 1.6373265054880903e-07
+    test_text: "If it helps raise everyone's standard of living what do I care if\
+      \ the wealthy are growing in number or getting wealthier?  \n\nLook at Ireland\
+      \ their economy suffered until they became more neoliberal. So it's not like\
+      \ the alternatives would be better.  Everyone suffering instead of a some wealthy,\
+      \ most well off and some poor?  I'll take the latter and it's not like being\
+      \ Neoliberal means that Macron doesnt support social programs and such.  The\
+      \ world is changing and thier safety net will need to adapt just like thier\
+      \ economy  it's that way in pretty much every country.  "
+  '6140':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: "The assigned label of \"loyalty\" is appropriate for this text\
+      \ because it involves a critique of politicians who are perceived as disloyal\
+      \ to their party, such as Valls and Cambad\xE9lis. The text emphasizes their\
+      \ opportunism and corruption, implying a breach of loyalty to the party and\
+      \ its values. The author also expresses a sense of loyalty to Hollande, suggesting\
+      \ that he was a more loyal and trustworthy leader."
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.892507316370029e-05
+      care: 0.0
+      equality: 2.561230076025822e-06
+      loyalty: 0.9999771118164062
+      none: 1.2098394108761568e-06
+      proportionality: 1.3574022261764185e-07
+      purity: 1.5381382922896591e-07
+    test_text: "Valls the traitor of the official candidate as ex-prime minister and\
+      \ Cambad\xE9lis the chairman of the Socialist Party are the real executioners\
+      \ of the party. They showed they are opportunists and corrupt politicians. \n\
+      \nHollande had a reasonably good term despite the unwavering criticisms. He\
+      \ helped the party make a soft landing rather..."
+  '6152':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: 'The assigned moral foundations of care and equality are appropriate
+      for this text because:
+
+
+      - The text emphasizes the shared humanity and common desires of Muslims, which
+      aligns with the care foundation, as it values empathy and concern for others''
+      well-being.
+
+      - The text also acknowledges the diversity of opinions within the Muslim community,
+      which relates to the equality foundation, as it values the equal rights and
+      dignity of all individuals, regardless of their background or beliefs.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9980720281600952
+      equality: 0.001926732249557972
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 0.0
+      purity: 1.2075345239281887e-06
+    test_text: Muslims aren't bad, irrational people. 99.9% of them are just like
+      you and I, they want to be safe and live a normal peaceful life. If they believe
+      that means closing the borders to refugees and illegal immigrants, then I can
+      see why they'd vote for Le Pen.
+  '6243':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "equality"]}'
+    test_preds:
+    - care
+    - equality
+    test_prefix_outs: The assigned moral foundations of care and equality are appropriate
+      for this text because the author is criticizing the selective concern of far-right
+      individuals for the LGBT community, implying that their interest is not genuinely
+      motivated by care for the community's well-being, but rather by a political
+      agenda. The author also highlights the lack of evidence for the claim that the
+      majority of gay French men are voting for Le Pen, which relates to the equality
+      foundation, as it emphasizes the importance of fairness, accuracy, and respect
+      for marginalized groups.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9241418242454529
+      equality: 0.07585818320512772
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 0.0
+      purity: 0.0
+    test_text: 'And I love how far-righters seem to only care about the LGBT community
+      when it comes to Muslims. That and nowhere in the article does it say that the
+      majority of gay French men are voting for Le Pen. '
+  '6252':
+    test_classification_loss: 0.0
+    test_gt:
+    - loyalty
+    - proportionality
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of "purity" is appropriate for this text
+      because it involves a critique of Le Pen's actions and rhetoric, implying a
+      concern with her moral and ideological purity. The author suggests that Le Pen's
+      words and actions are hypocritical, and that she is not a true populist, but
+      rather a fundamentalist who uses populist rhetoric to mask her true intentions.
+      The text's tone and language convey a sense of disgust and disappointment, which
+      relates to the purity moral foundation, as it values moral and ideological purity,
+      and rejects actions that are considered impure or tainted.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00043036098941229284
+      care: 7.478552288375795e-05
+      equality: 8.474310743622482e-05
+      loyalty: 5.8243025705451146e-05
+      none: 0.0001794011623132974
+      proportionality: 5.8243025705451146e-05
+      purity: 0.9991142153739929
+    test_text: 'Goddammit, Le Pen. You fucked yourself. People don''t vote for the
+      populist because they''re bigoted. they vote for the populist because they know
+      the corporatist will never be on their side.  Now you just prove that neither
+      will you, because you''re a fundamentalist, not a populist. You just parrot
+      the right words.
+
+
+      Go France! Vote for the corporatist who will fuck you for money, or the fundamentalist,
+      who will also fuck you for money, but at least pretend not to, all while initiating
+      backwards social policies that destroy any semblance of integrated society.
+      (sound familiar?)'
+  '6623':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - care
+    test_outs: 'Output: {"label": ["authority", "care", "equality"]}'
+    test_preds:
+    - authority
+    - care
+    - equality
+    test_prefix_outs: 'The assigned moral foundations of authority, care, and equality
+      are appropriate for this text because:
+
+
+      - The text involves a critique of Le Pen''s actions and ideology, implying a
+      challenge to her authority and legitimacy, which aligns with the authority moral
+      foundation.
+
+      - The text also expresses empathy and concern for the well-being of others,
+      particularly in the context of economic growth and freedom, which relates to
+      the care moral foundation, as it values the well-being and flourishing of individuals
+      and communities.
+
+      - The text''s tone and language, particularly the phrase "I do not fear liberalism
+      as you do," convey a sense of confidence and inclusivity, which relates to the
+      equality moral foundation, as it values the equal rights and dignity of all
+      individuals, regardless of their background or ideology.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.9984410405158997
+      care: 0.0013247120659798384
+      equality: 0.000230200428632088
+      loyalty: 1.36882181323017e-06
+      none: 0.0
+      proportionality: 1.2079809721399215e-06
+      purity: 1.36882181323017e-06
+    test_text: 'Don''t lecture me, Le Pen. I see through the lies of the Populists.
+      I do not fear liberalism as you do. I have brought peace, economic growth, freedom,
+      cosmopolitanism, and rational policy making to my new Empire. '
+  '6817':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: The assigned label of "equality" is appropriate for this text
+      because it highlights the author's concern with the impact of anti-Islamic rhetoric
+      on Muslims in France, who are already ostracized and marginalized. The author
+      emphasizes the importance of accepting and integrating Muslims into French society,
+      which is a key aspect of promoting equality and combating discrimination. The
+      text focuses on the moral implications of exclusionary rhetoric and policies,
+      which is a central concern of the equality moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.3708929600397823e-06
+      care: 2.753511944320053e-05
+      equality: 0.9999517202377319
+      loyalty: 8.314885917570791e-07
+      none: 1.0129604561370797e-05
+      proportionality: 5.368493702917476e-07
+      purity: 7.888943400757853e-06
+    test_text: '&gt; A vote for Le Pen is a vote for more terror and more dead French
+      people!
+
+
+      Do you know why? Anti-Islamic rhetoric ostracizes Muslims ALREADY in France,
+      and breeds terror. You''ll have less people from overseas causing problems,
+      but domestic terrorism will increase.
+
+
+      That''s not saying we should stop the migrants however. I''m just saying that
+      people should attempt to accept Muslims, which will lead to cultural assimilation.
+      Cutting off further immigration from the middle east is actually imperative
+      to making Frenchmen out of the immigrants.'
+  '6867':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: The assigned label of "loyalty" is appropriate for this text
+      because it involves a critique of nationalism and its association with a feeling
+      of superiority over other countries. The author is questioning the loyalty to
+      one's country when it is tied to an extreme form of patriotism that promotes
+      superiority over others. The text also mentions the French far-right party and
+      its leader, Le Pen, implying a concern with loyalty to one's country and its
+      values, rather than blindly following a nationalist agenda.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.00010886816744459793
+      care: 0.0
+      equality: 0.00020339252660050988
+      loyalty: 0.9996272325515747
+      none: 4.53830070910044e-05
+      proportionality: 3.7252639231155626e-06
+      purity: 1.1474620805529412e-05
+    test_text: "I suppose you are American, one of the few countries where nationalism\
+      \ is used a synonym of patriotic sentiment. \n\nNationalism is defined as: \"\
+      extreme form of patriotism marked by a feeling of superiority over other countries\"\
+      \ and yes, I do have a problem with this way of thinking, especially when it\
+      \ is used abused by populist or far right political parties. \n\nMoreover, if\
+      \ you paid any attention to what Le Pen has been saying, you would know that\
+      \ being on friendly terms is not exactly what the party is pushing for."
+  '72':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: 'Output: {"label": ["loyalty"]}'
+    test_preds:
+    - loyalty
+    test_prefix_outs: The assigned label of "loyalty" is appropriate for this text
+      because it involves a critique of the actions and values of a group, implying
+      a lack of loyalty to the principles of independence and autonomy. The text suggests
+      that the group in question is not truly independent, but rather follows Le Pen's
+      ideology, which is characterized by hatred and intolerance. This criticism is
+      rooted in the moral principle of loyalty, which emphasizes the importance of
+      commitment to one's group and its values.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 3.288729431005777e-06
+      care: 0.0
+      equality: 2.9022933176747756e-06
+      loyalty: 0.999990701675415
+      none: 2.9022933176747756e-06
+      proportionality: 8.764166636865411e-08
+      purity: 1.5381591822460905e-07
+    test_text: 'They''re not independentists, they''re autonomists. And they go ALONG
+      everything Le Pen represents, especially her hatred for Muslims and Arabs. '
+  '7494':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: The assigned label of "care" is appropriate for this text because
+      it emphasizes the importance of empathy and understanding in evaluating individuals,
+      particularly those with neurodevelopmental disorders or other conditions. The
+      author is advocating for a more compassionate and inclusive approach, which
+      is a key aspect of the care moral foundation. The text also critiques the stigmatization
+      of neurodivergent individuals, which is a concern for the well-being and dignity
+      of these individuals, further aligning with the care foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9999865293502808
+      equality: 7.338116461141908e-07
+      loyalty: 0.0
+      none: 4.785052624356467e-06
+      proportionality: 9.329367856025783e-08
+      purity: 7.889218068157788e-06
+    test_text: Personality disorders and autism or brain tumours do not inherently
+      make you an asshole and insisting that they do is ignorant and ableist. Empathy
+      doesnt say anything about the kind of person you choose to be. Stop treating
+      neurodivergence as a receptacle for human evil.
+  '7683':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: The assigned label of "care" is appropriate for this text because
+      the author is expressing empathy and concern for the well-being of the person
+      in the abusive relationship, suggesting that they want to help her feel better.
+      However, the author's tone is also critical and dismissive of the husband's
+      intentions, implying that his actions are motivated by self-interest rather
+      than genuine care for the woman. This ambivalence towards care is reflected
+      in the text's tone and language.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 3.725362603290705e-06
+      care: 0.999653697013855
+      equality: 7.482590444851667e-05
+      loyalty: 2.259546590721584e-06
+      none: 0.00020339791080914438
+      proportionality: 1.669591620157007e-05
+      purity: 4.538420762401074e-05
+    test_text: "\\&gt; His arguments are that she is in an abusive relationship and\
+      \ that her husband mistreats her and that he (my husband) feels sorry for her\
+      \ and wants to help her feel better.  \n\nYeah, right.\n\nHe is cheating on\
+      \ you, and waiting for the right time to move on.   I would beat him to it,\
+      \ and get rid of him."
+  '7746':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of care and purity are appropriate
+      for this text because:
+
+
+      - The text expresses empathy and concern for the well-being of the individual
+      being targeted by the abusive behavior, which aligns with the care foundation,
+      as it values the emotional and psychological well-being of others.
+
+      - The text also emphasizes the importance of protecting individuals from harm
+      and promoting a safe and respectful environment, which relates to the purity
+      foundation, as it values moral and emotional purity, and rejects actions that
+      are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 5.713064297196979e-07
+      care: 0.9996598958969116
+      equality: 2.5604176698834635e-06
+      loyalty: 0.0
+      none: 6.473749749602575e-07
+      proportionality: 1.0673409178707516e-06
+      purity: 0.0003353485371917486
+    test_text: 'NTA
+
+
+      Please report that poor excuse of a human being. He is abusive and hateful.
+
+
+      In America learning exercises like this are greatly frowned upon. But they still
+      happen.'
+  '7880':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: 'Output: {"label": ["care", "loyalty"]}'
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: 'The assigned moral foundations of care and loyalty are appropriate
+      for this text because:
+
+
+      - The text emphasizes the importance of considering and respecting the feelings
+      of the speaker, which aligns with the care foundation, as it values empathy
+      and concern for others'' emotional well-being.
+
+      - The text also highlights the speaker''s perception of being betrayed by the
+      partner''s actions, particularly the fact that they shared intimate information
+      with others without the speaker''s consent, which relates to the loyalty foundation,
+      as it emphasizes the importance of trust and commitment within relationships.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9992891550064087
+      equality: 1.2090071095371968e-06
+      loyalty: 0.000709669548086822
+      none: 0.0
+      proportionality: 0.0
+      purity: 0.0
+    test_text: '"You say that I''m your best friend and closest friend and also your
+      girlfriend. But the fact that everyone except me knows it makes that sound like
+      you trust everyone else more than me, you respect everyone else more than me,
+      you have no consideration for my feelings. You''re not treating me like a best
+      friend or girlfriend by telling everyone else **except** me, and I''m sick of
+      it."'
+  '8066':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "equality", "loyalty"]}'
+    test_preds:
+    - care
+    - equality
+    - loyalty
+    test_prefix_outs: 'The assigned moral foundations of care, equality, and loyalty
+      are appropriate for this text because:
+
+
+      - The text emphasizes the importance of mutual respect in a marriage, which
+      aligns with the equality foundation, as it values the equal rights and dignity
+      of both partners.
+
+      - The text also prioritizes the well-being and comfort of the child, particularly
+      in the context of their parents'' behavior, which relates to the care foundation,
+      as it emphasizes empathy and concern for others'' emotional and psychological
+      well-being.
+
+      - The text''s tone and language convey a sense of loyalty and commitment to
+      the partnership, as it emphasizes the importance of mutual respect and responsibility
+      in a marriage, which relates to the loyalty foundation, as it values commitment
+      and dedication to one''s relationships and responsibilities.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9862760305404663
+      equality: 0.012415383011102676
+      loyalty: 0.0013085717801004648
+      none: 0.0
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "YTA, you both created your child and you\u2019re both responsible\
+      \ to raise them. Her writing is 100% a real job, as she is paid to do it. It\
+      \ is incredibly disrespectful the way you treated her. Marriage is a partnership\
+      \ that cannot work without mutual respect."
+  '8147':
+    test_classification_loss: 0.0
+    test_gt:
+    - authority
+    - loyalty
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: The assigned label of "care" is appropriate for this text because
+      it highlights the importance of parental care and the special bond between parents
+      and children. The author emphasizes the significance of parents in their children's
+      lives, suggesting that the relationship between grandparents and grandchildren
+      should not supersede the importance of the parent-child relationship. This aligns
+      with the moral foundation of care, which values the nurturing and protection
+      of individuals, particularly children.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 7.33816875708726e-07
+      care: 0.9999936819076538
+      equality: 1.2098595334464335e-06
+      loyalty: 1.0571634589950918e-07
+      none: 1.7603351807338186e-06
+      proportionality: 4.450824349078175e-07
+      purity: 1.9947212877013953e-06
+    test_text: "I actually live in a culture in Europe that places extra emphasis\
+      \ on grandparents and while I appreciate that, there isn\u2019t and shouldn\u2019\
+      t be a replacement for the importance of parents. I highly respect and encourage\
+      \ the special bond my kids have with their grandparents. But that doesn\u2019\
+      t supersede our significance as parents. That\u2019s an unhealthy misbalance."
+  '8415':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - loyalty
+    test_outs: 'Output: {"label": ["purity"]}'
+    test_preds:
+    - purity
+    test_prefix_outs: The assigned label of "purity" is appropriate for this text
+      because it involves a moral concern for the protection of personal boundaries
+      and the respect of individuals' autonomy, particularly in the context of relationships
+      and intimacy. The text emphasizes the unfairness and manipulativeness of the
+      partner's behavior, which is perceived as a violation of personal purity and
+      dignity. This aligns with the moral foundation of purity, which values the protection
+      of individuals from harm and the preservation of their moral integrity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 5.368563051888486e-07
+      care: 5.422056347015314e-06
+      equality: 2.902217602240853e-06
+      loyalty: 1.994663080040482e-06
+      none: 7.889045264164452e-06
+      proportionality: 1.6701109416317195e-05
+      purity: 0.9999645948410034
+    test_text: He cheated on you and then has the audacity to guilt you about using
+      sex toys... that is outrageously unfair and manipulative. That will not make
+      for a happy life.
+  '8710':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - purity
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned labels of "care" and "purity" are appropriate
+      for this text because:
+
+
+      - The text emphasizes the importance of taking responsibility for one''s actions,
+      which is a key aspect of the care moral foundation, as it values empathy and
+      concern for the well-being of others.
+
+      - The text also highlights the moral importance of respecting personal boundaries
+      and dignity, particularly in the context of consent and accountability, which
+      is a key aspect of the purity moral foundation, as it values the protection
+      of individuals from harm and the preservation of their moral integrity.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9953845143318176
+      equality: 6.446063025578042e-07
+      loyalty: 0.0
+      none: 0.0
+      proportionality: 5.397222139436053e-06
+      purity: 0.004609544761478901
+    test_text: "This is not some uncontrollable thing. You have a choice. You\u2019\
+      re the kind of person who could rape someone and not take accountability. Get\
+      \ some fucking help"
+  '907':
+    test_classification_loss: 0.0
+    test_gt:
+    - equality
+    - proportionality
+    test_outs: 'Output: {"label": ["equality"]}'
+    test_preds:
+    - equality
+    test_prefix_outs: The assigned label of "equality" is appropriate for this text
+      because it involves a critique of sexism and the assumption that a woman's success
+      is due to her identity rather than her merits. The author is arguing that this
+      kind of thinking is arrogant and ignorant, and that it contributed to Macron's
+      win. The text also highlights the unequal treatment of the woman in question,
+      who faced unfair challenges and attacks, which is a key aspect of the equality
+      moral foundation.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.5532634733972372e-06
+      care: 0.0001398203312419355
+      equality: 0.9998476505279541
+      loyalty: 6.082667027840216e-07
+      none: 6.143276550574228e-06
+      proportionality: 7.810299393895548e-07
+      purity: 3.2882587674976094e-06
+    test_text: 'That''s not a merit, that''s an identity. Kind of sexist for you to
+      think they correlate... It''s that kind of arrogance and ignorance why Macron
+      won.
+
+
+      And by "her own merits" I mean she didnt have a foreign government gunning for
+      her, leaking her info and spreading false info while her domestic opponents
+      dragged her through the mud with dubious hearings and investigations, all while
+      chanting "Lock Her Up!" Lord knows what her numbers would''ve been then.'
+  '9610':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: The assigned label of "care" is appropriate for this text because
+      it involves a concern for the well-being and emotional impact of the person
+      exposing the truth, as well as the victims of the "bullshit." The text emphasizes
+      the importance of holding individuals accountable for their actions, but also
+      acknowledges the potential toll this can take on the person doing the exposing.
+      This aligns with the moral foundation of care, which values empathy and concern
+      for the well-being of others.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 1.5532265251749777e-06
+      care: 0.9998238682746887
+      equality: 5.828439680044539e-05
+      loyalty: 2.259931306980434e-06
+      none: 1.0128309440915473e-05
+      proportionality: 7.887934771133587e-06
+      purity: 9.609472181182355e-05
+    test_text: "Ok but this is the type of shit and shatters lives. If you don\u2019\
+      t expose them, you\u2019ll end up never holding them accountable for their bullshit.\
+      \ And it\u2019ll take a toll on you in the end. \n\nAnd you don\u2019t deserve\
+      \ that."
+  '9624':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - purity
+    test_outs: 'Output: {"label": ["care"]}'
+    test_preds:
+    - care
+    test_prefix_outs: The assigned label of "care" is appropriate for this text because
+      it emphasizes the importance of empathy and concern for others' well-being,
+      particularly in the context of relationships. The author is expressing a moral
+      judgment about the girl's behavior, suggesting that it is manipulative and hurtful,
+      which is a key aspect of the care moral foundation. The text's focus on the
+      emotional impact of the girl's actions on others reinforces the connection to
+      care.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9999600648880005
+      equality: 1.0676614010662888e-06
+      loyalty: 2.8735715318362054e-07
+      none: 2.9022044145676773e-06
+      proportionality: 3.927706586637214e-07
+      purity: 3.535608993843198e-05
+    test_text: As a woman I could never excuse this girls disgusting behavior. You
+      don't do this to someone you love. Its manipulative.
+  '9715':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - equality
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: The assigned moral foundations of care and purity are appropriate
+      for this text because the author is expressing concern for the well-being and
+      emotional safety of the trans individual, particularly in the context of romantic
+      relationships. The author is suggesting that the individual might be vulnerable
+      to exploitation or unhealthy relationships due to their fear of being single,
+      which relates to the care foundation. The text also implies that the relationship
+      is unhealthy due to the partner's body dysmorphia, which is a moral concern
+      for the individual's purity and dignity.
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9968055486679077
+      equality: 1.009773404803127e-05
+      loyalty: 0.0
+      none: 2.89304898615228e-06
+      proportionality: 8.91121817403473e-06
+      purity: 0.0031726136803627014
+    test_text: "Yeah, so he shouldn\u2019t date her. She\u2019s 19 and trans. Have\
+      \ you ever felt like you might never be able to find a romantic partner? Trans\
+      \ people (hi I\u2019m one) can feel like it\u2019s completely impossible and\
+      \ jump with the first person who even hints at accepting that. She might do\
+      \ anything to keep this relationship out of fear that she won\u2019t find another\
+      \ one. It\u2019s generally not healthy to not like your partners body."
+  '9815':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - loyalty
+    test_outs: 'Output: {"label": ["care", "loyalty"]}'
+    test_preds:
+    - care
+    - loyalty
+    test_prefix_outs: 'The assigned moral foundations of care and loyalty are appropriate
+      for this text because:
+
+
+      - The text expresses empathy and concern for the well-being of the friend who
+      is struggling, which relates to the care foundation, as it values the emotional
+      and psychological well-being of others.
+
+      - The text also emphasizes the importance of loyalty and commitment to the person
+      who is helping the friend, suggesting that they should not be taken advantage
+      of or mistreated, which relates to the loyalty foundation, as it values the
+      bonds of loyalty and commitment between individuals.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.9989677667617798
+      equality: 0.0
+      loyalty: 0.0010322310263291001
+      none: 0.0
+      proportionality: 0.0
+      purity: 0.0
+    test_text: "Yea the friend does need help it\u2019s just sad that the one person\
+      \ who is helping the friend gets thrown under the bus because the friend doesn\u2019\
+      t wanna admit she\u2019s afraid. OP you\u2019re going out of your way for this\
+      \ friend and you\u2019re being treated like shit by that friend and their family.\
+      \ Stop coming over and helping."
+  '9872':
+    test_classification_loss: 0.0
+    test_gt:
+    - care
+    - proportionality
+    test_outs: 'Output: {"label": ["care", "purity"]}'
+    test_preds:
+    - care
+    - purity
+    test_prefix_outs: 'The assigned moral foundations of care and purity are appropriate
+      for this text because:
+
+
+      - The text emphasizes empathy and concern for the well-being of the individual
+      who was hurt by their father, which relates to the care foundation, as it values
+      emotional support and protection.
+
+      - The text also rejects the idea that the father''s actions were acceptable,
+      implying that they were morally wrong and tainted, which relates to the purity
+      foundation, as it values moral and emotional purity, and rejects actions that
+      are considered impure or tainted.'
+    test_regularization_loss: 0.0
+    test_residual_outs: null
+    test_scores:
+      authority: 0.0
+      care: 0.999510645866394
+      equality: 0.0
+      loyalty: 0.0
+      none: 1.6365760302505805e-07
+      proportionality: 1.370288259749941e-06
+      purity: 0.0004878563922829926
+    test_text: "Don\u2019t apologize op. Your dad hurt you and deserved to be held\
+      \ accountable. He didn\u2019t leave the bruise but he still hurt you physically\
+      \ and mentally."
+  description: ''

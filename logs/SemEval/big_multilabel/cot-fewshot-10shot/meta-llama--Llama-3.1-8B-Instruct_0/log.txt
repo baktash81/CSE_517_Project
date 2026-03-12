@@ -1,0 +1,79 @@
+DEBUG-vDistributionEstimator(2026-03-12 12:35:47,282)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 12:35:47,292)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: Fosu-Mensa is having a nightmare 15 minutes. Difference between Premier League reserves and League 1 is still wide
+Reasoning: The assigned emotions of disgust, fear, and pessimism are suitable for this text because it describes a negative situation (Fosu-Mensa having a nightmare) and a perceived disparity (wide difference between Premier League reserves and League 1) that may evoke feelings of unease and disappointment. The use of the word "nightmare" intensifies the negative tone, contributing to the emotions of disgust and fear. The pessimistic tone is also evident in the statement about the difference being "still wide," implying a lack of improvement or hope for a better outcome.
+Output: {"label": ["disgust", "fear", "pessimism"]}
+Input: Because it was a perfect illusion, but at least now I know what it was. #angry #ladygaga #iscalming#mysoul
+Reasoning: The assigned emotions of anger, disgust, and pessimism are appropriate for this text because the speaker expresses frustration and disappointment ("it was a perfect illusion") and a sense of disillusionment ("at least now I know what it was"), which aligns with pessimistic and angry sentiments. The use of the word "angry" in the hashtags further reinforces the presence of anger. The mention of "disgust" is less clear-cut, but the speaker's tone could be interpreted as slightly disgusted by the experience of being deceived.
+Output: {"label": ["anger", "disgust", "pessimism"]}
+Input: Luke 1:14\nHe will be a joy and delight to you, and many will rejoice because of his birth
+Reasoning: The assigned emotions of joy, love, and optimism are appropriate for this text because it describes the birth of a child as a source of joy and delight, implying a positive and uplifting event. The phrase "many will rejoice" further emphasizes the celebratory and optimistic tone, suggesting a sense of happiness and hope. The overall sentiment is one of warmth and affection, which aligns with the emotions of love.
+Output: {"label": ["joy", "love", "optimism"]}
+Input: #survivor is back! #SurvivorMillennialsVsGenX so happy to see you @JeffProbst #happy
+Reasoning: The assigned emotions are appropriate for this text because the user expresses enthusiasm and excitement with the phrase "so happy to see you" and the hashtag "#happy", indicating a strong positive emotional state, which aligns with the emotions of joy and optimism. The use of the word "back" also implies a sense of welcome and appreciation, which is associated with the emotions of love and trust. The overall tone of the text is upbeat and positive, reinforcing the assigned emotions.
+Output: {"label": ["joy", "love", "optimism", "trust"]}
+Input: Kayaking is merriment together with sevylor inflatable kayaks: eYGgJxMl
+Reasoning: The assigned emotions are appropriate for this text because the word "merriment" conveys a sense of joy and happiness, indicating that the experience of kayaking with sevylor inflatable kayaks is enjoyable. The presence of "together" suggests a sense of companionship and trust among the individuals involved, which aligns with the emotion of trust. The use of "eYGgJxMl" appears to be a nonsensical string of characters, which could be interpreted as a playful or whimsical tone, contributing to the overall sense of surprise.
+Output: {"label": ["anticipation", "joy", "surprise", "trust"]}
+Input: @BigBossPeltonen \nLikewise #death #cutting #despair
+Reasoning: The assigned emotions of disgust, fear, and sadness are appropriate for this text because the words "death" and "despair" convey a sense of hopelessness and mortality, which are strongly associated with feelings of sadness and fear. The use of "cutting" may also imply a sense of violence or harm, contributing to the overall negative tone and evoking feelings of disgust. The combination of these words creates a somber and ominous atmosphere, justifying the assigned emotions.
+Output: {"label": ["disgust", "fear", "sadness"]}
+Input: remember when glee did a take me or leave me cover but it was between two girls who werent even friends why did that do that
+Reasoning: The assigned emotions of anger, disgust, and sadness are suitable for this text because the speaker seems to be expressing frustration and disappointment with the Glee cover, likely due to the unexpected and seemingly artificial pairing of the two female characters. The speaker's tone is critical and disapproving, indicating a sense of anger. Additionally, the speaker's disappointment and emotional investment in the situation suggest feelings of sadness.
+Output: {"label": ["anger", "disgust", "sadness"]}
+Input: Well i did hear once before that girls are attracted to men that look like their dad!  👌 
+Reasoning: The assigned emotions are appropriate for this text because:
+
+- Anticipation is suitable as the speaker seems to be sharing a piece of advice or a theory that might be of interest to the reader, implying a sense of expectation or curiosity about the outcome. 
+- Joy is fitting as the speaker's tone appears to be lighthearted and casual, with the use of a thumbs up emoji (👌), indicating a positive and cheerful attitude.
+- Pessimism is also relevant as the speaker is sharing a potentially negative or stereotypical view about men being attracted to women who resemble their mothers, which might be perceived as a pessimistic or cynical perspective.
+Output: {"label": ["anticipation", "joy", "pessimism", "surprise"]}
+Input: @lennyabrahamson May I send you a copy of #HeroTheGreyhound? Either e-book or real paper one! A boy and a greyhound #smiles #tears #laughter
+Reasoning: The assigned emotions of joy, love, and sadness are suitable for this text because the mention of "smiles" and "laughter" indicates a positive and happy tone, aligning with joy. The use of "#tears" suggests a sentimental or emotional aspect, which is consistent with sadness. The overall context of sending a book to someone, accompanied by affectionate hashtags, implies a loving gesture, thus love is also an appropriate emotion.
+Output: {"label": ["joy", "love", "sadness"]}
+Input: #oow16 #sting decent new song
+Reasoning: The assigned emotions of anticipation, joy, love, and optimism are suitable for this text because the user is expressing excitement and positivity towards a new song by Sting, indicating a sense of eagerness (anticipation) and happiness (joy). The use of the word "decent" suggests a favorable opinion, which can be associated with love and appreciation. The overall tone is upbeat and hopeful, aligning with optimism.
+Output: {"label": ["anticipation", "joy", "love", "optimism"]}
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+Reasoning:
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
+Output: {"label": ["emotion1", "emotion2"]}
+Input: Well i did hear once before that girls are attracted to men that look like their dad!  👌 
+Reasoning: The assigned emotions are appropriate for this text because:
+
+- Anticipation is suitable as the speaker seems to be sharing a piece of advice or a theory that might be of interest to the reader, implying a sense of expectation or curiosity about the outcome. 
+- Joy is fitting as the speaker's tone appears to be lighthearted and casual, with the use of a thumbs up emoji (👌), indicating a positive and cheerful attitude.
+- Pessimism is also relevant as the speaker is sharing a potentially negative or stereotypical view about men being attracted to women who resemble their mothers, which might be perceived as a pessimistic or cynical perspective.
+Output: {"label": ["anticipation", "joy", "pessimism", "surprise"]}
+Input: #survivor is back! #SurvivorMillennialsVsGenX so happy to see you @JeffProbst #happy
+Reasoning: The assigned emotions are appropriate for this text because the user expresses enthusiasm and excitement with the phrase "so happy to see you" and the hashtag "#happy", indicating a strong positive emotional state, which aligns with the emotions of joy and optimism. The use of the word "back" also implies a sense of welcome and appreciation, which is associated with the emotions of love and trust. The overall tone of the text is upbeat and positive, reinforcing the assigned emotions.
+Output: {"label": ["joy", "love", "optimism", "trust"]}
+Input: #oow16 #sting decent new song
+Reasoning: The assigned emotions of anticipation, joy, love, and optimism are suitable for this text because the user is expressing excitement and positivity towards a new song by Sting, indicating a sense of eagerness (anticipation) and happiness (joy). The use of the word "decent" suggests a favorable opinion, which can be associated with love and appreciation. The overall tone is upbeat and hopeful, aligning with optimism.
+Output: {"label": ["anticipation", "joy", "love", "optimism"]}
+Input: Because it was a perfect illusion, but at least now I know what it was. #angry #ladygaga #iscalming#mysoul
+Reasoning: The assigned emotions of anger, disgust, and pessimism are appropriate for this text because the speaker expresses frustration and disappointment ("it was a perfect illusion") and a sense of disillusionment ("at least now I know what it was"), which aligns with pessimistic and angry sentiments. The use of the word "angry" in the hashtags further reinforces the presence of anger. The mention of "disgust" is less clear-cut, but the speaker's tone could be interpreted as slightly disgusted by the experience of being deceived.
+Output: {"label": ["anger", "disgust", "pessimism"]}
+Input: @lennyabrahamson May I send you a copy of #HeroTheGreyhound? Either e-book or real paper one! A boy and a greyhound #smiles #tears #laughter
+Reasoning: The assigned emotions of joy, love, and sadness are suitable for this text because the mention of "smiles" and "laughter" indicates a positive and happy tone, aligning with joy. The use of "#tears" suggests a sentimental or emotional aspect, which is consistent with sadness. The overall context of sending a book to someone, accompanied by affectionate hashtags, implies a loving gesture, thus love is also an appropriate emotion.
+Output: {"label": ["joy", "love", "sadness"]}
+Input: Kayaking is merriment together with sevylor inflatable kayaks: eYGgJxMl
+Reasoning: The assigned emotions are appropriate for this text because the word "merriment" conveys a sense of joy and happiness, indicating that the experience of kayaking with sevylor inflatable kayaks is enjoyable. The presence of "together" suggests a sense of companionship and trust among the individuals involved, which aligns with the emotion of trust. The use of "eYGgJxMl" appears to be a nonsensical string of characters, which could be interpreted as a playful or whimsical tone, contributing to the overall sense of surprise.
+Output: {"label": ["anticipation", "joy", "surprise", "trust"]}
+Input: @BigBossPeltonen \nLikewise #death #cutting #despair
+Reasoning: The assigned emotions of disgust, fear, and sadness are appropriate for this text because the words "death" and "despair" convey a sense of hopelessness and mortality, which are strongly associated with feelings of sadness and fear. The use of "cutting" may also imply a sense of violence or harm, contributing to the overall negative tone and evoking feelings of disgust. The combination of these words creates a somber and ominous atmosphere, justifying the assigned emotions.
+Output: {"label": ["disgust", "fear", "sadness"]}
+Input: Fosu-Mensa is having a nightmare 15 minutes. Difference between Premier League reserves and League 1 is still wide
+Reasoning: The assigned emotions of disgust, fear, and pessimism are suitable for this text because it describes a negative situation (Fosu-Mensa having a nightmare) and a perceived disparity (wide difference between Premier League reserves and League 1) that may evoke feelings of unease and disappointment. The use of the word "nightmare" intensifies the negative tone, contributing to the emotions of disgust and fear. The pessimistic tone is also evident in the statement about the difference being "still wide," implying a lack of improvement or hope for a better outcome.
+Output: {"label": ["disgust", "fear", "pessimism"]}
+Input: Luke 1:14\nHe will be a joy and delight to you, and many will rejoice because of his birth
+Reasoning: The assigned emotions of joy, love, and optimism are appropriate for this text because it describes the birth of a child as a source of joy and delight, implying a positive and uplifting event. The phrase "many will rejoice" further emphasizes the celebratory and optimistic tone, suggesting a sense of happiness and hope. The overall sentiment is one of warmth and affection, which aligns with the emotions of love.
+Output: {"label": ["joy", "love", "optimism"]}
+Input: remember when glee did a take me or leave me cover but it was between two girls who werent even friends why did that do that
+Reasoning: The assigned emotions of anger, disgust, and sadness are suitable for this text because the speaker seems to be expressing frustration and disappointment with the Glee cover, likely due to the unexpected and seemingly artificial pairing of the two female characters. The speaker's tone is critical and disapproving, indicating a sense of anger. Additionally, the speaker's disappointment and emotional investment in the situation suggest feelings of sadness.
+Output: {"label": ["anger", "disgust", "sadness"]}
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+Reasoning:
+INFO-vDistributionEstimator(2026-03-12 13:17:58,324)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.5117, micro_f1=0.6330, macro_f1=0.5335, anger_f1=0.7784, anticipation_f1=0.3333, disgust_f1=0.7361, fear_f1=0.4416, joy_f1=0.8069, love_f1=0.6027, optimism_f1=0.7154, pessimism_f1=0.3188, sadness_f1=0.6806, surprise_f1=0.2017, trust_f1=0.2526
