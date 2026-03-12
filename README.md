@@ -1,14 +1,34 @@
-# [EMNLP Main 2025] LLMs do Multi-Label Classification Differently
+# [EMNLP Main 2025] LLMs do Multi-Label Classification Differently Reproduction
 
-This repo contains the official implementation of [Large Language Models do Multi-Label Classification Differently](https://arxiv.org/abs/2505.17510), to appear in the Main Conference Proceedings of EMNLP 2025. 
+This repo is a reproduction of the official implementation of [Large Language Models do Multi-Label Classification Differently](https://arxiv.org/abs/2505.17510), which appeared in the Main Conference Proceedings of EMNLP 2025. 
 
-If you have any questions, bugs, or comments, please contact mjma@usc.edu or chochlak@usc.edu!
+## Paper Abstract
 
-## Abstract
-
-> Multi-label classification is prevalent in real-world settings, but the behavior of Large Language Models (LLMs) in this setting is understudied. We investigate how autoregressive LLMs perform multi-label classification, with a focus on subjective tasks, by analyzing the output distributions of the models in each generation step. We find that their predictive behavior reflects the multiple steps in the underlying language modeling required to generate all relevant labels as they tend to suppress all but one label at each step. % owning to unrepresentative and spiky probability distributions at each step. We further observe that as model scale increases, their token distributions exhibit lower entropy, yet the internal ranking of the labels improves. Finetuning methods such as supervised finetuning and reinforcement learning amplify this phenomenon. To further study this issue, we introduce the task of distribution alignment for multi-label settings: aligning LLM-derived label distributions with empirical distributions estimated from annotator responses in subjective tasks. We propose both zero-shot and supervised methods which improve both alignment and predictive performance over existing approaches.
+> Multi-label classification is prevalent in realworld settings, but the behavior of Large Language Models (LLMs) in this setting is understudied. We investigate how autoregressive
+LLMs perform multi-label classification, focusing on subjective tasks, by analyzing the
+output distributions of the models at each label
+generation step. We find that the initial probability distribution for the first label often does
+not reflect the eventual final output, even in
+terms of relative order and find LLMs tend to
+suppress all but one label at each generation
+step. We further observe that as model scale increases, their token distributions exhibit lower
+entropy and higher single-label confidence, but
+the internal relative ranking of the labels improves. Finetuning methods such as supervised
+finetuning and reinforcement learning amplify
+this phenomenon. We introduce the task of
+distribution alignment for multi-label settings:
+aligning LLM-derived label distributions with
+empirical distributions estimated from annotator responses in subjective tasks. We propose
+both zero-shot and supervised methods which
+improve both alignment and predictive performance over existing approaches. We find one
+method – taking the max probability over all
+label generation distributions instead of just
+using the initial probability distribution – improves both distribution alignment and overall
+F1 classification without adding any additional
+computation.
 
 ## Installation
+*The instructions in this sections are taken directly from the original repository:*
 
 This repo uses `Python 3.10` (type hints, for example, won't work with some previous versions). After you create and activate your virtual environment (with conda, venv, etc), install local dependencies with:
 
@@ -18,58 +38,39 @@ pip install -e .[dev]
 
 ## Data preparation
 
+The datasets required to run these experiments are already included in this repository under the `/datasets` directory. **No additional download steps are necessary**
 
-To run the GoEmotions experiments, we recommend using the emotion pooling we set up based on the hierarchical clustering (besides, the bash scripts are set up for it). To do so, create the file `emotion_clustering.json` under the root folder of the dataset with the following contents:
+However, if you wish to pull the raw data from the original sources to recreate the pipeline, they can be found at:
+- GoEmotions: https://huggingface.co/datasets/google-research-datasets/go_emotions
+- MFRC: https://huggingface.co/datasets/USC-MOLA-Lab/MFRC 
+- SemEval 2018 Task 1 E-c: https://competitions.codalab.org/competitions/17751#learn_the_details-datasets 
+- HateXplain: https://github.com/hate-alert/HateXplain 
 
-```JSON
-{
-    "joy": [
-        "amusement",
-        "excitement",
-        "joy",
-        "love"
-    ],
-    "optimism": [
-        "desire",
-        "optimism",
-        "caring"
-    ],
-    "admiration": [
-        "pride",
-        "admiration",
-        "gratitude",
-        "relief",
-        "approval",
-        "realization"
-    ],
-    "surprise": [
-        "surprise",
-        "confusion",
-        "curiosity"
-    ],
-    "fear": [
-        "fear",
-        "nervousness"
-    ],
-    "sadness": [
-        "remorse",
-        "embarrassment",
-        "disappointment",
-        "sadness",
-        "grief"
-    ],
-    "anger": [
-        "anger",
-        "disgust",
-        "annoyance",
-        "disapproval"
-    ]
-}
-```
+In addition, for evaluation, you will need to generate the human annotation label distributions. These can be generated using the `generate_human_distributions.py` script in each data directory. The splits for the train and test sets can be found under the `prob_distr_ids` directory.
 
-For MFRC, please create a folder for the dataset (even though we use HuggingFace `datasets` for it), and copy the file `./configs/MFRC/splits.yaml` to that directory.
+## Preprocessing Code
+No additional preprocessing steps are needed.
 
-## Run experiments
+## Pretrained Models
+This experiment uses Llama 3 model family. To use the model, you will have to log in to Hugging Face and request access to the models, then set up an access token. 
+
+### Setup Instructions
+1. **Request Access:** Visit the model page for one of the models below (e.g., [meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)) on Hugging Face and accept Meta's terms of use. Access is usually granted instantly.
+2. **Generate a Token:** Go to your Hugging Face Account Settings > Access Tokens and create a new token with "Read" permissions.
+3. **Configure Your Environment:** Create a `.env` file in the root directory of this project and add your token like this:
+   `ACCESS_TOKEN=your_huggingface_token_here`
+
+Specifically, experiments are run on:
+- [meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
+- [meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
+- [meta-llama/Llama-3.1-70B](https://huggingface.co/meta-llama/Llama-3.1-70B)
+- [meta-llama/Llama-3.1-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct)
+
+## Training Code
+This experiment uses pretrained models with no fine-tuning, so training is not needed.
+
+## Run Experiments
+*The instructions in this sections are taken directly from the original repository:*
 
 Experiments are logged with [legm](https://github.com/gchochla/legm), so refer to the documentation there for an interpretation of the resulting `logs` folder, but navigating should be intuitive enough with some trial and error. Note that some bash scripts have arguments, which are self-explanatory. Make sure to run scripts from the root directory of this repo.
 
@@ -98,12 +99,43 @@ After successfully running these scripts, a folder should appear under `logs/{da
 
 All of the `plot*.py` files are the files for plotting Figures 4, 5, and 6 and they use various `indexed_metrics.yml` files to process and analyze the data. If you want to run them, some of the initial settings might need to change according to which log files they point to.
 
-### Linear Probing Analysis
+## Evaluation Code
+Specifically, our reproduction of the original work used the following combinations of datasets, evaluation sets, and Llama 3.1 models. 
 
-- `scripts/ml-distribution/linear-probing.sh` will run the scripts to, first, run the models on the entire dataset, and then run linear probing one them.
-- `scripts/ml-distribution/plot_figures.sh` will plot their distributions.
+To run an evaluation, construct your command using the options in the table below. 
 
-### Distribution Alignment
+**Base Command Structure:**
+```
+bash <script_name.sh> <distribution_type> <test_set> <gpu_id> <model_name> <use_vllm>
+```
 
-- `scripts/ml-distribution/scores.sh` will calculate the scores of the linear probes to calculate alignment.
-- `scripts/training/demux_ds.sh` followed by `demux_extract.sh` will calculate the scores of Demux (BERT-based) for alignment.
+**Evaluation Parameters**
+
+| Parameter | Options | Description |
+| :--- | :--- | :--- |
+| **Script Name** | `pipeline-goemotions.sh`<br>`pipeline-MFRC.sh`<br>`pipeline-semeval.sh`<br>`pipeline-hate.sh` | Determines the dataset being evaluated. |
+| **Position 1** | `baseline` | The distribution type to evaluate. |
+| **Position 2** | `main_test_set`<br>`big_multilabel`<br>`''` *(Empty string for train set)* | The evaluation split. See the note below regarding train set evaluations. |
+| **Position 3** | `0`, `1`, etc. | The target GPU ID. |
+| **Position 4** | `meta-llama/Llama-3.1-8B`<br>`meta-llama/Llama-3.1-8B-Instruct`<br>`meta-llama/Llama-3.1-70B`<br>`meta-llama/Llama-3.1-70B-Instruct` | The exact Hugging Face model name. |
+| **Position 5** | `vllm` *(Optional)* | Includes the vLLM backend for efficiency. This depends on your hardware configuration, but it is functional in our environment. |
+
+**Important Execution Notes**
+
+- Evaluating the Train Set: When running an evaluation on the full train set (by passing an empty string `''` to position 2), you must manually open the bash script and flip the train and test parameters before executing:
+```
+--train-split dev \
+--test-split train \
+```
+- All other parameters inside the shell scripts remain exactly as specified by the original authors
+
+### Chain-of-Thought (CoT) Experiments
+The scripts for the CoT experiments utilize an identical setup and parameter structure as explained above. These can be found in the `/cot` directory.
+
+### Plotting Figures
+To generate the metrics and visuals for the reproduction, use the python scripts located in `scripts/prob_distr/`. Ensure the log file paths are accurate in your scripts before running.
+
+- Spikiness Graph: `python scripts/prob_distr/plot_spikiness.py`
+
+- Table Metrics (NLL, L1, F1): `python scripts/prob_distr/evaluate_baselines.py`
+
