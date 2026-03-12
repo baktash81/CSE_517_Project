@@ -48,7 +48,7 @@ echo ""
 
 
 # SemEval
-run_pipeline "SemEval" bash scripts/prob_distr/pipeline-semeval.sh "$dist_type" "$id_list" "$train_split" "$test_split" "$gpus" "$model" vllm "$gpu_mem"
+# run_pipeline "SemEval" bash scripts/prob_distr/pipeline-semeval.sh "$dist_type" "$id_list" "$train_split" "$test_split" "$gpus" "$model" vllm "$gpu_mem"
 
 # MFRC
 run_pipeline "MFRC" bash scripts/prob_distr/pipeline-MFRC.sh "$dist_type" "$id_list" "$train_split" "$test_split" "$gpus" "$model" vllm "$gpu_mem"

@@ -9,3 +9,14 @@ experiment_0:
   test_micro_f1: 0.6121372031662269
   test_proportionality_f1: 0.5806451612903226
   test_purity_f1: 0.64
+experiment_1:
+  description: ''
+  test_authority_f1: 0.723404255319149
+  test_care_f1: 0.6415094339622641
+  test_equality_f1: 0.6176470588235294
+  test_jaccard_score: 0.6336633663366337
+  test_loyalty_f1: 0.56
+  test_macro_f1: 0.6127189497562787
+  test_micro_f1: 0.6149732620320856
+  test_proportionality_f1: 0.5483870967741935
+  test_purity_f1: 0.5853658536585366

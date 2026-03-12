@@ -18,3 +18,23 @@ experiment_0:
     reasonable_f1: 0.6348122866894198
     unreasonable_f1: 0.0
   description: ''
+experiment_1:
+  aggregate_unary_hate:
+    jaccard_score: 0.34
+    macro_f1: 0.2537313432835821
+    micro_f1: 0.34
+    reasonable_f1: 0.5074626865671642
+    unreasonable_f1: 0.0
+  aggregate_unary_normal:
+    jaccard_score: 0.185
+    macro_f1: 0.15611814345991562
+    micro_f1: 0.185
+    reasonable_f1: 0.31223628691983124
+    unreasonable_f1: 0.0
+  aggregate_unary_offensive:
+    jaccard_score: 0.465
+    macro_f1: 0.3174061433447099
+    micro_f1: 0.465
+    reasonable_f1: 0.6348122866894198
+    unreasonable_f1: 0.0
+  description: ''

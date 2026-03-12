@@ -107,3 +107,112 @@ Question: They're not independentists, they're autonomists. And they go ALONG ev
 Label: authority
 Is the label reasonable: 
 INFO-vDistributionEstimator(2026-03-11 04:41:44,005)   Testing metrics for Unary breakdown dataset: 
+DEBUG-vDistributionEstimator(2026-03-11 23:28:43,753)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 23:28:44,036)   test: Label set: reasonable, unreasonable
+Example prompt: Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: You don’t, that’s fucking rude and you should learn to accept that that’s his choice and you can’t make him do anything
+Label: loyalty
+Is the label reasonable: unreasonable
+
+Question: No, no bootlicking capitalism mentality. Instead expect services in exchange for the taxes you pay to help others in need. Not individual charity.
+Label: proportionality
+Is the label reasonable: reasonable
+
+Question: People need to realize all these institutions are corrupt AF
+
+The DNC is blatantly abusing it's privilege and will not represent the will of the people. 
+
+Pull their feet to the fire.
+Label: loyalty
+Is the label reasonable: unreasonable
+
+Question: She's not his *mistress,* she's seventeen. She might be his *victim.*
+Label: care
+Is the label reasonable: reasonable
+
+Question: This isn't your average every-day wage slavery. This is.. *advanced* wage slavery.
+Label: equality
+Is the label reasonable: reasonable
+
+Question: The employee is facing harassment for a customer, so instead of punishing the customer they fire the employee being harassed
+Label: purity
+Is the label reasonable: unreasonable
+
+Question: The ambiguous language in the text will allow for America's already tyrannical anti-Christ government to force churches to support abortions and birth control and possibly ordain women.
+Label: purity
+Is the label reasonable: unreasonable
+
+Question: Thing is... this is good for her. She will take whatever punishment she's given and use this as a great example of everything wrong with her opposition. She's a martyr and proof that if she can get hit with these bullshit laws that celebrate terrorism and endanger the public, anybody else can too.
+
+I hope this can help bring about a Le Pen victory. 
+Label: purity
+Is the label reasonable: unreasonable
+
+Question: I think this happens when you’re in love AND feel safe with/trust them (which is very rare) I’ve only ever felt this in my very first relationship when I was a teen, and have never since felt it again. Congrats, I wish you guys a very happy one ❤️
+Label: care
+Is the label reasonable: reasonable
+
+Question: For real? That sucks man I'm sorry. You deserve better.
+
+I read through your other posts too and damn I really don't like your husband
+Label: care
+Is the label reasonable: reasonable
+
+Question: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Label: authority
+Is the label reasonable: 
+Example tokenization: <|begin_of_text|>Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: You don’t, that’s fucking rude and you should learn to accept that that’s his choice and you can’t make him do anything
+Label: loyalty
+Is the label reasonable: unreasonable
+
+Question: No, no bootlicking capitalism mentality. Instead expect services in exchange for the taxes you pay to help others in need. Not individual charity.
+Label: proportionality
+Is the label reasonable: reasonable
+
+Question: People need to realize all these institutions are corrupt AF
+
+The DNC is blatantly abusing it's privilege and will not represent the will of the people. 
+
+Pull their feet to the fire.
+Label: loyalty
+Is the label reasonable: unreasonable
+
+Question: She's not his *mistress,* she's seventeen. She might be his *victim.*
+Label: care
+Is the label reasonable: reasonable
+
+Question: This isn't your average every-day wage slavery. This is.. *advanced* wage slavery.
+Label: equality
+Is the label reasonable: reasonable
+
+Question: The employee is facing harassment for a customer, so instead of punishing the customer they fire the employee being harassed
+Label: purity
+Is the label reasonable: unreasonable
+
+Question: The ambiguous language in the text will allow for America's already tyrannical anti-Christ government to force churches to support abortions and birth control and possibly ordain women.
+Label: purity
+Is the label reasonable: unreasonable
+
+Question: Thing is... this is good for her. She will take whatever punishment she's given and use this as a great example of everything wrong with her opposition. She's a martyr and proof that if she can get hit with these bullshit laws that celebrate terrorism and endanger the public, anybody else can too.
+
+I hope this can help bring about a Le Pen victory. 
+Label: purity
+Is the label reasonable: unreasonable
+
+Question: I think this happens when you’re in love AND feel safe with/trust them (which is very rare) I’ve only ever felt this in my very first relationship when I was a teen, and have never since felt it again. Congrats, I wish you guys a very happy one ❤️
+Label: care
+Is the label reasonable: reasonable
+
+Question: For real? That sucks man I'm sorry. You deserve better.
+
+I read through your other posts too and damn I really don't like your husband
+Label: care
+Is the label reasonable: reasonable
+
+Question: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Label: authority
+Is the label reasonable: 
+INFO-vDistributionEstimator(2026-03-11 23:44:01,271)   Testing metrics for Unary breakdown dataset: 

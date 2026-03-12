@@ -45,3 +45,50 @@ Input: Thanks dude, palms were very sweaty lol
 {"label": ["joy", "admiration"]}
 Input: At least now [NAME] has more time to gain his confidence
 INFO-vDistributionEstimator(2026-03-11 03:45:15,908)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3900, micro_f1=0.4815, macro_f1=0.4792, joy_f1=0.5421, optimism_f1=0.5517, admiration_f1=0.4632, surprise_f1=0.3158, fear_f1=0.5000, sadness_f1=0.5946, anger_f1=0.3871
+DEBUG-vDistributionEstimator(2026-03-11 22:52:20,217)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 22:52:20,753)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I enjoyed it somewhat, but haven't felt like rewatching (or owning) it.
+{"label": ["joy"]}
+Input: Just wanna say I love you and hope the flight and everything thing else goes well👌👌.
+{"label": ["joy", "optimism"]}
+Input: It took me a second to distinguish between whether it was [NAME] or [NAME]. I have officially been cursed by this subreddit.
+{"label": ["admiration"]}
+Input: I mean, if I make it look like an accident, just think of all the ribs I can buy with the insurance money... 
+{"label": ["optimism", "admiration"]}
+Input: The SNP were, I remember [NAME] stridulating about it at conference, but I don’t think it was a go-er.
+{"label": ["anger"]}
+Input: STOP GETTING FACTS FROM [NAME] AND THE CORRUPT STATE ..lol
+{"label": ["anger"]}
+Input: My wife is a rams fan. I don’t like them, but I think I like them more than the patriots lol
+{"label": ["joy"]}
+Input: Lol really?
+{"label": ["joy", "surprise"]}
+Input: > Pretty much the person I love just broke up completely with me After how long?
+{"label": ["joy", "sadness"]}
+Input: I've wanted this for so long.
+{"label": ["optimism", "admiration"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Can't. Prequel bad. Bearded [NAME] Man idea bad. OT era only good thing.
+{"label": ["sadness"]}
+Input: I had a total of 5 pet chickens. No way I could've ever eaten any of them. Glad that gfather confirmed that Banana Chip was buried.
+{"label": ["optimism", "admiration"]}
+Input: Ahem. Second best NA
+{"label": ["sadness", "anger"]}
+Input: This is a very good meme op but I hope you're doing good:)
+{"label": ["optimism", "admiration"]}
+Input: Sadly no, but I hear it comes with a sweet bottle opener! And you can't spell Bottle Opener without Lebron.
+{"label": ["sadness"]}
+Input: I love humans
+{"label": ["joy"]}
+Input: Because we feed the shitty ones so there is no incentive to put in effort
+{"label": ["sadness", "anger"]}
+Input: That’s the face of trying your best not to smile at a bad pun.
+{"label": ["admiration"]}
+Input: You're very welcome. You do, and I hope (for your sake and especially for your daughters') that things work out for you all.
+{"label": ["joy", "optimism"]}
+Input: I'm pretty sure you killed me. I got killed by a pounder on a plane on that very same map 2 days ago or so lol
+{"label": ["joy"]}
+Input: At least now [NAME] has more time to gain his confidence
+INFO-vDistributionEstimator(2026-03-11 22:55:10,729)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3719, micro_f1=0.4647, macro_f1=0.4523, joy_f1=0.6182, optimism_f1=0.5000, admiration_f1=0.4583, surprise_f1=0.2807, fear_f1=0.3667, sadness_f1=0.5672, anger_f1=0.3750

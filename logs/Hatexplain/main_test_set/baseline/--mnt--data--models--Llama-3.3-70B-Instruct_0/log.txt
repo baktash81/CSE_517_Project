@@ -69,3 +69,74 @@ Answer: normal
 Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
 Answer:
 INFO-vDistributionEstimator(2026-03-11 03:46:51,533)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.6100, micro_f1=0.6100, macro_f1=0.5567, hate_f1=0.7326, normal_f1=0.6483, offensive_f1=0.2892
+DEBUG-vDistributionEstimator(2026-03-11 22:56:10,767)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 22:56:10,774)   test: Label set: hate, normal, offensive
+Example prompt: Classify the following inputs into one of the following options per input: hate, normal and offensive. Output exactly one label and no others.
+
+Question: sleeping alone ghetto asf <number> <number>
+Answer: normal
+
+Question: <user> there is a bright side if criminals start using silencers people in the ghetto will get more sleep
+Answer: hate
+
+Question: aye bro do not you cuff that hoe cuz i done had that too
+Answer: offensive
+
+Question: why must niggers constantly be taken care of american niggers african niggers european niggers asian sand niggers jesus h fucking christ when is enough enough
+Answer: hate
+
+Question: rumor is sustain and able are in their bible and that green rumor is kim jong un just has gas and they want to use it to power a rocketship to mars never had a jew shoot at me in africa had a shit load of muzzies try their luck
+Answer: hate
+
+Question: i d beat his fucking ass retarded for talking to me like that honestly
+Answer: offensive
+
+Question: statement from the moslem terrorist family attacking police
+Answer: normal
+
+Question: call me a nigger lover shitskin apologist and misogynist but general powell was duped by white people hillary did it for power and blood sport only nimrata randhawa rabbi knows her motivations
+Answer: normal
+
+Question: <user> but did not romans crucified christ so why blame jews 🤔
+Answer: normal
+
+Question: since refugees acomplished the opposite of what jews wanted that the gentiles hate the arabs instead of the headquarters of satan israel
+Answer: offensive
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+Answer:
+Example tokenization: <|begin_of_text|>Classify the following inputs into one of the following options per input: hate, normal and offensive. Output exactly one label and no others.
+
+Question: should i have been an athlete is this where they are hiding all the niggers
+Answer: hate
+
+Question: <user> ‍ he did not leave me he just took a holiday with esmerelda the greasy spic maid
+Answer: hate
+
+Question: my excuse is that i am not like your trailer trash whore mom that needs to fuck another toothless methhead fat redneck to feed bastards like you
+Answer: offensive
+
+Question: i swear i will never call you bitch again tupac 😊
+Answer: normal
+
+Question: you jews would not even need to drug that bitch up you would not even need to rape her lmwao
+Answer: offensive
+
+Question: imagine thinking that fat dyke in dallas a better rb than kamara lmfao
+Answer: offensive
+
+Question: <number> sticks and stones may break my bones but names will never hurt me <number> wah not my president i am triggered you are a rayciss xenophobe homophobe islamophobe biggoted cisgendered white male i need a safe space to crawl off to and be a big pussy in
+Answer: normal
+
+Question: <user> hopefully any and all moslem run countries
+Answer: normal
+
+Question: one of the reasons columbus discovered america is because no one wanted to go thru moslem controlled lands to get to india
+Answer: normal
+
+Question: there is a total onslaught against white nations worldwide and israel is a old age retirement village for barbaric khazar kikes it has become a refugees state for pedophiles do not believe me truth fears no investigation
+Answer: hate
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+Answer:
+INFO-vDistributionEstimator(2026-03-11 22:56:49,951)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.6000, micro_f1=0.6000, macro_f1=0.5524, hate_f1=0.7052, normal_f1=0.6389, offensive_f1=0.3133
