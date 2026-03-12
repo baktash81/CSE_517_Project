@@ -68,3 +68,83 @@ Moral foundation(s): proportionality
 Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
 Moral foundation(s):
 INFO-vDistributionEstimator(2026-03-11 03:37:56,521)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2644, micro_f1=0.3504, macro_f1=0.3189, authority_f1=0.3167, care_f1=0.4103, equality_f1=0.4286, loyalty_f1=0.1633, proportionality_f1=0.2059, purity_f1=0.3889
+DEBUG-vDistributionEstimator(2026-03-12 04:49:34,242)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 04:49:34,544)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: It really annoys me when people moan about this. People rarely come to reddit looking for help with minor problems that can be easily resolved, a lot of posts involve hugely disrespectful behaviour, cheating and abuse. Yes there are a few cases where people call for break ups over minor things but in a lot of cases a break up is well justified.
+Moral foundation(s): care
+Input: Yes that is why we call it wage slavery and been trying to abolish it for centuries
+Moral foundation(s): care, equality
+Input: I wouldn't call it exciting, but rather disgusting contempt for democratic elections, which is unfortunately very common among EU elites. I wouldn't even be surprised if it was ilegal for state bureaucrats to plot something like this.
+
+It's also telling that they expected riots from letists (like always), but Guardian managed to put it like if it was Le Pen's fault.
+Moral foundation(s): authority, purity
+Input: What are you talking about? You are a conservative therefore a white supremacist who hates Blacks. 
+
+/s
+Moral foundation(s): equality
+Input: To the people who forgot what this subreddit is about: 
+
+No one asked you who you think did what and why. The OP is trying to figure out how to keep having a relationship with her family and grandkids after an intense situation, that might lead to one of her family members going to jail.
+
+Forget your lust for drama and honestly try to help. How would you feel if you were in a similar situation and instead of people helping you, they argue about facts that they don't possess.
+Moral foundation(s): care
+Input: If you see someone, your son in fact, in an abusive relationship you're not obligated to smile and pretend like that's just fine. Idk if cheating is (emotional?) abuse but it's pretty damn close
+Moral foundation(s): care, loyalty
+Input: I would want to cut someone off if they couldn’t respect my wishes regarding my child after constantly telling them and they repeating it. MIL needs to take you seriously. I know it’s your wife’s mom but her mom is not only disrespecting you but causing sourness amongst you both.
+Moral foundation(s): authority, care
+Input: I completely agree with you.  The party of Sedition and Insurrection has no interest in democracy.
+
+"Fascism? What else do you call rejecting democracy, scapegoating immigrants, and being consumed by grievance? "
+
+https://www.metrotimes.com/detroit/fascism-what-else-do-you-call-rejecting-democracy-scapegoating-immigrants-and-being-consumed-by-grievance/Content?oid=25352265
+
+"Fascists shared a seething hatred for socialism, liberalism, and bourgeois individualism. They believed in authoritarian leadership and the right of the strong to subjugate the weak. They believed in the primacy of the state over the rights of the individual. **They believed their collective grievance justified violence**."
+Moral foundation(s): authority
+Input: Today Le Pen proved she's unprincipled and disloyal. If she did that to her own party, imagine what she would do to France.
+Moral foundation(s): authority, loyalty
+Input: &gt; Why does nobody here ever caution us to wait and see if Macron policies actually work?
+
+Neoliberal policies have been tried multiple times, and they always lead to the same thing: sharp increase in wealth inequality, increased national debt due to privatization and loss of government income, a weakening of the social safety net and an increase in business welfare. 
+
+Still better than Le Pen though. 
+Moral foundation(s): equality
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Trump, Le Pen and UKIP supporters seem perfectly happy that Putin's people have tried and in many cases succeeded in hacking Democracy  around the world. There are costs to letting Putin's policies go unchecked and these poor people are paying them.
+Moral foundation(s): authority, care
+Input: Frankly, and I don't mean to put you down by saying this, but this almost seems like an elaborate plan to cover up the fact your husband is doing something shady. Getting mad at you over small things, having his sister, friend, etc gang up on you (which is unbelievably immature), lying about where he stayed... honestly it sounds like hes cheating. You're too young to deal w this shit
+
+
+Seriously... how are you being manipulative when hes the one blowing up at you, lying, etc. Cause its just straight up deflection from his own crappy behavior
+Moral foundation(s): care, loyalty
+Input: Hamon betrayed nothing. He stayed true to the values promoted by Francois Hollande during his campaign. Hollande and everybody who voted for the law by El-Khomri betrayed the french who voted for a candidate who once said: "my enemy is finance".
+As for the primary, he ran fair and square and won, showing that people at the socialist party were not happy with the 5 years of Hollande.
+Moral foundation(s): loyalty
+Input: Why are you apologizing to the gay community in particular.  You should be apologizing to anyone who you conned into giving you money.   You should also apologize to any really poor people who really have to beg to survive.   Because there are so many scam artists, it doesn't make sense to give to anybody.
+Moral foundation(s): equality, proportionality
+Input: As someone who was bullied and tried to take their own life, fuck you. But it’s good that you recognise it. Even if you are on good terms now I’m pretty sure she would appreciate an apology from you. 
+And yes the other comments are right, why don’t you try and help other kids in her position?
+Moral foundation(s): care
+Input: He is controlling and violent, he will escalate this cannot get better for you. You need to make a safe plan to leave him, he is abusive and dangerous.
+Moral foundation(s): care, equality
+Input: Destroying statues of Union Officers who fought against slavery to own the racists?
+Moral foundation(s): equality
+Input: Well yeah there’s three possibilities here: 
+
+- it’s an ex girlfriend 
+
+- it’s a current affair partner
+
+- it’s a random girl online who doesn’t even know him
+
+None of those are good. All of them = creep scumbag.
+Moral foundation(s): loyalty, purity
+Input: For being such a racist country that “oppresses” minorities kaepernick has sure profited pretty well in this country.
+Moral foundation(s): equality
+Input: That’s kind of cruel...no one should have to expect put-downs from the person who’s supposed to love and support them, and he’s communicated these insecurities to his wife but she continues to treat him poorly.
+Moral foundation(s): care
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-12 04:50:19,653)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2719, micro_f1=0.3636, macro_f1=0.3339, authority_f1=0.3697, care_f1=0.4476, equality_f1=0.4296, loyalty_f1=0.2857, proportionality_f1=0.1562, purity_f1=0.3143

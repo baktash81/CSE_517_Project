@@ -69,3 +69,74 @@ Answer: normal
 Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
 Answer:
 INFO-vDistributionEstimator(2026-03-11 03:40:42,221)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4950, micro_f1=0.4950, macro_f1=0.4957, hate_f1=0.4865, normal_f1=0.5816, offensive_f1=0.4189
+DEBUG-vDistributionEstimator(2026-03-12 04:53:24,704)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 04:53:24,711)   test: Label set: hate, normal, offensive
+Example prompt: Classify the following inputs into one of the following options per input: hate, normal and offensive. Output exactly one label and no others.
+
+Question: paul jayda jailed meanwhile muslim preachers are free to spout their hatred unhindered the law is an ass
+Answer: offensive
+
+Question: they all look amazing
+Answer: normal
+
+Question: see i do not think they will because if so they would of done something about it by now or at least tried the average british male as lost the will to fight and i do not just mean through violence i mean every aspect
+Answer: normal
+
+Question: they all took a a filthy kike raping selling their sexual and moral soul for money and fame you do not get to take it with you filthy shiksas when you die
+Answer: hate
+
+Question: <user> black on black violence is impossible the white man 👨 did it whitey also didn ’ t move in to save the save screw whitey
+Answer: hate
+
+Question: this story makes me consider the white suicide vs white genocide memes our situation is similar it is white auto genocide in a way we have not been physically conquered and forced into these policies at gunpoint but we are doing it because of constant malicious suggestions by outside groups
+Answer: normal
+
+Question: women wtf r u doing
+Answer: offensive
+
+Question: you are replying to torbas post in defence of a kike that calls people goys you seem to of forgot jews killed jesus the first problem is people like you jews are next you will be gassed first
+Answer: hate
+
+Question: <user> <user> get a load of this retard
+Answer: offensive
+
+Question: lmao full retard once trump does <number> small limited thing you do not like because you are a fucking dumb monkey that does not understand why he did it
+Answer: offensive
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+Answer:
+Example tokenization: <|begin_of_text|>Classify the following inputs into one of the following options per input: hate, normal and offensive. Output exactly one label and no others.
+
+Question: and there is nothing as bad as a filthy kike
+Answer: hate
+
+Question: on a bus not one single english person plus one coon talking on the phone in some gibberish language i do not understand
+Answer: hate
+
+Question: clarity the moslem appears to have drawn a gun but did not fire
+Answer: normal
+
+Question: looks like barren cat lady will be retiring soon there a lesson go soft on the muzzies and pay the price at the ballot box
+Answer: hate
+
+Question: keenly creator confront warlock dyke
+Answer: normal
+
+Question: such a retard
+Answer: offensive
+
+Question: i will never ever understand queer people who gatekeep others and conflate sexuality with morality or immorality
+Answer: offensive
+
+Question: <user> my son is a gay cis african american man in nyc i am white cis in my mid 4 0 in nc he is much more opposed to cancel culture than me by a harsh longshot
+Answer: normal
+
+Question: promoting violence or engaging in political violence is not helpful we do not have the numbers or the support to engage in illegal activities such acts of violence are futile and gives more ammunition for our enemies to dehumanize us
+Answer: normal
+
+Question: hulk hogan hoes they be feeling think a pack of mittens put em give them white bitch til she would gladly consider your
+Answer: offensive
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+Answer:
+INFO-vDistributionEstimator(2026-03-12 04:53:37,143)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4550, micro_f1=0.4550, macro_f1=0.4551, hate_f1=0.4727, normal_f1=0.5405, offensive_f1=0.3521

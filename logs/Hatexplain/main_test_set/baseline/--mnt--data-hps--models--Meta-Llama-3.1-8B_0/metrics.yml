@@ -6,3 +6,11 @@ experiment_0:
   test_micro_f1: 0.495
   test_normal_f1: 0.5815602836879432
   test_offensive_f1: 0.4189189189189189
+experiment_1:
+  description: ''
+  test_hate_f1: 0.4727272727272727
+  test_jaccard_score: 0.455
+  test_macro_f1: 0.4551268297747171
+  test_micro_f1: 0.455
+  test_normal_f1: 0.5405405405405406
+  test_offensive_f1: 0.352112676056338

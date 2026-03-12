@@ -126,3 +126,131 @@ experiment_0:
     macro_f1: 0.0
     micro_f1: 0.0
   description: ''
+experiment_1:
+  aggregate_binary_authority_care:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_authority_equality:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_authority_loyalty:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_authority_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_authority_proportionality:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_authority_purity:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_care_equality:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_care_loyalty:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_care_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_care_proportionality:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_care_purity:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_equality_loyalty:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_equality_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_equality_proportionality:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_equality_purity:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_loyalty_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_loyalty_proportionality:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_loyalty_purity:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_proportionality_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_proportionality_purity:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  aggregate_binary_purity_none:
+    a_f1: 0.0
+    b_f1: 0.0
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+  description: ''

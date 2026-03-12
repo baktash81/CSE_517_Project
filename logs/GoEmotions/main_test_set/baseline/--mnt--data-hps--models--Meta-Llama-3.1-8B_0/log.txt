@@ -45,3 +45,50 @@ Input: Would rather not waste 2 more years of Odell and Saquon's prime tanking f
 {"label": ["admiration"]}
 Input: At least now [NAME] has more time to gain his confidence
 INFO-vDistributionEstimator(2026-03-11 03:40:06,557)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3445, micro_f1=0.3655, macro_f1=0.3583, joy_f1=0.4390, optimism_f1=0.4727, admiration_f1=0.4286, surprise_f1=0.2821, fear_f1=0.3265, sadness_f1=0.2951, anger_f1=0.2642
+DEBUG-vDistributionEstimator(2026-03-12 04:50:56,168)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 04:50:56,739)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Not cameo, reference sorry
+{"label": ["sadness"]}
+Input: No. Foreigners are not allowed to preach [RELIGION] to [NAME]. Maybe not explicitly . Also They restrict donations from abroad Not just people.
+{"label": ["anger"]}
+Input: Still love [NAME]. Gave his heart to the Broncos for many years. Hope he can go out and win himself another ring this year.
+{"label": ["joy", "optimism"]}
+Input: But he's relieving pressure. Just count yourself lucky he doesn't cough when he farts.
+{"label": ["optimism", "admiration"]}
+Input: But hey, at least it saves us the trouble of contacting them!
+{"label": ["admiration"]}
+Input: I hope that's a bug because it looks downright embarrassingly bad
+{"label": ["optimism", "sadness"]}
+Input: I love Invader Zim.
+{"label": ["joy"]}
+Input: The surprise would be that we just broke a 16 year old record...
+{"label": ["optimism", "surprise"]}
+Input: My nightmare is having an iphone.
+{"label": ["joy", "fear"]}
+Input: Thank you!!!!
+{"label": ["admiration"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: We don’t “know” but it was reported he is expected to stay on. Really glad about it
+{"label": ["joy"]}
+Input: It’s so fucking creepy
+{"label": ["fear", "anger"]}
+Input: That's pretty good all things considered, if they want to maintain that, they really need to get a patch out ASAP
+{"label": ["optimism", "admiration"]}
+Input: Ugh. Gross
+{"label": ["anger"]}
+Input: Thank you for reminding me about how much I love the JJBA abridged series.
+{"label": ["joy", "admiration"]}
+Input: He will rest easy knowing how happy he made all of us
+{"label": ["joy"]}
+Input: It’s a smart move but also hurts the business and possibly false. It’s rude.
+{"label": ["anger"]}
+Input: You crush them up
+{"label": ["anger"]}
+Input: Great company. I added it. Let me know if you have any
+{"label": ["admiration", "surprise"]}
+Input: Because I have no self-control and I hate myself.
+{"label": ["sadness", "anger"]}
+Input: At least now [NAME] has more time to gain his confidence
+INFO-vDistributionEstimator(2026-03-12 04:52:58,575)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3478, micro_f1=0.3696, macro_f1=0.3541, joy_f1=0.4103, optimism_f1=0.3673, admiration_f1=0.5106, surprise_f1=0.3684, fear_f1=0.3182, sadness_f1=0.2373, anger_f1=0.2667

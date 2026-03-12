@@ -18,3 +18,23 @@ experiment_0:
     macro_f1: 0.009900990099009901
     micro_f1: 0.0196078431372549
   description: ''
+experiment_1:
+  aggregate_binary_hate_normal:
+    a_f1: 0.0392156862745098
+    b_f1: 0.0
+    jaccard_score: 0.02
+    macro_f1: 0.0196078431372549
+    micro_f1: 0.0392156862745098
+  aggregate_binary_hate_offensive:
+    a_f1: 0.14814814814814814
+    b_f1: 0.0
+    jaccard_score: 0.08
+    macro_f1: 0.07407407407407407
+    micro_f1: 0.14814814814814814
+  aggregate_binary_normal_offensive:
+    a_f1: 0.019801980198019802
+    b_f1: 0.0
+    jaccard_score: 0.01
+    macro_f1: 0.009900990099009901
+    micro_f1: 0.0196078431372549
+  description: ''

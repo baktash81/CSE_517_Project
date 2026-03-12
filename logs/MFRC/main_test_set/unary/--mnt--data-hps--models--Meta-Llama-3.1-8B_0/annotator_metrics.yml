@@ -42,3 +42,47 @@ experiment_0:
     reasonable_f1: 0.0
     unreasonable_f1: 0.0
   description: ''
+experiment_1:
+  aggregate_unary_authority:
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+    reasonable_f1: 0.0
+    unreasonable_f1: 0.0
+  aggregate_unary_care:
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+    reasonable_f1: 0.0
+    unreasonable_f1: 0.0
+  aggregate_unary_equality:
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+    reasonable_f1: 0.0
+    unreasonable_f1: 0.0
+  aggregate_unary_loyalty:
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+    reasonable_f1: 0.0
+    unreasonable_f1: 0.0
+  aggregate_unary_none:
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+    reasonable_f1: 0.0
+    unreasonable_f1: 0.0
+  aggregate_unary_proportionality:
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+    reasonable_f1: 0.0
+    unreasonable_f1: 0.0
+  aggregate_unary_purity:
+    jaccard_score: 1.0
+    macro_f1: 0.0
+    micro_f1: 0.0
+    reasonable_f1: 0.0
+    unreasonable_f1: 0.0
+  description: ''
