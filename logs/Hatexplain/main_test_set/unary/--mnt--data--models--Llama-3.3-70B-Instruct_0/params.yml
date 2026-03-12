@@ -1,0 +1,76 @@
+experiment_0:
+  ___distribution___: unary
+  __model_name_or_path___: /mnt/data/models/Llama-3.3-70B-Instruct
+  _label_mode___: null
+  _query_label_mode___: null
+  _sampling_strategy___: uniform
+  _shot___: 10
+  accelerate: false
+  annotation_mode: aggregate
+  assistant_prompt: null
+  cot_csv: null
+  cot_randomize: false
+  dataloader_num_workers: 0
+  debug_samples: 5
+  dev_debug_ann: null
+  dev_debug_len: null
+  dev_ids_filename: null
+  dev_keep_same_examples: false
+  dev_splits: null
+  disable_indexed_logging: false
+  disable_intermediate_checkpoints: false
+  disable_tqdm: false
+  distribution: unary
+  gpu_memory_utilization: 0.95
+  incontext_prompt: 'Question: {text}
+
+    Answer: {label}
+
+
+    '
+  instruction_prompt: 'Classify the following inputs into one of the following options
+    per input: {labels}. Output exactly one label and no others.
+
+
+    '
+  keep_one_after_filtering: false
+  label_format: null
+  label_mode: null
+  label_parser: null
+  label_randomization_seed: null
+  label_same_length: false
+  max_grad_norm: null
+  max_length: null
+  max_new_tokens: 18
+  model_load_filename: null
+  model_name_or_path: /mnt/data/models/Llama-3.3-70B-Instruct
+  model_save_filename: null
+  quantization: fp8
+  query_label_mode: null
+  query_prompt: null
+  reasonableness_label_mode: distribution
+  retries: 3
+  sampling_strategy: uniform
+  seed: 0
+  sentence_device: null
+  sentence_model_name_or_path: all-mpnet-base-v2
+  shot: 10
+  system_prompt: ' '
+  task: Hatexplain
+  test_debug_ann: null
+  test_debug_len: null
+  test_ids_filename:
+  - prob_distr_ids/Hatexplain/main_test_set.txt
+  test_keep_same_examples: false
+  test_splits:
+  - test
+  text_preprocessor: false
+  train_debug_ann: null
+  train_debug_len: null
+  train_ids_filename: null
+  train_keep_same_examples: false
+  train_splits:
+  - train
+  trust_remote_code: true
+  user_prompt: null
+  word_embeddings_model: null

@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-10 14:53:05,293)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-10 14:53:05,392)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Only ever attracted to other non binaries? Homo simply means "same", so for a nonbinary, same would mean nonbinary
+{"label": ["admiration", "surprise"]}
+Input: Posted it and so far I'm getting shat on in the comments lol
+{"label": ["joy", "sadness"]}
+Input: Lol! Thanks. That cap would pop right off in there. Lol. Love it
+{"label": ["joy", "admiration"]}
+Input: They feel soooo good on TBF
+{"label": ["joy"]}
+Input: Still don’t know how [NAME] said him and [NAME] will be battling for years while keeping a straight face.
+{"label": ["surprise"]}
+Input: Oh, lol, no, I was asserting that you are being racist and have prejudices. That was a funny one, lol.
+{"label": ["joy"]}
+Input: I love Earth Balance, but does anyone know if the palm fruit is ethically sourced? I’ve cut out palm products due to deforestation. 
+{"label": ["joy", "surprise"]}
+Input: I always worry about my facial expressions. You're not alone there.
+{"label": ["optimism", "fear"]}
+Input: It is a gorgeous picture. However I would rather that sun exploded and took us all to kingdom come than sit in traffic.
+{"label": ["admiration"]}
+Input: Trust me dude, switch to stick deodorant and cologne.
+{"label": ["optimism"]}
+Input: My favourite food is anything I didn't have to cook myself.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: This is probably the clearest and most concise explanation I've ever encountered for why authoritarian religions seem to focus on trivial behaviors. Thank you.
+{"label": ["optimism", "admiration"]}
+Input: This one is sad but also very good
+{"label": ["admiration", "sadness"]}
+Input: I immediately love your owner. Those guests sucked, but seriously your owner is awesome.
+{"label": ["joy", "admiration"]}
+Input: I bought the double barrel and fully upgraded it and now it's one of my favorite guns.
+{"label": ["joy", "admiration"]}
+Input: You need to tell her, and make sure she knows it’s not your kid. You went through with a dna test right?
+{"label": ["surprise"]}
+Input: Thanks, I'm the LAOTOP and I found this response as informative as the comments in the original post.
+{"label": ["admiration"]}
+Input: It’s not clear to me that vulnerability functions as an ethical compass. Will table further replies in deference to a culture war thread.
+{"label": ["surprise"]}
+Input: Did he lose a bet or something? -edit- It took longer than it should have for me to realize that it was a mashup of different dudes...
+{"label": ["admiration", "surprise"]}
+Input: I care about me and my benefit.. No shits given about you (general you). It's my job to vote my best interest
+{"label": ["optimism"]}
+Input: It was more of a joke. I still have hope for [NAME]. Just kind of a tough sell at this point.
+{"label": ["optimism"]}
+Input: My favourite food is anything I didn't have to cook myself.
+INFO-vDistributionEstimator(2026-03-10 17:45:08,082)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2916, micro_f1=0.3616, macro_f1=0.3340, joy_f1=0.4900, optimism_f1=0.2462, admiration_f1=0.3891, surprise_f1=0.3370, fear_f1=0.1154, sadness_f1=0.3305, anger_f1=0.4303

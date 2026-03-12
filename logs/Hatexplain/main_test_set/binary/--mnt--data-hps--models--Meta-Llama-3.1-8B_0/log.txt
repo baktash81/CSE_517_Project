@@ -1,0 +1,230 @@
+DEBUG-vDistributionEstimator(2026-03-11 04:50:34,957)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 04:50:34,964)   test: Label set: a, b
+Example prompt: Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: that or only date asians either way the white race is dead
+a. normal
+b. offensive
+Correct Label: a
+
+Question: i want to hate you but i can not 😞
+a. hate
+b. normal
+Correct Label: b
+
+Question: oh you mean like count dankula who a self admitted communist with a tattoo of a red star on his chest who just got convicted of being a nazi because he white cowards like you find it very easy to attack the enemies of the jews
+a. offensive
+b. normal
+Correct Label: a
+
+Question: regrets the more i think about it these ignorant morons should be on both knees thanking god someone rescued them from the ghetto they crawled out of or many would be dead or in jail right now
+a. offensive
+b. hate
+Correct Label: a
+
+Question: now do we understand why the jews were booted out of <number> countries
+a. offensive
+b. hate
+Correct Label: b
+
+Question: 1 9 3 0 sgermany geneticjews controlled white germany via violating antitrustlaw 2 1 st century whit eusa controlled by genetic kikes enablers buffett whos white gives billions to filthy kike gates not for profit;& traito rcongress enem ysupremecourt who refuse to enforce antitrust law
+a. normal
+b. hate
+Correct Label: b
+
+Question: i feel like baltimore niggas can only put up with baltimore women bc we all a little retarded
+a. offensive
+b. normal
+Correct Label: a
+
+Question: y know how rich black athletes move from the ghetto into the mansion district and immediately try to turn their new neighborhood into an upscale ghetto that is exactly what the liberals migrating to fl are doing turning it into a purple state go back to your liberal northern shit holes
+a. hate
+b. offensive
+Correct Label: a
+
+Question: <user> i hate you
+a. normal
+b. hate
+Correct Label: a
+
+Question: the new moslem doll do not dare pull that string 💥
+a. normal
+b. offensive
+Correct Label: b
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+a. hate
+b. normal
+Correct Label: 
+Example tokenization: <|begin_of_text|>Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: that or only date asians either way the white race is dead
+a. normal
+b. offensive
+Correct Label: a
+
+Question: i want to hate you but i can not 😞
+a. hate
+b. normal
+Correct Label: b
+
+Question: oh you mean like count dankula who a self admitted communist with a tattoo of a red star on his chest who just got convicted of being a nazi because he white cowards like you find it very easy to attack the enemies of the jews
+a. offensive
+b. normal
+Correct Label: a
+
+Question: regrets the more i think about it these ignorant morons should be on both knees thanking god someone rescued them from the ghetto they crawled out of or many would be dead or in jail right now
+a. offensive
+b. hate
+Correct Label: a
+
+Question: now do we understand why the jews were booted out of <number> countries
+a. offensive
+b. hate
+Correct Label: b
+
+Question: 1 9 3 0 sgermany geneticjews controlled white germany via violating antitrustlaw 2 1 st century whit eusa controlled by genetic kikes enablers buffett whos white gives billions to filthy kike gates not for profit;& traito rcongress enem ysupremecourt who refuse to enforce antitrust law
+a. normal
+b. hate
+Correct Label: b
+
+Question: i feel like baltimore niggas can only put up with baltimore women bc we all a little retarded
+a. offensive
+b. normal
+Correct Label: a
+
+Question: y know how rich black athletes move from the ghetto into the mansion district and immediately try to turn their new neighborhood into an upscale ghetto that is exactly what the liberals migrating to fl are doing turning it into a purple state go back to your liberal northern shit holes
+a. hate
+b. offensive
+Correct Label: a
+
+Question: <user> i hate you
+a. normal
+b. hate
+Correct Label: a
+
+Question: the new moslem doll do not dare pull that string 💥
+a. normal
+b. offensive
+Correct Label: b
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+a. hate
+b. normal
+Correct Label: 
+INFO-vDistributionEstimator(2026-03-11 04:50:47,244)   Testing metrics for Binary breakdown dataset: 
+DEBUG-vDistributionEstimator(2026-03-12 05:30:48,610)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 05:30:48,618)   test: Label set: a, b
+Example prompt: Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: that or only date asians either way the white race is dead
+a. normal
+b. offensive
+Correct Label: a
+
+Question: i want to hate you but i can not 😞
+a. hate
+b. normal
+Correct Label: b
+
+Question: oh you mean like count dankula who a self admitted communist with a tattoo of a red star on his chest who just got convicted of being a nazi because he white cowards like you find it very easy to attack the enemies of the jews
+a. offensive
+b. normal
+Correct Label: a
+
+Question: regrets the more i think about it these ignorant morons should be on both knees thanking god someone rescued them from the ghetto they crawled out of or many would be dead or in jail right now
+a. offensive
+b. hate
+Correct Label: a
+
+Question: now do we understand why the jews were booted out of <number> countries
+a. offensive
+b. hate
+Correct Label: b
+
+Question: 1 9 3 0 sgermany geneticjews controlled white germany via violating antitrustlaw 2 1 st century whit eusa controlled by genetic kikes enablers buffett whos white gives billions to filthy kike gates not for profit;& traito rcongress enem ysupremecourt who refuse to enforce antitrust law
+a. normal
+b. hate
+Correct Label: b
+
+Question: i feel like baltimore niggas can only put up with baltimore women bc we all a little retarded
+a. offensive
+b. normal
+Correct Label: a
+
+Question: y know how rich black athletes move from the ghetto into the mansion district and immediately try to turn their new neighborhood into an upscale ghetto that is exactly what the liberals migrating to fl are doing turning it into a purple state go back to your liberal northern shit holes
+a. hate
+b. offensive
+Correct Label: a
+
+Question: <user> i hate you
+a. normal
+b. hate
+Correct Label: a
+
+Question: the new moslem doll do not dare pull that string 💥
+a. normal
+b. offensive
+Correct Label: b
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+a. hate
+b. normal
+Correct Label: 
+Example tokenization: <|begin_of_text|>Classify the following question into one of the two following labels. Output either "a" or "b" depending on which label is better and nothing else.
+
+Question: that or only date asians either way the white race is dead
+a. normal
+b. offensive
+Correct Label: a
+
+Question: i want to hate you but i can not 😞
+a. hate
+b. normal
+Correct Label: b
+
+Question: oh you mean like count dankula who a self admitted communist with a tattoo of a red star on his chest who just got convicted of being a nazi because he white cowards like you find it very easy to attack the enemies of the jews
+a. offensive
+b. normal
+Correct Label: a
+
+Question: regrets the more i think about it these ignorant morons should be on both knees thanking god someone rescued them from the ghetto they crawled out of or many would be dead or in jail right now
+a. offensive
+b. hate
+Correct Label: a
+
+Question: now do we understand why the jews were booted out of <number> countries
+a. offensive
+b. hate
+Correct Label: b
+
+Question: 1 9 3 0 sgermany geneticjews controlled white germany via violating antitrustlaw 2 1 st century whit eusa controlled by genetic kikes enablers buffett whos white gives billions to filthy kike gates not for profit;& traito rcongress enem ysupremecourt who refuse to enforce antitrust law
+a. normal
+b. hate
+Correct Label: b
+
+Question: i feel like baltimore niggas can only put up with baltimore women bc we all a little retarded
+a. offensive
+b. normal
+Correct Label: a
+
+Question: y know how rich black athletes move from the ghetto into the mansion district and immediately try to turn their new neighborhood into an upscale ghetto that is exactly what the liberals migrating to fl are doing turning it into a purple state go back to your liberal northern shit holes
+a. hate
+b. offensive
+Correct Label: a
+
+Question: <user> i hate you
+a. normal
+b. hate
+Correct Label: a
+
+Question: the new moslem doll do not dare pull that string 💥
+a. normal
+b. offensive
+Correct Label: b
+
+Question: there too many wypipo asking what this is and if they can get in this is a niggers only event
+a. hate
+b. normal
+Correct Label: 
+INFO-vDistributionEstimator(2026-03-12 05:31:00,209)   Testing metrics for Binary breakdown dataset: 

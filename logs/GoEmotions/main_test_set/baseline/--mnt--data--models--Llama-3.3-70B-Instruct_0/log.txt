@@ -1,0 +1,94 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:42:39,680)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:42:40,187)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Thank [NAME] for the adult spammers on my susbscribed NSFW subreddits.
+{"label": ["admiration"]}
+Input: Infacy gosples?
+{"label": ["surprise"]}
+Input: King Gizzard and the Lizard Wizard and Beach House are my two favourite bands.
+{"label": ["joy", "admiration"]}
+Input: Disgusting amount of oil.
+{"label": ["anger"]}
+Input: Did either of those places declare independence out of the blue? No.
+{"label": ["surprise"]}
+Input: >It's not that I care Every reply now is you crying about being downvoted lol
+{"label": ["sadness", "anger"]}
+Input: Thank god. This place was authoritarian.
+{"label": ["admiration"]}
+Input: I would tell her part of loving herself/her body is taking care of herself. Speaking as a recovering obese person myself.
+{"label": ["joy", "optimism"]}
+Input: I know logically that I haven't gained real weight but overeating both weekend days makes me feel like I have. I drive me crazy sometimes.
+{"label": ["joy", "admiration"]}
+Input: I honestly think he’s making fun of you
+{"label": ["joy", "optimism"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Laws don’t apply when you’ve got money. Sad but true.
+{"label": ["sadness"]}
+Input: No it’s not, I can give you multiple examples of cops getting physically assaulted and not even using their guns. Stop lying.
+{"label": ["anger"]}
+Input: Then getafe should have gotten their first goal. Ref is really bad.
+{"label": ["sadness", "anger"]}
+Input: [NAME] i really hate entitled people. Upvote if you think that EPs are worse than Antivaxxers.
+{"label": ["anger"]}
+Input: Also, note how the First Order recruits....children. That certinetly could lead to rampant abuse.
+{"label": ["optimism"]}
+Input: I'll miss the podcast
+{"label": ["sadness"]}
+Input: So edgy. 1/10 Try again. You can put a little more effort into your trolls.
+{"label": ["optimism", "anger"]}
+Input: That’s terrible; I would be devastated. You had to get out of there though. I’m thinking of you.
+{"label": ["optimism", "anger"]}
+Input: Argentina is with you! Be strong comrades!
+{"label": ["optimism", "admiration"]}
+Input: Thanks dude, palms were very sweaty lol
+{"label": ["joy", "admiration"]}
+Input: At least now [NAME] has more time to gain his confidence
+INFO-vDistributionEstimator(2026-03-11 03:45:15,908)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3900, micro_f1=0.4815, macro_f1=0.4792, joy_f1=0.5421, optimism_f1=0.5517, admiration_f1=0.4632, surprise_f1=0.3158, fear_f1=0.5000, sadness_f1=0.5946, anger_f1=0.3871
+DEBUG-vDistributionEstimator(2026-03-11 22:52:20,217)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 22:52:20,753)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I enjoyed it somewhat, but haven't felt like rewatching (or owning) it.
+{"label": ["joy"]}
+Input: Just wanna say I love you and hope the flight and everything thing else goes well👌👌.
+{"label": ["joy", "optimism"]}
+Input: It took me a second to distinguish between whether it was [NAME] or [NAME]. I have officially been cursed by this subreddit.
+{"label": ["admiration"]}
+Input: I mean, if I make it look like an accident, just think of all the ribs I can buy with the insurance money... 
+{"label": ["optimism", "admiration"]}
+Input: The SNP were, I remember [NAME] stridulating about it at conference, but I don’t think it was a go-er.
+{"label": ["anger"]}
+Input: STOP GETTING FACTS FROM [NAME] AND THE CORRUPT STATE ..lol
+{"label": ["anger"]}
+Input: My wife is a rams fan. I don’t like them, but I think I like them more than the patriots lol
+{"label": ["joy"]}
+Input: Lol really?
+{"label": ["joy", "surprise"]}
+Input: > Pretty much the person I love just broke up completely with me After how long?
+{"label": ["joy", "sadness"]}
+Input: I've wanted this for so long.
+{"label": ["optimism", "admiration"]}
+Input: At least now [NAME] has more time to gain his confidence
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Can't. Prequel bad. Bearded [NAME] Man idea bad. OT era only good thing.
+{"label": ["sadness"]}
+Input: I had a total of 5 pet chickens. No way I could've ever eaten any of them. Glad that gfather confirmed that Banana Chip was buried.
+{"label": ["optimism", "admiration"]}
+Input: Ahem. Second best NA
+{"label": ["sadness", "anger"]}
+Input: This is a very good meme op but I hope you're doing good:)
+{"label": ["optimism", "admiration"]}
+Input: Sadly no, but I hear it comes with a sweet bottle opener! And you can't spell Bottle Opener without Lebron.
+{"label": ["sadness"]}
+Input: I love humans
+{"label": ["joy"]}
+Input: Because we feed the shitty ones so there is no incentive to put in effort
+{"label": ["sadness", "anger"]}
+Input: That’s the face of trying your best not to smile at a bad pun.
+{"label": ["admiration"]}
+Input: You're very welcome. You do, and I hope (for your sake and especially for your daughters') that things work out for you all.
+{"label": ["joy", "optimism"]}
+Input: I'm pretty sure you killed me. I got killed by a pounder on a plane on that very same map 2 days ago or so lol
+{"label": ["joy"]}
+Input: At least now [NAME] has more time to gain his confidence
+INFO-vDistributionEstimator(2026-03-11 22:55:10,729)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3719, micro_f1=0.4647, macro_f1=0.4523, joy_f1=0.6182, optimism_f1=0.5000, admiration_f1=0.4583, surprise_f1=0.2807, fear_f1=0.3667, sadness_f1=0.5672, anger_f1=0.3750

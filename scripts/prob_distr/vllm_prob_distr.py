@@ -83,10 +83,17 @@ def loop(args, metadata):
         tokenizer=dataset.get_tokenizer(),
     )
 
+    debug_samples = getattr(args, "debug_samples", 0)
+    if debug_samples > 0:
+        print(
+            f"[DEBUG] Will print input, prompt, output for first {debug_samples} samples"
+        )
+
     evaluator = vDistributionEstimator(
         model=model, test_dataset=dataset, experiment_manager=exp_manager
     )
-    
+    evaluator.debug_samples = debug_samples
+
     evaluator.run()
 
     clean_cuda(model)

@@ -1,0 +1,24 @@
+experiment_0:
+  description: ''
+  test_admiration_f1: 0.4631578947368421
+  test_anger_f1: 0.3870967741935484
+  test_fear_f1: 0.5
+  test_jaccard_score: 0.38997113997114
+  test_joy_f1: 0.5420560747663551
+  test_macro_f1: 0.47920270712951224
+  test_micro_f1: 0.48148148148148145
+  test_optimism_f1: 0.5517241379310345
+  test_sadness_f1: 0.5945945945945946
+  test_surprise_f1: 0.3157894736842105
+experiment_1:
+  description: ''
+  test_admiration_f1: 0.4583333333333333
+  test_anger_f1: 0.375
+  test_fear_f1: 0.36666666666666664
+  test_jaccard_score: 0.3719336219336219
+  test_joy_f1: 0.6181818181818182
+  test_macro_f1: 0.45229253595318003
+  test_micro_f1: 0.4646840148698885
+  test_optimism_f1: 0.5
+  test_sadness_f1: 0.5671641791044776
+  test_surprise_f1: 0.2807017543859649

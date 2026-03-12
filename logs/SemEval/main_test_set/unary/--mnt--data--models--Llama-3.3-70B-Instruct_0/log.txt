@@ -1,0 +1,93 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:57:11,517)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:57:11,607)   test: Label set: reasonable, unreasonable
+Example prompt: Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: @carl_diggler @TMZ_Sports Thank you for saying what others are afraid to say, Carl. Big fan!
+Label: love
+Is the label reasonable: reasonable
+
+Question: #Facebook is #depressing without even being there. Two apps want it for logging in, I have missed at least two interesting #events and they
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: So I survived spin....trying to get down the stairs was hilarious tho #jellylegs 😂😂
+Label: optimism
+Is the label reasonable: unreasonable
+
+Question: | At home sick... 🎼The blues🎼 won't cure it so I need ideas 🎸😭 | #sorethroat #sick #blues #music #fallweather #carletonuniversity #ottawa
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: My prayers are with the family, friends &amp; members of @VCFD  as you mourn the loss of Engineer Ryan Osler. #LODD #RIP
+Label: none
+Is the label reasonable: unreasonable
+
+Question: @bkero @whispersystems Which really sucks because typing on a mobile device is always horrible and I hate it.
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: “Optimism may sometimes be delusional, but pessimism is always delusional.” —Alan Cohen #believe
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: The T.I / Shawty Lo beef is one of the more underrated ones in hip-hop history. Chock-full of wit, bravado and hilarity.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: @corruptmelon now im feeling the 
+Label: anger
+Is the label reasonable: reasonable
+
+Question: @STLouis_RamsFan their whole team is limited when they're on the field.  #terrible
+Label: fear
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+Example tokenization: <|begin_of_text|>Classify the following question-label pairs as either "reasonable" or "unreasonable". Output either "reasonable" or "unreasonable" and nothing else.
+
+Question: @carl_diggler @TMZ_Sports Thank you for saying what others are afraid to say, Carl. Big fan!
+Label: love
+Is the label reasonable: reasonable
+
+Question: #Facebook is #depressing without even being there. Two apps want it for logging in, I have missed at least two interesting #events and they
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: So I survived spin....trying to get down the stairs was hilarious tho #jellylegs 😂😂
+Label: optimism
+Is the label reasonable: unreasonable
+
+Question: | At home sick... 🎼The blues🎼 won't cure it so I need ideas 🎸😭 | #sorethroat #sick #blues #music #fallweather #carletonuniversity #ottawa
+Label: trust
+Is the label reasonable: unreasonable
+
+Question: My prayers are with the family, friends &amp; members of @VCFD  as you mourn the loss of Engineer Ryan Osler. #LODD #RIP
+Label: none
+Is the label reasonable: unreasonable
+
+Question: @bkero @whispersystems Which really sucks because typing on a mobile device is always horrible and I hate it.
+Label: disgust
+Is the label reasonable: reasonable
+
+Question: “Optimism may sometimes be delusional, but pessimism is always delusional.” —Alan Cohen #believe
+Label: surprise
+Is the label reasonable: unreasonable
+
+Question: The T.I / Shawty Lo beef is one of the more underrated ones in hip-hop history. Chock-full of wit, bravado and hilarity.
+Label: joy
+Is the label reasonable: reasonable
+
+Question: @corruptmelon now im feeling the 
+Label: anger
+Is the label reasonable: reasonable
+
+Question: @STLouis_RamsFan their whole team is limited when they're on the field.  #terrible
+Label: fear
+Is the label reasonable: reasonable
+
+Question: My best friends driving for the first time with me in the car #terrifying
+Label: anger
+Is the label reasonable: 
+INFO-vDistributionEstimator(2026-03-11 04:25:26,133)   Testing metrics for Unary breakdown dataset: 

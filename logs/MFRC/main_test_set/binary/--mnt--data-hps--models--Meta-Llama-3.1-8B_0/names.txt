@@ -1,0 +1,10 @@
+binary,--mnt--data-hps--models--Meta-Llama-3.1-8B,None,None,multilabel,10,aggregate,None,None:
+___distribution___
+__model_name_or_path___
+_label_mode___
+_query_label_mode___
+_sampling_strategy___
+_shot___
+annotation_mode
+label_format
+word_embeddings_model

@@ -1,0 +1,145 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:40:21,787)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:40:22,066)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: If he doesn’t talk to you, doesn’t show appreciation , the problem is not the porn. Your relationship doesn’t work and you deserve better.
+Moral foundation(s): care, proportionality
+Input: If that is true, they are all guilty of treason and should be fired immediately
+Moral foundation(s): authority, loyalty
+Input: I hope to be wrong for their sake but the french love to stick to the status quo. I know a few french people and they love yapping very much but are unable to bite. It's no surprise that people have such a violent hate for Marine Le Pen. She shakes up people and put light on the laziness of their ''let it go'' mentality. 
+
+The french wouldnt be able to display any sort of strength even if their lives depended on it. This will be their downfall.
+Moral foundation(s): care
+Input: NTA. Your feelings are completely valid. You don't need to forgive her right away, nor do you need to forgive her at the pace she wants to be forgiven. This is your journey and you can take as long as you want to get where you need to be.
+Moral foundation(s): care
+Input: God I hate this fucking scum. His own goddamn shit stain of a wife is a fucking immigrant, but I guess she came from one of the “right” countries.
+Moral foundation(s): equality
+Input: Her biggest fault by far has been putting Greece on the rack - though I understand that this is largely the key to her popularity in Germany and gave her the room to allow in almost a million Syrians.
+
+German leadership in the EU crisis has made Southern Europe very insecure and may, depending on what happens to Greece and Italy, break up the EU in the long run. We'll see.
+
+That being said, she's the best on offer until Macron steals our hearts.
+Moral foundation(s): authority
+Input: What resonates with me about what you just said was “I’m the problem” in the current mental framework for low level paying jobs is, no matter what, you’re wrong, you’re the problem, it’s your fault. It can NEVER be the companies fault, managements problem. You’re expendable therefore we can treat you how ever we want. Like abusive parents, we provide you with shelter and food so you HAVE to do what we say and we are perfect in every way. Utterly disgusting. deep rooted manipulation that betrays the humanity that makes our species great.
+Moral foundation(s): care, equality, purity
+Input: Government: Also tries to make abortion illegal and remove birth control from being covered by health insurance to force the matter
+Moral foundation(s): authority
+Input: I really wish the country would come together on this to help each other.... there is no protests, it’s never trending on social media, collectively we should never let it out of the site of these people how much they have hurt our country and fellow american by avoiding a second (or third by this point) stimulus
+Moral foundation(s): care, loyalty
+Input: NTA, "throwing your individuality in her face"?! I thought part of being family was loving and respecting one another as individuals. Your tattoos are a part of you and you're right not to let yourself be shamed!
+Moral foundation(s): care, loyalty
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Trump didn’t condemn white supremacy.  He didn’t provide a plan for anything.  He didn’t commit to respecting the results of the election.  Absolutely pathetic.
+Moral foundation(s): authority
+Input: NTA I’m sorry your parents are like that. 
+
+Hold your ground. Cut them off for some time if you have to. This is your life and you deserve to love it however you want to.
+Moral foundation(s): care, proportionality
+Input: &gt;If melenchon gets elected, Frances economy may go into the dump but nobody has to fear for their lives.
+
+In the short term, but if his policies get enacted then France would find itself in an insta-depression and I'm considering whether or not the aggregate suffering in this case would match or exceed what might happen under Le Pen.
+Moral foundation(s): care
+Input: &gt;Why do you think that, seriously what made you believe that the president of the United States would just tweet something to drive the knife in deeper to black people.
+
+The same guy who tweets horrible stuff about dead people to hurt their families? I don't know why anyone would think he would purposely tweet hateful things
+Moral foundation(s): care, equality
+Input: Trump, Le Pen and UKIP supporters seem perfectly happy that Putin's people have tried and in many cases succeeded in hacking Democracy  around the world. There are costs to letting Putin's policies go unchecked and these poor people are paying them.
+Moral foundation(s): authority, care
+Input: The only thing that people like this respond to is boldness/ assertiveness.
+
+“This is your fault. You were sexist and shitty. Your apology is lazy and worthless. If you want things to be different, you have to make up for the past. Make Amends.”
+
+To your brothers:
+
+“Our parents were sexist and shitty. They were hurtful and immature. This is Their Fault. Stop defending their shitty sexism. Unless you want to be shitty and sexist as well? Because that’s what you’re telling me- that you want to be shitty and sexist too.”
+Moral foundation(s): equality
+Input: Your opinion is sexist and allows women to be treated like property.
+Moral foundation(s): equality
+Input: It'll probably be the next to have a vote, if le Pen isn't arrested before then. Even if she does force the vote through, I trust the French far more than my own countrymen to make the correct decision and tell her to fuck the fuck off.
+Moral foundation(s): loyalty
+Input: Getting a face lift doesn’t make you younger, you will always biologically be your age no matter what is done on the outside.  This is the same with trans/ people.  I want everyone to love how they want and be accepted for who they are and choose to be.  Those that are violent to trans/ are horrible and I don’t condone any of that behavior.  But you cannot change your biological gender.
+Moral foundation(s): care, equality
+Input: Last.. I don't hate Le Pen, hate is a strong word 
+I hate that people are stupid and scared enough to vote for these fools, like Le Pen, Trump, Erdogan, UKIP in the UK, AFD in Germany etc. 
+The beauty about democracy... is that after election, we can always say that we deserved goverment/president/... who is running our country... So if Le Pen, wins the second round, France deserved her
+Moral foundation(s): authority, loyalty, proportionality
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-11 03:41:33,388)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.6172, micro_f1=0.6121, macro_f1=0.6113, authority_f1=0.7200, care_f1=0.6200, equality_f1=0.6176, loyalty_f1=0.4898, proportionality_f1=0.5806, purity_f1=0.6400
+DEBUG-vDistributionEstimator(2026-03-11 22:49:59,244)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 22:49:59,460)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: These monsters are driven by lust and sin. Whenever they get caught breaking they law, they fall on their mission to turn the entire world into a worthless caliphate. Their rhetoric is dehumanizing as well. They want to "conquer" women's wombs, regardless of their background or religious affiliation. It's no wonder people despise their religion. And who wouldn't blame them? They treat minority Christians like subhumans.
+Moral foundation(s): authority, equality, purity
+Input: There is no social safety net in the US for those who quit their job, so most people who quit will starve without another job.
+Moral foundation(s): care
+Input: Yeah but that would require principle and not just being self-absorbed and feeding off of the acquisition of power. Le Pen is a demagogue. She has no shame, no moral compass, and will say anything to play the outsider and get to power, just like Trump did. And just like Trump (and many such populists before him) did, once that goal is achieved nothing matters anymore and everything is for sale.
+Moral foundation(s): authority, care
+Input: This is why he needs to be impeached and convicted quickly. If he doesn't then it makes it to where any pretty much anything isnt impeachable, because if inciting insurrection at the Capitol isn't impeachable then nothing is. They attempted to change our election result and were going to take hostages and possibly kill people, this cannot stand and needs to be stopped.
+Moral foundation(s): authority, care
+Input: just as much as people diskliked the communist part about Melenchon, it's just that it isn't easy to get out of the EU supporting someone without radical inhumane mindsets like racism or communism/socialism
+Moral foundation(s): care, equality, loyalty
+Input: She should talk to the Japanese, who have a phrase called "overwork death" where people are killing themselves or dying due to health complications caused by overworking.
+Moral foundation(s): care
+Input: I would point out that the article is by a CEO who is obviously looking at the issue as an employer. I would love to be paid for results, but somehow I doubt I'll be paid fairly in relation to the value I bring to any company. Find a bug in a piece of software that saves the company millions? All you get is a thanks and not a bigger paycheck.
+Moral foundation(s): proportionality
+Input: Emily is still a misogynist. Internalized misogyny makes life hell. “Look how special I am, not like other women who all suck”.
+Moral foundation(s): equality
+Input: Since when is justice immunity human rights? Funny how that logic goes... Fleeing the war? Nothing to do with human rights. Being above the law? Human rights.
+
+The EU usually collaborates with authorities and often does this. Even for Le Pen this is not the first time. 
+Moral foundation(s): authority, equality
+Input: This is exactly the type of hypocritical garbage that ended my voting dem. Disgusting.
+Moral foundation(s): purity
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: I go at it from a lot of angles, the playlist is on shuffle.  :)
+
+Other arguments include: basic human rights, inherent human dignity and worth, reducing man-made suffering where we can, the value of life, economic gains from a healthy/happy populace, etc.
+
+Just sorta whatever springs to mind in the moment.  What I can never think of is a reason why we would *want* people to die over something as trivial as money.
+Moral foundation(s): care, equality
+Input: Wait so ‘Janice’ has been physically violent with you and you have witnessed her holding down your child?
+
+Please do not wait any longer, even without what has now come to light, your GF is abusive and you need to leave for your child’s sake.
+
+And please stop excusing her behaviors as Latino stereotypes. I have a lot of friends who are Latino/Latina and they do not abuse their kids.  Scratching and leaving bruises on a child isn’t even in the realm of acceptable parental discipline.
+Moral foundation(s): care
+Input: Lol you talking straight out of your ass. Seine Saint Denis is mostly populated by people of black subsaharian Catholic Africa.
+
+As for the terror attacks, Le Pen is just feeding the hate and segregation that adds fuel to their fire. She is part of the process of hate.
+
+Btw we don't have such things as "thoughts and prayers" after attacks because we are secular and mostly atheists
+Moral foundation(s): care
+Input: Ignore the fucking weirdo in the comments. My girl is bi. It wasn’t easy for her to tell me she thought I’d over react. It’s been a year since she told me now and the only difference is we now both check out other girls together ( in films and tv shows and whatnot) just be normal. Be yourself.
+Moral foundation(s): equality, loyalty
+Input: It is literally in the Quran to subjugate all other religious ideas if they oppose allah. How is it not Inherently violent?
+Moral foundation(s): care
+Input: I'm a big believer in you get what you deserve....
+
+
+&gt;and giving people a second chance even when they don't deserve it 
+
+they have had over 1000 chances... every single day for the last 3 years is a chance for them to stop being assholes and apologize...
+Moral foundation(s): proportionality
+Input: I just don’t get posts like this. The last one where someone posted about shoplifting, they admitted to having the money to buy what they stole. 
+
+I admit to always being fortunate enough to not worry about where or when my next meal was, but I have had to do without. I just don’t like the idea of taking from someone else’s plate. Maybe it doesn’t apply to Walmart or whatever huge chain stores, but I always think of the waiter/waitress that has to the front the bill because some jackasses dined and dashed.
+Moral foundation(s): care, proportionality
+Input: Someone needs to make an "inverse version" with Trump, Bernie, Stein, Le Pen, Maduro, and Orban reacting in disgust or horror.
+Moral foundation(s): purity
+Input: Today Le Pen proved she's unprincipled and disloyal. If she did that to her own party, imagine what she would do to France.
+Moral foundation(s): authority, loyalty
+Input: Why? Once France eventually ends up at 50% Islam, science will just be banned by sharia law. 
+
+Only Le Pen will keep French culture alive and above islam. France is 10% Islam right now and look at all the terror attacks. 
+
+Vive Le France
+
+I will *truly* be heart broken if the country that helped birth my nation from tyranny falls to Islam. I hope France will remember how vital freedom is, and that they were once renown throughout the world as a bastion of it. 
+Moral foundation(s): authority, loyalty
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-11 22:51:09,950)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.6337, micro_f1=0.6150, macro_f1=0.6127, authority_f1=0.7234, care_f1=0.6415, equality_f1=0.6176, loyalty_f1=0.5600, proportionality_f1=0.5484, purity_f1=0.5854

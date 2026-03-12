@@ -611,7 +611,6 @@ class TokenizationMixin:
                 model_name_or_path,
                 cache_dir=cache_dir,
                 trust_remote_code=trust_remote_code,
-                use_fast=True,
             ),
             max_length=max_length,
         )

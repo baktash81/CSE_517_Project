@@ -258,6 +258,28 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
             ]
             first_label_inds = [min(i) for i in all_first_label_inds]
 
+            # FIX: Calculate all_label_inds to get scores for all labels, not just the first one
+            all_label_inds = [
+                sorted([i for i in inds if i < len(o)])
+                for o, inds in zip(out["ids"], all_first_label_inds)
+            ]
+
+            # FIX: Extract all_scores using vLLM's logprob directory structure
+            out["all_scores"] = [
+                [
+                    (
+                        torch.tensor([
+                            o[i][j].logprob if o[i] is not None and j in o[i] else float("-inf")
+                            for j in self.label_first_token_ids.values()
+                        ])
+                    )
+                    if i < len(o)
+                    else torch.zeros(max(len(self.labels), len(self.label_first_token_ids)))
+                    for i in inds
+                ]
+                for o, inds in zip(out["scores"], all_label_inds)
+            ]
+
             # get the scores for all labels from the first token that is a label
             out["scores"] = [
                 (
@@ -276,6 +298,27 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
                 for o, i in zip(out["scores"], first_label_inds)
             ]
 
+            # FIX: Save raw scores as dictionaries
+            out["raw_all_scores"] = [
+                [
+                    {
+                        k: v.item()
+                        for k, v in zip(self.label_first_token_ids, score_tensor)
+                    }
+                    for score_tensor in all_scores_list
+                ]
+                for all_scores_list in out["all_scores"]
+            ]
+
+            out["raw_scores"] = [
+                {
+                    k: v.item()
+                    for k, v in zip(self.label_first_token_ids, o)
+                }
+                for o in out["scores"]
+            ]
+
+            # Softmax
             out["scores"] = [
                 {
                     k: v.item()
@@ -283,6 +326,20 @@ class vLMForClassification(LabelSimilarityMixin, vLMForGeneration):
                 }
                 for o in out["scores"]
             ]
+
+            # FIX: Softmax all scores
+            out["all_scores"] = [
+                [
+                    {
+                        k: v.item()
+                        for k, v in zip(self.label_first_token_ids, score_tensor.softmax(0))
+                    }
+                    for score_tensor in all_scores_list
+                ]
+                for all_scores_list in out["all_scores"]
+            ]
+
+            
 
         return out
 

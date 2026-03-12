@@ -50,7 +50,7 @@ def loop(args, metadata):
     train_dataset = DATASETS[args.task](
         init__namespace=splitify_namespace(args, "train")
     )
-    
+    print(len(train_dataset))
     # if args.task == 'MFRC':
     #     multilabel_ids = []
     #     for i in range(len(train_dataset)):
@@ -76,7 +76,7 @@ def loop(args, metadata):
     # for debugging, setting len(test_dataset) to 10
     # def debug_len(self): return 5
     # test_dataset.__class__.__len__ = debug_len
-    
+    print(len(test_dataset))
     
     if args.distribution == 'baseline':
         dataset = PromptDataset(
@@ -111,10 +111,17 @@ def loop(args, metadata):
             tokenizer=dataset.get_tokenizer(),
         )
 
+    debug_samples = getattr(args, "debug_samples", 0)
+    if debug_samples > 0:
+        print(
+            f"[DEBUG] Will print input, prompt, output for first {debug_samples} samples"
+        )
+
     evaluator = DistributionEstimator(
         model=model, test_dataset=dataset, experiment_manager=exp_manager
     )
-    
+    evaluator.debug_samples = debug_samples
+
     evaluator.run()
 
 def main():

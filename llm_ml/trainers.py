@@ -149,6 +149,18 @@ class PromptEvaluator(BaseTrainer):
         return torch.zeros(len(labels), device=device)
 
     def input_batch_args(self, batch: dict[str, Any]) -> dict[str, Any]:
+        if getattr(self, 'debug_samples', 0) > 0 and getattr(self, '_debug_sample_counter', 0) < getattr(self, 'debug_samples', 0):
+            sample_idx = self._debug_sample_counter + 1
+            sample_id = batch["id"][0] if isinstance(batch["id"], (list, tuple)) else batch["id"]
+            query = batch["query"][0] if isinstance(batch["query"], (list, tuple)) else batch["query"]
+            prompt_text = batch["text"][0] if isinstance(batch["text"], (list, tuple)) else batch["text"]
+            print(f"\n{'='*80}")
+            print(f"[DEBUG] Sample {sample_idx}/{self.debug_samples} (id: {sample_id})")
+            print(f"{'='*80}")
+            print(f"INPUT:\n{query}")
+            print(f"\nPROMPT (template applied):\n{prompt_text}")
+            print(f"{'-'*80}")
+
         encoding = {k: v[0] for k, v in batch["encoding"].items()}
 
         if "{cot}" in self.any_dataset.incontext_prompt:
@@ -651,10 +663,13 @@ class DistributionEstimator(BaseTrainer):
         super().__init__(*args, **kwargs)
 
         self.label_similarity = getattr(self.any_dataset.any_dataset, 'label_similarity', None)
-        
+        self.debug_samples = getattr(self, 'debug_samples', 0)
+        self._debug_sample_counter = 0
+
     def run_init(self):
         initial_label_tokens = self.test_dataset.get_initial_label_tokens()
         self.model.set_label_decoding_utils(initial_label_tokens)
+        self._debug_sample_counter = 0
 
     def get_logits_from_model(
         self, return_vals: Any, *args, **kwargs
@@ -680,6 +695,16 @@ class DistributionEstimator(BaseTrainer):
     def get_extra_data_from_model(
         self, return_vals: dict[str, str | torch.Tensor], batch: dict[str, Any]
     ) -> dict[str, list[Any]]:
+        if getattr(self, 'debug_samples', 0) > 0 and getattr(self, '_debug_sample_counter', 0) < getattr(self, 'debug_samples', 0):
+            output_text = return_vals.get("text", [None])
+            if output_text and output_text[0] is not None:
+                output_str = output_text[0]
+            else:
+                output_str = str(return_vals.get("preds", ["N/A"]))
+            print(f"OUTPUT:\n{output_str}")
+            print(f"{'='*80}\n")
+            self._debug_sample_counter += 1
+
         if "text" in return_vals:
             odict = dict(
                 outs=return_vals["text"],
@@ -757,6 +782,18 @@ class DistributionEstimator(BaseTrainer):
         return torch.zeros(len(labels), device=device)
 
     def input_batch_args(self, batch: dict[str, Any]) -> dict[str, Any]:
+        if getattr(self, 'debug_samples', 0) > 0 and getattr(self, '_debug_sample_counter', 0) < getattr(self, 'debug_samples', 0):
+            sample_idx = self._debug_sample_counter + 1
+            sample_id = batch["id"][0] if isinstance(batch["id"], (list, tuple)) else batch["id"]
+            query = batch["query"][0] if isinstance(batch["query"], (list, tuple)) else batch["query"]
+            prompt_text = batch["text"][0] if isinstance(batch["text"], (list, tuple)) else batch["text"]
+            print(f"\n{'='*80}")
+            print(f"[DEBUG] Sample {sample_idx}/{self.debug_samples} (id: {sample_id})")
+            print(f"{'='*80}")
+            print(f"INPUT:\n{query}")
+            print(f"\nPROMPT (template applied):\n{prompt_text}")
+            print(f"{'-'*80}")
+
         encoding = {k: v[0] for k, v in batch["encoding"].items()}
 
         if "{cot}" in self.any_dataset.incontext_prompt:
@@ -1037,25 +1074,6 @@ class DistributionEstimator(BaseTrainer):
         return aggregate_results, aggregate_info
 
 class vDistributionEstimator(DistributionEstimator):
-    def init_dataloader(self, dataset, train: bool, **kwargs):
-        """Return plain DataLoader without accelerator.prepare() so batches stay on CPU.
-
-        vLLM manages its own GPU memory; moving batch tensors to GPU causes OOM.
-        The model only needs text strings from the batch, not GPU tensors.
-        """
-        return DataLoader(
-            dataset,
-            batch_size=(
-                self.exp_manager.train_batch_size if train
-                else self.exp_manager.eval_batch_size
-            ),
-            collate_fn=getattr(dataset, "collate_fn", None),
-            num_workers=getattr(
-                self.exp_manager, "dataloader_num_workers", 0
-            ),
-            **kwargs,
-        )
-
     def input_batch_args(self, batch):
         inp = super().input_batch_args(batch)
         return dict(

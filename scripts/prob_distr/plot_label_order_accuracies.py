@@ -166,7 +166,7 @@ if __name__ == '__main__':
     ]
     
     models = [
-        'meta-llama--Llama-3.1-8B_0',
+        '--mnt--data-hps--Llama-3.1-70B_0',
     ]
     
     yaml_files = []

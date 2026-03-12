@@ -1,30 +1,21 @@
-while getopts c: flag
-do
-    case "${flag}" in
-        c) cuda=${OPTARG};;
-    esac
-done
-
 # Run from project root so paths like scripts/prob_distr/llm_prob_distr.py resolve
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 cd "$PROJECT_ROOT"
 
-# model=meta-llama/Llama-2-13b-chat-hf
-model=meta-llama/Llama-2-7b-chat-hf
-# model=meta-llama/Llama-3.2-1B
-# model=meta-llama/Llama-3.1-8B
-# model=meta-llama/Llama-3.3-70B-Instruct
-
-# override from command line, if provided
-model=${4:-$model}
-
-export CUDA_VISIBLE_DEVICES="$3"
 
 id_list=$2
+train_split=${3:-train}
+test_split=${4:-"dev test"}
 
-gpu_mem=${6:-0.95}
-seed=${7:-0}
+export CUDA_VISIBLE_DEVICES="$5"
+
+model=meta-llama/Llama-3.3-70B-Instruct
+model=${6:-$model}
+gpu_mem=${8:-0.95}
+
+seed=${9:-0}
+debug_samples=${10:-5}
 
 id_file_args=""
 if [ -n "$id_list" ]; then
@@ -38,23 +29,22 @@ fi
 echo Using model $model
 echo Evaluating distribution type $1
 echo Testing on IDs: ${id_file:-"(full dataset)"}
-echo Running on GPU $3
+echo Running on GPU $5
 
-if [ "$5" == "vllm" ]; then
-echo Using VLLM
+if [ "$7" == "vllm" ]; then
+    echo Using VLLM
 
     python scripts/prob_distr/vllm_prob_distr.py \
         MFRC \
         --distribution $1 \
         --root-dir datasets/mfrc \
-        --train-split dev test \
-        --test-split train \
+        --train-split $train_split \
+        --test-split $test_split \
         --system ' ' \
         --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}.\n' \
         --incontext $'Input: {text}\nMoral foundation(s): {label}\n' \
         --model-name-or-path $model \
         --max-new-tokens 18 \
-        --device cpu \
         --logging-level debug \
         --annotation-mode aggregate \
         --text-preprocessor false \
@@ -64,17 +54,18 @@ echo Using VLLM
         --shot 10 \
         --seed $seed \
         --gpu-memory-utilization $gpu_mem \
+        $([ "$debug_samples" -gt 0 ] && echo "--debug-samples $debug_samples") \
         $id_file_args
 
 else
-echo Using HuggingFace
+    echo Using HuggingFace
 
     python scripts/prob_distr/llm_prob_distr.py \
         MFRC \
         --distribution $1 \
         --root-dir datasets/mfrc \
-        --train-split dev test \
-        --test-split train \
+        --train-split $train_split \
+        --test-split $test_split \
         --system ' ' \
         --instruction $'Classify the following inputs into none, one, or multiple the following moral foundations per input: {labels}.\n' \
         --incontext $'Input: {text}\nMoral foundation(s): {label}\n' \
@@ -90,6 +81,7 @@ echo Using HuggingFace
         --alternative $alt_name \
         --shot 10 \
         --seed $seed \
+        $([ "$debug_samples" -gt 0 ] && echo "--debug-samples $debug_samples") \
         $id_file_args
 
 fi

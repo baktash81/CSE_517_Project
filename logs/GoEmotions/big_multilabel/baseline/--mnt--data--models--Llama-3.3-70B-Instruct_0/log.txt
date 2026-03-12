@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:23:10,788)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:23:11,460)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Not at all! It’s my pleasure
+{"label": ["admiration"]}
+Input: Perfect place to get flame grilled by the church then. Bring it on!
+{"label": ["admiration"]}
+Input: correct. i am the one who decides if something is funny to me or not.
+{"label": ["optimism", "admiration"]}
+Input: Outstanding, really outstanding. I can't wait for her visit to the United States.
+{"label": ["joy", "admiration"]}
+Input: This is the most horrifying thing I've ever read on this thread. May you and your loved ones see this through safe and sound.
+{"label": ["optimism", "fear"]}
+Input: Such pretty kitties!
+{"label": ["admiration"]}
+Input: That’s what I meant, sorry bout that. Never fold AKs pre 
+{"label": ["sadness"]}
+Input: Is there such thing as "only a cat"?
+{"label": ["surprise"]}
+Input: Your patience to find the perfect moment is... Please just let me slow clap.
+{"label": ["admiration", "anger"]}
+Input: “excuse me, sorry im next”. “oh sorry”(moves behind you). “thank you”
+{"label": ["admiration", "sadness"]}
+Input: I went to a destination wedding being the only single person. Promised to never put myself in that situation again.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I'm sorry you felt alone. It's a terrible suffocating feeling of dread. I hope you are feeling better and that you are in good health
+{"label": ["optimism", "sadness"]}
+Input: Lol, wut
+{"label": ["joy"]}
+Input: This is awesome!
+{"label": ["joy", "admiration"]}
+Input: Damn, but I’d miss my mother. Then again she’d be all happy in her heaven. The rest of us can party. 
+{"label": ["joy", "sadness", "anger"]}
+Input: Right, we don't know for certain. It was just what I've heard. We'll have to wait until we can test it.
+{"label": ["optimism", "admiration"]}
+Input: Take them out of his care and into the care of someone who can watch them until you are able to protect them yourself.
+{"label": ["optimism"]}
+Input: At first view, I thought it was a beer mug seen from above but immediately saw it's a pancake and now I'm just feeling dipshit.
+{"label": ["admiration", "anger"]}
+Input: I wasn't meaning it as an insult or anything, sorry if it came off that way. 
+{"label": ["sadness"]}
+Input: For sure. I am infatuated with sharks, and much of that obsession comes from absolute fear haha. 
+{"label": ["joy"]}
+Input: Congrats on being clean, and having a great team mate! 
+{"label": ["admiration"]}
+Input: I went to a destination wedding being the only single person. Promised to never put myself in that situation again.
+INFO-vDistributionEstimator(2026-03-11 03:28:41,057)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4514, micro_f1=0.5769, macro_f1=0.5460, joy_f1=0.7015, optimism_f1=0.4681, admiration_f1=0.5561, surprise_f1=0.3946, fear_f1=0.4516, sadness_f1=0.6298, anger_f1=0.6201

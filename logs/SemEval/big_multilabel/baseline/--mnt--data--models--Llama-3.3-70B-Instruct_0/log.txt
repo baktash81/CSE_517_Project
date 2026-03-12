@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-11 03:15:50,288)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-11 03:15:50,374)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: yesterday i finished watching penny dreadful and from all the beautiful things i saw one question remains: were the writers HIM's fans?
+anticipation
+Input: @skyfootball manchester united...still untrusted iam afraid i might loose my bet
+fear
+Input: The #secret to all of every industry: just #start doing it...somehow people forget that they never gave you #permission.' - @thomaslennon
+anticipation, disgust, optimism
+Input: last nigt i dreamt \nthat somebody loved me\nno hope no harm\njust another false alarm
+joy
+Input: Feeling like I've had the worst night of sleep ever - not great before the #London to #Brighton #cycle ride for @DMTFYP 🚴100k ?
+anger, disgust, sadness
+Input: i used to think the fire detector going off at my old place when boiling water was bad but this one went off bc of DUST and wouldnt turn off
+disgust
+Input: Focusing primarily on the person you’re talking to rather than yourself and the impression you’re making lessens social anxiety.
+fear
+Input: @NFYFC @Wilkster_ hmm, don't know many yf  who are short on confidence! Wish I'd been one, 
+anticipation, sadness
+Input: Just got done watching Jeepers Creepers it was epic #horror #horrormoviesarebest #movies #movie #horrorfilm 🎬📽🎬
+fear, joy
+Input: May a man live well-, and long-enough, to leave many joyful widows behind him.
+joy, optimism
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @TaylaStJames it happens and Vegas isn't the only origin thats prevelant #sadly
+sadness
+Input: You don't know how to love me when you're sober #sober #selenagomez #revival
+sadness
+Input: @Zak_Atif two congressional hearings in USA stopped financial aid to Pak and asked it to prove that it is doing enough to stop terrorism 1n
+fear
+Input: The most depressing part of being ill is that your taste goes 😫
+disgust, sadness
+Input: Happiness is the best revenge
+joy, optimism
+Input: @OniLink86 @DarekMeridian lmao awe...  #sad
+sadness
+Input: @Netflix_ME penny dreadful season 3?
+disgust, fear
+Input: I don't think it's fully sunk in that Val is gone yet
+anger, disgust
+Input: @andrewmcmeme nah, I asked really insightful teacherly questions so he could write a kickass report of his own. He will, sadly, never know
+anger, anticipation, disgust, sadness
+Input: @easyJet Hi folks. Flight is going to be over an hour late departing from INV (EZY864), how do we go about getting a refund please? 
+anger
+Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
+INFO-vDistributionEstimator(2026-03-11 03:20:12,947)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4335, micro_f1=0.5642, macro_f1=0.4741, anger_f1=0.6946, anticipation_f1=0.3140, disgust_f1=0.6013, fear_f1=0.5312, joy_f1=0.7452, love_f1=0.5676, optimism_f1=0.4645, pessimism_f1=0.1931, sadness_f1=0.6476, surprise_f1=0.2182, trust_f1=0.2375
