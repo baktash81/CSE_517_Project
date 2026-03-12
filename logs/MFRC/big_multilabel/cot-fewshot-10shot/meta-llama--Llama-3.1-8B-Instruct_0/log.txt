@@ -1,53 +1,49 @@
-DEBUG-vDistributionEstimator(2026-03-12 12:36:17,040)   Trainer set up.
-DEBUG-vDistributionEstimator(2026-03-12 12:36:17,052)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+DEBUG-vDistributionEstimator(2026-03-12 16:01:33,656)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 16:01:33,667)   test: Label set: authority, care, equality, loyalty, proportionality, purity
 Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity. Let's think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
 Output: {"label": ["foundation1", "foundation2"]}
-Input: I don't think there's any merit at all, no. It's not creative, it's not productive, and it's not nourishing or meaningful in any way. It's vapid consumerism personified. Just because people derive entertainment from it doesn't mean it's good. There's a plethora of well made, passionately created content on YouTube that doesn't make its creators into multi-millionaires. The fact that someone like PewDiePie screaming slurs and acting like a petulant man child is entertaining to more people is not evidence of his merit, it's evidence of our societal rot.
-
-And jealousy, really? I'm quite happy with what I have, thanks.
-Reasoning: The label of proportionality is appropriate for this text because the author is criticizing the disproportionate influence and wealth of a YouTuber like PewDiePie, suggesting that their fame and wealth are not proportional to the value of their content. The author implies that the creator's behavior and content are not worthy of such a large following and financial reward. This criticism is rooted in the idea that the consequences of their actions and the attention they receive are not in proportion to their actual value or merit.
-Output: {"label": ["proportionality"]}
-Input: 3% return on a million dollars is still 30k a year.
-
-So once you're at a million in the bank (or in the market), you can *do nothing* and make what the median worker in america is making a year from *labor*
-Reasoning: This text does not explicitly express a moral judgment or value, but rather presents a factual comparison between investment returns and median worker income. The tone is informative and neutral, without any apparent appeal to authority, care, equality, loyalty, proportionality, or purity. The text's focus is on financial calculation rather than moral or ethical considerations.
-Output: {"label": ["none"]}
-Input: So, illegal to stand on the sidewalk? They obviously didn't arrest him so you can't say he was disobeying cops, they used violence to exert their will.
-Reasoning: The assigned label of "authority" is appropriate for this text because it involves a critique of the actions of law enforcement, implying a challenge to their authority and power. The mention of "exert their will" through violence also suggests a concern with the abuse of authority. The text's focus on the police's actions and their legitimacy reinforces the connection to the authority moral foundation.
-Output: {"label": ["authority"]}
 Input: Not very helpful to a practical material analysis. 
 
 Regardless of the philosophical particulars of freedom, we are animals with material needs that must be met. Freedom from these needs is impossible, but it is not impossible to freely have the needs met.
-Reasoning: This text does not explicitly appeal to any of the moral foundations (authority, care, equality, loyalty, proportionality, purity) as it primarily focuses on a philosophical discussion about the nature of freedom and its relation to material needs, without making any value judgments or moral claims that align with these foundations. The text's tone is more analytical and neutral, aiming to clarify a concept rather than promote a particular moral stance. The absence of emotive language and explicit moral appeals further supports the lack of alignment with the given moral foundations.
+Reasoning: This text focuses on a philosophical discussion of freedom and material needs, lacking any explicit concern for the core tenets of the moral foundations. It doesn’t appeal to notions of right/wrong related to social order (authority/loyalty), harm/welfare (care), fairness (equality), justice (proportionality), or sanctity/purity. The argument is purely about the nature of existence and fulfilling basic requirements, making it amoral rather than moralizing.
 Output: {"label": ["none"]}
+Input: Have you tried growing up and accepting that she’s an adult who can make her own decisions? She doesn’t need to tell you anything and you pestering her about your “feelings” does nothing but creep her out. And quite frankly, it creeps me out too. Leave her the fuck alone.
+Reasoning: This text invokes **care** by criticizing behavior perceived as harmful and disrespectful to another’s emotional well-being—specifically, the unwanted pressure being placed on someone. It appeals to **equality** by asserting the woman’s autonomy and right to self-determination as an adult, dismissing the poster’s claim to influence her choices. Finally, **purity** is present in the strong condemnation of behavior deemed "creepy" and violating personal boundaries, reflecting a desire to avoid offense and maintain psychological cleanliness.
+Output: {"label": ["care", "equality", "purity"]}
+Input: So, illegal to stand on the sidewalk? They obviously didn't arrest him so you can't say he was disobeying cops, they used violence to exert their will.
+Reasoning: The post centers on a perceived overreach of power and questioning the legitimacy of actions taken by those in authority (police). It highlights a disagreement with how authority is *exerted*, focusing on the use of violence even without a clear legal violation or disobedience. This directly engages with concerns about rightful power and its limits, fitting the authority foundation.
+Output: {"label": ["authority"]}
+Input: That shirt i swear capitalists have some fucked up humiliation fetish
+Reasoning: This post expresses anger and a critical opinion about capitalists, framing them as having a negative “fetish.” It doesn’t inherently appeal to any core moral foundation—it’s not about righting wrongs (care/equality), respecting tradition (purity), group bonds (loyalty), just systems (proportionality), or legitimate power (authority). The statement is primarily an insult, lacking a clear moral framing.
+Output: {"label": ["none"]}
+Input: You're either a troll or incredibly immature. You know fully well (from all the threads you've commented on) why OP is an AH. It's not about not wanting to help, it's about not being upfront and asking for help, but instead making it seem like a different situation.
+
+There is a huge difference between "hey, I need to do this thing and would appreciate if you could help me" and what OP did here.
+Reasoning: This text focuses on criticizing deceptive behavior and a lack of directness, centering on social expectations of honesty and respectful communication. It doesn’t inherently appeal to any of the core moral foundations—it’s not about righting wrongs due to harm (care), fairness (equality), social order (authority/loyalty), just deserts (proportionality), or sanctity/avoiding contamination (purity). The post is primarily a judgment of character and communication style, rather than a moral issue tied to these foundations.
+Output: {"label": ["none"]}
+Input: 3% return on a million dollars is still 30k a year.
+
+So once you're at a million in the bank (or in the market), you can *do nothing* and make what the median worker in america is making a year from *labor*
+Reasoning: This text focuses purely on a financial comparison and economic observation—the passive income generated from wealth versus the income from labor. It doesn't inherently invoke concerns about fairness, social order, group bonds, sanctity, or just deserts; it’s a statement of fact regarding economic disparity. Therefore, none of the moral foundations are meaningfully engaged by the post's content.
+Output: {"label": ["none"]}
+Input: I don't think there's any merit at all, no. It's not creative, it's not productive, and it's not nourishing or meaningful in any way. It's vapid consumerism personified. Just because people derive entertainment from it doesn't mean it's good. There's a plethora of well made, passionately created content on YouTube that doesn't make its creators into multi-millionaires. The fact that someone like PewDiePie screaming slurs and acting like a petulant man child is entertaining to more people is not evidence of his merit, it's evidence of our societal rot.
+
+And jealousy, really? I'm quite happy with what I have, thanks.
+Reasoning: The text expresses a strong sense of injustice regarding rewards and merit—specifically, that PewDiePie’s success is *disproportionate* to his actual value or positive contribution. The author believes entertainment value shouldn’t equate to merit and criticizes a system where harmful behavior is rewarded with wealth and fame. This focus on fair outcomes and appropriate consequences aligns directly with the proportionality foundation.
+Output: {"label": ["proportionality"]}
 Input: Marine Le Pen's father famously and openly spoke against the Jews living in France. Marine Le Pen herself has been caught speaking against jews and immigrants. You can't run a platform of exclusion and literal human removal without being at least in some form a fascist. That includes Trump who infamously ran on the campaign promise of removing 11 million people from their homes. Not a real fascist, but most definitely fascist like. 
-Reasoning: The label "equality" is appropriate for this text because it highlights the author's concern with the exclusionary rhetoric of Marine Le Pen and Trump, which is perceived as a threat to the equal treatment and rights of marginalized groups, including Jews and immigrants. The author emphasizes the idea that these individuals' policies promote discrimination and removal, undermining the principle of equality. The text focuses on the moral implications of exclusion and discrimination, which is a key aspect of the equality moral foundation.
+Reasoning: The text centers on the unfair treatment and potential removal of groups (Jews, immigrants) based on their identity, directly violating principles of equal treatment and rights. Condemning “exclusion and literal human removal” highlights a concern for disparities in how different groups are valued within society. Therefore, “equality” accurately captures the moral concern expressed in the post.
 Output: {"label": ["equality"]}
-Input: Today Le Pen proved she's unprincipled and disloyal. If she did that to her own party, imagine what she would do to France.
-Reasoning: The assigned moral foundations of authority and loyalty are appropriate for this text because the author is criticizing Le Pen for her actions, implying that she has overstepped her authority and betrayed the trust of her party, which is a fundamental aspect of loyalty. The author is also suggesting that Le Pen's disloyalty to her party is a reflection of her character, implying that she is untrustworthy and unprincipled. This criticism is rooted in the moral principles of authority and loyalty, which emphasize the importance of respect for hierarchy and commitment to one's group.
-Output: {"label": ["authority", "loyalty"]}
 Input: You should not feel good about it. 
 
 You ARE a creep. 
 
 Do not take pictures of people without their consent.
-Reasoning: The assigned label of "purity" is appropriate for this text because it involves a moral concern for the protection of personal boundaries and the respect of individuals' autonomy, particularly in the context of privacy and consent. The text emphasizes the importance of not taking pictures of people without their consent, which is a key aspect of maintaining personal purity and dignity. This aligns with the moral foundation of purity, which values the protection of individuals from harm and the preservation of their moral integrity.
+Reasoning: The post expresses strong condemnation of an action perceived as violating personal boundaries and exhibiting disrespectful behavior—specifically, taking photos without consent. This aligns with the purity foundation’s concern with bodily autonomy and avoiding degradation of individuals. The strong, accusatory language (“creep”) further emphasizes a sense of moral disgust at the perceived violation of purity.
 Output: {"label": ["purity"]}
-Input: Have you tried growing up and accepting that she’s an adult who can make her own decisions? She doesn’t need to tell you anything and you pestering her about your “feelings” does nothing but creep her out. And quite frankly, it creeps me out too. Leave her the fuck alone.
-Reasoning: The assigned moral foundations of care, equality, and purity are appropriate for this text because:
-
-- The text emphasizes respecting the autonomy and decision-making capacity of the adult individual, which aligns with the equality foundation, as it values the equal rights and dignity of all individuals.
-- The text also prioritizes the well-being and comfort of the individual, particularly in avoiding actions that might "creep her out," which relates to the care foundation, as it emphasizes empathy and concern for others' emotional and psychological well-being.
-- The text's tone and language, particularly the use of the phrase "Leave her the fuck alone," convey a sense of disgust and revulsion towards the behavior of pestering someone, which relates to the purity foundation, as it values moral and emotional purity, and rejects actions that are considered impure or tainted.
-Output: {"label": ["care", "equality", "purity"]}
-Input: You're either a troll or incredibly immature. You know fully well (from all the threads you've commented on) why OP is an AH. It's not about not wanting to help, it's about not being upfront and asking for help, but instead making it seem like a different situation.
-
-There is a huge difference between "hey, I need to do this thing and would appreciate if you could help me" and what OP did here.
-Reasoning: This text primarily focuses on a critique of the original poster's behavior and communication style, rather than addressing a moral issue. The author is expressing frustration and disappointment, but the tone is more argumentative and critical than moral. The text does not explicitly reference or appeal to any of the moral foundations (authority, care, equality, loyalty, proportionality, purity).
-Output: {"label": ["none"]}
-Input: That shirt i swear capitalists have some fucked up humiliation fetish
-Reasoning: This text does not explicitly reference any moral principles or values associated with the given foundations. The language used is primarily an expression of frustration and criticism towards capitalism, but it lacks any clear connection to the moral principles of authority, care, equality, loyalty, proportionality, or purity. The tone is more focused on a personal opinion and emotional reaction rather than a moral judgment.
-Output: {"label": ["none"]}
+Input: Today Le Pen proved she's unprincipled and disloyal. If she did that to her own party, imagine what she would do to France.
+Reasoning: This text invokes **authority** by criticizing Le Pen’s fitness to lead (implying a violation of expected leadership conduct). More prominently, it centers on **loyalty**—specifically, her perceived disloyalty to her own political party and, by extension, to France itself, framing it as a significant moral failing. The post expresses concern over a breach of trust and allegiance.
+Output: {"label": ["authority", "loyalty"]}
 Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
 Reasoning:
 Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity. Let's think step by step about what moral foundations are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
@@ -55,49 +51,45 @@ Output: {"label": ["foundation1", "foundation2"]}
 Input: I don't think there's any merit at all, no. It's not creative, it's not productive, and it's not nourishing or meaningful in any way. It's vapid consumerism personified. Just because people derive entertainment from it doesn't mean it's good. There's a plethora of well made, passionately created content on YouTube that doesn't make its creators into multi-millionaires. The fact that someone like PewDiePie screaming slurs and acting like a petulant man child is entertaining to more people is not evidence of his merit, it's evidence of our societal rot.
 
 And jealousy, really? I'm quite happy with what I have, thanks.
-Reasoning: The label of proportionality is appropriate for this text because the author is criticizing the disproportionate influence and wealth of a YouTuber like PewDiePie, suggesting that their fame and wealth are not proportional to the value of their content. The author implies that the creator's behavior and content are not worthy of such a large following and financial reward. This criticism is rooted in the idea that the consequences of their actions and the attention they receive are not in proportion to their actual value or merit.
+Reasoning: The text expresses a strong sense of injustice regarding rewards and merit—specifically, that PewDiePie’s success is *disproportionate* to his actual value or positive contribution. The author believes entertainment value shouldn’t equate to merit and criticizes a system where harmful behavior is rewarded with wealth and fame. This focus on fair outcomes and appropriate consequences aligns directly with the proportionality foundation.
 Output: {"label": ["proportionality"]}
+Input: So, illegal to stand on the sidewalk? They obviously didn't arrest him so you can't say he was disobeying cops, they used violence to exert their will.
+Reasoning: The post centers on a perceived overreach of power and questioning the legitimacy of actions taken by those in authority (police). It highlights a disagreement with how authority is *exerted*, focusing on the use of violence even without a clear legal violation or disobedience. This directly engages with concerns about rightful power and its limits, fitting the authority foundation.
+Output: {"label": ["authority"]}
+Input: Not very helpful to a practical material analysis. 
+
+Regardless of the philosophical particulars of freedom, we are animals with material needs that must be met. Freedom from these needs is impossible, but it is not impossible to freely have the needs met.
+Reasoning: This text focuses on a philosophical discussion of freedom and material needs, lacking any explicit concern for the core tenets of the moral foundations. It doesn’t appeal to notions of right/wrong related to social order (authority/loyalty), harm/welfare (care), fairness (equality), justice (proportionality), or sanctity/purity. The argument is purely about the nature of existence and fulfilling basic requirements, making it amoral rather than moralizing.
+Output: {"label": ["none"]}
 Input: You're either a troll or incredibly immature. You know fully well (from all the threads you've commented on) why OP is an AH. It's not about not wanting to help, it's about not being upfront and asking for help, but instead making it seem like a different situation.
 
 There is a huge difference between "hey, I need to do this thing and would appreciate if you could help me" and what OP did here.
-Reasoning: This text primarily focuses on a critique of the original poster's behavior and communication style, rather than addressing a moral issue. The author is expressing frustration and disappointment, but the tone is more argumentative and critical than moral. The text does not explicitly reference or appeal to any of the moral foundations (authority, care, equality, loyalty, proportionality, purity).
+Reasoning: This text focuses on criticizing deceptive behavior and a lack of directness, centering on social expectations of honesty and respectful communication. It doesn’t inherently appeal to any of the core moral foundations—it’s not about righting wrongs due to harm (care), fairness (equality), social order (authority/loyalty), just deserts (proportionality), or sanctity/avoiding contamination (purity). The post is primarily a judgment of character and communication style, rather than a moral issue tied to these foundations.
 Output: {"label": ["none"]}
+Input: Today Le Pen proved she's unprincipled and disloyal. If she did that to her own party, imagine what she would do to France.
+Reasoning: This text invokes **authority** by criticizing Le Pen’s fitness to lead (implying a violation of expected leadership conduct). More prominently, it centers on **loyalty**—specifically, her perceived disloyalty to her own political party and, by extension, to France itself, framing it as a significant moral failing. The post expresses concern over a breach of trust and allegiance.
+Output: {"label": ["authority", "loyalty"]}
+Input: That shirt i swear capitalists have some fucked up humiliation fetish
+Reasoning: This post expresses anger and a critical opinion about capitalists, framing them as having a negative “fetish.” It doesn’t inherently appeal to any core moral foundation—it’s not about righting wrongs (care/equality), respecting tradition (purity), group bonds (loyalty), just systems (proportionality), or legitimate power (authority). The statement is primarily an insult, lacking a clear moral framing.
+Output: {"label": ["none"]}
+Input: Have you tried growing up and accepting that she’s an adult who can make her own decisions? She doesn’t need to tell you anything and you pestering her about your “feelings” does nothing but creep her out. And quite frankly, it creeps me out too. Leave her the fuck alone.
+Reasoning: This text invokes **care** by criticizing behavior perceived as harmful and disrespectful to another’s emotional well-being—specifically, the unwanted pressure being placed on someone. It appeals to **equality** by asserting the woman’s autonomy and right to self-determination as an adult, dismissing the poster’s claim to influence her choices. Finally, **purity** is present in the strong condemnation of behavior deemed "creepy" and violating personal boundaries, reflecting a desire to avoid offense and maintain psychological cleanliness.
+Output: {"label": ["care", "equality", "purity"]}
 Input: 3% return on a million dollars is still 30k a year.
 
 So once you're at a million in the bank (or in the market), you can *do nothing* and make what the median worker in america is making a year from *labor*
-Reasoning: This text does not explicitly express a moral judgment or value, but rather presents a factual comparison between investment returns and median worker income. The tone is informative and neutral, without any apparent appeal to authority, care, equality, loyalty, proportionality, or purity. The text's focus is on financial calculation rather than moral or ethical considerations.
+Reasoning: This text focuses purely on a financial comparison and economic observation—the passive income generated from wealth versus the income from labor. It doesn't inherently invoke concerns about fairness, social order, group bonds, sanctity, or just deserts; it’s a statement of fact regarding economic disparity. Therefore, none of the moral foundations are meaningfully engaged by the post's content.
 Output: {"label": ["none"]}
 Input: Marine Le Pen's father famously and openly spoke against the Jews living in France. Marine Le Pen herself has been caught speaking against jews and immigrants. You can't run a platform of exclusion and literal human removal without being at least in some form a fascist. That includes Trump who infamously ran on the campaign promise of removing 11 million people from their homes. Not a real fascist, but most definitely fascist like. 
-Reasoning: The label "equality" is appropriate for this text because it highlights the author's concern with the exclusionary rhetoric of Marine Le Pen and Trump, which is perceived as a threat to the equal treatment and rights of marginalized groups, including Jews and immigrants. The author emphasizes the idea that these individuals' policies promote discrimination and removal, undermining the principle of equality. The text focuses on the moral implications of exclusion and discrimination, which is a key aspect of the equality moral foundation.
+Reasoning: The text centers on the unfair treatment and potential removal of groups (Jews, immigrants) based on their identity, directly violating principles of equal treatment and rights. Condemning “exclusion and literal human removal” highlights a concern for disparities in how different groups are valued within society. Therefore, “equality” accurately captures the moral concern expressed in the post.
 Output: {"label": ["equality"]}
 Input: You should not feel good about it. 
 
 You ARE a creep. 
 
 Do not take pictures of people without their consent.
-Reasoning: The assigned label of "purity" is appropriate for this text because it involves a moral concern for the protection of personal boundaries and the respect of individuals' autonomy, particularly in the context of privacy and consent. The text emphasizes the importance of not taking pictures of people without their consent, which is a key aspect of maintaining personal purity and dignity. This aligns with the moral foundation of purity, which values the protection of individuals from harm and the preservation of their moral integrity.
+Reasoning: The post expresses strong condemnation of an action perceived as violating personal boundaries and exhibiting disrespectful behavior—specifically, taking photos without consent. This aligns with the purity foundation’s concern with bodily autonomy and avoiding degradation of individuals. The strong, accusatory language (“creep”) further emphasizes a sense of moral disgust at the perceived violation of purity.
 Output: {"label": ["purity"]}
-Input: That shirt i swear capitalists have some fucked up humiliation fetish
-Reasoning: This text does not explicitly reference any moral principles or values associated with the given foundations. The language used is primarily an expression of frustration and criticism towards capitalism, but it lacks any clear connection to the moral principles of authority, care, equality, loyalty, proportionality, or purity. The tone is more focused on a personal opinion and emotional reaction rather than a moral judgment.
-Output: {"label": ["none"]}
-Input: Have you tried growing up and accepting that she’s an adult who can make her own decisions? She doesn’t need to tell you anything and you pestering her about your “feelings” does nothing but creep her out. And quite frankly, it creeps me out too. Leave her the fuck alone.
-Reasoning: The assigned moral foundations of care, equality, and purity are appropriate for this text because:
-
-- The text emphasizes respecting the autonomy and decision-making capacity of the adult individual, which aligns with the equality foundation, as it values the equal rights and dignity of all individuals.
-- The text also prioritizes the well-being and comfort of the individual, particularly in avoiding actions that might "creep her out," which relates to the care foundation, as it emphasizes empathy and concern for others' emotional and psychological well-being.
-- The text's tone and language, particularly the use of the phrase "Leave her the fuck alone," convey a sense of disgust and revulsion towards the behavior of pestering someone, which relates to the purity foundation, as it values moral and emotional purity, and rejects actions that are considered impure or tainted.
-Output: {"label": ["care", "equality", "purity"]}
-Input: Today Le Pen proved she's unprincipled and disloyal. If she did that to her own party, imagine what she would do to France.
-Reasoning: The assigned moral foundations of authority and loyalty are appropriate for this text because the author is criticizing Le Pen for her actions, implying that she has overstepped her authority and betrayed the trust of her party, which is a fundamental aspect of loyalty. The author is also suggesting that Le Pen's disloyalty to her party is a reflection of her character, implying that she is untrustworthy and unprincipled. This criticism is rooted in the moral principles of authority and loyalty, which emphasize the importance of respect for hierarchy and commitment to one's group.
-Output: {"label": ["authority", "loyalty"]}
-Input: So, illegal to stand on the sidewalk? They obviously didn't arrest him so you can't say he was disobeying cops, they used violence to exert their will.
-Reasoning: The assigned label of "authority" is appropriate for this text because it involves a critique of the actions of law enforcement, implying a challenge to their authority and power. The mention of "exert their will" through violence also suggests a concern with the abuse of authority. The text's focus on the police's actions and their legitimacy reinforces the connection to the authority moral foundation.
-Output: {"label": ["authority"]}
-Input: Not very helpful to a practical material analysis. 
-
-Regardless of the philosophical particulars of freedom, we are animals with material needs that must be met. Freedom from these needs is impossible, but it is not impossible to freely have the needs met.
-Reasoning: This text does not explicitly appeal to any of the moral foundations (authority, care, equality, loyalty, proportionality, purity) as it primarily focuses on a philosophical discussion about the nature of freedom and its relation to material needs, without making any value judgments or moral claims that align with these foundations. The text's tone is more analytical and neutral, aiming to clarify a concept rather than promote a particular moral stance. The absence of emotive language and explicit moral appeals further supports the lack of alignment with the given moral foundations.
-Output: {"label": ["none"]}
 Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
 Reasoning:
-INFO-vDistributionEstimator(2026-03-12 12:41:14,186)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4258, micro_f1=0.5646, macro_f1=0.4951, authority_f1=0.4571, care_f1=0.7045, equality_f1=0.5667, loyalty_f1=0.6087, proportionality_f1=0.1000, purity_f1=0.5333
+INFO-vDistributionEstimator(2026-03-12 16:05:37,195)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3921, micro_f1=0.5312, macro_f1=0.4572, authority_f1=0.4000, care_f1=0.6813, equality_f1=0.6286, loyalty_f1=0.5098, proportionality_f1=0.0870, purity_f1=0.4364

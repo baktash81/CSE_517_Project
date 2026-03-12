@@ -1,71 +1,71 @@
-DEBUG-vDistributionEstimator(2026-03-12 16:01:58,768)   Trainer set up.
-DEBUG-vDistributionEstimator(2026-03-12 16:01:58,777)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+DEBUG-vDistributionEstimator(2026-03-12 14:59:10,740)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 14:59:10,748)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
 Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
 Output: {"label": ["emotion1", "emotion2"]}
-Input: Because it was a perfect illusion, but at least now I know what it was. #angry #ladygaga #iscalming#mysoul
-Reasoning: The tweet expresses disillusionment – something presented as “perfect” was ultimately revealed as false, fueling **anger** at the deception. This realization of a flawed reality also evokes a sense of **pessimism** about future expectations, and a feeling of **disgust** at having been fooled. The hashtags further confirm the author’s negative emotional state and attempt at emotional processing.
-Output: {"label": ["anger", "disgust", "pessimism"]}
-Input: remember when glee did a take me or leave me cover but it was between two girls who werent even friends why did that do that
-Reasoning: The tweet expresses **anger** and **disgust** at a perceived misstep by the show *Glee* – a baffling and potentially harmful representation in their cover song choice. Simultaneously, there's a sense of **sadness** stemming from the realization of the lack of genuine connection between the characters involved, highlighting a disappointing narrative decision. The rhetorical question ("why did that do that") strongly signals frustration and negative emotional reaction.
-Output: {"label": ["anger", "disgust", "sadness"]}
-Input: @BigBossPeltonen \nLikewise #death #cutting #despair
-Reasoning: The hashtags "#death," "#cutting," and "#despair" directly indicate intensely negative emotional states. "Despair" explicitly signals sadness, while the other terms evoke feelings of fear and disgust related to self-harm and mortality. The overall tone expresses a deeply troubled and distressing mental state, justifying these assigned emotions.
-Output: {"label": ["disgust", "fear", "sadness"]}
-Input: #oow16 #sting decent new song
-Reasoning: The tweet expresses positive sentiment towards a new song by Sting, indicated by "decent." This naturally evokes **joy** and **optimism** about the artist's new work. Furthermore, sharing excitement about new music, especially within a concert hashtag (#oow16), suggests **anticipation** for more and a general **love** for the artist/music itself.
-Output: {"label": ["anticipation", "joy", "love", "optimism"]}
-Input: Well i did hear once before that girls are attracted to men that look like their dad!  👌 
-Reasoning: The tweet expresses **surprise** at the stated "fact" about attraction, indicated by the initial "Well i did hear once before." There's a hint of **anticipation** as the author shares this potentially interesting (and perhaps testable) idea. Finally, the somewhat unusual and potentially unsettling nature of the claim carries a subtle undercurrent of **pessimism** about the complexities of attraction, and a slightly cynical tone contributes to this feeling, despite the seemingly neutral sharing of information and the use of a "positive" emoji.
-Output: {"label": ["anticipation", "joy", "pessimism", "surprise"]}
-Input: Luke 1:14\nHe will be a joy and delight to you, and many will rejoice because of his birth
-Reasoning: The text explicitly mentions "joy" and "rejoice," directly indicating happiness and pleasure. Furthermore, the promise of a positive future for those awaiting the birth evokes feelings of "optimism" and hopeful expectation. The sentiment of delight and positive connection also aligns with the emotion of "love," particularly in a familial or spiritual context.
-Output: {"label": ["joy", "love", "optimism"]}
 Input: Fosu-Mensa is having a nightmare 15 minutes. Difference between Premier League reserves and League 1 is still wide
 Reasoning: The tweet expresses **disgust** at the poor performance of Fosu-Mensa, framing it as a "nightmare." **Fear** is present regarding the player's ability to adapt to a higher league, highlighted by the stark difference in quality. Finally, **pessimism** colors the overall assessment, suggesting a negative outlook on the player's potential success and the gap between league levels.
 Output: {"label": ["disgust", "fear", "pessimism"]}
+Input: remember when glee did a take me or leave me cover but it was between two girls who werent even friends why did that do that
+Reasoning: The tweet expresses **anger** and **disgust** at a perceived misstep by the show *Glee* – a baffling and potentially harmful representation in their cover song choice. Simultaneously, there's a sense of **sadness** stemming from the realization of the lack of genuine connection between the characters involved, highlighting a disappointing narrative decision. The rhetorical question ("why did that do that") strongly signals frustration and negative emotional reaction.
+Output: {"label": ["anger", "disgust", "sadness"]}
+Input: Because it was a perfect illusion, but at least now I know what it was. #angry #ladygaga #iscalming#mysoul
+Reasoning: The tweet expresses disillusionment – something presented as “perfect” was ultimately revealed as false, fueling **anger** at the deception. This realization of a flawed reality also evokes a sense of **pessimism** about future expectations, and a feeling of **disgust** at having been fooled. The hashtags further confirm the author’s negative emotional state and attempt at emotional processing.
+Output: {"label": ["anger", "disgust", "pessimism"]}
+Input: @BigBossPeltonen \nLikewise #death #cutting #despair
+Reasoning: The hashtags "#death," "#cutting," and "#despair" directly indicate intensely negative emotional states. "Despair" explicitly signals sadness, while the other terms evoke feelings of fear and disgust related to self-harm and mortality. The overall tone expresses a deeply troubled and distressing mental state, justifying these assigned emotions.
+Output: {"label": ["disgust", "fear", "sadness"]}
+Input: Luke 1:14\nHe will be a joy and delight to you, and many will rejoice because of his birth
+Reasoning: The text explicitly mentions "joy" and "rejoice," directly indicating happiness and pleasure. Furthermore, the promise of a positive future for those awaiting the birth evokes feelings of "optimism" and hopeful expectation. The sentiment of delight and positive connection also aligns with the emotion of "love," particularly in a familial or spiritual context.
+Output: {"label": ["joy", "love", "optimism"]}
+Input: #oow16 #sting decent new song
+Reasoning: The tweet expresses positive sentiment towards a new song by Sting, indicated by "decent." This naturally evokes **joy** and **optimism** about the artist's new work. Furthermore, sharing excitement about new music, especially within a concert hashtag (#oow16), suggests **anticipation** for more and a general **love** for the artist/music itself.
+Output: {"label": ["anticipation", "joy", "love", "optimism"]}
+Input: Kayaking is merriment together with sevylor inflatable kayaks: eYGgJxMl
+Reasoning: The tweet expresses positive feelings about kayaking with Sevylor inflatable kayaks, directly evoking **joy** through the word "merriment."  **Anticipation** is present as the tweet suggests enjoyment of a planned or ongoing activity. Finally, **surprise** and **trust** could stem from positive experiences with the product (Sevylor kayaks) exceeding expectations or reliably delivering enjoyment.
+Output: {"label": ["anticipation", "joy", "surprise", "trust"]}
 Input: @lennyabrahamson May I send you a copy of #HeroTheGreyhound? Either e-book or real paper one! A boy and a greyhound #smiles #tears #laughter
 Reasoning: The tweet expresses positive emotions through hashtags like #smiles and #laughter, indicating **joy**. Offering a book about a boy and his greyhound, particularly framing it with emotional cues like #tears, suggests a heartwarming story evoking **love** and potentially empathetic **sadness** related to the narrative's emotional depth. The overall tone is caring and hopeful, fitting these classifications.
 Output: {"label": ["joy", "love", "sadness"]}
 Input: #survivor is back! #SurvivorMillennialsVsGenX so happy to see you @JeffProbst #happy
 Reasoning: The tweet expresses excitement for the return of a beloved show ("#survivor is back!") and happiness directed towards the host, clearly indicating **joy**. The positive sentiment and welcoming tone ("so happy") also suggest **optimism** for the new season. Finally, expressing appreciation for a figure like Jeff Probst hints at **love** for the show and **trust** in its continued quality.
 Output: {"label": ["joy", "love", "optimism", "trust"]}
-Input: Kayaking is merriment together with sevylor inflatable kayaks: eYGgJxMl
-Reasoning: The tweet expresses positive feelings about kayaking with Sevylor inflatable kayaks, directly evoking **joy** through the word "merriment."  **Anticipation** is present as the tweet suggests enjoyment of a planned or ongoing activity. Finally, **surprise** and **trust** could stem from positive experiences with the product (Sevylor kayaks) exceeding expectations or reliably delivering enjoyment.
-Output: {"label": ["anticipation", "joy", "surprise", "trust"]}
+Input: Well i did hear once before that girls are attracted to men that look like their dad!  👌 
+Reasoning: The tweet expresses **surprise** at the stated "fact" about attraction, indicated by the initial "Well i did hear once before." There's a hint of **anticipation** as the author shares this potentially interesting (and perhaps testable) idea. Finally, the somewhat unusual and potentially unsettling nature of the claim carries a subtle undercurrent of **pessimism** about the complexities of attraction, and a slightly cynical tone contributes to this feeling, despite the seemingly neutral sharing of information and the use of a "positive" emoji.
+Output: {"label": ["anticipation", "joy", "pessimism", "surprise"]}
 Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
 Reasoning:
 Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
 Output: {"label": ["emotion1", "emotion2"]}
-Input: @BigBossPeltonen \nLikewise #death #cutting #despair
-Reasoning: The hashtags "#death," "#cutting," and "#despair" directly indicate intensely negative emotional states. "Despair" explicitly signals sadness, while the other terms evoke feelings of fear and disgust related to self-harm and mortality. The overall tone expresses a deeply troubled and distressing mental state, justifying these assigned emotions.
-Output: {"label": ["disgust", "fear", "sadness"]}
 Input: #survivor is back! #SurvivorMillennialsVsGenX so happy to see you @JeffProbst #happy
 Reasoning: The tweet expresses excitement for the return of a beloved show ("#survivor is back!") and happiness directed towards the host, clearly indicating **joy**. The positive sentiment and welcoming tone ("so happy") also suggest **optimism** for the new season. Finally, expressing appreciation for a figure like Jeff Probst hints at **love** for the show and **trust** in its continued quality.
 Output: {"label": ["joy", "love", "optimism", "trust"]}
-Input: Kayaking is merriment together with sevylor inflatable kayaks: eYGgJxMl
-Reasoning: The tweet expresses positive feelings about kayaking with Sevylor inflatable kayaks, directly evoking **joy** through the word "merriment."  **Anticipation** is present as the tweet suggests enjoyment of a planned or ongoing activity. Finally, **surprise** and **trust** could stem from positive experiences with the product (Sevylor kayaks) exceeding expectations or reliably delivering enjoyment.
-Output: {"label": ["anticipation", "joy", "surprise", "trust"]}
 Input: Well i did hear once before that girls are attracted to men that look like their dad!  👌 
 Reasoning: The tweet expresses **surprise** at the stated "fact" about attraction, indicated by the initial "Well i did hear once before." There's a hint of **anticipation** as the author shares this potentially interesting (and perhaps testable) idea. Finally, the somewhat unusual and potentially unsettling nature of the claim carries a subtle undercurrent of **pessimism** about the complexities of attraction, and a slightly cynical tone contributes to this feeling, despite the seemingly neutral sharing of information and the use of a "positive" emoji.
 Output: {"label": ["anticipation", "joy", "pessimism", "surprise"]}
-Input: Luke 1:14\nHe will be a joy and delight to you, and many will rejoice because of his birth
-Reasoning: The text explicitly mentions "joy" and "rejoice," directly indicating happiness and pleasure. Furthermore, the promise of a positive future for those awaiting the birth evokes feelings of "optimism" and hopeful expectation. The sentiment of delight and positive connection also aligns with the emotion of "love," particularly in a familial or spiritual context.
-Output: {"label": ["joy", "love", "optimism"]}
 Input: @lennyabrahamson May I send you a copy of #HeroTheGreyhound? Either e-book or real paper one! A boy and a greyhound #smiles #tears #laughter
 Reasoning: The tweet expresses positive emotions through hashtags like #smiles and #laughter, indicating **joy**. Offering a book about a boy and his greyhound, particularly framing it with emotional cues like #tears, suggests a heartwarming story evoking **love** and potentially empathetic **sadness** related to the narrative's emotional depth. The overall tone is caring and hopeful, fitting these classifications.
 Output: {"label": ["joy", "love", "sadness"]}
-Input: Because it was a perfect illusion, but at least now I know what it was. #angry #ladygaga #iscalming#mysoul
-Reasoning: The tweet expresses disillusionment – something presented as “perfect” was ultimately revealed as false, fueling **anger** at the deception. This realization of a flawed reality also evokes a sense of **pessimism** about future expectations, and a feeling of **disgust** at having been fooled. The hashtags further confirm the author’s negative emotional state and attempt at emotional processing.
-Output: {"label": ["anger", "disgust", "pessimism"]}
 Input: #oow16 #sting decent new song
 Reasoning: The tweet expresses positive sentiment towards a new song by Sting, indicated by "decent." This naturally evokes **joy** and **optimism** about the artist's new work. Furthermore, sharing excitement about new music, especially within a concert hashtag (#oow16), suggests **anticipation** for more and a general **love** for the artist/music itself.
 Output: {"label": ["anticipation", "joy", "love", "optimism"]}
+Input: Kayaking is merriment together with sevylor inflatable kayaks: eYGgJxMl
+Reasoning: The tweet expresses positive feelings about kayaking with Sevylor inflatable kayaks, directly evoking **joy** through the word "merriment."  **Anticipation** is present as the tweet suggests enjoyment of a planned or ongoing activity. Finally, **surprise** and **trust** could stem from positive experiences with the product (Sevylor kayaks) exceeding expectations or reliably delivering enjoyment.
+Output: {"label": ["anticipation", "joy", "surprise", "trust"]}
 Input: Fosu-Mensa is having a nightmare 15 minutes. Difference between Premier League reserves and League 1 is still wide
 Reasoning: The tweet expresses **disgust** at the poor performance of Fosu-Mensa, framing it as a "nightmare." **Fear** is present regarding the player's ability to adapt to a higher league, highlighted by the stark difference in quality. Finally, **pessimism** colors the overall assessment, suggesting a negative outlook on the player's potential success and the gap between league levels.
 Output: {"label": ["disgust", "fear", "pessimism"]}
 Input: remember when glee did a take me or leave me cover but it was between two girls who werent even friends why did that do that
 Reasoning: The tweet expresses **anger** and **disgust** at a perceived misstep by the show *Glee* – a baffling and potentially harmful representation in their cover song choice. Simultaneously, there's a sense of **sadness** stemming from the realization of the lack of genuine connection between the characters involved, highlighting a disappointing narrative decision. The rhetorical question ("why did that do that") strongly signals frustration and negative emotional reaction.
 Output: {"label": ["anger", "disgust", "sadness"]}
+Input: @BigBossPeltonen \nLikewise #death #cutting #despair
+Reasoning: The hashtags "#death," "#cutting," and "#despair" directly indicate intensely negative emotional states. "Despair" explicitly signals sadness, while the other terms evoke feelings of fear and disgust related to self-harm and mortality. The overall tone expresses a deeply troubled and distressing mental state, justifying these assigned emotions.
+Output: {"label": ["disgust", "fear", "sadness"]}
+Input: Because it was a perfect illusion, but at least now I know what it was. #angry #ladygaga #iscalming#mysoul
+Reasoning: The tweet expresses disillusionment – something presented as “perfect” was ultimately revealed as false, fueling **anger** at the deception. This realization of a flawed reality also evokes a sense of **pessimism** about future expectations, and a feeling of **disgust** at having been fooled. The hashtags further confirm the author’s negative emotional state and attempt at emotional processing.
+Output: {"label": ["anger", "disgust", "pessimism"]}
+Input: Luke 1:14\nHe will be a joy and delight to you, and many will rejoice because of his birth
+Reasoning: The text explicitly mentions "joy" and "rejoice," directly indicating happiness and pleasure. Furthermore, the promise of a positive future for those awaiting the birth evokes feelings of "optimism" and hopeful expectation. The sentiment of delight and positive connection also aligns with the emotion of "love," particularly in a familial or spiritual context.
+Output: {"label": ["joy", "love", "optimism"]}
 Input: @RanaAyyub @rajnathsingh Oh, hidden revenge and anger...I rememberthe time,she rebutted you.
 Reasoning:
-INFO-vDistributionEstimator(2026-03-12 16:38:24,519)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4721, micro_f1=0.5992, macro_f1=0.5154, anger_f1=0.7455, anticipation_f1=0.4238, disgust_f1=0.7194, fear_f1=0.4481, joy_f1=0.7797, love_f1=0.5956, optimism_f1=0.5739, pessimism_f1=0.2564, sadness_f1=0.6653, surprise_f1=0.2243, trust_f1=0.2371
+INFO-vDistributionEstimator(2026-03-12 15:37:06,468)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4990, micro_f1=0.6186, macro_f1=0.5227, anger_f1=0.7313, anticipation_f1=0.3762, disgust_f1=0.7671, fear_f1=0.4753, joy_f1=0.7859, love_f1=0.5836, optimism_f1=0.7103, pessimism_f1=0.2520, sadness_f1=0.6109, surprise_f1=0.2617, trust_f1=0.1951

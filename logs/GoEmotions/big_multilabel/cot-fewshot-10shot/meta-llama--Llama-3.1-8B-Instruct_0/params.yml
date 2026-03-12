@@ -3,12 +3,12 @@ experiment_0:
   __model_name_or_path___: meta-llama/Llama-3.1-8B-Instruct
   _label_mode___: null
   _query_label_mode___: null
-  _sampling_strategy___: multilabel
+  _sampling_strategy___: null
   _shot___: 10
   accelerate: false
   annotation_mode: aggregate
   assistant_prompt: null
-  cot_csv: cot_fewshot/reasoning/GoEmotions_meta-llama--Llama-3.1-8B-Instruct_shots10_seed0.csv
+  cot_csv: cot_fewshot/reasoning/GoEmotions_gemma-3-27b-it_shots10_seed0.csv
   cot_randomize: false
   dataloader_num_workers: 0
   dev_debug_ann: null
@@ -56,7 +56,7 @@ experiment_0:
   reasonableness_label_mode: distribution
   retries: 3
   root_dir: datasets/goemotions
-  sampling_strategy: multilabel
+  sampling_strategy: null
   seed: 0
   sentence_device: cpu
   sentence_model_name_or_path: null
@@ -74,7 +74,7 @@ experiment_0:
   train_debug_ann: null
   train_debug_len: null
   train_ids_filename:
-  - cot_fewshot/reasoning/GoEmotions_meta-llama--Llama-3.1-8B-Instruct_shots10_seed0_ids.txt
+  - cot_fewshot/reasoning/GoEmotions_gemma-3-27b-it_shots10_seed0_ids.txt
   train_keep_same_examples: false
   train_splits:
   - train

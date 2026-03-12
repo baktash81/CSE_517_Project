@@ -7,7 +7,7 @@
 #
 # Example:
 #   ./pipeline-goemotions-cot-fewshot.sh baseline big_multilabel 0 \
-#       meta-llama/Llama-3.1-8B vllm meta-llama/Llama-3.1-8B-Instruct 10 0
+#       meta-llama/Llama-3.1-8B vllm gemma-3-27b-it 10 0
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
@@ -17,7 +17,7 @@ model=meta-llama/Llama-3.1-8B
 model=${4:-$model}
 
 backend=${5:-"vllm"}
-reasoning_model=${6:-"meta-llama/Llama-3.1-8B-Instruct"}
+reasoning_model=${6:-"gemma-3-27b-it"}
 num_shots=${7:-10}
 seed=${8:-0}
 gpu_mem=${9:-0.95}

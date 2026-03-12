@@ -1,34 +1,34 @@
-DEBUG-vDistributionEstimator(2026-03-12 16:00:49,657)   Trainer set up.
-DEBUG-vDistributionEstimator(2026-03-12 16:00:49,664)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+DEBUG-vDistributionEstimator(2026-03-12 14:55:38,124)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 14:55:38,130)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
 Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
 Output: {"label": ["emotion1", "emotion2"]}
-Input: Oh you'd prefer if I used this pic instead? I understand.
-Reasoning: The comment displays a respectful and understanding tone towards another person's preference, suggesting deference. This willingness to accommodate and implicitly acknowledge good judgment leans towards **admiration**—a recognition of another's better taste or opinion. It's a subtle expression, but the politeness indicates a positive valuation of the other party.
-Output: {"label": ["admiration"]}
-Input: Wow random irrelevant internet person has the secret goods on [NAME]. Maybe we’ll finally get to the bottom of this birth certificate thing...
-Reasoning: The comment expresses “Wow,” indicating initial astonishment or disbelief at an unexpected revelation. The speaker is surprised that a random internet user possesses potentially important information about a public figure’s personal history ("secret goods"). The phrasing suggests a sudden, unanticipated development, fitting the definition of surprise.
-Output: {"label": ["surprise"]}
-Input: what the fuck
-Reasoning: The phrase "what the fuck" is a strong expletive typically used to express intense negative emotion. In this context, it most clearly signals anger—likely frustration or outrage—rather than any of the positive emotions. While it *could* stem from surprise, the aggressive phrasing heavily favors an anger classification.
-Output: {"label": ["anger"]}
+Input: It was pretty heart breaking, then the council came out and said they weren't going to collect them. Made a lot of people mad. 
+Reasoning: The phrase "pretty heart breaking" directly indicates sadness and emotional distress. While anger is also present ("made a lot of people mad"), the initial and primary emotional impact described is one of sorrow and disappointment. Therefore, sadness is the most appropriate and prominent emotion label for this comment.
+Output: {"label": ["sadness"]}
 Input: Lol love it.
 Reasoning: The text "Lol love it" expresses clear positive sentiment through the use of "Lol" (laughter) and "love it," indicating enjoyment. These cues strongly align with the definition of joy as a feeling of great pleasure and happiness. Therefore, "joy" is the most appropriate and dominant emotion label for this comment.
 Output: {"label": ["joy"]}
 Input: In this case, I don't see a problem. OP's post can stay.
 Reasoning: This comment expresses a neutral stance and a simple judgment call—allowing a post to remain. It lacks the intensity or specific language typically associated with any of the target emotions (joy, optimism, etc.).
 Output: {"label": ["none"]}
-Input: Our love is like, a violent game between children baby.
-Reasoning: The phrase "Our love is like...
-Output: {"label": ["joy", "admiration"]}
+Input: what the fuck
+Reasoning: The phrase "what the fuck" is a strong expletive typically used to express intense negative emotion. In this context, it most clearly signals anger—likely frustration or outrage—rather than any of the positive emotions. While it *could* stem from surprise, the aggressive phrasing heavily favors an anger classification.
+Output: {"label": ["anger"]}
+Input: Oh you'd prefer if I used this pic instead? I understand.
+Reasoning: The comment displays a respectful and understanding tone towards another person's preference, suggesting deference. This willingness to accommodate and implicitly acknowledge good judgment leans towards **admiration**—a recognition of another's better taste or opinion. It's a subtle expression, but the politeness indicates a positive valuation of the other party.
+Output: {"label": ["admiration"]}
 Input: I need to hear more stories like this. I've only heard horror stories of the pain with the surgery as an adult.
 Reasoning: The comment expresses a desire for more positive accounts, indicating a hopeful outlook—a core component of optimism. While acknowledging potential negative experiences ("horror stories"), the user actively *seeks* uplifting narratives, suggesting a belief in the possibility of better outcomes. This forward-looking sentiment aligns strongly with the emotion of optimism.
 Output: {"label": ["optimism"]}
+Input: Our love is like, a violent game between children baby.
+Reasoning: The phrase "Our love is like...
+Output: {"label": ["joy", "admiration"]}
 Input: Confirmation sounds really scary and sketchy. I can not not think about cults and rituals everytime...
 Reasoning: The comment explicitly uses the word "scary" to describe confirmation, directly indicating fear. Further, the association with "cults and rituals" evokes unsettling and frightening imagery, reinforcing a fearful emotional state. The intense negative framing and anxious thought pattern strongly align with the emotion of fear.
 Output: {"label": ["fear"]}
-Input: It was pretty heart breaking, then the council came out and said they weren't going to collect them. Made a lot of people mad. 
-Reasoning: The phrase "pretty heart breaking" directly indicates sadness and emotional distress. While anger is also present ("made a lot of people mad"), the initial and primary emotional impact described is one of sorrow and disappointment. Therefore, sadness is the most appropriate and prominent emotion label for this comment.
-Output: {"label": ["sadness"]}
+Input: Wow random irrelevant internet person has the secret goods on [NAME]. Maybe we’ll finally get to the bottom of this birth certificate thing...
+Reasoning: The comment expresses “Wow,” indicating initial astonishment or disbelief at an unexpected revelation. The speaker is surprised that a random internet user possesses potentially important information about a public figure’s personal history ("secret goods"). The phrasing suggests a sudden, unanticipated development, fitting the definition of surprise.
+Output: {"label": ["surprise"]}
 Input: I liked it better when [NAME] was half naked
 Reasoning: The comment expresses a positive preference ("liked it better"), indicating enjoyment or pleasure. While potentially suggestive, the core sentiment focuses on a positive reaction to a past state, aligning with the definition of joy as a feeling of great pleasure and happiness. There’s no indication of negative emotions like anger, sadness, or fear present in the statement.
 Output: {"label": ["joy"]}
@@ -36,36 +36,36 @@ Input: I went to a destination wedding being the only single person. Promised to
 Reasoning:
 Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. Keep your reasoning brief (2-3 sentences). After your reasoning, output exactly one line starting with "Output:" in this format:
 Output: {"label": ["emotion1", "emotion2"]}
-Input: In this case, I don't see a problem. OP's post can stay.
-Reasoning: This comment expresses a neutral stance and a simple judgment call—allowing a post to remain. It lacks the intensity or specific language typically associated with any of the target emotions (joy, optimism, etc.).
-Output: {"label": ["none"]}
-Input: Lol love it.
-Reasoning: The text "Lol love it" expresses clear positive sentiment through the use of "Lol" (laughter) and "love it," indicating enjoyment. These cues strongly align with the definition of joy as a feeling of great pleasure and happiness. Therefore, "joy" is the most appropriate and dominant emotion label for this comment.
-Output: {"label": ["joy"]}
 Input: Oh you'd prefer if I used this pic instead? I understand.
 Reasoning: The comment displays a respectful and understanding tone towards another person's preference, suggesting deference. This willingness to accommodate and implicitly acknowledge good judgment leans towards **admiration**—a recognition of another's better taste or opinion. It's a subtle expression, but the politeness indicates a positive valuation of the other party.
 Output: {"label": ["admiration"]}
+Input: In this case, I don't see a problem. OP's post can stay.
+Reasoning: This comment expresses a neutral stance and a simple judgment call—allowing a post to remain. It lacks the intensity or specific language typically associated with any of the target emotions (joy, optimism, etc.).
+Output: {"label": ["none"]}
 Input: I need to hear more stories like this. I've only heard horror stories of the pain with the surgery as an adult.
 Reasoning: The comment expresses a desire for more positive accounts, indicating a hopeful outlook—a core component of optimism. While acknowledging potential negative experiences ("horror stories"), the user actively *seeks* uplifting narratives, suggesting a belief in the possibility of better outcomes. This forward-looking sentiment aligns strongly with the emotion of optimism.
 Output: {"label": ["optimism"]}
-Input: Wow random irrelevant internet person has the secret goods on [NAME]. Maybe we’ll finally get to the bottom of this birth certificate thing...
-Reasoning: The comment expresses “Wow,” indicating initial astonishment or disbelief at an unexpected revelation. The speaker is surprised that a random internet user possesses potentially important information about a public figure’s personal history ("secret goods"). The phrasing suggests a sudden, unanticipated development, fitting the definition of surprise.
-Output: {"label": ["surprise"]}
 Input: Confirmation sounds really scary and sketchy. I can not not think about cults and rituals everytime...
 Reasoning: The comment explicitly uses the word "scary" to describe confirmation, directly indicating fear. Further, the association with "cults and rituals" evokes unsettling and frightening imagery, reinforcing a fearful emotional state. The intense negative framing and anxious thought pattern strongly align with the emotion of fear.
 Output: {"label": ["fear"]}
-Input: Our love is like, a violent game between children baby.
-Reasoning: The phrase "Our love is like...
-Output: {"label": ["joy", "admiration"]}
+Input: Lol love it.
+Reasoning: The text "Lol love it" expresses clear positive sentiment through the use of "Lol" (laughter) and "love it," indicating enjoyment. These cues strongly align with the definition of joy as a feeling of great pleasure and happiness. Therefore, "joy" is the most appropriate and dominant emotion label for this comment.
+Output: {"label": ["joy"]}
+Input: Wow random irrelevant internet person has the secret goods on [NAME]. Maybe we’ll finally get to the bottom of this birth certificate thing...
+Reasoning: The comment expresses “Wow,” indicating initial astonishment or disbelief at an unexpected revelation. The speaker is surprised that a random internet user possesses potentially important information about a public figure’s personal history ("secret goods"). The phrasing suggests a sudden, unanticipated development, fitting the definition of surprise.
+Output: {"label": ["surprise"]}
 Input: what the fuck
 Reasoning: The phrase "what the fuck" is a strong expletive typically used to express intense negative emotion. In this context, it most clearly signals anger—likely frustration or outrage—rather than any of the positive emotions. While it *could* stem from surprise, the aggressive phrasing heavily favors an anger classification.
 Output: {"label": ["anger"]}
-Input: It was pretty heart breaking, then the council came out and said they weren't going to collect them. Made a lot of people mad. 
-Reasoning: The phrase "pretty heart breaking" directly indicates sadness and emotional distress. While anger is also present ("made a lot of people mad"), the initial and primary emotional impact described is one of sorrow and disappointment. Therefore, sadness is the most appropriate and prominent emotion label for this comment.
-Output: {"label": ["sadness"]}
+Input: Our love is like, a violent game between children baby.
+Reasoning: The phrase "Our love is like...
+Output: {"label": ["joy", "admiration"]}
 Input: I liked it better when [NAME] was half naked
 Reasoning: The comment expresses a positive preference ("liked it better"), indicating enjoyment or pleasure. While potentially suggestive, the core sentiment focuses on a positive reaction to a past state, aligning with the definition of joy as a feeling of great pleasure and happiness. There’s no indication of negative emotions like anger, sadness, or fear present in the statement.
 Output: {"label": ["joy"]}
+Input: It was pretty heart breaking, then the council came out and said they weren't going to collect them. Made a lot of people mad. 
+Reasoning: The phrase "pretty heart breaking" directly indicates sadness and emotional distress. While anger is also present ("made a lot of people mad"), the initial and primary emotional impact described is one of sorrow and disappointment. Therefore, sadness is the most appropriate and prominent emotion label for this comment.
+Output: {"label": ["sadness"]}
 Input: I went to a destination wedding being the only single person. Promised to never put myself in that situation again.
 Reasoning:
-INFO-vDistributionEstimator(2026-03-12 16:18:33,554)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3660, micro_f1=0.4972, macro_f1=0.4623, joy_f1=0.6825, optimism_f1=0.4444, admiration_f1=0.4179, surprise_f1=0.2393, fear_f1=0.4082, sadness_f1=0.5464, anger_f1=0.4974
+INFO-vDistributionEstimator(2026-03-12 15:13:45,241)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3359, micro_f1=0.4643, macro_f1=0.4400, joy_f1=0.6687, optimism_f1=0.3938, admiration_f1=0.2904, surprise_f1=0.3939, fear_f1=0.3182, sadness_f1=0.5341, anger_f1=0.4809

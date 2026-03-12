@@ -8,7 +8,7 @@ experiment_0:
   accelerate: true
   annotation_mode: aggregate
   assistant_prompt: null
-  cot_csv: cot_fewshot/reasoning/MFRC_meta-llama--Llama-3.1-8B-Instruct_shots10_seed0.csv
+  cot_csv: cot_fewshot/reasoning/MFRC_gemma-3-27b-it_shots10_seed0.csv
   cot_randomize: false
   dataloader_num_workers: 0
   dev_debug_ann: null
@@ -75,7 +75,7 @@ experiment_0:
   train_debug_ann: null
   train_debug_len: null
   train_ids_filename:
-  - cot_fewshot/reasoning/MFRC_meta-llama--Llama-3.1-8B-Instruct_shots10_seed0_ids.txt
+  - cot_fewshot/reasoning/MFRC_gemma-3-27b-it_shots10_seed0_ids.txt
   train_keep_same_examples: false
   train_splits:
   - train

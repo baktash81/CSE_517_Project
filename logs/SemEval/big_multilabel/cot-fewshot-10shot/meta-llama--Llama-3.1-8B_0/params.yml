@@ -1,6 +1,6 @@
 experiment_0:
   ___distribution___: baseline
-  __model_name_or_path___: meta-llama/Llama-3.1-8B-Instruct
+  __model_name_or_path___: meta-llama/Llama-3.1-8B
   _label_mode___: null
   _query_label_mode___: null
   _sampling_strategy___: null
@@ -48,7 +48,7 @@ experiment_0:
   max_length: null
   max_new_tokens: 500
   model_load_filename: null
-  model_name_or_path: meta-llama/Llama-3.1-8B-Instruct
+  model_name_or_path: meta-llama/Llama-3.1-8B
   model_save_filename: null
   quantization: fp8
   query_label_mode: null

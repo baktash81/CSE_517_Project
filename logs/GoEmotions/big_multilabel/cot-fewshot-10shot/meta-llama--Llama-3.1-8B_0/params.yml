@@ -1,6 +1,6 @@
 experiment_0:
   ___distribution___: baseline
-  __model_name_or_path___: meta-llama/Llama-3.1-8B-Instruct
+  __model_name_or_path___: meta-llama/Llama-3.1-8B
   _label_mode___: null
   _query_label_mode___: null
   _sampling_strategy___: null
@@ -8,7 +8,7 @@ experiment_0:
   accelerate: false
   annotation_mode: aggregate
   assistant_prompt: null
-  cot_csv: cot_fewshot/reasoning/GoEmotions_meta-llama--Llama-3.1-8B-Instruct_shots10_seed0.csv
+  cot_csv: cot_fewshot/reasoning/GoEmotions_gemma-3-27b-it_shots10_seed0.csv
   cot_randomize: false
   dataloader_num_workers: 0
   dev_debug_ann: null
@@ -48,7 +48,7 @@ experiment_0:
   max_length: null
   max_new_tokens: 500
   model_load_filename: null
-  model_name_or_path: meta-llama/Llama-3.1-8B-Instruct
+  model_name_or_path: meta-llama/Llama-3.1-8B
   model_save_filename: null
   quantization: fp8
   query_label_mode: null
@@ -74,7 +74,7 @@ experiment_0:
   train_debug_ann: null
   train_debug_len: null
   train_ids_filename:
-  - cot_fewshot/reasoning/GoEmotions_meta-llama--Llama-3.1-8B-Instruct_shots10_seed0_ids.txt
+  - cot_fewshot/reasoning/GoEmotions_gemma-3-27b-it_shots10_seed0_ids.txt
   train_keep_same_examples: false
   train_splits:
   - train

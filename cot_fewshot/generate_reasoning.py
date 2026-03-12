@@ -116,7 +116,7 @@ def build_reasoning_prompt(text, labels, label_set, config):
     ]
 
 
-def generate_reasoning(
+def _generate_reasoning_vllm(
     examples,
     dataset,
     model_name,
@@ -175,6 +175,114 @@ def generate_reasoning(
     return results
 
 
+def _generate_reasoning_google(
+    examples,
+    dataset,
+    model_name,
+    dataset_name,
+    max_tokens=200,
+):
+    # Uses the Google Gemini / Gemma API via google-genai:
+    #   pip install google-genai
+    #
+    # Expects the API key in the GEMINI_API_KEY environment variable.
+    from google import genai
+
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        env_path = os.path.join(project_root, ".env")
+        if os.path.exists(env_path):
+            with open(env_path) as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("#") or "=" not in line:
+                        continue
+                    key, value = line.split("=", 1)
+                    key = key.strip()
+                    value = value.strip()
+                    if key and key not in os.environ:
+                        os.environ[key] = value
+            api_key = os.environ.get("GEMINI_API_KEY")
+
+    if not api_key:
+        raise RuntimeError(
+            "GEMINI_API_KEY environment variable is not set. "
+            "Set it to your Google Generative AI API key to use Gemma."
+        )
+
+    client = genai.Client(api_key=api_key)
+    config = DATASET_CONFIGS[dataset_name]
+
+    results = []
+    print(f"Generating reasoning with remote model {model_name} via Google API...")
+
+    for ex in examples:
+        labels = dataset.index_label_set(ex["label"])
+        if isinstance(labels, str):
+            labels = [labels]
+
+        messages = build_reasoning_prompt(
+            ex["text"], labels, dataset.label_set, config
+        )
+
+        system_parts = []
+        user_parts = []
+        for msg in messages:
+            if msg["role"] == "system":
+                system_parts.append(msg["content"])
+            elif msg["role"] == "user":
+                user_parts.append(msg["content"])
+
+        system_text = "\n\n".join(system_parts).strip()
+        user_text = "\n\n".join(user_parts).strip()
+        full_prompt = system_text + "\n\n" + user_text if system_text else user_text
+
+        response = client.models.generate_content(
+            model=model_name,
+            contents=full_prompt,
+        )
+
+        reasoning = (response.text or "").strip()
+        sentences = reasoning.split(".")
+        if len(sentences) > 4:
+            reasoning = ".".join(sentences[:3]) + "."
+
+        results.append(
+            {"id": ex["id"], "text": ex["text"], "cot": reasoning}
+        )
+
+    return results
+
+
+def generate_reasoning(
+    examples,
+    dataset,
+    model_name,
+    dataset_name,
+    backend="vllm",
+    gpu_memory_utilization=0.90,
+    max_tokens=200,
+):
+    if backend == "google":
+        return _generate_reasoning_google(
+            examples,
+            dataset,
+            model_name,
+            dataset_name,
+            max_tokens=max_tokens,
+        )
+
+    return _generate_reasoning_vllm(
+        examples,
+        dataset,
+        model_name,
+        dataset_name,
+        gpu_memory_utilization=gpu_memory_utilization,
+        max_tokens=max_tokens,
+    )
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Generate CoT reasoning for few-shot examples"
@@ -185,7 +293,7 @@ def main():
     parser.add_argument("--num-shots", type=int, default=20)
     parser.add_argument(
         "--model",
-        default="meta-llama/Llama-3.1-8B-Instruct",
+        default="gemma-3-27b-it",
         help="Model to use for reasoning generation",
     )
     parser.add_argument(
@@ -202,6 +310,15 @@ def main():
 
     parser.add_argument("--emotion-clustering-json", default=None)
     parser.add_argument("--language", default="english")
+    parser.add_argument(
+        "--backend",
+        choices=["vllm", "google"],
+        default=None,
+        help=(
+            "Backend to use for reasoning generation. "
+            "If omitted, 'google' is used for Gemma models and 'vllm' otherwise."
+        ),
+    )
 
     args = parser.parse_args()
 
@@ -239,12 +356,21 @@ def main():
     if len(examples) > 5:
         print(f"  ... and {len(examples) - 5} more")
 
-    print(f"\nGenerating reasoning with {args.model}...")
+    if args.backend is None:
+        if args.model.startswith("gemma"):
+            backend = "google"
+        else:
+            backend = "vllm"
+    else:
+        backend = args.backend
+
+    print(f"\nGenerating reasoning with {args.model} (backend={backend})...")
     results = generate_reasoning(
         examples,
         dataset,
         args.model,
         args.dataset,
+        backend=backend,
         gpu_memory_utilization=args.gpu_memory_utilization,
         max_tokens=args.max_tokens,
     )
