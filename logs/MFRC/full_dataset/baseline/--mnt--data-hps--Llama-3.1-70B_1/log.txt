@@ -1,0 +1,84 @@
+DEBUG-vDistributionEstimator(2026-03-13 17:36:51,616)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-13 17:36:51,663)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Nah don’t let the system drag you down mentally.  It’s all too ridiculous. There’s nothing wrong with using social support until you can get things under control. There’s no comparison between families having to fib a little to survive in this system compared to the gluttony and greed that the poor shaming elitist criminals are doing to this world. I hope things get better for you and your family.
+Moral foundation(s): care
+Input: Ok but this is the type of shit and shatters lives. If you don’t expose them, you’ll end up never holding them accountable for their bullshit. And it’ll take a toll on you in the end. 
+
+And you don’t deserve that.
+Moral foundation(s): care, proportionality
+Input: You realize by insisting we call actual-fascists like Le Pen "not fascists," you are only making it easier for future fascists to rise to power, right?
+Moral foundation(s): authority
+Input: If you think everyone's the same then the fault lies within you. You're prejudiced and sexist.
+Moral foundation(s): equality
+Input: YTA.
+
+
+This Asian woman fetish thing is gross.  And no woman of any ethnicity wants to just be some kind of fetish fulfillment.
+
+
+And yes, spending $250k so you can be around Asian women is stupid and weird.  You could buy a house with that amount of money.
+Moral foundation(s): care, equality, purity
+Input: With some people, sure.
+
+Don't worry about them.  A lot of people won't care.
+Moral foundation(s): care
+Input: NTA. Protecting you sister isn't holding a grudge. You family is really awful.
+Moral foundation(s): care
+Input: &gt; A vote for Le Pen is a vote for more terror and more dead French people!
+
+Do you know why? Anti-Islamic rhetoric ostracizes Muslims ALREADY in France, and breeds terror. You'll have less people from overseas causing problems, but domestic terrorism will increase.
+
+That's not saying we should stop the migrants however. I'm just saying that people should attempt to accept Muslims, which will lead to cultural assimilation. Cutting off further immigration from the middle east is actually imperative to making Frenchmen out of the immigrants.
+Moral foundation(s): care, equality
+Input: Goddammit, Le Pen. You fucked yourself. People don't vote for the populist because they're bigoted. they vote for the populist because they know the corporatist will never be on their side.  Now you just prove that neither will you, because you're a fundamentalist, not a populist. You just parrot the right words.
+
+Go France! Vote for the corporatist who will fuck you for money, or the fundamentalist, who will also fuck you for money, but at least pretend not to, all while initiating backwards social policies that destroy any semblance of integrated society. (sound familiar?)
+Moral foundation(s): loyalty, proportionality
+Input: YTA.  
+Always having your siblings back against a bully - appropriate.  Not being allowed to share an opinion differing from your sibling - inappropriate.  Teach your children to be kind to one another while disagreeing, don’t teach them to silence their opinions.
+Moral foundation(s): care, loyalty
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Calling the thin blue line flag a "white lives matter" flag is moronic.
+
+Demanding someone take down a flag that has been popular for many years is not "drawing attention", it is silencing people who support police.
+
+If BLM is about saving lives, why do they get so uncomfortable when you ask them where the many millions of dollars in donations go?  Their own "protests" led to the deaths of black men like David Dorn.  BLM didn't give a damn about his death, even though they played a part in it.
+Moral foundation(s): care, equality
+Input: I had to delete my Facebook. 
+
+So many people I’ve known for years Saying “if you voted for Trump, you are awful, the worst, etc etc”
+
+Damn man, whatever happened to loving people even if you have differences?
+Moral foundation(s): care
+Input: He is not responding as a matter of Congressional duty. The lawsuit threat is against him personally for public (factual) remarks.
+Moral foundation(s): authority
+Input: Who led you to believe that protecting your kids is overreacting to the point you don't trust your instincts? :(
+Moral foundation(s): care
+Input: Don't want people seeing the ridiculous indoctrination they force on our children and young adults.
+Moral foundation(s): authority, care
+Input: You should root for whats right. and sometimes (to be honest, majority of the times), it means rooting against your country.
+Moral foundation(s): loyalty
+Input: hope those african american patriots in the back dont get doxxed and labeled race traitors by the insane left.
+Moral foundation(s): care, loyalty
+Input: &gt;We know the Macron team set out five conditions:
+Renewal for France (half will come from outside politics)
+Gender equality (half will be women)
+Clean criminal record - as part of commitment to clean up politics
+Cross-section of political views - so there may be defectors from other parties
+Sign up to the Macron reform programme as well as joining the party itself
+While candidates can be members of other parties, they cannot run for them (apart from centrist party MoDem)
+
+Also, I highly doubt that its a coincidence that its equally split between men and women. 
+Moral foundation(s): care, equality, proportionality
+Input: Dude... men *and* women can have sex with whoever they want without your permission. Focus on your own life, kid
+Moral foundation(s): equality
+Input: You’re not crazy. You handled this exactly right. The default answer for many people on the sub is “dump them!”
+
+And I’m happy that you worked it out and got your wife to understand your point of view. The right solution for any marital problem short of infidelity is communication.
+Moral foundation(s): care, loyalty
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-13 18:47:53,752)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2089, micro_f1=0.2151, macro_f1=0.1947, authority_f1=0.1402, care_f1=0.3281, equality_f1=0.3225, loyalty_f1=0.1217, proportionality_f1=0.1235, purity_f1=0.1321
