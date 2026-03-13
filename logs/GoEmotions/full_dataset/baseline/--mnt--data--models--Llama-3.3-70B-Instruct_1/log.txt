@@ -1,0 +1,93 @@
+DEBUG-vDistributionEstimator(2026-03-13 01:20:52,301)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-13 01:20:52,392)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: No, sadly it was from a different person, thankfully not the original poster though.
+{"label": ["sadness"]}
+Input: Edited because my kneejerk response was kind of unnecessarily harsh. :/
+{"label": ["sadness", "anger"]}
+Input: Haaaahaaaahaaaa! Been there. I had a little kid do the [NAME] handshake on me. I just looked confused.
+{"label": ["joy", "surprise"]}
+Input: Thank you so much for saying all this, it needs to be heard more often. 
+{"label": ["admiration"]}
+Input: Imagine watching yourself back and still being unable to see why you were eliminated
+{"label": ["optimism"]}
+Input: Whoa, should've said that in the post. Threats is not good. I'd find a way to live away from him asap. 
+{"label": ["admiration", "fear"]}
+Input: I just love anybody thats fabulous
+{"label": ["joy", "admiration"]}
+Input: I was going to put in the post that I wanted to smack her, but here in the comments I'll say, I wanted to smack her. 
+{"label": ["optimism", "anger"]}
+Input: Maybe one is bigger than the other, so getting more t-time?
+{"label": ["surprise"]}
+Input: Your 'brother' had texted alot of girls and ended up on in Internet many times then, what a celebrity! Did everyone clap as well? 
+{"label": ["joy"]}
+Input: My favourite food is anything I didn't have to cook myself.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input:... so we're pretending that this wouldn't be totally awesome had it been 1 administration back?
+{"label": ["admiration", "surprise"]}
+Input: It is a highly underappreciated movie...FOOLS
+{"label": ["anger"]}
+Input: Please never let this die.
+{"label": ["optimism"]}
+Input: Maybe not the only one but he is our best shot.
+{"label": ["admiration"]}
+Input: Such a great actor because he can play so many different roles! Loved his character in Banderstach
+{"label": ["joy", "admiration"]}
+Input: Agree. Not sure why you are being downvoted.
+{"label": ["admiration", "surprise"]}
+Input: I can't believe this team beat Winnipeg last week, handily too. That effort hasn't been there since. 
+{"label": ["surprise"]}
+Input: Or they drop out cause they have no interest in learning the language (a lot of kids do this unfortunately)
+{"label": ["anger"]}
+Input: Hmm, is there a "buy drink" feature on reddit? Lmao
+{"label": ["joy", "surprise"]}
+Input: My favorite new fan! Glad to see you here! Rest up and get ready for the Friday game.
+{"label": ["joy", "admiration"]}
+Input: My favourite food is anything I didn't have to cook myself.
+DEBUG-vDistributionEstimator(2026-03-13 05:39:49,982)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-13 05:39:50,072)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: I'm sad, but I just want a new Metroid game, and if this is what it takes to make it great then I understand
+{"label": ["sadness"]}
+Input: This is going to be the last episode with my Latina goddess [NAME] 🌹😭
+{"label": ["optimism", "sadness"]}
+Input: Kinda let down tbh
+{"label": ["sadness", "anger"]}
+Input: Just triggered me thanks
+{"label": ["admiration"]}
+Input: Thanks, I love salad.
+{"label": ["joy", "admiration"]}
+Input: I completely agree with you just the whole mood against abortion gets my blood boiling.
+{"label": ["admiration", "anger"]}
+Input: Do you mean addons exclusive to him? The instasaw bubba is pretty fucking good....
+{"label": ["admiration"]}
+Input: Thanks man, I feel better now.
+{"label": ["admiration"]}
+Input: Yup [NAME] is who me miss. Anyone notice though that his little southern twang ramped up to about 100x more when he went national?? Lol
+{"label": ["joy"]}
+Input: That host's sense of superiority and childish sarcasm is so terrible that it physically hurts.
+{"label": ["fear", "anger"]}
+Input: My favourite food is anything I didn't have to cook myself.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Alllllllways. Losing that toonie makes you feel like a rookie every time.
+{"label": ["sadness", "anger"]}
+Input: im so sorry you had to go trougth that. it's a shame people are so stupid to deny someone the attention they need becouse their gender.
+{"label": ["sadness"]}
+Input: Excuse me, but define what a "good world" is
+{"label": ["surprise", "anger"]}
+Input: Maybe Shadow Creek Ranch, but I heard it's next to a dump and smells bad.
+{"label": ["optimism", "anger"]}
+Input: Can you read? It says right there the tweeter’s husband got out to help the woman and ask if she was okay
+{"label": ["optimism"]}
+Input: Great analogy:)
+{"label": ["admiration"]}
+Input: Yeah, great!
+{"label": ["admiration"]}
+Input: Oh my god... i JUST realized this!!! AHHHH this makes me SICK.
+{"label": ["admiration", "anger"]}
+Input: She later drunkenly slipped on her puddle, fell onto the tracks, and was run over. RIP
+{"label": ["sadness"]}
+Input: I hate this, and I hate you. But actually I love this, and only like you.
+{"label": ["joy", "anger"]}
+Input: My favourite food is anything I didn't have to cook myself.
+INFO-vDistributionEstimator(2026-03-13 10:54:42,846)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3498, micro_f1=0.4098, macro_f1=0.3696, joy_f1=0.4865, optimism_f1=0.3069, admiration_f1=0.4720, surprise_f1=0.3167, fear_f1=0.1781, sadness_f1=0.3865, anger_f1=0.4406

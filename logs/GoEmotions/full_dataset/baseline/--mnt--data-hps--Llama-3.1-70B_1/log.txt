@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-13 02:00:41,437)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-13 02:00:41,528)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Sad but true.
+{"label": ["admiration", "sadness"]}
+Input: Hmm.. I means what's the point.. there's not gonna be much difference since both of em aren't doing good.
+{"label": ["anger"]}
+Input: No. We have the same desire. No one should be told how to live.
+{"label": ["optimism"]}
+Input: big heart to do that, guy probably plays for the love of the game, and you have to respect that
+{"label": ["admiration"]}
+Input: Now I'm craving Wendy's
+{"label": ["optimism"]}
+Input: A good everyday dua would be including me in your prayers
+{"label": ["optimism", "admiration"]}
+Input: I moved to the construction industry because it's less mental stress and I can myself better
+{"label": ["joy", "admiration"]}
+Input: Lots of good memes here lately. I like that.
+{"label": ["joy", "admiration"]}
+Input: Uhhhh I did lol
+{"label": ["joy"]}
+Input: Do you read any of the content on this sub? Lol. Because it contains very specific detailed critiques and concerns that you're conveniently ignoring...
+{"label": ["joy", "surprise"]}
+Input: My favourite food is anything I didn't have to cook myself.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Posted it and so far I'm getting shat on in the comments lol
+{"label": ["joy", "sadness"]}
+Input: Agreed. He always sounded like he was forcing to much air out of his lungs when he talked to try to have a more intimidating voice.
+{"label": ["admiration"]}
+Input: This has been a bizarre day of coaching decisions
+{"label": ["sadness", "anger"]}
+Input: (While I love this moment, she wasn’t a judge, she was an inspirational guest.)
+{"label": ["joy", "admiration"]}
+Input: >All men cheat, you might as well get cheated on by a rich man! Kudos on the level of misanthropy. 
+{"label": ["anger"]}
+Input: I'm from Lebanon and have been supporting Celtic since 2006! Glad to see there are other people from around the world here!
+{"label": ["joy"]}
+Input: I personally think think life is beautiful but living is hell, kinda like a hurricane can be the most beautiful thing.
+{"label": ["anger"]}
+Input:...oh absolutely!...it's really bad if they're having a mania episode...
+{"label": ["joy", "sadness"]}
+Input: I encourage everyone close to me to inform themselves about my diagnosis if they really care about me.
+{"label": ["optimism"]}
+Input: I mean, I'm glad that we support human spaceflight and that there were ghosts in the courtroom?
+{"label": ["joy", "admiration"]}
+Input: My favourite food is anything I didn't have to cook myself.
+INFO-vDistributionEstimator(2026-03-13 07:49:35,544)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3262, micro_f1=0.3645, macro_f1=0.3379, joy_f1=0.4157, optimism_f1=0.2810, admiration_f1=0.3689, surprise_f1=0.3220, fear_f1=0.2298, sadness_f1=0.3618, anger_f1=0.3863
