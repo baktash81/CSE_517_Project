@@ -1,0 +1,68 @@
+DEBUG-vDistributionEstimator(2026-03-12 23:54:27,491)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 23:54:27,544)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: But they were born in France...to recent immigrants who practice Islam. Do you think the Le Pen voters would have the same opinion about people such as Japanese immigrants? I highly doubt it. To pretend this is just about immigration alone is ridiculous. It's about immigration of groups of people who have values and a culture that leads to problems integrating and social unrest. 
+Moral foundation(s): care, equality
+Input: NTA. Are there any adults there you can depend on to support you?
+Moral foundation(s): care, loyalty
+Input: Can definitely relate to the confidence thing...after experiencing nothing but rejection in spite of all my schooling all I've managed to get are shitty abusive jobs that further damage my self worth. The job I'm in right now "rewards"  my hard work with more work and one of the lowest wages in the office. Fuck work.
+Moral foundation(s): proportionality
+Input: As a gay guy trying to reach out in good faith, what will I slowly 'wake up' about?
+
+I've not had any choice in my sexuality and I'm entirely comfortable with myself at this point in time. I love a beautiful guy &amp; we're happy together. What's so wrong and abhorrent about me that christians feel the need to cast judgment, tell me I'm going to hell or that I should seek some higher calling.
+
+I'm not religious in the slightest and would never tell someone they need to change like that.
+Moral foundation(s): care, purity
+Input: What? Berlusconi was a bufoon and absolutely unfit to run the country, but he never had the authoritative "vibe" of Orban. 
+
+He was also way less a populist compared to nowaday populist like Grillo, Le Pen and, Farage and that Netherland huy with the strange hairs.
+
+Moral foundation(s): authority
+Input: Le Pen wants to promote hatred of Islam and thus empower ISIS and other extremist groups. This will only lead to more terrorism.
+Moral foundation(s): equality
+Input: Calling someone gay is not disrespectful. Using homosexuality as an insult in and of itself has notes of homophobia.
+Moral foundation(s): equality
+Input: &gt; That's what's so great when you're an actual fresh face in politics (unlike Marine Le Pen), there's hardly any dirt they can dig up.
+
+Considering that Le Pen hasn't been in power, she is already remarkably corrupt, but that doesn't seem to deter her followers. They only object to corruption in other politicians, not their own.
+Moral foundation(s): loyalty
+Input: Yes, we can. It's great to be against police brutality, racism, and slavery at once. I think picking and choosing is where Nike looks like a hypocrite.
+Moral foundation(s): care, equality, proportionality
+Input: I'd wager pedophiles don't have an exceptionally high sex drive unless they are also sex addicts. So it comes down to choosing wether to have sex or not with someone, and in so many cases, forcefully.
+
+Thoses who do it are just pure scum.
+Moral foundation(s): care, purity
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: I say donate 100 to charity to cleanse yourself. I know you feel justified but you kind of stole from a cause greater then yourself. Just my opinion. Not calling you a bad person or anything like that.
+Moral foundation(s): proportionality, purity
+Input: That's not a merit, that's an identity. Kind of sexist for you to think they correlate... It's that kind of arrogance and ignorance why Macron won.
+
+And by "her own merits" I mean she didnt have a foreign government gunning for her, leaking her info and spreading false info while her domestic opponents dragged her through the mud with dubious hearings and investigations, all while chanting "Lock Her Up!" Lord knows what her numbers would've been then.
+Moral foundation(s): equality, proportionality
+Input: little fucker deserved it, but yeah probably not the best reaction. i might’ve done the same as you tho
+Moral foundation(s): proportionality
+Input: whatever mom's feelings on the matter, I think it was pretty scummy of her to demand that op had nothing to do with her half sister. op doesn't know this kid because her mom wanted to be bitter and punish the innocent child for her father's mistakes, and that's the real crime here. demanding that children of affairs have nothing yo do with your kids, is just needlessly punishing a child whose only crime was being born
+Moral foundation(s): care
+Input: "Basically he feels that I disrespect him by going against his “authority” and that a wife should be submissive" 
+
+This officer, this right here. This is why I murdered him. 
+
+Just kidding on that part, but that religious thumper mentality does not fly with me. You're not his slave, you're his wife and partner. 
+
+I would personally leave him once you're done school and able to support yourself, your whole life will be a series of him issuing orders and expecting you to obey. Are you really ok with that?
+Moral foundation(s): authority, equality
+Input: This. He will never trust a word you say again. This deceit on deceit ploy is a great way to never see your son again.
+Moral foundation(s): care, loyalty
+Input: Being taxed is bad, but being grossly underpaid and unrepresented is good. But union dues (that are a fraction of what unions would increase your salary by) are also bad.
+Moral foundation(s): proportionality
+Input: God works in mysterious ways, Kayne keeps ya guessing, what I mean is he went from “George Bush hates black people” to a civil rights activist, a man of faith, anti government activist, pro life activist &amp; truly a decent human being trying to do the right thing. Good for him
+Moral foundation(s): purity
+Input: And I love how far-righters seem to only care about the LGBT community when it comes to Muslims. That and nowhere in the article does it say that the majority of gay French men are voting for Le Pen. 
+Moral foundation(s): care, equality
+Input: Unless it is an enthusiastic and clear yes it is sex without consent. I don’t necessarily agree with the people saying report him to police, etc. But claim of “middle ground” is ridiculous. If you don’t have consent it is legally and morally rape.
+Moral foundation(s): care
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-13 00:28:37,854)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2604, micro_f1=0.2002, macro_f1=0.1835, authority_f1=0.1169, care_f1=0.3908, equality_f1=0.2897, loyalty_f1=0.1260, proportionality_f1=0.0923, purity_f1=0.0852

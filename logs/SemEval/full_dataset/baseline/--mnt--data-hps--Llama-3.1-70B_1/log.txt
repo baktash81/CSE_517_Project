@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-13 00:58:44,487)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-13 00:58:44,501)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: Imagine how many ksones are crying right now for not getting tickets 😭 Meanwhile, isones dont even get a chance to go on war for tickets 😭
+sadness
+Input: @SteveBakerHW When it comes to CREDIBLE scare stories George Osbourne is crap, still at it I see.
+anger, disgust, sadness
+Input: @ThomasEWoods I would like to hear a podcast of you going off refuting her entire article. Extra indignation please.
+anger, disgust
+Input: #PhoenixRally #Deplorables insult and denigrate #JohnMcCain as he struggles with treatment for #glioblastoma #impeach45 incites 
+anger, anticipation, disgust
+Input: @jaassiieeeee I will not fall to the dark side😂😂
+joy
+Input: @StateDept #That certainly does not bode well for #Afghan woman and girls #bad option
+disgust
+Input: @arunjaitley pls do the action immediately  against  terror.  Otherwise innocent  people  will die.
+fear
+Input: Saw my first Larsen trap today with stressed magpie. I NEVER EVER want to see that again  #angry #distressed #wildlife
+anger, disgust
+Input: A #teacher who is attempting to teach without #inspiring the #pupil with a #desire to learn is hammering cold iron. #HoraceMann
+optimism
+Input: @maidinaustralia D: That's horrid. *hugs*
+anger, disgust, joy
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @BAEK0FF @byunglows Philippines 😃
+joy
+Input: get to 84 and the intruder alarm is going off... lolz one of the PTs set it off 🙈
+disgust, joy
+Input: @AChubbyPanda *He would growl softly and licks his lips.* 'if I need to prove myself, I think we might need to go somewhere private.'
+love
+Input: What does Amelia want?! Sarah was v grateful  #CBB
+joy, optimism
+Input: @livedarts R.i.p my friend, cant get my head round this,    #devastated    x
+sadness
+Input: Coming up shortly #WetinDeyHappen #Satire #laughs #local #Pidgin cc @McTalkinDrum and @Funny_Udeme #stayTuned #premiumTalkStation
+joy
+Input: @StateDept #That certainly does not bode well for #Afghan woman and girls #bad option
+disgust
+Input: #World do you know what the difference is between #drunk and #sober? One word. #Coherence.
+anticipation, joy, optimism
+Input: @_jesskardashian @trevschan2 both are awesome.  People are missing out not watching fear!!!
+anticipation, joy
+Input: Ugh. What's wrong with me today? Feel absolutely dreadful 😓 I wonder if I'm fighting something off...? Roll on home time.
+disgust, fear, sadness
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+INFO-vDistributionEstimator(2026-03-13 01:48:03,461)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4230, micro_f1=0.5587, macro_f1=0.4507, anger_f1=0.7234, anticipation_f1=0.2615, disgust_f1=0.6396, fear_f1=0.5452, joy_f1=0.6825, love_f1=0.4484, optimism_f1=0.4839, pessimism_f1=0.1968, sadness_f1=0.5781, surprise_f1=0.2086, trust_f1=0.1896
