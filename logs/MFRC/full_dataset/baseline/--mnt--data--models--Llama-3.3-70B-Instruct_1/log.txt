@@ -75,3 +75,83 @@ Moral foundation(s): care
 Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
 Moral foundation(s):
 INFO-vDistributionEstimator(2026-03-13 01:19:28,620)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.6264, micro_f1=0.3431, macro_f1=0.3068, authority_f1=0.2780, care_f1=0.5068, equality_f1=0.4465, loyalty_f1=0.2429, proportionality_f1=0.1568, purity_f1=0.2096
+DEBUG-vDistributionEstimator(2026-03-13 04:32:24,229)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-13 04:32:24,276)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: He needs to chill? Don't you mean the person punishing their in laws because they aren't following their exact instructions?
+Moral foundation(s): authority
+Input: Don’t apologize op. Your dad hurt you and deserved to be held accountable. He didn’t leave the bruise but he still hurt you physically and mentally.
+Moral foundation(s): care, proportionality
+Input: So you were sexually molesting your sisters and mom. Nice.
+Moral foundation(s): purity
+Input: You’re just as bad, if he didn’t cheat you’re even worse. Tell him. He deserves to know if he wants to be with someone like you or not. Jesus you people. What a great person
+Moral foundation(s): loyalty
+Input: Unfortunately it really is as simple as this advice. If the parents aren't willing to take the responsibility they should be taking, you are quite reasonably within your rights to take the responsibility yourself. Treat him the same way you'd treat anyone doing these things - defend yourself, violently if need be, record him, file police reports, everything. Your sister is obvio a dick for allowing this.
+Moral foundation(s): care
+Input: YTA.  
+Always having your siblings back against a bully - appropriate.  Not being allowed to share an opinion differing from your sibling - inappropriate.  Teach your children to be kind to one another while disagreeing, don’t teach them to silence their opinions.
+Moral foundation(s): care, loyalty
+Input: &gt; Whoever the left disagrees with is labeled a fascist homophobic, racist bigot.
+
+last time I remember Macron wasn't called fascist homophobic, racist bigot.
+
+he's not leftist
+Moral foundation(s): equality
+Input: Calling the thin blue line flag a "white lives matter" flag is moronic.
+
+Demanding someone take down a flag that has been popular for many years is not "drawing attention", it is silencing people who support police.
+
+If BLM is about saving lives, why do they get so uncomfortable when you ask them where the many millions of dollars in donations go?  Their own "protests" led to the deaths of black men like David Dorn.  BLM didn't give a damn about his death, even though they played a part in it.
+Moral foundation(s): care, equality
+Input: Absolutely they looked at the numbers, even now minorities such as blacks and Hispanics are disproportionately dying, and they saw covid as a objective good.
+Moral foundation(s): equality, proportionality
+Input: I’m in a committed long term relationship with my bf who I love very much and I study techniques on how to be a female pick up artist. I have no idea why. It’s just very interesting. It doesn’t mean i cheat on my bf.
+
+I also would never manipulate anyone for my own gain like that. I have no desire to hurt men.
+Moral foundation(s): care, loyalty
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Well, when 16 of my fellow citizens are gunned down because they are infidels, I'm not going to be tweeting that Muslim Americans are just like you and me.  Who's lacking empathy?  Merkel, Hollande, and Obama give the same condolence speech after every terrorist attack - we must stand together, our values must prevail, don't give into hate and fear for Muslims, etc.  Rinse and repeat after every terrorist attack.  [Trump is doing the right thing.](http://money.cnn.com/video/news/2015/08/20/donald-trump-immigration-plan-birthright-citizenship.cnnmoney/)
+Moral foundation(s): care, loyalty
+Input: &gt;pentagon and globecucks use trump as a puppet
+
+-
+
+&gt;globalization accelerates and US global dominance is resolidified
+
+-
+
+&gt;EU resurgence w/o deadweight of UK led by Macron + Merkel/Shulz
+
+-
+
+&gt;thousand year empire of economic and political liberty
+Moral foundation(s): authority
+Input: Oh man those conservative tears are salty. 
+
+It's rhetoric like that let Macron get elected. 
+Moral foundation(s): authority
+Input: And I love how far-righters seem to only care about the LGBT community when it comes to Muslims. That and nowhere in the article does it say that the majority of gay French men are voting for Le Pen. 
+Moral foundation(s): care, equality
+Input: Trump is not racist because "he is racist" if that makes sense. He's racist because it caters to his view of the world. I forgot how it's called in english but he exhibits every single point of "reality denial". The world is the way he wants it. If he decides the sky is red, he'll say it's red even if you force him to look at it.
+
+Le Pen is simply racist because it helps her direct interests and she's been raised that way. Trump is simply "shitting on them gets me votes regardless of what I do? Good"
+Moral foundation(s): equality
+Input: No, that's just something pushed by ultra far right activists to discredit trans people.
+Moral foundation(s): equality
+Input: They're not independentists, they're autonomists. And they go ALONG everything Le Pen represents, especially her hatred for Muslims and Arabs. 
+Moral foundation(s): equality, loyalty
+Input: https://twitter.com/benoithamon/status/824578898734252032
+
+Hamon is pro-EU too. 
+
+&gt;Deeply honored to be endorsed by many MEPs. Together we will keep building a more social, democratic and eco-friendly EU. 
+Moral foundation(s): equality, loyalty
+Input: Literally tearing the country apart just to try to maintain power... Pathetic... Weak.
+Moral foundation(s): authority
+Input: This perpetuates the cycle of poverty. Those who are higher educated can help their children with homework. They have more access to books or tutors. They can focus on school because they don’t have to support their family. Those in stable homes don’t have to work or raise their siblings. Grades don’t determine your mastery of a subject. It just shows you’ve completed the homework. Higher grades -&gt; higher education. And the cycle continues. This is all by design.
+Moral foundation(s): equality, proportionality
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-13 05:37:17,226)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.6247, micro_f1=0.3411, macro_f1=0.3042, authority_f1=0.2597, care_f1=0.5190, equality_f1=0.4352, loyalty_f1=0.2262, proportionality_f1=0.1651, purity_f1=0.2197
