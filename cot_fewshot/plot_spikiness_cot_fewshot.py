@@ -22,6 +22,9 @@ def get_graph_probs(data):
     for example_id, example in data.items():
         if len(example["test_scores"]) == 0:
             continue
+        # Match main script: skip ratio variants (SemEval ICL); no-op if ids have no ratio
+        if "ratio_0.0" in example_id or "ratio_0.2" in example_id or "ratio_0.6" in example_id or "ratio_0.8" in example_id or "ratio_1.0" in example_id:
+            continue
 
         distr = example["test_scores"]
         if "none" in distr:
@@ -55,7 +58,7 @@ def plot_multilabel_icl(yaml_files, dataset_names, save_path):
         data = load_data_from_yaml(yaml_file)
         points = get_graph_probs(data)
         plt.scatter([], [], color=color, alpha=1, label=label, s=80)
-        for x, probs in enumerate(points):
+        for x, probs in enumerate(points[:7]):  # cutoff indices 7-10, show 0-6 only
             jitter = x_offset * (i - 1)
             jittered_x = (
                 x + jitter + 0.12 * (np.random.random(len(probs)) - 0.5)
@@ -64,9 +67,9 @@ def plot_multilabel_icl(yaml_files, dataset_names, save_path):
 
     plt.xlabel("Sorted Label Index", fontsize=22)
     plt.ylabel("Label Probability", fontsize=22)
-    plt.xticks([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], fontsize=20)
+    plt.xticks([0, 1, 2, 3, 4, 5, 6], fontsize=20)
     plt.yticks(fontsize=20)
-    plt.xlim(-0.5, 10.5)
+    plt.xlim(-0.5, 6.5)
     plt.ylim(0, 1)
     plt.grid(True)
     plt.legend(loc="upper right", fontsize=20)

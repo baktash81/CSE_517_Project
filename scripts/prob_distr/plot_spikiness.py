@@ -52,7 +52,7 @@ def plot_multilabel_icl(yaml_files, save_path):
         points = get_graph_probs(data)
         # Legend entry (one per dataset; outside loop so we get it even if points is empty)
         plt.scatter([], [], color=color, alpha=1, label=label, s=80)
-        for x, probs in enumerate(points):
+        for x, probs in enumerate(points[:7]):  # cutoff indices 7-10, show 0-6 only
             jitter = x_offset * (i - 1)  # -0.25, 0.0, 0.25 for three datasets
             jittered_x = x + jitter + 0.12 * (np.random.random(len(probs)) - 0.5)
             plt.scatter(jittered_x, probs, color=color, alpha=0.08)
@@ -73,26 +73,46 @@ def plot_multilabel_icl(yaml_files, save_path):
     
         
 if __name__ == '__main__':
+    # Datasets we want in the figure
     datasets = [
         'MFRC',
         'SemEval',
         'GoEmotions',
     ]
-    
-    models = [
-        # 'meta-llama--Llama-3.2-1B-Instruct_0',
-        # 'meta-llama--Llama-3.1-8B_0',
-        # 'meta-llama--Llama-3.3-70B-Instruct_0',
-        # 'Qwen--Qwen2.5-7B-Instruct_0',
-        '--mnt--data-hps--Llama-3.1-70B_0',
-    ]
-    
+
+    # For each dataset, automatically find the big_multilabel baseline run
+    # whose experiment directory name contains "Llama-3.1-8B-Instruct".
+    # This matches how the HPS baselines are stored, e.g.:
+    #   logs/<dataset>/big_multilabel/baseline/--mnt--data-hps--Llama-3.1-8B-Instruct_*/
     yaml_files = []
     for dataset in datasets:
-        for model in models:
-            yaml_file = os.path.join(PROJECT_ROOT, 'logs', dataset, 'full_dataset', 'baseline', model, 'indexed_metrics.yml')
+        baseline_dir = os.path.join(
+            PROJECT_ROOT,
+            'logs',
+            dataset,
+            'big_multilabel',
+            'baseline',
+        )
+        if not os.path.isdir(baseline_dir):
+            continue
+
+        for exp_name in os.listdir(baseline_dir):
+            if 'Llama-3.1-8B-Instruct' not in exp_name:
+                continue
+            yaml_file = os.path.join(
+                baseline_dir,
+                exp_name,
+                'indexed_metrics.yml',
+            )
             if os.path.exists(yaml_file):
                 yaml_files.append(yaml_file)
-    
-    save_path = os.path.join(PROJECT_ROOT, 'scripts', 'prob_distr', 'figures', 'spikiness.png')
+                break  # only need one baseline per dataset
+
+    save_path = os.path.join(
+        PROJECT_ROOT,
+        'scripts',
+        'prob_distr',
+        'figures',
+        'spikiness.png',
+    )
     plot_multilabel_icl(yaml_files, save_path=save_path)
