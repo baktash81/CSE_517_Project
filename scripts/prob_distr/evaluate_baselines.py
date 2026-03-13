@@ -44,16 +44,16 @@ def calculate_compare_to_none(sample_data):
         scores = sample_data['test_all_scores'][0]
         
     # Get likelihood of 'none'
-    p_none = scores.get('none', 1e-8)
+    p_none = scores.get('none', 1e-12)
     
     c2n_scores = {}
     for label, p_i in scores.items():
-        # Score for label is sigmoid of [sigmoid(p_i) - sigmoid(p_none)]
         if label == 'none':
-            c2n_scores[label] = 0.5  # By definition, 'none' vs 'none' is sigmoid(0) = 0.5
+            # logit(none) - logit(none) = 0; sigmoid(0) = 0.5
+            c2n_scores[label] = 0.5
         else:
-            diff_i = p_i - p_none
-            c2n_scores[label] = 1 / (1 + math.exp(-diff_i))  # sigmoid(diff_i)
+            # Equivalent to sigmoid(logit_i - logit_none)
+            c2n_scores[label] = p_i / (p_i + p_none + 1e-12)  # Add small epsilon to avoid division by zero
         
     return c2n_scores
 
@@ -151,7 +151,7 @@ def calculate_paper_metrics(max_distributions, experiment_data, label_set, raw_h
         "Example_F1_Manual": float(np.mean(example_f1s))
     }
 
-def process_experiment(input_yaml_path, output_yaml_path, human_dist=None):
+def process_experiment(input_yaml_path, output_yaml_path, dataset_name, human_dist=None):
     print(f"\n--- Processing {input_yaml_path} ---")
     data = load_data_from_yaml(input_yaml_path)
     
