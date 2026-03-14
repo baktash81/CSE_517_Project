@@ -805,7 +805,7 @@ class Hatexplain(TextDataset):
         annotations = {}
 
         # dataset = load_dataset("Hate-speech-CNERG/hatexplain", split=split, trust_remote_code=True)
-        label_map = {"hatespeech": 0, "normal": 1, "offensive": 2}
+        label_map = {"hatespeech": 0, "normal": 1, "offensive": 2, "none": 3}
         for post_id in split_ids:
             post = raw_data[post_id]
             
@@ -822,7 +822,7 @@ class Hatexplain(TextDataset):
             # Map annotator labels
             for ann in post["annotators"]:
                 ann_id = ann["annotator_id"]
-                label_str = ann["label"]
+                label_str = ann["label"].lower()
 
                 label_idx = label_map[label_str]
                 annotations[post_id]["label"][ann_id] = torch.tensor(label_idx).float()
@@ -836,7 +836,7 @@ class Hatexplain(TextDataset):
                 int(cnt.most_common(1)[0][0])
             ).float()
 
-        return annotations, ["hate", "normal", "offensive"]
+        return annotations, ["hate", "normal", "offensive", "none"]
 
 class TREC(TextDataset):
     multilabel = False
