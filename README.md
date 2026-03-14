@@ -136,6 +136,6 @@ The scripts for the CoT experiments utilize an identical setup and parameter str
 To generate the metrics and visuals for the reproduction, use the python scripts located in `scripts/prob_distr/`. Ensure the log file paths are accurate in your scripts before running.
 
 - Spikiness Graph: `python scripts/prob_distr/plot_spikiness.py`
-
 - Table Metrics (NLL, L1, F1): `python scripts/prob_distr/evaluate_baselines.py`
+- Violin Plots: `scripts/ml-distribution/scores.sh` contains the python scripts for creating plots for all models. Modify as needed for your model names.
 
