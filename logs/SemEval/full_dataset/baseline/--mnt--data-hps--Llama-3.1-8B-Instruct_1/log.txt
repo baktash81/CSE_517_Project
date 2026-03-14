@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-12 23:29:02,358)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 23:29:02,370)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: When did it all started? All these depression &amp; anxiety shits?All these suicide thoughts?All of these bad thoughts thts hugging me at night?
+fear, pessimism, sadness
+Input: @thealexpeace Not bad at All, think may come back to haunt you's
+fear
+Input: @TheView Joy isn't a comedian. She's a bully for fat shaming the governor. Great example she's setting for her grandson.
+anger, disgust, sadness
+Input: @livedarts R.i.p my friend, cant get my head round this,    #devastated    x
+sadness
+Input: @0510Keisuke devour the unborn\nhuman rejection\nfrom wrath to ruins
+anger, disgust
+Input: @MafiaWorldMario Stg everybody say that 😂 then when we tell them they got huff they be mad as shit
+anger, disgust, joy, optimism
+Input: Happy that we played tgt as a team once. Thought there would be another chance out there but sadly no. Rest In Peace my dear friend. :(
+sadness
+Input: @mrjamesob @LBC 😂 snowflake random such a funny man never a dull moment brilliant
+joy
+Input: @hdfcergogic yr customer care exec r unable to pull information on l&amp;t insurance #horrible #service #beware #renewal
+anger, disgust, sadness
+Input: @hollloman @nessa_babbby @ajvannozzi97 As half a set of twins I resent that!
+anger
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @_elliegillxx @0liviarobertson Poor Lyn 😂😂😂 livv I hope she forgets yours this year in revenge
+anger, disgust, joy, optimism, pessimism, sadness
+Input: @LoveMyFFAJacket FaceTime - we can still annoy you 😂
+anger, joy, love
+Input: Coming up shortly #WetinDeyHappen #Satire #laughs #local #Pidgin cc @McTalkinDrum and @Funny_Udeme #stayTuned #premiumTalkStation
+joy
+Input: Too much caffeine, and I'm dyyyying. #jitters #shakes #paranoia #heartbeat1000 ☕💔
+fear
+Input: Went to bed a 1:30, fell asleep after, my niece started crying at 4. I'm dying... 😧
+anger, disgust, pessimism, sadness
+Input: You would think booking a holiday for 2 you'd be sat next to each other on the bloody plane #fuming 😡@ThomsonHolidays
+anger
+Input: Good Morning Tuesday! No crap today please 😃 #tantrums #toddler #cuddly #struggles #3 #10 #PMA
+optimism
+Input: @AshleyEmrick Whatever floats your incense boat.
+anticipation
+Input: #Rage and #disappointment man.... Is that life or what? Lol
+anger, disgust, pessimism, sadness
+Input: @RealSkipBayless Your opinions on sports is dreadful
+anger, disgust, pessimism, sadness
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+INFO-vDistributionEstimator(2026-03-12 23:53:30,673)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3951, micro_f1=0.5223, macro_f1=0.4493, anger_f1=0.6338, anticipation_f1=0.3279, disgust_f1=0.5716, fear_f1=0.5611, joy_f1=0.6674, love_f1=0.4617, optimism_f1=0.5406, pessimism_f1=0.1983, sadness_f1=0.5864, surprise_f1=0.2105, trust_f1=0.1833

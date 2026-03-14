@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-12 23:26:31,959)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 23:26:31,971)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: i excepted the eclipse to make me believe in an omniscience force #dissapointed
+sadness
+Input: @KhaoJimmy Okay awak 😆
+joy
+Input: @GirlPosts @_matdtaylor actually how annoyed you get 😂
+anger, disgust
+Input: Every #DIVA needs her Period Panteez 2 B X-TRA Confident &amp; Secure! Don't wait 2 have UR #period ! #thetalk #fallfashion #instyle
+joy
+Input: Very important thing for today: \n\nDo not #bully yourself with #100DaysOfCode \n\nBelieve me, It ruins fun!
+sadness
+Input: @AmyJoSmyth #OOC Thing is she holds a grudge like mad
+anger, disgust
+Input: At this point I can't tell if I just follow more people in politics on twitter now or if I need new friends. #wheresthefunny #depressing
+pessimism, sadness
+Input: wow :o this was included in the playlist #awesome
+joy
+Input: One of the great/horrible moments as a professor is seeing a wonderful student leaving your university to pursue his/her true passion.
+joy, pessimism, sadness
+Input: @actor_nithiin Happy birthday Manisharma sirr............... Have a great year head
+joy, love, optimism
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @F1 Why announcing so late, it will be hard to make it from Manchester and organising a day off. #sad
+sadness
+Input: Theo's comment at the end😂 do one Tyla. #horrid #loveisland
+anger, disgust, fear
+Input: aleesha—kitchen sink, twenty one pilots (!!)
+anticipation
+Input: @jamesmb @DonaldJTrumpJr His knife is clean. He is tough enough to fire a gun, but not tough enough to get his hands dirty. #awful
+anger, disgust
+Input: @JDMHatch_G @A34Bart @IOInteractive @Ravenclaww04 @Hitman This is an attitude that makes me beam with delight every time I encounter it.
+joy, optimism
+Input: @StateDept #That certainly does not bode well for #Afghan woman and girls #bad option
+disgust
+Input: @MA_Bisson @AroundTheRings @LA2024 'felt our soul'! hilarious!
+joy
+Input: anyways so i apologized &amp; i hav rly bad anxiety guys so i just wanted to get out &amp; start my errands so i did &amp; i had to ~uber everywhere~
+fear
+Input: I'm sorry but also...fuck you #currentfeels #anger #bpd #eupd #borderliner #mentalhealth #anxiety #depression #confused
+anger, disgust, sadness
+Input: Lost my appetite for the past 5 days and I swear I already lost 3 pounds #depressing #at #least #i #will #be #skinny #for #pride #weekend
+pessimism, sadness
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+INFO-vDistributionEstimator(2026-03-12 23:54:42,980)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3039, micro_f1=0.4375, macro_f1=0.3595, anger_f1=0.5448, anticipation_f1=0.2449, disgust_f1=0.5352, fear_f1=0.4416, joy_f1=0.5257, love_f1=0.3423, optimism_f1=0.4310, pessimism_f1=0.1674, sadness_f1=0.5145, surprise_f1=0.1045, trust_f1=0.1023

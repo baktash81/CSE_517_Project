@@ -1,0 +1,77 @@
+DEBUG-vDistributionEstimator(2026-03-12 23:55:36,537)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 23:55:36,590)   test: Label set: authority, care, equality, loyalty, proportionality, purity
+Example prompt: Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input: Junkies? Come on bro. These are human beings with a medical or mental condition. So dehumanizing.  That word needs to be gone. Same with clean and dirty. Not all drug use is problematic and everyone uses drugs. Racism is the only reason some are legal and some aren’t. Look it up.
+Moral foundation(s): care, equality
+Input: being respectful of a person’s gender identity isn’t political - it’s basic decency
+Moral foundation(s): care, equality
+Input: Hell yeah comrade im proud of you. Contrary to popular belief promotions are not a blessing rather a curse. More entangled and controlled in a rotten life leeching environment.
+
+No promotion means more time to organize, talk, socialize and agitate low level workers, the TRUE powerful class and majority of individuals. You literally deny promotion to maintain your humanity and connections to your community, family and coworkers. Remember bosses dont have friends or comrades only competitors. 
+
+Stay strong and safe, wish you best of luck remember to eat well and rest well. Solidarity from Greece
+Moral foundation(s): care
+Input: All my fucks are given out to people who took the virus seriously and are unwitting victims of the stupidity of the death cult party.
+Moral foundation(s): care
+Input: Gonna piss on  Lindsey too, when his time comes? 
+Cause cowardly turncloaks deserve reservoirs of piss.
+Moral foundation(s): proportionality
+Input: He was being gaslighted and manipulated.
+Before you go about preaching to him, try to go through an abusive and straining relationship, yourself.
+
+Trust me, even the prettiest, purest, kindest person will wither in relationships with a person like that. (his ex)
+There's no way to be with someone toxic and not end up poisoned, unless you leave them fast enough.
+Moral foundation(s): care
+Input: Masturbation is not a crime, revenge porn, blackmailing and illegal recording is. You doing nothing will just let him think he can do anything. You want another sexual predator go free? Call cops on him. If parents are outraged, let them be outraged. They are not gonna kick you out over this. Call now. Let that creep know the consequences.
+Moral foundation(s): authority, purity
+Input: As a gay guy trying to reach out in good faith, what will I slowly 'wake up' about?
+
+I've not had any choice in my sexuality and I'm entirely comfortable with myself at this point in time. I love a beautiful guy &amp; we're happy together. What's so wrong and abhorrent about me that christians feel the need to cast judgment, tell me I'm going to hell or that I should seek some higher calling.
+
+I'm not religious in the slightest and would never tell someone they need to change like that.
+Moral foundation(s): care, purity
+Input: Yeah... and you didn’t just get paid double... you worked double, so you just got paid the hours you worked.
+Moral foundation(s): proportionality
+Input: \&gt; His arguments are that she is in an abusive relationship and that her husband mistreats her and that he (my husband) feels sorry for her and wants to help her feel better.  
+
+Yeah, right.
+
+He is cheating on you, and waiting for the right time to move on.   I would beat him to it, and get rid of him.
+Moral foundation(s): equality, loyalty
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following moral foundations per input: authority, care, equality, loyalty, proportionality and purity.
+Input:... But there *is* racism involved. France is famously rather racist and it's a huge problem that contributes to French Muslim's feeling marginalized and excluded from their own culture which makes them easier to radicalize. 
+
+Trying to paint all Le Pen supporters with a sympathetic brush doesn't work. 
+Moral foundation(s): equality
+Input: McConnell hasn't decided to'respect democracy'. 
+McConnell is just not stupid enough to blatantly break the law for a disloyal imbecile who lost an election. He is in it for himself and literally no one else.
+Moral foundation(s): authority, care, loyalty
+Input: Goddammit, Le Pen. You fucked yourself. People don't vote for the populist because they're bigoted. they vote for the populist because they know the corporatist will never be on their side.  Now you just prove that neither will you, because you're a fundamentalist, not a populist. You just parrot the right words.
+
+Go France! Vote for the corporatist who will fuck you for money, or the fundamentalist, who will also fuck you for money, but at least pretend not to, all while initiating backwards social policies that destroy any semblance of integrated society. (sound familiar?)
+Moral foundation(s): loyalty, proportionality
+Input: &gt;It is racist to call it a "plan for blacks". People would rightfully be up in arms if Trump said something like that. It doesn't mean black people aren't massively affected by that issue, but that you don't need to make it all about race. 
+
+Marijuana criminalization has been about race since day one
+Moral foundation(s): equality
+Input: And how is it they keep trying to convince us that antifa is still an "idea" instead if a group of racist, anarchist thugs?
+Moral foundation(s): authority, equality
+Input: YTA, you both created your child and you’re both responsible to raise them. Her writing is 100% a real job, as she is paid to do it. It is incredibly disrespectful the way you treated her. Marriage is a partnership that cannot work without mutual respect.
+Moral foundation(s): care, loyalty
+Input: It’s not stealing if you’re taking back what’s yours from thieves.
+Moral foundation(s): proportionality
+Input: Calling the thin blue line flag a "white lives matter" flag is moronic.
+
+Demanding someone take down a flag that has been popular for many years is not "drawing attention", it is silencing people who support police.
+
+If BLM is about saving lives, why do they get so uncomfortable when you ask them where the many millions of dollars in donations go?  Their own "protests" led to the deaths of black men like David Dorn.  BLM didn't give a damn about his death, even though they played a part in it.
+Moral foundation(s): care, equality
+Input: Rule 9 on this sub is to be kind and civil. Do you see much civility in the comments?
+Moral foundation(s): care
+Input: Oath Keepers, 3%ers, Proud Boys, GOP, whatever wretched rightwing group; they're all anti-American fifth column filth.
+Moral foundation(s): purity
+Input: That particular part of the debate is especially funny. Macron was explaining he did not think FN voters were evil and that from where he comes from he knew many, and she was like "ooooh the evil FN invaders they're everywhere...!" Self-awareness: zero.
+Moral foundation(s):
+INFO-vDistributionEstimator(2026-03-13 00:34:04,346)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.0966, micro_f1=0.1515, macro_f1=0.1344, authority_f1=0.0948, care_f1=0.3010, equality_f1=0.1885, loyalty_f1=0.0882, proportionality_f1=0.0725, purity_f1=0.0610

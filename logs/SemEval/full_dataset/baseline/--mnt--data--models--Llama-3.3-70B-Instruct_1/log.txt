@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-12 23:32:00,885)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-12 23:32:00,900)   test: Label set: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise, trust
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: O, the melancholy Catacombs quickly wandered about the Rue Morgue, Madman!
+disgust, pessimism, sadness
+Input: #Look at #those who are #honest and #good, for a #wonderful #future #awaits those who #love #peace.
+joy, love, optimism
+Input: Can't drink all day if u don't start in the morning .. Drake gets me 😛
+disgust, joy, sadness
+Input: I was thinking about Fergie's music M.I.L.F and seriously, if I'm a mother someday, I'll be a M.I.L.F  #lmao #Empowerment #adorable
+joy
+Input: @TimmyLDN Looks dreadful... 👀
+fear
+Input: @beautifuIbaek Wow! I hope i win. 😭 thanks for this. 😊
+anticipation, joy, love, optimism
+Input: #LoiuseLinton has become the female #MartinShkreli. Most hated woman in America. That takes some skill. #entitlement  #notcute
+disgust
+Input: Every #DIVA needs her Period Panteez 2 B X-TRA Confident &amp; Secure! Don't wait 2 have UR #period ! #thetalk #fallfashion #instyle
+joy
+Input: Hey buddy, I just came by to feed my Venus Flytrap. —Sue (S1E13) #glee
+joy
+Input: Wow! Today, totally seeing alot of #mean #people out in this #world! Turn it around and #start cultivating #kindness! #SuccessTRAIN #warrior
+disgust, joy, optimism
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: anger, anticipation, disgust, fear, joy, love, optimism, pessimism, sadness, surprise and trust.
+Input: @GILMONK1 Maybe to stand in the field to scare away the crows
+fear
+Input: my mom's work has discounted riot fest tickets for $147/3 days i'm #saddened
+disgust, pessimism, sadness
+Input: Too much caffeine, and I'm dyyyying. #jitters #shakes #paranoia #heartbeat1000 ☕💔
+fear
+Input: horrid
+anger, disgust, fear
+Input: wow :o this was included in the playlist #awesome
+joy
+Input: I need a transcript of trump praying. #terrific Jesus.
+disgust
+Input: @JoyceMeyer @mrsglessman #day of #vengeance of our #God; To #comfort all who #mourn, To console those who #mourn in #Zion, To give [4/7]
+joy, optimism, sadness, trust
+Input: @vinsquat67 It was indeed, I was raging at the verdict. Can't imagine how the poor lassies family felt.
+anger, disgust
+Input: #Spina #Bifida a #neural #tube #birth #defect where the #nervous #system &amp; #spinal #cord do not fully develop #raredisease #June #awareness
+fear
+Input: I've never been so excited to start a semester!
+anticipation, joy, optimism
+Input: “Worry is a down payment on a problem you may never have'.  Joyce Meyer.  #motivation #leadership #worry
+INFO-vDistributionEstimator(2026-03-13 00:13:15,098)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.4275, micro_f1=0.5530, macro_f1=0.4686, anger_f1=0.7173, anticipation_f1=0.3163, disgust_f1=0.5522, fear_f1=0.5900, joy_f1=0.7181, love_f1=0.4888, optimism_f1=0.4880, pessimism_f1=0.1922, sadness_f1=0.6183, surprise_f1=0.2625, trust_f1=0.2110

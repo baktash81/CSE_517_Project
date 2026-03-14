@@ -1,0 +1,22 @@
+experiment_0:
+  description: ''
+  test_authority_f1: 0.27800269905533065
+  test_care_f1: 0.5068132918957686
+  test_equality_f1: 0.4465483234714004
+  test_jaccard_score: 0.6263592922639803
+  test_loyalty_f1: 0.24287856071964017
+  test_macro_f1: 0.3067603678935625
+  test_micro_f1: 0.3431210366694238
+  test_proportionality_f1: 0.15676359039190899
+  test_purity_f1: 0.20955574182732606
+experiment_1:
+  description: ''
+  test_authority_f1: 0.25972890249234803
+  test_care_f1: 0.5190114068441065
+  test_equality_f1: 0.4352290679304897
+  test_jaccard_score: 0.624739549700805
+  test_loyalty_f1: 0.2262135922330097
+  test_macro_f1: 0.30416468082329434
+  test_micro_f1: 0.3410546395966753
+  test_proportionality_f1: 0.1651143099068586
+  test_purity_f1: 0.21969080553295361

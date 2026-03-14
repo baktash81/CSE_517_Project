@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-13 01:58:09,800)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-13 01:58:09,871)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: How do they know how tall you are while your sitting in your car. Such bullshit.
+{"label": ["anger"]}
+Input: Please stop posting things like this, this is serious, keep it civil, keep it real, thanks.
+{"label": ["admiration", "anger"]}
+Input: What is scary?
+{"label": ["surprise", "fear"]}
+Input: Drunk and crying in bed with my pets. :|
+{"label": ["sadness"]}
+Input: I’m sorry to inform you, it’s worse. 
+{"label": ["sadness"]}
+Input: Funny joke.
+{"label": ["joy"]}
+Input: Thanks for the hug matey :)
+{"label": ["admiration"]}
+Input: I just watched the entire episode. They never once hint that they were having an affair. That information didn't come from the show.
+{"label": ["admiration", "anger"]}
+Input: Arizona in the summer is fine. Arizona in the winter when all the blue hair snowbirds come is absolutely horrifying.
+{"label": ["admiration", "fear"]}
+Input: Sorry about your poor trolling. 3/10.
+{"label": ["optimism", "sadness"]}
+Input: My favourite food is anything I didn't have to cook myself.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Just goes to show it takes 0 skill to play that hero
+{"label": ["admiration"]}
+Input: Why so hateful. I feel sorry for you.
+{"label": ["surprise", "sadness"]}
+Input: Wow, what a find. The store actually began clapping
+{"label": ["admiration", "surprise"]}
+Input: [NAME] always makes my day when he's yelling at the refs
+{"label": ["joy"]}
+Input: Thanks China.
+{"label": ["admiration"]}
+Input: Like it was over wayyyyy too fast for a real one. Shit, the Taliban lasted for years, and ISIS is still a huge problem.
+{"label": ["fear", "sadness", "anger"]}
+Input: Oh sh*t guys I got banned
+{"label": ["surprise", "sadness"]}
+Input: Eastside Cafe was pretty pricey for what it was.
+{"label": ["anger"]}
+Input: This guy used to be so good. I looked forward to his comics every week. Now, I couldn't care less about him. Complete economic illiterate.
+{"label": ["admiration", "sadness"]}
+Input: Not to mention the small electronic machines that we all carry around in our pockets. It'll be interesting to see how this impacts online casinos that accept cryptocurrency.
+{"label": ["joy"]}
+Input: My favourite food is anything I didn't have to cook myself.
+INFO-vDistributionEstimator(2026-03-13 04:01:24,972)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2960, micro_f1=0.3170, macro_f1=0.2895, joy_f1=0.3685, optimism_f1=0.2197, admiration_f1=0.3723, surprise_f1=0.2628, fear_f1=0.1388, sadness_f1=0.3165, anger_f1=0.3483

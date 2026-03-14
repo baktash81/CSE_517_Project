@@ -1,0 +1,47 @@
+DEBUG-vDistributionEstimator(2026-03-13 01:57:39,837)   Trainer set up.
+DEBUG-vDistributionEstimator(2026-03-13 01:57:39,963)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
+Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: Ah Princess [NAME], the [NAME] of our childhoods
+{"label": ["joy", "admiration"]}
+Input: I love Earth Balance, but does anyone know if the palm fruit is ethically sourced? I’ve cut out palm products due to deforestation. 
+{"label": ["joy", "surprise"]}
+Input: Good. I want them to remain crazed. More winning for us.
+{"label": ["joy", "admiration"]}
+Input: The old “I had sex with your mom” joke. I chuckled a little.
+{"label": ["joy"]}
+Input: They feel soooo good on TBF
+{"label": ["joy"]}
+Input: Classic sloth fuckboi
+{"label": ["anger"]}
+Input: What? No way, I thought ragnarok mobile was a pretty small game holy shit
+{"label": ["admiration", "surprise"]}
+Input: Thank you for making me spit out my coffee at my computer. This comment hit home for me. XD
+{"label": ["admiration", "anger"]}
+Input: Never take advice from someone named "poor judgement" 
+{"label": ["anger"]}
+Input: You cant love this girl if she already has a GF whom she sounds like she loves. You'll just ruin a relationship
+{"label": ["anger"]}
+Input: My favourite food is anything I didn't have to cook myself.
+Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Output exactly these emotions and no others.
+Input: It's a great time to be Scottish anaw
+{"label": ["admiration"]}
+Input: Typical [NAME], i know because i am one
+{"label": ["admiration"]}
+Input: Why does everyone hate the creme brûlées? They’re easily my favorite.
+{"label": ["joy", "admiration"]}
+Input: It was good of you to get him out of the store as quickly as possible so he could not infect you with his crazy.
+{"label": ["optimism", "admiration"]}
+Input: It got completely banned I think, saw a post about it a while back in r/gore.
+{"label": ["anger"]}
+Input: Like it was over wayyyyy too fast for a real one. Shit, the Taliban lasted for years, and ISIS is still a huge problem.
+{"label": ["fear", "sadness", "anger"]}
+Input: Thank u! Looking for some new podcasts!
+{"label": ["admiration"]}
+Input: I am confusion.
+{"label": ["surprise"]}
+Input: Wow, my favorite artist and my favorite basketball player. This video is next level 🌊
+{"label": ["joy", "admiration", "surprise"]}
+Input: Thank you mods for the sticky. This is such an important story. To my surprise, the NY Times had a brief piece about it.
+{"label": ["admiration", "surprise"]}
+Input: My favourite food is anything I didn't have to cook myself.
+INFO-vDistributionEstimator(2026-03-13 03:47:40,105)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.2897, micro_f1=0.3590, macro_f1=0.3316, joy_f1=0.4881, optimism_f1=0.2456, admiration_f1=0.3898, surprise_f1=0.3289, fear_f1=0.1185, sadness_f1=0.3193, anger_f1=0.4309
