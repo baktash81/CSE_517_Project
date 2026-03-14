@@ -1,9 +1,0 @@
-DEBUG-DistributionEstimator(2026-03-09 20:53:16,215)   Trainer set up.
-DEBUG-DistributionEstimator(2026-03-09 20:53:16,220)   test: Label set: joy, optimism, admiration, surprise, fear, sadness, anger
-Example prompt: Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. After your reasoning, output exactly one line in this format: {"label": ["emotion1", "emotion2"]}.
-Input: At least now [NAME] has more time to gain his confidence
-Reasoning:
-Example tokenization: <|begin_of_text|>Classify the following inputs into none, one, or multiple the following emotions per input: joy, optimism, admiration, surprise, fear, sadness and anger. Let's think step by step about what emotions are present before classifying. After your reasoning, output exactly one line in this format: {"label": ["emotion1", "emotion2"]}.
-Input: At least now [NAME] has more time to gain his confidence
-Reasoning:
-INFO-DistributionEstimator(2026-03-09 21:24:22,606)   Testing metrics for Prompt tokenized dataset: jaccard_score=0.3556, micro_f1=0.4385, macro_f1=0.4252, joy_f1=0.5891, optimism_f1=0.3784, admiration_f1=0.3590, surprise_f1=0.3200, fear_f1=0.4828, sadness_f1=0.4356, anger_f1=0.4112
